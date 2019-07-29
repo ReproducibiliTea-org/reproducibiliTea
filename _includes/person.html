@@ -1,0 +1,11 @@
+<span class="person">{{include.name}}<span class="person-social">
+        {%- if include.website -%}
+        <a href="{{ include.website }}" title="Website for {{ include.name }}" target="_blank"><i class="fas fa-globe"></i></a>
+        {%- endif -%}
+        {%- if include.twitter -%}
+        <a href="https://twitter.com/{{ include.twitter }}" title="{{ include.name }} on Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        {%- endif -%}
+        {%- if include.orcid -%}
+        <a href="https://orcid.org/{{ include.orcid }}" title="ORCiD for {{ include.name }}" target="_blank"><i class="ai ai-orcid-square"></i></a>
+        {%- endif -%}
+    </span></span>

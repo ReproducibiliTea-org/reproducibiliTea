@@ -1,0 +1,57 @@
+---
+layout: default
+title: Post by category
+---
+
+{% comment %}
+=======================
+Credit for much of the code herein goes to https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
+
+Fetch tag list.
+=======================
+{% endcomment %}
+
+{% assign cats = "" %}
+
+{% for post in site.posts %}
+    {% if post.category %}
+        {% assign cats = cats | append: post.category | append: "|" %}
+    {% endif %}
+{% endfor %}
+{% assign cats = cats | split: "|" %}
+{% assign cats = cats | uniq %}
+
+{% comment %}
+=======================
+List all the cats.
+=======================
+{% endcomment %}
+<h1>Categories:</h1>
+{% for cat in cats %}
+<a href="#{{ cat | slugify }}">[{{ cat }}]</a>
+{% endfor %}
+
+{% comment %}
+=======================
+List all posts with a certain tag.
+=======================
+{% endcomment %}
+
+<h1>Posts by category:</h1>
+{% for cat in cats %}
+<h2 id="{{ cat | slugify }}">{{ cat }}</h2>
+<ul>
+    {% for post in site.posts %}
+    {% if post.category == cat %}
+    <li>
+        <h3>
+            <a href="{{ post.url }}">
+                {{ post.title }} | 
+                <small>{{ post.date | date_to_string }}</small>
+            </a>
+        </h3>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endfor %}

@@ -1,0 +1,62 @@
+/* Person.html */
+.person {
+    position: relative;
+    background-color: aliceblue;
+    padding: 2px;
+    white-space: pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-space;
+}
+
+.person-social {
+    display: none;
+}
+
+.person:hover .person-social {
+    display: unset;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: calc(-100% - .5em);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    padding-top: .5em;
+    padding-bottom: 2px;
+    min-width: min-content;
+    transform: translateX(-50%);
+}
+
+.person-social i, .person-social svg {
+    font-size: 1.2em;
+    padding: .2em;
+}
+
+/* Tags */
+
+.tag-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: .25em .5em;
+    background-color: aliceblue;
+    border-radius: .5em;
+    margin: .33em;
+    font-size: .8em;
+    box-shadow: 0 1px 3px -1px black;
+}
+
+.tag-list li:hover {
+    background-color: lightgrey;
+}
+
+.tag-list a:hover {
+    text-decoration: none;
+}
