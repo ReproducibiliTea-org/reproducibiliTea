@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Here we'll describe the whole ReproducibiliTea effort, what it is, what it aims to achieve, etc. Other pages will be dedicated to the [podcast](./podcast/) etc. We'll deal with the webinars later.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+As soon as I can be bothered, I'll update the header.html file in /_includes to give us a proper menu going through all of these various pages. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+We'll also thank our funders, like [UKRN](https://ukrn.org/).
 
-
-[jekyll-organization]: https://github.com/jekyll
