@@ -1,0 +1,28 @@
+{% include jc-templates.html %}
+
+<!-- Search bar -->
+<div class="jc-search">
+    <i class="fas fa-search"></i>
+    <input id="jcSearch"
+           type="text"
+           list="journal-clubs"
+           data-showcase-id="jcShowcase"
+           autocomplete="off"
+           value="{{ include.initial-value }}"
+           onchange="showcaseJC(event)"
+           placeholder="Search journal clubs">
+
+    <datalist id="journal-clubs">
+        {% for jc in site.journal-clubs %}
+        <option>{{ jc.title }}</option>
+        {% endfor %}
+    </datalist>
+</div>
+
+<!-- Showcase for results -->
+<article class="post h-entry jc-showcase {{ include.showcase-id }}" id="jcShowcase" itemscope itemtype="http://schema.org/BlogPosting">
+
+</article>
+
+<!-- Script -->
+<script src="/assets/js/jc-showcase.js" type="text/javascript"></script>

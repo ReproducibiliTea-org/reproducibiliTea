@@ -22,6 +22,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: reproducibiliTea
 github_username:  mjaquiery/reproducibiliTea
 
+collections:
+  - journal-clubs
+
 # Build settings
 markdown: kramdown
 theme: minima

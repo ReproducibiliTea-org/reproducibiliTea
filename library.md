@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Library
-permalink: /about/
+permalink: /library/
 ---
 
 Here we'll have details of the journal club join [Zotero](https://zotero.org/) library. It'll have an individual folder ('collection') for each Journal Club, with potentially sub-collections for each of the terms. 

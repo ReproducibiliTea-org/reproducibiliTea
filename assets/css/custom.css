@@ -60,3 +60,52 @@
 .tag-list a:hover {
     text-decoration: none;
 }
+
+/* Journal club details */
+
+.jc-showcase {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.jc-body {
+    width: 60%;
+}
+
+.jc-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.jc-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-organisers {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .jc-showcase {
+        flex-wrap: wrap;
+    }
+    .jc-body, .jc-info {
+        min-width: 100%;
+        padding: unset;
+    }
+    .jc-info {
+        min-height: unset;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 600px) {
+}

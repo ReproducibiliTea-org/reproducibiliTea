@@ -1,0 +1,54 @@
+{% for jc in site.journal-clubs %}
+<template id="{{ jc.title }}">
+    <div class="jc-body">
+        <header class="post-header">
+            <h1 class="post-title p-name" itemprop="name headline">{{ jc.title | escape }}</h1>
+        </header>
+
+        <section class="jc-content post-content e-content" itemprop="articleBody">
+            {{ jc.content | markdownify }}
+        </section>
+    </div>
+
+    <aside class="jc-info">
+        <div class="jc-details">
+            {% if jc.host-organisation %}
+            <div class="icon-item"><i class="fas fa-globe"></i>
+                {% if jc.host-org-url %}
+                <a href="{{ jc.host-org-url }}">
+                    {% endif %}
+
+                    {{ jc.host-organisation }}
+
+                    {% if jc.host-org-url %}
+                </a></div>
+            {% endif %}
+            {% endif %}
+
+            {% if jc.website %}
+            <div class="icon-item"><i class="fas fa-globe"></i> {{ jc.website }}</div>
+            {% endif %}
+
+            {% if jc.signup %}
+            <div class="icon-item"><i class="fas fa-envelope"></i> {{ jc.signup }}</div>
+            {% endif %}
+
+            {% if jc.contact %}
+            <div class="icon-item"><i class="fas fa-question"></i>
+                <a href="mailto:{{jc.contact}}?Subject=ReproducibiliTea website query">{{ jc.contact }}</a></div>
+            {% endif %}
+        </div>
+
+        <hr/>
+
+        {% if jc.organisers %}
+        <div class="jc-organisers">
+            {% for p in jc.organisers %}
+            <div class="icon-item"><i class="fas fa-user"></i> {{ p }}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </aside>
+
+</template>
+{% endfor %}
