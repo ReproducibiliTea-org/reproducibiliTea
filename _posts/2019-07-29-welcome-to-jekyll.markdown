@@ -1,9 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Blog post demo"
 date:   2019-07-29 18:00:27 +0100
 categories: jekyll update
 ---
+
+_Note:_ Currently the search by **category** and **tag** don't work. I'll be fixing those.
+
+
+Here's a demo of what our blog posts will look like:
+
+# Welcome to Jekyll
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
