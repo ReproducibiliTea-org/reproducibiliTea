@@ -35,6 +35,21 @@
     padding: .2em;
 }
 
+/* Image.html */
+
+.image {
+    max-width: 100%;
+    margin: auto;
+    transition: all 400ms;
+    text-align: center;
+}
+
+.fig a * {
+    max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 2px 9px 0 #636363;
+}
+
 /* Tags */
 
 .tag-list ul {
