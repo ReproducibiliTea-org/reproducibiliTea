@@ -4,45 +4,14 @@ layout: default
 
 {% comment %}
 =======================
-Credit for much of the code herein goes to https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
-
-Fetch tag list.
-=======================
-{% endcomment %}
-{% assign rawtags = "" %}
-{% for post in site.posts %}
-{% assign ttags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
-
-{% comment %}
-=======================
-Remove dulpicated tags and invalid tags like blank tag.
-=======================
-{% endcomment %}
-{% assign tags = "" %}
-{% for tag in rawtags %}
-{% if tag != "" %}
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-{% comment %}
-=======================
 List all the tags.
 =======================
 {% endcomment %}
 <h1>Tags:</h1>
 <div class="tag-list">
     <ul>
-        {% for tag in tags %}
-        <li><a href="#{{ tag | slugify }}">{{ tag }}</a></li>
+        {% for tag in site.tags %}
+        <li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
         {% endfor %}
     </ul>
 </div>
@@ -54,20 +23,23 @@ List all posts with a certain tag.
 {% endcomment %}
 
 <h1>Posts by tag:</h1>
-{% for tag in tags %}
-<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+{% for tag in site.tags %}
+<h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
 <ul>
-    {% for post in site.posts %}
-    {% if post.tags contains tag %}
+    {% for post in tag[1] %}
     <li>
         <h3>
             <a href="{{ post.url }}">
                 {{ post.title }} |
-                <small>{{ post.date | date_to_string }} [{{ post.category }}]</small>
             </a>
+                <small>{{ post.date | date_to_string }}
+                    {% if post.categories %}
+                    [{% for cat in post.categories %}<a href="/categories.html#{{ cat }}">{{cat}}</a>{% unless forloop.first == true %}, {% endunless %}{% endfor %}]
+                    {% endif %}
+                </small>
         </h3>
     </li>
-    {% endif %}
     {% endfor %}
 </ul>
 {% endfor %}
+

@@ -1,0 +1,14 @@
+<figure class="image">
+    {% capture url %}{%- unless include.url contains '://' -%}/assets/images/{%- endunless -%}{{ include.url }}{% endcapture %}
+    <div class="fig">
+        <a href="{{ url }}">
+            {%- assign smallImg = url | replace: ".", "-small." -%}
+            {%- assign pieces = url | split: "." -%}
+            <object data="{{ smallImg }}" type="image/{{ pieces.last }}">
+                <img src="{{ url }}" alt="{{ include.alt }}">
+            </object>
+        </a>
+    </div>
+    <figcaption>{{ include.description }}</figcaption>
+</figure>
+<!-- Credit https://stackoverflow.com/a/19360305 -->

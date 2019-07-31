@@ -23,8 +23,12 @@ layout: default
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"> | {{ page.author | escape }}</span></span>
             {%- endif -%}
         <span class="post-wordCount"> | Around {{ content | number_of_words | divided_by: 100 | round | times: 100 }} words</span>
-        {%- if page.category -%}
-        <span class="post-category"> | <a href="/categories.html#{{ page.category }}">{{ page.category }}</a></span>
+        {%- if page.categories -%}
+        <span class="post-category"> |
+            {% for cat in page.categories %}<a href="/categories.html#{{ cat }}">{{ cat }}</a>
+            {% unless forloop.first == true %}, {% endunless %}
+            {% endfor %}
+        </span>
         {%- endif -%}</p>
     </header>
 
