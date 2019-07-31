@@ -1,0 +1,15 @@
+/* Tweaks to main.css */
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.site-nav {
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+}
