@@ -5,7 +5,7 @@
             {%- assign smallImg = url | replace: ".", "-small." -%}
             {%- assign pieces = url | split: "." -%}
             <object data="{{ smallImg }}" type="image/{{ pieces.last }}">
-                <img src="{{ url }}" alt="{{ include.alt }}">
+                <img src="{{ url }}" alt="{{ include.alt | default: "Image" }}">
             </object>
         </a>
     </div>
