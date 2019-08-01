@@ -17,6 +17,9 @@ function showcaseJC(e) {
     showcase.appendChild(
         document.importNode(template.content, true)
     );
+
+    if(window.location.hash.substr(1) !== decodeURIComponent(e.currentTarget.value))
+        window.location.hash = "#" + decodeURIComponent(e.currentTarget.value);
 }
 
 const searchBar = document.getElementById("jcSearch");
@@ -28,3 +31,9 @@ if(window.location.hash) {
 
 // Activate the change for the first value
 searchBar.dispatchEvent(new Event("change"));
+
+// Tell search bar to update when hash updates
+window.addEventListener('hashchange', function() {
+    searchBar.value = window.location.hash.substr(1);
+    searchBar.dispatchEvent(new Event("change"));
+});
