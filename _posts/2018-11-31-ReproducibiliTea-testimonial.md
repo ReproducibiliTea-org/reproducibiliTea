@@ -13,4 +13,4 @@ Our sessions are usually run by graduates from the Department of Psychology but 
       
 The sessions have been lively, fun and informative, but it is the community which makes ReproducibiliTea so great, and who provide us with the motivation to make science great again.  
 
-{% include image.html url="blog/helena_QRPs.png" description="Helena Gellersen presenting at a ReproducibiliTea Cambridge journal club session." %}
+{% include image.html url="blog/helena_QRPs.png" alt="Helena Gellersen presents to ReproducibiliTea" description="Helena Gellersen presenting at a ReproducibiliTea Cambridge journal club session." %}

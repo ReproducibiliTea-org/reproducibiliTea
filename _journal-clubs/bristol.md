@@ -1,13 +1,13 @@
 ---
 
-title: Bristol
-host-organisation: University of Bristol
-host-org-url: https://www.bristol.ac.uk/
+title: Leeds
+host-organisation: Leeds University
+host-org-url: https://www.leeds.ac.uk/
 website:
 signup:
-organisers: [Katie Drax]
-contact: katie.drax@bristol.ac.uk
+organisers: [Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halabi]
+contact: E.A.Williams@leeds.ac.uk
 
 ---
 
-The University of Bristol ReproducibiliTea journal club - inspired by the original [Oxford club]({{"/journal-clubs/#Oxford" | relative_url}})
+The Leeds University ReproducibiliTea journal club. Check out the [blog post](https://leedsunilibrary.wordpress.com/2019/08/23/reproducibilitea-at-leeds/) for a flavour of the first two sessions!

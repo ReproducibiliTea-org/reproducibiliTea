@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Matt & Katie's first post"
-date:   2019-07-29 18:00:27 +0100
-categories: jekyll update
----
-
-Hello world! This is our first blog post, after much installing faff. 
-

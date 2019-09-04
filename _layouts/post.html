@@ -5,10 +5,35 @@ layout: default
 
     <header class="post-header">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        {%- comment -%}
+        =======================
+        Sort through the tags for the post and only keep tags which refer to at least 2 posts.
+        =======================
+        {%- endcomment -%}
         {%- if page.tags -%}
+            {%- assign tags = "" -%}
+            {%- for tag in page.tags -%}
+                {%- assign n = 0 -%}
+                {%- for p in site.posts -%}
+                    {%- for t in p.tags -%}
+                        {%- if t == tag -%}
+                            {%- assign n = n | plus: 1 -%}
+                        {%- endif -%}
+                    {%- endfor -%}
+                {%- endfor -%}
+
+                {%- if n > 1 -%}
+                    {%- assign tags = tags | append: tag | append: "|" -%}
+                {%- endif -%}
+            {%- endfor -%}
+
+            {%- assign tags = tags | split: "|" -%}
+        {%- endif -%}
+
+        {%- if tags -%}
         <div class="tag-list">
             <ul>
-                {%- for tag in page.tags -%}
+                {%- for tag in tags -%}
                 <li><a href="{{ "tags.html" | relative_url }}#{{tag}}">{{tag}}</a></li>
                 {%- endfor -%}
             </ul>
@@ -22,7 +47,15 @@ layout: default
             {%- if page.author -%}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"> {{ page.author | escape }}</span></span>
             {%- endif -%}
-        <span class="post-wordCount"> | Around {{ content | number_of_words | divided_by: 100 | round | times: 100 }} words</span>
+            {% assign x = content | number_of_words | divided_by: 100 | round | times: 100 %}
+            {% if x > 0 %}
+                {% capture wordCount %}
+                Around {{ x }} words
+                {% endcapture %}
+            {% else %}
+                {% assign wordCount = "Very short" %}
+            {% endif %}
+        <span class="post-wordCount"> | {{ wordCount }}</span>
         {%- if page.categories -%}
         <span class="post-category"> |
             {% for cat in page.categories %}<a href="/categories.html#{{ cat }}">{{ cat }}</a>
