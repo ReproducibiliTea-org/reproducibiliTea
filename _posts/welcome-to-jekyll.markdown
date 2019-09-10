@@ -31,3 +31,42 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+Austria
+
+    Graz, Psychology (Gaby Hofer and Hilmar Brohmer)
+
+Germany
+
+    Frankfurt, Psychology (Julia Beitner, Elli Zey)
+
+The Netherlands
+
+    Amsterdam, Psychology (Angelika Stefan, Florian Wanders, Sophia Crüwell)
+    Groningen, Psychiatry (Daan Ornée)
+
+Sweden
+
+    Stockholm, Karolinska Institutet (Robin Fondberg)
+
+United Kingdom
+
+    Bristol, General (Katie Drax)
+    Cambridge, Experimental Psychology (Ben Farrar: read more about his experience here)
+    Chester, General (Suzanne Stewart)
+    Glasgow (coming soon)
+    Kingston, Psychology (Emma Henderson)
+    Lancaster, Psychology (Marina Bazhydai)
+    Leeds, General (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
+    Manchester, General (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
+    Oxford, Experimental Psychology (Sam Parsons and Amy Orben)
+    Sheffield, General (James Shaw)
+    Southampton, Education (Sophie Hall, Christian Bokhove)
+    Surrey, General (Marta Topor, Henry Hebron, Katie Gilligan)
+    Swansea, Psychology (Laura Wilkinson)
+    UCL, Psychology (Emma Norris, Jessie Balwin and Tabea Schoeler)
+    York, Psychology (Emma James, Anna á Váli Guttesen)
+
+United States
+
+    Minnesota, General (Amy Riegelman, Alan Love)
