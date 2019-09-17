@@ -4,6 +4,7 @@ title: Oxford
 host-organisation: University of Oxford
 host-org-url: https://ox.ac.uk/
 website:
+twitter: ReproducibiliT
 signup:
 organisers: [Sam Parsons, Nils Reimer, Matt Jaquiery, Sarah Ashcroft-Jones, Sam Webb]
 contact: sam.parsons@psy.ox.ac.uk

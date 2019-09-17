@@ -99,6 +99,10 @@
 .jc-details {
     display: flex;
     flex-direction: column;
+    /* hanging indent */
+    text-indent: -1.4em;
+    padding-left: 1.4em;
+    word-break: break-all;
 }
 
 .jc-organisers {
