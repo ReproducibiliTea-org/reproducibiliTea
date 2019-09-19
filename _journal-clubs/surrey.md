@@ -13,6 +13,6 @@ ReproducibiliTea at the University of Surrey is run by PGRs and ECRs from the Su
   
 **Resources**  
 We take special care to collect a library of resources to aid independent learning of reproducible and open science methods in between society meetings. They can be found on our OSF page along with detailed notes from each society meeting.  
-Independent learning resources:  https://osf.io/4ahfw/  
-ReproducibiliTea notes:  https://osf.io/c3esj/  
-Workshops and demonstrations:  https://osf.io/svtr9/  
+* [Independent learning resources](https://osf.io/4ahfw/)  
+* [ReproducibiliTea notes](https://osf.io/c3esj/)  
+* [Workshops and demonstrations](https://osf.io/svtr9/)  
