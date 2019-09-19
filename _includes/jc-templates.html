@@ -34,7 +34,7 @@
             {% endif %}
 
             {% if jc.signup %}
-            <div class="icon-item" title="Signup"><i class="fas fa-envelope"></i> {{ jc.signup }}</div>
+            <div class="icon-item" title="Signup"><i class="fas fa-envelope"></i> <a href="{% if jc.signup contains '@' %}mailto:{% endif %}{{ jc.signup }}">{{ jc.signup }}</a></div>
             {% endif %}
 
             {% if jc.contact %}
