@@ -1,9 +1,9 @@
 ---
 title: Surrey
-host-organisation: 
-host-org-url: 
-website:
-signup:
+host-organisation: University of Surrey
+host-org-url: https://www.surrey.ac.uk/
+website: https://osf.io/a6xqu/
+signup: surrey_reproducibility@surrey.ac.uk 
 organisers: [Marta Topor, Henry Hebron, Katie Gilligan]
-contact: 
+contact: surrey_reproducibility@surrey.ac.uk, m.topor@surrey.ac.uk
 ---
