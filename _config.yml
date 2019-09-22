@@ -17,7 +17,7 @@ title: ReproducibiliTea
 email: your-email@example.com
 logo: /assets/images/reproducibiliTea_logo.jpg
 description: >- # this means to ignore newlines until "baseurl:"
-  We're currently building this site. Look for marvellous improvements in the near future!
+  Journal Clubs promoting Open and Reproducible Science // Early-Career Researcher Led // Building Community
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ReproducibiliT
