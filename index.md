@@ -14,45 +14,45 @@ Want to join the movement? Grab your cup of (Reproducibili)tea, a couple of frie
 Current Journal Clubs:
 
 **Austria**
-- Graz (Gaby Hofer and Hilmar Brohmer)
+- [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
 
 **Germany**
-- Frankfurt (Julia Beitner, Elli Zey)
+- [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
 
 **The Netherlands**
-- Amsterdam (Angelika Stefan, Florian Wanders)
-- Groningen (Daan Ornée)
-- Leiden (Ricci Proppert)
-- Rotterdam (Antonio Schettino)
+- [Amsterdam]({{ "/journal-clubs/#Amsterdam" | relative_url }}) (Angelika Stefan, Florian Wanders)
+- [Groningen]({{ "/journal-clubs/#Groningen" | relative_url }}) (Daan Ornée)
+- [Leiden]({{ "/journal-clubs/#Leiden" | relative_url }}) (Ricci Proppert)
+- [Rotterdam]({{ "/journal-clubs/#Rotterdam" | relative_url }}) (Antonio Schettino)
 
 **Singapore**
 - Singapore, Nanyang Technical University (Alexa von Hagen)
 
 **Sweden**
-- Stockholm, Karolinska Institutet (Robin Fondberg)
+- [Stockholm]({{ "/journal-clubs/#Stockholm" | relative_url }}), Karolinska Institutet (Robin Fondberg)
 
 **Switzerland**
-- Zurich (Information available soon!)
+- [Zurich]({{ "/journal-clubs/#Zurich" | relative_url }}) (Information available soon!)
 
 **United Kingdom** 
-- Aberdeen (Jessica Butler, Annesha Sil)
-- Bristol, University of Brisol (Katie Drax)
+- [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
+- [Bristol]({{ "/journal-clubs/#Bristol" | relative_url }}), University of Brisol (Katie Drax)
 - Bristol, UWE (Information available soon!)
-- Cambridge (Ben Farrar: read more about his experience [here][8]) 
-- Chester (Suzanne Stewart)
-- Glasgow (Stephanie Allan)
-- Kingston (Emma Henderson)
-- Lancaster (Marina Bazhydai)
-- Leeds (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
-- London, UCL (Emma Norris, Jessie Balwin and Tabea Schoeler)
-- Manchester (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
-- Oxford (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
-- Sheffield (James Shaw)
-- Southampton (Sophie Hall, Christian Bokhove)
-- Surrey (Marta Topor, Henry Hebron, Katie Gilligan)
-- Swansea (Laura Wilkinson)
-- York (Emma James, Anna á Váli Guttesen)
+- [Cambridge]({{ "/journal-clubs/#Cambridge" | relative_url }}) (Ben Farrar: read more about his experience [here][8]) 
+- [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
+- [Glasgow]({{ "/journal-clubs/#Glasgow" | relative_url }}) (Stephanie Allan)
+- [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
+- [Lancaster]({{ "/journal-clubs/#Lancaster" | relative_url }}) (Marina Bazhydai)
+- [Leeds]({{ "/journal-clubs/#Leeds" | relative_url }}) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
+- London, [UCL]({{ "/journal-clubs/#London" | relative_url }}) (Emma Norris, Jessie Balwin and Tabea Schoeler)
+- [Manchester]({{ "/journal-clubs/#Manchester" | relative_url }}) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
+- [Oxford]({{ "/journal-clubs/#Oxford" | relative_url }}) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
+- [Sheffield]({{ "/journal-clubs/#Sheffield" | relative_url }}) (James Shaw)
+- [Southampton]({{ "/journal-clubs/#Southampton" | relative_url }}) (Sophie Hall, Christian Bokhove)
+- [Surrey]({{ "/journal-clubs/#Surrey" | relative_url }}) (Marta Topor, Henry Hebron, Katie Gilligan)
+- [Swansea]({{ "/journal-clubs/#Swansea" | relative_url }}) (Laura Wilkinson)
+- [York]({{ "/journal-clubs/#York" | relative_url }}) (Emma James, Anna á Váli Guttesen)
 
 **United States**
-- Minnesota (Amy Riegelman, Alan Love)
+- [Minnesota]({{ "/journal-clubs/#Minnesota" | relative_url }}) (Amy Riegelman, Alan Love)
 
