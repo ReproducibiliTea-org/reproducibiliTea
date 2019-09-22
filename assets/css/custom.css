@@ -77,11 +77,12 @@
 }
 
 /* Journal club details */
-
 .jc-showcase {
+    margin-top: 2em;
+}
+.jc-showcase:not(.placeholder) {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
 }
 
 .jc-body {

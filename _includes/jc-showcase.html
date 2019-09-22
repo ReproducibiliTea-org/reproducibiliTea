@@ -20,9 +20,14 @@
 </div>
 
 <!-- Showcase for results -->
+{% if include.showcase-id %}
 <article class="post h-entry jc-showcase {{ include.showcase-id }}" id="jcShowcase" itemscope itemtype="http://schema.org/BlogPosting">
 
 </article>
+{% else %}
+{% include jc-placeholder.html %}
+{% endif %}
+
 
 <!-- Script -->
 <script src="/assets/js/jc-showcase.js" type="text/javascript"></script>
