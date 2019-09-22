@@ -1,9 +1,9 @@
 ---
 title: Chester
-host-organisation: 
-host-org-url: 
-website:
-signup:
+host-organisation: University of Chester
+host-org-url: https://www1.chester.ac.uk/
+website: NA
+signup: https://chester.onlinesurveys.ac.uk/cora
 organisers: [Suzanne Stewart]
-contact: 
+contact: s.stewart@chester.ac.uk
 ---
