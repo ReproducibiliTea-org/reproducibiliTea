@@ -4,25 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Here we'll describe the whole ReproducibiliTea effort, what it is, what it aims to achieve, etc. We also mention the library, podcast, etc. We'll deal with the webinars later.
+ReproducibiliTea journal clubs help young researchers build a community of ECRs interested in open and reproducible research. It can be isolating to be one of the few within a research group, or department, that are actively engaged in improving research practices. In the ReproducibiliTea Journal Club, papers are selected that are broadly relevant to the replication crisis and the emerging credibility revolution to be discussed on a weekly basis during term time. The ReproducibiliTea Journal Club has proven to be a success in Oxford and has received International recognition. There are now more than 27 other ReproducibiliTea Journal Clubs registered to date, with more joining at an increasingly faster rate. 
 
-We'll also thank our sponsors, like [UKRN <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/).
+Thank you to our sponsers: [UKRN <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/).
 
-# Resources
+## ReproducibiliTeam
 
-## Journal Club papers
+The ReproducibiliTea parent organisation in run by a group of ECR volunteers: Amy Orben, Sam Parsons, Sophie Crüwell, Jade Pickering, Matt Jaquiery and Katie Drax. 
 
-We maintain a [central Zotero library <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://www.zotero.org/groups/2354006/reproducibilitea/items/) with collections for each individual journal club, as well as a folder of suggestions for [introductory papers <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/5EMUTRWM) for the first few journal clubs.
+## Podcast
 
-## Podcasts
+The ReproducibiliTea Co-Founders (Sam, Sophia and Amy) regularly resease ReproducibiliTea podcast episodes, highlighting the great work of early career researchers in Open Science. To listen in check out the podcast webpage at [soundcloud <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://soundcloud.com/reproducibilitea).
 
-To hear the latest reproducibiliTea discussions, with Amy, Sam, Sophia, and guests, check out the podcast webpage at [soundcloud <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://soundcloud.com/reproducibilitea).
 
-## Other resources
-
-Various other resources are hosted with the [OSF <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://osf.io/3qrj6/wiki/home/). Here you'll find:
-* A [welcome letter <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://mfr.de-1.osf.io/render?url=https://osf.io/uhbgt/?action=download&mode=render) about ReproducibiliTea
-* The [ReproducibiliTea logo <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://osf.io/68dmq/)
-* Various ReproducibiliTea [poster templates <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://osf.io/3zw8g/)
-* A sample [checklist <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://osf.io/t5y2q/) for organising your own Journal Club
-* And much much more...
