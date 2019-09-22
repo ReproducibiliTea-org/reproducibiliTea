@@ -12,6 +12,7 @@ We are a grassroots [journal club initiative](/about/) that helps young research
 Want to join the movement? Grab your cup of (Reproducibili)tea, a couple of friends and use our freely accessible and adaptable materials to organise your own [journal club](/journal-clubs/) today. 
 
 Current Journal Clubs:
+
 **Austria**
 - Graz (Gaby Hofer and Hilmar Brohmer)
 
