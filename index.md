@@ -20,7 +20,7 @@ Current Journal Clubs:
 - Frankfurt (Julia Beitner, Elli Zey)
 
 **The Netherlands**
-- Amsterdam (Angelika Stefan, Florian Wanders, Sophia Crüwell)
+- Amsterdam (Angelika Stefan, Florian Wanders)
 - Groningen (Daan Ornée)
 - Leiden (Ricci Proppert)
 - Rotterdam (Antonio Schettino)
@@ -46,7 +46,7 @@ Current Journal Clubs:
 - Leeds (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
 - London, UCL (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - Manchester (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
-- Oxford (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson)
+- Oxford (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
 - Sheffield (James Shaw)
 - Southampton (Sophie Hall, Christian Bokhove)
 - Surrey (Marta Topor, Henry Hebron, Katie Gilligan)
