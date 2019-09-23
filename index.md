@@ -39,7 +39,7 @@ Current Journal Clubs:
 **United Kingdom** 
 - [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
 - [Bristol]({{ "/journal-clubs/#Bristol" | relative_url }}), University of Brisol (Katie Drax)
-- Bristol, UWE (Charlotte Pennington)
+- Bristol, [UWE]({{ "/journal-clubs/#UWE, Bristol" | relative_url }}) (Charlotte Pennington)
 - [Cambridge]({{ "/journal-clubs/#Cambridge" | relative_url }}) (Ben Farrar: read more about his experience [here][8]) 
 - [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
 - [Glasgow]({{ "/journal-clubs/#Glasgow" | relative_url }}) (Stephanie Allan)

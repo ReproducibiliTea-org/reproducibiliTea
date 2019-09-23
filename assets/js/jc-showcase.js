@@ -34,6 +34,6 @@ searchBar.dispatchEvent(new Event("change"));
 
 // Tell search bar to update when hash updates
 window.addEventListener('hashchange', function() {
-    searchBar.value = window.location.hash.substr(1);
+    searchBar.value = decodeURIComponent(window.location.hash.substr(1));
     searchBar.dispatchEvent(new Event("change"));
 });
