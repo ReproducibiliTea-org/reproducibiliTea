@@ -4,9 +4,11 @@ title: About
 permalink: /about/
 ---
 
-ReproducibiliTea journal clubs help young researchers build a local community of ECRs interested in open and reproducible research. It can be isolating to be one of the few within a research group, or department, that are actively engaged in improving research practices. ReproducibiliTea helps researchers who want to change this. 
+ReproducibiliTea journal clubs help young researchers build a local community of ECRs interested in open and reproducible research. It can be very isolating to be one of the few within a research group, or department, that are actively engaged or interested in improving research practices. ReproducibiliTea helps researchers who want to change this.
 
-In the ReproducibiliTea Journal Club, papers are selected that are broadly relevant to the replication crisis and scientific improvements. They are then discussed during regular journal club meetings. The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it was founded, and has received widespread international recognition. There are now more than 27 other ReproducibiliTea Journal Clubs registered to date, with more joining at an increasingly faster rate. 
+We all know how horrible it can be to jump through annoying administrative hurdles or dodge financial barriers to ultimately try to make a positive change. Setting up a ReproducibiliTea Journal Club is easy, free and does not need any admin approval. In a ReproducibiliTea Journal Club, papers are selected that are broadly relevant to the replication crisis and scientific improvements. The journal club is advertised around the department or university, raising awareness of reproducibility and Open Science in the process. The chosen papers are then discussed during regular journal club meetings, often over cups of tea, lunch or snacks. 
+
+The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it was founded, and has received widespread international recognition. There are now more than 27 other ReproducibiliTea Journal Clubs registered to date, with more joining at an increasingly faster rate. 
 
 Thank you to our current sponsor: [UKRN <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/).
 
