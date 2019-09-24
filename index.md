@@ -5,7 +5,7 @@
 layout: default
 ---
 
-Welcome to **ReproducibiliTea**
+# **Welcome to ReproducibiliTea**
 
 We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 27 universities in 8 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
@@ -13,7 +13,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 
 
-Current Journal Clubs:
+# Current Journal Clubs
 
 **Austria**
 - [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
@@ -38,7 +38,7 @@ Current Journal Clubs:
 
 **United Kingdom** 
 - [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
-- [Bristol]({{ "/journal-clubs/#Bristol" | relative_url }}), University of Bristol (Katie Drax)
+- Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol" | relative_url }}) (Katie Drax)
 - Bristol, [UWE]({{ "/journal-clubs/#UWE, Bristol" | relative_url }}) (Charlotte Pennington)
 - [Cambridge]({{ "/journal-clubs/#Cambridge" | relative_url }}) (Ben Farrar: read more about his experience [here][8]) 
 - [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
