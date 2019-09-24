@@ -38,9 +38,9 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **United Kingdom** 
 - [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
-- Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol" | relative_url }}) (Katie Drax)
+- Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol, University of Bristol" | relative_url }}) (Katie Drax)
 - Bristol, [UWE]({{ "/journal-clubs/#UWE, Bristol" | relative_url }}) (Charlotte Pennington)
-- [Cambridge]({{ "/journal-clubs/#Cambridge" | relative_url }}) (Ben Farrar: read more about his experience [here][8]) 
+- [Cambridge]({{ "/journal-clubs/#Cambridge" | relative_url }}) (Ben Farrar: read more about his experience [here]({{ "/_posts/#"ReproducibiliTea testimonial"" | relative_url }})) 
 - [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
 - [Glasgow]({{ "/journal-clubs/#Glasgow" | relative_url }}) (Stephanie Allan)
 - [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
