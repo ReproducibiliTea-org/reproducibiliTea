@@ -1,3 +1,15 @@
+/* Footer */
+
+.sponsors {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.sponsors .thanks {
+    align-self: center;
+}
+
 /* Person.html */
 .person {
     position: relative;
