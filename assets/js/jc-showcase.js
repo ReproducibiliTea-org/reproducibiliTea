@@ -13,6 +13,7 @@ function showcaseJC(e) {
         return;
 
     showcase.innerHTML = "";
+    showcase.classList.remove('placeholder');
 
     showcase.appendChild(
         document.importNode(template.content, true)
