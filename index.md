@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 27 universities in 8 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 31 universities in 11 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today. 
 
@@ -18,8 +18,14 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Austria**
 - [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
 
+**Denamrk**
+- Copenhagen (Niels Menezes)
+
 **Germany**
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
+
+**Japan**
+- Kuyushu University (Yuki Yamada)
 
 **The Netherlands**
 - [Amsterdam]({{ "/journal-clubs/#Amsterdam" | relative_url }}) (Angelika Stefan, Florian Wanders)
@@ -36,6 +42,9 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Switzerland**
 - [Zurich]({{ "/journal-clubs/#Zurich" | relative_url }}) (Information available soon!)
 
+**Taiwan**
+- Taipei (Niall Duncan)
+
 **United Kingdom** 
 - [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
 - Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol, University of Bristol" | relative_url }}) (Katie Drax)
@@ -46,6 +55,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
 - [Lancaster]({{ "/journal-clubs/#Lancaster" | relative_url }}) (Marina Bazhydai)
 - [Leeds]({{ "/journal-clubs/#Leeds" | relative_url }}) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
+- Leicester (Samantha Tyler, Tami Kalsi)
 - London, [UCL]({{ "/journal-clubs/#University College London" | relative_url }}) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester]({{ "/journal-clubs/#Manchester" | relative_url }}) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford]({{ "/journal-clubs/#Oxford" | relative_url }}) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
