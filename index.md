@@ -25,7 +25,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
 
 **Japan**
-- Kuyushu University (Yuki Yamada)
+- Kyushu University (Yuki Yamada)
 
 **The Netherlands**
 - [Amsterdam]({{ "/journal-clubs/#Amsterdam" | relative_url }}) (Angelika Stefan, Florian Wanders)
