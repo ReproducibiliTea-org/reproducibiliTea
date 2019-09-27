@@ -16,7 +16,7 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 
 ## ReproducibiliTeam
 
-The ReproducibiliTea parent organisation in run by a group of ECR volunteers: Amy Orben, Sam Parsons, Sophia Crüwell, Jade Pickering, Matt Jaquiery and Katie Drax. 
+The ReproducibiliTea parent organisation is run by a group of ECR volunteers: Amy Orben, Sam Parsons, Sophia Crüwell, Jade Pickering, Matt Jaquiery and Katie Drax. 
 
 ## Podcast
 
