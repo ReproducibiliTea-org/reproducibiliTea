@@ -55,7 +55,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
 - [Lancaster]({{ "/journal-clubs/#Lancaster" | relative_url }}) (Marina Bazhydai)
 - [Leeds]({{ "/journal-clubs/#Leeds" | relative_url }}) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
-- Leicester (Samantha Tyler, Tami Kalsi)
+- [Leicester]({{ "/journal-clubs/#Leicester" | relative_url }}) (Samantha Tyler, Tami Kalsi)
 - London, [UCL]({{ "/journal-clubs/#University College London" | relative_url }}) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester]({{ "/journal-clubs/#Manchester" | relative_url }}) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford]({{ "/journal-clubs/#Oxford" | relative_url }}) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
