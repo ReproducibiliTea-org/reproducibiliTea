@@ -14,7 +14,7 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 
 Our current sponsor is the [UK Reproducibility Network (UKRN) <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/). The UKRN is a peer-led consortium which investigates how to conduct robust research, provide training, and disseminate best practice. Follow them on Twitter [@ukrepro](https://twitter.com/ukrepro).
 
-{% include image.html url="images/UKRN-logo.jpeg" alt="UKRN" %}
+{% include image.html url="UKRN-logo.jpeg" alt="UKRN" %}
 
 ## ReproducibiliTeam
 
