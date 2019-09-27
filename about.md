@@ -10,7 +10,11 @@ We all know how horrible it can be to jump through annoying administrative hurdl
 
 The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it was founded, and has received widespread international recognition. There are now more than 27 other ReproducibiliTea Journal Clubs registered to date, with more joining at an increasingly faster rate. 
 
-Thank you to our current sponsor: [UKRN <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/).
+## Our sponsors
+
+Our current sponsor is the [UK Reproducibility Network (UKRN) <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://ukrn.org/). The UKRN is a peer-led consortium which investigates how to conduct robust research, provide training, and disseminate best practice. Follow them on Twitter [@ukrepro](https://twitter.com/ukrepro).
+
+{% include image.html url="images/UKRN-logo.jpeg" alt="UKRN" %}
 
 ## ReproducibiliTeam
 
