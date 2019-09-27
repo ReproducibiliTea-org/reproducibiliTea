@@ -123,6 +123,16 @@
     flex-direction: column;
 }
 
+/* Sponsors */
+.sponsor {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 1em;
+}
+.sponsor .logo {
+    align-self: center;
+}
+
 @media screen and (max-width: 800px) {
     .jc-showcase {
         flex-wrap: wrap;

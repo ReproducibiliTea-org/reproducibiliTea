@@ -24,6 +24,7 @@ twitter_username: ReproducibiliT
 
 collections:
   - journal-clubs
+  - sponsors
 
 # Build settings
 markdown: kramdown
