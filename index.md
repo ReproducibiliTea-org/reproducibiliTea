@@ -28,7 +28,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
 
 **India**
-- Virtual journal club organised by bioclues.org (Prashanth N Suravajhala)
+- Virtual journal club organised by bioclues.org (Prash and  Team  Bioclues.org)
 
 **Japan**
 - Kyushu University (Yuki Yamada)
