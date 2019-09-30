@@ -18,7 +18,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Austria**
 - [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
 
-**Denamrk**
+**Denmark**
 - Copenhagen (Niels Menezes)
 
 **Germany**

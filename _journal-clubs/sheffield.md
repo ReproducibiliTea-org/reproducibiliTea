@@ -16,11 +16,17 @@ If you're a student, early career researcher or staff, please [do come and join 
 
 Information Commons Collaboratory 1
 
-#### 1pm Thursday 24 November
+[Is the Replicability Crisis Overblown? Three Arguments Examined](https://doi.org/10.1177/1745691612463401)
+
+#### 1pm Thursday 14 November
 
 Pam Liversidge E06
+
+[Is science really facing a reproducibility crisis, and do we need it to?](https://doi.org/10.1073/pnas.1708272114)
 
 #### 1pm Tuesday 10 December
 
 Jessop Ensemble Room 1
+
+[Reproducible and Replicable Computational Fluid Dynamics: It’s Harder Than You Think](https://doi.org/10.1109/MCSE.2017.3151254)
 
