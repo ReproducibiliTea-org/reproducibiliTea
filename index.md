@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 31 universities in 11 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 34 institutions in 13 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today. 
 
@@ -18,11 +18,17 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Austria**
 - [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
 
+**Czech Republic**
+- Olomouc, Palacký University (Tomas Heger)
+
 **Denmark**
 - Copenhagen (Niels Menezes)
 
 **Germany**
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
+
+**India**
+- Virtual journal club organised by bioclues.org (Prashanth N Suravajhala)
 
 **Japan**
 - Kyushu University (Yuki Yamada)
@@ -37,6 +43,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - Singapore, Nanyang Technical University (Alexa von Hagen)
 
 **Sweden**
+- Linköping (Lina Koppel, Henrik Danielsson)
 - [Stockholm]({{ "/journal-clubs/#Stockholm" | relative_url }}), Karolinska Institutet (Robin Fondberg)
 
 **Switzerland**
