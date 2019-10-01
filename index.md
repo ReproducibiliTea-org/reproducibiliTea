@@ -19,7 +19,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
 
 **Czech Republic**
-- Olomouc, Palacký University (Tomas Heger)
+- [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
 
 **Denmark**
 - Copenhagen (Niels Menezes)
@@ -28,7 +28,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
 
 **India**
-- Virtual journal club organised by bioclues.org (Prash and  Team  Bioclues.org)
+- [Virtual journal club organised by bioclues.org]({{ "/journal-clubs/#Bioclues.org" | relative_url }}) (Prash and  Team  Bioclues.org)
 
 **Japan**
 - Kyushu University (Yuki Yamada)
