@@ -32,7 +32,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - Copenhagen (Niels Menezes)
 
 **Germany**
-- Berlin (coming soon!)
+- [Berlin]({{ "/journal-clubs/#Berlin" | relative_url }}) (Sophia Crüwell, Corinna Hartling, An Bin Cho)
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
 - [Wuerzburg]({{ "/journal-clubs/#Wuerzburg" | relative_url }}) (Lea Hildebrandt, Eda Kir, Patrick Kaschel)
 
