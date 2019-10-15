@@ -11,8 +11,6 @@ We are a grassroots [journal club initiative](/about/) that helps young research
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
-
-
 # Current Journal Clubs
 
 **Austria**
@@ -23,7 +21,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Canada**
 - [McMaster]({{ "/journal-clubs/#McMaster" | relative_url }}) (Matthew Jordan, Michael Galang)
-- Toronto (York University, coming soon!)
+- [Toronto]({{ "/journal-clubs/#Toronto" | relative_url }}), York University (Mark Adkins, Stephan Bonfield)
 
 **Czech Republic**
 - [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
