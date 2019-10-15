@@ -23,6 +23,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Canada**
 - McMaster (coming soon!)
+- Toronto (York University, coming soon!)
 
 **Czech Republic**
 - [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
@@ -83,5 +84,5 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **United States**
 - [Minnesota]({{ "/journal-clubs/#Minnesota" | relative_url }}) (Amy Riegelman, Alan Love)
-- Virginia (Coming soon!)
+- Virginia (coming soon!)
 
