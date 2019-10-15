@@ -22,7 +22,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - Leuven (coming soon!)
 
 **Canada**
-- McMaster (coming soon!)
+- [McMaster]({{ "/journal-clubs/#McMaster" | relative_url }}) (Matthew Jordan, Michael Galang)
 
 **Czech Republic**
 - [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
@@ -33,7 +33,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Germany**
 - Berlin (coming soon!)
 - [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
-- Würzburg (coming soon!)
+- [Wuerzburg]({{ "/journal-clubs/#Wuerzburg" | relative_url }}) (Lea Hildebrandt, Eda Kir, Patrick Kaschel)
 
 **India**
 - [Virtual journal club organised by bioclues.org]({{ "/journal-clubs/#Bioclues.org" | relative_url }}) (Prash and  Team  Bioclues.org)
@@ -82,6 +82,6 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [York]({{ "/journal-clubs/#York" | relative_url }}) (Emma James, Anna á Váli Guttesen)
 
 **United States**
+- [Charlottesville]({{ "/journal-clubs/#Charlottesville" | relative_url }}), University of Virginia (Brian Nosek, Nick Buttrick)
 - [Minnesota]({{ "/journal-clubs/#Minnesota" | relative_url }}) (Amy Riegelman, Alan Love)
-- Virginia (Coming soon!)
 
