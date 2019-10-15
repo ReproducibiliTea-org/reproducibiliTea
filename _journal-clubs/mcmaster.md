@@ -20,11 +20,6 @@ contact: jordanml@mcmaster.ca
 Address: Psychology, McMaster University, 1280 Main St. W., L8S 4K1, Hamilton, Ontario, Canada
 
 ---
-McMaster is excited to host Canada's first ReproducibiliTea journal club. We will begin meeting in January 2020 to discuss how we can help make science transparent, reproducible, and cumulative.
+Welcome to the McMaster ReproducibiliTea journal club! We will begin meeting in January 2020 to discuss how we can help make science transparent, reproducible, and cumulative.
 
-**Inclusivity:**
-Everyone is welcome to join us - skeptics and enthusiasts alike!
-
-We welcome undergraduates, graduate students, faculty, and staff from all departments and background, and hope to hear views from all perspectives.
-
-Your voice is welcome here, and we offer a friendly atmosphere!
+Everyone is welcome to join us - skeptics and enthusiasts alike! We welcome undergraduates, graduate students, faculty, and staff from all departments and background, and hope to hear views from all perspectives.
