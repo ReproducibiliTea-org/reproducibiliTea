@@ -9,7 +9,7 @@ layout: default
 
 We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 40 institutions in 15 different countries, spanning 3 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
-Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today. 
+Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
 
 
@@ -23,6 +23,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Canada**
 - [McMaster]({{ "/journal-clubs/#McMaster" | relative_url }}) (Matthew Jordan, Michael Galang)
+- Toronto (York University, coming soon!)
 
 **Czech Republic**
 - [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
@@ -60,11 +61,11 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Taiwan**
 - Taipei (Niall Duncan)
 
-**United Kingdom** 
+**United Kingdom**
 - [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
 - Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol, University of Bristol" | relative_url }}) (Katie Drax)
 - Bristol, [UWE]({{ "/journal-clubs/#UWE, Bristol" | relative_url }}) (Charlotte Pennington)
-- [Cambridge]({{ "/journal-clubs/#Cambridge ExPsy" | relative_url }}) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %})) 
+- [Cambridge]({{ "/journal-clubs/#Cambridge ExPsy" | relative_url }}) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
 - [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
 - [Glasgow]({{ "/journal-clubs/#Glasgow" | relative_url }}) (Stephanie Allan)
 - [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
@@ -84,4 +85,3 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **United States**
 - [Charlottesville]({{ "/journal-clubs/#Charlottesville" | relative_url }}), University of Virginia (Brian Nosek, Nick Buttrick)
 - [Minnesota]({{ "/journal-clubs/#Minnesota" | relative_url }}) (Amy Riegelman, Alan Love)
-
