@@ -73,7 +73,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - London, [UCL]({{ "/journal-clubs/#University College London" | relative_url }}) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester]({{ "/journal-clubs/#Manchester" | relative_url }}) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford]({{ "/journal-clubs/#Oxford" | relative_url }}) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
-- Portsmouth (coming soon!)
+- [Portsmouth]({{ "/journal-clubs/#Portsmouth" | relative_url }}) (James Clay)
 - [Sheffield]({{ "/journal-clubs/#Sheffield" | relative_url }}) (James Shaw)
 - [Southampton]({{ "/journal-clubs/#Southampton" | relative_url }}) (Sophie Hall, Christian Bokhove)
 - [Surrey]({{ "/journal-clubs/#Surrey" | relative_url }}) (Marta Topor, Henry Hebron, Katie Gilligan)
