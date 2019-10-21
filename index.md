@@ -14,73 +14,73 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 # Current Journal Clubs
 
 **Austria**
-- [Graz]({{ "/journal-clubs/#Graz" | relative_url }}) (Gaby Hofer and Hilmar Brohmer)
+- [Graz](/journal-clubs/#Graz) (Gaby Hofer and Hilmar Brohmer)
 
 **Belgium**
 - Leuven (coming soon!)
 
 **Canada**
-- [McMaster]({{ "/journal-clubs/#McMaster" | relative_url }}) (Matthew Jordan, Michael Galang)
-- [Toronto]({{ "/journal-clubs/#Toronto" | relative_url }}), York University (Mark Adkins, Stephan Bonfield)
+- [McMaster](/journal-clubs/#McMaster) (Matthew Jordan, Michael Galang)
+- [Toronto](/journal-clubs/#Toronto), York University (Mark Adkins, Stephan Bonfield)
 
 **Czech Republic**
-- [Olomouc]({{ "/journal-clubs/#Olomouc" | relative_url }}), Palacký University (Tomas Heger and Martin Vondrak)
+- [Olomouc](/journal-clubs/#Olomouc), Palacký University (Tomas Heger and Martin Vondrak)
 
 **Denmark**
 - Copenhagen (Niels Menezes)
 
 **Germany**
-- [Berlin]({{ "/journal-clubs/#Berlin" | relative_url }}) (Sophia Crüwell, Corinna Hartling, An Bin Cho)
-- [Frankfurt]({{ "/journal-clubs/#Frankfurt" | relative_url }}) (Julia Beitner, Elli Zey)
-- [Wuerzburg]({{ "/journal-clubs/#Wuerzburg" | relative_url }}) (Lea Hildebrandt, Eda Kir, Patrick Kaschel)
+- [Berlin](/journal-clubs/#Berlin) (Sophia Crüwell, Corinna Hartling, An Bin Cho)
+- [Frankfurt](/journal-clubs/#Frankfurt) (Julia Beitner, Elli Zey)
+- [Wuerzburg](/journal-clubs/#Wuerzburg) (Lea Hildebrandt, Eda Kir, Patrick Kaschel)
 
 **India**
-- [Virtual journal club organised by bioclues.org]({{ "/journal-clubs/#Bioclues.org" | relative_url }}) (Prash and  Team  Bioclues.org)
+- [Virtual journal club organised by bioclues.org](/journal-clubs/#Biocluesl }}) (Prash and  Team  Bioclues.org)
 
 **Japan**
-- [Fukuoka]({{ "/journal-clubs/#Fukuoka" | relative_url }}), Kyushu University (Yuki Yamada)
+- [Fukuoka](/journal-clubs/#Fukuoka), Kyushu University (Yuki Yamada)
 
 **The Netherlands**
-- [Amsterdam]({{ "/journal-clubs/#Amsterdam" | relative_url }}) (Angelika Stefan, Florian Wanders)
-- [Groningen]({{ "/journal-clubs/#Groningen" | relative_url }}) (Daan Ornée)
-- [Leiden]({{ "/journal-clubs/#Leiden" | relative_url }}) (Ricci Proppert)
-- [Rotterdam]({{ "/journal-clubs/#Rotterdam" | relative_url }}) (Antonio Schettino)
+- [Amsterdam](/journal-clubs/#Amsterdam) (Angelika Stefan, Florian Wanders)
+- [Groningen](/journal-clubs/#Groningen) (Daan Ornée)
+- [Leiden](/journal-clubs/#Leiden) (Ricci Proppert)
+- [Rotterdam](/journal-clubs/#Rotterdam) (Antonio Schettino)
 
 **Singapore**
 - Singapore, Nanyang Technical University (Alexa von Hagen)
 
 **Sweden**
 - Linköping (Lina Koppel, Henrik Danielsson)
-- [Stockholm]({{ "/journal-clubs/#Stockholm" | relative_url }}), Karolinska Institutet (Robin Fondberg)
+- [Stockholm](/journal-clubs/#Stockholm), Karolinska Institutet (Robin Fondberg)
 
 **Switzerland**
-- [Zurich]({{ "/journal-clubs/#Zurich" | relative_url }}) (Information available soon!)
+- [Zurich](/journal-clubs/#Zurich) (Information available soon!)
 
 **Taiwan**
 - Taipei (Niall Duncan)
 
 **United Kingdom**
-- [Aberdeen]({{ "/journal-clubs/#Aberdeen" | relative_url }}) (Jessica Butler, Annesha Sil)
-- Bristol, [University of Bristol]({{ "/journal-clubs/#Bristol, University of Bristol" | relative_url }}) (Katie Drax)
-- Bristol, [UWE]({{ "/journal-clubs/#UWE, Bristol" | relative_url }}) (Charlotte Pennington)
-- [Cambridge]({{ "/journal-clubs/#Cambridge ExPsy" | relative_url }}) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
-- [Chester]({{ "/journal-clubs/#Chester" | relative_url }}) (Suzanne Stewart)
-- [Glasgow]({{ "/journal-clubs/#Glasgow" | relative_url }}) (Stephanie Allan)
-- [Kingston]({{ "/journal-clubs/#Kingston" | relative_url }}) (Emma Henderson)
-- [Lancaster]({{ "/journal-clubs/#Lancaster" | relative_url }}) (Marina Bazhydai)
-- [Leeds]({{ "/journal-clubs/#Leeds" | relative_url }}) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
-- [Leicester]({{ "/journal-clubs/#Leicester" | relative_url }}) (Samantha Tyler, Tami Kalsi)
-- London, [UCL]({{ "/journal-clubs/#University College London" | relative_url }}) (Emma Norris, Jessie Balwin and Tabea Schoeler)
-- [Manchester]({{ "/journal-clubs/#Manchester" | relative_url }}) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
-- [Oxford]({{ "/journal-clubs/#Oxford" | relative_url }}) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
-- [Portsmouth]({{ "/journal-clubs/#Portsmouth" | relative_url }}) (James Clay)
-- [Sheffield]({{ "/journal-clubs/#Sheffield" | relative_url }}) (James Shaw)
-- [Southampton]({{ "/journal-clubs/#Southampton" | relative_url }}) (Sophie Hall, Christian Bokhove)
-- [Surrey]({{ "/journal-clubs/#Surrey" | relative_url }}) (Marta Topor, Henry Hebron, Katie Gilligan)
+- [Aberdeen](/journal-clubs/#Aberdeen) (Jessica Butler, Annesha Sil)
+- Bristol, [University of Bristol](/journal-clubs/#Bristol, University of Bristol) (Katie Drax)
+- Bristol, [UWE](/journal-clubs/#UWE, Bristol) (Charlotte Pennington)
+- [Cambridge](/journal-clubs/#Cambridge ExPsy) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
+- [Chester](/journal-clubs/#Chester) (Suzanne Stewart)
+- [Glasgow](/journal-clubs/#Glasgow) (Stephanie Allan)
+- [Kingston](/journal-clubs/#Kingston) (Emma Henderson)
+- [Lancaster](/journal-clubs/#Lancaster) (Marina Bazhydai)
+- [Leeds](/journal-clubs/#Leeds) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
+- [Leicester](/journal-clubs/#Leicester) (Samantha Tyler, Tami Kalsi)
+- London, [UCL](/journal-clubs/#University College London) (Emma Norris, Jessie Balwin and Tabea Schoeler)
+- [Manchester](/journal-clubs/#Manchester) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
+- [Oxford](/journal-clubs/#Oxford) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
+- [Portsmouth](/journal-clubs/#Portsmouth) (James Clay)
+- [Sheffield](/journal-clubs/#Sheffield) (James Shaw)
+- [Southampton](/journal-clubs/#Southampton) (Sophie Hall, Christian Bokhove)
+- [Surrey](/journal-clubs/#Surrey) (Marta Topor, Henry Hebron, Katie Gilligan)
 - Sussex (Coming soon!)
-- [Swansea]({{ "/journal-clubs/#Swansea" | relative_url }}) (Laura Wilkinson)
-- [York]({{ "/journal-clubs/#York" | relative_url }}) (Emma James, Anna á Váli Guttesen)
+- [Swansea](/journal-clubs/#Swansea) (Laura Wilkinson)
+- [York](/journal-clubs/#York) (Emma James, Anna á Váli Guttesen)
 
 **United States**
-- [Charlottesville]({{ "/journal-clubs/#Charlottesville" | relative_url }}), University of Virginia (Brian Nosek, Nick Buttrick)
-- [Minnesota]({{ "/journal-clubs/#Minnesota" | relative_url }}) (Amy Riegelman, Alan Love)
+- [Charlottesville](/journal-clubs/#Charlottesville), University of Virginia (Brian Nosek, Nick Buttrick)
+- [Minnesota](/journal-clubs/#Minnesota) (Amy Riegelman, Alan Love)
