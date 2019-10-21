@@ -29,6 +29,10 @@
             <div class="icon-item" title="JC website"><i class="fas fa-globe"></i> <a href="{{ jc.website }}">{{ jc.website }}</a></div>
             {% endif %}
 
+            {% if jc.osf %}
+            <div class="icon-item" title="OSF repository"><i class="fas fa-folder-open"></i> <a href="https://osf.io/{{ jc.osf }}/">osf.io/{{ jc.osf }}</a></div>
+            {% endif %}
+
             {% if jc.twitter %}
             <div class="icon-item" title="Twitter"><i class="fab fa-twitter"></i> <a href="https://twitter.com/{{ jc.twitter }}">@{{ jc.twitter }}</a></div>
             {% endif %}

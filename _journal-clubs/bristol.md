@@ -2,7 +2,8 @@
 title: Bristol, University of Bristol
 host-organisation: University of Bristol
 host-org-url: https://www.bristol.ac.uk/
-website: https://osf.io/9zbcw/
+website: 
+osf: 9zbcw
 signup:
 organisers: [Katie Drax]
 contact: katie.drax@bristol.ac.uk

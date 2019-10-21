@@ -2,7 +2,8 @@
 title: Sheffield
 host-organisation: The University of Sheffield
 host-org-url: https://www.sheffield.ac.uk/
-website: https://osf.io/hgq26/
+website: 
+osf: hgq26
 signup: https://bit.ly/tuosrepro
 organisers: [James Shaw]
 contact: reproducibilitea@sheffield.ac.uk 

@@ -2,7 +2,8 @@
 title: Frankfurt
 host-organisation: Frankfurt Open Science Initiative
 host-org-url: https://open-science-frankfurt.github.io
-website: https://osf.io/254t7/
+website: 
+osf: 254t7
 signup:
 organisers: [Julia Beitner, Elli Zey]
 contact: beitner@psych.uni-frankfurt.de
