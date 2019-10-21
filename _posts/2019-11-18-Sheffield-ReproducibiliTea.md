@@ -20,3 +20,6 @@ In other areas where research can be less systematic and more exploratory, such 
 The next [Sheffield ReproducibiliTea](/journal-clubs/#Sheffield) is at 1pm 14th November, Pam Liversidge E06, where we'll be covering a recent opinion piece by Daniele Fanelli, 2018: [Is science really facing a reproducibility crisis, and do we need it to?](https://doi.org/10.1073/pnas.1708272114)
 Log into your Sheffield University account, and you can [join our Google group](https://bit.ly/tuosrepro) and [subscribe to our Google calendar](https://calendar.google.com/calendar?cid=c2hlZmZpZWxkLmFjLnVrX3BxYnVmMWQzNDk5dXVyaTgzZDJyYjVvYXJzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).
 See you there!
+
+_[James Shaw](https://www.datumedge.co.uk) is the organiser of Sheffield Uni ReproducibiliTea.
+If you're interested in co-organising our meetings then [please get in touch](https://bit.ly/tuosrepro)!_
