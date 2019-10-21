@@ -38,7 +38,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Virtual journal club organised by bioclues.org]({{ "/journal-clubs/#Bioclues.org" | relative_url }}) (Prash and  Team  Bioclues.org)
 
 **Japan**
-- Kyushu University (Yuki Yamada)
+- [Fukuoka]({{ "/journal-clubs/#Fukuoka" | relative_url }}), Kyushu University (Yuki Yamada)
 
 **The Netherlands**
 - [Amsterdam]({{ "/journal-clubs/#Amsterdam" | relative_url }}) (Angelika Stefan, Florian Wanders)
