@@ -9,7 +9,7 @@ tags: [Sheffield]
 
 [Sheffield University](/journal-clubs/#Sheffield) held its first ReproducibiliTea meeting in October 2019, with about 15 people attending from medicine, biology, engineering,  psychology, and other departments.
 [Stavrina Dimosthenous](https://twitter.com/stavrhina), a PhD researcher in materials science, lead the discussion and introduced us to a psychology paper by Pashler and Harris, 2012: [Is the Replicability Crisis Overblown? Three Arguments Examined](https://doi.org/10.1177/1745691612463401).
-We discussed what [p-values](https://en.wikipedia.org/wiki/P-value) are, what [p-hacking](https://en.wikipedia.org/wiki/Data_dredging) is, and how p-hacking can arise when researchers discard “outlier” data that doesn’t support their hypothesis.
+We discussed what [p-values](https://en.wikipedia.org/wiki/P-value) are, what [p-hacking](https://en.wikipedia.org/wiki/Data_dredging) is, and how p-hacking can arise when researchers exclude data that doesn’t support their hypothesis.
 
 Our discussion of hypothesis testing led us to think about what happens when a researcher finds a [negative result](https://en.wikipedia.org/wiki/Null_result), i.e. when the data does not support the hypothesis.
 In our meeting, some people had seen negative outcomes of clinical trials published in “[high impact](https://en.wikipedia.org/wiki/Impact_factor)” journals, because these negative outcomes risked harming patients.
