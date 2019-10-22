@@ -4,7 +4,7 @@ title:  "ReproducibiliTea Zotero Library"
 date:   2019-10-21 13:00:00 +0100
 author: Matt Jaquiery
 image: blog/zotero-group.jpg
-categories: [Journal club, Administration]
+categories: [JC, Administration]
 tags: [Zotero]
 ---
 

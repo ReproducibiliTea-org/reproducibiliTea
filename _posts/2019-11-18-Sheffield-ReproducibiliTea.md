@@ -3,7 +3,7 @@ layout: post
 title:  "Sheffield ReproducibiliTea: what happened in our first meeting?"
 date:   2019-10-18 16:00:00 +0100
 author: James Shaw
-categories: [Journal club]
+categories: [JC]
 tags: [Sheffield]
 ---
 

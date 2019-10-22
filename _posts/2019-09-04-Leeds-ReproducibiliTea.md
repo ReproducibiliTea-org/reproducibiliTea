@@ -3,7 +3,7 @@ layout: post
 title:  "Leeds ReproducibiliTea"
 date:   2019-09-04 09:27:27 +0100
 author: Matt Jaquiery
-categories: [Journal club]
+categories: [JC]
 tags: [Leeds]
 ---
 

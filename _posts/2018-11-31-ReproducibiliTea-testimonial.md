@@ -3,7 +3,7 @@ layout: post
 title:  "ReproducibiliTea testimonial"
 date:   2018-11-31 18:00:27 +0100
 author: Ben Farrar
-categories: [Journal club]
+categories: [JC]
 tags: [Cambridge]
 ---
 
