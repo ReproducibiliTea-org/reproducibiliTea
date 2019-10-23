@@ -55,16 +55,6 @@ function checkForm(form) {
     return okay;
 }
 
-function parseForm(form) {
-    data = {};
-
-    form.querySelectorAll('input, textarea').forEach(e => {
-        data[e.name] = e.value;
-    });
-
-    return data;
-}
-
 /**
  * Check and submit form, then fill in the response from the server
  * @param e {Event} button click event
@@ -76,7 +66,17 @@ async function submitForm(e) {
 
     const form = document.querySelector('#newJC');
 
-    const formData = parseForm(form);
+    // Fill in form defaults for debugging
+    document.querySelector('#jcid').value = 'academia';
+    document.querySelector('#name').value = 'academia';
+    document.querySelector('#uni').value = 'Academia University';
+    document.querySelector('#uniWWW').value = 'https://academia.ac/';
+    document.querySelector('#email').value = 'osNerd@academia.ac';
+    document.querySelector('#post').value = 'Room 42, Ivory Tower, Academia University, Brainland';
+    document.querySelector('#lead').value = 'Dr Nerd';
+    document.querySelector('#authCode').value = 'rpt-NewJC';
+
+    const formData = new FormData(form);
 
     // Check form
     // if(!checkForm(form))
@@ -94,10 +94,11 @@ async function submitForm(e) {
 
     // Send off to php handler and fill in response
     try {
-        const response = await fetch('/src/newJC.php?data=' + encodeURI(JSON.stringify(formData)), {
-            method: 'GET'
+        const response = await fetch('/src/newJC.php', {
+            method: 'POST',
+            body: formData
         });
-        const result = await response.json();
+        const result = await response.body;
         console.log('Success:', JSON.stringify(result));
     } catch (error) {
         console.error('Error:', error);

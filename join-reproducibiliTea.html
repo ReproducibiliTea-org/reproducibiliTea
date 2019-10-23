@@ -13,6 +13,10 @@ Here you can create a new ReproducibiliTea journal club. We assume you have foun
     <fieldset class="JC-details">
         <legend>Journal Club details</legend>
         <div class="row mandatory">
+            <label for="jcid">JC Identifier</label>
+            <input type="text" id="jcid" name="jcid" placeholder="Academia" />
+        </div>
+        <div class="row mandatory">
             <label for="name">JC Name</label>
             <input type="text" id="name" name="name" placeholder="Academia" />
         </div>
@@ -40,7 +44,7 @@ Here you can create a new ReproducibiliTea journal club. We assume you have foun
             <label for="email">Contact email</label>
             <input type="text" id="email" name="email" placeholder="goodScholar@academia.ac" />
         </div>
-        <div class="row">
+        <div class="row mandatory">
             <label for="post">Postal address</label>
             <textarea id="post" name="post" placeholder="Room 301,
 Reproducible Research Institute,
@@ -49,7 +53,7 @@ UK"></textarea>
         </div>
         <div class="row">
             <label for="description">Journal club description</label>
-            <textarea id="description" name="post" placeholder="This is where you can describe your journal club if you wish. You can write markdown here, and you can always update it later on GitHub.
+            <textarea id="description" name="description" placeholder="This is where you can describe your journal club if you wish. You can write markdown here, and you can always update it later on GitHub.
 
 You might want to describe what you hope to achieve, how often you plan to meet, which disciplines you are planning to cater for, etc."></textarea>
         </div>
