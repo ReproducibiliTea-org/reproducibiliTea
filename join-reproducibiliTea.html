@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+<script type="text/javascript" src="/assets/js/join-form.js"></script>
+
+<h1>Welcome</h1>
+
+Here you can create a new ReproducibiliTea journal club. We assume you have found your way here after consulting Amy, and are ready to take on the exciting challenge of running your own JC. Once you complete the form on this page, we'll automatically add you to our list of journal clubs, create you a page on the website, initialise an OSF repository for you, and invite you to the Slack workspace.
+
+<form id="newJC">
+    <fieldset class="JC-details">
+        <legend>Journal Club details</legend>
+        <div class="row mandatory">
+            <label for="name">JC Name</label>
+            <input type="text" id="name" name="name" placeholder="Academia" />
+        </div>
+        <div class="row mandatory">
+            <label for="uni">Host university</label>
+            <input type="text" id="uni" name="uni" placeholder="University of Academia" />
+        </div>
+        <div class="row mandatory">
+            <label for="uniWWW">University website</label>
+            <input type="text" id="uniWWW" name="uni-www" placeholder="https://academia.ac/" />
+        </div>
+        <div class="row">
+            <label for="www">JC website</label>
+            <input type="text" id="www" name="www" placeholder="https://academia-rpt.github.io/" />
+        </div>
+        <div class="row">
+            <label for="twitter">JC Twitter</label>
+            <input type="text" id="twitter" name="twitter" placeholder="@AcademiaRpT" />
+        </div>
+        <div class="row">
+            <label for="signup">Signup url/email</label>
+            <input type="text" id="signup" name="signup" placeholder="goodScholar@academia.ac" />
+        </div>
+        <div class="row mandatory">
+            <label for="email">Contact email</label>
+            <input type="text" id="email" name="email" placeholder="goodScholar@academia.ac" />
+        </div>
+        <div class="row">
+            <label for="post">Postal address</label>
+            <textarea id="post" name="post" placeholder="Room 301,
+Reproducible Research Institute,
+University of Academia,
+UK"></textarea>
+        </div>
+        <div class="row">
+            <label for="description">Journal club description</label>
+            <textarea id="description" name="post" placeholder="This is where you can describe your journal club if you wish. You can write markdown here, and you can always update it later on GitHub.
+
+You might want to describe what you hope to achieve, how often you plan to meet, which disciplines you are planning to cater for, etc."></textarea>
+        </div>
+    </fieldset>
+    <fieldset class="JC-organisers">
+        <legend>Organisers</legend>
+        <div class="row mandatory">
+            <label for="lead">Lead organiser</label>
+            <div class="organisers">
+                <input type="text" id="lead" name="lead" placeholder="Good Scholar" />
+                <button onclick="addNewOrganiser(event)"><i class="fas fa-user-plus"></i></button>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="submission">
+        <legend>Final checks</legend>
+        <div class="row mandatory">
+            <label for="authCode">Authorization code</label>
+            <input type="text" id="authCode" name="auth-code" placeholder="XXXX-XXXX" />
+        </div>
+        <div class="row mandatory">
+            <button onclick="submitForm(event)">Activate JC!</button>
+        </div>
+    </fieldset>
+</form>
+
+<!--
+<div class="row">
+    <label for="others">Other organisers</label>
+    <input type="text" id="others" name="others0" placeholder="Helper1"/>
+</div>
+-->

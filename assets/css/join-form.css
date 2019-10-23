@@ -1,0 +1,44 @@
+.row {
+    width: 100%;
+    display: flex;
+    padding: .25em 0;
+    justify-content: space-between;
+}
+
+.row label {
+    width: 100%;
+}
+
+.mandatory label {
+    font-weight: bold;
+}
+
+.row * {
+    width: 100%;
+}
+
+#post {
+    height: 6em;
+}
+
+#description {
+    height: 10em;
+}
+
+.bad {
+    background-color: lightcoral;
+}
+
+form {
+    transition: max-height 0.5s ease-in;
+}
+.cloak {
+    overflow: hidden;
+    max-height: 0 !important;
+}
+
+.icon {
+    font-size: xx-large;
+    text-align: center;
+    color: #0085d4;
+}
