@@ -98,7 +98,7 @@ async function submitForm(e) {
             method: 'POST',
             body: formData
         });
-        const result = await response.body;
+        const result = await response.json();
         console.log('Success:', JSON.stringify(result));
     } catch (error) {
         console.error('Error:', error);
