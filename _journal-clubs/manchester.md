@@ -2,7 +2,8 @@
 title: Manchester # short name which should match the filename
 host-organisation: University of Manchester # University/Organisation hosting the JC
 host-org-url: https://www.manchester.ac.uk/ # Website of the above
-website: https://osf.io/bs2k7/ # Website for the JC if it exists
+website:  # Website for the JC if it exists
+osf: bs2k7
 signup:  # Email address for people wanting to sign up if there is one
 organisers: [Jade Pickering, Daniel Poole, Thomas (Richie) Richardson, George Farmer] # Comma-separated list of organiser names
 contact: jade.pickering@postgrad.manchester.ac.uk # Email contact for the JC

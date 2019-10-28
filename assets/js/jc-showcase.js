@@ -13,6 +13,7 @@ function showcaseJC(e) {
         return;
 
     showcase.innerHTML = "";
+    showcase.classList.remove('placeholder');
 
     showcase.appendChild(
         document.importNode(template.content, true)
@@ -34,6 +35,6 @@ searchBar.dispatchEvent(new Event("change"));
 
 // Tell search bar to update when hash updates
 window.addEventListener('hashchange', function() {
-    searchBar.value = window.location.hash.substr(1);
+    searchBar.value = decodeURIComponent(window.location.hash.substr(1));
     searchBar.dispatchEvent(new Event("change"));
 });

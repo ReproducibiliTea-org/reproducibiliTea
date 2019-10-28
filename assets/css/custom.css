@@ -1,3 +1,15 @@
+/* Footer */
+
+.sponsors {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.sponsors .thanks {
+    align-self: center;
+}
+
 /* Person.html */
 .person {
     position: relative;
@@ -77,11 +89,12 @@
 }
 
 /* Journal club details */
-
 .jc-showcase {
+    margin-top: 2em;
+}
+.jc-showcase:not(.placeholder) {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
 }
 
 .jc-body {
@@ -99,11 +112,25 @@
 .jc-details {
     display: flex;
     flex-direction: column;
+    /* hanging indent */
+    text-indent: -1.4em;
+    padding-left: 1.4em;
+    word-break: break-all;
 }
 
 .jc-organisers {
     display: flex;
     flex-direction: column;
+}
+
+/* Sponsors */
+.sponsor {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 1em;
+}
+.sponsor .logo {
+    align-self: center;
 }
 
 @media screen and (max-width: 800px) {

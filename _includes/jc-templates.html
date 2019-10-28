@@ -13,7 +13,7 @@
     <aside class="jc-info">
         <div class="jc-details">
             {% if jc.host-organisation %}
-            <div class="icon-item"><i class="fas fa-globe" title="Organisation website"></i>
+            <div class="icon-item" title="Organisation website"><i class="fas fa-globe"></i>
                 {% if jc.host-org-url %}
                 <a href="{{ jc.host-org-url }}">
                     {% endif %}
@@ -26,15 +26,23 @@
             {% endif %}
 
             {% if jc.website %}
-            <div class="icon-item"><i class="fas fa-globe" title="JC website"></i> {{ jc.website }}</div>
+            <div class="icon-item" title="JC website"><i class="fas fa-globe"></i> <a href="{{ jc.website }}">{{ jc.website }}</a></div>
+            {% endif %}
+
+            {% if jc.osf %}
+            <div class="icon-item" title="OSF repository"><i class="fas fa-folder-open"></i> <a href="https://osf.io/{{ jc.osf }}/">osf.io/{{ jc.osf }}</a></div>
+            {% endif %}
+
+            {% if jc.twitter %}
+            <div class="icon-item" title="Twitter"><i class="fab fa-twitter"></i> <a href="https://twitter.com/{{ jc.twitter }}">@{{ jc.twitter }}</a></div>
             {% endif %}
 
             {% if jc.signup %}
-            <div class="icon-item"><i class="fas fa-envelope" title="Signup"></i> {{ jc.signup }}</div>
+            <div class="icon-item" title="Signup"><i class="fas fa-envelope"></i> <a href="{% if jc.signup contains '@' %}mailto:{% endif %}{{ jc.signup }}">{{ jc.signup }}</a></div>
             {% endif %}
 
             {% if jc.contact %}
-            <div class="icon-item"><i class="fas fa-question" title="Enquiries"></i>
+            <div class="icon-item" title="Enquiries"><i class="fas fa-question"></i>
                 <a href="mailto:{{jc.contact}}?Subject=ReproducibiliTea website query">{{ jc.contact }}</a></div>
             {% endif %}
         </div>
@@ -44,7 +52,7 @@
         {% if jc.organisers %}
         <div class="jc-organisers">
             {% for p in jc.organisers %}
-            <div class="icon-item"><i class="fas fa-user"></i> {{ p }}</div>
+            <div class="icon-item" title="Organisers"><i class="fas fa-user"></i> {{ p }}</div>
             {% endfor %}
         </div>
         {% endif %}

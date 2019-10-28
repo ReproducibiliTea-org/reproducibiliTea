@@ -1,0 +1,19 @@
+{% if site.sponsors %}
+<div class="sponsors-list">
+    {% for sponsor in site.sponsors %}
+    <div class="sponsor">
+        <div class="logo">
+            {% if sponsor.logo %}
+            <a href="{{ sponsor.link }}"><img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }} Logo"/></a>
+            {% endif %}
+        </div>
+        <div class="description">
+            {% if sponsor.name %}
+            <h3><a href="{{ sponsor.link }}">{{ sponsor.name }} <sup><i class="fas fa-external-link-square-alt"></i></sup></a></h3>
+            {% endif %}
+            {{ sponsor.content | markdownify }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
