@@ -11,6 +11,11 @@ We are a grassroots [journal club initiative](/about/) that helps young research
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
+# Definition of a ReproducibiliTea journal club
+
+1. You have emailed Amy Orben (amy.orben@cantab.net) telling her about your club
+2. Your club with topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
+
 # Current Journal Clubs
 
 **Austria**
