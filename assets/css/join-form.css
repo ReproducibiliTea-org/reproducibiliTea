@@ -42,3 +42,65 @@ form {
     text-align: center;
     color: #0085d4;
 }
+
+.demo {
+    font-weight: bold;
+}
+
+.detail {
+    border-bottom: 1px solid black;
+    padding: .25em;
+}
+
+.detail div {
+    width: 100%;
+}
+
+.status {
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+.status.okay {
+    color: #009926;
+}
+.status.failed {
+    color: #990000;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.info {
+    background-color: #d7eefd;
+}
+ul.warning {
+    background-color: #ffe8d4;
+}
+ul.error {
+    background-color: #ff253a;
+    font-weight: bold;
+}
+
+ul:not(.task) {
+    padding: 0 .25em 0 3em;
+}
+
+li {
+    padding: .25em;
+}
+li:before {
+    border: 2px solid white;
+    background-color: white;
+    position: relative;
+    left: -3em;
+}
+.info li:before {
+    content: "\2705";
+}
+.warning li:before {
+    content: "\26A0";
+}
+.error li:before {
+    content: "\274C";
+}
