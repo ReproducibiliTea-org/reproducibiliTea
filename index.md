@@ -13,8 +13,8 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 # Definition of a ReproducibiliTea journal club
 
-1. You have emailed Amy Orben (amy.orben@cantab.net) telling her about your club
-2. Your club with topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
+1. You have emailed ReproducibiliTea (email: amy.orben@cantab.net) registering your club
+2. Your club examines topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
 
 # Current Journal Clubs
 
