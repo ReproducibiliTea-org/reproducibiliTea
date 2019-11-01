@@ -133,6 +133,34 @@
     align-self: center;
 }
 
+/* nav display */
+.header-links {
+    display: grid;
+    list-style: none;
+    margin: 0;
+    grid-auto-flow: column;
+    grid-column-gap: 2em;
+}
+
+.header-links li {
+    display: flex;
+    position: relative;
+    background-color: white;
+}
+
+.header-links li:hover .header-links,
+.header-links li:active .header-links {
+    display: grid;
+}
+
+.header-links .header-links {
+    display: none;
+    grid-auto-flow: row;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+}
+
 @media screen and (max-width: 800px) {
     .jc-showcase {
         flex-wrap: wrap;
