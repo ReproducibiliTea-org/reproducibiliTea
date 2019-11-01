@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building the CommuniTea"
-date:   2019-11-01 11:00:00
+date:   2019-11-01 11:00:00 +0100
 author: Jade Pickering
 categories: [JC]
 tags: [ReproducibiliTeam]
