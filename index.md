@@ -67,7 +67,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **United Kingdom**
 - [Aberdeen](/journal-clubs/#Aberdeen) (Jessica Butler, Annesha Sil)
 - Bristol, [University of Bristol](/journal-clubs/#Bristol, University of Bristol) (Katie Drax)
-- Bristol, [UWE](/journal-clubs/#UWE, Bristol) (Charlotte Pennington)
+- Bristol, [UWE](/journal-clubs/#Bristol, UWE) (Charlotte Pennington)
 - [Cambridge](/journal-clubs/#Cambridge ExPsy) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
 - [Chester](/journal-clubs/#Chester) (Suzanne Stewart)
 - [Glasgow](/journal-clubs/#Glasgow) (Stephanie Allan)
