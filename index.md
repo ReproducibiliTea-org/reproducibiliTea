@@ -65,14 +65,14 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Zurich](/journal-clubs/#Zurich) (Information available soon!)
 
 **Taiwan**
-- Taipei (Niall Duncan)
+- [Taipei](/journal-clubs/#Taipei) (Niall Duncan)
 
 **United Kingdom**
 - [Aberdeen](/journal-clubs/#Aberdeen) (Jessica Butler, Annesha Sil)
 - Bristol, [University of Bristol](/journal-clubs/#Bristol, University of Bristol) (Katie Drax)
 - Bristol, [UWE](/journal-clubs/#Bristol, UWE) (Charlotte Pennington)
 - [Cambridge](/journal-clubs/#Cambridge ExPsy) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
-- Canterbury (Coming soon!)
+- [Canterbury](/_journal-clubs/#Canterbury) (Bethan Iley, Felicity Gallagher, Roger Giner-Sorolla)
 - [Chester](/journal-clubs/#Chester) (Suzanne Stewart)
 - [Glasgow](/journal-clubs/#Glasgow) (Stephanie Allan)
 - [Kingston](/journal-clubs/#Kingston) (Emma Henderson)
@@ -82,7 +82,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - London, [UCL](/journal-clubs/#University College London) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester](/journal-clubs/#Manchester) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford](/journal-clubs/#Oxford) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
-- Plymouth (Coming soon!)
+- [Plymouth](/_journal-clubs/#Plymouth) ([Lenard Dome)
 - [Portsmouth](/journal-clubs/#Portsmouth) (James Clay)
 - [Sheffield](/journal-clubs/#Sheffield) (James Shaw)
 - [Southampton](/journal-clubs/#Southampton) (Sophie Hall, Christian Bokhove)
