@@ -128,7 +128,7 @@ $status['OSF'] = new Status('Create OSF repository');
 
 
 // Check for OSF repository with the appropriate name
-$url = "https://api.test.osf.io/v2/nodes/?filter[title]=$name";
+$url = "https://api.test.osf.io/v2/nodes/384cb/children/?filter[title]=$name";
 
 $handle = curl_init($url);
 curl_setopt($handle, CURLOPT_HTTPHEADER, array(
@@ -149,44 +149,31 @@ if(sizeof($node->data) > 0 &&
     $OSFid = $node->data[0]->id;
 } else {
     // Create new OSF repository
-    $url = "https://api.test.osf.io/v2/nodes/";
+    $url = "https://api.test.osf.io/v2/nodes/384cb/children/";
 
-    $content =array(
-        'data' => array(
-            'type' => 'nodes',
-            'attributes' => array(
-                'title' => 'ReproducibiliTea ' . $name,
-                'category' => 'other',
-                'description' => "Materials from ReproducibiliTea sessions in $name. Templates and presentations are available for others to use and edit."
-            ),
-            'relationships' => array(
-                'root' => array(
-                    'data' => array(
-                        'type' => 'nodes',
-                        'id' => '384cb'
-                    ),
-                    'links' => array(
-                        'related' => array(
-                            'href' => 'https://test.osf.io/384cb/'
-                        )
-                    )
-                )
+    $content = array(
+        "data" => array(
+            "type" => "nodes",
+            "attributes" => array(
+                "title" => "ReproducibiliTea $name",
+                "category" => "other",
+                "description" => "Materials from ReproducibiliTea sessions in $name. Templates and presentations are available for others to use and edit.",
+                "public" => "1"
             )
         )
     );
 
     $headers = [
         'Content-Type: application/vnd.api+json',
-        'Accept: application/vnd.api+json',
-        'Authorization: Bearer ' . secrets['osfToken'],
-        'Content-Length: ' . strlen(json_encode($content))
+        'Authorization: Bearer ' . secrets['osfToken']
     ];
 
     $handle = curl_init($url);
-    curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($handle, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($handle, CURLOPT_POSTFIELDS, json_encode($content));
+    curl_setopt($handle, CURLOPT_VERBOSE, true);
 
     $try = curl_exec($handle);
 
