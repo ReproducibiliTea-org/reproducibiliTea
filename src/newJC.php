@@ -98,6 +98,8 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $post = $_POST["post"];
 $country = $_POST["country"];
 $lead = $_POST["lead"];
+preg_match("/^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i", $_POST["osf-user"], $osfUser);
+$osfUser = sizeof($osfUser) > 1? $osfUser[1] : "";
 
 $www = $_POST["www"];
 $twitter = $_POST["twitter"];
@@ -118,6 +120,13 @@ if(preg_match('/$[a-z0-9]+^/', $id) !== 0) {
     $status['inputCheck']->error[] = "The id field contains invalid characters";
     done();
 }
+
+if(preg_match('/$[a-z0-9]+^/', $osfUser) !== 0) {
+    http_response_code(400);
+    $status['inputCheck']->error[] = "The OSF User field contains invalid characters";
+    done();
+}
+
 
 $status['inputCheck']->status = "Okay";
 $status['inputCheck']->info[] = "All inputs okay";
@@ -173,7 +182,6 @@ if(sizeof($node->data) > 0 &&
     curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($handle, CURLOPT_POSTFIELDS, json_encode($content));
-    curl_setopt($handle, CURLOPT_VERBOSE, true);
 
     $try = curl_exec($handle);
 
@@ -189,7 +197,46 @@ if(sizeof($node->data) > 0 &&
         done();
     } else {
         $status['OSF']->status = "Okay";
-        $status['OSF']->info[] = "OSF repository in place at <a href='https://osf.io/$OSFid'>https://osf.io/$OSFid</a>. You may need to apply to a ReproducibiliTea organiser for access";
+        $status['OSF']->info[] = "OSF repository in place at <a href='https://osf.io/$OSFid'>https://osf.io/$OSFid</a>. ";
+
+        $inviteOkay = false;
+
+        if(strlen($osfUser)) {
+            $url = "https://api.test.osf.io/v2/nodes/$OSFid/contributors/";
+            $content = array(
+                "data" => array(
+                    "type" => "contributors",
+                    "attributes" => "",
+                    "relationships" => array(
+                        "user" => array(
+                            "data" => array(
+                                "type" => "users",
+                                "id" => $osfUser
+                            )
+                        )
+                    )
+                )
+            );
+
+            $handle = curl_init($url);
+            curl_setopt($handle, CURLOPT_CUSTOMREQUEST, "POST");
+            curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($handle, CURLOPT_POSTFIELDS, json_encode($content));
+
+            $try = curl_exec($handle);
+
+            $result = json_decode($try);
+
+            curl_close($handle);
+
+            $inviteOkay = strlen($result->data->id) > 0;
+        }
+
+        if(!$inviteOkay) {
+            $status['OSF']->status = "Okay";
+            $status['OSF']->warning[] = "We could not add you as a contributor automatically; you may need to apply to a ReproducibiliTea organiser for access";
+        }
     }
 }
 

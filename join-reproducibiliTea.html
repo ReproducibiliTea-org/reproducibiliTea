@@ -41,10 +41,6 @@ Here you can create a new ReproducibiliTea journal club. We assume you have foun
             <input type="text" id="signup" name="signup" placeholder="goodScholar@academia.ac" />
         </div>
         <div class="row mandatory">
-            <label for="email">Contact email</label>
-            <input type="text" id="email" name="email" placeholder="goodScholar@academia.ac" />
-        </div>
-        <div class="row mandatory">
             <label for="post">Postal address</label>
             <textarea id="post" name="post" placeholder="Room 301,
 Reproducible Research Institute,
@@ -315,6 +311,14 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 <input type="text" id="lead" name="lead" placeholder="Good Scholar" />
                 <button onclick="addNewOrganiser(event)"><i class="fas fa-user-plus"></i></button>
             </div>
+        </div>
+        <div class="row mandatory">
+            <label for="email">Contact email</label>
+            <input type="text" id="email" name="email" placeholder="goodScholar@academia.ac" />
+        </div>
+        <div class="row">
+            <label for="osfUser">Lead organiser OSF id</label>
+            <input type="text" id="osfUser" name="osf-user" placeholder="a9b2z" />
         </div>
     </fieldset>
     <fieldset class="submission">
