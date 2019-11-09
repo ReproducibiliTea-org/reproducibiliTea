@@ -4,5 +4,5 @@ _site
 .idea/workspace.xml
 .idea/codeStyles/codeStyleConfig.xml
 src/secret.php
-secret.env
+.env
 node_modules

@@ -26,7 +26,7 @@ Here you can create a new ReproducibiliTea journal club. We assume you have foun
         </div>
         <div class="row mandatory">
             <label for="uniWWW">University website</label>
-            <input type="text" id="uniWWW" name="uni-www" placeholder="https://academia.ac/" />
+            <input type="text" id="uniWWW" name="uniWWW" placeholder="https://academia.ac/" />
         </div>
         <div class="row">
             <label for="www">JC website</label>
@@ -314,18 +314,18 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         </div>
         <div class="row mandatory">
             <label for="email">Contact email</label>
-            <input type="text" id="email" name="email" placeholder="goodScholar@academia.ac" />
+            <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
         </div>
         <div class="row">
             <label for="osfUser">Lead organiser OSF id</label>
-            <input type="text" id="osfUser" name="osf-user" placeholder="a9b2z" />
+            <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
         </div>
     </fieldset>
     <fieldset class="submission">
         <legend>Final checks</legend>
         <div class="row mandatory">
             <label for="authCode">Authorization code</label>
-            <input type="text" id="authCode" name="auth-code" placeholder="XXXX-XXXX" />
+            <input type="text" id="authCode" name="authCode" placeholder="XXXX-XXXX" />
         </div>
         <div class="row mandatory">
             <button onclick="submitForm(event)">Activate JC!</button>
