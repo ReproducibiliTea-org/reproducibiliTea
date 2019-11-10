@@ -140,6 +140,7 @@ async function submitForm(e) {
     document.querySelector('#authCode').value = 'rpt-NewJC';
 
     const formData = new FormData(form);
+    console.log(JSON.parse(JSON.stringify(formData)))
 
     // Check form
     // if(!checkForm(form))
@@ -155,9 +156,9 @@ async function submitForm(e) {
 
     document.querySelector('main .wrapper').appendChild(elm);
 
-    // Send off to php handler and fill in response
+    // Send off to netlify functions handler and fill in response
     try {
-        const response = await fetch('/src/newJC.php', {
+        const response = await fetch('/.netlify/functions/new-jc', {
             method: 'POST',
             body: formData
         });
@@ -177,9 +178,10 @@ async function submitForm(e) {
 
         elm.appendChild(demo);
 
-        for(const key in result) {
-            elm.appendChild(addDetail(result[key]));
-        }
+        const report = document.createElement('div');
+        report.classList.add('detail');
+        report.innerHTML = JSON.stringify(result);
+
     } catch (error) {
         console.error('Error:', error);
     }
