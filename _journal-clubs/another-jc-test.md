@@ -12,7 +12,7 @@ organisers: [matt]
 contact: a@b.c
 address: a place
 	somewhere
-deep behind the wall
+	deep behind the wall
 country: United Kingdom
 ---
 
