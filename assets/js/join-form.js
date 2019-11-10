@@ -49,6 +49,7 @@ function checkForm(form) {
             if(!e.value && !e.classList.contains('optional')) {
                 okay = false;
                 e.classList.add('bad');
+                e.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
             }
     });
 
@@ -129,22 +130,16 @@ async function submitForm(e) {
 
     const form = document.querySelector('#newJC');
 
-    // Fill in form defaults for debugging
-    document.querySelector('#jcid').value = 'academia';
-    document.querySelector('#name').value = 'academia';
-    document.querySelector('#uni').value = 'Academia University';
-    document.querySelector('#uniWWW').value = 'https://academia.ac/';
-    document.querySelector('#email').value = 'osNerd@academia.ac';
-    document.querySelector('#post').value = 'Room 42, Ivory Tower, Academia University, Brainland';
-    document.querySelector('#lead').value = 'Dr Nerd';
-    document.querySelector('#authCode').value = 'rpt-NewJC';
-
-    const formData = new FormData(form);
-    console.log(JSON.parse(JSON.stringify(formData)))
+    // Create the JC id from the name
+    document.querySelector('#jcid').value = document.querySelector('#name').value.replace(' ', '-').toLowerCase();
 
     // Check form
-    // if(!checkForm(form))
-    //     return false;
+    if(!checkForm(form))
+        return false;
+
+    const formData = {};
+
+    document.querySelectorAll('form input, form textarea, form select').forEach(e => formData[e.name] = e.value);
 
     // Show pending status
     form.style.maxHeight = getComputedStyle(form).height;
@@ -160,9 +155,11 @@ async function submitForm(e) {
     try {
         const response = await fetch('/.netlify/functions/new-jc', {
             method: 'POST',
-            body: formData
+            body: JSON.stringify(formData)
         });
-        const result = await response.json();
+
+        const result = await response.text();
+
         elm.innerHTML = "";
 
         const h = document.createElement('h1');
@@ -170,19 +167,13 @@ async function submitForm(e) {
         h.innerHTML = "Submission result:";
         elm.appendChild(h);
 
-        const demo = document.createElement('div');
-        demo.classList.add('detail', 'demo');
-        demo.innerHTML = "<div class='task demo'>Task " +
-            "<span class='status demo okay'>(Status)</span></div>" +
-            "<ul class='details demo'>Details</ul>";
-
-        elm.appendChild(demo);
-
         const report = document.createElement('div');
         report.classList.add('detail');
-        report.innerHTML = JSON.stringify(result);
+        report.innerHTML = result;
+
+        elm.appendChild(report);
 
     } catch (error) {
-        console.error('Error:', error);
+        console.log(error);
     }
 }

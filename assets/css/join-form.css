@@ -1,20 +1,86 @@
 .row {
     width: 100%;
     display: flex;
-    padding: .25em 0;
+    padding: .25em;
     justify-content: space-between;
 }
 
+.row:hover {
+    background-color: azure;
+}
+
+.row .labels {
+    position: relative;
+}
+
 .row label {
-    width: 100%;
+    width: 100%
 }
 
 .mandatory label {
     font-weight: bold;
 }
 
+.row .label-details {
+    display: none;
+    position: absolute;
+    width: calc(100% - 2em);
+    padding: .25em;
+    border-left: 2px solid #1756a9;
+    background-color: azure;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    font-size: .9em;
+    line-height: 1em;
+}
+
+.label-details > * {
+    padding-left: .25em;
+}
+
+.label-details ul {
+    padding: 0;
+    list-style-type: disc;
+}
+
+.label-details li:not(:last-of-type) {
+    margin-bottom: .25em;
+}
+
+.label-details li.public {
+    color: orangered;
+    font-weight: bold;
+}
+
+.label-details li.hidden {
+    color: #1756a9;
+    font-weight: bold;
+}
+
+.row.mandatory .is-mandatory {
+    font-weight: bold;
+}
+
+.row:not(.mandatory) .is-mandatory {
+    color: dimgrey;
+}
+
+.row:hover .label-details,
+.row:focus .label-details,
+.row:focus-within .label-details {
+    display: unset;
+}
+
 .row * {
     width: 100%;
+    height: min-content;
+    min-height: 1em;
+}
+
+.row button,
+.row svg {
+    height: unset;
 }
 
 #post {
@@ -26,7 +92,7 @@
 }
 
 .bad {
-    background-color: lightcoral;
+    background-color: #ffd7d1 !important;
 }
 
 form {
@@ -56,6 +122,10 @@ form {
     width: 100%;
 }
 
+.detail > div > h2 {
+    margin: .5em;
+}
+
 .status {
     font-weight: bold;
     color: darkgoldenrod;
@@ -63,7 +133,7 @@ form {
 .status.okay {
     color: #009926;
 }
-.status.failed {
+.status.error {
     color: #990000;
 }
 
@@ -71,36 +141,27 @@ ul {
     list-style: none;
 }
 
-ul.info {
+.okay {
     background-color: #d7eefd;
 }
-ul.warning {
+.warning {
     background-color: #ffe8d4;
 }
-ul.error {
+.error {
     background-color: #ff253a;
     font-weight: bold;
 }
 
-ul:not(.task) {
-    padding: 0 .25em 0 3em;
-}
-
-li {
+.detail li {
     padding: .25em;
 }
-li:before {
-    border: 2px solid white;
-    background-color: white;
-    position: relative;
-    left: -3em;
-}
-.info li:before {
+
+.okay h2:first-of-type:before {
     content: "\2705";
 }
-.warning li:before {
+.warning h2:first-of-type:before {
     content: "\26A0";
 }
-.error li:before {
+.error h2:first-of-type:before {
     content: "\274C";
 }

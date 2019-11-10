@@ -17,14 +17,34 @@ const {
     FROM_EMAIL_ADDRESS
 } = process.env;
 
+
+const OPTIONAL_FIELDS = [
+    'www', 'twitter', 'description', 'osfUser', 'zoteroUser',
+    'signup', 'uniWWW',
+];
+
+const REQUIRED_FIELDS = [
+    'jcid', 'name', 'uni', 'email', 'post',
+    'country', 'lead', 'authCode'
+];
+
 exports.handler = async (event) => {
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { 'Allow': 'POST' } }
     }
 
-    console.log(event.body)
+    let data = {};
 
-    const data = cleanData(JSON.parse(event.body));
+    try{
+        data = cleanData(JSON.parse(event.body));
+        console.log(data)
+    } catch(e) {
+        return {
+            statusCode: 400,
+            body: '<p>Could not clean submission for processing</p>'
+        };
+    }
+
 
     const check = checkData(data);
 
@@ -46,12 +66,7 @@ exports.handler = async (event) => {
 function cleanData(data) {
     // ensure the whole form has at least empty strings
     // mandatory fields are checked later
-    const optionalFields = [
-        'www', 'twitter', 'description', 'osfUser', 'zoteroUser',
-        'signup'
-    ];
-
-    for(const s in optionalFields) {
+    for(const s of OPTIONAL_FIELDS) {
         if(!data.hasOwnProperty(s))
             data[s] = "";
     }
@@ -70,7 +85,8 @@ function cleanData(data) {
     // Concatenate helper list into array
     data.helpers = [];
     for(let i = 0; data.hasOwnProperty('helper' + i.toString()); i++)
-        data.helpers.push(data['helper' + i.toString()]);
+        if(data['helper' +i.toString()].length)
+            data.helpers.push(data['helper' + i.toString()]);
 
     return data;
 }
@@ -82,31 +98,32 @@ function cleanData(data) {
  */
 function checkData(data) {
     const fail = (s, c = 400) => ({
-        statusCode: c, body: s
+        statusCode: c, body: formatResponses({
+            check: {
+                title: 'Data check',
+                status: 'Error',
+                details: [s]
+            }
+        })
     });
 
-    const requiredFields = [
-        'jcid', 'name', 'uni', 'uniWWW', 'email', 'post',
-        'country', 'lead', 'authCode'
-    ];
-
-    for(const x of requiredFields) {
+    for(const x of REQUIRED_FIELDS) {
         if(!data.hasOwnProperty(x))
             return fail(`The request is missing mandatory field \'${x}\'.`)
     }
 
-    if(!/^[a-z0-9]+$/i.test(data.jcid))
-        return fail('The id field contains invalid characters.');
+    if(!/^[a-z0-9\-]+$/i.test(data.jcid))
+        return fail(`The id field ("${data.jcid}")  contains invalid characters.`);
 
-    if(!/^[a-z0-9]+$/i.test(data.osfUser))
-        return fail('The OSF username contains invalid characters.');
+    if(!/^[a-z0-9]*$/i.test(data.osfUser))
+        return fail(`The OSF username ("${data.osfUser}")  contains invalid characters.`);
 
     // check email has an x@y structure
     if(!/\S+@\S+/i.test(data.email))
-        return fail('The email address supplied appears invalid.');
+        return fail(`The email address supplied("${data.email}")   appears invalid.`);
 
     if(data.authCode !== AUTH_CODE) {
-        return fail('The authorisation code supplied is invalid.')
+        return fail(`The authorisation code supplied("${data.authCode}") is invalid. It should be ${AUTH_CODE}`)
     }
 
     return null;
@@ -114,20 +131,19 @@ function checkData(data) {
 
 
 async function callAPIs(data) {
-    const [osf, zotero, slack] = await Promise.all([
+    const [slack, osf, zotero] = await Promise.all([
+        callSlack(data),
         callOSF(data),
-        callZotero(data),
-        callSlack(data)
+        callZotero(data)
     ]);
 
+    const results = {slack, osf, zotero};
+
     // Some API calls require info we only have after others are made...
-    const github = await callGitHub(data, {osf, zotero, slack});
+    results.github = await callGitHub(data, results);
+    results.mailgun = await callMailgun(data, results);
 
-    return {osf, zotero, slack, github}
-
-    const mailgun = await callMailgun(data, {osf, zotero, slack, github});
-
-    return {osf, zotero, slack, github, mailgun};
+    return results;
 }
 
 /**
@@ -147,17 +163,16 @@ function formatResponses(re) {
         const r = re[s];
 
         out += `
-<h2>${r.title}</h2>
-<p><strong>Status:</strong> ${r.status}</p>
+<div class="${r.status.toLowerCase()}">
+<h2>${r.title} - <span class="${r.status.toLowerCase()}">${r.status}</span></h2>
 `;
         out += '<ul>';
         for(const task of r.details) {
             out += `
     <li>${task}</li>`;
         }
-        out += '</ul>';
+        out += '</ul></div>';
     }
-
     return out;
 }
 
@@ -283,6 +298,7 @@ async function callOSF(data) {
         }
 
         const response = await call.json();
+        console.log(response)
 
         out.details.push('Added the user as a contributor to the repository.');
 
@@ -401,7 +417,6 @@ async function callZotero(data) {
         }
 
         const response = await call.json();
-        console.log(response)
 
         if(!response.data || !response.data.members) {
             out.status = 'Warning';
@@ -531,7 +546,7 @@ ${data.description}
 
     } catch(e) {
         out.status = 'Warning';
-        out.details.push('An error occurred while adding the user as a group member: ' + e.toString());
+        out.details.push('An error occurred while accessing the repository. ' + e.toString());
 
         return out;
     }
@@ -560,7 +575,7 @@ ${data.description}
 
         const response = await call.json();
 
-        out.details.push(`Created ${body.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(body.name)}">https://reproducibiliTea.org/journal-clubs/#${encodeURI(body.name)}</a>`);
+        out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
 
     } catch(e) {
         out.status = 'Warning';
@@ -599,7 +614,18 @@ async function callMailgun(data, results) {
         subject: `New ReproducibiliTea: ${data.name}`,
         html: `
 <style type="text/css">
-    
+    .status {font-weight: bold;color: darkgoldenrod;}
+    .status.okay {color: #009926;}
+    .status.error {color: #990000;}
+    ul {list-style: none;}
+    .okay {background-color: #d7eefd;}
+    .warning {background-color: #ffe8d4;}
+    .error {background-color: #ff253a;font-weight: bold;}
+    li {padding: .25em;}
+    .detail li {padding: .25em}
+    .okay h2:before {content: "\\2705";}
+    .warning h2:before {content: "\\26A0";}
+    .error h2:before {content: "\\274C";}
 </style>
 <p>A new ReproducibiliTea journal club has been created: <strong>${data.name}</strong>!</p>
 <h1>JC creation report</h1>
@@ -617,8 +643,8 @@ ${results.github.githubFile}
     await mailgun.messages().send(mailgunData).then(() => {
         out.details.push('Successfully sent email to ReproducibiliTea.');
     }).catch(error => {
-        out.status = 'Failed';
-        out.details.push('Failed to send email to ReproducibiliTea.');
+        out.status = 'Error';
+        out.details.push(`Failed to send email to ReproducibiliTea. ${error}`);
     });
 
     return out;

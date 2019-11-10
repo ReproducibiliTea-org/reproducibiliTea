@@ -11,44 +11,119 @@ Here you can create a new ReproducibiliTea journal club. We assume you have foun
 
 <form id="newJC">
     <fieldset class="JC-details">
-        <legend>Journal Club details</legend>
+        <input type="hidden" id="jcid" name="jcid" />
         <div class="row mandatory">
-            <label for="jcid">JC Identifier</label>
-            <input type="text" id="jcid" name="jcid" placeholder="Academia" />
-        </div>
-        <div class="row mandatory">
-            <label for="name">JC Name</label>
+            <div class="labels">
+                <label for="name">JC Name</label>
+                <div class="label-details">
+                    <p>The name of the journal club. Don't include "ReproducibiliTea" in the name - we're all "ReproducibiliTea X".</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="name" name="name" placeholder="Academia" />
         </div>
+
         <div class="row mandatory">
-            <label for="uni">Host university</label>
+            <div class="labels">
+                <label for="uni">Host university</label>
+                <div class="label-details">
+                    <p>This is the name of the university or organisation to which the journal club belongs. Online journal clubs can give a broader name, such as their country or region, or their primary communication service.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="uni" name="uni" placeholder="University of Academia" />
         </div>
-        <div class="row mandatory">
-            <label for="uniWWW">University website</label>
+
+        <div class="row">
+            <div class="labels">
+                <label for="uniWWW">University website</label>
+                <div class="label-details">
+                    <p>This is the website for the host university.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="uniWWW" name="uniWWW" placeholder="https://academia.ac/" />
         </div>
+
         <div class="row">
-            <label for="www">JC website</label>
+            <div class="labels">
+                <label for="www">JC website</label>
+                <div class="label-details">
+                    <p>If your journal club has a website you can put it here.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="www" name="www" placeholder="https://academia-rpt.github.io/" />
         </div>
+
         <div class="row">
-            <label for="twitter">JC Twitter</label>
+            <div class="labels">
+                <label for="twitter">JC <a href="https://twitter.com/">Twitter</a></label>
+                <div class="label-details">
+                    <p>If you are going to run a Twitter account for your journal club you can put your handle here.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="twitter" name="twitter" placeholder="@AcademiaRpT" />
         </div>
+
         <div class="row">
-            <label for="signup">Signup url/email</label>
+            <div class="labels">
+                <label for="signup">Signup url/email</label>
+                <div class="label-details">
+                    <p>Here you can put an email address or web address (e.g. <a href="https://forms.google.com/">Google forms</a>) which people can use to sign up to your JC mailing list.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="signup" name="signup" placeholder="goodScholar@academia.ac" />
         </div>
+
         <div class="row mandatory">
-            <label for="post">Postal address</label>
+            <div class="labels">
+                <label for="post">Postal address</label>
+                <div class="label-details">
+                    <p>This is the address where we'll send the starter pack, including stickers and the famous teapot!</p>
+                    <ul>
+                        <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
             <textarea id="post" name="post" placeholder="Room 301,
 Reproducible Research Institute,
 University of Academia,
 UK"></textarea>
         </div>
+
         <div class="row mandatory">
-            <label for="country">Country</label>
+            <div class="labels">
+                <label for="country">Country</label>
+                <div class="label-details">
+                    <p>The country your JC will be in. This should be the same country as the postal address given above.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
             <select id="country" name="country">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -296,41 +371,105 @@ UK"></textarea>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
         </div>
+
         <div class="row">
-            <label for="description">Journal club description</label>
+            <div class="labels">
+                <label for="description">Journal club description</label>
+                <div class="label-details">
+                    <p>The description of your journal club. This will form the body of the journal club entry on this website. You may style your writing in markdown.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <textarea id="description" name="description" placeholder="This is where you can describe your journal club if you wish. You can write markdown here, and you can always update it later on GitHub.
 
 You might want to describe what you hope to achieve, how often you plan to meet, which disciplines you are planning to cater for, etc."></textarea>
         </div>
     </fieldset>
+
     <fieldset class="JC-organisers">
         <legend>Organisers</legend>
         <div class="row mandatory">
-            <label for="lead">Lead organiser</label>
+            <div class="labels">
+                <label for="lead">Lead organiser</label>
+                <div class="label-details">
+                    <p>This is the name of the head of the JC. This will be the primary person we contact about general JC matters. You may use the button to add the names of additional organisers who will be listed on the website.</p>
+                    <ul>
+                        <li class="public">This will be displayed publicly.</li>
+                        <li class="is-mandatory">This field is must contain at least the lead organiser.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="organisers">
                 <input type="text" id="lead" name="lead" placeholder="Good Scholar" />
                 <button onclick="addNewOrganiser(event)"><i class="fas fa-user-plus"></i></button>
             </div>
         </div>
+
         <div class="row mandatory">
-            <label for="email">Contact email</label>
+            <div class="labels">
+                <label for="email">Contact email</label>
+                <div class="label-details">
+                    <p>This is the email address for the lead organiser. It can be an email for the journal club rather than a personal email if you like. We will use this for getting in touch with you about general JC stuff.</p>
+                    <ul>
+                        <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
         </div>
+
         <div class="row">
-            <label for="osfUser">Lead organiser OSF id</label>
+            <div class="labels">
+                <label for="osfUser">Lead organiser <a href="https://osf.io/">OSF</a> id</label>
+                <div class="label-details">
+                    <p>This is the OSF id for the organiser we'll add as a contributor on the OSF page we'll create for your JC.</p>
+                    <p>You can find your OSF id by logging in and going to your profile (click the menu in the top-right, and select '<strong>profile</strong>'), then choosing '<strong>public profile</strong>'. The second part of that URL, after the osf.io/, is your OSF id.</p>
+                    <ul>
+                        <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
         </div>
+
         <div class="row">
-            <label for="zoteroUser">Lead organiser Zotero API id</label>
+            <div class="labels">
+                <label for="zoteroUser">Lead organiser <a href="https://zotero.org/">Zotero</a> API id</label>
+                <div class="label-details">
+                    <p>This is the Zotero id for the organiser we'll add to the <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items">ReproducibiliTea Zotero Group Library</a> we can all use to share good papers for discussion.</p>
+                    <p>You can find your Zotero API id by logging in, going to <strong>settings</strong> > <strong>Feeds/API</strong>. At the top you'll see: 'Your userID for use in API calls is ...'</p>
+                    <ul>
+                        <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
+                        <li class="is-mandatory">This field is optional.</li>
+                    </ul>
+                </div>
+            </div>
             <input type="text" id="zoteroUser" name="zoteroUser" placeholder="20048242" />
         </div>
+
     </fieldset>
+
     <fieldset class="submission">
         <legend>Final checks</legend>
         <div class="row mandatory">
-            <label for="authCode">Authorization code</label>
-            <input type="text" id="authCode" name="authCode" placeholder="XXXX-XXXX" />
+            <div class="labels">
+                <label for="authCode">Authorization code</label>
+                <div class="label-details">
+                    <p>To prevent just anyone spamming this form with new JC requests, we need you to submit the password given to you by one of the core ReproducibiliTea team.</p>
+                    <ul>
+                        <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
+                        <li class="is-mandatory">This field is required.</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="text" id="authCode" name="authCode" placeholder="????????" />
         </div>
+
         <div class="row mandatory">
             <button onclick="submitForm(event)">Activate JC!</button>
         </div>
@@ -340,6 +479,11 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 <!--
 <div class="row">
     <label for="others">Other organisers</label>
+    <div class=label-details">
+    <p>Description<div
+     <ul>
+     <li>Publicityclass=labels">
+
     <input type="text" id="others" name="others0" placeholder="Helper1"/>
 </div>
 -->
