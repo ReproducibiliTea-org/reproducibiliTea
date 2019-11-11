@@ -72,7 +72,7 @@ function cleanData(data) {
     }
 
     if(data.post)
-        data.post = data.post.replace(/\\n/g, ' ');
+        data.post = data.post.replace(/\\n/g, ', ');
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
@@ -631,12 +631,12 @@ async function callMailgun(data, results) {
 <h1>JC creation report</h1>
 ${formatResponses(results)}
 <p>Welcome to the new JC organisers!</p>
-</hr>
+<hr />
 <h1>Technical details</h1>
 <h2>Form contents</h2>
 ${JSON.stringify(data)}
 <h2>Generated JC.md file</h2>
-${results.github.githubFile}
+${results.github.githubFile.replace(/\\n/g, '\n<br />')}
         `
     };
 
