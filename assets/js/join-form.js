@@ -131,7 +131,7 @@ async function submitForm(e) {
     const form = document.querySelector('#newJC');
 
     // Create the JC id from the name
-    document.querySelector('#jcid').value = document.querySelector('#name').value.replace(' ', '-').toLowerCase();
+    document.querySelector('#jcid').value = document.querySelector('#name').value.replace(/\s/g, '-').toLowerCase();
 
     // Check form
     if(!checkForm(form))

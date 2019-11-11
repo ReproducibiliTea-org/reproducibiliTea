@@ -37,7 +37,6 @@ exports.handler = async (event) => {
 
     try{
         data = cleanData(JSON.parse(event.body));
-        console.log(data)
     } catch(e) {
         return {
             statusCode: 400,
@@ -55,6 +54,7 @@ exports.handler = async (event) => {
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
     const body = await callAPIs(data);
 
+    console.log(body)
     return {statusCode: 200, body: formatResponses(body)};
 };
 
@@ -70,6 +70,9 @@ function cleanData(data) {
         if(!data.hasOwnProperty(s))
             data[s] = "";
     }
+
+    if(data.post)
+        data.post = data.post.replace(/\\n/g, ' ');
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
@@ -123,7 +126,7 @@ function checkData(data) {
         return fail(`The email address supplied("${data.email}")   appears invalid.`);
 
     if(data.authCode !== AUTH_CODE) {
-        return fail(`The authorisation code supplied("${data.authCode}") is invalid. It should be ${AUTH_CODE}`)
+        return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
     }
 
     return null;
@@ -152,7 +155,6 @@ async function callAPIs(data) {
  * @return {string} HTML response body
  */
 function formatResponses(re) {
-    console.log(re)
 
     let out = "";
 
@@ -200,7 +202,7 @@ async function callOSF(data) {
                 }
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -242,7 +244,7 @@ async function callOSF(data) {
                 body: JSON.stringify(makeJC)
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -258,7 +260,7 @@ async function callOSF(data) {
         }
     } catch(e) {
         out.status = 'Error';
-        out.details.push('An error occurred while creating the repository: ' + e.toString());
+        out.details.push('An error occurred while creating the repository. ' + e.toString());
 
         return out;
     }
@@ -294,11 +296,10 @@ async function callOSF(data) {
                 body: JSON.stringify(addUser)
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
-        console.log(response)
 
         out.details.push('Added the user as a contributor to the repository.');
 
@@ -336,7 +337,7 @@ async function callZotero(data) {
                 }
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -377,7 +378,7 @@ async function callZotero(data) {
                 body: addCollection
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -413,7 +414,7 @@ async function callZotero(data) {
                 }
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -449,11 +450,10 @@ async function callZotero(data) {
                 body: updateMembers
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
-        console.log(response)
 
         out.details.push('Added the user to the Zotero group.');
 
@@ -505,7 +505,7 @@ twitter: ${data.twitter}
 signup: ${data.signup}
 organisers: [${[data.lead, ...data.helpers].join(', ')}]
 contact: ${data.email}
-address: ${data.post}
+address: [${data.post}]
 country: ${data.country}
 ---
 
@@ -524,7 +524,7 @@ ${data.description}
                 }
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
@@ -570,7 +570,7 @@ ${data.description}
                 body: content
             });
         if(!call.ok) {
-            throw new Error(`Server response: ${call.status}: ${call.statusCode}`);
+            throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
         const response = await call.json();
