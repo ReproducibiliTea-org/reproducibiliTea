@@ -38,7 +38,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - Copenhagen (Niels Menezes)
 
 **France**
-- Lyon (Coming soon!)
+- [Lyon](/journal-clubs/#Lyon') (Wanda Grabon)
 
 **Germany**
 - [Berlin](/journal-clubs/#Berlin) (Sophia Crüwell, Corinna Hartling, An Bin Cho)
