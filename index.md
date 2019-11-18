@@ -61,7 +61,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - Singapore, Nanyang Technical University (Alexa von Hagen)
 
 **Sweden**
-- Linköping (Lina Koppel, Henrik Danielsson)
+- [Linköping](/journal-clubs/#Linköping) (Lina Koppel, Henrik Danielsson)
 - [Stockholm](/journal-clubs/#Stockholm), Karolinska Institutet (Robin Fondberg)
 
 **Switzerland**
