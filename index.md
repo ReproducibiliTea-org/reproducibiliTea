@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 47 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 48 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
@@ -30,6 +30,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Canada**
 - [McMaster](/journal-clubs/#McMaster) (Matthew Jordan, Michael Galang)
 - [Toronto](/journal-clubs/#Toronto), York University (Mark Adkins, Stephan Bonfield)
+- Vancouver (coming soon!)
 
 **Czech Republic**
 - [Olomouc](/journal-clubs/#Olomouc), Palacký University (Tomas Heger and Martin Vondrak)
