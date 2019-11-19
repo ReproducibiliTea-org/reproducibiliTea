@@ -25,7 +25,6 @@
 }
 
 .person:hover .person-social {
-    display: unset;
     position: absolute;
     width: 100%;
     left: 50%;

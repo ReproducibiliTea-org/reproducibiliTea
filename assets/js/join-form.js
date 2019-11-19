@@ -57,69 +57,6 @@ function checkForm(form) {
 }
 
 /**
- * Create HTML for displaying the status of an API operation
- * @param status {object} status object from API
- * @return {HTMLElement | null}
- */
-function addDetail(status) {
-    /**
-     * Expand out the contents of an array
-     * @param status {object}
-     * @param x {string} key in status to unpack
-     * @return {HTMLElement | null}
-     */
-    const unpack = function(status, x) {
-        if(status[x].length === 0)
-            return null;
-
-        const e = document.createElement('ul');
-        e.classList.add(x);
-        // List content
-        for(const t of status[x]) {
-            const item = document.createElement('li');
-            item.innerHTML = t;
-            e.appendChild(item);
-        }
-        return e;
-    };
-
-    if(!status.task)
-        return null;
-
-    const elm = document.createElement('div');
-    elm.classList.add('detail');
-
-    const task = unpack(status, 'task');
-
-    if(!task)
-        return null;
-
-    const stat = document.createElement('span');
-    stat.classList.add('status', status.status.toLowerCase());
-    stat.innerHTML = "(" + status.status + ")";
-    task.querySelector('li').innerHTML += " " + stat.outerHTML;
-
-    // Add a row handling the task
-    elm.appendChild(task);
-
-    const details = document.createElement('div');
-    details.classList.add('details');
-
-    // Rows for each status element
-    for(const s in status) {
-        if(s !== 'task' && s !== 'status') {
-            const detail = unpack(status, s);
-            if(detail)
-                details.appendChild(detail);
-        }
-    }
-
-    elm.appendChild(details);
-
-    return elm;
-}
-
-/**
  * Check and submit form, then fill in the response from the server
  * @param e {Event} button click event
  * @return {boolean}
