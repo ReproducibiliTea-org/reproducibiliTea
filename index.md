@@ -19,7 +19,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 # Current Journal Clubs
 
 **Australia**
-- Melbourne (coming soon!)
+- [Melbourne](/journal-clubs/#Melbourne) (Andy Head, Sally Grace. Philip Newall)
 
 **Austria**
 - [Graz](/journal-clubs/#Graz) (Gaby Hofer and Hilmar Brohmer)
@@ -30,7 +30,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Canada**
 - [McMaster](/journal-clubs/#McMaster) (Matthew Jordan, Michael Galang)
 - [Toronto](/journal-clubs/#Toronto), York University (Mark Adkins, Stephan Bonfield)
-- Vancouver (coming soon!)
+- [Vancouver](/journal-clubs/#Vancouver) (Justin Boldsen)
 
 **Czech Republic**
 - [Olomouc](/journal-clubs/#Olomouc), Palacký University (Tomas Heger and Martin Vondrak)
@@ -59,12 +59,12 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Rotterdam](/journal-clubs/#Rotterdam) (Antonio Schettino)
 
 **Singapore**
-- Singapore, Nanyang Technical University (Alexa von Hagen)
+- [Singapore](/journal-clubs/#Singapore), Nanyang Technical University (Alexa von Hagen)
 
 **Sweden**
 - [Linköping](/journal-clubs/#Linköping) (Lina Koppel, Henrik Danielsson)
-- [Stockholm](/journal-clubs/#Stockholm), Karolinska Institutet (Robin Fondberg)
-- Stockholm, Stockholm University (coming soon!)
+- Stockholm, [Karolinska Institutet](/journal-clubs/#Karolinska,%20Stockholm) (Robin Fondberg)
+- [Stockholm](/journal-clubs/#Stockholm) (Stephen Pierzchajlo, Rasmus Eklund)
 
 **Switzerland**
 - [Zurich](/journal-clubs/#Zurich) (Information available soon!)
@@ -76,7 +76,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Aberdeen](/journal-clubs/#Aberdeen) (Jessica Butler, Annesha Sil)
 - Bristol, [University of Bristol](/journal-clubs/#Bristol, University of Bristol) (Katie Drax)
 - Bristol, [UWE](/journal-clubs/#Bristol, UWE) (Charlotte Pennington)
-- [Cambridge](/journal-clubs/#Cambridge ExPsy) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
+- [Cambridge](/journal-clubs/#Cambridge%20ExPsy) (Ben Farrar: read more about his experience [here]({% post_url 2018-11-31-ReproducibiliTea-testimonial %}))
 - [Canterbury](/_journal-clubs/#Canterbury) (Bethan Iley, Felicity Gallagher, Roger Giner-Sorolla)
 - [Chester](/journal-clubs/#Chester) (Suzanne Stewart)
 - [Glasgow](/journal-clubs/#Glasgow) (Stephanie Allan)
