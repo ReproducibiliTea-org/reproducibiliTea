@@ -5,3 +5,4 @@ _site
 .idea/codeStyles/codeStyleConfig.xml
 src/secret.php
 .env
+node_modules
