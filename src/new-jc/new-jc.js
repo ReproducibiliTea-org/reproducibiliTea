@@ -195,7 +195,7 @@ async function callOSF(data) {
 
     // Check for existing OSF repository
     try {
-        const call = await fetch(`${osfURL}nodes/384cb/children/?filter[title]=${encodeURI(data.name)}`,
+        const call = await fetch(`${osfURL}nodes/3qrj6/children/?filter[title]=${encodeURI(data.name)}`,
             {
                 headers: {
                     Authorization: `Bearer ${OSF_TOKEN}`
@@ -234,7 +234,7 @@ async function callOSF(data) {
     };
 
     try {
-        const call = await fetch(`${osfURL}nodes/384cb/children/`,
+        const call = await fetch(`${osfURL}nodes/3qrj6/children/`,
             {
                 method: 'POST',
                 headers: {
