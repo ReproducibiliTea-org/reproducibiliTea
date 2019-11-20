@@ -191,7 +191,7 @@ async function callOSF(data) {
         osfRepoId: null
     };
 
-    const osfURL = 'https://api.test.osf.io/v2/';
+    const osfURL = 'https://api.osf.io/v2/';
 
     // Check for existing OSF repository
     try {
