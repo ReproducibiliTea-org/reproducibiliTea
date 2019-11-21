@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 49 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 51 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
@@ -20,6 +20,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Australia**
 - [Melbourne](/journal-clubs/#Melbourne) (Andy Head, Sally Grace. Philip Newall)
+- Tasmania (coming soon!)
 
 **Austria**
 - [Graz](/journal-clubs/#Graz) (Gaby Hofer and Hilmar Brohmer)
@@ -84,6 +85,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Lancaster](/journal-clubs/#Lancaster) (Marina Bazhydai)
 - [Leeds](/journal-clubs/#Leeds) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
 - [Leicester](/journal-clubs/#Leicester) (Samantha Tyler, Tami Kalsi)
+- Liverpool (coming soon!)
 - London, [UCL](/journal-clubs/#University College London) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester](/journal-clubs/#Manchester) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford](/journal-clubs/#Oxford) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
