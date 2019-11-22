@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 51 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 52 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
@@ -57,6 +57,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Amsterdam](/journal-clubs/#Amsterdam) (Angelika Stefan, Florian Wanders)
 - [Groningen](/journal-clubs/#Groningen) (Daan Ornée)
 - [Leiden](/journal-clubs/#Leiden) (Ricci Proppert)
+- Nijmegen (coming soon!)
 - [Rotterdam](/journal-clubs/#Rotterdam) (Antonio Schettino)
 
 **Singapore**
