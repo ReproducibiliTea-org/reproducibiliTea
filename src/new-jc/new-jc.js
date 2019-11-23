@@ -226,7 +226,7 @@ async function callOSF(data) {
             type: 'nodes',
             attributes: {
                 title: `ReproducibiliTea ${data.name}`,
-                category: 'other',
+                category: 'communication',
                 description: `Materials from ReproducibiliTea sessions in ${data.name}. Templates and presentations are available for others to use and edit.`,
                 'public': '1'
             }
@@ -273,7 +273,9 @@ async function callOSF(data) {
     const addUser = {
         data: {
             type: 'contributors',
-            attributes: "",
+            attributes: {
+                permission: "admin"
+            },
             relationships: {
                 user: {
                     data: {
@@ -493,8 +495,7 @@ async function callGitHub(data, results) {
         title: 'GitHub',
         status: 'Okay',
         details: [],
-        githubFile: `
----
+        githubFile: `---
 title: ${data.name}
 host-organisation: ${data.uni}
 host-org-url: ${data.uniWWW}
