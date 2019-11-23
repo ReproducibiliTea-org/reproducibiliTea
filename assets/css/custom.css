@@ -183,4 +183,7 @@ div.page-link {
 }
 
 @media screen and (max-width: 600px) {
+    .header-links {
+        display: unset;
+    }
 }

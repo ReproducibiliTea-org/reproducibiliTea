@@ -1,3 +1,31 @@
+article {
+    height: 100%;
+}
+
+div.margin {
+    height: 100vh;
+}
+
+.jump {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fade {
+    color: lightgrey;
+    font-weight: normal;
+}
+
+tr td:first-of-type {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr td img {
+    width: 128px;
+}
+
 .row {
     width: 100%;
     display: flex;
