@@ -20,7 +20,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Australia**
 - [Melbourne](/journal-clubs/#Melbourne) (Andy Head, Sally Grace. Philip Newall)
-- Tasmania (coming soon!)
+- [Hobart](/journal-clubs/#Hobart), Tasmania (Emily Lowe-Calverley, Jim Sauer)
 
 **Austria**
 - [Graz](/journal-clubs/#Graz) (Gaby Hofer and Hilmar Brohmer)
@@ -57,7 +57,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Amsterdam](/journal-clubs/#Amsterdam) (Angelika Stefan, Florian Wanders)
 - [Groningen](/journal-clubs/#Groningen) (Daan Ornée)
 - [Leiden](/journal-clubs/#Leiden) (Ricci Proppert)
-- Nijmegen (coming soon!)
+- [Nijmegen](/journal-clubs/#Nijmegen) (Eirini Zormpa, Johannes Algermissen, Kristijan Armeni, Jeanette Mostert)
 - [Rotterdam](/journal-clubs/#Rotterdam) (Antonio Schettino)
 
 **Singapore**
@@ -86,7 +86,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Lancaster](/journal-clubs/#Lancaster) (Marina Bazhydai)
 - [Leeds](/journal-clubs/#Leeds) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
 - [Leicester](/journal-clubs/#Leicester) (Samantha Tyler, Tami Kalsi)
-- Liverpool (coming soon!)
+- [Liverpool](/journal-clubs/#Liverpool) (Andrew Jones)
 - London, [UCL](/journal-clubs/#University College London) (Emma Norris, Jessie Balwin and Tabea Schoeler)
 - [Manchester](/journal-clubs/#Manchester) (Thomas Richardson, Daniel Poole, Jade Pickering and George Farmer)
 - [Oxford](/journal-clubs/#Oxford) (Sam Parsons, Matt Jaquiery, Nils Reimer, Paul Thompson, Sarah Ashcroft-Jones)
