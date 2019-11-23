@@ -54,7 +54,6 @@ exports.handler = async (event) => {
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
     const body = await callAPIs(data);
 
-    console.log(body)
     return {statusCode: 200, body: formatResponses(body)};
 };
 
@@ -90,6 +89,11 @@ function cleanData(data) {
     for(let i = 0; data.hasOwnProperty('helper' + i.toString()); i++)
         if(data['helper' +i.toString()].length)
             data.helpers.push(data['helper' + i.toString()]);
+
+    // Remove the @ at the beginning of twitter usernames because YAML doesn't allow entries to start with @
+    if(data.twitter)
+        while(data.twitter[0] === "@")
+            data.twitter = data.twitter.substr(1);
 
     return data;
 }
@@ -301,7 +305,7 @@ async function callOSF(data) {
             throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
-        const response = await call.json();
+        await call.json();
 
         out.details.push('Added the user as a contributor to the repository.');
 
@@ -455,7 +459,7 @@ async function callZotero(data) {
             throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
-        const response = await call.json();
+        await call.json();
 
         out.details.push('Added the user to the Zotero group.');
 
@@ -574,7 +578,7 @@ ${data.description}
             throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         }
 
-        const response = await call.json();
+        await call.json();
 
         out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
 

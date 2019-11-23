@@ -5,7 +5,7 @@ host-org-url: https://www.sussex.ac.uk/
 osf: 98c2e
 zotero: 9PXVF2ER
 website: 
-twitter: @SussexUni_OA
+twitter: SussexUni_OA
 signup: 
 organisers: [Sussex Open Science]
 contact: openscience@sussex.ac.uk 
