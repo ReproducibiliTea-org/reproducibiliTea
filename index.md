@@ -31,6 +31,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Belgium**
 - Leuven (coming soon!)
+- [Kortrijk](/journal-clubs/#Kortrijk) (Ana Barbosa Mendes, Naina Goel)
 
 **Canada**
 - [McMaster](/journal-clubs/#McMaster) (Matthew Jordan, Michael Galang)
@@ -106,4 +107,4 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **United States**
 - [Charlottesville](/journal-clubs/#Charlottesville), University of Virginia (Brian Nosek, Nick Buttrick)
 - [Minnesota](/journal-clubs/#Minnesota) (Amy Riegelman, Alan Love)
-- Richmond (coming soon!)
+- [Richmond](/journal-clubs/#Richmond,%20Virginia%20(RVA)) (Dana Lapato, Timothy P. York, Nina Exner)
