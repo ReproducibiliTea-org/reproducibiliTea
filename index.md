@@ -71,7 +71,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Sweden**
 - [Linköping](/journal-clubs/#Linköping) (Lina Koppel, Henrik Danielsson)
-- Linnaeus University (coming soon!)
+- [Linnaeus University](/journal-clubs/#Växjö-Kalmar), Växjö-Kalmar (Thomas Nordström, Viktor Kaldo, Rickard Carlsson)
 - Stockholm, [Karolinska Institutet](/journal-clubs/#Karolinska,%20Stockholm) (Robin Fondberg)
 - [Stockholm](/journal-clubs/#Stockholm) (Stephen Pierzchajlo, Rasmus Eklund)
 
