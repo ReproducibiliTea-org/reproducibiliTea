@@ -50,7 +50,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Germany**
 - [Berlin](/journal-clubs/#Berlin) (Sophia Crüwell, Corinna Hartling, An Bin Cho)
 - [Frankfurt](/journal-clubs/#Frankfurt) (Julia Beitner, Elli Zey)
-- Munich (coming soon!)
+- [Munich](/journal-clubs/#Munich) (Stephan Nuding, Leonhard Schramm, Laura Goetz)
 - [Wuerzburg](/journal-clubs/#Wuerzburg) (Lea Hildebrandt, Eda Kir, Patrick Kaschel)
 
 **India**
