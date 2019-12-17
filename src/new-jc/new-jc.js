@@ -196,10 +196,11 @@ async function callOSF(data) {
     };
 
     const osfURL = 'https://api.osf.io/v2/';
+    const osfParentRepo = 'cfby7';
 
     // Check for existing OSF repository
     try {
-        const call = await fetch(`${osfURL}nodes/3qrj6/children/?filter[title]=${encodeURI(data.name)}`,
+        const call = await fetch(`${osfURL}nodes/${osfParentRepo}/children/?filter[title]=${encodeURI(data.name)}`,
             {
                 headers: {
                     Authorization: `Bearer ${OSF_TOKEN}`
@@ -238,7 +239,7 @@ async function callOSF(data) {
     };
 
     try {
-        const call = await fetch(`${osfURL}nodes/3qrj6/children/`,
+        const call = await fetch(`${osfURL}nodes/${osfParentRepo}/children/`,
             {
                 method: 'POST',
                 headers: {
