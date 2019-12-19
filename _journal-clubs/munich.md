@@ -11,7 +11,7 @@ host-org-url: https://www.uni-muenchen.de
 
 # Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
 #�The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
-organisers: [Stephan Nuding, Leonhard Schramm, Laura Goetz] 
+organisers: [Stephan Nuding, Leonhard Schramm, Laura Goetz, Felix Schönbrodt] 
 
 # Replace "j.c.Owner@yourCity.ac.uk" with the email of the JC Communication Lead
 contact: stephan.nuding@campus.lmu.de
