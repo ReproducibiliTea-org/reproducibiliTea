@@ -25,4 +25,4 @@ Lastly, we received £590 to further promote and produce the ReproducibiliTea po
 In 2020 we will focus on how we can support and promote the very diverse range of journal clubs around the world, and ensure that the organisers are supported as much as possible. 
 To do so we are hoping to obtain more funding both in the UK and internationally. Looking back 2019 has been hugely productive, and we are truly excited about what the new year will bring for ReproducibiliTea.
 
-*Amy Orben is a member of the ReproducibiliTeam and a college research fellow at the University of Cambridge. She is responsible for high-level organisation of ReproducibiliTea journal clubs and liaising with the UKRN"
+*Amy Orben is a member of the ReproducibiliTeam and a college research fellow at the University of Cambridge. She is responsible for high-level organisation of ReproducibiliTea journal clubs and liaising with the UKRN*
