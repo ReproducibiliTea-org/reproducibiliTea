@@ -81,10 +81,16 @@ layout: default
                             <ul>
                                 <li class="public">This will be displayed publicly.</li>
                                 <li class="is-mandatory">This field is required.</li>
+                                <li class="is-mandatory">This cannot match an existing journal club's name.</li>
                             </ul>
                         </div>
                     </div>
                     <input type="text" id="name" name="name" placeholder="Academia" />
+                    <template id="existing-jc-names">
+                        {% for jc in site.journal-clubs %}
+                        <div>{{ jc.title }}</div>
+                        {% endfor %}
+                    </template>
                 </div>
 
                 <div class="row mandatory">

@@ -50,8 +50,23 @@ function checkForm(form) {
                 okay = false;
                 e.classList.add('bad');
                 e.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+                e.title = "This field is required.";
             }
     });
+
+    // Check JC Name isn't already in use
+    const name = document.getElementById("name");
+
+    document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
+        d => {
+            if(d.innerText === name.value) {
+                okay = false;
+                name.classList.add('bad');
+                name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+                name.title = "The name cannot match an existing journal club's name.";
+            }
+        }
+    );
 
     return okay;
 }
