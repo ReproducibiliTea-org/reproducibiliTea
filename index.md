@@ -67,7 +67,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Rotterdam](/journal-clubs/#Rotterdam) (Antonio Schettino)
 
 **Singapore**
-- [Singapore](/journal-clubs/#Singapore), Nanyang Technical University (Alexa von Hagen)
+- [Singapore](/journal-clubs/#Singapore), Nanyang Technological University (Alexa von Hagen)
 
 **Sweden**
 - [Linköping](/journal-clubs/#Linköping) (Lina Koppel, Henrik Danielsson)
