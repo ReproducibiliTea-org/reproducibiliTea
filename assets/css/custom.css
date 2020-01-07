@@ -25,7 +25,6 @@
 }
 
 .person:hover .person-social {
-    display: unset;
     position: absolute;
     width: 100%;
     left: 50%;
@@ -112,10 +111,6 @@
 .jc-details {
     display: flex;
     flex-direction: column;
-    /* hanging indent */
-    text-indent: -1.4em;
-    padding-left: 1.4em;
-    word-break: break-all;
 }
 
 .jc-organisers {
@@ -131,6 +126,47 @@
 }
 .sponsor .logo {
     align-self: center;
+}
+
+/* nav display */
+.header-links {
+    display: grid;
+    list-style: none;
+    margin: 0;
+    grid-auto-flow: column;
+    grid-column-gap: 2em;
+}
+
+.header-links li {
+    display: flex;
+    position: relative;
+    background-color: white;
+}
+
+.header-links li:hover .header-links,
+.header-links li:active .header-links {
+    display: grid;
+}
+
+.header-links .header-links {
+    display: none;
+    grid-auto-flow: row;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+}
+
+div.page-link {
+    font-weight: bold;
+    cursor: default;
+    letter-spacing: .25em;
+}
+
+#map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -150,4 +186,7 @@
 }
 
 @media screen and (max-width: 600px) {
+    .header-links {
+        display: unset;
+    }
 }

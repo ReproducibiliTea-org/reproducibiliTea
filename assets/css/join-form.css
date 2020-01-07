@@ -1,0 +1,195 @@
+article {
+    height: 100%;
+}
+
+div.margin {
+    height: 100vh;
+}
+
+.jump {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fade {
+    color: lightgrey;
+    font-weight: normal;
+}
+
+tr td:first-of-type {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr td img {
+    width: 128px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: .25em;
+    justify-content: space-between;
+}
+
+.row:hover {
+    background-color: azure;
+}
+
+.row .labels {
+    position: relative;
+}
+
+.row label {
+    width: 100%
+}
+
+.mandatory label {
+    font-weight: bold;
+}
+
+.row .label-details {
+    display: none;
+    position: absolute;
+    width: calc(100% - 2em);
+    padding: .25em;
+    border-left: 2px solid #1756a9;
+    background-color: azure;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    font-size: .9em;
+    line-height: 1em;
+}
+
+.label-details > * {
+    padding-left: .25em;
+}
+
+.label-details ul {
+    padding: 0;
+    list-style-type: disc;
+}
+
+.label-details li:not(:last-of-type) {
+    margin-bottom: .25em;
+}
+
+.label-details li.public {
+    color: orangered;
+    font-weight: bold;
+}
+
+.label-details li.hidden {
+    color: #1756a9;
+    font-weight: bold;
+}
+
+.row.mandatory .is-mandatory {
+    font-weight: bold;
+}
+
+.row:not(.mandatory) .is-mandatory {
+    color: dimgrey;
+}
+
+.row:hover .label-details,
+.row:focus .label-details,
+.row:focus-within .label-details {
+    display: unset;
+}
+
+.row * {
+    width: 100%;
+    height: min-content;
+    min-height: 1em;
+}
+
+.row button,
+.row svg {
+    height: unset;
+}
+
+#post {
+    height: 6em;
+}
+
+#description {
+    height: 10em;
+}
+
+.bad {
+    background-color: #ffd7d1 !important;
+}
+
+form {
+    transition: max-height 0.5s ease-in;
+}
+.cloak {
+    overflow: hidden;
+    max-height: 0 !important;
+}
+
+.icon {
+    font-size: xx-large;
+    text-align: center;
+    color: #0085d4;
+}
+
+.demo {
+    font-weight: bold;
+}
+
+.detail {
+    border-bottom: 1px solid black;
+    padding: .25em;
+}
+
+.detail div {
+    width: 100%;
+}
+
+.detail > div > h2 {
+    margin: .5em;
+}
+
+.status {
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+.status.okay {
+    color: #009926;
+}
+.status.error {
+    color: #990000;
+}
+
+ul {
+    list-style: none;
+}
+
+.okay {
+    background-color: #d7eefd;
+}
+.warning {
+    background-color: #ffe8d4;
+}
+.error {
+    background-color: #ff253a;
+    font-weight: bold;
+}
+
+.detail li {
+    padding: .25em;
+}
+
+.okay h2:first-of-type:before {
+    content: "\2705";
+}
+.warning h2:first-of-type:before {
+    content: "\26A0";
+}
+.error h2:first-of-type:before {
+    content: "\274C";
+}
