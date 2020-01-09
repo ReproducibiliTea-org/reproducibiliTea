@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 55 institutions in 17 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to 57 institutions in 18 different countries, spanning 4 different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 <div id="map">
     <iframe src="https://www.google.com/maps/d/embed?mid=1K1Z3VYsgIDT7ynQraHrTD16TfJM6Wf3k" width="640" height="320"></iframe>
@@ -56,6 +56,8 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **India**
 - [Virtual journal club organised by bioclues.org](/journal-clubs/#Biocluesl }}) (Prash and  Team  Bioclues.org)
 
+**Ireland**
+- Dublin (coming soon!)
 **Japan**
 - [Fukuoka](/journal-clubs/#Fukuoka), Kyushu University (Yuki Yamada)
 
@@ -110,4 +112,5 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Charlottesville](/journal-clubs/#Charlottesville), University of Virginia (Brian Nosek, Nick Buttrick)
 - [Charlottesville (School of Education and Human Development)](/journal-clubs/#Charlottesville%20(School%20of%20Education%20and%20Human%20Development)), University of Virginia (Bryan G. Cook, Jesse Fleming)
 - [Minnesota](/journal-clubs/#Minnesota) (Amy Riegelman, Alan Love)
+- Princeton (coming soon!)
 - [Richmond](/journal-clubs/#Richmond,%20Virginia%20(RVA)) (Dana Lapato, Timothy P. York, Nina Exner)
