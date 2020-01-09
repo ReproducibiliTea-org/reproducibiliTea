@@ -63,7 +63,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Fukuoka](/journal-clubs/#Fukuoka), Kyushu University (Yuki Yamada)
 
 **The Netherlands**
-- [Amsterdam], UvA(/journal-clubs/#Amsterdam) (Angelika Stefan, Florian Wanders)
+- [Amsterdam, UvA](/journal-clubs/#Amsterdam) (Angelika Stefan, Florian Wanders)
 - Amsterdam, VU (coming soon!)
 - [Groningen](/journal-clubs/#Groningen) (Daan Ornée)
 - [Leiden](/journal-clubs/#Leiden) (Ricci Proppert)
