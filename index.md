@@ -58,6 +58,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 **Ireland**
 - Dublin (coming soon!)
+
 **Japan**
 - [Fukuoka](/journal-clubs/#Fukuoka), Kyushu University (Yuki Yamada)
 
