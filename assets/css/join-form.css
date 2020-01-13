@@ -70,6 +70,7 @@ tr td img {
 .label-details ul {
     padding: 0;
     list-style-type: disc;
+    width: fit-content;
 }
 
 .label-details li:not(:last-of-type) {

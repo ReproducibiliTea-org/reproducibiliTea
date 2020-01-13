@@ -120,14 +120,17 @@ function checkData(data) {
     }
 
     if(!/^[a-z0-9\-]+$/i.test(data.jcid))
-        return fail(`The id field ("${data.jcid}")  contains invalid characters.`);
+        return fail(`The id field ("${data.jcid}") contains invalid characters.`);
 
     if(!/^[a-z0-9]*$/i.test(data.osfUser))
-        return fail(`The OSF username ("${data.osfUser}")  contains invalid characters.`);
+        return fail(`The OSF username ("${data.osfUser}") contains invalid characters.`);
+
+    if(!/^[0-9]*$/i.test(data.zoteroUser))
+        return fail(`The Zotero username ("${data.zoteroUser}") contains invalid characters.`);
 
     // check email has an x@y structure
     if(!/\S+@\S+/i.test(data.email))
-        return fail(`The email address supplied("${data.email}")   appears invalid.`);
+        return fail(`The email address supplied("${data.email}") appears invalid.`);
 
     if(data.authCode !== AUTH_CODE) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
