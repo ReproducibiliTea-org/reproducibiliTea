@@ -8,7 +8,7 @@ website:
 twitter: Richards_G_C
 signup: https://forms.gle/afjxV4Hv6qsdwwkN7
 organisers: [Georgia Richards, Nick DeVito]
-contact: georgia.richards@kellogg.ox.ac.uk; nicholas.devito@phc.ox.ac.uk
+contact: georgia.richards@kellogg.ox.ac.uk
 address: [The Radcliffe Primary Care Building,
 Radcliffe Observatory Quarter,
 32 Woodstock Road, 
@@ -28,4 +28,4 @@ For each session, we expect attendees to have read the assigned paper. We (Nick 
 
 Your voice is welcome here, and we offer a friendly atmosphere!
 
-Supported by Reproducible Research Oxford, the local UK Reproducibility Network node. 
+Supported by Reproducible Research Oxford [https://ox.ukrn.org/](https://ox.ukrn.org/), the local UK Reproducibility Network node. 
