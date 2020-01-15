@@ -2,10 +2,10 @@
 title: Princeton
 host-organisation: Princeton University 
 host-org-url: https://www.princeton.edu/ 
-osf: null
+osf: https://osf.io/af4td/
 zotero: IQQ833BT
 website: 
-twitter: https://osf.io/af4td/
+twitter: Princeton_T
 signup: mtesterman@princeton.edu
 organisers: [Meghan Testerman, Robin Gomila]
 contact: mtesterman@princeton.edu
