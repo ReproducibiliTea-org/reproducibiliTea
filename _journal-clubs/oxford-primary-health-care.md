@@ -27,3 +27,5 @@ The most up to date information is on our OSF page here: xx and we will circulat
 For each session, we expect attendees to have read the assigned paper. We (Nick DeVito & Georgia Richards) will present a short (5-15mins) overview of the chosen paper with the remainder of the session dedicated to free discussion amongst all attendees. For some Journal Clubs, we will have a workshop where we present some of the available tools and have more practical discussions to help develop skills. 
 
 Your voice is welcome here, and we offer a friendly atmosphere!
+
+Supported by Reproducible Research Oxford [https://ox.ukrn.org/](https://ox.ukrn.org/), the local UK Reproducibility Network node. 
