@@ -10,7 +10,7 @@ signup: emil.uffelmann@gmail.com
 organisers: [Emil Uffelmann, Eduarda Centeno]
 contact: emil.uffelmann@gmail.com
 address: [Center for Neurogenomics and Cognitive Research (CNCR), VU University Science Building B4 & B5 Wing, De Boelelaan 1085, 1081HV Amsterdam, North Holland, The Netherlands]
-country: United Kingdom
+country: Netherlands
 ---
 
 The journal club is open to everyone across the the VU Amsterdam and nearby universities, from any discipline or department.
