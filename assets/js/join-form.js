@@ -72,8 +72,14 @@ function checkForm(e, allowEmpty = false) {
             }
     });
 
-    // Server-side check matching
+    // Warn if they have 'reproducibilitea' in the name field
     let elm = form.querySelector('#name');
+    if(/ReproducibiliTea/i.test(elm.value)) {
+        markBad(elm, "Please do not include 'ReproducibiliTea' in your JC name!")
+    }
+
+    // Server-side check matching
+    elm = form.querySelector('#name');
     if(!/^[a-z0-9\- ]+$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
