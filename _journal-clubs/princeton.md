@@ -5,7 +5,7 @@ host-org-url: https://www.princeton.edu/
 osf: https://osf.io/af4td/
 zotero: IQQ833BT
 website: 
-twitter: Princeton_T
+twitter: Princeton_Tea
 signup: mtesterman@princeton.edu
 organisers: [Meghan Testerman, Robin Gomila]
 contact: mtesterman@princeton.edu
