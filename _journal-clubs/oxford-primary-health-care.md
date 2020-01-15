@@ -5,7 +5,7 @@ host-org-url: https://www.phc.ox.ac.uk/
 osf: 2qvwa
 zotero: RBFCCCAQ
 website: 
-twitter: Fichards_G_C
+twitter: Richards_G_C
 signup: https://forms.gle/afjxV4Hv6qsdwwkN7
 organisers: [Georgia Richards, Nick DeVito]
 contact: georgia.richards@kellogg.ox.ac.uk
