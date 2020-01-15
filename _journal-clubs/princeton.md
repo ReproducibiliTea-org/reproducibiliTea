@@ -2,7 +2,7 @@
 title: Princeton
 host-organisation: Princeton University 
 host-org-url: https://www.princeton.edu/ 
-osf: https://osf.io/af4td/
+osf: af4td
 zotero: IQQ833BT
 website: 
 twitter: Princeton_Tea
