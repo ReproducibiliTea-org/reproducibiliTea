@@ -2,10 +2,10 @@
 title: Oxford Primary Health Care
 host-organisation: University of Oxford
 host-org-url: https://www.phc.ox.ac.uk/
-osf: xcmht
+osf: 2qvwa
 zotero: RBFCCCAQ
 website: 
-twitter: https://osf.io/2qvwa/
+twitter: Fichards_G_C
 signup: https://forms.gle/afjxV4Hv6qsdwwkN7
 organisers: [Georgia Richards, Nick DeVito]
 contact: georgia.richards@kellogg.ox.ac.uk
@@ -21,7 +21,7 @@ Our Journal Club is open to everyone: from Open Science enthusiasts, beginners o
 
 We meet on Wednesdays at 12.30 pm for 1 hour at the Radcliffe Primary Care Building in the Radcliffe Observatory Quarter (32 Woodstock Road, OX2 6HT). Our Journal Club will run each term for 8 weeks to align with the Oxford academic calendar. 
 
-The most up to date information is on our OSF page here: xx and we will circulate meeting details via email so sign up here: https://forms.gle/ZYTLLXko21HeVe2XA 
+The most up to date information is on our OSF page here: xx and we will circulate meeting details via email so sign up here: [https://forms.gle/ZYTLLXko21HeVe2XA](https://forms.gle/ZYTLLXko21HeVe2XA) 
 
 **The format:**
 For each session, we expect attendees to have read the assigned paper. We (Nick DeVito & Georgia Richards) will present a short (5-15mins) overview of the chosen paper with the remainder of the session dedicated to free discussion amongst all attendees. For some Journal Clubs, we will have a workshop where we present some of the available tools and have more practical discussions to help develop skills. 
