@@ -31,6 +31,7 @@ tr td img {
     display: flex;
     padding: .25em;
     justify-content: space-between;
+    position: relative;
 }
 
 .row:hover {
@@ -124,8 +125,13 @@ tr td img {
     background-color: #ffd7d1 !important;
 }
 
-.obsolete {
-    text-decoration: line-through;
+.obsolete::after {
+    content: close-quote;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
 }
 
 form {

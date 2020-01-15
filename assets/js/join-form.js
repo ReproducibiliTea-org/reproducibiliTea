@@ -73,11 +73,13 @@ function checkForm(e, allowEmpty = false) {
     });
 
     // Mark OSFuser obsolete if OSF is complete
-    let elm = document.querySelector('#osfUser');
+    let elm = document.querySelector('#osfUser').closest('.row');
     if(document.querySelector('#osf').value != "") {
         elm.classList.add('obsolete');
+        elm.title = "This field is unavailable when a custom OSF repository has been supplied."
     } else {
         elm.classList.remove('obsolete');
+        elm.title = "";
     }
 
     // Warn if they have 'reproducibilitea' in the name field
