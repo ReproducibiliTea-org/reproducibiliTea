@@ -80,13 +80,13 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^[a-z0-9]+$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
+    if(!/^[a-z0-9]+$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
 
     elm = form.querySelector('#zoteroUser');
-    if(!/^[0-9]+$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
+    if(!/^[0-9]+$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
