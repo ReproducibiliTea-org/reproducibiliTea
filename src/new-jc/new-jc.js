@@ -209,7 +209,6 @@ async function callOSF(data) {
     };
 
     if(data.osf && data.osf.length) {
-        out.status = 'Skipped';
         out.details.push('A pre-existing OSF repository was supplied, so that will be registered as the journal club\'s OSF link.');
         out.osfRepoId = data.osf;
         return out;
