@@ -72,8 +72,16 @@ function checkForm(e, allowEmpty = false) {
             }
     });
 
+    // Mark OSFuser obsolete if OSF is complete
+    let elm = document.querySelector('#osfUser');
+    if(document.querySelector('#osf').value != "") {
+        elm.classList.add('obsolete');
+    } else {
+        elm.classList.remove('obsolete');
+    }
+
     // Warn if they have 'reproducibilitea' in the name field
-    let elm = form.querySelector('#name');
+    elm = form.querySelector('#name');
     if(/ReproducibiliTea/i.test(elm.value)) {
         markBad(elm, "Please do not include 'ReproducibiliTea' in your JC name!")
     }
@@ -86,7 +94,9 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^[a-z0-9]+$/i.test(elm.value) && !(!elm.value)) {
+    if(!/^[a-z0-9]+$/i.test(elm.value) &&
+        elm.value &&
+        !elm.classList.contains('obsolete')) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
@@ -102,7 +112,6 @@ function checkForm(e, allowEmpty = false) {
         okay = false;
         markBad(elm, "Field does not appear to be a well-formed email address.");
     }
-
 
     // Check JC Name isn't already in use
     const name = document.getElementById("name");

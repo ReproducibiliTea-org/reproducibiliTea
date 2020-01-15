@@ -124,6 +124,10 @@ tr td img {
     background-color: #ffd7d1 !important;
 }
 
+.obsolete {
+    text-decoration: line-through;
+}
+
 form {
     transition: max-height 0.5s ease-in;
 }

@@ -20,7 +20,7 @@ const {
 
 const OPTIONAL_FIELDS = [
     'www', 'twitter', 'description', 'osfUser', 'zoteroUser',
-    'signup', 'uniWWW',
+    'signup', 'uniWWW', 'osf'
 ];
 
 const REQUIRED_FIELDS = [
@@ -76,7 +76,14 @@ function cleanData(data) {
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
 
+
     // Remove the unnecessary bits of the OSF user input
+    if(data.osf && data.osf.length) {
+        const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
+            .exec(data.osfUser);
+        if(match)
+            data.osfUser = match[1];
+    }
     if(data.osfUser && data.osfUser.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
             .exec(data.osfUser);
@@ -121,6 +128,9 @@ function checkData(data) {
 
     if(!/^[a-z0-9\-]+$/i.test(data.jcid))
         return fail(`The id field ("${data.jcid}") contains invalid characters.`);
+
+    if(!/^[a-z0-9]*$/i.test(data.osf))
+        return fail(`The OSF repository ("${data.osf}") contains invalid characters.`);
 
     if(!/^[a-z0-9]*$/i.test(data.osfUser))
         return fail(`The OSF username ("${data.osfUser}") contains invalid characters.`);
@@ -197,6 +207,13 @@ async function callOSF(data) {
         details: [],
         osfRepoId: null
     };
+
+    if(data.osf && data.osf.length) {
+        out.status = 'Skipped';
+        out.details.push('A pre-existing OSF repository was supplied, so that will be registered as the journal club\'s OSF link.');
+        out.osfRepoId = data.osf;
+        return out;
+    }
 
     const osfURL = 'https://api.osf.io/v2/';
     const osfParentRepo = 'cfby7';
