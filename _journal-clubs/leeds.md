@@ -4,8 +4,8 @@ host-organisation: Leeds University
 host-org-url: https://www.leeds.ac.uk/
 website:
 signup:
-organisers: [Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halabi]
-contact: E.A.Williams@leeds.ac.uk
+organisers: [Kelly Lloyd, Emily Williams, Eike Mark Rinke, Stephen Bradley, Nour Halabi]
+contact: umkel@leeds.ac.uk
 
 ---
 
