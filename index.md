@@ -118,6 +118,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **United States**
 - [Charlottesville](/journal-clubs/#Charlottesville), University of Virginia (Brian Nosek, Nick Buttrick)
 - [Charlottesville (School of Education and Human Development)](/journal-clubs/#Charlottesville%20(School%20of%20Education%20and%20Human%20Development)), University of Virginia (Bryan G. Cook, Jesse Fleming)
+- Florida (coming soon!)
 - [Minnesota](/journal-clubs/#Minnesota) (Amy Riegelman, Alan Love)
 - Princeton (coming soon!)
 - [Richmond](/journal-clubs/#Richmond,%20Virginia%20(RVA)) (Dana Lapato, Timothy P. York, Nina Exner)
