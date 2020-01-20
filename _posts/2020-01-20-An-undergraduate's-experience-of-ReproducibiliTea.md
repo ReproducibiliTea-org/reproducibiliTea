@@ -9,12 +9,12 @@ tags: [Surrey]
 
 
 The Surrey Reproducibility Society is made up of students and staff who meet once a fortnight to   explore issues relating to open research and engage in presentations and training sessions aimed at helping all members of the University implement best practice research methods.
-RepreoducibiliTea journal club sessions take place at least once a month and help to facilitate further development of our understanding of open, reproducible and transparent research.  
+RepreoducibiliTea journal club sessions take place at least once a month and help to facilitate further development of our understanding of open, reproducible and transparent research.
 
 Before my first ReproducibiliTea meeting, I wasn’t entirely sure what open research was.
 The replication crisis was mentioned on my course, and I understood that not all research was good research, but that was the extent of my knowledge.
-Now, despite joining the society just 3 months ago, I can explain the main open research principles, identify both good and bad practice and I have a much better grasp of where research, especially psychological research, sits in today’s research climate.  
-I’m even working on a project exploring undergraduate’s understanding of open research as part of my placement as a research assistant. 
+Now, despite joining the society just 3 months ago, I can explain the main open research principles, identify both good and bad practice and I have a much better grasp of where research, especially psychological research, sits in today’s research climate.
+I’m even working on a project exploring undergraduate’s understanding of open research as part of my placement as a research assistant.
 
 Attending these meetings has been invaluable, not only by helping me in a practical sense, such as walking me through registered reports and preregistrations, but it has also influenced how I view research more generally.
 Many questionable research practices have been discussed in the group.
