@@ -76,6 +76,14 @@ function cleanData(data) {
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
 
+    // Remove leading and trailing spaces from all string fields
+    for(const x in data) {
+        if(typeof data[x] !== "string")
+            continue;
+        const match = /^\s*([\S\s]*\S+)\s*$/i.exec(data[x]);
+        if(match)
+            data[x] = match[1];
+    }
 
     // Remove the unnecessary bits of the OSF user input
     if(data.osf && data.osf.length) {

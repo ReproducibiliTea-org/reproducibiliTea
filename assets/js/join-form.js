@@ -90,13 +90,13 @@ function checkForm(e, allowEmpty = false) {
 
     // Server-side check matching
     elm = form.querySelector('#name');
-    if(!/^[a-z0-9\- ]+$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
+    if(!/^\s*[a-z0-9\- ]+\s*$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^[a-z0-9]+$/i.test(elm.value) &&
+    if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
         elm.value &&
         !elm.classList.contains('obsolete')) {
         okay = false;
@@ -104,7 +104,7 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#zoteroUser');
-    if(!/^[0-9]+$/i.test(elm.value) && !(!elm.value)) {
+    if(!/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
