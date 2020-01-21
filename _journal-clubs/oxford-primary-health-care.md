@@ -28,4 +28,4 @@ For each session, we expect attendees to have read the assigned paper. We (Nick 
 
 Your voice is welcome here, and we offer a friendly atmosphere!
 
-Supported by Reproducible Research Oxford [https://ox.ukrn.org/](https://ox.ukrn.org/), the local UK Reproducibility Network node. 
+Supported by [Reproducible Research Oxford](https://ox.ukrn.org/), the local UK Reproducibility Network node. 

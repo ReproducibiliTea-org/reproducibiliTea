@@ -19,4 +19,4 @@ The original reproducibiliTea Journal Club, meeting weekly during term-time at t
 
 The majority of our regular members are graduate students and early career researchers, but we're pleased to count one or two established faculty as regular members, too.
 
-ReproducibiliTea Oxford is kindly sponsored by [Reproducibile Research Oxford](http://ox.ukrn.org/).
+ReproducibiliTea Oxford is kindly sponsored by [Reproducible Research Oxford ](http://ox.ukrn.org/).
