@@ -1,5 +1,5 @@
 ---
-title: ReproducibiliTea Westminster
+title: Westminster
 host-organisation: University of Westminster
 host-org-url: https://www.westminster.ac.uk/
 osf: g5uc6
