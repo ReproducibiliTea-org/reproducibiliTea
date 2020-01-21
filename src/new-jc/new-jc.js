@@ -71,7 +71,7 @@ function cleanData(data) {
     }
 
     if(data.post)
-        data.post = data.post.replace(/\\n/g, ', ');
+        data.post = data.post.replace(/[\n\r]\r?/g, ', ');
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();

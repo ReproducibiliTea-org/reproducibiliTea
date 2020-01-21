@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .25em;
+}
+
+tr {
+    background-color: lightskyblue;
+}
+
+tr:nth-of-type(2n+1) {
+    background-color: #d7eefd;
+}
+
+thead tr:first-of-type {
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.empty {
+    background-color: darkorange;
+}
+
+.empty.required {
+    background-color: red;
+}
+
+table a {
+    cursor: pointer;
+}
+
+.sorting {
+    cursor: wait !important;
+}
