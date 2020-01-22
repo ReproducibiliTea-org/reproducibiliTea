@@ -36,3 +36,8 @@ table a {
 .sorting {
     cursor: wait !important;
 }
+
+textarea {
+    width: 100%;
+    height: 20em;
+}

@@ -46,5 +46,8 @@
         {% endfor %}
         </tbody>
     </table>
+---
+    <h2>Email addresses</h2>
+    <textarea>{% for jc in site.journal-clubs %}{% if jc.contact %}{{jc.contact}}{% unless forloop.last == true %}; {% endunless %}{% endif %}{% endfor %}</textarea>
 </body>
 </html>
