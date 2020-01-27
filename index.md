@@ -7,7 +7,7 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in many different countries and on many different continents. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in 19 different countries. We are completely volunteer run, and provide a unique and supportive community for our members.
 
 <div id="map">
     <iframe src="https://www.google.com/maps/d/embed?mid=1K1Z3VYsgIDT7ynQraHrTD16TfJM6Wf3k" width="640" height="320"></iframe>
@@ -75,6 +75,9 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **Singapore**
 - [Singapore](/journal-clubs/#Singapore), Nanyang Technological University (Alexa von Hagen)
 
+**Spain**
+- Madrid (coming soon!)
+
 **Sweden**
 - [Linköping](/journal-clubs/#Linköping) (Lina Koppel, Henrik Danielsson)
 - [Linnaeus University](/journal-clubs/#Växjö-Kalmar), Växjö-Kalmar (Thomas Nordström, Viktor Kaldo, Rickard Carlsson)
@@ -95,6 +98,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 - [Canterbury](/_journal-clubs/#Canterbury) (Bethan Iley, Felicity Gallagher, Roger Giner-Sorolla)
 - [Chester](/journal-clubs/#Chester) (Suzanne Stewart)
 - [Glasgow](/journal-clubs/#Glasgow) (Stephanie Allan)
+- Hull (coming soon!)
 - [Kingston](/journal-clubs/#Kingston) (Emma Henderson)
 - [Lancaster](/journal-clubs/#Lancaster) (Marina Bazhydai)
 - [Leeds](/journal-clubs/#Leeds) (Emily Williams, Eike Mark Rinke, Kelly Lloyd, Stephen Bradley, Nour Halab)
