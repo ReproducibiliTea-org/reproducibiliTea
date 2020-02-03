@@ -21,6 +21,7 @@ twitter account: GroningenTea
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
 address: [ICPE, in-house postalcode 72, University Medical Center Groningen, Hanzeplein 1, 9713GZ, Groningen]
 
+osf: f6brg
 ---
 
 The ReproducibiliTea Groningen aims to 
