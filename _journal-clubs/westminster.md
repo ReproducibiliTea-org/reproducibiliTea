@@ -9,11 +9,7 @@ twitter:
 signup: S.Evans1@westminster.ac.uk
 organisers: [Samuel Evans]
 contact: S.Evans1@westminster.ac.uk
-address: [Rm 6.101
-Psychology Department
-University of Westminster
-115 New Cavendish Street
-London W1W 6UW]
+address: [Rm 6.101, Psychology Department, University of Westminster, 115 New Cavendish Street, London W1W 6UW]
 country: United Kingdom
 ---
 
