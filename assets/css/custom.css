@@ -10,6 +10,11 @@
     align-self: center;
 }
 
+/* Index.html */
+.jc-list {
+    margin-bottom: 0;
+}
+
 /* Person.html */
 .person {
     position: relative;
