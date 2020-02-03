@@ -10,7 +10,7 @@ twitter: ReproducibiliT
 signup: https://web.maillist.ox.ac.uk/ox/info/reproducibilitea
 organisers: [Sam Parsons, Nils Reimer, Matt Jaquiery, Sarah Ashcroft-Jones, Sam Webb]
 contact: sam.parsons@psy.ox.ac.uk
-address: [First foor, New Radcliffe House, Oxford]
+address: [First floor, New Radcliffe House, Oxford]
 country: United Kingdom
 
 ---
