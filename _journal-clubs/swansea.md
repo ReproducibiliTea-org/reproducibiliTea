@@ -5,5 +5,5 @@ host-org-url:
 website:
 signup:
 organisers: [Laura Wilkinson]
-contact: 
+contact: l.l.wilkinson@swansea.ac.uk
 ---
