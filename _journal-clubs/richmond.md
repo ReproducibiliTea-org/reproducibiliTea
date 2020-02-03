@@ -11,7 +11,7 @@ contact: dana.lapato@vcuhealth.org
 
 address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
 
-country: United States of America
+country: United States
 
 ---
 **About:**
