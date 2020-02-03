@@ -11,4 +11,3 @@ address: [Department of Psychology, Downing Street, Cambridge, CB2 3EB]
 country: United Kingdom
 ---
 
-We all wish Amy all the best!
