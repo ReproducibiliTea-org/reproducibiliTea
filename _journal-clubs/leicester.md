@@ -7,7 +7,7 @@ title: Leicester
 host-organisation: University of Leicester 
 
 # Replace "https://www.yourCity.ac.uk/" with the website of your institution
-host-org-url: https:/www.le.ac.uk/ 
+host-org-url: https://www.le.ac.uk/ 
 
 # Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
 # The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
@@ -19,6 +19,7 @@ contact: slt47@le.ac.uk
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
 Address: Department of Neuroscience, Psychology and Behaviour, University of Leicester, University Road, LE1 7RH, Leicester, United Kingdom
 
+osf: he48c
 ---
 
 The journal club was set up in September 2019 for early career researchers in the vision and language research group of the University of Leicester, but everyone is welcome!  We get together (with tea, coffee and cake!) to discuss interesting journal articles and discuss topics like open science, replicability in research, pre-registration and data sharing, among others. 
