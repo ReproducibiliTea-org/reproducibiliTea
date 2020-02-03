@@ -5,6 +5,6 @@ host-org-url: https://www.virginia.edu/
 organisers: [Brian Nosek, Nick Buttrick] 
 contact: nosek@virginia.edu 
 address: [521 Ridge McIntire Road, Suite 500, Charlottesville, VA  22903]
-country: USA
+country: United States
 ---
 
