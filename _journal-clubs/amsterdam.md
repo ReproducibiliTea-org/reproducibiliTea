@@ -8,5 +8,5 @@ organisers: [Angelika Stefan]
 contact: a.m.stefan@uva.nl
 country: Netherlands
 address: [Department of Psychological Methods, Nieuwe Achtergracht 129 B, Postbus 15906, 1001 NK AMSTERDAM]
-
+osf: sn6dk
 ---
