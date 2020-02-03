@@ -7,7 +7,7 @@ host-organisation: Claude Bernard Lyon 1 University
 host-org-url: https://www.univ-lyon1.fr/en/home-759942.kjsp 
 
 
-organisers: [Wanda GRABON, Amel AMARA, Bertrand BEFFARA, Maxime BIGOTTE, Aurelie BRECIER, Ines DAGUET, Nadia GASMI] 
+organisers: [Wanda Grabon, Amel Amara, Bertrand Beffara, Maxime Bigotte, Aurelie Brecier, Ines Daguet, Nadia Gasmi] 
 
 contact: wanda.grabon@univ-lyon1.fr 
 
