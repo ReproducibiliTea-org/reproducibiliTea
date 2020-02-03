@@ -1,5 +1,5 @@
 ---
-title: ReproducibiliTea Madrid
+title: Madrid
 host-organisation: Universidad Camilo José Cela
 host-org-url: https://www.ucjc.edu/
 osf: gu8vm
