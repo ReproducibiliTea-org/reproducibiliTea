@@ -7,7 +7,7 @@ osf: 254t7
 signup:
 organisers: [Julia Beitner, Elli Zey]
 contact: beitner@psych.uni-frankfurt.de
-address:[Frankfurt am Main]
+address: [Frankfurt am Main]
 country: Germany
 ---
 
