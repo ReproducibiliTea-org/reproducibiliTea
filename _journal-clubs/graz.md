@@ -1,6 +1,6 @@
 ---
 title: Graz
-host-organisation: 
+host-organisation: University of Graz
 host-org-url: 
 website: 
 signup: graz_open_science@zoho.com
