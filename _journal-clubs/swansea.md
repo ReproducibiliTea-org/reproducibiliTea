@@ -1,6 +1,6 @@
 ---
 title: Swansea
-host-organisation: 
+host-organisation: Swansea University
 host-org-url: 
 website:
 signup:
