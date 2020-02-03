@@ -9,11 +9,7 @@ twitter: LeuvenTea
 signup: reproducibilitealeuven@kuleuven.be
 organisers: [Pieter Moors, Eline Van Geert, Amélie Godefroidt , Lennert Coenen , Aline Claesen , Olivia Kirtley , Richard Artner , Naeem Muhammad]
 contact: reproducibilitealeuven@kuleuven.be
-address: [Pieter Moors
-Laboratorium voor Experimentele Psychologie
-Tiensestraat 102 - box 3711
-BE-3000 Leuven
-Belgium]
+address: [Pieter Moors, Laboratorium voor Experimentele Psychologie, Tiensestraat 102 - box 3711, BE-3000 Leuven]
 country: Belgium
 ---
 
