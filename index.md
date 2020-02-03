@@ -33,7 +33,10 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 {% assign countries = countries | split: "|" | uniq | sort_natural %}
 {% for c in countries %}
 **{{ c }}**
-
+{% assign jcs = site.journal-clubs | where: "country", c %}
+{% for jc in jcs %}
+- [{{ jc.title }}](/journal-clubs/#{{ jc.title | url_encode }}) ({%for o in jc.organisers %}{{ o }}{% unless forloop.last %}, {% endunless %}{% endfor %})
+{% endfor %}
 {% endfor %}
 
 **Australia**
