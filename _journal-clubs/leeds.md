@@ -8,6 +8,7 @@ organisers: [Kelly Lloyd, Emily Williams, Eike Mark Rinke, Stephen Bradley, Nour
 contact: umkel@leeds.ac.uk
 osf: qvyk4
 country: United Kingdom
+address: [Leeds LS2 9JT]
 ---
 
 The Leeds University ReproducibiliTea journal club. Check out the [blog post](https://leedsunilibrary.wordpress.com/2019/08/23/reproducibilitea-at-leeds/) for a flavour of the first two sessions!
