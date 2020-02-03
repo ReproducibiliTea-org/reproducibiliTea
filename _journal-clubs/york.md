@@ -1,6 +1,6 @@
 ---
 title: York
-host-organisation: 
+host-organisation: University of York
 host-org-url: 
 website:
 signup:
