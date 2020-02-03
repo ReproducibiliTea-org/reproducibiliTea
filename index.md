@@ -30,6 +30,12 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 # Current Journal Clubs
 
+{% assign countries = countries | split: "|" | uniq | sort_natural %}
+{% for c in countries %}
+**{{ c }}**
+
+{% endfor %}
+
 **Australia**
 - [Melbourne](/journal-clubs/#Melbourne) (Andy Head, Sally Grace. Philip Newall)
 - [Hobart](/journal-clubs/#Hobart), Tasmania (Emily Lowe-Calverley, Jim Sauer)

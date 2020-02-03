@@ -7,7 +7,7 @@ signup: graz_open_science@zoho.com
 organisers: [Gaby Hofer, Hilmar Brohmer]
 contact: graz_open_science@zoho.com
 osf: r3hcn
-address: [Brockmanngasse 84, 1st Floor, "Besprechungsraum"]
+address: [Brockmanngasse 84, 1st Floor, Besprechungsraum]
 country: Austria
 ---
 
