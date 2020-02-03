@@ -8,6 +8,7 @@ signup:
 organisers: [Katie Drax]
 contact: katie.drax@bristol.ac.uk
 address: [5 Priory Road, University of Bristol, Bristol]
+country: United Kingdom
 ---
 
 # The University of Bristol ReproducibiliTea journal club 
