@@ -19,6 +19,7 @@ contact: jordanml@mcmaster.ca
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
 Address: Psychology, McMaster University, 1280 Main St. W., L8S 4K1, Hamilton, Ontario, Canada
 
+osf: xtezw
 ---
 Welcome to the McMaster ReproducibiliTea journal club! We will begin meeting in January 2020 to discuss how we can help make science transparent, reproducible, and cumulative.
 
