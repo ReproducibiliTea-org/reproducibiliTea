@@ -14,7 +14,7 @@ organisers: [Lea Hildebrandt, Eda Kir, Patrick Kaschel]
 contact: lea.hildebrandt@uni-wuerzburg.de 
 
 
-address: Institute for Psychology, University of Wuerzburg, Marcusstr. 9-11, 97070 Wuerzburg, Germany
+address: [Institute for Psychology, University of Wuerzburg, Marcusstr. 9-11, 97070 Wuerzburg, Germany]
 country: Germany
 
 ---
