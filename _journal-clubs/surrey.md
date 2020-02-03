@@ -8,7 +8,7 @@ signup: surrey_reproducibility@surrey.ac.uk
 organisers: [Marta Topor, Henry Hebron, Katie Gilligan]
 contact: m.topor@surrey.ac.uk
 country: United Kingdom
-address: Stag Hill, Guildford GU2 7XH
+address: [Stag Hill, Guildford GU2 7XH]
 
 ---  
   
