@@ -9,7 +9,7 @@ twitter:
 signup: ramdunyj@tcd.ie
 organisers: [Jivesh Ramduny, Clare Kelly]
 contact: ramdunyj@tcd.ie
-address: [Trinity College Institute of Neuroscience, Room 3.14, Lloyd Building, Trinity College Dublin, College Green, Dublin 2, Ireland]
+address: [Trinity College Institute of Neuroscience, Room 3.14, Lloyd Building, Trinity College Dublin, College Green, Dublin]
 country: Ireland
 ---
 
