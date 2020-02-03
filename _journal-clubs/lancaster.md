@@ -7,7 +7,7 @@ title: Lancaster, UK
 host-organisation: Lancaster University 
 
 # Replace "https://www.yourCity.ac.uk/" with the website of your institution
-host-org-url: hhttps://www.lancaster.ac.uk/psychology/research/open-science/
+host-org-url: https://www.lancaster.ac.uk/psychology/research/open-science/
 
 # Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
 #�The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
