@@ -12,7 +12,7 @@ organisers: [Alexa von Hagen, Pierina Cheung, Suzy Styles, Gianluca Esposito]
 
 contact: alexa.vonhagen@nie.edu.sg
 
-address: National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, 637616
+address: [National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, 637616]
 country: Singapore
 
 osf: y7c5p
