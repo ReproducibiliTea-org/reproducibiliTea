@@ -1,18 +1,10 @@
 ---
-
 title: Vancouver 
-
 host-organisation: University of British Columbia
-
 host-org-url: https://www.ubc.ca/
-
 organisers: [Justin Boldsen] 
-
 contact: justinboldsen@alumni.ubc.ca
-
-
-address: [Faculty of Psychology, University of British Columbia, 1765 Cotton Drive, V5N 3V1, BC, Canada]
-
+address: [Faculty of Psychology, University of British Columbia, 1765 Cotton Drive, V5N 3V1, BC]
 country: Canada
 ---
 
