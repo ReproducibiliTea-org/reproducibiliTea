@@ -17,8 +17,9 @@ organisers: [Wanda GRABON, Amel AMARA, Bertrand BEFFARA, Maxime BIGOTTE, Aur�l
 contact: wanda.grabon@univ-lyon1.fr 
 
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
-Address: CRNL - CH Le Vinatier - B�timent 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron, France
+address: CRNL - CH Le Vinatier - B�timent 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron, France
 
+osf: m73e4
 ---
 
 The Lyon Neuroscience Research Center (LNRC) student club is organized by a few PhD students of the center, with no specific leader (here we rolled a dice to choose the JC communication 'lead'). Student club sessions are
