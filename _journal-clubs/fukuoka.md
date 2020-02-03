@@ -19,6 +19,7 @@ contact: yamadayuk@gmail.com
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
 Address: Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka, Japan
 
+osf: pdc9m
 ---
 
 This journal club will be open and welcomed to all young researchers around Fukuoka and other areas in Japan! Please feel free to contact Yuki Yamada for details.
