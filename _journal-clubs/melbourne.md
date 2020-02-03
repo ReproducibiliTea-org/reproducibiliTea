@@ -6,7 +6,7 @@ host-organisation: University of Melbourne; Australian Catholic University
 
 host-org-url: https://www.unimelb.edu.au/ ; https://www.acu.edu.au/
 
-organisers: [Andy Head, Sally Grace. Philip Newall] 
+organisers: [Andy Head, Sally Grace, Philip Newall] 
 
 contact: andy.head@unimelb.edu.au 
 
