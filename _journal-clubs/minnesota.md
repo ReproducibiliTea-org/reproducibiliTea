@@ -6,6 +6,6 @@ website:
 signup:
 organisers: [Amy Riegelman, Alan Love]
 contact: aspringe@umn.edu
-address: Minneapolis, MN 55455
+address: [Minneapolis, MN 55455]
 country: United States
 ---
