@@ -7,6 +7,8 @@ osf: bs2k7
 signup:  # Email address for people wanting to sign up if there is one
 organisers: [Daniel Poole, Thomas (Richie) Richardson, George Farmer] # Comma-separated list of organiser names
 contact: thomas.richardson@manchester.ac.uk # Email contact for the JC
+country: United Kingdom
+address: [Oxford Rd, Manchester M13 9PL]
 ---
 **About:**
 The journal club is open to everyone across the the University of Manchester and nearby universities, from any discipline or department.
