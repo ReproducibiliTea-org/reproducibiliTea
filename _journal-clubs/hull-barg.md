@@ -9,7 +9,7 @@ twitter:
 signup: https://docs.google.com/forms/d/e/1FAIpQLSeU7qDay9M_suDoNJvWEjuCAZwQzM1haNahqE9NGY9Cc1En3A/viewform
 organisers: [Dr Dave Lunt, Michael Winter]
 contact: dave.lunt@gmail.com
-address: [Dr Dave Lunt, Dept of Biological and Marine Sciences, Hardy Building, University of Hull, HULL HU6 7RX, UK]
+address: [Dr Dave Lunt, Dept of Biological and Marine Sciences, Hardy Building, University of Hull, HULL, HU6 7RX]
 country: United Kingdom
 ---
 
