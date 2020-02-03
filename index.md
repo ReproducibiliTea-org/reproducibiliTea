@@ -35,7 +35,8 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 **{{ c }}**
 {% assign jcs = site.journal-clubs | where: "country", c %}
 {% for jc in jcs %}
-- [{{ jc.title }}](/journal-clubs/#{{ jc.title | url_encode }}) ({%for o in jc.organisers %}{{ o }}{% unless forloop.last %}, {% endunless %}{% endfor %})
+- [{{ jc.title }}](/journal-clubs/#{{ jc.title }}) ({%for o in jc.organisers %}{{ o }}{% unless forloop.last %}, {% endunless %}{% endfor %})
 {% endfor %}
 {% endfor %}
+
 
