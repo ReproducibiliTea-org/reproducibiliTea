@@ -6,7 +6,7 @@ website:
 osf: hgq26
 signup: https://bit.ly/tuosrepro
 organisers: [James Shaw]
-contact: reproducibilitea@sheffield.ac.uk 
+contact: jamesshaw@sheffield.ac.uk 
 address: [University of Sheffield, Sheffield S10 2TG]
 country: United Kingdom
 ---
