@@ -11,6 +11,7 @@ organisers: [Kathrin Burdenski, Jacob Strauss, Hana Trollman, Theresa Wege]
 contact: k.burdenski@lboro.ac.uk
 address: [School of Sport, Excercise and Health Sciences, Loughborough University, National Centre for Sport and Excercise Medicine, Tower Way, LE11 3TU, Leicestershire]
 country: United Kingdom
+geolocation: [52.767866, -1.223692]
 ---
 
 **About:**

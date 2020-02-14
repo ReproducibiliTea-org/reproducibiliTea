@@ -1,0 +1,31 @@
+{% include keys.html %}
+{% assign id = jc.title | replace: " ", "-" %}
+{% unless jc.geolocation %}
+<input id="{{ id }}" type="text" value="" placeholder="awaiting fetch result"/>
+{% endunless %}
+<script type="text/javascript">
+    // look up a JC from address
+    function lookup() {
+        const input = document.getElementById("{{ id }}");
+        const addr = "{{ jc.address | url_encode }}";
+        const key = document.getElementById('APIkeys').dataset.maps;
+        fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+            .then(r => r.json())
+            .then(j => {
+                if (!j.results ||
+                    !j.results[0] ||
+                    !j.results[0].geometry ||
+                    !j.results[0].geometry.location)
+                    throw "No geometry or geometry.location in response.";
+                input.value = `geolocation: [${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}]`;
+            })
+            .catch(
+                (err) => {
+                    console.warn(err);
+                    input.placeholder = err;
+                }
+            );
+    }
+
+    lookup();
+</script>

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% include keys.html %}
 <link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
 <script type="text/javascript" src="/assets/js/join-form.js"></script>
 
@@ -190,7 +190,7 @@ layout: default
                     </div>
                     <textarea id="post" name="post" placeholder="Room 301,
 Reproducible Research Institute,
-University of Academia"></textarea>
+University of Academia" onchange="geolocateAddress()"></textarea>
                 </div>
 
                 <div class="row mandatory">
@@ -452,6 +452,23 @@ University of Academia"></textarea>
                     </select>
                 </div>
 
+                <div class="row mandatory">
+                    <div class="labels">
+                        <label for="geolocation">Geolocation</label>
+                        <div class="label-details">
+                            <p>We need to locate your JC on our map. When you enter an address we try to automatically determine the geolocation from the address, but sometimes we can't. If nothing shows here, please click the icon to choose your pin location on the map.</p>
+                            <ul>
+                                <li class="public">This will be displayed publicly.</li>
+                                <li class="is-mandatory">This field is required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="geolocation">
+                        <input id="geolocation" name="geolocation" type="text" disabled placeholder="Enter Postal address above or use button >>"/>
+                        <button onclick="geolocate(event)"><i class="fas fa-map-marked-alt"></i></button>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="labels">
                         <label for="description">Journal club description</label>
@@ -557,4 +574,54 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         </form>
 
     </section>
+</article>
+
+<article id="geolocation-map">
+    <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
+    <div id="geolocation-map-display"></div>
+    <div class="geolocation-map-controls"><button onclick="setGeolocation(event)"><i class="fas fa-map-marker-alt"></i> Use location</button></div>
+    <script id="mapAPIsource"></script>
+    <script>
+        {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
+        let key = "{{ key[0][1] }}";
+        document.getElementById('mapAPIsource').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initialize`;
+
+        let map;
+        let endMarker;
+        const input = document.getElementById("geolocation");
+
+        function initialize() {
+            map = new google.maps.Map(
+                document.getElementById("geolocation-map-display"),
+                {
+                    zoom: 1,
+                    center: {lat: 0, lng: 0}
+                }
+                );
+
+            const existing = input.value;
+            let position = map.getCenter();
+            if(existing) {
+                const parse = existing.split(',');
+                position = {lat: parse[0], lng: parse[1]};
+            }
+
+            // create the marker
+            endMarker = new google.maps.Marker({
+                position,
+                map: map,
+                draggable: true,
+            });
+
+            // add an event "onDrag"
+            google.maps.event.addListener(endMarker, 'dragend', function() {
+                copyMarkerpositionToInput();
+            });
+        }
+
+        function copyMarkerpositionToInput() {
+            // get the position of the marker, and set it as the value of input
+            input.value = endMarker.getPosition().lat() +','+  endMarker.getPosition().lng();
+        }
+    </script>
 </article>

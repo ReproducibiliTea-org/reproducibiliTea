@@ -7,6 +7,9 @@ osf: 254t7
 signup:
 organisers: [Julia Beitner, Elli Zey]
 contact: beitner@psych.uni-frankfurt.de
+address: [Frankfurt am Main]
+country: Germany
+geolocation: [50.121301, 8.5665245]
 ---
 
 # The ReproducibiliTea journal club in Frankfurt

@@ -1,25 +1,24 @@
 ---
-# Replace "Your City" with a short version of your location below (e.g. Bristol or Singapore)
-# When you save the file, change "your_city" in the name of the file to what you filled out below
+
 title: Singapore 
 
-# Replace "University of Your City" with the university or organisation that is hoping the journal club (e.g. University of Bristol or Nanyang Technical University)
 host-organisation: Nanyang Technological University 
 
-# Replace "https://www.yourCity.ac.uk/" with the website of your institution
 host-org-url: https://www.ntu.edu.sg/Pages/home.aspx
 
-# Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
-#?The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
+
 organisers: [Alexa von Hagen, Pierina Cheung, Suzy Styles, Gianluca Esposito] 
 
-# Replace "j.c.Owner@yourCity.ac.uk" with the email of the JC Communication Lead
+
 contact: alexa.vonhagen@nie.edu.sg
 
-# Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
-Address: National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, Singapore 637616
+address: [National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, 637616]
+country: Singapore
+
+geolocation: [1.3490609, 103.6788608]
 
 osf: y7c5p
+
 website: https://blogs.ntu.edu.sg/ntulibrary/2019/11/07/reproducibilitea1/
 
 ---

@@ -1,3 +1,15 @@
+/* Colours */
+:root {
+    --color-rpt-primary: rgb(0, 134, 207);
+    --color-rpt-secondary: rgb(0, 77, 108);
+}
+
+/* Animations */
+@keyframes spin {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+
 /* Footer */
 
 .sponsors {
@@ -8,6 +20,11 @@
 
 .sponsors .thanks {
     align-self: center;
+}
+
+/* Index.html */
+.jc-list {
+    margin-bottom: 0;
 }
 
 /* Person.html */

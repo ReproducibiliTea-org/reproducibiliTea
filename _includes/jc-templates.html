@@ -16,13 +16,14 @@
             <div class="icon-item" title="Organisation website"><i class="fas fa-globe"></i>
                 {% if jc.host-org-url %}
                 <a href="{{ jc.host-org-url }}" title="{{ jc.host-organisation }}">
-                    {% endif %}
+                {% endif %}
 
                     {{ jc.host-organisation | truncate: 25 }}
 
-                    {% if jc.host-org-url %}
-                </a></div>
-            {% endif %}
+                {% if jc.host-org-url %}
+                </a>
+                {% endif %}
+            </div>
             {% endif %}
 
             {% if jc.website %}

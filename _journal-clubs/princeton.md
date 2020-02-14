@@ -11,6 +11,7 @@ organisers: [Meghan Testerman, Robin Gomila]
 contact: mtesterman@princeton.edu
 address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Princeton, NJ, United States]
 country: United States
+geolocation: [40.3434371, -74.65227890000001]
 ---
 
 Princeton ReproducibiliTea is organized by Meghan Testerman (Psychology & Neuroscience Librarian) and Robin Gomila (Ph.D. Candidate in Social Psychology), Sponsored by the Princeton University Library and Dr. Betsy Levy Paluck (Professor of Psychology and Public Affairs), and hosted at the Department of Psychology at Princeton University. 

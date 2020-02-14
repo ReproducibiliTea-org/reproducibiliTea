@@ -25,7 +25,7 @@ const OPTIONAL_FIELDS = [
 
 const REQUIRED_FIELDS = [
     'jcid', 'name', 'uni', 'email', 'post',
-    'country', 'lead', 'authCode'
+    'country', 'lead', 'authCode', 'geolocation'
 ];
 
 exports.handler = async (event) => {
@@ -71,11 +71,19 @@ function cleanData(data) {
     }
 
     if(data.post)
-        data.post = data.post.replace(/\\n/g, ', ');
+        data.post = data.post.replace(/[\n\r]\r?/g, ', ');
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
 
+    // Remove leading and trailing spaces from all string fields
+    for(const x in data) {
+        if(typeof data[x] !== "string")
+            continue;
+        const match = /^\s*([\S\s]*\S+)\s*$/i.exec(data[x]);
+        if(match)
+            data[x] = match[1];
+    }
 
     // Remove the unnecessary bits of the OSF user input
     if(data.osf && data.osf.length) {
@@ -101,6 +109,12 @@ function cleanData(data) {
     if(data.twitter)
         while(data.twitter[0] === "@")
             data.twitter = data.twitter.substr(1);
+
+    // Sort geolocation data to be [int:lat, int:lng]
+    if(data.geolocation) {
+        const d = data.geolocation.split(',');
+        data.geolocation = d.map(a => parseFloat(a));
+    }
 
     return data;
 }
@@ -144,6 +158,10 @@ function checkData(data) {
 
     if(data.authCode !== AUTH_CODE) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
+    }
+
+    if(!data.geolocation || data.geolocation.length !== 2 || !data.geolocation.reduce((p, c) => p && isFinite(c))) {
+        return fail("The geolocation data is not in the correct format.");
     }
 
     return null;
@@ -532,6 +550,7 @@ organisers: [${[data.lead, ...data.helpers].join(', ')}]
 contact: ${data.email}
 address: [${data.post}]
 country: ${data.country}
+geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 ---
 
 ${data.description}
