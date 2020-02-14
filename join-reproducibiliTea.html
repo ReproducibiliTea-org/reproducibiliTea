@@ -580,8 +580,12 @@ You might want to describe what you hope to achieve, how often you plan to meet,
     <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
     <div id="geolocation-map-display"></div>
     <div class="geolocation-map-controls"><button onclick="setGeolocation(event)"><i class="fas fa-map-marker-alt"></i> Use location</button></div>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script id="mapAPIsource"></script>
     <script>
+        {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
+        let key = "{{ key[0][1] }}";
+        document.getElementById('mapAPIsource').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initialize`;
+
         let map;
         let endMarker;
         const input = document.getElementById("geolocation");
@@ -619,7 +623,5 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             // get the position of the marker, and set it as the value of input
             input.value = endMarker.getPosition().lat() +','+  endMarker.getPosition().lng();
         }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </article>
