@@ -3,6 +3,54 @@
  */
 
 /**
+ * Let the user stick a pin in Google Maps and fetch the geolocation of the pin
+ * @param e {Event}
+ */
+function geolocate(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.add('active');
+    return false;
+}
+
+/**
+ * Close the map and go back to the form
+ * @param e {Event}
+ */
+function setGeolocation(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.remove('active');
+    return false;
+}
+
+/**
+ * Update the geolocation field when the postal address is updated
+ */
+function geolocateAddress() {
+    const address = document.getElementById('post');
+    const addr = address.value.replace(/\s/g, '+');
+    const input = document.getElementById('geolocation');
+    const key = document.getElementById('APIkeys').dataset.maps;
+
+    // Try to fetch the address
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+        .then(r => r.json())
+        .then(j => {
+            if(!j.results ||
+                !j.results[0] ||
+                !j.results[0].geometry ||
+                !j.results[0].geometry.location)
+                throw "No geometry or geometry.location in response.";
+            input.value = `${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}`;
+        })
+        .catch(
+            (err) => {
+                console.warn(`Failed to geolocate ${addr}: ${err}`);
+                input.placeholder = "Use button to locate >>";
+            }
+        )
+}
+
+/**
  * Add a new organiser field below the current latest one
  * @param e {Event} button click event
  * @return {boolean}
@@ -114,6 +162,15 @@ function checkForm(e, allowEmpty = false) {
         okay = false;
         markBad(elm, "Field does not appear to be a well-formed email address.");
     }
+
+    elm = form.querySelector('#geolocation');
+    let d = elm.value.split(',');
+    d = d.map(a => parseFloat(a));
+    if(!d || d.length !== 2 || !d.reduce((p, c) => p && isFinite(c))) {
+        okay = false;
+        markBad(elm, "Please click the marker icon to locate your journal club on the map.");
+    }
+
 
     // Check JC Name isn't already in use
     const name = document.getElementById("name");

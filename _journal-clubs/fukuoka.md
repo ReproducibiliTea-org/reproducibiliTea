@@ -7,6 +7,7 @@ contact: yamadayuk@gmail.com
 address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka]
 country: Japan
 osf: pdc9m
+geolocation: [33.59626100000001, 130.2166993]
 ---
 
 This journal club will be open and welcomed to all young researchers around Fukuoka and other areas in Japan! Please feel free to contact Yuki Yamada for details.

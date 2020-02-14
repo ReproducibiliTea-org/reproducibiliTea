@@ -34,6 +34,9 @@ plugins:
   - jekyll-gist # twitter
   - jekyll-email-protect # email protection vs bots
 
+APIkeys:
+  - [maps, AIzaSyDrazW6BV7nG6ymgWdRW4VhZXLBjBtzD4g] # google Maps API key
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

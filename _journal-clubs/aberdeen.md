@@ -6,5 +6,5 @@ organisers: [Jessica Butler, Annesha Sil]
 contact: jessicabutler@abdn.ac.uk 
 address: [Centre for Health Data Science, University of Aberdeen, "1:172 Polwarth Building", AB252ZD]
 country: United Kingdom
-
+geolocation: [57.156621, -2.1366423]
 ---

@@ -14,7 +14,7 @@ contact: contact@openscience-nijmegen.nl
 
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen] 
 country: Netherlands
-
+geolocation: [51.81799340000001, 5.8570934]
 ---
 ## About:
 

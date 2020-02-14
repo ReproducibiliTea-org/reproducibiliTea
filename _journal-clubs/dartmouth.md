@@ -11,6 +11,7 @@ organisers: [Lora Leligdon, Pamela Bagley]
 contact: lora.c.leligdon@dartmouth.edu
 address: [DARTMOUTH COLLEGE - KRESGE LIBRARY, 25 N MAIN ST, HANOVER, NH 03755-1808, United States]
 country: United States
+geolocation: [43.7058872, -72.286402]
 ---
 
 ReproducibiliTea Dartmouth is organized by Lora Leligdon and Pamela Bagley, Dartmouth College Library.  It is generously sponsored by the Dartmouth College Library Innovation Fund.

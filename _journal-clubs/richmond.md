@@ -13,6 +13,8 @@ address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Co
 
 country: United States
 
+geolocation: [37.544324, -77.4311636]
+
 ---
 **About:**
 The Data Science Lab at Virginia Commonwealth University (VCU) proudly hosts the ReproducibiliTea journal club. All VCU students, faculty, and staff regardless of discipline or department are welcome to join us (attendees from Virginia Union University and University of Richmond are also welcome!).

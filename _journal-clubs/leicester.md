@@ -15,6 +15,9 @@ address: [Department of Neuroscience, Psychology and Behaviour, University of Le
 country: United Kingdom
 
 osf: he48c
+
+geolocation: [52.6211393, -1.1246325]
+
 ---
 
 The journal club was set up in September 2019 for early career researchers in the vision and language research group of the University of Leicester, but everyone is welcome!  We get together (with tea, coffee and cake!) to discuss interesting journal articles and discuss topics like open science, replicability in research, pre-registration and data sharing, among others. 

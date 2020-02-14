@@ -12,7 +12,7 @@ organisers: [Sam Parsons, Nils Reimer, Matt Jaquiery, Sarah Ashcroft-Jones, Sam 
 contact: sam.parsons@psy.ox.ac.uk
 address: [First floor, New Radcliffe House, Oxford]
 country: United Kingdom
-
+geolocation: [51.7602663, -1.2656281]
 ---
 
 The original reproducibiliTea Journal Club, meeting weekly during term-time at the University of Oxford. Most members come from the Department of Experimental Psychology, but we welcome people from all over the university, and have had regular members in the past from Anthropology and non-psychology parts of the Medical Sciences Division.

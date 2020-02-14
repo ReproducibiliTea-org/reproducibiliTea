@@ -9,12 +9,9 @@ twitter:
 signup: 
 organisers: [Verena Krall]
 contact: verena.krall@tu-dresden.de
-address: [TU Dresden
-cfaed
-KST 2301406
-Verena Krall
-01062 Dresden]
+address: [TU Dresden, cfaed, KST 2301406, Verena Krall, 01062 Dresden]
 country: Germany
+geolocation: [51.0266478, 13.7230296]
 ---
 
 

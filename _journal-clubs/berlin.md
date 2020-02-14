@@ -7,6 +7,7 @@ contact: sophia.cruewell@charite.de
 address: [METRIC-B, QUEST, BIH, Charité -- Universitätsmedizin Berlin, Anna-Louisa-Karsch-Straße 2, 10178 Berlin]
 osf: sgh7w
 country: Germany
+geolocation: [52.5213794, 13.4028437]
 ---
 
 We meet every second Thursday 16:30-17:30 at the QUEST Centre (Anna-Louisa-Karsch-Str. 2). 3 ECTS can be obtained for regular participation. Read the paper and come by for tea and discussion!

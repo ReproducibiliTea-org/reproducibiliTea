@@ -15,6 +15,8 @@ address: [Faculty of Psychology and Educational Sciences, KULAK, Etienne Sabbela
 
 country: Belgium
 
+geolocation: [50.80707289999999, 3.292819]
+
 ---
 
 The ReproducibiliTea@KULAK journal club is a space for interdisciplinary discussion about science in general, and more specifically about Open Science and Reproducibility. We welcome people from all backgrounds and disciplines, and we hope to create an inclusive environment for friendly discussion. We are open to anyone, staff or students, at KULAK, as well as other KU Leuven cmapuses and the other Universities in Kortrijk.

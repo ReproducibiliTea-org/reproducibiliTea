@@ -17,6 +17,8 @@ address: [Department of psychology, Linnaeus University, Universitetsplatsen 1, 
 
 country: Sweden
 
+geolocation: [56.8544846, 14.8300257]
+
 ---
 
 

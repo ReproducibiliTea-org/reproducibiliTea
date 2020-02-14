@@ -6,7 +6,7 @@ organisers: [Lea Hildebrandt, Eda Kir, Patrick Kaschel]
 contact: lea.hildebrandt@uni-wuerzburg.de 
 address: [Institute for Psychology, University of Wuerzburg, Marcusstr. 9-11, 97070 Wuerzburg]
 country: Germany
-
+geolocation: [49.7881814, 9.93526]
 ---
 **About:** The journal club is open to everyone! 
 

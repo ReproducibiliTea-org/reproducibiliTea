@@ -9,6 +9,7 @@ organisers: [Daniel Poole, Thomas (Richie) Richardson, George Farmer] # Comma-se
 contact: thomas.richardson@manchester.ac.uk # Email contact for the JC
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
+geolocation: [53.4663853, -2.2339112]
 ---
 **About:**
 The journal club is open to everyone across the the University of Manchester and nearby universities, from any discipline or department.

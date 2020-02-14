@@ -11,6 +11,7 @@ organisers: [Eduardo Garcia-Garzon, Guido Corradi]
 contact: egarcia@ucjc.edu
 address: [Universidad Camilo José Cela, Urb. Villafranca del Castillo, Calle Castillo de Alarcón, 49,  28692 Villanueva de la Cañada, Madrid]
 country: Spain
+geolocation: [40.4845963, -3.9397213]
 ---
 
 

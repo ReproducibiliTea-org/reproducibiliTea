@@ -13,4 +13,7 @@ contact: james.clay@port.ac.uk
 address: [Department of Psychology, University of Portsmouth, King Henry Building, PO1 2DY, Hampshire]
 
 country: United Kingdom
+
+geolocation: [50.7951866, -1.0935923]
+
 ---

@@ -15,6 +15,8 @@ contact: alexa.vonhagen@nie.edu.sg
 address: [National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, 637616]
 country: Singapore
 
+geolocation: [1.3490609, 103.6788608]
+
 osf: y7c5p
 
 website: https://blogs.ntu.edu.sg/ntulibrary/2019/11/07/reproducibilitea1/

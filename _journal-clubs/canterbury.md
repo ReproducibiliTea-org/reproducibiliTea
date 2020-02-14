@@ -6,7 +6,7 @@ organisers: [Bethan Iley, Felicity Gallagher, Roger Giner-Sorolla]
 contact: bji5@kent.ac.uk 
 address: [School of Psychology, Keynes College, University of Kent, Canterbury, Kent, CT2 7NP]
 country: United Kingdom
-
+geolocation: [51.2952624, 1.0648553]
 ---
 
 Join us on **Thursdays at 17:30 - 18:30 in KS7**. Please note that the journal club runs during term time only.
