@@ -8,10 +8,11 @@ layout: default
 {% assign countries = "" %}
 {% for jc in site.journal-clubs %}
 {% if jc.country %}
-{% assign countries = countries | append: "|" | append: jc.country %}
+{% assign countries = countries | append: "." | append: jc.country %}
 {% endif %}
 {% endfor %}
-{% assign country_count = countries | split: "|" | uniq | size %}
+{% assign country_count = countries | split: "." | uniq | size | minus: 1 %}
+
 
 # **Welcome to ReproducibiliTea**
 
