@@ -29,7 +29,6 @@
         let markers = locations.map(function(location, i) {
             return new google.maps.Marker({
                 position: {lat: location[1], lng: location[2]},
-                label: location[0],
                 map: map
             });
         });
