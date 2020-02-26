@@ -9,7 +9,7 @@ twitter:
 signup: 
 organisers: [Lampros Bisdounis, Cassandra Gould van Praag, Sandra Tamm, Amy Gillespie, James Carson]
 contact: lampros.bisdounis@ndcn.ox.ac.uk
-address: [Department of Psychiatry,, Warneford Hospital,, University of Oxford,, OX3 7JX, Oxford, UK]
+address: [Department of Psychiatry, Warneford Hospital, University of Oxford, OX3 7JX, Oxford, UK]
 country: United Kingdom
 geolocation: [51.75034796743534, -1.2221217155456543]
 ---
