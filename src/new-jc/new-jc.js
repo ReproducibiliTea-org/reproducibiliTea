@@ -675,6 +675,7 @@ async function callMailgun(data, results) {
 <h1>JC creation report</h1>
 ${formatResponses(results)}
 <p>Welcome to the new JC organisers!</p>
+<img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/73c3eba3-53fc-4a64-ad95-d15c930a02c7/deploy-status"/>
 <hr />
 <h1>Technical details</h1>
 <h2>Form contents</h2>
