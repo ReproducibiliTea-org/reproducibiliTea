@@ -25,8 +25,8 @@ Of the four claims we investigated as a group, the most sensible one was that ju
 
 The whole exercise brought to light a good many considerations of what we mean by replicability and which factors we should or should not care about. It was also like a rapid-fire journal club with pizza, which is about the best way to spend an academic afternoon! I really like the ambition of the whole repliCATS project, from the breadth and depth of the disciplines covered to the idea of (responsibly) running machine learning on the studies. It’s a very cool project and I’m really looking forward to seeing how it evolves.
  
- *Matt Jaquiery [(verysmalldreams.com)](https://verysmalldreams.com/) is a final year DPhil student and organises the University of [Oxford journal club](/journal-clubs/#Oxford) with Sam Parsons, Paul Thompson, Nils Reimer, Sarah Ashcroft-Jones, and Sam Webb.*
+*Matt Jaquiery [(verysmalldreams.com)](https://verysmalldreams.com/) is a final year DPhil student and organises the University of [Oxford journal club](/journal-clubs/#Oxford) with Sam Parsons, Paul Thompson, Nils Reimer, Sarah Ashcroft-Jones, and Sam Webb.*
  
- ### Notes:
+### Notes:
  
- [^1]: According to RepliCATS, the answer to this is that the inferential test is the focus rather than the verbal claim.
+[^1]: According to RepliCATS, the answer to this is that the inferential test is the focus rather than the verbal claim.
