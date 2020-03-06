@@ -7,7 +7,7 @@ zotero: 6GQM5K2I
 website: 
 twitter: 
 signup: 
-organisers: [https://scholar.google.co.uk/citations?hl=en&user=otXno0YAAAAJ, Kohinoor Darda, Rob Ross]
+organisers: [Richard Ramsey, Kohinoor Darda, Rob Ross]
 contact: mqsobalab@gmail.com
 address: [Level 3, Australian Hearing Hub, 16 University Avenue, Macquarie University, Sydney NSW 2109]
 country: Australia
