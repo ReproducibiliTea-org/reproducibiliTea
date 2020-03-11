@@ -5,13 +5,15 @@ host-org-url: https://www.uchicago.edu/
 osf: ekd57
 zotero: 3AD52KPU
 website: 
-twitter: 
+twitter: UChicagoTea
 signup: 
-organisers: [William Ngiam]
+organisers: [William Ngiam, Michelle Hurst, Anastasia Sorokina, Ben Morris, JP Riggle, Pantea Moghimi]
 contact: wngiam@uchicago.edu
 address: [940 E 57th Street, Chicago, Illinois 60637]
 country: United States
 geolocation: [41.788816943128815, -87.59935855865479]
 ---
 
+The University of Chicago ReproducibliTea Journal Club meets every two weeks during each quarter to discuss meta-science topics such as reproducibility, open science and others! An initiative started by graduate students and early-career researchers in the Psychology and Neuroscience departments, we hope to have broad discussions about different aspects of science relevant across disciplines.
 
+To subscribe to our mailing list, please email [William](mailto:wngiam@uchicago.edu) with your @uchicago.edu email.
