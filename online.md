@@ -4,9 +4,7 @@ layout: default
 
 # ReproducibiliTea Online
 
-As travel and meetings are postponed or cancelled to help reduce the spread of COVID-19, ReproducibiliTea is encouraging journal clubs to continue meeting remotely. Firstly, openness and reproducibility stop for no pandemic (especially if you wash your hands before turning on video chat!). Secondly, and much more importantly, while social distancing and self-isolation are needed, it can be lonely working out-of-office, and maybe completely by yourself, for too long. Virtual ReproducibiliTea meetings could help provide community in a time where it is most needed! 
-
-The information on this page is intended to help you get the most out of online ReproducibiliTea meetings, whether you're [participating](#-attending-reproducibilitea-online) or [hosting](#-hosting-reproducibilitea-online) them.
+The information on this page will help you get the most out of online ReproducibiliTea meetings, whether you're [participating](#-attending-reproducibilitea-online) or [hosting](#-hosting-reproducibilitea-online) them.
 
 ## [<i class="fas fa-long-arrow-alt-up"></i>](#reproducibilitea-online) Attending ReproducibiliTea online
 
