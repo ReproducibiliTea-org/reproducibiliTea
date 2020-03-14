@@ -186,6 +186,22 @@ div.page-link {
     justify-content: center;
 }
 
+.biohazard {
+    padding: 1em;
+    text-align: justify;
+    border-style: double;
+}
+.biohazard h2, li.yellow {
+    background-color: yellow;
+}
+.biohazard h2 {
+    text-align: center;
+}
+.biohazard a {
+    font-weight: bold;
+}
+
+
 @media screen and (max-width: 800px) {
     .jc-showcase {
         flex-wrap: wrap;
