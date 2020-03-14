@@ -24,9 +24,10 @@ We are a grassroots [journal club initiative](/about/) that helps young research
 
 <div class="biohazard">
     <h3><i class="fas fa-biohazard"></i> ReproducibiliTea Online: COVID-19 advice</h3>
-    <p>As travel and meetings are postponed/cancelled to help reduce the spread of Coronavirus (COVID-19), we recognise many ReproducibiliTea Journal Clubs may want to meet virtually. We've therefore launched ReproducibiliTea Online: we have put out <a href="/online/">recommendations</a> for how to run a Journal Club or similar event online in addition to allowing Journal Clubs to open up their online meetings to those interesting in joining, wherever in the world they may be. To make this easier we've set up a <a href="/calendar/">ReproducibiliTea Online calendar</a> to keep track of events which are open to the wider communiTea </p>  
+    <p>As travel and meetings are postponed/cancelled to help reduce the spread of Coronavirus (COVID-19), we recognise many ReproducibiliTea Journal Clubs may want to meet virtually. We've therefore launched ReproducibiliTea Online: we have put out <a href="/online/">recommendations</a> for how to run a Journal Club or similar event online in addition to allowing Journal Clubs to open up their online meetings to those interesting in joining, wherever in the world they may be. To make this easier we've set up a <a href="/calendar/">ReproducibiliTea Online calendar</a> to keep track of events which are open to the wider communiTea.</p>  
 </div>
 
+<br/>
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
