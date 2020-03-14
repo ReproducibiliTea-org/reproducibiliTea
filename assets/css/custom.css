@@ -191,14 +191,20 @@ div.page-link {
     text-align: justify;
     border-style: double;
 }
-.biohazard h2, li.yellow {
+.biohazard h3 {
     background-color: yellow;
 }
-.biohazard h2 {
+.biohazard h3 {
     text-align: center;
+}
+.biohazard:not(:hover) h3 {
+    margin: 0;
 }
 .biohazard a {
     font-weight: bold;
+}
+.biohazard:not(:hover) p {
+    display: none;
 }
 
 
