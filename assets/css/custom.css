@@ -197,13 +197,13 @@ div.page-link {
 .biohazard h3 {
     text-align: center;
 }
-.biohazard:not(:hover) h3 {
+.biohazard:not(:hover):not(:focus) h3 {
     margin: 0;
 }
 .biohazard a {
     font-weight: bold;
 }
-.biohazard:not(:hover) p {
+.biohazard:not(:hover):not(:focus) p {
     display: none;
 }
 
