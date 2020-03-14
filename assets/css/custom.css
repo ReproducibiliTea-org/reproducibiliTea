@@ -206,6 +206,14 @@ div.page-link {
 .biohazard:not(:hover):not(:focus) p {
     display: none;
 }
+p.elipsis {
+    display: none;
+    margin-bottom: 0;
+}
+.biohazard:not(:hover):not(:focus) p.elipsis {
+    display: block;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 800px) {
