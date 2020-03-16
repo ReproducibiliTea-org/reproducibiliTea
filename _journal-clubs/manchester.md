@@ -5,8 +5,8 @@ host-org-url: https://www.manchester.ac.uk/ # Website of the above
 website:  # Website for the JC if it exists
 osf: bs2k7
 signup:  # Email address for people wanting to sign up if there is one
-organisers: [Daniel Poole, Thomas (Richie) Richardson, George Farmer] # Comma-separated list of organiser names
-contact: thomas.richardson@manchester.ac.uk # Email contact for the JC
+organisers: [Daniel Poole, Thomas (Richie) Richardson, George Farmer, Nathan Khadaroo] # Comma-separated list of organiser names
+contact: thomas.richardson@manchester.ac.uk, nathan.khadaroo@postgrad.manchester.ac.uk # Email contact for the JC
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
 geolocation: [53.4663853, -2.2339112]
