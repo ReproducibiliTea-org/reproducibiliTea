@@ -1,27 +1,20 @@
 ---
-# Replace "Your City" with a short version of your location below (e.g. Bristol or Singapore)
-# When you save the file, change "your_city" in the name of the file to what you filled out below
+
 title: Nijmegen
 
-# Replace "University of Your City" with the university or organisation that is hoping the journal club (e.g. University of Bristol or Nanyang Technical University)
 host-organisation: Open Science Community Nijmegen
 
-# Replace "https://www.yourCity.ac.uk/" with the website of your institution
 host-org-url: https://openscience-nijmegen.nl/
 
-# Website for the journal club (within above website)
 website: https://openscience-nijmegen.nl/_pages/reproducibilitea/
 
-# Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
-#�The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
 organisers: [Eirini Zormpa, Johannes Algermissen, Kristijan Armeni, Jeanette Mostert] 
 
-# Replace "j.c.Owner@yourCity.ac.uk" with the email of the JC Communication Lead
 contact: contact@openscience-nijmegen.nl
 
-# Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
-Address: Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen, The Netherlands
-
+address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen] 
+country: Netherlands
+geolocation: [51.81799340000001, 5.8570934]
 ---
 ## About:
 

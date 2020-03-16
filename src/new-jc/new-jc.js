@@ -20,12 +20,12 @@ const {
 
 const OPTIONAL_FIELDS = [
     'www', 'twitter', 'description', 'osfUser', 'zoteroUser',
-    'signup', 'uniWWW',
+    'signup', 'uniWWW', 'osf'
 ];
 
 const REQUIRED_FIELDS = [
     'jcid', 'name', 'uni', 'email', 'post',
-    'country', 'lead', 'authCode'
+    'country', 'lead', 'authCode', 'geolocation'
 ];
 
 exports.handler = async (event) => {
@@ -71,12 +71,27 @@ function cleanData(data) {
     }
 
     if(data.post)
-        data.post = data.post.replace(/\\n/g, ', ');
+        data.post = data.post.replace(/[\n\r]\r?/g, ', ');
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();
 
+    // Remove leading and trailing spaces from all string fields
+    for(const x in data) {
+        if(typeof data[x] !== "string")
+            continue;
+        const match = /^\s*([\S\s]*\S+)\s*$/i.exec(data[x]);
+        if(match)
+            data[x] = match[1];
+    }
+
     // Remove the unnecessary bits of the OSF user input
+    if(data.osf && data.osf.length) {
+        const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
+            .exec(data.osfUser);
+        if(match)
+            data.osfUser = match[1];
+    }
     if(data.osfUser && data.osfUser.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
             .exec(data.osfUser);
@@ -94,6 +109,12 @@ function cleanData(data) {
     if(data.twitter)
         while(data.twitter[0] === "@")
             data.twitter = data.twitter.substr(1);
+
+    // Sort geolocation data to be [int:lat, int:lng]
+    if(data.geolocation) {
+        const d = data.geolocation.split(',');
+        data.geolocation = d.map(a => parseFloat(a));
+    }
 
     return data;
 }
@@ -120,17 +141,27 @@ function checkData(data) {
     }
 
     if(!/^[a-z0-9\-]+$/i.test(data.jcid))
-        return fail(`The id field ("${data.jcid}")  contains invalid characters.`);
+        return fail(`The id field ("${data.jcid}") contains invalid characters.`);
+
+    if(!/^[a-z0-9]*$/i.test(data.osf))
+        return fail(`The OSF repository ("${data.osf}") contains invalid characters.`);
 
     if(!/^[a-z0-9]*$/i.test(data.osfUser))
-        return fail(`The OSF username ("${data.osfUser}")  contains invalid characters.`);
+        return fail(`The OSF username ("${data.osfUser}") contains invalid characters.`);
+
+    if(!/^[0-9]*$/i.test(data.zoteroUser))
+        return fail(`The Zotero username ("${data.zoteroUser}") contains invalid characters.`);
 
     // check email has an x@y structure
     if(!/\S+@\S+/i.test(data.email))
-        return fail(`The email address supplied("${data.email}")   appears invalid.`);
+        return fail(`The email address supplied("${data.email}") appears invalid.`);
 
     if(data.authCode !== AUTH_CODE) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
+    }
+
+    if(!data.geolocation || data.geolocation.length !== 2 || !data.geolocation.reduce((p, c) => p && isFinite(c))) {
+        return fail("The geolocation data is not in the correct format.");
     }
 
     return null;
@@ -194,6 +225,12 @@ async function callOSF(data) {
         details: [],
         osfRepoId: null
     };
+
+    if(data.osf && data.osf.length) {
+        out.details.push('A pre-existing OSF repository was supplied, so that will be registered as the journal club\'s OSF link.');
+        out.osfRepoId = data.osf;
+        return out;
+    }
 
     const osfURL = 'https://api.osf.io/v2/';
     const osfParentRepo = 'cfby7';
@@ -513,6 +550,7 @@ organisers: [${[data.lead, ...data.helpers].join(', ')}]
 contact: ${data.email}
 address: [${data.post}]
 country: ${data.country}
+geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 ---
 
 ${data.description}
@@ -637,6 +675,7 @@ async function callMailgun(data, results) {
 <h1>JC creation report</h1>
 ${formatResponses(results)}
 <p>Welcome to the new JC organisers!</p>
+<img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/73c3eba3-53fc-4a64-ad95-d15c930a02c7/deploy-status"/>
 <hr />
 <h1>Technical details</h1>
 <h2>Form contents</h2>

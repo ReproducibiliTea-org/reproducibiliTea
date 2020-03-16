@@ -53,4 +53,4 @@ We live in a glorious age of connectivity online, but that isn’t always a subs
 Watch this space! ReproducibiliTea: The Big Meeting, coming soon.
 
 
-**Jade Pickering [(jade-pickering.com)](https://www.jade-pickering.com/) is a final year PhD student and co-leads the University of Manchester journal club with George Farmer, Daniel Poole, and Thomas Richardson.**
+*Jade Pickering [(jade-pickering.com)](https://www.jade-pickering.com/) is a final year PhD student and co-leads the University of Manchester journal club with George Farmer, Daniel Poole, and Thomas Richardson.*

@@ -3,6 +3,54 @@
  */
 
 /**
+ * Let the user stick a pin in Google Maps and fetch the geolocation of the pin
+ * @param e {Event}
+ */
+function geolocate(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.add('active');
+    return false;
+}
+
+/**
+ * Close the map and go back to the form
+ * @param e {Event}
+ */
+function setGeolocation(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.remove('active');
+    return false;
+}
+
+/**
+ * Update the geolocation field when the postal address is updated
+ */
+function geolocateAddress() {
+    const address = document.getElementById('post');
+    const addr = address.value.replace(/\s/g, '+');
+    const input = document.getElementById('geolocation');
+    const key = document.getElementById('APIkeys').dataset.maps;
+
+    // Try to fetch the address
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+        .then(r => r.json())
+        .then(j => {
+            if(!j.results ||
+                !j.results[0] ||
+                !j.results[0].geometry ||
+                !j.results[0].geometry.location)
+                throw "No geometry or geometry.location in response.";
+            input.value = `${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}`;
+        })
+        .catch(
+            (err) => {
+                console.warn(`Failed to geolocate ${addr}: ${err}`);
+                input.placeholder = "Use button to locate >>";
+            }
+        )
+}
+
+/**
  * Add a new organiser field below the current latest one
  * @param e {Event} button click event
  * @return {boolean}
@@ -35,24 +83,94 @@ function addNewOrganiser(e) {
 
 /**
  * Check form and update visuals for failed areas
- * @param form {Element} form to check
+ * @param e {Element|Event} form to check, or event sent by that form
+ * @param allowEmpty {boolean} whether to mark empty responses as invalid
  * @return {boolean}
  */
-function checkForm(form) {
+function checkForm(e, allowEmpty = false) {
+    let form;
+
+    if(e instanceof Event) {
+        form = e.currentTarget;
+    } else {
+        form = e;
+    }
+
     let okay = true;
+
+    /**
+     * Mark an element as a bad response
+     * @param e {HTMLElement} to mark as bad
+     * @param reason {string} reason for marking as bad
+     */
+    const markBad = function(e, reason = "Invalid response") {
+        e.classList.add('bad');
+        e.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+        e.title = reason;
+    };
 
     // Clean existing failures
     form.querySelectorAll('.bad').forEach(e => e.classList.remove('bad'));
 
     form.querySelectorAll('.mandatory input, .mandatory textarea, .mandatory select')
         .forEach(e => {
-            if(!e.value && !e.classList.contains('optional')) {
+            if(!e.value && !allowEmpty && !e.classList.contains('optional')) {
                 okay = false;
-                e.classList.add('bad');
-                e.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
-                e.title = "This field is required.";
+                markBad(e, "This field is required.");
             }
     });
+
+    // Mark OSFuser obsolete if OSF is complete
+    let elm = document.querySelector('#osfUser').closest('.row');
+    if(document.querySelector('#osf').value != "") {
+        elm.classList.add('obsolete');
+        elm.title = "This field is unavailable when a custom OSF repository has been supplied."
+    } else {
+        elm.classList.remove('obsolete');
+        elm.title = "";
+    }
+
+    // Warn if they have 'reproducibilitea' in the name field
+    elm = form.querySelector('#name');
+    if(/ReproducibiliTea/i.test(elm.value)) {
+        markBad(elm, "Please do not include 'ReproducibiliTea' in your JC name!")
+    }
+
+    // Server-side check matching
+    elm = form.querySelector('#name');
+    if(!/^\s*[a-z0-9\- ]+\s*$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
+        okay = false;
+        markBad(elm, "Field contains invalid characters.");
+    }
+
+    elm = form.querySelector('#osfUser');
+    if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+        elm.value &&
+        !elm.classList.contains('obsolete')) {
+        okay = false;
+        markBad(elm, "Field contains invalid characters.");
+    }
+
+    elm = form.querySelector('#zoteroUser');
+    if(!/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
+        okay = false;
+        markBad(elm, "Field contains invalid characters.");
+    }
+
+    elm = form.querySelector('#email');
+    if(!/\S+@\S+/i.test(elm.value) && !(!elm.value && allowEmpty)) {
+        okay = false;
+        markBad(elm, "Field does not appear to be a well-formed email address.");
+    }
+
+    elm = form.querySelector('#geolocation');
+    let d = elm.value.split(',');
+    d = d.map(a => parseFloat(a));
+    if(!d || d.length !== 2 || !d.reduce((p, c) => p && isFinite(c))) {
+        okay = false;
+        markBad(elm, "Please click the marker icon to locate your journal club on the map.");
+    }
+
 
     // Check JC Name isn't already in use
     const name = document.getElementById("name");

@@ -1,23 +1,19 @@
 ---
 title: Richmond, Virginia (RVA)
 
-# Replace "University of Your City" with the university or organisation that is hoping the journal club (e.g. University of Bristol or Nanyang Technical University)
 host-organisation: Virginia Commonwealth University 
 
-# Replace "https://www.yourCity.ac.uk/" with the website of your institution
 host-org-url: https://www.vcu.edu/
 
-# Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
-#�The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
 organisers: [Dana Lapato, Timothy P. York, Nina Exner] 
 
-# Replace "j.c.Owner@yourCity.ac.uk" with the email of the JC Communication Lead
 contact: dana.lapato@vcuhealth.org 
 
-# Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
+address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
 
-Address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
-Country: United States of America
+country: United States
+
+geolocation: [37.544324, -77.4311636]
 
 ---
 **About:**

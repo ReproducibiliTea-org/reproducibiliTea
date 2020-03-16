@@ -7,6 +7,9 @@ signup:
 twitter: LeidenTea
 organisers: [Ricarda Proppert]
 contact: leidentea@gmail.com
+address: [Leiden University]
+country: Netherlands
+geolocation: [52.1571485, 4.485209]
 ---
 **About:** 
 

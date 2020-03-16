@@ -31,6 +31,7 @@ tr td img {
     display: flex;
     padding: .25em;
     justify-content: space-between;
+    position: relative;
 }
 
 .row:hover {
@@ -70,6 +71,7 @@ tr td img {
 .label-details ul {
     padding: 0;
     list-style-type: disc;
+    width: fit-content;
 }
 
 .label-details li:not(:last-of-type) {
@@ -121,6 +123,15 @@ tr td img {
 
 .bad {
     background-color: #ffd7d1 !important;
+}
+
+.obsolete::after {
+    content: close-quote;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
 }
 
 form {
@@ -192,4 +203,56 @@ ul {
 }
 .error h2:first-of-type:before {
     content: "\274C";
+}
+
+/* Map geolocation picker */
+#geolocation-map {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+#geolocation-map.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#geolocation-map h2 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    min-height: 2em;
+}
+
+#geolocation-map-display {
+    height: 80%;
+    width: 80%;
+}
+
+.geolocation-map-controls {
+    height: 10%;
+    min-height: 2em;
+}
+.geolocation-map-controls button {
+    font-size: 2em;
+    color: var(--color-rpt-primary);
+    stroke: var(--color-rpt-primary);
+}
+.geolocation-map-controls button:hover i,
+.geolocation-map-controls button:hover svg {
+    animation: spin 3s infinite linear;
+}
+
+/* Specifics */
+.geolocation {
+    display: flex;
+}
+.geolocation button {
+    width: 3em;
 }

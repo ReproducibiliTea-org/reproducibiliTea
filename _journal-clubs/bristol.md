@@ -7,6 +7,9 @@ osf: 9zbcw
 signup:
 organisers: [Katie Drax]
 contact: katie.drax@bristol.ac.uk
+address: [5 Priory Road, University of Bristol, Bristol]
+country: United Kingdom
+geolocation: [51.4584172, -2.6029792]
 ---
 
 # The University of Bristol ReproducibiliTea journal club 

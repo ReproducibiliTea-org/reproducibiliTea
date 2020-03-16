@@ -1,9 +1,12 @@
 ---
 title: Minnesota
-host-organisation: 
+host-organisation: University of Minnesota
 host-org-url: 
 website:
 signup:
 organisers: [Amy Riegelman, Alan Love]
-contact: 
+contact: aspringe@umn.edu
+address: [Minneapolis, MN 55455]
+country: United States
+geolocation: [44.97415609999999, -93.2342]
 ---

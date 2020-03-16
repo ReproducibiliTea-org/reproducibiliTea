@@ -1,9 +1,13 @@
 ---
 title: University College London
-host-organisation: 
+host-organisation: University College London
 host-org-url: 
-website:
+website: https://osf.io/q7pr4/
 signup:
-organisers: [Emma Norris, Jessie Balwin and Tabea Schoeler]
-contact: 
+organisers: [Emma Norris, Jessie Balwin, Tabea Schoeler]
+contact: emma.norris@ucl.ac.uk
+address: [Gower St, Bloomsbury, London WC1E 6BT]
+country: United Kingdom
+osf: q7pr4
+geolocation: [51.52332639999999, -0.1335492]
 ---

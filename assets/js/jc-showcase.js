@@ -19,8 +19,8 @@ function showcaseJC(e) {
         document.importNode(template.content, true)
     );
 
-    if(window.location.hash.substr(1) !== decodeURIComponent(e.currentTarget.value))
-        window.location.hash = "#" + decodeURIComponent(e.currentTarget.value);
+    if(decodeURI(window.location.hash.substr(1)) !== e.currentTarget.value)
+        window.location.hash = "#" + encodeURI(e.currentTarget.value);
 }
 
 const searchBar = document.getElementById("jcSearch");

@@ -1,0 +1,50 @@
+---
+---
+<html>
+<head>
+    <title>Journal club overview</title>
+    <link rel="stylesheet" href="assets/css/jc-overview.css"/>
+    <script type="text/javascript" src="assets/js/jc-overview.js"></script>
+    {% assign fields = 'title, host-organisation, contact, address, country, geolocation, host-org-url, osf, zotero, website, twitter, signup, organisers' %}
+    {% assign requiredFields = 'title, host-organisation, organisers, contact, address, country, geolocation' %}
+    {% assign fieldList = fields | split: ', ' %}
+</head>
+<body>
+<div id="map" style="height: 100%; width: 100%">
+</div>
+
+<script id="mapAPIscript" async defer></script>
+
+<script>
+    let map;
+    function initMap() {
+        map = new google.maps.Map(
+            document.getElementById('map'),
+            {
+                center: {lat: 0, lng: 0},
+                zoom: 1
+            }
+        );
+
+        let markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+                position: {lat: location[1], lng: location[2]},
+                map: map
+            });
+        });
+    }
+    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" %}
+    const locations = [
+        {% for jc in geos %}["{{ jc.title }}", {{ jc.geolocation | join: ", " }}]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ];
+
+    {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
+    let key = "{{ key[0][1] }}";
+    document.getElementById('mapAPIscript').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`;
+</script>
+</body>
+</html>
+
+
+

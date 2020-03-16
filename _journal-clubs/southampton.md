@@ -1,9 +1,12 @@
 ---
 title: Southampton
-host-organisation: 
+host-organisation: University of Southampton
 host-org-url: 
 website:
 signup:
 organisers: [Sophie Hall, Christian Bokhove]
-contact: 
+contact: s.m.hall@soton.ac.uk
+address: [12 University Rd, Southampton SO17 1BJ]
+country: United Kingdom
+geolocation: [50.9362414, -1.3981739]
 ---

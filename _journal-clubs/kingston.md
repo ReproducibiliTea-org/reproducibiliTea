@@ -19,13 +19,14 @@ contact: e.henderson@kingston.ac.uk
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise) 
 address: [10 South Western Road, Twickenham, TW1 1LQ]
 
-country: United Kingdom 
-
+country: United Kingdom
+osf: 4jw53
+geolocation: [51.4557104, -0.323561]
 ---
 ​
 **About**
 
-The journal club is open to everyone across Kingston University, at any level, from any discipline or department. From January 2020 we will meet monthly at 12.00 in the [Spring Grove pub](https://www.thespringgrove.co.uk/) (just behind the Penrhyn Road campus). We also organise talks and workshops on open research related topics. The most up-to-date information can generally be found on our [OSF page](https://osf.io/4jw53/), and we will circulate meeting details through the Kingston ReproT mailing list. Please contact Emma Henderson to join the mailing list.
+The journal club is open to everyone across Kingston University, at any level, from any discipline or department. From January 2020 we will meet monthly at 12.00 on the Penrhyn Road campus. We also organise talks and workshops on open research related topics. The most up-to-date information can generally be found on our [OSF page](https://osf.io/4jw53/), and we will circulate meeting details through the Kingston ReproT mailing list. Please contact Emma Henderson to join the mailing list.
 
 ​
 **The format**

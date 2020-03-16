@@ -1,11 +1,15 @@
 ---
 title: Graz
-host-organisation: 
+host-organisation: University of Graz
 host-org-url: 
 website: 
 signup: graz_open_science@zoho.com
 organisers: [Gaby Hofer, Hilmar Brohmer]
 contact: graz_open_science@zoho.com
+osf: r3hcn
+address: [Brockmanngasse 84, 1st Floor, Besprechungsraum]
+country: Austria
+geolocation: [47.0619149, 15.441745]
 ---
 
 The ReproducibiliTea in Graz, Austria is organized by the PhD students Gabriela Hofer (Differential Psychology) and Hilmar Brohmer (Social Psychology) and is greatly supported by the Graz Open Science Initiative ([@GrazOpenScience](https://twitter.com/GrazOpenScience)). 
