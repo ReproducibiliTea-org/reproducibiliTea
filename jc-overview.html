@@ -47,8 +47,10 @@
         </tbody>
     </table>
 ---
-    <h2>Email addresses</h2>
+    <h2>Email addresses (BCC is your friend)</h2>
     <textarea>{% for jc in site.journal-clubs %}{% if jc.contact %}{{jc.contact}}{% unless forloop.last == true %}; {% endunless %}{% endif %}{% endfor %}</textarea>
+    <h3>Secondary contacts</h3>
+    <textarea>{% for jc in site.journal-clubs %}{% if jc.additional-contact %}{{jc.additional-contact | join: "; "}}{% unless forloop.last == true %}; {% endunless %}{% endif %}{% endfor %}</textarea>
 
 ---
     <h2>Geolookup</h2>

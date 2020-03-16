@@ -102,8 +102,14 @@ function cleanData(data) {
     // Concatenate helper list into array
     data.helpers = [];
     for(let i = 0; data.hasOwnProperty('helper' + i.toString()); i++)
-        if(data['helper' +i.toString()].length)
+        if(data['helper' + i.toString()].length)
             data.helpers.push(data['helper' + i.toString()]);
+
+    // Concatenate email list into array
+    data.emails = [];
+    for(let i = 0; data.hasOwnProperty('extraEmail' + i.toString()); i++)
+        if(data['extraEmail' + i.toString()].length)
+            data.emails.push(data['extraEmail' + i.toString()]);
 
     // Remove the @ at the beginning of twitter usernames because YAML doesn't allow entries to start with @
     if(data.twitter)
@@ -155,6 +161,12 @@ function checkData(data) {
     // check email has an x@y structure
     if(!/\S+@\S+/i.test(data.email))
         return fail(`The email address supplied("${data.email}") appears invalid.`);
+
+    // check extra emails have an x@y structure
+    for(let i = 0; i < data.emails.length; i++) {
+        if(!/\S+@\S+/i.test(data.emails[i]))
+            return fail(`The email address supplied("${data.emails[i]}") appears invalid.`);
+    }
 
     if(data.authCode !== AUTH_CODE) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
@@ -548,6 +560,7 @@ twitter: ${data.twitter}
 signup: ${data.signup}
 organisers: [${[data.lead, ...data.helpers].join(', ')}]
 contact: ${data.email}
+additional-contact: [${data.emails.join(', ')}]
 address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]

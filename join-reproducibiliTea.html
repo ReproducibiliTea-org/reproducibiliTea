@@ -501,7 +501,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     </div>
                     <div class="organisers">
                         <input type="text" id="lead" name="lead" placeholder="Good Scholar" />
-                        <button onclick="addNewOrganiser(event)"><i class="fas fa-user-plus"></i></button>
+                        <button onclick="addNewEntry(event)" data-field-id="helper" data-field-placeholder="Helper"><i class="fas fa-user-plus"></i></button>
                     </div>
                 </div>
 
@@ -510,13 +510,17 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                         <label for="email">Contact email</label>
                         <div class="label-details">
                             <p>This is the email address for the lead organiser. It can be an email for the journal club rather than a personal email if you like. We will use this for getting in touch with you about general JC stuff.</p>
+                            <p>You may add additional email addresses if you like, but as long as one member of your JC gets our emails that is enough.</p>
                             <ul>
                                 <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
                             </ul>
                         </div>
                     </div>
-                    <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
+                    <div class="emails">
+                        <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
+                        <button onclick="addNewEntry(event)" data-field-id="extraEmail" data-field-placeholder="Extra email"><i class="fas fa-user-plus"></i></button>
+                    </div>
                 </div>
 
                 <div class="row">

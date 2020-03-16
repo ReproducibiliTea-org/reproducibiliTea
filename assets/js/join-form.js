@@ -55,26 +55,27 @@ function geolocateAddress() {
  * @param e {Event} button click event
  * @return {boolean}
  */
-function addNewOrganiser(e) {
-    const lastOrganiser = document.querySelector('#newJC .JC-organisers .organisers input:last-of-type');
+function addNewEntry(e) {
+    const last = e.target.parentElement.querySelector('input:last-of-type');
 
     let id = -1;
 
-    if(lastOrganiser.name !== 'lead') {
-        // Find the ID of the latest organiser
-        const regex = /helper([0-9]+)/.exec(lastOrganiser.id);
+    // Check whether the previous entry ends in a number
+    if(/[0-9]+$/.test(last.name)) {
+        // Find the ID of the latest entry
+        const regex = /([0-9]+$)/.exec(last.id);
         if(regex[1])
             id = parseInt(regex[1]);
     }
 
-    let newOrganiser = document.createElement('input');
-    newOrganiser.type = 'text';
-    newOrganiser.classList.add('optional');
-    newOrganiser.id = 'helper' + (id + 1);
-    newOrganiser.name = newOrganiser.id;
-    newOrganiser.placeholder = 'Helper #' + (id + 2);
+    let newEntry = document.createElement('input');
+    newEntry.type = 'text';
+    newEntry.classList.add('optional');
+    newEntry.id = e.target.dataset.fieldId + (id + 1);
+    newEntry.name = newEntry.id;
+    newEntry.placeholder = e.target.dataset.fieldPlaceholder + ' #' + (id + 2);
 
-    lastOrganiser.parentElement.insertBefore(newOrganiser, lastOrganiser.nextSibling);
+    last.parentElement.insertBefore(newEntry, last.nextSibling);
 
     // no submit action
     e.preventDefault();
@@ -95,6 +96,12 @@ function checkForm(e, allowEmpty = false) {
     } else {
         form = e;
     }
+
+    // All form entries lose starting and trailing spaces
+    form.querySelectorAll('input').forEach(e => {
+        e.value = e.value.replace(/^ +/, '');
+        e.value = e.value.replace(/ +$/, '');
+    });
 
     let okay = true;
 
@@ -162,6 +169,14 @@ function checkForm(e, allowEmpty = false) {
         okay = false;
         markBad(elm, "Field does not appear to be a well-formed email address.");
     }
+
+    // additional emails
+    form.querySelectorAll('.emails input.optional').forEach(e => {
+       if(!/\S+@\S+/i.test(e.value) && e.value) {
+           okay = false;
+           markBad(e, "Field does not appear to be a well-formed email address.");
+       }
+    });
 
     elm = form.querySelector('#geolocation');
     let d = elm.value.split(',');
