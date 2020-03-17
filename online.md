@@ -13,11 +13,13 @@ Remote journal club etiquette often needs to be a bit more strict than in-person
 
 1. Pay attention to the **moderator**
     - The moderator calls on people who have their hands up 
-    - Hands can be raised physically on video or through e.g. the ‘hand raised’ function available on Zoom
+    - Hands can be raised physically on video, in text chat, or through e.g. the ‘hand raised’ function available on Zoom
 2. Everyone is required to **wear headphones**
 3. Everyone should **mute audio** unless they (want to) speak
     - Please be extra conscientious to avoid talking over others and to ensure that all have an opportunity to engage
 4. **Arrive promptly** so technical issues can be sorted out quickly, and introductions made/links shared
+
+Remember: headphones **ON**, microphones **OFF**, and hands **UP**.
 
 As always, let us know if you have any further suggestions!
 
@@ -33,7 +35,8 @@ If possible, use a video conferencing platform. Video allows for a more ‘socia
     - High quality
     - Good tools like a shared workspace
     - The ‘host’ (not all the participants) has to sign up to Zoom and download the Zoom software and can share a link with participants to allow them to join the meeting (you can choose whether to require a password to enter the meeting). *[More information...](https://support.zoom.us/hc/en-us/articles/201362033-Getting-Started-on-Windows-and-Mac)*
-    - Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up **two Zoom links** in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)
+    - ~~Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up **two Zoom links** in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)~~
+        - <i class="fas fa-biohazard"></i> Zoom have temporarily lifted the 40 minute limit
     - Possible scaling issues as it is highly likely that Zoom becomes really popular around the world and server capacity might become low
     
 - [Jitsi <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://meet.jit.si/)
@@ -51,9 +54,11 @@ As mentioned in the guidance for [participation](#attending-reproducibilitea-onl
 
 1. Designating a moderator before the meeting starts
     - The moderator should familiarise themselves with the platform in use before the meeting starts
-    - For best results the moderator should be the person presenting the paper
+        - the moderator could be the person presenting the paper but could also be another person
     - The moderator calls on people who have their hands up 
-    - Hands can be raised physically on video or through e.g. the ‘hand raised’ function available on Zoom
+    - Hands can be raised physically on video, in text chat, or through e.g. the ‘hand raised’ function available on Zoom
+        - arrange different signals for adding to the current point versus bringing up a new point
+    - If you're using Zoom, be sure to 'claim host' by pressing the button in the participants window (the meeting will end prematurely if no host is claimed)
 
 2. Allocate some time at the beginning of the meeting for 
     - reminding people of the etiquette for online meetings
@@ -70,7 +75,7 @@ As mentioned in the guidance for [participation](#attending-reproducibilitea-onl
     
 ### Large Groups 
 
-As group sizes get towards double figures, meeting using video may become prohibitively complex or technically challenging. For these meetings, we recommend a webinar-style format where one person leads the discussion sharing their screen/webcam, and other people at the meeting join using **audio only**. When setting up Zoom meetings you can determine beforehand whether participants should join only with audio or audio/video, which can help you get the meeting on track quickly. Additionally, you may want to consider a streaming-based software solution such as [Discord <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://discordapp.com/).
+As group sizes get towards double figures, meeting using video may become prohibitively complex or technically challenging. For these meetings, we recommend a webinar-style format where one person leads the discussion **sharing their screen**/webcam, and other people at the meeting join using **audio only**. When setting up Zoom meetings you can determine beforehand whether participants should join only with audio or audio/video, which can help you get the meeting on track quickly. Additionally, you may want to consider a streaming-based software solution such as [Discord <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://discordapp.com/).
 
 ## [<i class="fas fa-long-arrow-alt-up"></i>](#reproducibilitea-online) Open Calendar
 
