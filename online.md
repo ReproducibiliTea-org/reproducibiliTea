@@ -35,8 +35,8 @@ If possible, use a video conferencing platform. Video allows for a more ‘socia
     - High quality
     - Good tools like a shared workspace
     - The ‘host’ (not all the participants) has to sign up to Zoom and download the Zoom software and can share a link with participants to allow them to join the meeting (you can choose whether to require a password to enter the meeting). *[More information...](https://support.zoom.us/hc/en-us/articles/201362033-Getting-Started-on-Windows-and-Mac)*
-    - ~~Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up **two Zoom links** in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)~~
-        - <i class="fas fa-biohazard"></i> Zoom have temporarily lifted the 40 minute limit
+    - Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up **two Zoom links** in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)
+        - <i class="fas fa-biohazard"></i> *Zoom have temporarily lifted the 40 minute limit **for schools***
     - Possible scaling issues as it is highly likely that Zoom becomes really popular around the world and server capacity might become low
     
 - [Jitsi <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://meet.jit.si/)
