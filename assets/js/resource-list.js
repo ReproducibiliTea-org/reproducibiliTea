@@ -51,53 +51,58 @@ function makeResourceList(json) {
         const item = section.appendChild(document.createElement('div'));
         item.classList.add('item');
         const head = item.appendChild(document.createElement('header'));
-        if(/\w/.test(x[0]) || /\w/.test(x[2])) {
-            const topic = head.appendChild(document.createElement('h1'));
+        if(/\w/.test(x[0])) {
+            const topic = head.appendChild(document.createElement('p'));
             topic.classList.add('topic');
-            const status = x[3].match(/(recorded|live|static)/i);
-            if(status) {
-                topic.classList.add(status[0].toLowerCase()); // Status as a class
-                topic.title = status[0][0].toUpperCase() + status[0].substr(1).toLowerCase();
-            }
-            const a = topic.appendChild(document.createElement('a'));
-            a.href = x[2];
-            if(/\w/.test(x[0]))
-                a.innerHTML = x[0] +
-                    (/^https:\/\/reproducibiliTea.org/i.test(x[0])?
-                        '' : ' <sup><i class="fas fa-external-link-alt"></i></sup>');
-            else if(/\w/.test(x[1]))
-                a.innerHTML = x[1];
-            else
-                a.innerHTML = x[2];
+            topic.innerHTML = x[0];
         }
-        if(/\w/.test(x[0]) && /\w/.test(x[1]) || (!/\w/.test(x[0]) && !/\w/.test(x[2]))) {
+        if(/\w/.test(x[1]) || /\w/.test(x[3])) {
+            const title = head.appendChild(document.createElement('h1'));
+            title.classList.add('title');
+            const status = x[4].match(/(recorded|live|static)/i);
+            if(status) {
+                title.classList.add(status[0].toLowerCase()); // Status as a class
+                title.title = status[0][0].toUpperCase() + status[0].substr(1).toLowerCase();
+            }
+            const a = title.appendChild(document.createElement('a'));
+            a.href = x[3];
+            if(/\w/.test(x[1]))
+                a.innerHTML = x[1] +
+                    (/^https:\/\/reproducibiliTea.org/i.test(x[1])?
+                        '' : ' <sup><i class="fas fa-external-link-alt"></i></sup>');
+            else if(/\w/.test(x[2]))
+                a.innerHTML = x[2];
+            else
+                a.innerHTML = x[3];
+        }
+        if(/\w/.test(x[1]) && /\w/.test(x[2]) || (!/\w/.test(x[1]) && !/\w/.test(x[3]))) {
             const author = head.appendChild(document.createElement('h2'));
             author.classList.add('author');
-            author.innerHTML = x[1];
+            author.innerHTML = x[2];
         }
         const body = item.appendChild(document.createElement('div'));
-        if(/\w/.test(x[4])) {
+        if(/\w/.test(x[5])) {
             const details = body.appendChild(document.createElement('div'));
             details.classList.add('details');
-            details.innerHTML = x[4];
+            details.innerHTML = x[5];
         }
-        if(/\w/.test(x[8])) {
+        if(/\w/.test(x[9])) {
             const notes = body.appendChild(document.createElement('div'));
             notes.classList.add('notes');
-            notes.innerHTML = x[8];
+            notes.innerHTML = x[9];
         }
-        if(/[\w\d]/.test(x[5]) || /[\w\d]/.test(x[6])) {
+        if(/[\w\d]/.test(x[6]) || /[\w\d]/.test(x[7])) {
             const time = body.appendChild(document.createElement('div'));
             time.classList.add('time');
             let sep = '';
-            if(/[\w\d]/.test(x[5]) && /[\w\d]/.test(x[6]))
+            if(/[\w\d]/.test(x[6]) && /[\w\d]/.test(x[7]))
                 sep = '<div class="separator">-</div>';
-            time.innerHTML = '<i class="fas fa-calendar fa-2x"></i> <div class="start">' + x[5] + '</div>' + sep + '<div class="end">' + x[6] + '</div>';
+            time.innerHTML = '<i class="fas fa-calendar fa-2x"></i> <div class="start">' + x[6] + '</div>' + sep + '<div class="end">' + x[7] + '</div>';
         }
-        if(/\w/.test(x[7])) {
+        if(/\w/.test(x[8])) {
             const contact = body.appendChild(document.createElement('div'));
             contact.classList.add('contact');
-            contact.innerHTML = x[7];
+            contact.innerHTML = x[8];
         }
     }
     return section;

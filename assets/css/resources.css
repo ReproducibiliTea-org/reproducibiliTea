@@ -19,10 +19,15 @@
   .item div:last-of-type {
     padding-bottom: 0; }
   .item .topic {
+    margin: -1em 0 0 0;
+    text-align: right;
+    color: lightgrey;
+    text-transform: uppercase; }
+  .item .title {
     position: relative;
     width: max-content;
     padding: 0 1em; }
-    .item .topic::after {
+    .item .title::after {
       content: " ";
       position: absolute;
       top: 50%;
