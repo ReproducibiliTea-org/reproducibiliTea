@@ -1,0 +1,56 @@
+#resource-list .resources {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly; }
+
+.item {
+  border: 2px solid var(--color-rpt-primary);
+  box-shadow: 2px 2px var(--color-rpt-secondary);
+  border-radius: 1em;
+  padding: 1em;
+  margin: .5em;
+  width: min-content;
+  height: min-content; }
+  .item header {
+    width: max-content; }
+  .item div {
+    padding: .25em 0; }
+  .item div:last-of-type {
+    padding-bottom: 0; }
+  .item .topic {
+    position: relative;
+    width: max-content;
+    padding-left: 1em; }
+    .item .topic::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: .5em;
+      width: .5em;
+      border-width: 0.1em;
+      border-style: solid;
+      border-radius: 100%; }
+      .topic.static::after {
+        background-color: black;
+        border-color: black; }
+      .topic.live::after {
+        background-color: red;
+        border-color: red; }
+      .topic.recorded::after {
+        background-color: white;
+        border-color: red; }
+  .item .author {
+    text-align: center; }
+  .item .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; }
+  .item .contact {
+    text-align: right;
+    font-style: italic; }
+
+/*# sourceMappingURL=resources.css.map */
