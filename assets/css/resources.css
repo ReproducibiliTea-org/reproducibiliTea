@@ -21,7 +21,7 @@
   .item .topic {
     position: relative;
     width: max-content;
-    padding-left: 1em; }
+    padding: 0 1em; }
     .item .topic::after {
       content: " ";
       position: absolute;
@@ -32,7 +32,8 @@
       width: .5em;
       border-width: 0.1em;
       border-style: solid;
-      border-radius: 100%; }
+      border-radius: 100%;
+      border-color: transparent; }
       .topic.static::after {
         background-color: black;
         border-color: black; }

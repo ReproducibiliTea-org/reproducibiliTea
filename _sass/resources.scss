@@ -22,7 +22,7 @@ $rec: red;
   .topic {
     position: relative;
     width: max-content;
-    padding-left: 1em;
+    padding: 0 1em;
     &::after {
       content: " ";
       position: absolute;
@@ -34,6 +34,7 @@ $rec: red;
       border-width: 0.1em;
       border-style: solid;
       border-radius: 100%;
+      border-color: transparent;
       @at-root .topic.static::after {background-color: $static; border-color: $static}
       @at-root .topic.live::after {background-color: $rec; border-color: $rec}
       @at-root .topic.recorded::after {background-color: white; border-color: $rec}

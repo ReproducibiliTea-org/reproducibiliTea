@@ -65,10 +65,12 @@ function makeResourceList(json) {
                 a.innerHTML = x[0] +
                     (/^https:\/\/reproducibiliTea.org/i.test(x[0])?
                         '' : ' <sup><i class="fas fa-external-link-alt"></i></sup>');
+            else if(/\w/.test(x[1]))
+                a.innerHTML = x[1];
             else
                 a.innerHTML = x[2];
         }
-        if(/\w/.test(x[1])) {
+        if(/\w/.test(x[0]) && /\w/.test(x[1]) || (!/\w/.test(x[0]) && !/\w/.test(x[2]))) {
             const author = head.appendChild(document.createElement('h2'));
             author.classList.add('author');
             author.innerHTML = x[1];
