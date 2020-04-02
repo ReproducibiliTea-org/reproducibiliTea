@@ -7,13 +7,11 @@ categories: [JC]
 tags: [University of Bristol]
 ---
 
+# Open COVID-19 research 
+
 On the 24 March 2020 I organised the first online [ReproducibiliTea University of Bristol](https://reproducibiliTea.org/journal-clubs/#Bristol) meeting.  There were 12 of us in total, 6 from the University of Bristol and 6 from other institutions who saw the event advertised on my Twitter account and the [ReproducibiliTea Online calendar](https://reproducibiliTea.org/calendar). 
 
 Amazingly, we started on time with no technical issues and after a short introduction we got stuck into the main topic of debate: “What can open science do for COVID-19?”. 
-
-# Open COVID-19 research 
-
-On the 24 March 2020 I organised the first online [ReproducibiliTea University of Bristol](https://reproducibiliTea.org/journal-clubs/#Bristol) meeting. Unusually, instead of a set reading we came together to debate the issue “What can open science do for COVID-19?”. I started by asking the group what open science could do, or is doing, for the pandemic. 
 
 There was concern that more shared data, code and materials may mean more misinformation: Twitter is exploding with dodgy, over-simplified analyses using open COVID-19 data posted by people with no apparent research experience or credentials. More regression plots and visualisations of death counts, case counts and comparisons by country appear every day. 
 
