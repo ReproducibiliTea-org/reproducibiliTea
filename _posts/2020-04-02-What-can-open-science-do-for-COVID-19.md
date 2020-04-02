@@ -45,7 +45,7 @@ Two attendees working in computer and data science disagreed. Preregistration ma
 
 # Registered Reports 
 
-One attendee asked if they should submit a Registered Report now, given that the timescale for collecting data is so uncertain. In response, someone argued that COVID-19 shouldn’t hold you back from submitting a Registered Report because COVID-19 will likely affect everyone conducting similar studies and journals will hopefully understand the situation and be flexible. Now may also be a great time to think more about exploratory open research initiatives, for example the Exploratory Reports format currently offered by the International Review of Social Psychology and Cortex. 
+One attendee asked if they should submit a [Registered Report](https://web.archive.org/web/20200402210750/https://cos.io/rr/) now, given that the timescale for collecting data is so uncertain. In response, someone argued that COVID-19 shouldn’t hold you back from submitting a Registered Report because COVID-19 will likely affect everyone conducting similar studies and journals will hopefully understand the situation and be flexible. Now may also be a great time to think more about exploratory open research initiatives, for example the Exploratory Reports format currently offered by the (International Review of Social Psychology)[https://web.archive.org/web/20200327155633/https:/www.rips-irsp.com/about/exploratory-reports/] and (Cortex)[https://web.archive.org/web/20190610122655/https:/www.elsevier.com/__data/promis_misc/Exploratory_Reports_Guidelines.pdf]. 
 
 # Final thoughts 
 
