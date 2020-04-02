@@ -10,7 +10,7 @@ signup:
 organisers: [Lewend Mayiwar]
 contact: lewend.mayiwar@bi.no
 additional-contact: []
-address: [Room A3Y-116, , Department of Leadership and Organizational Behavior, , BI Norwegian Business School]
+address: [Room A3Y-116, Department of Leadership and Organizational Behavior, BI Norwegian Business School]
 country: Norway
 geolocation: [59.94856358048637, 10.768575668334961]
 ---
