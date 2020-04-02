@@ -4,7 +4,7 @@ title:  "What can open science do for COVID-19? "
 date:   2020-04-02 21:00:00 +0100
 author: Kate Drax
 categories: [JC]
-tags: [Cambridge]
+tags: [University of Bristol]
 ---
 
 On the 24 March 2020 I organised the first online [ReproducibiliTea University of Bristol](https://reproducibiliTea.org/journal-clubs/#Bristol) meeting.  There were 12 of us in total, 6 from the University of Bristol and 6 from other institutions who saw the event advertised on my Twitter account and the [ReproducibiliTea Online calendar](https://reproducibiliTea.org/calendar). 
@@ -51,22 +51,6 @@ One attendee asked if they should submit a Registered Report now, given that the
 
 # Final thoughts 
 
-Overall we had a lively, relaxed discussion focusing on the roles that sharing research, Registered Reports, student projects and preregistration can play in COVID-19 research. I encourage others to hold relaxed, virtual discussions, and we’ve pooled our experience at ReproducibiliTea to offer some [guidelines on hosting](https://reproducibiliTea.org/online) these discussions. I’ve also written a short blog post [here](INSERT LINK) summarising the lessons I learnt from hosting a session on COVID-19 and using Bluejeans. 
+Overall we had a lively, relaxed discussion focusing on the roles that sharing research, Registered Reports, student projects and preregistration can play in COVID-19 research. I encourage others to hold relaxed, virtual discussions, and we’ve pooled our experience at ReproducibiliTea to offer some [guidelines on hosting](https://reproducibiliTea.org/online) these discussions.
 
-# Lessons learnt and Bluejeans 
-
-How-to guides on hosting virtual meetings are easy to find but there were a few specific lessons I learnt that others may find helpful. 
-
-First, introductions. In the session I asked everyone to introduce themselves, their research and their motivation for attending. This took about 15 minutes but introductions could be more difficult and time-consuming with more people. Moderators can control the length of the introduction with the amount of information they ask each participant to give. The quickest approach is to ask everyone just to say their name. 
-
-Secondly, I advise moderators check-in with attendees at the start. The COVID-19 pandemic is probably impacting them in some way, and it could be an emotionally challenging topic. Giving people the space to talk about how the crisis is affecting them and their work could be useful.  
-
-In Bluejeans, only moderators can start, assign and end breakout rooms. You also have to join the call as a moderator – you cannot give moderator control over to another participant during the call. This creates a problem if you only have one moderator. If that moderator has any technical difficulties the meeting may be disrupted so it is worth assigning someone as the back-up moderator before the call starts. I tested the Breakout Rooms app before the call, but I also think it would be worth testing the function during the call too. I pushed everyone into the rooms but one person never made it to their room so they had to leave and rejoin the call. Running a test means you can be sure everyone will make it to their rooms and you can keep anyone with technical problems in the main room. 
-
-Another issue is that breakout rooms cannot chat with each other. This can be awkward since the moderator has to end the rooms after the allocated time, which gives the rooms no opportunity to ask for more time and could be lead to quite an abrupt end. Also Bluejeans has dial-in functionality, but ends the meeting at the scheduled end-time for anyone who dials-in. I recommend making the meeting longer than necessary to allow for the meeting to run over without expelling dial-in attendees. 
-
-The frequency and duration of breakout sessions are also worth planning. Many short sessions may mean participants feel pushed in and out of conversations. This may be good for a rapid-fire conversation (e.g. speed-dating style debates) but not if you want participants to get into the nitty-gritty of a topic. 
-
-My last piece advice to others who may want to run a ReproducibiliTea Online session is to dedicate the first 5 minutes to allowing everyone to get into the room, test their connection and iron out any technical difficulties. 
-
-*Katie Drax[https://twitter.com/katiedrax] is a PhD student at the University of Bristol studying meta-research. She founded and organises the ReproducibiliTea University of Bristol branch. *
+*[Katie Drax](https://twitter.com/katiedrax) is a PhD student at the University of Bristol studying meta-research. She founded and organises the ReproducibiliTea University of Bristol branch.*
