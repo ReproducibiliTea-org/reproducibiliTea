@@ -9,7 +9,7 @@ tags: [University of Bristol]
 
 # Open COVID-19 research 
 
-On the 24 March 2020, I organised the first online [ReproducibiliTea University of Bristol](https://reproducibiliTea.org/journal-clubs/#Bristol) meeting.  There were 12 of us in total, 6 from the University of Bristol and 6 from other institutions who saw the event advertised on my Twitter account and the [ReproducibiliTea Online calendar](https://reproducibiliTea.org/calendar). 
+On the 24 March 2020, I organised the first online [ReproducibiliTea University of Bristol](https://reproducibiliTea.org/journal-clubs/#Bristol) meeting.  We had 12 attendees, 6 from the University of Bristol and 6 from other institutions who saw the event advertised on my Twitter account and the [ReproducibiliTea Online calendar](https://reproducibiliTea.org/calendar). 
 
 Amazingly, we started on time with no technical issues and after a short introduction we got stuck into the main topic of debate: “What can open science do for COVID-19?”. 
 
@@ -38,8 +38,6 @@ People thought this idea was exciting. Unlike many student projects, the researc
 On the other hand, the topic’s relevance may be a problem. It is an anxious time for many and allowing students to think about other things may benefit their wellbeing. Lecturers could offer an alternative assignment for students who do not want to work with COVID-19 data, but this may be tricky to manage. The potential impact of students’ work has positive and negative aspects. If students share their work, they could contribute to the public’s understanding of COVID-19 and this may spread more misinformation. However, learning to think about the impact your work may have and what it means to disseminate research is an important lesson in itself. Sharing their work more widely may also encourage students to double-check their work and reflect on its ethical aspects and the uncertainties of the (meta) data. Lecturers could also try to minimise the risk of students spreading misinformation by limiting how informative or controversial their interpretations could be, perhaps by controlling how much data students get. 
 
 Overall, the greater potential impact of a project increases both the potential benefits and risks. Lecturers would need to weigh up the risks of a COVID-19 project, such as students spreading misinformation or overloading anxious students, with the benefits, such as a highly relevant research question. 
-
-{% include image.html url="blog/prereg-badge.original.png" height="40px" width="40px" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
 
 # Preregistering COVID-19 research 
 
