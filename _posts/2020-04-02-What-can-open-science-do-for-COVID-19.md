@@ -41,7 +41,7 @@ Overall, the greater potential impact of a project increases both the potential 
 
 # Preregistering COVID-19 research 
 
-{% include image.html url="https://mfr.osf.io/render?url=https://osf.io/6pzjx/?direct%26mode=render%26action=download%26mode=render" alt="Preregistration thumbnail" description="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
+{% include image.html url="blog/preregistered_small_color.2400x2400 (1).jpeg" alt="Preregistration thumbnail" description="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
 
 I then put a slightly different question to the group: did we think preregistration should be used for COVID-19 research, and if so how?”. 
 
