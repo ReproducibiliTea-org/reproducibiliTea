@@ -39,7 +39,7 @@ On the other hand, the topic’s relevance may be a problem. It is an anxious ti
 
 Overall, the greater potential impact of a project increases both the potential benefits and risks. Lecturers would need to weigh up the risks of a COVID-19 project, such as students spreading misinformation or overloading anxious students, with the benefits, such as a highly relevant research question. 
 
-{% include image.html url="blog/prereg-badge.original.png" height="40%" width="40%" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
+{% include image.html url="blog/prereg-badge.original.png" height="40px" width="40px" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
 
 # Preregistering COVID-19 research 
 
