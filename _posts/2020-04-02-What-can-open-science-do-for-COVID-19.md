@@ -41,7 +41,9 @@ Overall, the greater potential impact of a project increases both the potential 
 
 # Preregistering COVID-19 research 
 
-I then put a slightly different question to the group: did we think preregistration should be used for COVID-19 research, and if so how?”. {% include image.html url="blog/preregistered_small_color.2400x2400 (1).jpeg" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
+I then put a slightly different question to the group: did we think preregistration should be used for COVID-19 research, and if so how?”. 
+
+{% include image.html url="blog/preregistered_small_color.2400x2400 (1).jpeg" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" %}
 
 This question slightly divided us. For some, preregistration is what you make it. You control how much time and detail you put into your preregistration, so it could be fast. Even though we may be doing a lot of exploratory work in the context of this world-wide pandemic, it always makes sense to write down what you plan to do, regardless of how long it takes you. 
 
