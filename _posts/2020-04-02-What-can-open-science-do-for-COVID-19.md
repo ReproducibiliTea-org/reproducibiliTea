@@ -39,9 +39,9 @@ On the other hand, the topic’s relevance may be a problem. It is an anxious ti
 
 Overall, the greater potential impact of a project increases both the potential benefits and risks. Lecturers would need to weigh up the risks of a COVID-19 project, such as students spreading misinformation or overloading anxious students, with the benefits, such as a highly relevant research question. 
 
-# Preregistering COVID-19 research {% include image.html url="blog/preregistered_small_color.2400x2400 (1).jpeg" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" align="right" %}
+# Preregistering COVID-19 research 
 
-I then put a slightly different question to the group: did we think preregistration should be used for COVID-19 research, and if so how?”. 
+I then put a slightly different question to the group: did we think preregistration should be used for COVID-19 research, and if so how?”. {% include image.html url="blog/preregistered_small_color.2400x2400 (1).jpeg" alt="Preregistration thumbnail. Photo credit preregistered_small_color.png by Open Science Collaboration is licensed under CC BY 4.0" align="right" %}
 
 This question slightly divided us. For some, preregistration is what you make it. You control how much time and detail you put into your preregistration, so it could be fast. Even though we may be doing a lot of exploratory work in the context of this world-wide pandemic, it always makes sense to write down what you plan to do, regardless of how long it takes you. 
 
