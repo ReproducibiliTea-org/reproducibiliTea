@@ -1,0 +1,106 @@
+---
+layout: default
+title:  "ReproducibiliTea Card"
+---
+
+<h1>ReproducibiliTea Schedule Card</h1>
+
+<script src="/assets/js/pablojs/pablo.min.js" type="text/javascript"></script>
+<script src="/assets/js/card-edit.js" type="text/javascript"></script>
+
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" id="card-img" width="600">
+    <style type="text/css">
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url({% include fontAwesome %}) format('opentype');
+        }
+        #Logo {height: 250px; width: 250px;}
+        text {font-size: 24px; font-family: Arial, sans-serif; font-weight: bold;}
+        .icon {font-size: 32px; font-family: FontAwesome;}
+        .scrawl {font-family: "Lucida Console", Monaco, monospace};
+        #place text {font-size: 36px; font-weight: bold;}
+        #title text {font-size: 28px; text-decoration: underline;}
+        #twitter text {stroke: dodgerblue; font-weight: normal; font-size: 24px;}
+        #time text.scrawl {font-size: 32px;}
+        path {stroke: black;}
+        .border {stroke-width: 2; fill: transparent;}
+        .front {stroke: gainsboro;}
+        .back {stroke: grey;}
+    </style>
+    <path class="border back" d="M0 0 L600 0 L600 340 L0 340 Z"></path>
+    <path class="border front" d="M0 0 L598 0 L598 338 L0 338 Z"></path>
+    <image id="Logo" x="25" xlink:href="{% include reproducibiliTea-logo %}"/>
+    <g id="title">
+        <!-- fontAwesome icon -->
+        <text x="425" y="50" text-anchor="middle">Online Journal Club</text>
+    </g>
+    <g id="place">
+        <!-- fontAwesome icon -->
+        <text x="150" y="275" text-anchor="middle">Some place here</text>
+    </g>
+    <g id="twitter">
+        <!-- fontAwesome icon -->
+        <text x="150" y="305" text-anchor="middle">@reproducibiliT</text>
+    </g>
+    <g id="time">
+        <!-- fontAwesome icon -->
+        <text class="icon" x="300" y="150">&#xf017;</text>
+        <path d="M350 160 L550 160 Z"></path>
+        <text x="450" y="145" class="scrawl" text-anchor="middle">Some time here</text>
+    </g>
+    <g id="date">
+        <!-- fontAwesome icon -->
+        <text class="icon" x="300" y="225">&#xf073;</text>
+        <path d="M350 235 L550 235 Z"></path>
+        <text x="450" y="220" class="scrawl" text-anchor="middle">Some date here</text>
+    </g>
+</svg>
+
+<div class="save" onclick="saveCardPNG()">
+    <span id="save-link">Download .png</span>
+</div>
+
+<style type="text/css">
+    .save {
+        width: 600px;
+        text-align: center;
+        background-color: aliceblue;
+        font-size: 1.5em;
+        line-height: 2em;
+        cursor: pointer;
+    }
+    .save:hover {
+        background-color: #70dfff;
+        color: grey;
+        font-weight: bold;
+    }
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: space-evenly;
+    }
+</style>
+<form id="card-form" class="controls" onchange="updateCard()">
+    <div class="row">
+        <div class="labels">
+            <label for="place">Journal club name</label>
+        </div>
+        <input type="text" id="place" name="place" value="Oxford" />
+    </div>
+    <div class="row">
+        <div class="labels">
+            <label for="datetime">Meeting time</label>
+        </div>
+        <input type="datetime-local" id="datetime" name="datetime" value="2020-04-07T13:00"/>
+    </div>
+    <div class="row">
+        <div class="labels">
+            <label for="twitter">Twitter</label>
+        </div>
+        <input type="text" id="twitter" name="twitter" value="@reproducibiliT"/>
+    </div>
+    <!--div class="row">
+        <button onclick="updateCard(event)">Update</button>
+    </div-->
+</form>
