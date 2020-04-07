@@ -1,13 +1,13 @@
 ---
 title: BI Oslo
 host-organisation: BI Norwegian Business School
-host-org-url: www.bi.edu
+host-org-url: https://www.bi.edu/
 osf: 37cf8
 zotero: KGT7CE5J
 website: 
 twitter: 
 signup: 
-organisers: [Lewend Mayiwar]
+organisers: [Lewend Mayiwar, Yooeun Jeong]
 contact: lewend.mayiwar@bi.no
 additional-contact: []
 address: [Room A3Y-116, Department of Leadership and Organizational Behavior, BI Norwegian Business School]
