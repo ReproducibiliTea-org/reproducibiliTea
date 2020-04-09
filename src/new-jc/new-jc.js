@@ -309,7 +309,7 @@ async function callOSF(data) {
 
             return out;
         } else {
-            out.details.push(`Created new OSF repository at <a href="https://osf.io/${response.data.id}">https://osf.io/${response.data.id}</a>.`);
+            out.details.push(`Created new OSF repository at <a href="https://osf.io/${response.data.id}" target="_blank">https://osf.io/${response.data.id}</a>.`);
             out.osfRepoId = response.data.id;
         }
     } catch(e) {
@@ -441,7 +441,7 @@ async function callZotero(data) {
 
         if(response.success && response.success[0] && response.success[0].length) {
             out.zoteroCollectionId = response.success[0];
-            out.details.push(`Created new Zotero collection at <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/${out.zoteroCollectionId}">https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/${out.zoteroCollectionId}</a>.`);
+            out.details.push(`Created new Zotero collection at <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/${out.zoteroCollectionId}" target="_blank">https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/${out.zoteroCollectionId}</a>.`);
         } else {
             out.status = 'Error';
             out.details.push('Unable to create Zotero collection.');
@@ -533,7 +533,7 @@ async function callSlack(data) {
         title: 'Slack',
         status: 'Warning',
         details: [
-            `We are currently unable to automate Slack invites. Please join the workspace using the direct link: <a href="${SLACK_LINK}">${SLACK_LINK}</a>`
+            `We are currently unable to automate Slack invites. Please join the workspace using the direct link: <a href="${SLACK_LINK}" target="_blank">${SLACK_LINK}</a>`
         ]
     }
 }
@@ -632,7 +632,7 @@ ${data.description}
 
         await call.json();
 
-        out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
+        out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
 
     } catch(e) {
         out.status = 'Warning';
