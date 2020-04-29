@@ -70,8 +70,17 @@ function cleanData(data) {
             data[s] = "";
     }
 
-    if(data.post)
+    if(data.post) {
         data.post = data.post.replace(/[\n\r]\r?/g, ', ');
+        // remove blank lines
+        let tmp = data.post;
+        let tmp2 = "";
+        while(tmp !== tmp2) {
+            tmp2 = tmp;
+            tmp = tmp.replace(/,\s*,/g, ', ');
+        }
+        data.post = tmp;
+    }
 
     if(data.jcid)
         data.jcid = data.jcid.toLowerCase();

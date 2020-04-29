@@ -10,7 +10,7 @@ signup:
 organisers: [Samuel Cornell]
 contact: samuel.cornell@sydney.edu.au
 additional-contact: []
-address: [Edward Ford Building, , Fisher Road, , University of Sydney, , New South Wales, , 2006]
+address: [Edward Ford Building, Fisher Road, University of Sydney, New South Wales, 2006]
 country: Australia
 geolocation: [-33.888136484014794, 151.1887300014495]
 ---
