@@ -4,7 +4,7 @@ host-organisation: University College London
 host-org-url: 
 website: https://osf.io/q7pr4/
 signup:
-organisers: [Jessie Balwin, Tabea Schoeler]
+organisers: [Jessie Baldwin, Tabea Schoeler]
 contact: reproducibility@ucl.ac.uk
 address: [Gower St, Bloomsbury, London WC1E 6BT]
 country: United Kingdom
