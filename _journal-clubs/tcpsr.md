@@ -7,7 +7,7 @@ zotero: DN8CZRPI
 website: https://sites.google.com/gms.tcu.edu.tw/exppsyunion/home/club
 twitter: TCPSR1
 signup: 
-organisers: [https://scholar.google.com/citations?user=kSUyxs0AAAAJ]
+organisers: [Sau-Chin Chen]
 contact: pmsp96@gmail.com
 additional-contact: []
 address: [No. 67, Jieren Street, Hualien City, Hualien County, 970]
