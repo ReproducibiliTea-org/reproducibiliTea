@@ -1,5 +1,5 @@
 ---
-title: AERIS
+title: Aalto
 host-organisation: Aalto University
 host-org-url: aalto.fi
 osf: ys4t3
