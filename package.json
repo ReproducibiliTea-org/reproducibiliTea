@@ -4,6 +4,6 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "mailgun-js": "^0.22.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
