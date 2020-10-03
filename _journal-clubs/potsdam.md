@@ -1,4 +1,5 @@
 ---
+jcid: potsdam
 title: Potsdam
 host-organisation: University of Potsdam
 host-org-url: https://www.uni-potsdam.de
