@@ -1,4 +1,5 @@
 ---
+jcid: westminster
 title: Westminster
 host-organisation: University of Westminster
 host-org-url: https://www.westminster.ac.uk/
