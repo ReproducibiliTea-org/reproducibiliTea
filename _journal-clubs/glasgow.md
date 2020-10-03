@@ -1,4 +1,5 @@
 ---
+jcid: glasgow
 title: Glasgow
 host-organisation: University of Glasgow
 host-org-url: https://www.gla.ac.uk/
