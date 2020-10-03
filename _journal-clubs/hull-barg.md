@@ -1,4 +1,5 @@
 ---
+jcid: hull-barg
 title: Hull-BARG
 host-organisation: University of Hull
 host-org-url: hull.ac.uk
