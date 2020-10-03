@@ -617,7 +617,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         })
             .then(r => {
                 if(r.status !== 200)
-                    throw new Error(`Token lookup error: server response was ({r.status}){r.statusText}.`);
+                    throw new Error(`Token lookup error: server response was (${r.status}) (${r.statusText}).`);
                 else
                     r.text()
             })
