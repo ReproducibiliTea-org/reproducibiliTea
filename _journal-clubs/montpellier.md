@@ -1,4 +1,5 @@
 ---
+jcid: montpellier
 title: Montpellier
 host-organisation: Institut Agro | INRAE Montpellier
 host-org-url: https://www.montpellier-supagro.fr/
