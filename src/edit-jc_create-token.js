@@ -15,9 +15,11 @@ const {
 exports.handler = function(event, context, callback) {
     // Check input
     const data = JSON.parse(event.body);
-    if(!data.email | !data.jcid) {
+    if(!data.email || !data.jcid) {
         return callback('Email and JCID must be submitted in JSON format in the request body.');
     }
+
+    const client = new faunadb.Client({ secret: FAUNA_KEY });
 
     data.email = 'matt.jaquiery@psy.ox.ac.uk'
 
@@ -35,12 +37,11 @@ exports.handler = function(event, context, callback) {
                 if(jc.name === `${data.jcid}.md`)
                     return;
             }
-            throw new Error('Requested journal club does not exist.');
+            throw new Error(`Requested journal club ${data.jcid} does not exist.`);
         })
         .then(() => {
             // Protect against flooding (max 5 active entries per JC)
-            const client = new faunadb.Client({ secret: FAUNA_KEY });
-            client.query(
+            return client.query(
                 FQ.Map(
                     FQ.Paginate(FQ.Documents(FQ.Collection("editTokens"))),
                     FQ.Lambda("D", FQ.Get(FQ.Var("D")))
@@ -58,7 +59,7 @@ exports.handler = function(event, context, callback) {
         })
         .then(() => {
             // Save to the database
-            client.query(
+            return client.query(
                 FQ.Create(
                     FQ.Collection('editTokens'),
                     {

@@ -58,14 +58,18 @@ layout: default
         const modal = document.getElementById('LoadingModal');
         modal.classList.add('token-check');
 
-        const jc = document.getElementById('jcid').value;
+        const jcid = document.getElementById('jcid').value;
         const email = document.getElementById('email').value;
         await fetch('/.netlify/functions/edit-jc_create-token', {
             method: 'POST',
             body: JSON.stringify({jcid, email})
         })
-        .then(() => modal.classList.add('token-okay'))
-        .catch(e => modal.classList.add('token-reject'));
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Token generation failed: ${r.statusText} (${r.status})`)
+            })
+            .then(() => modal.classList.add('token-okay'))
+            .catch(e => modal.classList.add('token-reject'));
     }
 
     /**
