@@ -1,4 +1,5 @@
 ---
+jcid: amsterdam
 title: Amsterdam
 host-organisation: University of Amsterdam
 host-org-url: https://psyres.uva.nl
