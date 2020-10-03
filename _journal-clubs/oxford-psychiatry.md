@@ -1,4 +1,5 @@
 ---
+jcid: oxford-psychiatry
 title: Oxford Psychiatry
 host-organisation: University of Oxford
 host-org-url: https://www.psych.ox.ac.uk/
