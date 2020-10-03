@@ -1,4 +1,5 @@
 ---
+jcid: sussex
 title: Sussex
 host-organisation: University of Sussex
 host-org-url: https://www.sussex.ac.uk/
