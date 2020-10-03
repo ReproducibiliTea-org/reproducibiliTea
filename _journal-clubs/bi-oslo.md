@@ -1,4 +1,5 @@
 ---
+jcid: bi-oslo
 title: BI Oslo
 host-organisation: BI Norwegian Business School
 host-org-url: https://www.bi.edu/
