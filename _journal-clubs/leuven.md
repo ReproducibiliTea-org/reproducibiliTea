@@ -1,4 +1,5 @@
 ---
+jcid: leuven
 title: Leuven
 host-organisation: KU Leuven
 host-org-url: https://www.kuleuven.be/kuleuven/
