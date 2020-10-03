@@ -1,4 +1,5 @@
 ---
+jcid: aston-reproducibilitea
 title: Aston ReproducibiliTEA
 host-organisation: Aston University
 host-org-url: https://www2.aston.ac.uk/

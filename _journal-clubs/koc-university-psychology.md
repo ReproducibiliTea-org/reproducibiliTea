@@ -1,4 +1,5 @@
 ---
+jcid: koc-university-psychology
 title: Koc University Psychology
 host-organisation: Koç University
 host-org-url: https://www.ku.edu.tr/

@@ -1,4 +1,5 @@
 ---
+jcid: wuerzburg
 title: Wuerzburg
 host-organisation: Julius-Maximilians-University of Wuerzburg 
 host-org-url: https://www.uni-wuerzburg.de/en/home/

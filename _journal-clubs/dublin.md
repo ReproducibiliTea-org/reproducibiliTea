@@ -1,4 +1,5 @@
 ---
+jcid: dublin
 title: Dublin
 host-organisation: Trinity College Dublin
 host-org-url: https://www.tcd.ie

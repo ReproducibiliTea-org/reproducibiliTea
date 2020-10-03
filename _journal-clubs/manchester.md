@@ -1,4 +1,5 @@
 ---
+jcid: manchester
 title: Manchester # short name which should match the filename
 host-organisation: University of Manchester # University/Organisation hosting the JC
 host-org-url: https://www.manchester.ac.uk/ # Website of the above

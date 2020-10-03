@@ -1,4 +1,5 @@
 ---
+jcid: bristol
 title: Bristol, University of Bristol
 host-organisation: University of Bristol
 host-org-url: https://www.bristol.ac.uk/

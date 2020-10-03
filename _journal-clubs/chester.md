@@ -1,4 +1,5 @@
 ---
+jcid: chester
 title: Chester
 host-organisation: University of Chester
 host-org-url: https://www1.chester.ac.uk/

@@ -1,4 +1,5 @@
 ---
+jcid: spartan
 title: Spartan
 host-organisation: Michigan State University
 host-org-url: 

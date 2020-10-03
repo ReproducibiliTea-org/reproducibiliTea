@@ -1,4 +1,5 @@
 ---
+jcid: leipzig
 title: Leipzig
 host-organisation: Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig
 host-org-url: https://www.cbs.mpg.de/en

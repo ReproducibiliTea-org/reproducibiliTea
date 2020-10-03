@@ -1,4 +1,5 @@
 ---
+jcid: cambridge
 title: Cambridge ExPsy
 host-organisation: Cambridge University
 host-org-url: https://cam.ac.uk/

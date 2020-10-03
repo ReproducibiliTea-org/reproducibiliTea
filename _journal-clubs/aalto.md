@@ -1,4 +1,5 @@
 ---
+jcid: aalto
 title: Aalto
 host-organisation: Aalto University
 host-org-url: aalto.fi
