@@ -1,4 +1,5 @@
 ---
+jcid: mannheim
 title: Mannheim
 host-organisation: Mannheim Open Science Meetup
 host-org-url: 
