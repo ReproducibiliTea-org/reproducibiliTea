@@ -559,6 +559,8 @@ async function callGitHub(data, results) {
         status: 'Okay',
         details: [],
         githubFile: `---
+
+jcid: ${data.jcid}
 title: ${data.name}
 host-organisation: ${data.uni}
 host-org-url: ${data.uniWWW}

@@ -1,0 +1,97 @@
+---
+layout: default
+---
+{% include keys.html %}
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+<script type="text/javascript" src="/assets/js/join-form.js"></script>
+
+<article>
+    <section id="edit">
+        <h1>Edit a journal club</h1>
+
+        <p>To approve the editing of your journal club, we'll generate a one-time link for you to follow and send that link to your email address. Please note that only email addresses already listed in your journal club are allowed to make edits.</p>
+        <p>If you run into problems while making edits, or need something the automated form cannot provide, please email us.</p>
+
+        <div id="EditForm">
+            <div>
+                <label for="jcid">Journal club:</label>
+                <select id="jcid" name="jcid" onchange="updateEmailOptions()">
+                    {% for jc in site.journal-clubs %}
+                    <option value="{{jc.jcid}}" data-emails="{{jc.contact}}, {{jc.additional-contact | join: ', '}}">{{jc.title}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <select id="email" name="email"></select>
+            </div>
+            <div>
+                <button onclick="getToken()">Get edit token</button>
+            </div>
+        </div>
+    </section>
+</article>
+<section id="LoadingModal">
+    <div>
+        <h2>Edit journal club</h2>
+        <div id="CheckToken">
+            <i class="fa-hourglass fas fa-spin"></i>
+            <p>Creating access token</p>
+        </div>
+        <div id="TokenOkay">
+            <p>A link has been emailed to the requested address.</p>
+            <p>Please close this page and open the link sent to you by email.</p>
+        </div>
+        <div id="RejectToken">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>We were unable to create an access token.</p>
+            <p>You may have too many recent unused tokens for your journal club, or there may be a problem with our services.</p>
+        </div>
+    </div>
+</section>
+<script>
+    /**
+     * Generate a token for authorising edits and send to the requested email
+     */
+    async function getToken() {
+        // Update visuals
+        const modal = document.getElementById('LoadingModal');
+        modal.classList.add('token-check');
+
+        const jc = document.getElementById('jcid').value;
+        const email = document.getElementById('email').value;
+        await fetch('/.netlify/functions/edit-jc_create-token', {
+            method: 'POST',
+            body: JSON.stringify({jcid, email})
+        })
+        .then(() => modal.classList.add('token-okay'))
+        .catch(e => modal.classList.add('token-reject'));
+    }
+
+    /**
+     * Update email select options to match jc option
+     * @param e {Event}
+     */
+    function updateEmailOptions() {
+        const jcs = document.getElementById('jcid');
+        const jc = jcs.querySelectorAll('option')[jcs.selectedIndex];
+        const opts = document.getElementById('email');
+
+        // remove previous options
+        opts
+            .querySelectorAll('option')
+            .forEach(o => o.parentElement.removeChild(o));
+
+        const emails = jc.dataset.emails.split(',');
+        emails
+            .filter(x => !/^[ ,]*$/.test(x))
+            .forEach(x => {
+                const o = document.createElement('option');
+                o.value = x;
+                o.innerHTML = x;
+                opts.appendChild(o);
+            })
+    }
+    updateEmailOptions();
+</script>
+

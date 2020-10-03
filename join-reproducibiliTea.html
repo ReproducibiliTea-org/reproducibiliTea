@@ -557,7 +557,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
             <fieldset class="submission">
                 <legend>Final checks</legend>
-                <div class="row mandatory">
+                <div id="AuthCodeRow" class="row mandatory">
                     <div class="labels">
                         <label for="authCode">Authorization code</label>
                         <div class="label-details">
@@ -576,9 +576,109 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 </div>
             </fieldset>
         </form>
-
     </section>
 </article>
+
+<section id="LoadingModal">
+    <div>
+        <h2>Edit journal club</h2>
+        <div id="CheckToken">
+            <i class="fa-hourglass fas fa-spin"></i>
+            <p>Checking access token</p>
+        </div>
+        <div id="TokenOkay">
+            <i class="fa-hourglass fas fa-spin"></i>
+            <p>Preparing form for <span class="jc-name">journal club</span></p>
+        </div>
+        <div id="RejectToken">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Access token was invalid</p>
+            <p>Please check the link in your email, and if necessary request a new one from <a href="/edit-jc.html">the edit journal club page</a>.</p>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    /* If we're editing an existing JC, look up the existing values and use them to fill in the field values. */
+    async function checkToken() {
+        if(!window.jcEditToken) {
+            const match = /[?&]jcEditToken=([^&]*)/g.exec(location.href);
+            if (!match)
+                return;
+            window.jcEditToken = {token: match[1]};
+        }
+        if(!window.jcEditToken.token)
+            return;
+        document.getElementById('LoadingModal').classList.add('token-check');
+        await fetch('/.netlify/functions/edit-jc_check-token', {
+            method: 'POST',
+                body: JSON.stringify({token: window.jcEditToken})
+        })
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Token lookup error: server response was ({r.status}){r.statusText}.`);
+                else
+                    r.text()
+            })
+            .then(url => fetch(url, {headers: {'User-Agent': 'mjaquiery'}}))
+            .then(r => acceptToken(r))
+            .catch(e => rejectToken(e));
+    }
+    function acceptToken(data) {
+        console.log({data})
+        document.getElementById('LoadingModal').classList.add('token-okay');
+        const form = document.getElementById('newJC');
+        // Fill in the form fields from data
+        if(data.title)
+            form.querySelector('#name').value = data.title;
+        if(data['host-organisation'])
+            form.querySelector('#uni').value = data['host-organisation'];
+        if(data['host-organisation-url'])
+            form.querySelector('#uniWWW').value = data['host-organisation-url'];
+        if(data.website)
+            form.querySelector('#www').value = data.website;
+        if(data.twitter)
+            form.querySelector('#twitter').value = data.twitter;
+        if(data.osf)
+            form.querySelector('#osf').value = data.osf;
+        if(data.signup)
+            form.querySelector('#signup').value = data.signup;
+        if(data.address)
+            form.querySelector('#post').value = data.address;
+        if(data.geolocation)
+            form.querySelector('#geolocation').value = data.geolocation;
+        if(data.content)
+            form.querySelector('#description').value = data.content;
+        if(data.organisers) {
+            form.querySelector('#lead').value = data.organisers[0];
+            let last = form.querySelector('#lead');
+            for(let o = 1; o < data.organisers.length; o++) {
+                addNewEntry(last);
+                last = form.querySelector(`#helper{o-1}`);
+                last.value = data.organisers[o];
+            }
+        }
+        if(data.contact)
+            form.querySelector('#email').value = data.contact;
+        if(data['additional-contact']) {
+            let last = form.querySelector('#email');
+            for(let o = 1; o < data['additional-contact'].length; o++) {
+                addNewEntry(last);
+                last = form.querySelector(`#extraEmail{o-1}`);
+                last.value = data['additional-contact'][o];
+            }
+        }
+        // Remove the auth code field
+        document.removeChild(document.getElementById('AuthCodeRow'));
+        // Hide the modal and let the user get on with it
+        document.getElementById('LoadingModal').classList.add('token-complete');
+    }
+    function rejectToken() {
+        document.getElementById('LoadingModal').classList.add('token-reject');
+    }
+    checkToken();
+</script>
 
 <article id="geolocation-map">
     <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
