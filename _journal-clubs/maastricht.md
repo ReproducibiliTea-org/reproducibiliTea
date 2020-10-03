@@ -1,4 +1,5 @@
 ---
+jcid: maastricht
 title: Maastricht
 host-organisation: Maastricht University
 host-org-url: https://www.maastrichtuniversity.nl/
