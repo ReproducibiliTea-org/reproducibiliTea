@@ -1,4 +1,5 @@
 ---
+jcid: repriducibilitea-uib
 title: RepriducibiliTea UiB
 host-organisation: University of Bergen
 host-org-url: https://www.uib.no
