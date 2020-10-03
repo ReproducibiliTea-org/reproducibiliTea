@@ -1,4 +1,5 @@
 ---
+jcid: leiden
 title: Leiden
 host-organisation: Open Science Community Leiden
 host-org-url: https://www.universiteitleiden.nl/open-science-community-leiden
