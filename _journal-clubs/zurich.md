@@ -1,4 +1,5 @@
 ---
+jcid: zurich
 title: Zurich
 host-organisation: University of Zurich
 host-org-url: http://www.crs.uzh.ch/
