@@ -1,4 +1,5 @@
 ---
+jcid: frankfurt
 title: Frankfurt
 host-organisation: Frankfurt Open Science Initiative
 host-org-url: https://open-science-frankfurt.github.io
