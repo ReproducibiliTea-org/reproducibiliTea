@@ -602,6 +602,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 <script>
     /* If we're editing an existing JC, look up the existing values and use them to fill in the field values. */
     async function checkToken() {
+        const gitURL = "https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs";
         if(!window.jcEditToken) {
             const match = /[?&]jcEditToken=([^&]*)/g.exec(location.href);
             if (!match)
@@ -613,17 +614,45 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         document.getElementById('LoadingModal').classList.add('token-check');
         await fetch('/.netlify/functions/edit-jc_check-token', {
             method: 'POST',
-                body: JSON.stringify({token: window.jcEditToken})
+                body: JSON.stringify(window.jcEditToken)
         })
             .then(r => {
                 if(r.status !== 200)
                     throw new Error(`Token lookup error: server response was (${r.status}) (${r.statusText}).`);
                 else
-                    r.text()
+                    return r.json()
             })
-            .then(url => fetch(url, {headers: {'User-Agent': 'mjaquiery'}}))
-            .then(r => acceptToken(r))
+            .then(token => fetch(`${gitURL}/${token.jcid}.md`, {headers: {'User-Agent': 'mjaquiery'}}))
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Could not find existing GitHub file: ${r.statusText} (${r.status})`);
+                else
+                    return r.json();
+            })
+            .then(md => acceptToken(parseMD(md.content)))
             .catch(e => rejectToken(e));
+    }
+
+    /**
+     * Parse a base64-encoded journal club MD file from gitHub into name-value pairs
+     * @param data {string}
+     * @return {object}
+     */
+    function parseMD(data) {
+        data = atob(data);
+        console.log(data)
+        const match = /^---(.*)---(.*)$/s.exec(data);
+        if(!match)
+            throw new Error('Badly formed markdown file received from GitHub.');
+        const lines = match[1].split('\n');
+        const pairs = lines.map(s => {
+            m = /^(.+):(.*)$/.exec(s);
+            return m? {key: m[1], value: m[2]} : null;
+        })
+            .filter(o => o !== null);
+        const out = {content: match.length >= 3? match[2] : ''};
+        pairs.forEach(p => out[p.key] = p.value);
+        return out;
     }
     function acceptToken(data) {
         console.log({data})
@@ -670,11 +699,13 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             }
         }
         // Remove the auth code field
-        document.removeChild(document.getElementById('AuthCodeRow'));
+        document.getElementById('AuthCodeRow').remove();
         // Hide the modal and let the user get on with it
         document.getElementById('LoadingModal').classList.add('token-complete');
+        window.scrollTo(window.scrollX, form.getBoundingClientRect().y);
     }
-    function rejectToken() {
+    function rejectToken(e) {
+        console.warn(e)
         document.getElementById('LoadingModal').classList.add('token-reject');
     }
     checkToken();

@@ -45,23 +45,24 @@ exports.handler = async (event) => {
     }
 
     let isEdit = false;
+    let editToken = null;
     if(window.jcEditToken) {
         // Check authorisation to edit
-        const checkToken = await fetch('/.netlify/functions/edit-jc_check-token', {
+        editToken = await fetch('/.netlify/functions/edit-jc_check-token', {
             method: 'POST',
-            body: JSON.stringify({token: window.jcEditToken})
+            body: JSON.stringify(window.jcEditToken)
         })
             .then(r => {
                 if(r.status !== 200)
                     throw new Error(`Token lookup error: server response was (${r.status}) (${r.statusText}).`);
                 else
-                    return {jcid: r.text()}
+                    return r.json()
             })
             .catch(e => {return {title: 'Check edit token', status: 'error', details: [e]}});
 
-        if(!checkToken.jcid)
-            return formatResponses({checkToken})
-        if(checkToken.jcid !== data.jcid)
+        if(!editToken.jcid)
+            return formatResponses({checkToken: editToken})
+        if(editToken.jcid !== data.jcid)
             return formatResponses({
                 checkJCID: {
                     title: 'Check edit token',
@@ -70,7 +71,7 @@ exports.handler = async (event) => {
                         `Token journal club '${jcid}' did not match requested journal club '${data.jcid}'.`
                     ]
                 }
-            })
+            });
         isEdit = true;
     }
 
@@ -83,7 +84,7 @@ exports.handler = async (event) => {
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
     let body;
     if(isEdit)
-        body = await callGitHub(data, true);
+        body = await callGitHub(data, null, editToken);
     else
         body = await callAPIs(data);
 
@@ -589,10 +590,10 @@ async function callSlack(data) {
  * Handle the GitHub API call
  * @param data {object} form POST data
  * @param results {object} response reports from previous API calls
- * @param editToken {string} whether to edit rather than create the journal club
+ * @param editToken {object|null} token containing edit authorisation details
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
-async function callGitHub(data, results, editToken = "") {
+async function callGitHub(data, results, editToken = null) {
 
     const out = {
         title: 'GitHub',
@@ -693,7 +694,8 @@ ${data.description}
     // Create github file
     const content = editToken?
         JSON.stringify({
-        message: `Form update of ${data.jcid}.md (${editToken})`,
+        message: `Form update of ${data.jcid}.md by ${editToken.email}.  
+${editToken.message}`,
         content: new Buffer.from(out.githubFile).toString('base64'),
         sha: results.sha
     }) :

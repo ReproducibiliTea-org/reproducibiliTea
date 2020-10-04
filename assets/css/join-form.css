@@ -285,6 +285,8 @@ ul {
 #LoadingModal.token-okay:not(.token-reject) #TokenOkay,
 #LoadingModal.token-reject #RejectToken {display: block;}
 
+#LoadingModal.token-reject svg {color: red;}
+
 /* Edit form */
 #EditForm {display: flex; flex-direction: column;}
 #EditForm > div {padding-top: .5em; display: grid;}

@@ -65,7 +65,9 @@ exports.handler = function(event, context, callback) {
                     {
                         data: {
                             token: token,
-                            jcid: data.jcid
+                            jcid: data.jcid,
+                            email: data.email,
+                            message: data.message
                         }
                     }
                 )
