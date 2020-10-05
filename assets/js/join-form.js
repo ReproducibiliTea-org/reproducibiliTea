@@ -135,8 +135,8 @@ function checkForm(e, allowEmpty = false) {
         });
 
     // Mark OSFuser obsolete if OSF is complete
-    let elm = document.querySelector('#osfUser').closest('.row');
-    if(elm) {
+    if(!window.jcEditToken) {
+        let elm = document.querySelector('#osfUser').closest('.row');
         if(document.querySelector('#osf').value != "") {
             elm.classList.add('obsolete');
             elm.title = "This field is unavailable when a custom OSF repository has been supplied."
@@ -160,14 +160,13 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(elm) {
-        if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
-            elm.value &&
-            !elm.classList.contains('obsolete')) {
-            okay = false;
-            markBad(elm, "Field contains invalid characters.");
-        }
+    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+        elm.value &&
+        !elm.classList.contains('obsolete')) {
+        okay = false;
+        markBad(elm, "Field contains invalid characters.");
     }
+
 
     elm = form.querySelector('#zoteroUser');
     if(elm && !/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
