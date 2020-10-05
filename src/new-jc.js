@@ -697,7 +697,8 @@ additional-contact: [${data.emails.join(', ')}]
 address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
-last-update: ${editToken}
+last-update: ${editToken.email}
+last-update-message: ${editToken.message}
 ---
 
 ${data.description}
