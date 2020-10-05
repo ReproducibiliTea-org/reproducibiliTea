@@ -722,7 +722,10 @@ ${editToken.message}`,
 
         await call.json();
 
-        out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
+        if(editToken)
+            out.details.push(`Updated ${data.jcid}.md. The new details will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
+        else
+            out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
 
     } catch(e) {
         out.status = 'Warning';
