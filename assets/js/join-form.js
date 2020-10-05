@@ -132,16 +132,18 @@ function checkForm(e, allowEmpty = false) {
                 okay = false;
                 markBad(e, "This field is required.");
             }
-    });
+        });
 
     // Mark OSFuser obsolete if OSF is complete
     let elm = document.querySelector('#osfUser').closest('.row');
-    if(document.querySelector('#osf').value != "") {
-        elm.classList.add('obsolete');
-        elm.title = "This field is unavailable when a custom OSF repository has been supplied."
-    } else {
-        elm.classList.remove('obsolete');
-        elm.title = "";
+    if(elm) {
+        if(document.querySelector('#osf').value != "") {
+            elm.classList.add('obsolete');
+            elm.title = "This field is unavailable when a custom OSF repository has been supplied."
+        } else {
+            elm.classList.remove('obsolete');
+            elm.title = "";
+        }
     }
 
     // Warn if they have 'reproducibilitea' in the name field
@@ -158,15 +160,17 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
-        elm.value &&
-        !elm.classList.contains('obsolete')) {
-        okay = false;
-        markBad(elm, "Field contains invalid characters.");
+    if(elm) {
+        if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+            elm.value &&
+            !elm.classList.contains('obsolete')) {
+            okay = false;
+            markBad(elm, "Field contains invalid characters.");
+        }
     }
 
     elm = form.querySelector('#zoteroUser');
-    if(!/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
+    if(elm && !/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
@@ -179,10 +183,10 @@ function checkForm(e, allowEmpty = false) {
 
     // additional emails
     form.querySelectorAll('.emails input.optional').forEach(e => {
-       if(!/\S+@\S+/i.test(e.value) && e.value) {
-           okay = false;
-           markBad(e, "Field does not appear to be a well-formed email address.");
-       }
+        if(!/\S+@\S+/i.test(e.value) && e.value) {
+            okay = false;
+            markBad(e, "Field does not appear to be a well-formed email address.");
+        }
     });
 
     elm = form.querySelector('#geolocation');
@@ -192,7 +196,6 @@ function checkForm(e, allowEmpty = false) {
         okay = false;
         markBad(elm, "Please click the marker icon to locate your journal club on the map.");
     }
-
 
     // Check JC Name isn't already in use
     if(!window.jcEditToken) {
