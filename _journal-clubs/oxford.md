@@ -1,20 +1,21 @@
 ---
-jcid: oxford
 
+jcid: oxford
 title: Oxford
 host-organisation: University of Oxford
 host-org-url: https://ox.ac.uk/
-osf: 3qrj6
-zotero: HH2R6BBQ
-website:
+osf: undefined
+zotero: undefined
+website: 
 twitter: ReproducibiliT
 signup: https://web.maillist.ox.ac.uk/ox/info/reproducibilitea
 organisers: [Sam Parsons, Matt Jaquiery, Sarah Ashcroft-Jones, Niklas Johannes, Olly Robertson, Dilrukshi Gamage]
 contact: sam.parsons@psy.ox.ac.uk
 additional-contact: [matt.jaquiery@psy.ox.ac.uk]
-address: [First floor, New Radcliffe House, Oxford]
+address: [First floor,  New Radcliffe House,  Oxford]
 country: United Kingdom
 geolocation: [51.7602663, -1.2656281]
+last-update: [object Object]
 ---
 
 The original reproducibiliTea Journal Club, meeting fortnightly during term-time at the University of Oxford. Most members come from the Department of Experimental Psychology, but we welcome people from all over the university, and have had regular members in the past from Anthropology and non-psychology parts of the Medical Sciences Division.
