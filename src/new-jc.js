@@ -719,7 +719,6 @@ ${editToken.message}`,
         });
 
     try {
-        throw new Error('Test halt')
         const call = await fetch(`${url}/${data.jcid}.md`,
             {
                 method: 'PUT',

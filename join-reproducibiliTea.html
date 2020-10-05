@@ -641,7 +641,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      */
     function parseMD(data) {
         data = atob(data);
-        const match = /^---(.*)---(.*)$/s.exec(data);
+        const match = /^---(.*)---\s*(.*)$/s.exec(data);
         if(!match)
             throw new Error('Badly formed markdown file received from GitHub.');
         const lines = match[1].split('\n');
