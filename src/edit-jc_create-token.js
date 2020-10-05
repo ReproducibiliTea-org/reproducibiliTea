@@ -15,6 +15,8 @@ const {
 exports.handler = function(event, context, callback) {
     // Check input
     const data = JSON.parse(event.body);
+    if(data.email)
+        data.email = data.email.replace(/\s/sg, '');
     if(!data.email || !data.jcid) {
         return callback('Email and JCID must be submitted in JSON format in the request body.');
     }

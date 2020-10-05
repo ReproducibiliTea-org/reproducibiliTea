@@ -123,15 +123,9 @@ function cleanData(data) {
     }
 
     if(data.post) {
+        data.post = data.post.replace(/,\s*/g, '\n');
         data.post = data.post.replace(/[\n\r]\r?/g, ', ');
-        // remove blank lines
-        let tmp = data.post;
-        let tmp2 = "";
-        while(tmp !== tmp2) {
-            tmp2 = tmp;
-            tmp = tmp.replace(/,\s*,/g, ', ');
-        }
-        data.post = tmp;
+        data.post = data.post.replace(/  /sg, ' ');
     }
 
     if(data.jcid)
@@ -267,7 +261,7 @@ async function callAPIs(data, isEdit = false) {
  * @return {string} HTML response body
  */
 function formatResponses(re) {
-    console.log(re)
+
     let out = "";
 
     for(const s in re) {
@@ -664,11 +658,12 @@ async function callGitHub(data, results, editToken = null) {
                             const osf = /^osf: (.*)$/m.exec(body);
                             const zotero = /^zotero: (.*)$/m.exec(body);
                             results = {
-                                osf: osf? osf[1] : null,
-                                zotero: zotero? zotero[1] : null,
+                                osf: {osfRepoId: osf? osf[1] : null},
+                                zotero: {zoteroCollectionId: zotero? zotero[1] : null},
                                 sha: f.sha
-                            }
+                            };
                         });
+                    break;
                 } else {
                     out.status = 'Warning';
                     out.details.push(`${data.jcid}.md already exists: a new version will not be created.`);
@@ -706,7 +701,9 @@ last-update: ${editToken}
 ---
 
 ${data.description}
-`
+`;
+
+    console.log({gitHubFile: out.githubFile})
 
     // Create github file
     const content = editToken?
@@ -722,6 +719,7 @@ ${editToken.message}`,
         });
 
     try {
+        throw new Error('Test halt')
         const call = await fetch(`${url}/${data.jcid}.md`,
             {
                 method: 'PUT',
