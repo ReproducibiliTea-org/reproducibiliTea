@@ -28,7 +28,7 @@ const REQUIRED_FIELDS = [
     'country', 'lead', 'authCode', 'geolocation'
 ];
 
-exports.handler = async (event) => {
+exports.handler = async (event, context, callback) => {
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { 'Allow': 'POST' } }
     }
@@ -45,12 +45,13 @@ exports.handler = async (event) => {
     }
 
     let isEdit = false;
-    let editToken = data.editToken;
-    if(editToken) {
+    let token = data.editToken;
+    let editToken = null;
+    if(token) {
         // Check authorisation to edit
-        editToken = await fetch('/.netlify/functions/edit-jc_check-token', {
+        editToken = await fetch(`${event.headers.origin}/.netlify/functions/edit-jc_check-token`, {
             method: 'POST',
-            body: JSON.stringify(editToken)
+            body: token
         })
             .then(r => {
                 if(r.status !== 200)
@@ -58,21 +59,38 @@ exports.handler = async (event) => {
                 else
                     return r.json()
             })
-            .catch(e => {return {title: 'Check edit token', status: 'error', details: [e]}});
-
-        if(!editToken.jcid)
-            return formatResponses({checkToken: editToken})
-        if(editToken.jcid !== data.jcid)
-            return formatResponses({
-                checkJCID: {
+            .catch(e => {return {
                     title: 'Check edit token',
                     status: 'error',
-                    details: [
-                        `Token journal club '${jcid}' did not match requested journal club '${data.jcid}'.`
-                    ]
-                }
-            });
+                    details: [e]
+            }});
+
+        console.log({editToken})
+        if(!editToken.jcid)
+            return {
+                statusCode: 500,
+                body: formatResponses({checkToken: {
+                    title: 'Check edit token',
+                    status: 'error',
+                    details: [`No JC listed for token ${JSON.parse(token).token}.`]
+                }})
+            };
+        if(editToken.jcid !== data.jcid)
+            return {
+                statusCode: 500,
+                body: formatResponses({checkToken: {
+                    checkJCID: {
+                        title: 'Check edit token',
+                        status: 'error',
+                        details: [
+                            `Token journal club '${editToken.jcid}' did not match requested journal club '${data.jcid}'.`
+                        ]
+                    }
+                }})
+            };
         isEdit = true;
+        // Cheat the auth code because the token provides authorisation
+        data.authCode = AUTH_CODE;
     }
 
     const check = checkData(data, isEdit);
@@ -84,7 +102,7 @@ exports.handler = async (event) => {
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
     let body;
     if(isEdit)
-        body = await callGitHub(data, null, editToken);
+        body = {github: await callGitHub(data, null, editToken)};
     else
         body = await callAPIs(data);
 
@@ -171,10 +189,9 @@ function cleanData(data) {
 /**
  * Check the request for hygiene, completeness, and sanity
  * @param data {object} POST data in request
- * @param skipAuthCode {boolean} whether to skip checking the authorisation code (for editing JCs)
  * @return {object|null} a http response on error or null if okay
  */
-function checkData(data, skipAuthCode = false) {
+function checkData(data) {
     const fail = (s, c = 400) => ({
         statusCode: c, body: formatResponses({
             check: {
@@ -212,7 +229,7 @@ function checkData(data, skipAuthCode = false) {
             return fail(`The email address supplied("${data.emails[i]}") appears invalid.`);
     }
 
-    if(data.authCode !== AUTH_CODE && !skipAuthCode) {
+    if(data.authCode !== AUTH_CODE) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
     }
 
@@ -250,7 +267,7 @@ async function callAPIs(data, isEdit = false) {
  * @return {string} HTML response body
  */
 function formatResponses(re) {
-
+    console.log(re)
     let out = "";
 
     for(const s in re) {

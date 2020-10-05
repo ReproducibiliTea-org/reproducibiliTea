@@ -29,8 +29,10 @@ exports.handler = function(event, context, callback) {
         .then(r => {
             r.data.forEach(x => {
                 if(x.data.token === data.token) {
-                    callback(null, {statusCode: 200, body: JSON.stringify(x.data)});
-                    return;
+                    return callback(null, {
+                        statusCode: 200,
+                        body: JSON.stringify(x.data)
+                    });
                 }
             });
             throw new Error('No matching token found.')

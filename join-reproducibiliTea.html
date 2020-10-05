@@ -660,7 +660,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         // Fill in the form fields from data
         const token = document.createElement('input');
         token.type = 'hidden';
-        token.value = window.jcEditToken.token;
+        token.value = JSON.stringify(window.jcEditToken);
         token.name = 'editToken';
         token.id = 'editToken';
         form.appendChild(token);
