@@ -658,6 +658,12 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         document.getElementById('LoadingModal').classList.add('token-okay');
         const form = document.getElementById('newJC');
         // Fill in the form fields from data
+        const token = document.createElement('input');
+        token.type = 'hidden';
+        token.value = window.jcEditToken.token;
+        token.name = 'editToken';
+        token.id = 'editToken';
+        form.appendChild(token);
         if(data.title)
             form.querySelector('#name').value = data.title;
         if(data['host-organisation'])

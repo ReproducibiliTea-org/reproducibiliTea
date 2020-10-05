@@ -45,12 +45,12 @@ exports.handler = async (event) => {
     }
 
     let isEdit = false;
-    let editToken = null;
-    if(window.jcEditToken) {
+    let editToken = data.editToken;
+    if(editToken) {
         // Check authorisation to edit
         editToken = await fetch('/.netlify/functions/edit-jc_check-token', {
             method: 'POST',
-            body: JSON.stringify(window.jcEditToken)
+            body: JSON.stringify(editToken)
         })
             .then(r => {
                 if(r.status !== 200)
