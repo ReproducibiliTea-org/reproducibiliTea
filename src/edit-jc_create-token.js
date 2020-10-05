@@ -23,7 +23,7 @@ exports.handler = function(event, context, callback) {
 
     // Create the token
     const token = encodeURI(data.email).substr(0,10) +
-        Math.round(Math.random() * 100000);
+        Math.round(Math.random() * 100000000000000000);
 
     // Check JC exists on GitHub
     fetch(
