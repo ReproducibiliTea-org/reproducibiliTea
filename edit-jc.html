@@ -26,6 +26,10 @@ layout: default
                 <select id="email" name="email"></select>
             </div>
             <div>
+                <label for="message">Commit message:</label>
+                <textarea id="message" name="message" placeholder="Here you can (optionally) describe what it is you're trying to do. This will appear in the GitHub change logs and can help us see at a glance what kind of changes are being made to a journal club. Example: 'Changed lead organiser.'"></textarea>
+            </div>
+            <div>
                 <button onclick="getToken()">Get edit token</button>
             </div>
         </div>
@@ -60,9 +64,10 @@ layout: default
 
         const jcid = document.getElementById('jcid').value;
         const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
         await fetch('/.netlify/functions/edit-jc_create-token', {
             method: 'POST',
-            body: JSON.stringify({jcid, email})
+            body: JSON.stringify({jcid, email, message})
         })
             .then(r => {
                 if(r.status !== 200)

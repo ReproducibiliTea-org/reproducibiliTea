@@ -5,7 +5,7 @@ layout: default
 <link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
 <script type="text/javascript" src="/assets/js/join-form.js"></script>
 
-<article>
+<article id="signupForm">
     <section id="joinWelcome">
         <h1>1<span class="fade">/3</span> Welcome</h1>
 
@@ -511,6 +511,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                         <div class="label-details">
                             <p>This is the email address for the lead organiser. It can be an email for the journal club rather than a personal email if you like. We will use this for getting in touch with you about general JC stuff.</p>
                             <p>You may add additional email addresses if you like, but as long as one member of your JC gets our emails that is enough.</p>
+                            <p><strong>Any email addresses listed here will be able to update the journal club details later.</strong></p>
                             <ul>
                                 <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
@@ -523,7 +524,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="osfUserRow">
                     <div class="labels">
                         <label for="osfUser">Lead organiser <a href="https://osf.io/">OSF</a> id</label>
                         <div class="label-details">
@@ -538,7 +539,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
                 </div>
 
-                <div class="row">
+                <div class="row" id="zoteroUserRow">
                     <div class="labels">
                         <label for="zoteroUser">Lead organiser <a href="https://zotero.org/">Zotero</a> API id</label>
                         <div class="label-details">
@@ -640,13 +641,12 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      */
     function parseMD(data) {
         data = atob(data);
-        console.log(data)
         const match = /^---(.*)---(.*)$/s.exec(data);
         if(!match)
             throw new Error('Badly formed markdown file received from GitHub.');
         const lines = match[1].split('\n');
         const pairs = lines.map(s => {
-            m = /^(.+):(.*)$/.exec(s);
+            const m = /^(.+?):\s*(.*)$/.exec(s);
             return m? {key: m[1], value: m[2]} : null;
         })
             .filter(o => o !== null);
@@ -655,7 +655,6 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         return out;
     }
     function acceptToken(data) {
-        console.log({data})
         document.getElementById('LoadingModal').classList.add('token-okay');
         const form = document.getElementById('newJC');
         // Fill in the form fields from data
@@ -663,8 +662,8 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             form.querySelector('#name').value = data.title;
         if(data['host-organisation'])
             form.querySelector('#uni').value = data['host-organisation'];
-        if(data['host-organisation-url'])
-            form.querySelector('#uniWWW').value = data['host-organisation-url'];
+        if(data['host-org-url'])
+            form.querySelector('#uniWWW').value = data['host-org-url'];
         if(data.website)
             form.querySelector('#www').value = data.website;
         if(data.twitter)
@@ -673,39 +672,61 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             form.querySelector('#osf').value = data.osf;
         if(data.signup)
             form.querySelector('#signup').value = data.signup;
-        if(data.address)
-            form.querySelector('#post').value = data.address;
-        if(data.geolocation)
-            form.querySelector('#geolocation').value = data.geolocation;
+        if(data.address) {
+            const match = /^\[?(.+?)\]?$/.exec(data.address);
+            if(match) {
+                const addr = match[1].replace(/,\s*/g, ',\n');
+                form.querySelector('#post').value = addr;
+            }
+        }
+        if(data.geolocation) {
+            const match = /^\[?(.+?)\]?$/.exec(data.geolocation);
+            if(match) {
+                form.querySelector('#geolocation').value = match[1];
+            }
+        }
         if(data.content)
             form.querySelector('#description').value = data.content;
         if(data.organisers) {
-            form.querySelector('#lead').value = data.organisers[0];
-            let last = form.querySelector('#lead');
-            for(let o = 1; o < data.organisers.length; o++) {
-                addNewEntry(last);
-                last = form.querySelector(`#helper{o-1}`);
-                last.value = data.organisers[o];
+            const match = /^\[?(.+?)\]?$/.exec(data.organisers);
+            if(match) {
+                const organisers = match[1].split(', ');
+                form.querySelector('#lead').value = organisers[0];
+                let last = form.querySelector('#lead');
+                for (let o = 1; o < organisers.length; o++) {
+                    addNewEntry(last);
+                    last = form.querySelector(`#helper${o - 1}`);
+                    last.value = organisers[o];
+                }
             }
         }
         if(data.contact)
             form.querySelector('#email').value = data.contact;
         if(data['additional-contact']) {
-            let last = form.querySelector('#email');
-            for(let o = 1; o < data['additional-contact'].length; o++) {
-                addNewEntry(last);
-                last = form.querySelector(`#extraEmail{o-1}`);
-                last.value = data['additional-contact'][o];
+            const match = /^\[?(.+?)\]?$/.exec(data['additional-contact']);
+            if(match) {
+                const contacts = match[1].split(', ');
+                let last = form.querySelector('#email');
+                for (let c = 0; c < contacts.length; c++) {
+                    addNewEntry(last);
+                    last = form.querySelector(`#extraEmail${c}`);
+                    last.value = contacts[c];
+                }
             }
         }
-        // Remove the auth code field
+        // Remove the unneded fields
         document.getElementById('AuthCodeRow').remove();
+        document.getElementById('osfUserRow').remove();
+        document.getElementById('zoteroUserRow').remove();
+        document.querySelector('.submission button').innerHTML = "Commit changes";
+        // Remove unnecessary sections
+        document.getElementById('signupForm').classList.add('edit');
         // Hide the modal and let the user get on with it
         document.getElementById('LoadingModal').classList.add('token-complete');
-        window.scrollTo(window.scrollX, form.getBoundingClientRect().y);
+        //window.scrollTo(window.scrollX, form.getBoundingClientRect().y);
     }
     function rejectToken(e) {
-        console.warn(e)
+        console.warn(e);
         document.getElementById('LoadingModal').classList.add('token-reject');
     }
     checkToken();

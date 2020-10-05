@@ -52,7 +52,7 @@ function geolocateAddress() {
 
 /**
  * Add a new organiser field below the current latest one
- * @param e {Event|HTMLElement} button click event or element clicked on
+ * @param e {Event|HTMLElement|Element} button click event or element clicked on
  * @return {boolean}
  */
 function addNewEntry(e) {
@@ -84,7 +84,8 @@ function addNewEntry(e) {
     last.parentElement.insertBefore(newEntry, last.nextSibling);
 
     // no submit action
-    e.preventDefault();
+    if(e instanceof Event)
+        e.preventDefault();
     return false;
 }
 

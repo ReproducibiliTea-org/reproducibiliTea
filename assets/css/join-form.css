@@ -290,3 +290,6 @@ ul {
 /* Edit form */
 #EditForm {display: flex; flex-direction: column;}
 #EditForm > div {padding-top: .5em; display: grid;}
+#EditForm #message {height: 4em;}
+#signupForm.edit > :not(#joinForm) {display: none;}
+#signupForm.edit > #joinForm > :not(#newJC) {display: none;}

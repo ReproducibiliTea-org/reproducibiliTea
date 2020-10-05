@@ -21,8 +21,6 @@ exports.handler = function(event, context, callback) {
 
     const client = new faunadb.Client({ secret: FAUNA_KEY });
 
-    data.email = 'matt.jaquiery@psy.ox.ac.uk'
-
     // Create the token
     const token = encodeURI(data.email).substr(0,10) +
         Math.round(Math.random() * 100000);
@@ -58,6 +56,8 @@ exports.handler = function(event, context, callback) {
                 throw new Error('Too many recent edit attempts for this journal club. Please check your email (including junk folders) for recent access tokens.')
         })
         .then(() => {
+            if(!data.message)
+                data.message = "";
             // Save to the database
             return client.query(
                 FQ.Create(
