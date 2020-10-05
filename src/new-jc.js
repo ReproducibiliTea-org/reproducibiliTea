@@ -44,15 +44,49 @@ exports.handler = async (event) => {
         };
     }
 
+    let isEdit = false;
+    let editToken = null;
+    if(window.jcEditToken) {
+        // Check authorisation to edit
+        editToken = await fetch('/.netlify/functions/edit-jc_check-token', {
+            method: 'POST',
+            body: JSON.stringify(window.jcEditToken)
+        })
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Token lookup error: server response was (${r.status}) (${r.statusText}).`);
+                else
+                    return r.json()
+            })
+            .catch(e => {return {title: 'Check edit token', status: 'error', details: [e]}});
 
-    const check = checkData(data);
+        if(!editToken.jcid)
+            return formatResponses({checkToken: editToken})
+        if(editToken.jcid !== data.jcid)
+            return formatResponses({
+                checkJCID: {
+                    title: 'Check edit token',
+                    status: 'error',
+                    details: [
+                        `Token journal club '${jcid}' did not match requested journal club '${data.jcid}'.`
+                    ]
+                }
+            });
+        isEdit = true;
+    }
+
+    const check = checkData(data, isEdit);
 
     if (check !== null) {
         return check;
     }
 
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
-    const body = await callAPIs(data);
+    let body;
+    if(isEdit)
+        body = await callGitHub(data, null, editToken);
+    else
+        body = await callAPIs(data);
 
     return {statusCode: 200, body: formatResponses(body)};
 };
@@ -137,9 +171,10 @@ function cleanData(data) {
 /**
  * Check the request for hygiene, completeness, and sanity
  * @param data {object} POST data in request
+ * @param skipAuthCode {boolean} whether to skip checking the authorisation code (for editing JCs)
  * @return {object|null} a http response on error or null if okay
  */
-function checkData(data) {
+function checkData(data, skipAuthCode = false) {
     const fail = (s, c = 400) => ({
         statusCode: c, body: formatResponses({
             check: {
@@ -177,7 +212,7 @@ function checkData(data) {
             return fail(`The email address supplied("${data.emails[i]}") appears invalid.`);
     }
 
-    if(data.authCode !== AUTH_CODE) {
+    if(data.authCode !== AUTH_CODE && !skipAuthCode) {
         return fail(`The authorisation code supplied("${data.authCode}") is invalid.`)
     }
 
@@ -188,8 +223,12 @@ function checkData(data) {
     return null;
 }
 
-
-async function callAPIs(data) {
+/**
+ * Send off the JC data to the various APIs we use for setting things up
+ * @param data
+ * @returns {Promise<{zotero: *, osf: *, slack: *}>}
+ */
+async function callAPIs(data, isEdit = false) {
     const [slack, osf, zotero] = await Promise.all([
         callSlack(data),
         callOSF(data),
@@ -551,32 +590,15 @@ async function callSlack(data) {
  * Handle the GitHub API call
  * @param data {object} form POST data
  * @param results {object} response reports from previous API calls
+ * @param editToken {object|null} token containing edit authorisation details
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
-async function callGitHub(data, results) {
+async function callGitHub(data, results, editToken = null) {
+
     const out = {
         title: 'GitHub',
         status: 'Okay',
-        details: [],
-        githubFile: `---
-title: ${data.name}
-host-organisation: ${data.uni}
-host-org-url: ${data.uniWWW}
-osf: ${results.osf.osfRepoId}
-zotero: ${results.zotero.zoteroCollectionId}
-website: ${data.www}
-twitter: ${data.twitter}
-signup: ${data.signup}
-organisers: [${[data.lead, ...data.helpers].join(', ')}]
-contact: ${data.email}
-additional-contact: [${data.emails.join(', ')}]
-address: [${data.post}]
-country: ${data.country}
-geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
----
-
-${data.description}
-`
+        details: []
     };
 
     const url = 'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs';
@@ -603,10 +625,39 @@ ${data.description}
 
         for(const jc of response) {
             if(jc.name === `${data.jcid}.md`) {
-                out.status = 'Warning';
-                out.details.push(`${data.jcid}.md already exists: a new version will not be created.`);
+                if(editToken) {
+                    // Look up previous file for details like osf repo, zotero library, etc.
+                    // Also get the sha1 because we'll need it later
+                    await fetch(`${url}/${encodeURI(jc.name)}`, {
+                        headers: {
+                            'User-Agent': 'mjaquiery',
+                            Authorization: `token ${GITHUB_TOKEN}`
+                        }
+                    })
+                        .then(r => {
+                            if(r.status === 200)
+                                return r.json()
+                            else
+                                throw new Error(`Could not lookup existing JC: ${r.statusText} (${r.status})`)
+                        })
+                        .then(async f => {
+                            const buff = new Buffer.from(f.content, 'base64');
+                            const body = buff.toString();
+                            // Hack out the bits of the results we need
+                            const osf = /^osf: (.*)$/m.exec(body);
+                            const zotero = /^zotero: (.*)$/m.exec(body);
+                            results = {
+                                osf: osf? osf[1] : null,
+                                zotero: zotero? zotero[1] : null,
+                                sha: f.sha
+                            }
+                        });
+                } else {
+                    out.status = 'Warning';
+                    out.details.push(`${data.jcid}.md already exists: a new version will not be created.`);
 
-                return out;
+                    return out;
+                }
             }
         }
 
@@ -617,11 +668,41 @@ ${data.description}
         return out;
     }
 
+    out.githubFile = `---
+
+jcid: ${data.jcid}
+title: ${data.name}
+host-organisation: ${data.uni}
+host-org-url: ${data.uniWWW}
+osf: ${results.osf.osfRepoId}
+zotero: ${results.zotero.zoteroCollectionId}
+website: ${data.www}
+twitter: ${data.twitter}
+signup: ${data.signup}
+organisers: [${[data.lead, ...data.helpers].join(', ')}]
+contact: ${data.email}
+additional-contact: [${data.emails.join(', ')}]
+address: [${data.post}]
+country: ${data.country}
+geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
+last-update: ${editToken}
+---
+
+${data.description}
+`
+
     // Create github file
-    const content = JSON.stringify({
-        message: `API creation of ${data.jcid}.md`,
-        content: new Buffer.from(out.githubFile).toString('base64')
-    });
+    const content = editToken?
+        JSON.stringify({
+        message: `Form update of ${data.jcid}.md by ${editToken.email}.  
+${editToken.message}`,
+        content: new Buffer.from(out.githubFile).toString('base64'),
+        sha: results.sha
+    }) :
+        JSON.stringify({
+            message: `API creation of ${data.jcid}.md`,
+            content: new Buffer.from(out.githubFile).toString('base64')
+        });
 
     try {
         const call = await fetch(`${url}/${data.jcid}.md`,
@@ -641,7 +722,10 @@ ${data.description}
 
         await call.json();
 
-        out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
+        if(editToken)
+            out.details.push(`Updated ${data.jcid}.md. The new details will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
+        else
+            out.details.push(`Created ${data.jcid}.md. Journal club webpage will be available shortly at <a href="https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}" target="_blank">https://reproducibiliTea.org/journal-clubs/#${encodeURI(data.name)}</a>`);
 
     } catch(e) {
         out.status = 'Warning';

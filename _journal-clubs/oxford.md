@@ -11,6 +11,7 @@ twitter: ReproducibiliT
 signup: https://web.maillist.ox.ac.uk/ox/info/reproducibilitea
 organisers: [Sam Parsons, Matt Jaquiery, Sarah Ashcroft-Jones, Niklas Johannes, Olly Robertson, Dilrukshi Gamage]
 contact: sam.parsons@psy.ox.ac.uk
+additional-contact: [matt.jaquiery@psy.ox.ac.uk]
 address: [First floor, New Radcliffe House, Oxford]
 country: United Kingdom
 geolocation: [51.7602663, -1.2656281]
@@ -22,4 +23,4 @@ The majority of our regular members are graduate students and early career resea
 
 You can sign up to our [mailing list](https://web.maillist.ox.ac.uk/ox/info/reproducibilitea) by logging into your Single Sign On account. Those who don't have an SSO can email [Sam](mailto:sam.parsons@psy.ox.ac.uk) and he'll be happy to add you!
 
-ReproducibiliTea Oxford is kindly sponsored by [Reproducible Research Oxford ](http://ox.ukrn.org/).
+ReproducibiliTea Oxford is kindly sponsored by [Reproducible Research Oxford](http://ox.ukrn.org/).

@@ -52,11 +52,17 @@ function geolocateAddress() {
 
 /**
  * Add a new organiser field below the current latest one
- * @param e {Event} button click event
+ * @param e {Event|HTMLElement|Element} button click event or element clicked on
  * @return {boolean}
  */
 function addNewEntry(e) {
-    const last = e.target.parentElement.querySelector('input:last-of-type');
+    let last;
+    if(e instanceof Event)
+        last = e.target.parentElement.querySelector('input:last-of-type');
+    else
+        last = e;
+
+    const button = e.parentElement.querySelector('button');
 
     let id = -1;
 
@@ -71,14 +77,15 @@ function addNewEntry(e) {
     let newEntry = document.createElement('input');
     newEntry.type = 'text';
     newEntry.classList.add('optional');
-    newEntry.id = e.target.dataset.fieldId + (id + 1);
+    newEntry.id = button.dataset.fieldId + (id + 1);
     newEntry.name = newEntry.id;
-    newEntry.placeholder = e.target.dataset.fieldPlaceholder + ' #' + (id + 2);
+    newEntry.placeholder = button.dataset.fieldPlaceholder + ' #' + (id + 2);
 
     last.parentElement.insertBefore(newEntry, last.nextSibling);
 
     // no submit action
-    e.preventDefault();
+    if(e instanceof Event)
+        e.preventDefault();
     return false;
 }
 
@@ -188,18 +195,20 @@ function checkForm(e, allowEmpty = false) {
 
 
     // Check JC Name isn't already in use
-    const name = document.getElementById("name");
+    if(!window.jcEditToken) {
+        const name = document.getElementById("name");
 
-    document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
-        d => {
-            if(d.innerText === name.value) {
-                okay = false;
-                name.classList.add('bad');
-                name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
-                name.title = "The name cannot match an existing journal club's name.";
+        document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
+            d => {
+                if(d.innerText === name.value) {
+                    okay = false;
+                    name.classList.add('bad');
+                    name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+                    name.title = "The name cannot match an existing journal club's name.";
+                }
             }
-        }
-    );
+        );
+    }
 
     return okay;
 }
