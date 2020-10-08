@@ -51,7 +51,9 @@ exports.handler = function(event, context, callback) {
         .then(r => {
             let count = 5;
             r.data.forEach(x => {
-                if(x.data.jcid === data.jcid)
+                if(x.data.jcid === data.jcid
+                    && x.data.expires
+                    && x.data.expires < new Date())
                     count--;
             });
             if(!count)
@@ -60,6 +62,9 @@ exports.handler = function(event, context, callback) {
         .then(() => {
             if(!data.message)
                 data.message = "";
+            const now = new Date();
+            const expires = now.setDate(now.getDate() + 2);
+
             // Save to the database
             return client.query(
                 FQ.Create(
@@ -69,7 +74,8 @@ exports.handler = function(event, context, callback) {
                             token: token,
                             jcid: data.jcid,
                             email: data.email,
-                            message: data.message
+                            message: data.message,
+                            expires: new Date(expires).toJSON()
                         }
                     }
                 )

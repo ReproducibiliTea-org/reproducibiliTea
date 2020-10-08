@@ -29,6 +29,8 @@ exports.handler = function(event, context, callback) {
         .then(r => {
             r.data.forEach(x => {
                 if(x.data.token === data.token) {
+                    if(!x.data.expires || x.data.expires < new Date())
+                        throw new Error('The token has expired.');
                     return callback(null, {
                         statusCode: 200,
                         body: JSON.stringify(x.data)
