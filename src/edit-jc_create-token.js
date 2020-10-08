@@ -117,7 +117,10 @@ async function sendEmail(email, jcid, token) {
 <p>The ReproducibiliTea Web Team</p>
         `
     };
-
+    
+   console.log({mailgun, mailgunData, MAILGUN_DOMAIN, MAILGUN_URL})
+    
     await mailgun.messages()
         .send(mailgunData);
 }
+
