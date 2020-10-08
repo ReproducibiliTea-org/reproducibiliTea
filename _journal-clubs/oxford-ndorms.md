@@ -1,6 +1,7 @@
 ---
+
 jcid: oxford-ndorms
-title: Oxford NDORMS
+title: Oxford Clinical Research
 host-organisation: University of Oxford
 host-org-url: https://www.ndorms.ox.ac.uk/
 osf: zjf5h
@@ -8,15 +9,29 @@ zotero: IMGT2D4F
 website: 
 twitter: 
 signup: 
-organisers: [Michael Schlussel, James Smith]
-contact: michael.schlussel@ndorms.ox.ac.uk
+organisers: [James Smith, Michael Schlussel]
+contact: james.smith2@ndorms.ox.ac.uk
+additional-contact: []
 address: [Michael Schlussel, Botnar Research Centre, Old Road, OX3 7LD, Oxford]
 country: United Kingdom
 geolocation: [51.7553425552125, -1.2113499641418057]
+last-update: michael.schlussel@ndorms.ox.ac.uk
+last-update-message: Hi Matt!
+
+If you could please make the changes below to the NDORMS page, that would be very much appreciated:
+
+1) Wherever there is NDORMS (title or description), please change it to Clinical Research.
+
+2) We will meet online, every other Wednesday of the academic term, from 2-3 pm. So, if you could also update that in the description, it would be awesome.
+
+3) Please put James as the main contact for this journal club.
+
+Many thanks in advance!
+Michael
 ---
 
-Want to improve the rigour and transparency of your research? Interested in discussing the principles of research reproducibility and recent advances in the open science community? The ReproducibiliTea NDORMS journal club will cover all aspects of research integrity and reproducible science.
+Want to improve the rigour and transparency of your research? Interested in discussing the principles of research reproducibility and recent advances in the open science community? The ReproducibiliTea Clinical Research journal club will cover all aspects of research integrity and reproducible science.
 
-Anyone is welcome, from students to professors, basic scientists to clinicians, and open science sceptics to reproducibility enthusiasts. We promote a friendly and inclusive environment, ensuring that everyone has a chance to contribute, so we can all learn from each other’s experiences to improve the way we think, do and share research.
+Anyone is welcome, from students to professors, basic scientists to clinicians, and open science sceptics to reproducibility enthusiasts. We promote a friendly and inclusive environment, ensuring that everyone has a chance to contribute, so we can all learn from each other's experiences to improve the way we think, do and share research.
 
-We meet every Wednesday of the academic term from 1-2 pm, at the Botnar Research Centre (Old Road, OX3 7LD). Light refreshments, some nibbles and, of course, tea will be provided (but you’re free to bring your own goods)!
+We meet every other Wednesday of the academic term from 2-3 pm, at the Botnar Research Centre (Old Road, OX3 7LD). Light refreshments, some nibbles and, of course, tea will be provided (but you're free to bring your own goods)!
