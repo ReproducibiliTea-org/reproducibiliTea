@@ -88,8 +88,9 @@ exports.handler = function(event, context, callback) {
 
 /**
  * Handle the Mailgun API call
- * @param data {object} form POST data
- * @param results {object} response reports from previous API calls
+ * @param email {string} to send to
+ * @param jcid {string} ID of the journal club we're trying to edit
+ * @param token {string} token to include in the email
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function sendEmail(email, jcid, token) {
@@ -115,6 +116,8 @@ async function sendEmail(email, jcid, token) {
 <p>The ReproducibiliTea Web Team</p>
         `
     };
+
+    console.log({mailgun, mailgunData, MAILGUN_DOMAIN, MAILGUN_URL})
 
     await mailgun.messages()
         .send(mailgunData);

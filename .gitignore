@@ -7,3 +7,4 @@ src/secret.php
 node_modules
 # Local Netlify folder
 .netlify
+npm-debug.log
