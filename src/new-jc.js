@@ -769,7 +769,7 @@ async function callMailgun(data, results) {
     const mailgun = require('mailgun-js')({
         apiKey: MAILGUN_API_KEY,
         domain: MAILGUN_DOMAIN,
-        url: MAILGUN_URL
+        host: MAILGUN_HOST
     });
 
     const mailgunData = {

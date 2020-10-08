@@ -90,8 +90,9 @@ exports.handler = function(event, context, callback) {
 
 /**
  * Handle the Mailgun API call
- * @param data {object} form POST data
- * @param results {object} response reports from previous API calls
+ * @param email {string} email to send to
+ * @param jcid {string} journal club to edit
+ * @param token {string} token to inject into the link
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function sendEmail(email, jcid, token) {
@@ -99,7 +100,7 @@ async function sendEmail(email, jcid, token) {
     const mailgun = require('mailgun-js')({
         apiKey: MAILGUN_API_KEY,
         domain: MAILGUN_DOMAIN,
-        url: MAILGUN_URL
+        host: MAILGUN_HOST
     });
 
     const mailgunData = {
@@ -118,7 +119,7 @@ async function sendEmail(email, jcid, token) {
         `
     };
     
-   console.log({mailgun, mailgunData, MAILGUN_DOMAIN, MAILGUN_URL})
+   console.log({mailgun, mailgunData})
     
     await mailgun.messages()
         .send(mailgunData);
