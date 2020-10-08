@@ -75,19 +75,9 @@ exports.handler = async (event, context, callback) => {
                     details: [`No JC listed for token ${JSON.parse(token).token}.`]
                 }})
             };
+        // Ensure we're editing the correct JC
         if(editToken.jcid !== data.jcid)
-            return {
-                statusCode: 500,
-                body: formatResponses({
-                    checkJCID: {
-                        title: 'Check edit token',
-                        status: 'error',
-                        details: [
-                            `Token journal club '${editToken.jcid}' did not match requested journal club '${data.jcid}'.`
-                        ]
-                    }
-                })
-            };
+            data.jcid = editToken.jcid;
         isEdit = true;
         // Cheat the auth code because the token provides authorisation
         data.authCode = AUTH_CODE;
