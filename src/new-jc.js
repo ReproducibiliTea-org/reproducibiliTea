@@ -688,7 +688,9 @@ address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 last-update: ${editToken.email}
-last-update-message: ${editToken.message}
+last-update-message: >-
+  ${editToken.message.replace(/\n/g, '\n\t')}
+
 ---
 
 ${data.description}
