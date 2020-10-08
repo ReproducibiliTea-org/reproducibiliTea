@@ -8,7 +8,7 @@ const {
     FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
-    MAILGUN_URL,
+    MAILGUN_HOST,
     FROM_EMAIL_ADDRESS
 } = process.env;
 
