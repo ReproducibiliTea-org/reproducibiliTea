@@ -78,7 +78,7 @@ exports.handler = async (event, context, callback) => {
         if(editToken.jcid !== data.jcid)
             return {
                 statusCode: 500,
-                body: formatResponses({checkToken: {
+                body: formatResponses({
                     checkJCID: {
                         title: 'Check edit token',
                         status: 'error',
@@ -86,7 +86,7 @@ exports.handler = async (event, context, callback) => {
                             `Token journal club '${editToken.jcid}' did not match requested journal club '${data.jcid}'.`
                         ]
                     }
-                }})
+                })
             };
         isEdit = true;
         // Cheat the auth code because the token provides authorisation
