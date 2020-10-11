@@ -57,12 +57,15 @@ function geolocateAddress() {
  */
 function addNewEntry(e) {
     let last;
-    if(e instanceof Event)
+    if(e instanceof Event) {
+        // no submit action
+        e.preventDefault();
         last = e.target.parentElement.querySelector('input:last-of-type');
+    }
     else
         last = e;
 
-    const button = e.parentElement.querySelector('button');
+    const button = last.parentElement.querySelector('button');
 
     let id = -1;
 
@@ -83,9 +86,6 @@ function addNewEntry(e) {
 
     last.parentElement.insertBefore(newEntry, last.nextSibling);
 
-    // no submit action
-    if(e instanceof Event)
-        e.preventDefault();
     return false;
 }
 
