@@ -83,5 +83,7 @@ We are hoping to turn this crisis into an opportunity to increase communication 
 
 Your ReproducibiliTea contact email will receive an email with instructions on how to add events to the shared calendar. This may be screened out by some institutions which block Google Groups invitations. If you have not received an invitation and want to access the calendar, please email Amy (amy.orben@cantab.net).
 
+You can also use [this page](/card/) to make simple images to share with people which will remind them of when you're meeting.
+
 
 
