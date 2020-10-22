@@ -670,6 +670,11 @@ async function callGitHub(data, results, editToken = null) {
         return out;
     }
 
+    if (!editToken) {
+        editToken.email = $data.email;
+        editToken.message = 'Journal club creation.';
+    }
+
     out.githubFile = `---
 
 jcid: ${data.jcid}
@@ -688,6 +693,7 @@ address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 last-update: ${editToken.email}
+last-update-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-update-message: >-
   ${editToken.message.replace(/\n */g, '\n  ')}
 
