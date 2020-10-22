@@ -670,9 +670,10 @@ async function callGitHub(data, results, editToken = null) {
         return out;
     }
 
+    // Fill in the editToken update details for new journal clubs
     if (!editToken) {
-        editToken.email = $data.email;
-        editToken.message = 'Journal club creation.';
+        editToken.email = data.email;
+        editToken.message = `API creation of ${data.jcid}.md`;
     }
 
     out.githubFile = `---
