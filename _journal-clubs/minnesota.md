@@ -1,4 +1,5 @@
 ---
+jcid: minnesota
 title: Minnesota
 host-organisation: University of Minnesota
 host-org-url: 

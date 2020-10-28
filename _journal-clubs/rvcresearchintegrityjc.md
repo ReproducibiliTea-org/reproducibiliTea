@@ -1,4 +1,5 @@
 ---
+jcid: rvcresearchintegrityjc
 title: RVCResearchIntegrityJC
 host-organisation: Royal Veterinary College
 host-org-url: www.rvc.ac.uk

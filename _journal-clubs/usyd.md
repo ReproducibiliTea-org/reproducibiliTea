@@ -1,4 +1,5 @@
 ---
+jcid: usyd
 title: USyd
 host-organisation: University of Sydney
 host-org-url: https://www.sydney.edu.au/

@@ -1,4 +1,5 @@
 ---
+jcid: brasil
 title: Brasil
 host-organisation: Brasil - Brazilian Reproducibility Initiative
 host-org-url: https://www.reprodutibilidade.bio.br/home

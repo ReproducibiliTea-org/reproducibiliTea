@@ -1,4 +1,5 @@
 ---
+jcid: swansea
 title: Swansea
 host-organisation: Swansea University
 host-org-url: 

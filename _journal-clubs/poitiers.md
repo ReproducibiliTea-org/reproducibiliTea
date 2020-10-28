@@ -1,4 +1,5 @@
 ---
+jcid: poitiers
 title: Poitiers
 host-organisation: Université de Poitiers
 host-org-url: https://www.univ-poitiers.fr/

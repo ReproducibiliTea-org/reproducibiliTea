@@ -1,4 +1,5 @@
 ---
+jcid: bioclues
 title: Bioclues.org 
 host-organisation: Bioclues.org 
 host-org-url: http://www.bioclues.org 

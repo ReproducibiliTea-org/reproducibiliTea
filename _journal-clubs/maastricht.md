@@ -1,5 +1,6 @@
 ---
-title: ReproducibiliTea Maastricht University
+jcid: maastricht
+title: Maastricht
 host-organisation: Maastricht University
 host-org-url: https://www.maastrichtuniversity.nl/
 osf: 5quwk
@@ -11,7 +12,7 @@ organisers: [Emmy van den Heuvel]
 contact: ma.vandenheuvel@maastrichtuniversity.nl
 additional-contact: []
 address: [P.O. Box 616,  6200 MD,  Maastricht]
-country: United Kingdom
+country: Netherlands
 geolocation: [50.847572953653916, 5.6964111328125]
 ---
 

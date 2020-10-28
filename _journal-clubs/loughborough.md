@@ -1,4 +1,5 @@
 ---
+jcid: loughborough
 title: Loughborough
 host-organisation: Loughborough University
 host-org-url: https://www.lboro.ac.uk/

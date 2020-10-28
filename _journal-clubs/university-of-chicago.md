@@ -1,4 +1,5 @@
 ---
+jcid: university-of-chicago
 title: University of Chicago
 host-organisation: University of Chicago
 host-org-url: https://www.uchicago.edu/

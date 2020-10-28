@@ -1,4 +1,5 @@
 ---
+jcid: uea
 title: UEA
 host-organisation: University of East Anglia
 host-org-url: uea.ac.uk

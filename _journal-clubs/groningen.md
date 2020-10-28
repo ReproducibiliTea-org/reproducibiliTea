@@ -1,4 +1,5 @@
 ---
+jcid: groningen
 title: Groningen
 host-organisation: University of Groningen
 host-org-url: https://www.rug.nl 

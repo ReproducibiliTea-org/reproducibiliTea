@@ -1,4 +1,5 @@
 ---
+jcid: amsterdam-vu
 title: Amsterdam VU
 host-organisation: Vrije Universiteit Amsterdam (VU)
 host-org-url: https://www.vu.nl/en

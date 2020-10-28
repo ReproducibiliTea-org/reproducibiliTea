@@ -1,4 +1,5 @@
 ---
+jcid: depaul
 title: DePaul
 host-organisation: DePaul University
 host-org-url: www.depaul.edu

@@ -52,11 +52,20 @@ function geolocateAddress() {
 
 /**
  * Add a new organiser field below the current latest one
- * @param e {Event} button click event
+ * @param e {Event|HTMLElement|Element} button click event or element clicked on
  * @return {boolean}
  */
 function addNewEntry(e) {
-    const last = e.target.parentElement.querySelector('input:last-of-type');
+    let last;
+    if(e instanceof Event) {
+        // no submit action
+        e.preventDefault();
+        last = e.target.parentElement.querySelector('input:last-of-type');
+    }
+    else
+        last = e;
+
+    const button = last.parentElement.querySelector('button');
 
     let id = -1;
 
@@ -71,14 +80,12 @@ function addNewEntry(e) {
     let newEntry = document.createElement('input');
     newEntry.type = 'text';
     newEntry.classList.add('optional');
-    newEntry.id = e.target.dataset.fieldId + (id + 1);
+    newEntry.id = button.dataset.fieldId + (id + 1);
     newEntry.name = newEntry.id;
-    newEntry.placeholder = e.target.dataset.fieldPlaceholder + ' #' + (id + 2);
+    newEntry.placeholder = button.dataset.fieldPlaceholder + ' #' + (id + 2);
 
     last.parentElement.insertBefore(newEntry, last.nextSibling);
 
-    // no submit action
-    e.preventDefault();
     return false;
 }
 
@@ -125,16 +132,18 @@ function checkForm(e, allowEmpty = false) {
                 okay = false;
                 markBad(e, "This field is required.");
             }
-    });
+        });
 
     // Mark OSFuser obsolete if OSF is complete
-    let elm = document.querySelector('#osfUser').closest('.row');
-    if(document.querySelector('#osf').value != "") {
-        elm.classList.add('obsolete');
-        elm.title = "This field is unavailable when a custom OSF repository has been supplied."
-    } else {
-        elm.classList.remove('obsolete');
-        elm.title = "";
+    if(!window.jcEditToken) {
+        let elm = document.querySelector('#osfUser').closest('.row');
+        if(document.querySelector('#osf').value != "") {
+            elm.classList.add('obsolete');
+            elm.title = "This field is unavailable when a custom OSF repository has been supplied."
+        } else {
+            elm.classList.remove('obsolete');
+            elm.title = "";
+        }
     }
 
     // Warn if they have 'reproducibilitea' in the name field
@@ -151,15 +160,16 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
         elm.value &&
         !elm.classList.contains('obsolete')) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
 
+
     elm = form.querySelector('#zoteroUser');
-    if(!/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
+    if(elm && !/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
@@ -172,10 +182,10 @@ function checkForm(e, allowEmpty = false) {
 
     // additional emails
     form.querySelectorAll('.emails input.optional').forEach(e => {
-       if(!/\S+@\S+/i.test(e.value) && e.value) {
-           okay = false;
-           markBad(e, "Field does not appear to be a well-formed email address.");
-       }
+        if(!/\S+@\S+/i.test(e.value) && e.value) {
+            okay = false;
+            markBad(e, "Field does not appear to be a well-formed email address.");
+        }
     });
 
     elm = form.querySelector('#geolocation');
@@ -186,20 +196,21 @@ function checkForm(e, allowEmpty = false) {
         markBad(elm, "Please click the marker icon to locate your journal club on the map.");
     }
 
-
     // Check JC Name isn't already in use
-    const name = document.getElementById("name");
+    if(!window.jcEditToken) {
+        const name = document.getElementById("name");
 
-    document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
-        d => {
-            if(d.innerText === name.value) {
-                okay = false;
-                name.classList.add('bad');
-                name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
-                name.title = "The name cannot match an existing journal club's name.";
+        document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
+            d => {
+                if(d.innerText === name.value) {
+                    okay = false;
+                    name.classList.add('bad');
+                    name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+                    name.title = "The name cannot match an existing journal club's name.";
+                }
             }
-        }
-    );
+        );
+    }
 
     return okay;
 }

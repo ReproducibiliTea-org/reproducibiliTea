@@ -1,4 +1,5 @@
 ---
+jcid: fukuoka
 title: Fukuoka 
 host-organisation: Kyushu University 
 host-org-url: http://www.kyushu-u.ac.jp/en/

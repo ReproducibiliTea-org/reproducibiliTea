@@ -1,4 +1,5 @@
 ---
+jcid: genoa
 title: Genoa
 host-organisation: University of Genoa
 host-org-url: https://unige.it/en/

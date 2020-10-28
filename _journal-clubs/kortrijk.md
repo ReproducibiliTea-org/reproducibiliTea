@@ -1,4 +1,5 @@
 ---
+jcid: kortrijk
 
 title: Kortrijk
 

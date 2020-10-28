@@ -1,4 +1,5 @@
 ---
+jcid: cup-at-qub
 title: Cup at QUB
 host-organisation: Queen's University Belfast
 host-org-url: https://www.qub.ac.uk/

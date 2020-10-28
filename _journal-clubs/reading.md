@@ -1,4 +1,5 @@
 ---
+jcid: reading
 title: Reading
 host-organisation: University of Reading
 host-org-url: http://www.reading.ac.uk/

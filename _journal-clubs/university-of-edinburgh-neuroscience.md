@@ -1,5 +1,6 @@
 ---
-title: Edinburgh ReproducibiliTea
+jcid: university-of-edinburgh-neuroscience
+title: Edinburgh
 host-organisation: University of Edinburgh
 host-org-url: https://www.ed.ac.uk/
 osf: kh5px

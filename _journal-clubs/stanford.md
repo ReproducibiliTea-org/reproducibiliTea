@@ -1,4 +1,5 @@
 ---
+jcid: stanford
 title: Stanford
 host-organisation: Stanford University
 host-org-url: 
