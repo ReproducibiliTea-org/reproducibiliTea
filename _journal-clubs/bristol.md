@@ -6,8 +6,8 @@ host-org-url: https://www.bristol.ac.uk/
 website: 
 osf: 9zbcw
 signup:
-organisers: [Katie Drax]
-contact: katie.drax@bristol.ac.uk
+organisers: [Robert Thibault, Katie Drax]
+contact: robert.thibault@bristol.ac.uk
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
 geolocation: [51.4584172, -2.6029792]
@@ -21,7 +21,7 @@ We run an ECR-led weekly journal club open to all staff and students from any di
 
 ## Time & Place
 
-Every other Tuesday, 4-5pm in 5 Priory Road, University of Bristol
+Every other Monday, 4-5pm, via Zoom
 
 ## Format
 
@@ -33,6 +33,6 @@ Everyone is welcome to join us - skeptics and open science enthusiasts alike! We
 
 ## How to join
 
-To join the mailing list please email the club organiser, Katie Drax ( katie.drax@bristol.ac.uk ).
+To join the mailing list please email the club organiser, Robert Thibault (robert.thibault@bristol.ac.uk).
 
 
