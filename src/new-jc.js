@@ -7,6 +7,7 @@ const {
     AUTH_CODE,
     OSF_TOKEN,
     GITHUB_TOKEN,
+    GITHUB_REPO_API,
     ZOTERO_TOKEN,
     SLACK_TOKEN,
     SLACK_LINK,
@@ -602,7 +603,7 @@ async function callGitHub(data, results, editToken = null) {
         details: []
     };
 
-    const url = 'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs';
+    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
     // Check whether a JC file already exists
     try {
@@ -695,6 +696,8 @@ additional-contact: [${data.emails.join(', ')}]
 address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
+last-message-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
+last-message: 1
 last-update: ${editToken.email}
 last-update-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-update-message: >-

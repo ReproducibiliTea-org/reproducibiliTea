@@ -4,7 +4,8 @@ require('dotenv').config();
 
 // Extract .env variables
 const {
-    GITHUB_TOKEN
+    GITHUB_TOKEN,
+    GITHUB_REPO_API
 } = process.env;
 
 /**
@@ -15,7 +16,7 @@ const {
  * @return {Promise<*>}
  */
 exports.handler = async (event, context, callback) => {
-    const url = 'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs';
+    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
     fetch(url, {
         headers: {

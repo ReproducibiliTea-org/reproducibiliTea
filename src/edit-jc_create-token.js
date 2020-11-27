@@ -5,6 +5,7 @@ const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
 const {
+    GITHUB_REPO_API,
     FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
@@ -29,8 +30,9 @@ exports.handler = function(event, context, callback) {
 
     // Check JC exists on GitHub
     fetch(
-        'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs',
-        {headers: {'User-Agent': 'mjaquiery'}})
+        `${GITHUB_REPO_API}/contents/_journal-clubs`,
+        {headers: {'User-Agent': 'mjaquiery'}}
+    )
         .then(r => r.json())
         .then(jcList => {
             for(const jc of jcList) {
@@ -83,7 +85,8 @@ exports.handler = function(event, context, callback) {
         })
         .then(async () => {
             // Email token to user
-            await sendEmail(data.email, data.jcid, token);
+            if(data.email !== "rollcall")
+                await sendEmail(data.email, data.jcid, token);
         })
         .then(()=>{
             callback(null, {
