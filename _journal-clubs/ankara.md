@@ -13,6 +13,8 @@ contact: ilkerdalgar@gmail.com
 address: [Room F410, Başkent University, Department of Psychology, Faculty of Science and Letters, Baglica Campus, Fatih Sultan District, Eskişehir Yolu 18. Km, 06790 Etimesgut, Ankara]
 country: Turkey
 geolocation: [39.93501296038254, 32.860107421875]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 This journal club meets twice every month and discusses selected papers on scientific rigor. An attendee takes the responsibility at each meeting that makes a short summary of the paper and leads the discussion.

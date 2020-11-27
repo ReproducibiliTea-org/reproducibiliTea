@@ -13,6 +13,8 @@ contact: mqsobalab@gmail.com
 address: [Level 3, Australian Hearing Hub, 16 University Avenue, Macquarie University, Sydney NSW 2109]
 country: Australia
 geolocation: [-33.87041555094182, 151.259765625]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 The Sydney branch of RTea is currently based at Macquarie University with primary input from the Departments of Psychology and Cognitive Science. The RTea journal clubs form a key part of the Macquarie Methods and Meta-science meetings (Triple M meetings). The format for triple M meetings is a mixture of RTea journal clubs and talks. 

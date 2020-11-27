@@ -9,6 +9,8 @@ address: [METRIC-B, QUEST, BIH, Charité -- Universitätsmedizin Berlin, Anna-Lo
 osf: sgh7w
 country: Germany
 geolocation: [52.5213794, 13.4028437]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 We meet every Thursday 16:30-17:30, ONLINE for the forseeable future. Get in touch via E-Mail or Twitter! 3 ECTS can be obtained for regular participation. Read the paper and come by for tea and discussion!

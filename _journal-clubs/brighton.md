@@ -15,6 +15,8 @@ additional-contact: []
 address: [University of Brighton, Watson Building, Room 232, Falmer, BN1 9PH]
 country: United Kingdom
 geolocation: [50.86036057501512, -0.08505821228027344]
+last-message-level: 1
+last-message-timestamp: 0
 last-update: z.flack@brighton.ac.uk
 last-update-timestamp: 1603979272
 last-update-message: >-

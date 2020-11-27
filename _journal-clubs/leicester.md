@@ -18,6 +18,8 @@ country: United Kingdom
 osf: he48c
 
 geolocation: [52.6211393, -1.1246325]
+last-message-level: 1
+last-message-timestamp: 0
 
 ---
 

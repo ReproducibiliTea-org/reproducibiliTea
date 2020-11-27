@@ -15,6 +15,8 @@ additional-contact: []
 address: [Engehaldenstr. 4, 3012 Bern]
 country: Switzerland
 geolocation: [46.95385813534361, 7.440367341041565]
+last-message-level: 1
+last-message-timestamp: 0
 last-update: michael.schulte@unibe.ch
 last-update-timestamp: 1603866011
 last-update-message: >-

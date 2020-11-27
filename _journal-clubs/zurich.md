@@ -13,6 +13,8 @@ contact: crs@ebpi.uzh.ch
 address: [University of Zurich, Center for Reproducible Science, Hirschengraben 84, 8001 Zurich, Switzerland]
 country: Switzerland
 geolocation: [47.376031000800445, 8.545426726341248]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 Organized by the Center for Reproducible Science, University of Zurich.

@@ -21,6 +21,8 @@ contact: m.bazhydai@lancaster.ac.uk
 address: [Department of Psychology, Lancaster University, Fylde College, Lancaster, LA1 4YW]
 country: United Kingdom
 geolocation: [54.0087763, -2.7852628]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 Lancaster University's Psychology Department and the PROSPR group (Promoting Open Science Practices) launched the ReproducibiliTea Journal Club in July 2019. We meet twice a month during term time to discuss key papers on open science and reproducibility issues. All are welcome regardless of the experience and career status! 

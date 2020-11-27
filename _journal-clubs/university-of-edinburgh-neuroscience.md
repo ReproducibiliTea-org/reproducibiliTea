@@ -14,6 +14,8 @@ additional-contact: []
 address: [Division of Psychiatry, University of Edinburgh, 7th Floor Kennedy Tower, Royal Edinburgh Hospital, Morningside Park, Edinburgh EH10 5HF]
 country: United Kingdom
 geolocation: [55.92800001097837, -3.2141876220703125]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 Hi all! We are Niamh MacSweeney and Laura Klinkhamer from the Division of Psychiatry at the University of Edinburgh. We will be hosting journal clubs every 3rd Friday of the month on several open research-related topics. To sign up to our mailing list and receive the meeting details, please fill out this google form: https://forms.gle/wqyYWXM8BrLuzi68A

@@ -13,6 +13,8 @@ contact: lampros.bisdounis@ndcn.ox.ac.uk
 address: [Department of Psychiatry, Warneford Hospital, University of Oxford, OX3 7JX, Oxford, UK]
 country: United Kingdom
 geolocation: [51.75034796743534, -1.2221217155456543]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 
 The Reproducibilitea journal club at Oxford Psychiatry is open to all students and staff, enthusiasts and skeptics of open science. Our group will focus primarily on open science in clinical research, and people from all backgrounds and disciplines are welcome to join.

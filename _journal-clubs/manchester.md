@@ -12,6 +12,8 @@ additional-contact: [thomas.richardson@manchester.ac.uk]
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
 geolocation: [53.4663853, -2.2339112]
+last-message-level: 1
+last-message-timestamp: 0
 ---
 **About:**
 The journal club is open to everyone across the the University of Manchester and nearby universities, from any discipline, career stage, or department.

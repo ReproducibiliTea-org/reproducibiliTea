@@ -16,5 +16,7 @@ address: [Faculty of Science, Palacký University Olomouc, 17. listopadu 1192/12
 country: Czech Republic
 
 geolocation: [49.593778, 17.2508787]
+last-message-level: 1
+last-message-timestamp: 0
 
 ---
