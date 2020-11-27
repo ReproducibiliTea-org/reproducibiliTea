@@ -243,6 +243,8 @@ async function processRollCall(JC) {
     );
 
     // Send the email
+    if(JC.newMessageLevel == MESSAGE_LEVELS.JC_DEACTIVATED)
+        JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
     await sendEmail(JC.contactEmails, email.subject, email.body);
 
     // Trigger other actions
