@@ -9,7 +9,7 @@ zotero: KN3NMBWQ
 website: JCUniBern.github.io
 twitter: JCUniBern
 signup: https://forms.gle/8FQzaRFPyQxLZaup6
-organisers: [https://scholar.google.de/citations?user=qdLOuGwAAAAJ&hl=en]
+organisers: ["https://scholar.google.de/citations?user=qdLOuGwAAAAJ&hl=en"]
 contact: michael.schulte@unibe.ch
 additional-contact: []
 address: [Engehaldenstr. 4, 3012 Bern]
