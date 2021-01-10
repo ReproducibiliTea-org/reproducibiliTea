@@ -15,6 +15,6 @@ country: Germany
 geolocation: [49.00918452114394, 8.408902287483215]
 ---
 
-The goal of the journal club is to discuss Open Science and Reproducibility at the Karlsruhe Institute of Technology. We are meeting bi-weekly on Thursdays at 11:15.
+The goal of the journal club is to discuss Open Science and Reproducibility at the Karlsruhe Institute of Technology. We are meeting bi-weekly on Thursdays at 11:15 (online).
 
-Feel free to get in touch if you are interested to participate or contribute.
+The program and structure of the journal club can be found on the OSF repository. If you are interested in participating, just write an email to the organizers. People of all backgrounds are welcome to join!
