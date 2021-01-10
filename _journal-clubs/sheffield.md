@@ -7,7 +7,7 @@ website:
 osf: hgq26
 signup: https://bit.ly/tuosrepro
 organisers: [James Shaw]
-contact: jamesshaw@sheffield.ac.uk 
+contact: js102@zepler.net 
 address: [University of Sheffield, Sheffield S10 2TG]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
