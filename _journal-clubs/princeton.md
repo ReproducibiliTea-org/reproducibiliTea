@@ -16,7 +16,7 @@ address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Pr
 country: United Kingdom
 geolocation: [40.3434371, -74.65227890000001]
 last-update: mtesterman@princeton.edu
-last-update-timestamp: 1610558602
+last-update-timestamp: 1610564639
 last-update-message: >-
   Change name to Princeton-Rutgers ReproducibiliTea, update organizers and information for Spring 2021.
 
@@ -26,9 +26,10 @@ Princeton-Rutgers ReproducibiliTea is organized by Meghan Testerman (Princeton),
 
 The journal club is open to everyone across Princeton and Rutgers University, from any discipline or department.
 
-We meet virtually through Zoom on Wednesdays from 3:00-4:00 p.m. (see the schedule for exact dates)  
+[Spring 2021 Schedule and Readings] (https://drive.google.com/file/d/1LA9h5_lbIpJFrdr69ySLqO3EkrvuVCPz/view?usp=sharing)
 
-Full schedule and readings can be found on our [OSF page](https://osf.io/af4td/).
+Please [register here] (https://libcal.princeton.edu/calendar?cid=12260&t=d&d=0000-00-00&cal=12260&ct=48071&inc=0).
+
 You can also find us on [Twitter](https://twitter.com/Princeton_Tea)
 
 For each session, a volunteer host from the group or a guest from the community will lead a discussion on the week's reading.  
