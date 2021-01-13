@@ -13,10 +13,10 @@ organisers: [Michael Schulte-Mecklenbeck]
 contact: michael.schulte@unibe.ch
 additional-contact: []
 address: [Engehaldenstr. 4, 3012 Bern]
-country: United Kingdom
+country: Switzerland
 geolocation: [46.95385813534361, 7.440367341041565]
 last-update: michael.schulte@unibe.ch
-last-update-timestamp: 1610525836
+last-update-timestamp: 1610526375
 last-update-message: >-
   
 
