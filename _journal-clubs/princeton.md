@@ -1,7 +1,7 @@
 ---
 
 jcid: princeton
-title: Princeton-Rugers
+title: Princeton-Rutgers
 host-organisation: Princeton University
 host-org-url: https://www.princeton.edu/
 osf: af4td
@@ -13,10 +13,10 @@ organisers: [Meghan Testerman, Jesica Kosie, Jason Geller]
 contact: mtesterman@princeton.edu
 additional-contact: []
 address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Princeton, NJ, United States]
-country: United States
+country: United Kingdom
 geolocation: [40.3434371, -74.65227890000001]
 last-update: mtesterman@princeton.edu
-last-update-timestamp: 1610557906
+last-update-timestamp: 1610557951
 last-update-message: >-
   Change name to Princeton-Rutgers ReproducibiliTea, update organizers and information for Spring 2021.
 
