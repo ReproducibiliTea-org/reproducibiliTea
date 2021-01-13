@@ -16,7 +16,7 @@ address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Pr
 country: United Kingdom
 geolocation: [40.3434371, -74.65227890000001]
 last-update: mtesterman@princeton.edu
-last-update-timestamp: 1610557951
+last-update-timestamp: 1610558602
 last-update-message: >-
   Change name to Princeton-Rutgers ReproducibiliTea, update organizers and information for Spring 2021.
 
@@ -24,7 +24,7 @@ last-update-message: >-
 
 Princeton-Rutgers ReproducibiliTea is organized by Meghan Testerman (Princeton), Jessica Kosie (Princeton), and Jason Geller (Rutgers) and is sponsored by the Princeton University Library.
 
-The journal club is open to everyone across Princeton University and Rugers University, from any discipline or department.
+The journal club is open to everyone across Princeton and Rutgers University, from any discipline or department.
 
 We meet virtually through Zoom on Wednesdays from 3:00-4:00 p.m. (see the schedule for exact dates)  
 
