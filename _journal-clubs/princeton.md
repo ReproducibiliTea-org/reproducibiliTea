@@ -13,10 +13,10 @@ organisers: [Meghan Testerman, Jesica Kosie, Jason Geller]
 contact: mtesterman@princeton.edu
 additional-contact: []
 address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Princeton, NJ, United States]
-country: United States
+country: United Kingdom
 geolocation: [40.3434371, -74.65227890000001]
 last-update: mtesterman@princeton.edu
-last-update-timestamp: 1610565033
+last-update-timestamp: 1610565768
 last-update-message: >-
   Change name to Princeton-Rutgers ReproducibiliTea, update organizers and information for Spring 2021.
 
@@ -28,7 +28,7 @@ The journal club is open to everyone across Princeton and Rutgers University, fr
 
 [Spring 2021 Schedule and Readings](https://drive.google.com/file/d/1LA9h5_lbIpJFrdr69ySLqO3EkrvuVCPz/view?usp=sharing)
 
-Please [register here] (https://libcal.princeton.edu/calendar?cid=12260&t=d&d=0000-00-00&cal=12260&ct=48071&inc=0).
+Please [register here](https://libcal.princeton.edu/calendar?cid=12260&t=d&d=0000-00-00&cal=12260&ct=48071&inc=0).
 
 You can also find us on [Twitter](https://twitter.com/Princeton_Tea)
 
