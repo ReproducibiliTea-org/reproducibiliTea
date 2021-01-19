@@ -3,22 +3,22 @@
 jcid: york
 title: York
 host-organisation: University of York
-host-org-url: 
+host-org-url: https://www.york.ac.uk/psychology/research/groups/open-science/
 osf: wz463
 zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Anna Guttesen, Jamie Cockroft, Catia Oliveria]
+organisers: [Anna á Váli Guttesen, Jamie Cockcroft, Cátia Ferreira De Oliveira]
 contact: psychology-reproducibilitea@york.ac.uk
 additional-contact: []
-address: [Heslington, York YO10 5DD]
+address: [Heslington, York , YO10 5DD]
 country: United Kingdom
 geolocation: [53.9485295, -1.0533357]
-last-update: emma.james@york.ac.uk
-last-update-timestamp: 1611059857
+last-update: psychology-reproducibilitea@york.ac.uk
+last-update-timestamp: 1611063448
 last-update-message: >-
-  Update organisers and email address
+  
 
 ---
 
