@@ -1,19 +1,25 @@
 ---
+
 jcid: glasgow
 title: Glasgow
-host-organisation: University of Glasgow
-host-org-url: https://www.gla.ac.uk/
+host-organisation: Glasgow
+host-org-url: 
 osf: qv8jp
 zotero: 9WQVIZBV
 website: https://github.com/annahensch/Glasgow-ReproducibiliTea
-twitter: GlasgowTea
+twitter: https://twitter.com/GlasgowTea
 signup: glasgowreproducibilitea@gmail.com
-organisers: [Stephanie Allan, Anna Henschel]
+organisers: [Rebecca Johnson, Rachel Taylor, Shahrukh Gill]
 contact: glasgowreproducibilitea@gmail.com
-additional-contact: []
-address: [University of Glasgow, Fleming Pavilion, West of Scotland Science Park (Todd Campus), Glasgow, G20 0X]
+additional-contact: [rebecca.johnson@gcu.ac.uk, Rachel.Taylor@strath.ac.uk]
+address: [Rebecca Johnson, Flat 3/2, 103 Cambridge Street , Glasgow , G3 6RU]
 country: United Kingdom
 geolocation: [55.850649874337165, -4.2626953125]
+last-update: glasgowreproducibilitea@gmail.com
+last-update-timestamp: 1611133535
+last-update-message: >-
+  change lead organisers 
+
 ---
 
 We meet once monthly online (currently because of COVID) and ECRs from all disciplines are welcome.
