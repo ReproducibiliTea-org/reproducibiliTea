@@ -13,5 +13,5 @@ The ReproducibiliTea calendar below lists online journal club sessions and event
 
 Interested in *moving your journal club online*? Read our advice for online journal clubs <a href="/online/">here</a>! 
 
-Interested in starting a *new online journal club*? Just as when registering a in-person journal club, get in touch with our organising team over email (amy.orben@cantab.net), and we will get you on our website, Slack and OSF in no time!
+Interested in starting a *new online journal club*? Just as when registering a in-person journal club, get in touch with our organising team over email ({{ site.email }}), and we will get you on our website, Slack and OSF in no time!
 

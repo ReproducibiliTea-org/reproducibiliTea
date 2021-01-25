@@ -34,7 +34,7 @@ Want to join the movement? Grab your cup of (Reproducibili)tea and use our freel
 
 # Definition of a ReproducibiliTea journal club
 
-1. You have emailed ReproducibiliTea (email: amy.orben@cantab.net) registering your club
+1. You have emailed ReproducibiliTea (email: {{ site.email }}) registering your club
 2. Your club examines topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
 
 # Current Journal Clubs

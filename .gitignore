@@ -5,6 +5,8 @@ _site
 src/secret.php
 .env
 node_modules
+_local
+
 # Local Netlify folder
 .netlify
 npm-debug.log
