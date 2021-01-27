@@ -16,14 +16,22 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 
 ## ReproducibiliTeam
 
-The ReproducibiliTea parent organisation is run by a group of ECR volunteers: 
+The ReproducibiliTea parent organisation is run by a Steering Committee of ECR volunteers: 
 
-* Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy): high-level organisation and UKRN liaising
-* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons): podcast production
-* Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli): podcast scheduling and webinars
-* Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery): website design and maintenance
-* Katie Drax [@katiedrax](https://twitter.com/katiedrax): external communications
-* Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering): community building and merchandising
+* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder, Chair)
+* Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli) (Co-founder)
+* Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
+* Katie Drax [@katiedrax](https://twitter.com/katiedrax)
+* Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
+* Jan Vornhagen [@VornhagenJB](https://twitter.com/VornhagenJB)
+* William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
+
+The Steering Committee alumni act as an Advisory Board who can be consulted when necessary.
+The Advisory Board are:
+
+* Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
+* Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy) (Co-founder)
+
 
 ## Podcast
 
