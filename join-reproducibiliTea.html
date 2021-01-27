@@ -183,7 +183,7 @@ layout: default
                         <div class="label-details">
                             <p>This is the address where we'll send the starter pack, including stickers and the famous teapot!</p>
                             <ul>
-                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/{{ site.github_user }}/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
                             </ul>
                         </div>
@@ -513,7 +513,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                             <p>You may add additional email addresses if you like, but as long as one member of your JC gets our emails that is enough.</p>
                             <p><strong>Any email addresses listed here will be able to update the journal club details later.</strong></p>
                             <ul>
-                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/{{ site.github_user }}/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
                             </ul>
                         </div>
@@ -603,7 +603,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 <script>
     /* If we're editing an existing JC, look up the existing values and use them to fill in the field values. */
     async function checkToken() {
-        const gitURL = "https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs";
+        const gitURL = `https://api.github.com/repos/{{ site.github_user }}/reproducibiliTea/contents/_journal-clubs`;
         if(!window.jcEditToken) {
             const match = /[?&]jcEditToken=([^&]*)/g.exec(location.href);
             if (!match)
@@ -623,7 +623,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 else
                     return r.json()
             })
-            .then(token => fetch(`${gitURL}/${token.jcid}.md`, {headers: {'User-Agent': 'mjaquiery'}}))
+            .then(token => fetch(`${gitURL}/${token.jcid}.md`, {headers: {'User-Agent': '{{ site.github_user }}'}}))
             .then(r => {
                 if(r.status !== 200)
                     throw new Error(`Could not find existing GitHub file: ${r.statusText} (${r.status})`);

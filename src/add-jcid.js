@@ -5,7 +5,7 @@ require('dotenv').config();
 // Extract .env variables
 const {
     GITHUB_TOKEN,
-    GITHUB_REPO_API
+    GITHUB_API_USER
 } = process.env;
 
 /**
@@ -16,11 +16,11 @@ const {
  * @return {Promise<*>}
  */
 exports.handler = async (event, context, callback) => {
-    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
+    const url = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
 
     fetch(url, {
         headers: {
-            'User-Agent': 'mjaquiery',
+            'User-Agent': GITHUB_API_USER,
             Authorization: `token ${GITHUB_TOKEN}`
         }
     })
@@ -29,7 +29,7 @@ exports.handler = async (event, context, callback) => {
             for(const jc of json) {
                 await fetch(`${url}/${encodeURI(jc.name)}`, {
                     headers: {
-                        'User-Agent': 'mjaquiery',
+                        'User-Agent': GITHUB_API_USER,
                         Authorization: `token ${GITHUB_TOKEN}`
                     }
                 })
@@ -54,7 +54,7 @@ exports.handler = async (event, context, callback) => {
                             await fetch(`${url}/${encodeURI(jc.name)}`, {
                                 method: 'PUT',
                                 headers: {
-                                    'User-Agent': 'mjaquiery',
+                                    'User-Agent': GITHUB_API_USER,
                                     Authorization: `token ${GITHUB_TOKEN}`,
                                     'Content-Type': 'application/json',
                                     'Content-Length': payload.length

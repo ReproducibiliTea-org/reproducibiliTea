@@ -4,9 +4,9 @@ require('dotenv').config();
 const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
-const {GITHUB_REPO_API, FAUNA_KEY} = process.env;
+const {FAUNA_KEY, GITHUB_API_USER} = process.env;
 
-const URL = `${GITHUB_REPO_API}/contents/_journal-clubs`;
+const URL = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
 
 exports.handler = function(event, context, callback) {
     // Check input

@@ -3,7 +3,7 @@ jcid: amsterdam-vu
 title: Amsterdam VU
 host-organisation: Vrije Universiteit Amsterdam (VU)
 host-org-url: https://www.vu.nl/en
-osf: dbe84
+osf: gjb6u
 zotero: KXD3DP6P
 website: 
 twitter: 

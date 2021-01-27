@@ -1,4 +1,5 @@
 ---
+
 jcid: bi-oslo
 title: BI Oslo
 host-organisation: BI Norwegian Business School
@@ -16,10 +17,14 @@ country: Norway
 geolocation: [59.94856358048637, 10.768575668334961]
 last-message-level: 1
 last-message-timestamp: 0
+last-update: lewend.mayiwar@bi.no
+last-update-timestamp: 1611587708
+last-update-message: >-
+  Update information about BI Oslo journal club on the ReproducibiliTea website.
 
 ---
 
-**About us:** This journal club is organized by two PhD candidates at BI Norwegian Business School, Department of Leadership and Organizational Behavior. The journal club is open to everyone at BI Norwegian Business School, staff and students, across departments (and campuses). Everyone is welcome to join us - whether you are an enthusiast, skeptic, or a cautious explorer. We plan to kick off our journal club this May. Feel free to get in touch if you are interested to participate or contribute!
+**About us:** We are excited to bring the first ReproducibiliTea journal club to Norway! We are two PhD candidates at BI Norwegian Business School (Department of Leadership and Organizational Behavior) organizing this journal club together. The journal club is open to everyone at BI Norwegian Business School, staff and students, across departments (and campuses). Everyone is welcome to join us - whether you are an enthusiast, skeptic, or a cautious explorer. Feel free to get in touch if you are interested to participate or contribute!
 
 **Our mission:**
 *	provide an informal and friendly platform for discussions about open science and reproducibility
@@ -28,5 +33,4 @@ last-message-timestamp: 0
 
 **Format:** Before each meeting, we read an article on open science practices and methods in general, which we then discuss during the meeting. At each meeting, a different presenter will begin by providing a short overview of the paper and facilitate discussion throughout the meeting. Anyone can propose a possible paper or topic to present if we have not covered it already. Grab a cup of tea (coffee?) and join us! Due to the current pandemic, all sessions will be held online (Zoom) for the time being.
 
-Follow us on Twitter! 
-
+Follow us on Twitter!
