@@ -4,11 +4,21 @@ require('dotenv').config();
 const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
-const {FAUNA_KEY, GITHUB_API_USER} = process.env;
+const {FAUNA_KEY} = process.env;
 
-const URL = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
+let {GITHUB_REPO_API} = process.env;
+
+const URL = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
 exports.handler = function(event, context, callback) {
+    // Switch to Sandbox mode if we're on the sandbox account
+    if(/(sandbox|localhost)/.test(event.headers.referer) ||
+        event.headers.sandbox === 'true') {
+        const {GITHUB_REPO_API_SANDBOX} = process.env;
+
+        GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
+    }
+
     // Check input
     let token = null;
     const data = JSON.parse(event.body);
@@ -27,17 +37,20 @@ exports.handler = function(event, context, callback) {
         // Check the token we've been supplied against the tokens
         // Return the token data if it matches
         .then(r => {
+            let tokenOK = false;
             r.data.forEach(x => {
                 if(x.data.token === data.token) {
                     if(!x.data.expires || x.data.expires < new Date())
                         throw new Error('The token has expired.');
+                    tokenOK = true;
                     return callback(null, {
                         statusCode: 200,
                         body: JSON.stringify(x.data)
                     });
                 }
             });
-            throw new Error('No matching token found.')
+            if(!tokenOK)
+                throw new Error('No matching token found.')
         })
         .catch(e => callback(e));
 };

@@ -13,7 +13,21 @@ const {
     FROM_EMAIL_ADDRESS
 } = process.env;
 
+let {
+    GITHUB_API_USER,
+    GITHUB_REPO_API
+} = process.env;
+
 exports.handler = function(event, context, callback) {
+    // Switch to Sandbox mode if we're on the sandbox account
+    if(/(sandbox|localhost)/.test(event.headers.referer)) {
+        const {GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
+            process.env;
+
+        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
+        GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
+    }
+
     // Check input
     const data = JSON.parse(event.body);
     if(data.email)
@@ -30,7 +44,7 @@ exports.handler = function(event, context, callback) {
 
     // Check JC exists on GitHub
     fetch(
-        `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`,
+        `${GITHUB_REPO_API}/contents/_journal-clubs`,
         {headers: {'User-Agent': GITHUB_API_USER}})
         .then(r => r.json())
         .then(jcList => {
