@@ -3,9 +3,10 @@ const fetch = require("node-fetch");
 require('dotenv').config();
 
 // Extract .env variables
-const {
+let {
     GITHUB_TOKEN,
-    GITHUB_API_USER
+    GITHUB_API_USER,
+    GITHUB_REPO_API
 } = process.env;
 
 /**
@@ -16,7 +17,17 @@ const {
  * @return {Promise<*>}
  */
 exports.handler = async (event, context, callback) => {
-    const url = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
+    // Switch to Sandbox mode if we're on the sandbox account
+    if(/(sandbox|localhost)/.test(event.headers.referer)) {
+        const {GITHUB_TOKEN_SANDBOX, GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
+            process.env;
+
+        GITHUB_TOKEN = GITHUB_TOKEN_SANDBOX;
+        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
+        GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
+    }
+
+    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
     fetch(url, {
         headers: {

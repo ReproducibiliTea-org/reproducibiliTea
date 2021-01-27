@@ -6,8 +6,6 @@ require('dotenv').config();
 const {
     AUTH_CODE,
     OSF_TOKEN,
-    GITHUB_TOKEN,
-    GITHUB_API_USER,
     ZOTERO_TOKEN,
     SLACK_TOKEN,
     SLACK_LINK,
@@ -17,6 +15,13 @@ const {
     MAILGUN_HOST,
     FROM_EMAIL_ADDRESS
 } = process.env;
+
+let {
+    GITHUB_TOKEN,
+    GITHUB_API_USER,
+    GITHUB_REPO_API
+} = process.env;
+
 
 
 const OPTIONAL_FIELDS = [
@@ -32,6 +37,17 @@ const REQUIRED_FIELDS = [
 exports.handler = async (event, context, callback) => {
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { 'Allow': 'POST' } }
+    }
+
+    const sandbox = /(sandbox|localhost)/.test(event.headers.referer);
+    // Switch to Sandbox mode if we're on the sandbox account
+    if(sandbox) {
+        const {GITHUB_TOKEN_SANDBOX, GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
+            process.env;
+
+        GITHUB_TOKEN = GITHUB_TOKEN_SANDBOX;
+        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
+        GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 
     let data = {};
@@ -52,7 +68,8 @@ exports.handler = async (event, context, callback) => {
         // Check authorisation to edit
         editToken = await fetch(`${event.headers.origin}/.netlify/functions/edit-jc_check-token`, {
             method: 'POST',
-            body: token
+            body: token,
+            headers: {sandbox: sandbox}
         })
             .then(r => {
                 if(r.status !== 200)
@@ -603,7 +620,7 @@ async function callGitHub(data, results, editToken = null) {
         details: []
     };
 
-    const url = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
+    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
     // Check whether a JC file already exists
     try {
