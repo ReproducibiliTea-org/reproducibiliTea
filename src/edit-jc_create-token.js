@@ -29,8 +29,8 @@ exports.handler = function(event, context, callback) {
 
     // Check JC exists on GitHub
     fetch(
-        'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs',
-        {headers: {'User-Agent': 'mjaquiery'}})
+        `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`,
+        {headers: {'User-Agent': GITHUB_API_USER}})
         .then(r => r.json())
         .then(jcList => {
             for(const jc of jcList) {

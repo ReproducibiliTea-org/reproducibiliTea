@@ -7,6 +7,7 @@ const {
     AUTH_CODE,
     OSF_TOKEN,
     GITHUB_TOKEN,
+    GITHUB_API_USER,
     ZOTERO_TOKEN,
     SLACK_TOKEN,
     SLACK_LINK,
@@ -602,14 +603,14 @@ async function callGitHub(data, results, editToken = null) {
         details: []
     };
 
-    const url = 'https://api.github.com/repos/mjaquiery/reproducibiliTea/contents/_journal-clubs';
+    const url = `https://api.github.com/repos/${GITHUB_API_USER}/reproducibiliTea/contents/_journal-clubs`;
 
     // Check whether a JC file already exists
     try {
         const call = await fetch(url,
             {
                 headers: {
-                    'User-Agent': 'mjaquiery'
+                    'User-Agent': GITHUB_API_USER
                 }
             });
         if(!call.ok) {
@@ -631,7 +632,7 @@ async function callGitHub(data, results, editToken = null) {
                     // Also get the sha1 because we'll need it later
                     await fetch(`${url}/${encodeURI(jc.name)}`, {
                         headers: {
-                            'User-Agent': 'mjaquiery',
+                            'User-Agent': GITHUB_API_USER,
                             Authorization: `token ${GITHUB_TOKEN}`
                         }
                     })
@@ -725,7 +726,7 @@ ${editToken.message}`,
             {
                 method: 'PUT',
                 headers: {
-                    'User-Agent': 'mjaquiery',
+                    'User-Agent': GITHUB_API_USER,
                     Authorization: `token ${GITHUB_TOKEN}`,
                     'Content-Type': 'application/json',
                     'Content-Length': content.length
