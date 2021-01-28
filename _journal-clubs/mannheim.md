@@ -12,11 +12,11 @@ signup:
 organisers: [Juli Tkotz, Alexander Wuttke]
 contact: juliane.tkotz@zi-mannheim.de
 additional-contact: []
-address: [Juli Tkotz, Zentralinstitut fÃ¼r Seelische Gesundheit, J5 Forschungs- und VerwaltungsgebÃ¤ude, Dep. Klinische Psychologie, Room 333, 68159 Mannheim, Germany]
-country: Germany
+address: [Juli Tkotz, Zentralinstitut fÃÂ¼r Seelische Gesundheit, J5 Forschungs- und VerwaltungsgebÃÂ¤ude, Dep. Klinische Psychologie, Room 333, 68159 Mannheim, Germany]
+country: United Kingdom
 geolocation: [49.492793033169804, 8.46544861793518]
 last-update: juliane.tkotz@zi-mannheim.de
-last-update-timestamp: 1605776475
+last-update-timestamp: 1611849098
 last-update-message: >-
   This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bringing together open science enthusiasts across various institutions in Mannheim. Find us on Twitter @MAOpenScience
   
@@ -30,4 +30,6 @@ This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bring
 
 As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings will be held monthly. Being "born" during the pandemic, we don't have a real life meeting location (yet!).
 
-Our first meeting will take place on December 8th 2020, 17:00 GMT +1. Email us for the link!
+Our next meeting will take place on February 10th 2021, 17:30 GMT +1 and will be about Daniel Laken's recent preprint on Sample Size Justification. https://doi.org/10.31234/osf.io/9d3yf
+
+Email us for the link to join!
