@@ -147,7 +147,7 @@ function checkForm(e, allowEmpty = false) {
     }
 
     // Warn if they have 'reproducibilitea' in the name field
-    elm = form.querySelector('#name');
+    let elm = form.querySelector('#name');
     if(/ReproducibiliTea/i.test(elm.value)) {
         markBad(elm, "Please do not include 'ReproducibiliTea' in your JC name!")
     }
@@ -167,6 +167,12 @@ function checkForm(e, allowEmpty = false) {
         markBad(elm, "Field contains invalid characters.");
     }
 
+    elm = form.querySelector('#osf');
+    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+        elm.value) {
+        okay = false;
+        markBad(elm, "Field contains invalid characters.");
+    }
 
     elm = form.querySelector('#zoteroUser');
     if(elm && !/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {

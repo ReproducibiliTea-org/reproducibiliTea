@@ -151,9 +151,9 @@ function cleanData(data) {
     // Remove the unnecessary bits of the OSF user input
     if(data.osf && data.osf.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
-            .exec(data.osfUser);
+            .exec(data.osf);
         if(match)
-            data.osfUser = match[1];
+            data.osf = match[1];
     }
     if(data.osfUser && data.osfUser.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
