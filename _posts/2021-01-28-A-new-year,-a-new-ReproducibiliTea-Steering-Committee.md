@@ -7,8 +7,6 @@ categories: [JC]
 tags: [Steering Committee]
 ---
 
-{% include image.html url="blog/helena_QRPs.png" alt="Helena Gellersen presents to ReproducibiliTea" description="Helena Gellersen presenting at a ReproducibiliTea Cambridge journal club session." %}
-
 ReproducibiliTea is a grassroots initiative, largely led by ECRs. 
 ReproducibiliTea is evolving worldwide, and our steering committee needs to as well. 
 In 2020, we set out plans for rotating the steering committee and posted a [call for applications]({{ "/posts/#ReproducibiliTea Steering Committee Application Announcement" | relative_url }}) in December 2020. 
@@ -60,12 +58,13 @@ She is deputy lead at the University of Bristol Reproducibility, and is responsi
 In our [call for applications]({{ "/posts/#ReproducibiliTea Steering Committee Application Announcement" | relative_url }}), We asked applicants to submit their CV, a cover letter and 100 words on how they thought ReproducibiliTea could improve in the next two years. We received six applications for steering committee positions, and one for the steering committee chair position. 
 
 The selection process looked like this:
-We separately read each application and marked whether we felt the candidate demonstrated each of our selection criteria - the applications were not blinded. 
-We then met as a group and collated these ratings. 
+
+1. We separately read each application and marked whether we felt the candidate demonstrated each of our selection criteria - the applications were not blinded. 
+2. We then met as a group and collated these ratings. 
 We discussed any differences until we came to a consensus. 
-We discussed each applicant’s 100 word statement on how ReproducibiliTea can be improved. 
+3. We discussed each applicant’s 100 word statement on how ReproducibiliTea can be improved. 
 We felt it was the most useful as an insight into each applicant’s unique perspective on where ReproducibiliTea can grow and best support our members. 
-Finally, we collated the scores and notes on each candidate and decided to invite three candidates to fill positions on the steering committee. 
+4. Finally, we collated the scores and notes on each candidate and decided to invite three candidates to fill positions on the steering committee. 
 
 Every application was impressive, and we are not merely paying lip service to say that the selection process was difficult. 
 It gave us all cause to reflect on how we can improve the process. 
