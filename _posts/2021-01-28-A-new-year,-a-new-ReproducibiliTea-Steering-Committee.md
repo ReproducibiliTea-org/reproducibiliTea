@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A new year, a new ReproducibiliTea Steering Committee!"
-date:   2021-01-28 18:00:27 +0000
+date:   2021-01-28 14:00:27 +0000
 author: Sam Parsons
 categories: [JC]
 tags: [Steering Committee]
