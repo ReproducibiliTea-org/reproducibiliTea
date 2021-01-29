@@ -1,23 +1,24 @@
 ---
+
 jcid: leicester
-
-title: Leicester 
-
-host-organisation: University of Leicester 
-
-host-org-url: https://www.le.ac.uk/ 
-
-organisers: [Samantha Tyler, Tami Kalsi] 
-
-contact: slt47@le.ac.uk 
-
-address: [Department of Neuroscience, Psychology and Behaviour, University of Leicester, University Road, LE1 7RH, Leicester] 
-
-country: United Kingdom
-
+title: Leicester
+host-organisation: University of Leicester
+host-org-url: https://www.le.ac.uk/
 osf: he48c
-
+zotero: null
+website: 
+twitter: 
+signup: 
+organisers: [Samantha Tyler, Tami Kalsi, Brendan O'Connor]
+contact: slt47@le.ac.uk
+additional-contact: []
+address: [Department of Neuroscience, Psychology and Behaviour, University of Leicester, University Road, LE1 7RH, Leicester]]
+country: United Kingdom
 geolocation: [52.6211393, -1.1246325]
+last-update: slt47@le.ac.uk
+last-update-timestamp: 1611914967
+last-update-message: >-
+  Testing token generator.
 
 ---
 
