@@ -60,6 +60,7 @@ exports.handler = async (event, context, callback) => {
     let editToken = null;
     if(token) {
         // Check authorisation to edit
+        console.log(`Checking token ${token}`)
         editToken = await fetch(`${event.headers.origin}/.netlify/functions/edit-jc_check-token`, {
             method: 'POST',
             body: token,
@@ -615,6 +616,7 @@ async function callGitHub(data, results, editToken = null) {
     };
 
     const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
+    console.log(`Accessing github via: ${url}`);
 
     // Check whether a JC file already exists
     try {
