@@ -13,15 +13,12 @@ const {
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
     MAILGUN_HOST,
+    GITHUB_TOKEN,
+    GITHUB_API_USER,
     FROM_EMAIL_ADDRESS
 } = process.env;
 
-let {
-    GITHUB_TOKEN,
-    GITHUB_API_USER,
-    GITHUB_REPO_API
-} = process.env;
-
+let {GITHUB_REPO_API} = process.env;
 
 
 const OPTIONAL_FIELDS = [
@@ -42,11 +39,8 @@ exports.handler = async (event, context, callback) => {
     const sandbox = /(sandbox|localhost)/.test(event.headers.referer);
     // Switch to Sandbox mode if we're on the sandbox account
     if(sandbox) {
-        const {GITHUB_TOKEN_SANDBOX, GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
-            process.env;
+        const {GITHUB_REPO_API_SANDBOX} = process.env;
 
-        GITHUB_TOKEN = GITHUB_TOKEN_SANDBOX;
-        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
         GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 

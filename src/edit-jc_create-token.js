@@ -9,21 +9,18 @@ const {
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
     MAILGUN_HOST,
+    GITHUB_API_USER,
     FROM_EMAIL_ADDRESS
 } = process.env;
 
-let {
-    GITHUB_API_USER,
-    GITHUB_REPO_API
-} = process.env;
+let {GITHUB_REPO_API} = process.env;
 
 exports.handler = function(event, context, callback) {
     // Switch to Sandbox mode if we're on the sandbox account
-    if(/(sandbox|localhost)/.test(event.headers.referer)) {
-        const {GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
-            process.env;
+    const sandbox = /(sandbox|localhost)/.test(event.headers.referer);
+    if(sandbox) {
+        const {GITHUB_REPO_API_SANDBOX} = process.env;
 
-        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
         GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 
@@ -96,8 +93,10 @@ exports.handler = function(event, context, callback) {
             )
         })
         .then(async () => {
+            console.log(`Saved token ${token}`);
             // Email token to user
-            await sendEmail(data.email, data.jcid, token);
+            if(!sandbox)
+                await sendEmail(data.email, data.jcid, token);
         })
         .then(()=>{
             callback(null, {
@@ -105,7 +104,7 @@ exports.handler = function(event, context, callback) {
                 body: 'Token created successfully.'
             });
         })
-        .catch(e => callback(e));
+        .catch(e => {console.log(`Token generator error: ${e}`); callback(e)});
 };
 
 /**
