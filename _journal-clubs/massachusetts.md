@@ -10,15 +10,15 @@ website:
 twitter: 
 signup: https://forms.gle/sonGLSUbQTwZG9BAA
 organisers: [Ashley Neville]
-contact: fishbeia@simmons.edu
+contact: MAReproducibiliTea@gmail.com
 additional-contact: []
 address: [97 Federal Street, Northampton, MA 01062]
-country: United States
+country: United Kingdom
 geolocation: [42.36260292171999, -71.0540771484375]
 last-update: fishbeia@simmons.edu
-last-update-timestamp: 1611937417
+last-update-timestamp: 1611966923
 last-update-message: >-
-  API creation of massachusetts.md
+  Change email
 
 ---
 
