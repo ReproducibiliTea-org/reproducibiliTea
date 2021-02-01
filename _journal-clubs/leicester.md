@@ -16,12 +16,12 @@ address: [Department of Neuroscience, Psychology and Behaviour, University of Le
 country: United Kingdom
 geolocation: [52.6211393, -1.1246325]
 last-update: slt47@le.ac.uk
-last-update-timestamp: 1611914967
+last-update-timestamp: 1612178601
 last-update-message: >-
   Testing token generator.
 
 ---
 
-The journal club was set up in September 2019 for early career researchers in the vision and language research group of the University of Leicester, but everyone is welcome!  We get together (with tea, coffee and cake!) to discuss interesting journal articles and discuss topics like open science, replicability in research, pre-registration and data sharing, among others. 
+ReproducibiliTea Leicester is for anyone who wants to learn more about reproducible research and open science practices in the Department of Neuroscience, Psychology and Behaviour at the University of Leicester, but other departments are also welcome!  We get together (with tea, coffee and cake!) once a month to discuss interesting journal articles about topics relating to open science, replicability in research, pre-registration and data sharing, among others. It doesn’t matter if you’re an undergrad, professor, beginner or expert – everyone is welcome!
 
-We meet every other Tuesday from 11am - 12pm in the George Davies Centre. Meeting details are circulated every week via email so if you are interested email me ([slt47@le.ac.uk](mailto:slt47@le.ac.uk)) and I will add you to the mailing list.
+Meeting details are circulated via email so if you are interested, email Sammie (slt47@le.ac.uk) or Brendan (btoc1@le.ac.uk) and you will be added to the mailing list.
