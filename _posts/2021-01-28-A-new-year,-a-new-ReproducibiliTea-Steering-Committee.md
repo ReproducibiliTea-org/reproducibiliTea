@@ -18,13 +18,19 @@ Jan Vornhagen [@VornhagenJB](https://twitter.com/VornhagenJB)
 
 Jan is a cognitive Psychologist and Doctoral Candidate in Computer Science at the AERIS Lab - Aalto University, Finland - where he also runs the local, HCI-focused RTea chapter
 
+{% include image.html url="blog/jan.png" alt="Jan Vornhagen" description="" %}
+
 Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
 
 Alexa is currently a postdoc in the field of school psychology at Goethe University Frankfurt in Germany. Alexa first started with ReproT Singapore last year, but am now contributing to Frankfurt ReproT.
 
+{% include image.html url="blog/alexa.png" alt="Alexa von Hagen" description="" %}
+
 William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
 
 William is a postdoc in the Department of Psychology at the University of Chicago, where he started and co-organizes the ReproducibiliTea journal club!
+
+{% include image.html url="blog/william.png" alt="William Ngiam" description="" %}
 
 **And, our new committee chair:**
 
@@ -34,6 +40,8 @@ Sam replaces Amy Orben as the chair of the steering committee.
 He is a Postdoctoral Research Associate in Experimental Psychology at the University of Oxford. 
 He started ReproducibiliTea with Sophia and Amy, and also founded the Framework for Open and Reproducible Research Training (FORRT) project. 
 
+{% include image.html url="blog/sam.png" alt="Sam Parsons" description="" %}
+
 **And, give a ‘welcome back’ to our returning members:**
 
 Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
@@ -41,17 +49,21 @@ Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
 Matt is an Oxford DPhil student on secondment to the UKRN as Coordinator for Open Research Training. 
 He manages the Oxford Experimental Psychology ReproducibiliTea and does a bunch of technical stuff for the core organisation.
 
+{% include image.html url="blog/matt.png" alt="Matt Jaquiery" description="" %}
+
 Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli)
 
 Sophia is a PhD student in Philosophy of Science at the University of Cambridge, working on conceptual issues of the replication crisis and also working on empirical metaresearch projects with METRIC-B in Berlin.
 Sophia started the ReproducibiliTea journal clubs at Oxford (with Sam & Amy), Amsterdam (with Angelika Stefan & Florian Wanders), and Berlin (with Corinna Hartling).
 
+{% include image.html url="blog/sophia.png" alt="Sophia Crüwell" description="" %}
 
 Katie Drax [@katiedrax](https://twitter.com/katiedrax)
 
 Katie is a third year PhD student in metaresearch at the University of Bristol. 
 She is deputy lead at the University of Bristol Reproducibility, and is responsible for the ReproducibiliTea blog.  
 
+{% include image.html url="blog/katie.png" alt="Katie Drax" description="" %}
 
 # Reflections
 
