@@ -1,4 +1,5 @@
 ---
+jcid: singapore
 
 title: Singapore 
 
@@ -14,6 +15,8 @@ contact: alexa.vonhagen@nie.edu.sg
 
 address: [National Institute of Education, Centre for Research in Child Development, NIE5-B3-WS62, 1 Nanyang Walk, 637616]
 country: Singapore
+
+geolocation: [1.3490609, 103.6788608]
 
 osf: y7c5p
 

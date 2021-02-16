@@ -1,0 +1,57 @@
+$static: black;
+$rec: red;
+#resource-list {
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+  }
+}
+.item {
+  border: 2px solid var(--color-rpt-primary);
+  box-shadow: 2px 2px var(--color-rpt-secondary);
+  border-radius: 1em;
+  padding: 1em;
+  margin: .5em;
+  width: min-content;
+  height: min-content;
+  header {width: max-content;}
+  div {padding: .25em 0;}
+  div:last-of-type {padding-bottom: 0}
+  .topic {
+    margin: -1em 0 0 0;
+    text-align: right;
+    color: lightgrey;
+    text-transform: uppercase;
+  }
+  .title {
+    position: relative;
+    width: max-content;
+    padding: 0 1em;
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: .5em;
+      width: .5em;
+      border-width: 0.1em;
+      border-style: solid;
+      border-radius: 100%;
+      border-color: transparent;
+      @at-root .topic.static::after {background-color: $static; border-color: $static}
+      @at-root .topic.live::after {background-color: $rec; border-color: $rec}
+      @at-root .topic.recorded::after {background-color: white; border-color: $rec}
+    }
+  }
+  .author {text-align: center;}
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .contact {text-align: right; font-style: italic;}
+}

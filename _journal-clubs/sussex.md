@@ -1,4 +1,5 @@
 ---
+jcid: sussex
 title: Sussex
 host-organisation: University of Sussex
 host-org-url: https://www.sussex.ac.uk/
@@ -11,6 +12,7 @@ organisers: [Sussex Open Science]
 contact: openscience@sussex.ac.uk 
 address: [Pevensey Building, University of Sussex, Falmer, East Sussex, BN1 9GH]
 country: United Kingdom
+geolocation: [50.8657409, -0.0856661]
 ---
 
 Sussex Open Science (SOS) hosts various activities over tea and biscuits including a journal club (ReproducibiliTea), methods workshops, and SOS clinic to help students apply the principles of open science to their own research. 

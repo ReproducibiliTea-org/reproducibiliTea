@@ -1,4 +1,5 @@
 ---
+jcid: taipei
 
 title: Taipei 
 
@@ -14,7 +15,7 @@ contact: parfenova.ev.2610@gmail.com
 address: [Graduate Institute of Mind, Brain and Consciousness, Taipei Medical University, 172-1 Keelung Road Section 2, 106, Taipei, Taiwan]
 
 country: Taiwan
-
+geolocation: [25.0253584, 121.5616235]
 ---
 
 **About us**

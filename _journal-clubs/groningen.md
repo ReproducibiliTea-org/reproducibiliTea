@@ -1,4 +1,5 @@
 ---
+jcid: groningen
 title: Groningen
 host-organisation: University of Groningen
 host-org-url: https://www.rug.nl 
@@ -8,6 +9,7 @@ twitter account: GroningenTea
 address: [ICPE, in-house postalcode 72, University Medical Center Groningen, Hanzeplein 1, 9713GZ, Groningen]
 osf: f6brg
 country: Netherlands
+geolocation: [53.220974, 6.577026099999999]
 ---
 
 The ReproducibiliTea Groningen aims to 

@@ -1,4 +1,5 @@
 ---
+jcid: växjö-kalmar
 
 title: Växjö-Kalmar 
 
@@ -16,6 +17,8 @@ contact: thomas.nordstrom@lnu.se
 address: [Department of psychology, Linnaeus University, Universitetsplatsen 1, 35252, Växjö]
 
 country: Sweden
+
+geolocation: [56.8544846, 14.8300257]
 
 ---
 

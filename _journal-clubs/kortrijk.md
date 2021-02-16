@@ -1,4 +1,5 @@
 ---
+jcid: kortrijk
 
 title: Kortrijk
 
@@ -14,6 +15,8 @@ contact: ana.barbosamendes@kuleuven.be
 address: [Faculty of Psychology and Educational Sciences, KULAK, Etienne Sabbelaan 51, 8500, Kortrijk] 
 
 country: Belgium
+
+geolocation: [50.80707289999999, 3.292819]
 
 ---
 

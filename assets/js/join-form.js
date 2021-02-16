@@ -3,33 +3,89 @@
  */
 
 /**
+ * Let the user stick a pin in Google Maps and fetch the geolocation of the pin
+ * @param e {Event}
+ */
+function geolocate(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.add('active');
+    return false;
+}
+
+/**
+ * Close the map and go back to the form
+ * @param e {Event}
+ */
+function setGeolocation(e) {
+    e.preventDefault();
+    document.querySelector('#geolocation-map').classList.remove('active');
+    return false;
+}
+
+/**
+ * Update the geolocation field when the postal address is updated
+ */
+function geolocateAddress() {
+    const address = document.getElementById('post');
+    const addr = address.value.replace(/\s/g, '+');
+    const input = document.getElementById('geolocation');
+    const key = document.getElementById('APIkeys').dataset.maps;
+
+    // Try to fetch the address
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+        .then(r => r.json())
+        .then(j => {
+            if(!j.results ||
+                !j.results[0] ||
+                !j.results[0].geometry ||
+                !j.results[0].geometry.location)
+                throw "No geometry or geometry.location in response.";
+            input.value = `${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}`;
+        })
+        .catch(
+            (err) => {
+                console.warn(`Failed to geolocate ${addr}: ${err}`);
+                input.placeholder = "Use button to locate >>";
+            }
+        )
+}
+
+/**
  * Add a new organiser field below the current latest one
- * @param e {Event} button click event
+ * @param e {Event|HTMLElement|Element} button click event or element clicked on
  * @return {boolean}
  */
-function addNewOrganiser(e) {
-    const lastOrganiser = document.querySelector('#newJC .JC-organisers .organisers input:last-of-type');
+function addNewEntry(e) {
+    let last;
+    if(e instanceof Event) {
+        // no submit action
+        e.preventDefault();
+        last = e.target.parentElement.querySelector('input:last-of-type');
+    }
+    else
+        last = e;
+
+    const button = last.parentElement.querySelector('button');
 
     let id = -1;
 
-    if(lastOrganiser.name !== 'lead') {
-        // Find the ID of the latest organiser
-        const regex = /helper([0-9]+)/.exec(lastOrganiser.id);
+    // Check whether the previous entry ends in a number
+    if(/[0-9]+$/.test(last.name)) {
+        // Find the ID of the latest entry
+        const regex = /([0-9]+$)/.exec(last.id);
         if(regex[1])
             id = parseInt(regex[1]);
     }
 
-    let newOrganiser = document.createElement('input');
-    newOrganiser.type = 'text';
-    newOrganiser.classList.add('optional');
-    newOrganiser.id = 'helper' + (id + 1);
-    newOrganiser.name = newOrganiser.id;
-    newOrganiser.placeholder = 'Helper #' + (id + 2);
+    let newEntry = document.createElement('input');
+    newEntry.type = 'text';
+    newEntry.classList.add('optional');
+    newEntry.id = button.dataset.fieldId + (id + 1);
+    newEntry.name = newEntry.id;
+    newEntry.placeholder = button.dataset.fieldPlaceholder + ' #' + (id + 2);
 
-    lastOrganiser.parentElement.insertBefore(newOrganiser, lastOrganiser.nextSibling);
+    last.parentElement.insertBefore(newEntry, last.nextSibling);
 
-    // no submit action
-    e.preventDefault();
     return false;
 }
 
@@ -47,6 +103,12 @@ function checkForm(e, allowEmpty = false) {
     } else {
         form = e;
     }
+
+    // All form entries lose starting and trailing spaces
+    form.querySelectorAll('input').forEach(e => {
+        e.value = e.value.replace(/^ +/, '');
+        e.value = e.value.replace(/ +$/, '');
+    });
 
     let okay = true;
 
@@ -70,16 +132,18 @@ function checkForm(e, allowEmpty = false) {
                 okay = false;
                 markBad(e, "This field is required.");
             }
-    });
+        });
 
     // Mark OSFuser obsolete if OSF is complete
-    let elm = document.querySelector('#osfUser').closest('.row');
-    if(document.querySelector('#osf').value != "") {
-        elm.classList.add('obsolete');
-        elm.title = "This field is unavailable when a custom OSF repository has been supplied."
-    } else {
-        elm.classList.remove('obsolete');
-        elm.title = "";
+    if(!window.jcEditToken) {
+        let elm = document.querySelector('#osfUser').closest('.row');
+        if(document.querySelector('#osf').value != "") {
+            elm.classList.add('obsolete');
+            elm.title = "This field is unavailable when a custom OSF repository has been supplied."
+        } else {
+            elm.classList.remove('obsolete');
+            elm.title = "";
+        }
     }
 
     // Warn if they have 'reproducibilitea' in the name field
@@ -96,15 +160,16 @@ function checkForm(e, allowEmpty = false) {
     }
 
     elm = form.querySelector('#osfUser');
-    if(!/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
+    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
         elm.value &&
         !elm.classList.contains('obsolete')) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
 
+
     elm = form.querySelector('#zoteroUser');
-    if(!/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
+    if(elm && !/^\s*[0-9]+\s*$/i.test(elm.value) && !(!elm.value)) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }
@@ -115,19 +180,37 @@ function checkForm(e, allowEmpty = false) {
         markBad(elm, "Field does not appear to be a well-formed email address.");
     }
 
-    // Check JC Name isn't already in use
-    const name = document.getElementById("name");
-
-    document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
-        d => {
-            if(d.innerText === name.value) {
-                okay = false;
-                name.classList.add('bad');
-                name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
-                name.title = "The name cannot match an existing journal club's name.";
-            }
+    // additional emails
+    form.querySelectorAll('.emails input.optional').forEach(e => {
+        if(!/\S+@\S+/i.test(e.value) && e.value) {
+            okay = false;
+            markBad(e, "Field does not appear to be a well-formed email address.");
         }
-    );
+    });
+
+    elm = form.querySelector('#geolocation');
+    let d = elm.value.split(',');
+    d = d.map(a => parseFloat(a));
+    if(!d || d.length !== 2 || !d.reduce((p, c) => p && isFinite(c))) {
+        okay = false;
+        markBad(elm, "Please click the marker icon to locate your journal club on the map.");
+    }
+
+    // Check JC Name isn't already in use
+    if(!window.jcEditToken) {
+        const name = document.getElementById("name");
+
+        document.getElementById("existing-jc-names").content.querySelectorAll("div").forEach(
+            d => {
+                if(d.innerText === name.value) {
+                    okay = false;
+                    name.classList.add('bad');
+                    name.addEventListener('focus', (e)=>e.target.classList.remove('bad'));
+                    name.title = "The name cannot match an existing journal club's name.";
+                }
+            }
+        );
+    }
 
     return okay;
 }

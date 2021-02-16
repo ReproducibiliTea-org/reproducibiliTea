@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
+{% include keys.html %}
 <link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
 <script type="text/javascript" src="/assets/js/join-form.js"></script>
 
-<article>
+<article id="signupForm">
     <section id="joinWelcome">
         <h1>1<span class="fade">/3</span> Welcome</h1>
 
@@ -183,14 +183,14 @@ layout: default
                         <div class="label-details">
                             <p>This is the address where we'll send the starter pack, including stickers and the famous teapot!</p>
                             <ul>
-                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/{{ site.github_user }}/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
                             </ul>
                         </div>
                     </div>
                     <textarea id="post" name="post" placeholder="Room 301,
 Reproducible Research Institute,
-University of Academia"></textarea>
+University of Academia" onchange="geolocateAddress()"></textarea>
                 </div>
 
                 <div class="row mandatory">
@@ -452,6 +452,23 @@ University of Academia"></textarea>
                     </select>
                 </div>
 
+                <div class="row mandatory">
+                    <div class="labels">
+                        <label for="geolocation">Geolocation</label>
+                        <div class="label-details">
+                            <p>We need to locate your JC on our map. When you enter an address we try to automatically determine the geolocation from the address, but sometimes we can't. If nothing shows here, please click the icon to choose your pin location on the map.</p>
+                            <ul>
+                                <li class="public">This will be displayed publicly.</li>
+                                <li class="is-mandatory">This field is required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="geolocation">
+                        <input id="geolocation" name="geolocation" type="text" disabled placeholder="Enter Postal address above or use button >>"/>
+                        <button onclick="geolocate(event)"><i class="fas fa-map-marked-alt"></i></button>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="labels">
                         <label for="description">Journal club description</label>
@@ -484,7 +501,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     </div>
                     <div class="organisers">
                         <input type="text" id="lead" name="lead" placeholder="Good Scholar" />
-                        <button onclick="addNewOrganiser(event)"><i class="fas fa-user-plus"></i></button>
+                        <button onclick="addNewEntry(event)" data-field-id="helper" data-field-placeholder="Helper"><i class="fas fa-user-plus"></i></button>
                     </div>
                 </div>
 
@@ -493,16 +510,21 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                         <label for="email">Contact email</label>
                         <div class="label-details">
                             <p>This is the email address for the lead organiser. It can be an email for the journal club rather than a personal email if you like. We will use this for getting in touch with you about general JC stuff.</p>
+                            <p>You may add additional email addresses if you like, but as long as one member of your JC gets our emails that is enough.</p>
+                            <p><strong>Any email addresses listed here will be able to update the journal club details later.</strong></p>
                             <ul>
-                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/mjaquiery/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
+                                <li class="hidden">This will be publicly accessible via <a href="https://github.com/{{ site.github_user }}/reproducibiliTea/">the GitHub repository</a>, but not displayed on the website.</li>
                                 <li class="is-mandatory">This field is required.</li>
                             </ul>
                         </div>
                     </div>
-                    <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
+                    <div class="emails">
+                        <input type="email" id="email" name="email" placeholder="goodScholar@academia.ac" />
+                        <button onclick="addNewEntry(event)" data-field-id="extraEmail" data-field-placeholder="Extra email"><i class="fas fa-user-plus"></i></button>
+                    </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="osfUserRow">
                     <div class="labels">
                         <label for="osfUser">Lead organiser <a href="https://osf.io/">OSF</a> id</label>
                         <div class="label-details">
@@ -517,7 +539,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
                 </div>
 
-                <div class="row">
+                <div class="row" id="zoteroUserRow">
                     <div class="labels">
                         <label for="zoteroUser">Lead organiser <a href="https://zotero.org/">Zotero</a> API id</label>
                         <div class="label-details">
@@ -536,7 +558,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
             <fieldset class="submission">
                 <legend>Final checks</legend>
-                <div class="row mandatory">
+                <div id="AuthCodeRow" class="row mandatory">
                     <div class="labels">
                         <label for="authCode">Authorization code</label>
                         <div class="label-details">
@@ -555,6 +577,213 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 </div>
             </fieldset>
         </form>
-
     </section>
+</article>
+
+<section id="LoadingModal">
+    <div>
+        <h2>Edit journal club</h2>
+        <div id="CheckToken">
+            <i class="fa-hourglass fas fa-spin"></i>
+            <p>Checking access token</p>
+        </div>
+        <div id="TokenOkay">
+            <i class="fa-hourglass fas fa-spin"></i>
+            <p>Preparing form for <span class="jc-name">journal club</span></p>
+        </div>
+        <div id="RejectToken">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Access token was invalid</p>
+            <p>Please check the link in your email, and if necessary request a new one from <a href="/edit-jc.html">the edit journal club page</a>.</p>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    /* If we're editing an existing JC, look up the existing values and use them to fill in the field values. */
+    async function checkToken() {
+        const gitURL = `https://api.github.com/repos/{{ site.github_user }}/reproducibiliTea/contents/_journal-clubs`;
+        if(!window.jcEditToken) {
+            const match = /[?&]jcEditToken=([^&]*)/g.exec(location.href);
+            if (!match)
+                return;
+            window.jcEditToken = {token: match[1]};
+        }
+        if(!window.jcEditToken.token)
+            return;
+        document.getElementById('LoadingModal').classList.add('token-check');
+        await fetch('/.netlify/functions/edit-jc_check-token', {
+            method: 'POST',
+                body: JSON.stringify(window.jcEditToken)
+        })
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Token lookup error: server response was (${r.status}) (${r.statusText}).`);
+                else
+                    return r.json()
+            })
+            .then(token => fetch(`${gitURL}/${token.jcid}.md`, {headers: {'User-Agent': '{{ site.github_user }}'}}))
+            .then(r => {
+                if(r.status !== 200)
+                    throw new Error(`Could not find existing GitHub file: ${r.statusText} (${r.status})`);
+                else
+                    return r.json();
+            })
+            .then(md => acceptToken(parseMD(md.content)))
+            .catch(e => rejectToken(e));
+    }
+
+    /**
+     * Parse a base64-encoded journal club MD file from gitHub into name-value pairs
+     * @param data {string}
+     * @return {object}
+     */
+    function parseMD(data) {
+        data = atob(data);
+        const match = /^---(.*)---\s*(.*)$/s.exec(data);
+        if(!match)
+            throw new Error('Badly formed markdown file received from GitHub.');
+        const lines = match[1].split('\n');
+        const pairs = lines.map(s => {
+            const m = /^(.+?):\s*(.*)$/.exec(s);
+            return m? {key: m[1], value: m[2]} : null;
+        })
+            .filter(o => o !== null);
+        const out = {content: match.length >= 3? match[2] : ''};
+        pairs.forEach(p => out[p.key] = p.value);
+        return out;
+    }
+    function acceptToken(data) {
+        document.getElementById('LoadingModal').classList.add('token-okay');
+        const form = document.getElementById('newJC');
+        // Fill in the form fields from data
+        const token = document.createElement('input');
+        token.type = 'hidden';
+        token.value = JSON.stringify(window.jcEditToken);
+        token.name = 'editToken';
+        token.id = 'editToken';
+        form.appendChild(token);
+        if(data.title)
+            form.querySelector('#name').value = data.title;
+        if(data['host-organisation'])
+            form.querySelector('#uni').value = data['host-organisation'];
+        if(data['host-org-url'])
+            form.querySelector('#uniWWW').value = data['host-org-url'];
+        if(data.website)
+            form.querySelector('#www').value = data.website;
+        if(data.twitter)
+            form.querySelector('#twitter').value = data.twitter;
+        if(data.osf)
+            form.querySelector('#osf').value = data.osf;
+        if(data.signup)
+            form.querySelector('#signup').value = data.signup;
+        if(data.address) {
+            const match = /^\[?(.+?)\]?$/.exec(data.address);
+            if(match) {
+                const addr = match[1].replace(/,\s*/g, ',\n');
+                form.querySelector('#post').value = addr;
+            }
+        }
+        if(data.geolocation) {
+            const match = /^\[?(.+?)\]?$/.exec(data.geolocation);
+            if(match) {
+                form.querySelector('#geolocation').value = match[1];
+            }
+        }
+        if(data.content)
+            form.querySelector('#description').value = data.content;
+        if(data.organisers) {
+            const match = /^\[?(.+?)\]?$/.exec(data.organisers);
+            if(match) {
+                const organisers = match[1].split(', ');
+                form.querySelector('#lead').value = organisers[0];
+                let last = form.querySelector('#lead');
+                for (let o = 1; o < organisers.length; o++) {
+                    addNewEntry(last);
+                    last = form.querySelector(`#helper${o - 1}`);
+                    last.value = organisers[o];
+                }
+            }
+        }
+        if(data.contact)
+            form.querySelector('#email').value = data.contact;
+        if(data['additional-contact']) {
+            const match = /^\[?(.+?)\]?$/.exec(data['additional-contact']);
+            if(match) {
+                const contacts = match[1].split(', ');
+                let last = form.querySelector('#email');
+                for (let c = 0; c < contacts.length; c++) {
+                    addNewEntry(last);
+                    last = form.querySelector(`#extraEmail${c}`);
+                    last.value = contacts[c];
+                }
+            }
+        }
+        // Remove the unneded fields
+        document.getElementById('AuthCodeRow').remove();
+        document.getElementById('osfUserRow').remove();
+        document.getElementById('zoteroUserRow').remove();
+        document.querySelector('.submission button').innerHTML = "Commit changes";
+        // Remove unnecessary sections
+        document.getElementById('signupForm').classList.add('edit');
+        // Hide the modal and let the user get on with it
+        document.getElementById('LoadingModal').classList.add('token-complete');
+        //window.scrollTo(window.scrollX, form.getBoundingClientRect().y);
+    }
+    function rejectToken(e) {
+        console.warn(e);
+        document.getElementById('LoadingModal').classList.add('token-reject');
+    }
+    checkToken();
+</script>
+
+<article id="geolocation-map">
+    <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
+    <div id="geolocation-map-display"></div>
+    <div class="geolocation-map-controls"><button onclick="setGeolocation(event)"><i class="fas fa-map-marker-alt"></i> Use location</button></div>
+    <script id="mapAPIsource"></script>
+    <script>
+        {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
+        let key = "{{ key[0][1] }}";
+        document.getElementById('mapAPIsource').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initialize`;
+
+        let map;
+        let endMarker;
+        const input = document.getElementById("geolocation");
+
+        function initialize() {
+            map = new google.maps.Map(
+                document.getElementById("geolocation-map-display"),
+                {
+                    zoom: 1,
+                    center: {lat: 0, lng: 0}
+                }
+                );
+
+            const existing = input.value;
+            let position = map.getCenter();
+            if(existing) {
+                const parse = existing.split(',');
+                position = {lat: parseFloat(parse[0]), lng: parseFloat(parse[1])};
+            }
+
+            // create the marker
+            endMarker = new google.maps.Marker({
+                position,
+                map: map,
+                draggable: true,
+            });
+
+            // add an event "onDrag"
+            google.maps.event.addListener(endMarker, 'dragend', function() {
+                copyMarkerpositionToInput();
+            });
+        }
+
+        function copyMarkerpositionToInput() {
+            // get the position of the marker, and set it as the value of input
+            input.value = endMarker.getPosition().lat() +','+  endMarker.getPosition().lng();
+        }
+    </script>
 </article>

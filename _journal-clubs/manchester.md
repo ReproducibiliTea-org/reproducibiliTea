@@ -1,4 +1,5 @@
 ---
+jcid: manchester
 title: Manchester # short name which should match the filename
 host-organisation: University of Manchester # University/Organisation hosting the JC
 host-org-url: https://www.manchester.ac.uk/ # Website of the above
@@ -9,6 +10,7 @@ organisers: [Daniel Poole, George Farmer, Nathan Khadaroo-McCheyne] # Comma-sepa
 contact: nathan.khadaroo@postgrad.manchester.ac.uk # Email contact for the JC
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
+geolocation: [53.4663853, -2.2339112]
 ---
 **About:**
 The journal club is open to everyone across the University of Manchester and nearby universities, from any discipline or department.

@@ -1,4 +1,5 @@
 ---
+jcid: york-st-johns
 # Replace "Your City" with a short version of your location below (e.g. Bristol or Singapore)
 # When you save the file, change "your_city" in the name of the file to what you filled out below
 title: York St John
@@ -20,5 +21,7 @@ contact: n.smith2@yorksj.ac.uk
 address: [Department of Psychology, York St John University, Lord MayorÕs Walk, York, North Yorkshire, Y031 7EX]
 
 country: United Kingdom
+
+geolocation: [53.9649139, -1.0800959]
 
 ---

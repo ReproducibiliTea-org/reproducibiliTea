@@ -1,27 +1,25 @@
 ---
 
-
-title: Rotterdam 
-
-
-
-host-organisation: Erasmus Universiteit Rotterdam & Erasmus Medical Center 
-
-
-host-org-url: https://www.eur.nl/en & https://www.erasmusmc.nl/en
-
-
-organisers: [Antonio Schettino] 
-
-
-contact: schettino@eur.nl
-
-
-address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
-
-country: Netherlands
-
+jcid: rotterdam
+title: Rotterdam
+host-organisation: Erasmus Universiteit Rotterdam
+host-org-url: https://www.eur.nl/en
 osf: yk9pf
+zotero: null
+website: https://www.openscience-rotterdam.com/home/
+twitter: OSCRotterdam
+signup: 
+organisers: [Antonio Schettino]
+contact: schettino@eur.nl
+additional-contact: []
+address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
+country: Netherlands
+geolocation: [51.9170494, 4.525585899999999]
+last-update: schettino@eur.nl
+last-update-timestamp: 1605691617
+last-update-message: >-
+  update Practical Information section
+
 ---
 
 **About**
@@ -42,5 +40,4 @@ This journal club is open to everyone: PhD students, post-docs, junior and senio
 
 **Practical Information**
 
-From November 2019 we will meet on the second Wednesday of every month at 11:00. An invitation will be sent at least 2 weeks prior to the scheduled meeting. If you are interested in joining but have not received an invitation, please contact Antonio Schettino (schettino@eur.nl). The Erasmus Research Services ([ERS](https://www.eur.nl/onderzoek/research-services/erasmus-research-services)) will provide refreshments!
-
+From November 2019 to March 2020 we used to meet on the second Wednesday of every month at 11:00. From April 2020 onward we meet online, once a month. Around two weeks before the session, an invitation is sent via the mailing list of the [Open Science Community Rotterdam](https://www.openscience-rotterdam.com/home/) (to be included, please contact [Antonio Schettino](mailto:schettino@eur.nl)). Announcements are also made on our website ([News](https://www.openscience-rotterdam.com/categories/news/) section) and on Twitter ([@OSCRotterdam](https://twitter.com/OSCRotterdam)).

@@ -1,4 +1,5 @@
 ---
+jcid: melbourne
 
 title: Melbourne 
 
@@ -13,7 +14,7 @@ contact: andy.head@unimelb.edu.au
 address: [School of Historical and Philosophical Studies, The University of Melbourne, Professors Walk, 3010, Victoria]
 
 country: Australia
-
+geolocation: [-37.7983459, 144.960974]
 ---
 
 **About**

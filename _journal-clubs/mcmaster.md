@@ -1,4 +1,5 @@
 ---
+jcid: mcmaster
 
 title: McMaster
 
@@ -14,6 +15,7 @@ address: [Psychology, McMaster University, 1280 Main St. W., L8S 4K1, Hamilton, 
 
 country: Canada
 osf: xtezw
+geolocation: [43.260879, -79.9192254]
 ---
 Welcome to the McMaster ReproducibiliTea journal club! We will begin meeting in January 2020 to discuss how we can help make science transparent, reproducible, and cumulative.
 

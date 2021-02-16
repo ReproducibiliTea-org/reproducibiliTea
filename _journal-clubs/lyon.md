@@ -1,4 +1,5 @@
 ---
+jcid: lyon
 
 title: Lyon 
 
@@ -15,6 +16,9 @@ contact: wanda.grabon@univ-lyon1.fr
 address: [CRNL - CH Le Vinatier - Batiment 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron]
 country: France
 osf: m73e4
+
+geolocation: [45.7437964, 4.902354]
+
 ---
 
 The Lyon Neuroscience Research Center (LNRC) student club is organized by a few PhD students of the center, with no specific leader (here we rolled a dice to choose the JC communication 'lead'). Student club sessions are

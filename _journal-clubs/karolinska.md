@@ -1,4 +1,5 @@
 ---
+jcid: karolinska
 title: Karolinska 
 
 host-organisation: Karolinska Institutet
@@ -15,6 +16,8 @@ contact: robin.fondberg@ki.se
 address: [Department of Clinical Neuroscience, Karolinska Institutet, Nobels väg 9, 171 77, Solna]
  
 country: Sweden
+
+geolocation: [59.34814839999999, 18.0236579]
 
 ---
 Our journal club is open to everyone. We are hoping for a diverse range of attendees from all career stages, disciplines, and backgrounds. No matter how much or little you know about open science and reproducibility, you are most welcome to join us!

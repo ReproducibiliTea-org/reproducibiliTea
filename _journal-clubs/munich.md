@@ -1,4 +1,5 @@
 ---
+jcid: munich
 # Replace "Your City" with a short version of your location below (e.g. Bristol or Singapore)
 # When you save the file, change "your_city" in the name of the file to what you filled out below
 title: Munich 
@@ -20,7 +21,7 @@ contact: stephan.nuding@campus.lmu.de
 address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
  
 country: Germany
-
+geolocation: [48.15928719999999, 11.5853531]
 ---
 
 We have decided to establish a journal club on the topic of Open Science. We meet every three to four weeks. The slogan of our journal club is "ReproJuicebiliTea"

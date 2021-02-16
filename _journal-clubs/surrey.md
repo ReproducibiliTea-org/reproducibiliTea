@@ -1,4 +1,5 @@
 ---
+jcid: surrey
 title: Surrey
 host-organisation: University of Surrey
 host-org-url: https://www.surrey.ac.uk/
@@ -9,7 +10,7 @@ organisers: [Marta Topor, Henry Hebron, Katie Gilligan]
 contact: m.topor@surrey.ac.uk
 country: United Kingdom
 address: [Stag Hill, Guildford GU2 7XH]
-
+geolocation: [51.2396149, -0.5902781]
 ---  
   
 **About**   

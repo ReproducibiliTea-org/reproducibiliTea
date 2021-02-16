@@ -1,4 +1,5 @@
 ---
+jcid: olomouc
 
 title: Olomouc
 
@@ -13,4 +14,7 @@ contact: tomas.heger01@upol.cz
 address: [Faculty of Science, Palacký University Olomouc, 17. listopadu 1192/12, Olomouc, 771 46]
 
 country: Czech Republic
+
+geolocation: [49.593778, 17.2508787]
+
 ---

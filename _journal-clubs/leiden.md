@@ -1,4 +1,5 @@
 ---
+jcid: leiden
 title: Leiden
 host-organisation: Open Science Community Leiden
 host-org-url: https://www.universiteitleiden.nl/open-science-community-leiden
@@ -9,6 +10,7 @@ organisers: [Ricarda Proppert]
 contact: leidentea@gmail.com
 address: [Leiden University]
 country: Netherlands
+geolocation: [52.1571485, 4.485209]
 ---
 **About:** 
 

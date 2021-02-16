@@ -1,4 +1,5 @@
 ---
+jcid: lancaster
 # Replace "Your City" with a short version of your location below (e.g. Bristol or Singapore)
 # When you save the file, change "your_city" in the name of the file to what you filled out below
 title: Lancaster, UK
@@ -19,7 +20,7 @@ contact: m.bazhydai@lancaster.ac.uk
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
 address: [Department of Psychology, Lancaster University, Fylde College, Lancaster, LA1 4YW]
 country: United Kingdom
-
+geolocation: [54.0087763, -2.7852628]
 ---
 
 Lancaster University's Psychology Department and the PROSPR group (Promoting Open Science Practices) launched the ReproducibiliTea Journal Club in July 2019. We meet twice a month during term time to discuss key papers on open science and reproducibility issues. All are welcome regardless of the experience and career status! 

@@ -1,3 +1,15 @@
+/* Colours */
+:root {
+    --color-rpt-primary: rgb(0, 134, 207);
+    --color-rpt-secondary: rgb(0, 77, 108);
+}
+
+/* Animations */
+@keyframes spin {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+
 /* Footer */
 
 .sponsors {
@@ -173,6 +185,36 @@ div.page-link {
     align-items: center;
     justify-content: center;
 }
+
+.biohazard {
+    padding: 1em;
+    text-align: justify;
+    border-style: double;
+}
+.biohazard h3 {
+    background-color: yellow;
+}
+.biohazard h3 {
+    text-align: center;
+}
+.biohazard:not(:hover):not(:focus) h3 {
+    margin: 0;
+}
+.biohazard a {
+    font-weight: bold;
+}
+.biohazard:not(:hover):not(:focus) p {
+    display: none;
+}
+p.elipsis {
+    display: none;
+    margin-bottom: 0;
+}
+.biohazard:not(:hover):not(:focus) p.elipsis {
+    display: block;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 800px) {
     .jc-showcase {

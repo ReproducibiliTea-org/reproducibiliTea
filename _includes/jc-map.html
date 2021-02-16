@@ -1,0 +1,40 @@
+<div id="map" style="height: 500px">
+</div>
+
+<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+<script id="mapAPIscript" async defer></script>
+
+<script>
+    let map;
+    function initMap() {
+        map = new google.maps.Map(
+            document.getElementById('map'),
+            {
+                center: {lat: 0, lng: 0},
+                zoom: 1
+            }
+        );
+
+        let markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+                position: {lat: location[1], lng: location[2]},
+                label: location[0]
+            });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        const markerCluster = new MarkerClusterer(map, markers,
+            {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+    }
+    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" %}
+    const locations = [
+        {% for jc in geos %}["{{ jc.title }}", {{ jc.geolocation | join: ", " }}]{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
+    let key = "{{ key[0][1] }}";
+    document.getElementById('mapAPIscript').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`;
+</script>

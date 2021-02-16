@@ -5,8 +5,8 @@
     <title>Journal club overview</title>
     <link rel="stylesheet" href="assets/css/jc-overview.css"/>
     <script type="text/javascript" src="assets/js/jc-overview.js"></script>
-    {% assign fields = 'title, host-organisation, contact, address, country, host-org-url, osf, zotero, website, twitter, signup, organisers' %}
-    {% assign requiredFields = 'title, host-organisation, organisers, contact, address, country' %}
+    {% assign fields = 'title, host-organisation, contact, address, country, geolocation, host-org-url, osf, zotero, website, twitter, signup, organisers' %}
+    {% assign requiredFields = 'title, host-organisation, organisers, contact, address, country, geolocation' %}
     {% assign fieldList = fields | split: ', ' %}
 </head>
 <body>
@@ -47,7 +47,22 @@
         </tbody>
     </table>
 ---
-    <h2>Email addresses</h2>
+    <h2>Email addresses (BCC is your friend)</h2>
     <textarea>{% for jc in site.journal-clubs %}{% if jc.contact %}{{jc.contact}}{% unless forloop.last == true %}; {% endunless %}{% endif %}{% endfor %}</textarea>
+    <h3>Secondary contacts</h3>
+    <textarea>{% for jc in site.journal-clubs %}{% if jc.additional-contact %}{{jc.additional-contact | join: "; "}}{% unless forloop.last == true %}; {% endunless %}{% endif %}{% endfor %}</textarea>
+
+---
+    <h2>Geolookup</h2>
+    <table>
+        {% assign jcs = site.journal-clubs | sort_natural: "title" %}
+        {% for jc in jcs %}
+        {% unless jc.geolocation %}
+        <tr>
+            <td>{{ jc.title }}</td>
+            <td>{% include jc-lookup.html jc=jc %}</td></tr>{% endunless %}{% endfor %}
+    </table>
+
 </body>
 </html>
+

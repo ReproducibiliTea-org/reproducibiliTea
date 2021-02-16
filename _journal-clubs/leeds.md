@@ -1,4 +1,5 @@
 ---
+jcid: leeds
 title: Leeds
 host-organisation: Leeds University
 host-org-url: https://www.leeds.ac.uk/
@@ -9,6 +10,7 @@ contact: umkel@leeds.ac.uk
 osf: qvyk4
 country: United Kingdom
 address: [Leeds LS2 9JT]
+geolocation: [53.8079251, -1.5540873]
 ---
 
 The Leeds University ReproducibiliTea journal club. Check out the [blog post](https://leedsunilibrary.wordpress.com/2019/08/23/reproducibilitea-at-leeds/) for a flavour of the first two sessions!

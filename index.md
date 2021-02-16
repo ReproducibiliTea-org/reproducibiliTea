@@ -11,21 +11,30 @@ layout: default
 {% assign countries = countries | append: "|" | append: jc.country %}
 {% endif %}
 {% endfor %}
-{% assign country_count = countries | split: "|" | uniq | size %}
+{% assign country_count = countries | split: "|" | uniq | size | minus: 1 %}
+
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in {{ country_count }} different countries. We are completely volunteer run, and provide a unique and supportive community for our members.
+We are a grassroots [journal club initiative](/about/) that helps researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in {{ country_count }} different countries. We are completely volunteer run, and provide a unique and supportive community for our members, who are predominantly Early Career Researchers.
 
-<div id="map">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1K1Z3VYsgIDT7ynQraHrTD16TfJM6Wf3k" width="640" height="320"></iframe>
+{% include jc-map.html %}
+
+<br/>
+
+<div class="biohazard" tabindex="0">
+    <h3><i class="fas fa-biohazard"></i> ReproducibiliTea Online </h3>
+    <p class="elipsis"><i class="fas fa-sort-down"></i></p>
+    <p>As travel and meetings are postponed/cancelled to help reduce the spread of Coronavirus (COVID-19), we recognise many ReproducibiliTea Journal Clubs may want to meet virtually. We've therefore launched ReproducibiliTea Online: we have put out <a href="/online/">recommendations</a> for how to run a Journal Club or similar event online in addition to allowing Journal Clubs to open up their online meetings to those interesting in joining, wherever in the world they may be. To make this easier we've set up a <a href="/calendar/">ReproducibiliTea Online calendar</a> to keep track of events which are open to the wider communiTea.</p>  
 </div>
+
+<br/>
 
 Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
 
 # Definition of a ReproducibiliTea journal club
 
-1. You have emailed ReproducibiliTea (email: amy.orben@cantab.net) registering your club
+1. You have emailed ReproducibiliTea (email: {{ site.email }}) registering your club
 2. Your club examines topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
 
 # Current Journal Clubs
