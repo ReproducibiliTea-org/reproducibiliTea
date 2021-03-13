@@ -11,12 +11,12 @@ twitter: JCUniBern
 signup: https://listserv.unibe.ch/mailman/listinfo/reproducibilitea
 organisers: [Michael Schulte-Mecklenbeck]
 contact: michael.schulte@unibe.ch
-additional-contact: []
+additional-contact: [michael.schulte@unibe.ch]
 address: [Engehaldenstr. 4, 3012 Bern]
 country: Switzerland
-geolocation: [46.95385813534361, 7.440367341041565]
+geolocation: [46.94973492185848, 7.43800163269043]
 last-update: michael.schulte@unibe.ch
-last-update-timestamp: 1615667519
+last-update-timestamp: 1615667643
 last-update-message: >-
   
 
