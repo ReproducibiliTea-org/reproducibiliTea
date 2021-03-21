@@ -4,44 +4,33 @@ title: Leiden
 host-organisation: Open Science Community Leiden
 host-org-url: https://www.universiteitleiden.nl/open-science-community-leiden
 website: 
-signup:
+signup: 
 twitter: LeidenTea
-organisers: [Ricarda Proppert]
+organisers: [Ricarda Proppert, Myrthe Vel Tromp]
 contact: leidentea@gmail.com
-address: [Leiden University]
 country: Netherlands
 geolocation: [52.1571485, 4.485209]
 ---
-**About:** 
+**About**
 
-The ReproducibiliTea journal club is a member initiative of the Open Science Community Leiden. We'll kick off on Thursday, 21st November, 4-6pm, location tba. Our journal club is open to anyone affiliated with Leiden University, no matter the background, discipline, or place in the hierarchy.
+The ReproducibiliTea journal club is a member initiative of the *Open Science Community Leiden (OSCL)*. We discuss papers related to open science, replication, and of course reproducibility. Our journal club is open to anyone affiliated with Leiden University, no matter their background, discipline, or career status.
 
-Anyone who's never heard the term "open science" before is particularly welcome!
+Anyone who’s never heard the term *open science* before is particularly welcome! No sign-up needed - just **join OSCL Teams channel**.
 
-**The mission:**
+**Mission**
 
-* introduce ourselves to methodological issues in the social sciences and beyond, and discuss potential ways forward
-* learn about open science practices and help each other familiar with those
-* connect students and researchers from various specializations who are interested in open science
+- Discuss methodological issues in the social sciences and beyond, and potential ways forward
+- Familiarize ourselves with open science tools and methods
+- Connect engaged students and researchers from various specializations
 
-**The format:**
+**Format**
 
-Each session, a presenter will give a short overview of today's paper, and prepare some highlights she/he finds interesting and worth a discussion. Everyone is free to contribute as much time, effort, or input as they wish.
+During each session, one member volunteers to host. That member will prepare a short introduction to the paper/preprint/blog post and facilitate discussion. Do we at all agree with the author's claims? How do we integrate the findings into our own research? How can we broaden this topic to include all research fields of our members? 
 
-**The rules:**
+We want to stimulate open, critical conversations, and *encourage* but don't expect participants to read the paper beforehand. Of course, everyone is free to contribute as much time, effort, or input as they wish.
 
-1st RULE: You do talk about the journal club.
+**Practical information**
 
-2nd RULE: You **DO** talk about the **journal club**.
+Our monthly-ish sessions are currently hosted online, at the Open Science Community MS Teams channel. If you're not sure how to find it, or have any questions, shoot us an [**email**](mailto:Leiden.Tea@gmail.com). 
+Stay up to date by joining our [**mailing list**](https://gmail.us20.list-manage.com/subscribe?u=a401739a818a4ec097d309263&id=d1c0b4e5f8) and [**twitter**](http://twitter.com/LeidenTea).
 
-3rd RULE: If someone says "Huh?" or goes quiet, please explain what you mean.
-
-4th RULE: Only discussion, no grading, no judging.
-
-5th RULE: One person talking at a time, don't interrupt, don't give dismissive looks or comments.
-
-6th RULE: Many questions, many ideas. We're all trying to learn from each other.
-
-7th RULE: Discussions may go on as long as it has to. You are allowed to come late or leave early, because we're aware that people may have other responsibilities.
-
-8th RULE: If this is your first time at the journal club, you're especially welcome.
