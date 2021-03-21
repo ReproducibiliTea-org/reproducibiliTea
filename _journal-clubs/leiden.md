@@ -1,18 +1,21 @@
 ---
+jcid: leiden
 title: Leiden
 host-organisation: Open Science Community Leiden
 host-org-url: https://www.universiteitleiden.nl/open-science-community-leiden
 website: 
-signup: join OSCL Teams channel
+signup: 
 twitter: LeidenTea
 organisers: [Ricarda Proppert, Myrthe Vel Tromp]
 contact: leidentea@gmail.com
+country: Netherlands
+geolocation: [52.1571485, 4.485209]
 ---
 **About**
 
 The ReproducibiliTea journal club is a member initiative of the *Open Science Community Leiden (OSCL)*. We discuss papers related to open science, replication, and of course reproducibility. Our journal club is open to anyone affiliated with Leiden University, no matter their background, discipline, or career status.
 
-Anyone who’s never heard the term *open science* before is particularly welcome! No sign-up needed.
+Anyone who’s never heard the term *open science* before is particularly welcome! No sign-up needed - just **join OSCL Teams channel**.
 
 **Mission**
 
