@@ -6,8 +6,8 @@ host-org-url: https://www.surrey.ac.uk/
 website: 
 osf: a6xqu
 signup: surrey_reproducibility@surrey.ac.uk 
-organisers: [Marta Topor, Henry Hebron, Katie Gilligan]
-contact: m.topor@surrey.ac.uk
+organisers: [Emma Wise]  
+contact: emma.wise@surrey.ac.uk  
 country: United Kingdom
 address: [Stag Hill, Guildford GU2 7XH]
 geolocation: [51.2396149, -0.5902781]
@@ -21,3 +21,5 @@ We take special care to collect a library of resources to aid independent learni
 * [Independent learning resources](https://osf.io/4ahfw/)  
 * [ReproducibiliTea notes](https://osf.io/c3esj/)  
 * [Workshops and demonstrations](https://osf.io/svtr9/)  
+  
+[Follow us on Twitter!](https://twitter.com/Surrey_Repro)
