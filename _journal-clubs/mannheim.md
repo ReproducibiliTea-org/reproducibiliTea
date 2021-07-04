@@ -13,7 +13,7 @@ organisers: [Juli Tkotz, Alexander Wuttke]
 contact: juliane.tkotz@zi-mannheim.de
 additional-contact: []
 address: [Zentralinstitut fÃ¼r Seelische Gesundheit, "J5 Forschungs- und VerwaltungsgebÃ¤ude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
-country: United Kingdom
+country: Netherlands
 geolocation: [49.492793033169804, 8.46544861793518]
 last-update: juliane.tkotz@zi-mannheim.de
 last-update-timestamp: 1617290580

@@ -13,7 +13,7 @@ organisers: [Johannes Algermissen, Lena Ackermann, Eva Poort]
 contact: contact@openscience-nijmegen.nl
 additional-contact: []
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen]
-country: United Kingdom
+country: Netherlands
 geolocation: [51.81799340000001, 5.8570934]
 last-update: contact@openscience-nijmegen.nl
 last-update-timestamp: 1606913691

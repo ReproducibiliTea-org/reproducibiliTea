@@ -9,14 +9,14 @@ zotero: null
 website: 
 twitter: ReproTeaBerlin
 signup: 
-organisers: [Martin Holst, Corinna Hartling, Sophia Crüwell]
+organisers: [Martin Holst, Corinna Hartling]
 contact: martin.holst@charite.de
 additional-contact: []
 address: [Berlin Institute of Health (BIH) @ Charité, QUEST Center for Transforming Biomedical Research, Anna-Louisa-Karsch-Straße 2, 10178 Berlin]
 country: Germany
-geolocation: [52.5213794, 13.4028437]
+geolocation: [52.520361618280944, 13.401684165000916]
 last-update: martin.holst@charite.de
-last-update-timestamp: 1617998966
+last-update-timestamp: 1619636028
 last-update-message: >-
   
 
