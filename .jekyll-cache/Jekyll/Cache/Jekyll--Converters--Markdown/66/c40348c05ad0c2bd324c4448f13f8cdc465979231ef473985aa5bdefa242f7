@@ -1,0 +1,74 @@
+I"�<figure class="image">
+    
+    <div class="fig">
+        <a href="/assets/images/blog/zotero-oxford.jpg">
+            <object data="/assets/images/blog/zotero-oxford-small.jpg" type="image/jpg">
+    <img src="/assets/images/blog/zotero-oxford.jpg" alt="Oxford's MT2019 Zotero Subcollection" />
+</object>
+        </a>
+    </div>
+    
+    <figcaption>The Oxford MT2019 JC Schedule on Zotero.</figcaption>
+    
+</figure>
+<!-- Credit https://stackoverflow.com/a/19360305 -->
+
+<p>Many journal club organisers have asked for suggestions of papers, or mentioned that it would be good to see what other clubs have been discussing. We thought the best way to address these points would be to set up a <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/">Zotero group library</a> with the following features:</p>
+
+<ul>
+  <li>All papers added to any subcollection get added to the overall library
+    <ul>
+      <li>=&gt; Easy to find new papers</li>
+    </ul>
+  </li>
+  <li>Each club can have its own subcollection, and as many sub-subcollections as they wish e.g. sub-collections for each term
+    <ul>
+      <li>=&gt; Easy to see what other JCs are doing</li>
+    </ul>
+  </li>
+  <li>If you already use Zotero you can easily integrate it into your personal Zotero library. If you don’t use Zotero bibTex exports are also available.
+    <ul>
+      <li>=&gt; Easy to add references to your own reference manager</li>
+    </ul>
+  </li>
+</ul>
+
+<p>We think this is a good solution for minimising duplication (e.g. multiple people uploading the same pdf to their OSF repository), keeping things organised, and for potential future extensions (e.g. we can write scripts to interface neatly with Zotero).</p>
+
+<p><strong>Anyone can browse the group library</strong> and subscribe to updates, but only authorised members can <strong>edit</strong> collections, including adding items or creating new subcollections. Only club organisers are invited to join as authorised members.</p>
+
+<h2 id="getting-authorised">Getting authorised</h2>
+
+<ol>
+  <li>Create/log into your <a href="https://www.zotero.org/">Zotero account</a></li>
+  <li>Go to <a href="https://www.zotero.org/groups/2354006/reproducibilitea?">the library homepage</a> and request membership</li>
+  <li>Wait until Matt approves your request! This will be done ASAP</li>
+</ol>
+
+<h2 id="using-the-library">Using the library</h2>
+
+<p>Once you’re approved, the first thing you should do is create a new subcollection for your club. You can then create further subcollections within that to keep things neatly organised if you wish.</p>
+
+<p>You can browse all the items in the whole library by viewing the Library collection, and select any items you want to add to your subcollections. You can also add new items directly to one of your subcollections and it’ll automatically be listed in the main Library.</p>
+
+<h2 id="using-zotero">Using Zotero</h2>
+
+<p>Zotero is free for basic use, open source (unlike Mendeley) and has good integration with reproducibile science tools such as RStudio (through the <code class="language-plaintext highlighter-rouge">citr</code> package).</p>
+
+<p>If you want to use Zotero as your own reference manager, in addition to using it to organise your club’s papers, you can use the same account you just created and put items in your personal library. If you download the desktop client you’ll see the ReproducibiliTea Library listed as a ‘group library’ below your personal one. It syncs automatically so you’ll always be up to date.</p>
+
+<figure class="image">
+    
+    <div class="fig">
+        <a href="/assets/images/blog/zotero-group.jpg">
+            <object data="/assets/images/blog/zotero-group-small.jpg" type="image/jpg">
+    <img src="/assets/images/blog/zotero-group.jpg" alt="ReproducibiliTea Zotero group" />
+</object>
+        </a>
+    </div>
+    
+    <figcaption>The homepage for the group library.</figcaption>
+    
+</figure>
+<!-- Credit https://stackoverflow.com/a/19360305 -->
+:ET

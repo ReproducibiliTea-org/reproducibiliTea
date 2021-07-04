@@ -18,6 +18,8 @@ layout: default
 
 We are a grassroots [journal club initiative](/about/) that helps researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in {{ country_count }} different countries. We are completely volunteer run, and provide a unique and supportive community for our members, who are predominantly Early Career Researchers.
 
+Want to join the movement? Just curious for now? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to [get started](/getting-started/) today.
+
 {% include jc-map.html %}
 
 <br/>
@@ -30,14 +32,10 @@ We are a grassroots [journal club initiative](/about/) that helps researchers cr
 
 <br/>
 
-Want to join the movement? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to start organising your own [journal club](/journal-clubs/) today.
-
-# Definition of a ReproducibiliTea journal club
-
-1. You have emailed ReproducibiliTea (email: {{ site.email }}) registering your club
-2. Your club examines topics related to reproducibility, open science, research quality, or good/bad research practices (in any field).
 
 # Current Journal Clubs
+
+{% include jc-showcase.html initial-value="" %}
 
 {% assign countries = countries | split: "|" | uniq | sort_natural %}
 {% for c in countries %}

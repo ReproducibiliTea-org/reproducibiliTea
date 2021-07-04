@@ -1,0 +1,132 @@
+I"�"<h1 id="reproducibilitea-online">ReproducibiliTea Online</h1>
+
+<p>The information on this page will help you get the most out of online ReproducibiliTea meetings, whether you’re <a href="#-attending-reproducibilitea-online">participating</a> or <a href="#-hosting-reproducibilitea-online">hosting</a> them.</p>
+
+<h2 id="-attending-reproducibilitea-online"><a href="#reproducibilitea-online"><i class="fas fa-long-arrow-alt-up"></i></a> Attending ReproducibiliTea online</h2>
+
+<p>Remote journal club etiquette often needs to be a bit more strict than in-person journal clubs as normal social cues are missing to guide the discussion. We therefore set out some helpful etiquette tips here:</p>
+
+<ol>
+  <li>Pay attention to the <strong>moderator</strong>
+    <ul>
+      <li>The moderator calls on people who have their hands up</li>
+      <li>Hands can be raised physically on video, in text chat, or through e.g. the ‘hand raised’ function available on Zoom</li>
+    </ul>
+  </li>
+  <li>Everyone is required to <strong>wear headphones</strong></li>
+  <li>Everyone should <strong>mute audio</strong> unless they (want to) speak
+    <ul>
+      <li>Please be extra conscientious to avoid talking over others and to ensure that all have an opportunity to engage</li>
+    </ul>
+  </li>
+  <li><strong>Arrive promptly</strong> so technical issues can be sorted out quickly, and introductions made/links shared</li>
+</ol>
+
+<p>Remember: headphones <strong>ON</strong>, microphones <strong>OFF</strong>, and hands <strong>UP</strong>.</p>
+
+<p>As always, let us know if you have any further suggestions!</p>
+
+<figure class="image">
+    
+    <div class="fig">
+        <a href="/assets/images/quokka.jpg">
+            <object data="/assets/images/quokka-small.jpg" type="image/jpg">
+    <img src="/assets/images/quokka.jpg" alt="Quokka hug" />
+</object>
+        </a>
+    </div>
+    
+    <figcaption>Have a virtual Quokka hug! Photo by <a href="https://unsplash.com/@capillasn?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Natalie Su</a> on Unsplash</figcaption>
+    
+</figure>
+<!-- Credit https://stackoverflow.com/a/19360305 -->
+
+<h2 id="-hosting-reproducibilitea-online"><a href="#reproducibilitea-online"><i class="fas fa-long-arrow-alt-up"></i></a> Hosting ReproducibiliTea online</h2>
+
+<h3 id="1-choose-your-online-platform">1. Choose your Online Platform</h3>
+
+<p>If possible, use a video conferencing platform. Video allows for a more ‘social’ interaction that can help discussion and reduce isolation. Ideally, choose a platform that lets you <strong>share your screen</strong>, so that people can still present the paper or easily share something during the discussion. We’ve tested multiple technologies and suggest one of the following:</p>
+
+<ul>
+  <li><a href="https://zoom.us/">Zoom <sup><i class="fas fa-external-link-square-alt"></i></sup></a> (recommended)
+    <ul>
+      <li>High quality</li>
+      <li>Good tools like a shared workspace</li>
+      <li>The ‘host’ (not all the participants) has to sign up to Zoom and download the Zoom software and can share a link with participants to allow them to join the meeting (you can choose whether to require a password to enter the meeting). <em><a href="https://support.zoom.us/hc/en-us/articles/201362033-Getting-Started-on-Windows-and-Mac">More information…</a></em></li>
+      <li>Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up <strong>two Zoom links</strong> in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)
+        <ul>
+          <li><i class="fas fa-biohazard"></i> <em>Zoom have temporarily lifted the 40 minute limit <strong>for schools</strong></em></li>
+        </ul>
+      </li>
+      <li>Possible scaling issues as it is highly likely that Zoom becomes really popular around the world and server capacity might become low</li>
+    </ul>
+  </li>
+  <li><a href="https://meet.jit.si/">Jitsi <sup><i class="fas fa-external-link-square-alt"></i></sup></a>
+    <ul>
+      <li>Free and fairly unlimited</li>
+      <li>Lower quality</li>
+      <li>Some users may experience connection issues</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-organise-your-journal-club">2. Organise your journal club</h3>
+
+<p>Choose the paper you want to discuss as you do normally, select a person to serve as ‘host’/moderator and a meeting time. Decide on the size of your group (we recommend a maximum of 10-15 people, after which discussion becomes difficult over video chat and one should move to more <a href="#large-groups">lecture-style discussions</a>). Share <strong>two Zoom links</strong>, and add the event to the open <a href="#-open-calendar">ReproducibiliTea Online Calendar</a> if you want to make it available to the wider communiTea.</p>
+
+<h3 id="3-run-the-meeting">3. Run the meeting</h3>
+
+<p>As mentioned in the guidance for <a href="#attending-reproducibilitea-online">participation</a>, online journal club etiquette often needs to be a bit more strict. You can help ensure things run smoothly by:</p>
+
+<ol>
+  <li>Designating a moderator before the meeting starts
+    <ul>
+      <li>The moderator should familiarise themselves with the platform in use before the meeting starts
+        <ul>
+          <li>the moderator could be the person presenting the paper but could also be another person</li>
+        </ul>
+      </li>
+      <li>The moderator calls on people who have their hands up</li>
+      <li>Hands can be raised physically on video, in text chat, or through e.g. the ‘hand raised’ function available on Zoom
+        <ul>
+          <li>arrange different signals for adding to the current point versus bringing up a new point</li>
+        </ul>
+      </li>
+      <li>If you’re using Zoom, be sure to ‘claim host’ by pressing the button in the participants window (the meeting will end prematurely if no host is claimed)</li>
+    </ul>
+  </li>
+  <li>Allocate some time at the beginning of the meeting for
+    <ul>
+      <li>reminding people of the etiquette for online meetings
+        <ul>
+          <li>Headphones</li>
+          <li>Muted microphones</li>
+          <li>Hands up and await the moderator before speaking</li>
+        </ul>
+      </li>
+      <li>sorting out technical issues</li>
+      <li>sharing links people may need to participant</li>
+      <li>brief introductions to start everyone engaged (especially when welcoming members of other journal clubs!)</li>
+    </ul>
+  </li>
+  <li>Create a google doc for people to add discussion points to
+    <ul>
+      <li>this allows for participation from quiet people (or people who are having technical issues)</li>
+      <li>the moderator will need to make sure to integrate their points by calling on people</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="large-groups">Large Groups</h3>
+
+<p>As group sizes get towards double figures, meeting using video may become prohibitively complex or technically challenging. For these meetings, we recommend a webinar-style format where one person leads the discussion <strong>sharing their screen</strong>/webcam, and other people at the meeting join using <strong>audio only</strong>. When setting up Zoom meetings you can determine beforehand whether participants should join only with audio or audio/video, which can help you get the meeting on track quickly. Additionally, you may want to consider a streaming-based software solution such as <a href="https://discordapp.com/">Discord <sup><i class="fas fa-external-link-square-alt"></i></sup></a>.</p>
+
+<h2 id="-open-calendar"><a href="#reproducibilitea-online"><i class="fas fa-long-arrow-alt-up"></i></a> Open Calendar</h2>
+
+<p>We are hoping to turn this crisis into an opportunity to increase communication between journal clubs and allow those without a local journal club to join the discussion! To help with this, we have set up a <a href="/calendar/">shared Google Calendar</a> which shows online journal clubs around the world that are happy to have further guests join. This is a place to publicly <strong>advertise your online journal club</strong> and <strong>allow others to join</strong>.  Organisers from journal clubs can also arrange to <strong>host online journal clubs together</strong> to increase attendance and build relationships between neighbouring universities or institutions with different cultures and perspectives.</p>
+
+<p>Your ReproducibiliTea contact email will receive an email with instructions on how to add events to the shared calendar. This may be screened out by some institutions which block Google Groups invitations. If you have not received an invitation and want to access the calendar, please email Amy (reproducibilitea@gmail.com).</p>
+
+<p>You can also use <a href="/card/">this page</a> to make simple images to share with people which will remind them of when you’re meeting.</p>
+
+:ET

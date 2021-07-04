@@ -1,0 +1,43 @@
+I"�<figure class="image">
+    
+    <div class="fig">
+        <a href="/assets/images/blog/replicats-oxford.jpg">
+            <object data="/assets/images/blog/replicats-oxford-small.jpg" type="image/jpg">
+    <img src="/assets/images/blog/replicats-oxford.jpg" alt="ReproducibiliTea Oxford does RepliCATS" />
+</object>
+        </a>
+    </div>
+    
+    <figcaption><a href="/journal-clubs/#Oxford">ReproducibiliTea Oxford</a> RepliCATS session. Photo credit <a href="https://twitter.com/IlsePit">@IlsePitt</a></figcaption>
+    
+</figure>
+<!-- Credit https://stackoverflow.com/a/19360305 -->
+
+<p>Last week’s ReproducibiliTea at <a href="/journal-clubs/#Oxford">Oxford Experimental Psychology</a> (honourable mention to our Anthropology regulars!) went on a little longer than our usual one-hour of snacks and journal articles. We, like a few other ReproducibiliTea clubs, teamed up with the <a href="https://replicats.research.unimelb.edu.au/">RepliCATS</a> project and estimated the replicability of research studies for the benefit of science (and pizza).</p>
+
+<p>repliCATS (<a href="https://twitter.com/replicats">@replicats</a>) is a project aiming to understand the replicability of social and behavioural sciences and how well replicability can be predicted. There are three arms to the project: gathering researchers’ assessments of replicability of specific claims in papers across a broad range of disciplines, running replications of a subset of the assessed claims and attempting to predict replicability using machine learning techniques. The ReproducibiliTea sessions help with the first of these arms.</p>
+
+<p>We spent around 30 minutes signing up to the repliCATS platform, which involves completing an interesting questionnaire about areas of expertise, metascience knowledge, and statistical knowledge, and watching the introduction video. Over the next couple of hours, we went over four claims using the platform’s <a href="https://replicats.research.unimelb.edu.au/sample-page/faqs/">IDEA approach</a>. The IDEA protocol grounds itself on group decision-making literature which pleased me, as a graduate student studying group decision-making. Individuals make their judgements about the claim, then they have an opportunity to discuss those judgements with others. After discussion, each person makes a final decision in private. This allows for both a diversity of estimates and reasons as well as minimising groupthink effects, at least in principle. As a group, many of us were quite effusive (especially me) so there may have been some cross-pollination of ‘individual judgements’ due to facial expressions, quizzical sounds, or irrepressible comments.</p>
+
+<p>Individuals judge how readily each claim can be understood, whether it appears plausible, and how many of 100 direct replications of the claim are likely to show an effect in the same direction (with alpha = .05). This seems pretty straightforward but, in practice, we often found it quite tricky…</p>
+
+<p>For some of the claims, we found that the claim extracted by the platform for assessment bore little resemblance to the inferential test put forward to test it. For example, one claim was that people in condition A would out-perform those in conditions B and C. This claim was ‘tested’ by a t-test of condition A performance vs chance. These discrepancies sometimes happened because the authors didn’t do a good job of testing the claim, but in others the platform selected the wrong test. Also, in some cases, the N supplied for the test didn’t match the actual N reported in the paper or the test’s degrees of freedom. These issues made it difficult to work out whether we should assess the replicability of the claim or the inferential test.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>For other claims, the tests seemed entirely misguided. The authors of one paper seemed to divide teachers into two groups based on whether their teaching was improving. They then used an inferential test to show that the ‘improving’ group improved relative to the non-improving group. That test seemed pretty pointless in terms of a meaningful claim, and it wasn’t very clear what we should assess. We could assess the probability that for any random set of 6 teachers you’ll be able to assign them to improving vs stable groups, or we could assess the claim that tautological t-tests should come up significant.</p>
+
+<p>Of the four claims we investigated as a group, the most sensible one was that juvenile offenders are more likely to be placed in young offenders’ institutions if their family assesses as dysfunctional. We were pretty happy with the inferential test for that claim and it seemed intuitive. The only reason we came up with to doubt its replicability related more to the claim’s generalisability across time than the robustness of the study. The claim seemed to show a behaviour of the courts which could be subject to political correction which would make it hard to find the same effect if courts used in future replications behaved differently (perhaps as a result of the original study).</p>
+
+<p>The whole exercise brought to light a good many considerations of what we mean by replicability and which factors we should or should not care about. It was also like a rapid-fire journal club with pizza, which is about the best way to spend an academic afternoon! I really like the ambition of the whole repliCATS project, from the breadth and depth of the disciplines covered to the idea of (responsibly) running machine learning on the studies. It’s a very cool project and I’m really looking forward to seeing how it evolves.</p>
+
+<p><em>Matt Jaquiery <a href="https://verysmalldreams.com/">(verysmalldreams.com)</a> is a final year DPhil student and organises the University of <a href="/journal-clubs/#Oxford">Oxford journal club</a> with Sam Parsons, Paul Thompson, Nils Reimer, Sarah Ashcroft-Jones, and Sam Webb.</em></p>
+
+<h3 id="notes">Notes:</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>According to RepliCATS, the answer to this is that the inferential test is the focus rather than the verbal claim. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
