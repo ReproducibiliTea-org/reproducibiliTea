@@ -12,7 +12,7 @@ signup:
 organisers: [Jakub Fořt, Benjamin Šimsa, Jiří Štipl]
 contact: fortjaku@gmail.com
 additional-contact: []
-address: [Celetna 20, Prague , Czech Republic, , (the journal club takes place online / via Zoom)]
+address: [Celetna 20, Prague, Czech Republic]
 country: Czech Republic
 geolocation: [50.08723060740119, 14.42631483078003]
 last-update: fortjaku@gmail.com
@@ -22,4 +22,5 @@ last-update-message: >-
 
 ---
 
+The journal club takes place online.
 
