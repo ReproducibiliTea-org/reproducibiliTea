@@ -21,7 +21,6 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder, Chair)
 * Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli) (Co-founder)
 * Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
-* Katie Drax [@katiedrax](https://twitter.com/katiedrax)
 * Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
 * Jan Vornhagen [@VornhagenJB](https://twitter.com/VornhagenJB)
 * William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
