@@ -58,12 +58,10 @@ Sophia started the ReproducibiliTea journal clubs at Oxford (with Sam & Amy), Am
 
 {% include image.html url="blog/sophia.png" alt="Sophia Crüwell" description="" %}
 
-Katie Drax [@katiedrax](https://twitter.com/katiedrax)
+Katie
 
-Katie is a third year PhD student in metaresearch at the University of Bristol. 
+Katie is a PhD student in metaresearch at the University of Bristol. 
 She is deputy lead at the University of Bristol Reproducibility, and is responsible for the ReproducibiliTea blog.  
-
-{% include image.html url="blog/katie.png" alt="Katie Drax" description="" %}
 
 # Reflections
 
