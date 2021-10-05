@@ -8,9 +8,10 @@ host-org-url: https://www.plymouth.ac.uk/
 
 website: https://lenarddome.github.io/reproducibilitea/
 
-organisers: [Lenard Dome, Karol Nedza]
+organisers: [Rory Spanton, Lenard Dome, Karol Nedza]
 
-contact: lenard.dome@plymouth.ac.uk 
+contact: rory.spanton@plymouth.ac.uk
+additional-contact: [lenard.dome@plymouth.ac.uk]
 
 address: [301a Link Building, University of Plymouth, Drakes Circus, Plymouth, PL4 8AA]
 country: United Kingdom

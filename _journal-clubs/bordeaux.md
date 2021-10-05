@@ -9,17 +9,18 @@ zotero: 7DG7VGQ7
 website: 
 twitter: BordeauxTea
 signup: rtea.ubordeaux@gmail.com
-organisers: [Eduarda Centeno]
-contact: egervinizamp@u-bordeaux.fr
-additional-contact: []
-address: [Cristina Lemos (Cheffe de Projet ), Campus Carreire – CGFB – 2ème étage – Bur. 203, 146 Rue Léo Saignat, 33076 BORDEAUX Cedex]
+organisers: [Eduarda Centeno, Fjola Hyseni]
+contact: rtea.ubordeaux@gmail.com
+additional-contact: [fjola.hyseni@u-bordeaux.fr, rtea.ubordeaux@gmail.com]
+address: [Cristina Lemos (Cheffe de Projet), School of Neurosciences - CFGB - 1er etage., Campus Carreire 146 Rue Leo Saignat, 33076 BORDEAUX Cedex]
 country: France
 geolocation: [44.828117285549105, -0.6075096130370694]
 last-update: egervinizamp@u-bordeaux.fr
-last-update-timestamp: 1608310325
+last-update-timestamp: 1632749862
 last-update-message: >-
-  API creation of bordeaux.md
+  Hey!
+  I would like to add a co-host to the out JC's description. 
 
 ---
 
-ReproducibiliTea journal club at the Universitè de Bordeaux. We meet monthly, every last Tuesday of the month, at 6pm.
+ReproducibiliTea journal club at the Université de Bordeaux. We meet monthly, every last Tuesday of the month, at 5:30pm.

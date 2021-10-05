@@ -13,15 +13,12 @@ const {
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
     MAILGUN_HOST,
+    GITHUB_TOKEN,
+    GITHUB_API_USER,
     FROM_EMAIL_ADDRESS
 } = process.env;
 
-let {
-    GITHUB_TOKEN,
-    GITHUB_API_USER,
-    GITHUB_REPO_API
-} = process.env;
-
+let {GITHUB_REPO_API} = process.env;
 
 
 const OPTIONAL_FIELDS = [
@@ -35,18 +32,18 @@ const REQUIRED_FIELDS = [
 ];
 
 exports.handler = async (event, context, callback) => {
+    console.log('JC create request received')
     if (event.httpMethod !== 'POST') {
+        console.error(`Method ${event.httpMethod} not allowed`)
         return { statusCode: 405, body: 'Method Not Allowed', headers: { 'Allow': 'POST' } }
     }
 
     const sandbox = /(sandbox|localhost)/.test(event.headers.referer);
     // Switch to Sandbox mode if we're on the sandbox account
     if(sandbox) {
-        const {GITHUB_TOKEN_SANDBOX, GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
-            process.env;
+        console.log('SANDBOX mode')
+        const {GITHUB_REPO_API_SANDBOX} = process.env;
 
-        GITHUB_TOKEN = GITHUB_TOKEN_SANDBOX;
-        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
         GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 
@@ -55,6 +52,7 @@ exports.handler = async (event, context, callback) => {
     try{
         data = cleanData(JSON.parse(event.body));
     } catch(e) {
+        console.error(`Failed to clean input data.`)
         return {
             statusCode: 400,
             body: '<p>Could not clean submission for processing</p>'
@@ -66,6 +64,7 @@ exports.handler = async (event, context, callback) => {
     let editToken = null;
     if(token) {
         // Check authorisation to edit
+        console.log(`Checking token ${token}`)
         editToken = await fetch(`${event.headers.origin}/.netlify/functions/edit-jc_check-token`, {
             method: 'POST',
             body: token,
@@ -104,16 +103,21 @@ exports.handler = async (event, context, callback) => {
     const check = checkData(data, isEdit);
 
     if (check !== null) {
+        console.error(`Failed data check:`)
+        console.error(check)
         return check;
     }
 
     // From here we continue regardless of success, we just record the success/failure status of the series of API calls
+    console.log('Preflight complete, dispatching API calls...')
     let body;
     if(isEdit)
         body = {github: await callGitHub(data, null, editToken)};
     else
         body = await callAPIs(data);
 
+    console.log('Complete. Results:')
+    console.log(body)
     return {statusCode: 200, body: formatResponses(body)};
 };
 
@@ -298,6 +302,7 @@ function formatResponses(re) {
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function callOSF(data) {
+    console.log('Calling OSF')
     const out = {
         title: 'OSF',
         status: 'Okay',
@@ -442,6 +447,7 @@ async function callOSF(data) {
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function callZotero(data) {
+    console.log('Calling Zotero')
     const out = {
         title: 'Zotero',
         status: 'Okay',
@@ -613,7 +619,7 @@ async function callSlack(data) {
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function callGitHub(data, results, editToken = null) {
-
+    console.log('Calling GitHub')
     const out = {
         title: 'GitHub',
         status: 'Okay',
@@ -621,6 +627,7 @@ async function callGitHub(data, results, editToken = null) {
     };
 
     const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
+    console.log(`Accessing github via: ${url}`);
 
     // Check whether a JC file already exists
     try {
@@ -780,6 +787,7 @@ ${editToken.message}`,
  * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
  */
 async function callMailgun(data, results) {
+    console.log('Calling MailGun')
     const out = {
         title: 'Mailgun',
         status: 'Okay',

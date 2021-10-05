@@ -1,11 +1,10 @@
 {
   "name": "reproducibiliTea",
   "version": "1.0.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "dotenv": "^8.6.0",
     "faunadb": "^3.0.1",
-    "dotenv": "^8.2.0",
     "mailgun-js": "^0.22.0",
     "node-fetch": "^2.6.1"
   }

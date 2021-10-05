@@ -3,11 +3,8 @@ const fetch = require("node-fetch");
 require('dotenv').config();
 
 // Extract .env variables
-let {
-    GITHUB_TOKEN,
-    GITHUB_API_USER,
-    GITHUB_REPO_API
-} = process.env;
+const {GITHUB_TOKEN, GITHUB_API_USER} = process.env;
+let {GITHUB_REPO_API} = process.env;
 
 /**
  * Look up each JC.md file, and make sure each one has a jcid field which contains its filename
@@ -19,11 +16,8 @@ let {
 exports.handler = async (event, context, callback) => {
     // Switch to Sandbox mode if we're on the sandbox account
     if(/(sandbox|localhost)/.test(event.headers.referer)) {
-        const {GITHUB_TOKEN_SANDBOX, GITHUB_API_USER_SANDBOX, GITHUB_REPO_API_SANDBOX} =
-            process.env;
+        const {GITHUB_REPO_API_SANDBOX} = process.env;
 
-        GITHUB_TOKEN = GITHUB_TOKEN_SANDBOX;
-        GITHUB_API_USER = GITHUB_API_USER_SANDBOX;
         GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 

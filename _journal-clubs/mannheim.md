@@ -12,19 +12,15 @@ signup:
 organisers: [Juli Tkotz, Alexander Wuttke]
 contact: juliane.tkotz@zi-mannheim.de
 additional-contact: []
-address: [Juli Tkotz, Zentralinstitut fÃ¼r Seelische Gesundheit, J5 Forschungs- und VerwaltungsgebÃ¤ude, Dep. Klinische Psychologie, Room 333, 68159 Mannheim, Germany]
-country: Germany
+address: [Zentralinstitut fÃ¼r Seelische Gesundheit, "J5 Forschungs- und VerwaltungsgebÃ¤ude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
+country: Netherlands
 geolocation: [49.492793033169804, 8.46544861793518]
 last-message-level: 1
 last-message-timestamp: 0
 last-update: juliane.tkotz@zi-mannheim.de
-last-update-timestamp: 1605776475
+last-update-timestamp: 1617290580
 last-update-message: >-
-  This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bringing together open science enthusiasts across various institutions in Mannheim. Find us on Twitter @MAOpenScience
-  
-  As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings will be held monthly. Being “born” during the pandemic, we don’t have a real life meeting location (yet!).
-  
-  Our first (online) meeting will take place on December 8th 2020, 17:00 GMT +1. E-mail us for the link!
+  Edit upcoming meeting info
 
 ---
 
@@ -32,4 +28,8 @@ This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bring
 
 As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings will be held monthly. Being "born" during the pandemic, we don't have a real life meeting location (yet!).
 
-Our first meeting will take place on December 8th 2020, 17:00 GMT +1. Email us for the link!
+Our next meeting will take place on April 14th 2021, 17:30 GMT +2, where we will discuss
+
+Goodman, S. N., Fanelli, D., & Ioannidis, J. P. (2016). What does research reproducibility mean? Science translational medicine, 8(341), doi: 10.1126/scitranslmed.aaf5027
+
+Email us for the link to join!
