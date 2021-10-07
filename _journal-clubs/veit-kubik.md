@@ -1,7 +1,7 @@
 ---
 
 jcid: veit-kubik
-title: Veit Kubik
+title: BURST
 host-organisation: Bielefeld University
 host-org-url: https://www.uni-bielefeld.de
 osf: k8npa
@@ -9,16 +9,19 @@ zotero: 6AGMUFBJ
 website: 
 twitter: 
 signup: 
-organisers: [Veit Kubik]
+organisers: [Veit Kubik, Martin Wegrzyn, Usama El-Awad, Hannah Nilles]
 contact: veit.kubik@uni-bielefeld.de
 additional-contact: []
-address: [Fakultät für Psychologie und Sportwissenschaft, Abteilung für Psychologie, Postfach 10 01 31, D-33501 Bielefeld]
+address: [Fakultaet fuer Psychologie und Sportwissenschaft, Abteilung fuer Psychologie, Postfach 10 01 31, D-33501 Bielefeld]
 country: Germany
 geolocation: [52.02545860348811, 8.558349609375]
 last-update: veit.kubik@uni-bielefeld.de
-last-update-timestamp: 1620791428
+last-update-timestamp: 1633584565
 last-update-message: >-
-  API creation of veit-kubik.md
+  I am trying to change the journal club "Veit Kubik" to Bielefeld, and would like to  add three further names as co-organizers.
+  
+  Cheers
+  Veit
 
 ---
 
