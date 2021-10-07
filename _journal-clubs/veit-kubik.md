@@ -16,7 +16,7 @@ address: [Fakultaet fuer Psychologie und Sportwissenschaft, Abteilung fuer Psych
 country: United Kingdom
 geolocation: [52.02545860348811, 8.558349609375]
 last-update: veit.kubik@uni-bielefeld.de
-last-update-timestamp: 1633584732
+last-update-timestamp: 1633584835
 last-update-message: >-
   I am trying to change the journal club "Veit Kubik" to Bielefeld, and would like to  add three further names as co-organizers.
   
