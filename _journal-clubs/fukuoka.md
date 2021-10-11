@@ -9,7 +9,7 @@ address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 
 country: Japan
 osf: pdc9m
 geolocation: [33.59626100000001, 130.2166993]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

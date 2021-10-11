@@ -13,7 +13,7 @@ contact: angela8@stanford.edu
 address: [Running Farm Lane, Apartment 213-203, Escondido Vilalge, Stanford, CA, 94305]
 country: United States
 geolocation: [37.42221919299645, -122.15814113616946]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

@@ -14,7 +14,7 @@ additional-contact: []
 address: [Division of Psychiatry, University of Edinburgh, 7th Floor Kennedy Tower, Royal Edinburgh Hospital, Morningside Park, Edinburgh EH10 5HF]
 country: United Kingdom
 geolocation: [55.92800001097837, -3.2141876220703125]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

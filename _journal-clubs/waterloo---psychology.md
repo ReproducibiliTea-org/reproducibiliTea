@@ -15,7 +15,7 @@ additional-contact: []
 address: [Konstantyn Sharpinskyi, PAS Building, 200 University Ave W, Waterloo, ON , N2L 3G1, Canada]
 country: Canada
 geolocation: [43.4720443965867, -80.54489135742188]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 last-update: ksharpin@uwaterloo.ca
 last-update-timestamp: 1630509997

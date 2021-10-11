@@ -13,7 +13,7 @@ contact: lora.c.leligdon@dartmouth.edu
 address: [DARTMOUTH COLLEGE - KRESGE LIBRARY, 25 N MAIN ST, HANOVER, NH 03755-1808, United States]
 country: United States
 geolocation: [43.7058872, -72.286402]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

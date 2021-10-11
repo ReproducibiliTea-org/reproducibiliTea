@@ -15,7 +15,7 @@ additional-contact: [verena.krall@tu-dresden.de]
 address: [TU Dresden, cfaed, KST 2301406, Verena Krall, 01062 Dresden]
 country: Germany
 geolocation: [51.0266478, 13.7230296]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 last-update: verena.krall@tu-dresden.de
 last-update-timestamp: 1607273903

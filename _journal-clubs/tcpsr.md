@@ -14,7 +14,7 @@ additional-contact: []
 address: [No. 67, Jieren Street, Hualien City, Hualien County, 970]
 country: Taiwan
 geolocation: [24.206889622398023, 121.0693359375]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

@@ -8,7 +8,7 @@ contact: lina.koppel@liu.se
 address: [Linköping University, Lina Koppel, IEI A-huset campus Valla, 58183 Linköping]
 country: Sweden
 geolocation: [58.4038916, 15.4703496]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 **About:**

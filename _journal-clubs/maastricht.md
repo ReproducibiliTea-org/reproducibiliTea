@@ -14,7 +14,7 @@ additional-contact: []
 address: [P.O. Box 616,  6200 MD,  Maastricht]
 country: Netherlands
 geolocation: [50.847572953653916, 5.6964111328125]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

@@ -14,7 +14,7 @@ additional-contact: []
 address: [B220 Wells Hall, Michigan State University, East Lansing, 48824 MI, USA]
 country: United States
 geolocation: [42.726476605516446, -84.48488473892212]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

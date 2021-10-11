@@ -10,7 +10,7 @@ address: [ICPE, in-house postalcode 72, University Medical Center Groningen, Han
 osf: f6brg
 country: Netherlands
 geolocation: [53.220974, 6.577026099999999]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

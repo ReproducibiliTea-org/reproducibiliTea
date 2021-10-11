@@ -721,7 +721,7 @@ address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 last-message-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
-last-message: 1
+last-message-level: 0
 last-update: ${editToken.email}
 last-update-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-update-message: >-

@@ -22,7 +22,7 @@ address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13
  
 country: Germany
 geolocation: [48.15928719999999, 11.5853531]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

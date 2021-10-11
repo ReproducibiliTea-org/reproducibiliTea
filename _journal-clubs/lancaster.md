@@ -20,7 +20,7 @@ last-update-timestamp: 1624436747
 last-update-message: >-
   I'd like to add an additional person as a co-organiser of the club.
 
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

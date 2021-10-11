@@ -15,7 +15,7 @@ additional-contact: []
 address: [Office H6.39, Monash University, Faculty of IT, 900 Dandenong Road, Building H, level 6, room: H6.39, Caulfield East VIC 3145]
 country: Australia
 geolocation: [-37.90980449169687, 145.13643264770508]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 last-update: lonni.besancon@gmail.com
 last-update-timestamp: 1610565601

@@ -20,7 +20,7 @@ last-update-timestamp: 1615417330
 last-update-message: >-
   Change organizer emails
 
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

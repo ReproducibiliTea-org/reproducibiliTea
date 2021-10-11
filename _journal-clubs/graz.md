@@ -11,7 +11,7 @@ osf: r3hcn
 address: [Brockmanngasse 84, 1st Floor, Besprechungsraum]
 country: Austria
 geolocation: [47.0619149, 15.441745]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

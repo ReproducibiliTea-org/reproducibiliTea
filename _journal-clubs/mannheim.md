@@ -15,7 +15,7 @@ additional-contact: []
 address: [Zentralinstitut fÃ¼r Seelische Gesundheit, "J5 Forschungs- und VerwaltungsgebÃ¤ude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
 country: Netherlands
 geolocation: [49.492793033169804, 8.46544861793518]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 last-update: juliane.tkotz@zi-mannheim.de
 last-update-timestamp: 1617290580

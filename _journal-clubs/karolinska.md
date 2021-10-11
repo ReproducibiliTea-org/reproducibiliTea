@@ -18,7 +18,7 @@ address: [Department of Clinical Neuroscience, Karolinska Institutet, Nobels vä
 country: Sweden
 
 geolocation: [59.34814839999999, 18.0236579]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 
 ---

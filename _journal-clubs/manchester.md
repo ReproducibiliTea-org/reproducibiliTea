@@ -11,7 +11,7 @@ contact: nathan.khadaroo@postgrad.manchester.ac.uk # Email contact for the JC
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
 geolocation: [53.4663853, -2.2339112]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 **About:**

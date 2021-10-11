@@ -11,7 +11,7 @@ contact: beitner@psych.uni-frankfurt.de
 address: [Frankfurt am Main]
 country: Germany
 geolocation: [50.121301, 8.5665245]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

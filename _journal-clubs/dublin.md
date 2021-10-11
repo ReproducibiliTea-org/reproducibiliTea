@@ -13,7 +13,7 @@ contact: ramdunyj@tcd.ie
 address: [Trinity College Institute of Neuroscience, Room 3.14, Lloyd Building, Trinity College Dublin, College Green, Dublin]
 country: Ireland
 geolocation: [53.3438181, -6.2509871]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

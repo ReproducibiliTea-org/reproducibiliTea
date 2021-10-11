@@ -18,7 +18,7 @@ country: France
 osf: m73e4
 
 geolocation: [45.7437964, 4.902354]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 
 ---

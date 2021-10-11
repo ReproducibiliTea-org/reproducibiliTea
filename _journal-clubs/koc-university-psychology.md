@@ -13,7 +13,7 @@ contact: sgulgoz@ku.edu.tr
 address: [Sami Gulgoz, Koc Universitesi, Rumeli Feneri Yolu Sariyer, Istanbul, Turkey 34450]
 country: Turkey
 geolocation: [41.18692242290299, 29.0753173828125]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

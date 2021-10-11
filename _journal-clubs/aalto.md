@@ -13,7 +13,7 @@ contact: jan.vornhagen@aalto.fi
 address: [Tietotekniikka, B121;, Konemiehentie 2;, 02150 Espoo;]
 country: Finland
 geolocation: [60.18677975700706, 24.822366535663605]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

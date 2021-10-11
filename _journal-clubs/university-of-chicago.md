@@ -13,7 +13,7 @@ contact: wngiam@uchicago.edu
 address: [940 E 57th Street, Chicago, Illinois 60637]
 country: United States
 geolocation: [41.788816943128815, -87.59935855865479]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

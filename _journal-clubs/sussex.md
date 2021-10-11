@@ -13,7 +13,7 @@ contact: openscience@sussex.ac.uk
 address: [Pevensey Building, University of Sussex, Falmer, East Sussex, BN1 9GH]
 country: United Kingdom
 geolocation: [50.8657409, -0.0856661]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 

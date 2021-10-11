@@ -10,7 +10,7 @@ organisers: [Ricarda Proppert, Myrthe Vel Tromp]
 contact: leidentea@gmail.com
 country: Netherlands
 geolocation: [52.1571485, 4.485209]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 ---
 **About**

@@ -17,18 +17,18 @@ const {
 } = process.env;
 
 const MESSAGE_LEVELS = {
-    UP_TO_DATE: 1,
-    NOTIFICATION: 2,
-    FIRST_REMINDER: 4,
-    SECOND_REMINDER: 8,
-    JC_DEACTIVATED: 16
+    UP_TO_DATE: 0,
+    NOTIFICATION: 1,
+    FIRST_REMINDER: 2,
+    SECOND_REMINDER: 3,
+    JC_DEACTIVATED: 4
 };
 
 const ACTIONS = {
-    "action-2": "Notification sent.",
-    "action-4": "First reminder sent.",
-    "action-8": "Second reminder sent",
-    "action-16": "Journal club deactivated."
+    "action-1": "Notification sent.",
+    "action-2": "First reminder sent.",
+    "action-3": "Second reminder sent",
+    "action-4": "Journal club deactivated."
 };
 
 const MAX_DAYS_SINCE_UPDATE = 365;
@@ -230,9 +230,9 @@ async function rollcallJC(jc) {
  */
 async function processRollcall(JC) {
     // Do we have a cached version of the message template?
-    if(!TEMPLATES.hasOwnProperty(`message-${JC.newMessageLevel}`))
+    if(!TEMPLATES.hasOwnProperty(`rollcall-message-${JC.newMessageLevel}`))
         TEMPLATES[`message-${JC.newMessageLevel}`] = await fetch(
-            `${GITHUB_REPO_API}/contents/_emails/message-${JC.newMessageLevel}.json`,
+            `${GITHUB_REPO_API}/contents/_emails/rollcall-message-${JC.newMessageLevel}.json`,
             {
                 headers: {
                     'User-Agent': GITHUB_API_USER,
@@ -243,7 +243,7 @@ async function processRollcall(JC) {
             .then(r => r.json())
             .then(json => new Buffer.from(json.content, 'base64').toString())
             .then(s => JSON.parse(s));
-    const template = TEMPLATES[`messages-${JC.newMessageLevel}`];
+    const template = TEMPLATES[`message-${JC.newMessageLevel}`];
 
     // Update the template into a proper email
     const email = substituteHandlebars(
@@ -390,8 +390,8 @@ function updateMessageStatus(JC) {
     // Commit to gitHub with the new body as content
     const newContent = new Buffer.from(newBody).toString('base64');
     const commit = JSON.stringify({
-        message: `Rollcall: Update ${data.jcid}.md last message time.`,
-        content: new Buffer.from(out.githubFile).toString('base64'),
+        message: `Rollcall: Update ${JC.jcid}.md last message time.`,
+        content: newContent,
         sha: JC.gitHubResponse.sha
     });
     return fetch(

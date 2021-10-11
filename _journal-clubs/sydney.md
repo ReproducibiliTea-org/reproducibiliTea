@@ -15,7 +15,7 @@ additional-contact: []
 address: [Level 3, Australian Hearing Hub, 16 University Avenue, Macquarie University, Sydney NSW 2109]
 country: Australia
 geolocation: [-33.87041555094182, 151.259765625]
-last-message-level: 1
+last-message-level: 0
 last-message-timestamp: 0
 last-update: mqsobalab@gmail.com
 last-update-timestamp: 1612135580
