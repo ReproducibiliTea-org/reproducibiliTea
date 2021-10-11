@@ -9,9 +9,9 @@ zotero: null
 website: 
 twitter: ReproTeaBerlin
 signup: 
-organisers: [Martin Holst, Corinna Hartling]
+organisers: [Martin Holst, Corinna Hartling, Tim Bothe]
 contact: martin.holst@charite.de
-additional-contact: []
+additional-contact: [tim.bothe@mail.com]
 address: [Berlin Institute of Health (BIH) @ Charité, QUEST Center for Transforming Biomedical Research, Anna-Louisa-Karsch-Straße 2, 10178 Berlin]
 country: Germany
 geolocation: [52.520361618280944, 13.401684165000916]
@@ -24,6 +24,8 @@ last-update-message: >-
 
 ---
 
-We meet every second Thursday, 17:00-18:00, ONLINE for the foreseeable future. Get in touch via email! 3 ECTS can be obtained for regular participation. Read the paper and come by for tea and discussion!
+In the upcoming semester, we will meet every second or third Thursday, from 5 pm to 6 pm. A meeting begins with a short presentation about the paper we read, followed by a discussion. Everyone and every perspective is welcome!
 
-Next meetings: 15/04, 29/04, 27/05, 10/06, 24/06, 08/07
+Please get in touch via email! 3 ECTS can be obtained for regular participation. Read the paper and come by for tea and discussion!
+
+Next meetings: Our first meeting will be on 21 October.

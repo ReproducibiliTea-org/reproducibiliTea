@@ -40,6 +40,7 @@ Want to join the movement? Just curious for now? Grab your cup of (Reproducibili
 {% assign countries = countries | split: "|" | uniq | sort_natural %}
 {% for c in countries %}
 {% assign jcs = site.journal-clubs | where: "country", c %}
+{% assign jcs = jcs | sort_natural: "title" %}
 {% assign jc_count = jcs | size %}
 {% if jc_count > 0 %}
 {:.jc-list #{{c}}}
