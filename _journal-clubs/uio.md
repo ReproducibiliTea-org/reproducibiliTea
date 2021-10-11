@@ -15,6 +15,8 @@ additional-contact: [agata.bochynska@gmail.com]
 address: [Timo Roettger, Department of Linguistics and Scandinavian Studies, Niels Henrik Abels vei 36, 0313, Oslo, Norway]
 country: Norway
 geolocation: [59.913729826873684, 10.7611083984375]
+last-message-level: 1
+last-message-timestamp: 0
 last-update: timo.b.roettger@gmail.com
 last-update-timestamp: 1633702759
 last-update-message: >-

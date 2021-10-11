@@ -1,11 +1,15 @@
 {
   "name": "reproducibiliTea",
   "version": "1.0.0",
+  "scripts": {
+    "debug": "netlify dev --inspect"
+  },
   "dependencies": {},
   "devDependencies": {
     "dotenv": "^8.6.0",
     "faunadb": "^3.0.1",
     "mailgun-js": "^0.22.0",
+    "netlify-cli": "^6.10.4",
     "node-fetch": "^2.6.1"
   }
 }

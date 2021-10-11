@@ -4,9 +4,11 @@ require('dotenv').config();
 const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
+let {GITHUB_REPO_API} = process.env;
+
 const {
+    GITHUB_API_USER,
     GITHUB_TOKEN,
-    GITHUB_REPO_API,
     FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
@@ -32,20 +34,30 @@ const ACTIONS = {
 const MAX_DAYS_SINCE_UPDATE = 365;
 const MIN_DAYS_BETWEEN_EMAILS = 28;
 
-const ROLLCALL_DB = "rollCalls";
+const TOO_OLD = new Date()
+    .setDate(new Date().getDate() - MAX_DAYS_SINCE_UPDATE);
+const TOO_RECENT = new Date()
+    .setDate(new Date().getDate() - MIN_DAYS_BETWEEN_EMAILS);
+
+const ROLLCALL_DB = "rollcalls";
 
 const TEMPLATES = {};
 
+let SANDBOX = true;
+
 exports.handler = function(event, context, callback) {
+    SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host);
+    if(SANDBOX)
+        GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
     rateLimit()
-        .then(() => rollCall())
+        .then(() => rollcall())
         .then((summary)=>{
             callback(null, {
                 statusCode: 200,
                 body: JSON.stringify(summary)
             });
         })
-        .then(() => saveRollCall())
+        .then(() => saveRollcall())
         .then(() => {
             callback(null, {statusCode: 200, body: 'Rollcall complete.'})
         })
@@ -53,13 +65,13 @@ exports.handler = function(event, context, callback) {
 };
 
 /**
- * @class Roll call result
- * @classdesc Contains the details of a roll call result
+ * @class Rollcall result
+ * @classdesc Contains the details of a rollcall result
  *
  * @property journalClub {object} journal club the result pertains to
- * @property action {string} action taken by the roll call
+ * @property action {string} action taken by the rollcall
  */
-class RollCallResult {
+class RollcallResult {
     constructor(JC, action) {
         this.journalClub = JC;
         this.action = action;
@@ -131,12 +143,12 @@ class JournalClub {
 
 /**
  * Test whether a check was made in the last week
- * @param minDaysSinceLast {int} minimum days to wait before allowing another roll call
+ * @param minDaysSinceLast {int} minimum days to wait before allowing another rollcall
  * @return {Promise<boolean>} whether rate-limiting has passed successfully
  */
 function rateLimit(minDaysSinceLast = 6) {
     const client = new faunadb.Client({ secret: FAUNA_KEY });
-    client.query(
+    return client.query(
         FQ.Map(
             FQ.Paginate(FQ.Documents(FQ.Collection(ROLLCALL_DB))),
             FQ.Lambda("D", FQ.Get(FQ.Var("D")))
@@ -150,22 +162,22 @@ function rateLimit(minDaysSinceLast = 6) {
                     throw new Error(`A rollcall was triggered more recently than ${minDaysSinceLast} days ago, at ${new Date(x.data.time).toISOString()}`);
             });
             return true;
-        })
+        });
 }
 
 /**
- * Perform a roll-call on each Journal Club.
- * A roll call sends out an email to journal club contacts who have not updated
+ * Perform a rollcall on each Journal Club.
+ * A rollcall sends out an email to journal club contacts who have not updated
  * their journal club in the last year.
  * Thereafter, increasingly strident requests for checking in are sent each
  * month for two months.
  * If a journal club is not updated for 15 months it is marked as lapsed.
- * @return {RollCallResult[]}
+ * @return {RollcallResult[]}
  */
-async function rollCall() {
+async function rollcall() {
     return await fetchJCs()
         .then(async JCs =>
-            await Promise.allSettled(JCs.map(jc => rollCallJC(jc))))
+            await Promise.allSettled(JCs.map(jc => rollcallJC(jc))))
         .then(JCs => {
             const results = {};
             for(jc of JCs) {
@@ -181,37 +193,34 @@ async function rollCall() {
 }
 
 /**
- * Perform a roll-call on a journal club
- * @param jc {object} journal club gitHub response to roll call
- * @return {RollCallResult}
+ * Perform a rollcall on a journal club
+ * @param jc {object} journal club gitHub response to rollcall
+ * @return {RollcallResult}
  */
-async function rollCallJC(jc) {
+async function rollcallJC(jc) {
     const file = await fetch(
         jc.url,
         {
             headers: {
-                'User-Agent': 'mjaquiery',
+                'User-Agent': GITHUB_API_USER,
                 Authorization: `token ${GITHUB_TOKEN}`
             }
         }
-    );
+    )
+        .then(r => r.json());
     const JC = new JournalClub(file);
     JC.parseContent();
 
     // Has the JC been updated recently enough?
-    const tooOld = new Date()
-        .setDate(new Date().getDate() - MAX_DAYS_SINCE_UPDATE);
-    if(timestamps.lastUpdate >= tooOld)
-        return new RollCallResult(jc, null);
+    if(JC.lastUpdate >= TOO_OLD)
+        return new RollcallResult(JC, null);
 
     // Have we sent an email recently?
-    const tooRecent = new Date()
-        .setDate(new Date().getDate() - MIN_DAYS_BETWEEN_EMAILS);
-    if(timestamps.lastMessage < tooRecent)
-        return new RollCallResult(jc, null);
+    if(JC.lastMessage >= TOO_RECENT)
+        return new RollcallResult(JC, null);
 
     // Send the appropriate email message
-    return await processRollCall(JC);
+    return await processRollcall(JC);
 }
 
 /**
@@ -219,14 +228,14 @@ async function rollCallJC(jc) {
  * @param JC {JournalClub}
  * @return {Promise<RollCallResult>}
  */
-async function processRollCall(JC) {
+async function processRollcall(JC) {
     // Do we have a cached version of the message template?
     if(!TEMPLATES.hasOwnProperty(`message-${JC.newMessageLevel}`))
         TEMPLATES[`message-${JC.newMessageLevel}`] = await fetch(
             `${GITHUB_REPO_API}/contents/_emails/message-${JC.newMessageLevel}.json`,
             {
                 headers: {
-                    'User-Agent': 'mjaquiery',
+                    'User-Agent': GITHUB_API_USER,
                     Authorization: `token ${GITHUB_TOKEN}`
                 }
             }
@@ -255,7 +264,7 @@ async function processRollCall(JC) {
 
     const action = ACTIONS[`action-${JC.newMessageLevel}`];
     console.log(`Action for ${JC.jcid}: ${action}`)
-    return RollCallResult(JC.gitHubResponse, action);
+    return RollcallResult(JC.gitHubResponse, action);
 }
 
 /**
@@ -285,7 +294,7 @@ function substituteHandlebars(template, subs) {
  * @param email {string[]} email to send to
  * @param subject {string} email subject
  * @param body {string} email body (HTML)
- * @return {Promise<{details: Array, title: string, status: string}>} a formatted response report
+ * @return {Promise<{details: Array, title: string, status: string}>|true} a formatted response report
  */
 async function sendEmail(emails, subject, body) {
     // Load mailgun
@@ -304,6 +313,12 @@ async function sendEmail(emails, subject, body) {
     };
     if(emails.length)
         mailgunData.cc = emails.join("; ");
+
+    if(SANDBOX) {
+        console.log(`SANDBOX MODE: skipping send email:`);
+        console.log(mailgunData);
+        return true;
+    }
 
     return mailgun.messages()
         .send(mailgunData);
@@ -324,7 +339,7 @@ function deactivateJC(jc) {
         {
             method: 'PUT',
             headers: {
-                'User-Agent': 'mjaquiery',
+                'User-Agent': GITHUB_API_USER,
                 Authorization: `token ${GITHUB_TOKEN}`,
                 'Content-Type': 'application/json',
                 'Content-Length': content.length
@@ -347,7 +362,7 @@ function deactivateJC(jc) {
                 {
                     method: 'DELETE',
                     headers: {
-                        'User-Agent': 'mjaquiery',
+                        'User-Agent': GITHUB_API_USER,
                         Authorization: `token ${GITHUB_TOKEN}`,
                         'Content-Type': 'application/json',
                         'Content-Length': remove.length
@@ -384,7 +399,7 @@ function updateMessageStatus(JC) {
         {
             method: 'PUT',
             headers: {
-                'User-Agent': 'mjaquiery',
+                'User-Agent': GITHUB_API_USER,
                 Authorization: `token ${GITHUB_TOKEN}`,
                 'Content-Type': 'application/json',
                 'Content-Length': commit.length
@@ -399,14 +414,23 @@ function updateMessageStatus(JC) {
  * @return {object[]}
  */
 function fetchJCs() {
-    fetch(
+    return fetch(
         `${GITHUB_REPO_API}/contents/_journal-clubs`,
-        {headers: {'User-Agent': 'mjaquiery'}}
+        {headers: {
+            'User-Agent': GITHUB_API_USER,
+            Authorization: `token ${GITHUB_TOKEN}`
+        }}
     )
         .then(r => r.json())
 }
 
 function saveRollcall() {
+
+    if(SANDBOX) {
+        console.log(`SANDBOX MODE: skipping register Rollcall.`);
+        return true;
+    }
+
     const client = new faunadb.Client({ secret: FAUNA_KEY });
     return client.query(
         FQ.Create(

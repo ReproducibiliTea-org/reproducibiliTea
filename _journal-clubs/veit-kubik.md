@@ -15,6 +15,8 @@ additional-contact: []
 address: [Fakultaet fuer Psychologie und Sportwissenschaft, Abteilung fuer Psychologie, Postfach 10 01 31, D-33501 Bielefeld]
 country: Germany
 geolocation: [52.02545860348811, 8.558349609375]
+last-message-level: 1
+last-message-timestamp: 0
 last-update: veit.kubik@uni-bielefeld.de
 last-update-timestamp: 1633585035
 last-update-message: >-
