@@ -54,21 +54,14 @@ exports.handler = function(event, context, callback) {
     SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host) || event.queryStringParameters.sandbox;
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
-    rollcall()
-        .then(summary => {
-            callback(null, {
-                statusCode: 200,
-                body: JSON.stringify(summary)
-            });
-        })
-        .catch(e => callback(e));
+    rollcall(callback);
 };
 
 /**
  * @class Rollcall result
  * @classdesc Contains the details of a rollcall result
  *
- * @property journalClub {object} journal club the result pertains to
+ * @property journalClub {JournalClub} journal club the result pertains to
  * @property action {string} action taken by the rollcall
  */
 class RollcallResult {
@@ -95,6 +88,7 @@ class JournalClub {
     constructor(gitHubResponse) {
         this.gitHubResponse = gitHubResponse;
         this.parseContent();
+        this.callback = null;
     }
 
     /**
@@ -149,18 +143,37 @@ class JournalClub {
  * If a journal club is not updated for 15 months it is marked as lapsed.
  * @return {RollcallResult[]}
  */
-async function rollcall() {
-     const JC = await getOldestJC();
-     if(JC === null)
-         return "Rollcall: All JCs okay.";
-     const rc = await processRollcall(JC);
-     return `Rollcall: ${rc.journalClub.jcid} -- ${rc.action}`;
+async function rollcall(callback) {
+    console.log("Fetching journal club to rollcall...");
+    const JC = await getOldestJC();
+    console.log("Done");
+    if (JC === null)
+        callback(null, {
+            statusCode: 200,
+            body: JSON.stringify("Rollcall: All JCs okay.")
+        });
+    else {
+        console.log(`Rollcalling ${JC.jcid}`);
+        JC.callback = callback;
+        await processRollcall(JC);
+    }
+}
+
+/**
+ * Send data back to the client
+ * @param callback {function}
+ * @param rc {RollcallResult}
+ */
+function finish(rc) {
+    rc.journalClub.callback(null, {
+        statusCode: 200,
+        body: JSON.stringify(`Rollcall: ${rc.journalClub.jcid} -- ${rc.action}`)
+    });
 }
 
 /**
  * Send appropriate emails and deactivate JC if required.
  * @param JC {JournalClub}
- * @return {RollCallResult}
  */
 async function processRollcall(JC) {
     const template = await fetch(
@@ -181,14 +194,23 @@ async function processRollcall(JC) {
         template,
         {jcTitle: JC.title}
     );
-
-    let action = ACTIONS[`action-${JC.newMessageLevel}`];
-    if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
+    if (JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
         JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
-    let updateFailed = "";
 
     // Send the email
-    const emailFailed = await sendEmail(JC.contactEmails, email.subject, email.body);
+    sendEmail(JC, email);
+}
+
+/**
+ * Handle the follow-up from the Mailgun API call
+ * @param JC {JournalClub}
+ * @param emailFailed {Error|null}
+ * @return {RollcallResult}
+ */
+async function updateJC(JC, emailFailed) {
+
+    let action = ACTIONS[`action-${JC.newMessageLevel}`];
+    let updateFailed = "";
 
     if(!emailFailed) {
         // Trigger other actions
@@ -197,9 +219,11 @@ async function processRollcall(JC) {
         else
             updateFailed = await updateMessageStatus(JC);
     }
-    if(updateFailed || emailFailed)
-        action = action + " FAILED! " + emailFailed + updateFailed;
-    return new RollcallResult(JC, action);
+    if(emailFailed)
+        action = action + " EMAIL FAILED! " + emailFailed;
+    else if(updateFailed)
+        action = action +  " UPDATE FAILED! " + updateFailed;
+    finish(new RollcallResult(JC, action));
 }
 
 /**
@@ -226,12 +250,10 @@ function substituteHandlebars(template, subs) {
 
 /**
  * Handle the Mailgun API call
- * @param email {string[]} email to send to
- * @param subject {string} email subject
- * @param body {string} email body (HTML)
- * @return {Error|null}
+ * @param JC {JournalClub}
+ * @param email {subject: string, body: string} email to send
  */
-async function sendEmail(emails, subject, body) {
+function sendEmail(JC, email) {
     // Load mailgun
     const mailgun = require('mailgun-js')({
         apiKey: MAILGUN_API_KEY,
@@ -241,21 +263,18 @@ async function sendEmail(emails, subject, body) {
 
     const mailgunData = {
         from: FROM_EMAIL_ADDRESS,
-        to: emails.shift(),
+        to: JC.contactEmails.shift(),
         'h:Reply-To': FROM_EMAIL_ADDRESS,
-        subject: subject,
-        html: body
+        subject: email.subject,
+        html: email.body
     };
-    if(emails.length)
-        mailgunData.cc = emails.join("; ");
+    if(JC.contactEmails.length)
+        mailgunData.cc = JC.contactEmails.join("; ");
 
-    return mailgun.messages()
+    mailgun.messages()
         .send(mailgunData, function(error) {
-            if(error)
-                throw new Error(error);
-        })
-        .then(() => null)
-        .catch(e => `Could not send email: ${e}`);
+            updateJC(JC, error);
+        });
 }
 
 /**
@@ -369,6 +388,7 @@ function getOldestJC() {
     )
         .then(r => r.json())
         .then(async jcs => {
+            console.log("Fetched JC list")
             const jc_details = await Promise.allSettled(jcs.map(jc => {
                 let modified = new Date(0);
                 return fetch(
@@ -389,6 +409,7 @@ function getOldestJC() {
                         return jc;
                     });
             }));
+            console.log("Fetched JC details")
             return jc_details.map(jc => new JournalClub(jc.value));
         })
         // Has the JC been updated recently enough to skip?
@@ -403,9 +424,7 @@ function getOldestJC() {
                 if(ox.length)
                     return ox[0];
                 return null;
-            }
-
-            else
+            } else
                 // Find oldest
                 return jcs.reduce((a, b) =>
                     a.gitHubResponse.modified.getTime() <
