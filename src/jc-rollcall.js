@@ -34,10 +34,10 @@ const MESSAGE_LEVELS = {
 };
 
 const ACTIONS = {
-    "action-1": "Notification sent.",
-    "action-2": "First reminder sent.",
-    "action-3": "Second reminder sent",
-    "action-4": "Journal club deactivated."
+    "action-1": "Send notification.",
+    "action-2": "First reminder.",
+    "action-3": "Second reminder",
+    "action-4": "Deactivate journal club."
 };
 
 const MAX_DAYS_SINCE_UPDATE = 365;
@@ -223,7 +223,7 @@ async function updateJC(JC, emailFailed) {
     if(!emailFailed) {
         // Trigger other actions
         if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
-            updateFailed = await deactivateJC(JC.gitHubResponse);
+            updateFailed = await deactivateJC(JC);
         else
             updateFailed = await updateMessageStatus(JC);
     }
@@ -289,16 +289,16 @@ function sendEmail(JC, email) {
 
 /**
  * Move a journal club file to the _inactive-journal-clubs directory
- * @param jc {object} journal club to move (GitHub response object)
+ * @param JC {JournalClub} journal club to move (GitHub response object)
  */
-function deactivateJC(jc) {
+function deactivateJC(JC) {
     // Add the new file
     const content = JSON.stringify({
-        message: `Rollcall: Archiving of ${jc.jcid}`,
-        content: jc
+        message: `Rollcall: Archiving of ${JC.jcid}`,
+        content: JC.gitHubResponse.content
     });
     fetch(
-        `${GITHUB_REPO_API}/${jc.path.replace(/^_/, '_inactive-')}`,
+        `${GITHUB_REPO_API}/${JC.gitHubResponse.path.replace(/^_/, '_inactive-')}`,
         {
             method: 'PUT',
             headers: {
@@ -311,17 +311,18 @@ function deactivateJC(jc) {
         }
     )
         .then(r => {
-            if(r.status !== 200)
+            if(r.status !== 200 && r.status !== 201)
                 throw new Error(`Could not archive: ${r.statusText} (${r.status})`)
+            console.log("Archived file.")
         })
         .then(() => {
             // Remove the old file
             const remove = JSON.stringify({
-                message: `Rollcall: Removing ${jc.path}`,
-                sha: jc.sha
+                message: `Rollcall: Removing ${JC.gitHubResponse.path}`,
+                sha: JC.gitHubResponse.sha
             });
             fetch(
-                jc.url,
+                JC.gitHubResponse.url,
                 {
                     method: 'DELETE',
                     headers: {
@@ -337,6 +338,7 @@ function deactivateJC(jc) {
         .then(r => {
             if(r.status !== 200)
                 throw new Error(`Could not remove old file: ${r.statusText} (${r.status})`)
+            console.log("Deleted file")
         })
         .catch(e => e);
 }
