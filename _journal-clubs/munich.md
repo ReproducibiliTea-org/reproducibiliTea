@@ -22,6 +22,8 @@ address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13
  
 country: Germany
 geolocation: [48.15928719999999, 11.5853531]
+last-message-level: 0
+last-message-timestamp: 0
 ---
 
 We have decided to establish a journal club on the topic of Open Science. We meet every three to four weeks. The slogan of our journal club is "ReproJuicebiliTea"

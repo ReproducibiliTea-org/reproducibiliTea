@@ -11,3 +11,6 @@ _local
 # Local Netlify folder
 .netlify
 npm-debug.log
+# Python development virtual environment
+_local/.idea*
+_local/venv

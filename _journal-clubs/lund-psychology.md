@@ -15,6 +15,8 @@ additional-contact: [amanda.klysing@psy.lu.se, katarina.velickovic@psy.lu.se, mi
 address: [Department of Psychology, Lund University, Box 213, 221 00 LUND, Sweden,]
 country: Sweden
 geolocation: [55.70545032520298, 13.2000732421875]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: nathalie_ophelia.iotti@psy.lu.se
 last-update-timestamp: 1612352303
 last-update-message: >-

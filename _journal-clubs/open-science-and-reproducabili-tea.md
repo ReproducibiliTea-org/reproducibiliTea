@@ -15,6 +15,8 @@ additional-contact: []
 address: [NCSU Libraries, D. H Hill Library, 2118 2 Broughton Dr. Campus Box 7111, Raleigh, NC 27695]
 country: United States
 geolocation: [35.787218702469936, -78.66901874542236]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: mlvandeg@ncsu.edu
 last-update-timestamp: 1611686620
 last-update-message: >-

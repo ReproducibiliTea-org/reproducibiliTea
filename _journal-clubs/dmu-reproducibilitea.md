@@ -15,6 +15,8 @@ additional-contact: []
 address: [Hb0.14, Hawthorn Building, De Montfort University, Leicester, LE2 7GZ]
 country: United Kingdom
 geolocation: [52.629780963253154, -1.1395740509033203]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: john.shaw@dmu.ac.uk
 last-update-timestamp: 1619690195
 last-update-message: >-

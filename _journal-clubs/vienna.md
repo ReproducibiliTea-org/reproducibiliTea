@@ -15,6 +15,8 @@ additional-contact: []
 address: [ECR Psychology, Faculty of Psychology, University of Vienna, Liebiggasse 5, 1010 Wien]
 country: Austria
 geolocation: [48.21334233435572, 16.357580423355103]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: ecr.psychology@univie.ac.at
 last-update-timestamp: 1617092468
 last-update-message: >-

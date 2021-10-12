@@ -15,6 +15,8 @@ additional-contact: []
 address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
 country: Netherlands
 geolocation: [51.9170494, 4.525585899999999]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: schettino@eur.nl
 last-update-timestamp: 1605691617
 last-update-message: >-

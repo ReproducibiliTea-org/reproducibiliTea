@@ -5,6 +5,7 @@ const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
 const {
+    GITHUB_REPO_API,
     FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
@@ -95,7 +96,7 @@ exports.handler = function(event, context, callback) {
         .then(async () => {
             console.log(`Saved token ${token}`);
             // Email token to user
-            if(!sandbox)
+            if(data.email !== "rollcall" && !sandbox)
                 await sendEmail(data.email, data.jcid, token);
         })
         .then(()=>{

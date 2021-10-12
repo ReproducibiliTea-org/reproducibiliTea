@@ -13,6 +13,8 @@ contact: dave.lunt@gmail.com
 address: [Dr Dave Lunt, Dept of Biological and Marine Sciences, Hardy Building, University of Hull, HULL, HU6 7RX]
 country: United Kingdom
 geolocation: [53.7714868, -0.3673775]
+last-message-level: 0
+last-message-timestamp: 0
 ---
 
 Hull-BARG is the University of Hull journal club and user group dedicated to open and reproducible science.
