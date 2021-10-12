@@ -313,7 +313,7 @@ function deactivateJC(JC) {
     };
     console.log({request})
     return fetch(
-        `${GITHUB_REPO_API}/${JC.gitHubResponse.path.replace(/^_/, '_inactive-')}`,
+        `${GITHUB_REPO_API}/contents/${JC.gitHubResponse.path.replace(/^_/, '_inactive-')}`,
         request
     )
         .then(r => {
