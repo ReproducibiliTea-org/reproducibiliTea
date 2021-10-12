@@ -51,7 +51,7 @@ const TOO_RECENT = new Date()
 let SANDBOX = true;
 
 exports.handler = function(event, context, callback) {
-    SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host);
+    SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host) || event.queryStringParameters.sandbox;
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
     rollcall()
@@ -249,20 +249,14 @@ async function sendEmail(emails, subject, body) {
     if(emails.length)
         mailgunData.cc = emails.join("; ");
 
-    if(SANDBOX) {
-        console.log(`SANDBOX MODE: skipping send email:`);
-        console.log(mailgunData);
-        return null;
-    }
-
     return mailgun.messages()
         .send(mailgunData)
         .then(r => {
             if(r.status !== 200)
-                throw new Error(`Could not send email: ${r.statusText} (${r.status})`);
+                throw new Error(`${r.statusText} (${r.status})`);
             else return null;
         })
-        .catch(e => e);
+        .catch(e => `Could not send email: ${e}`);
 }
 
 /**
@@ -356,10 +350,10 @@ function updateMessageStatus(JC) {
     )
         .then(r => {
             if(r.status !== 200) {
-                throw new Error(`Could not update last message time: ${r.statusText} (${r.status})`)
+                throw new Error(`${r.statusText} (${r.status})`)
             } return null;
         })
-        .catch(e => e);
+        .catch(e => `Could not update last message time: ${e}`);
 }
 
 /**
@@ -405,6 +399,13 @@ function getOldestJC() {
         .then(jcs => {
             if(!jcs.length)
                 return null;
+            else if(SANDBOX) {
+                const ox = jcs.filter(jc => jc.jcid === "oxford");
+                if(ox.length)
+                    return ox[0];
+                return null;
+            }
+
             else
                 // Find oldest
                 return jcs.reduce((a, b) =>
