@@ -15,6 +15,8 @@ additional-contact: [k.j.fox@brighton.ac.uk]
 address: [University of Brighton, Watson Building, Room 232, Falmer, BN1 9PH]
 country: United Kingdom
 geolocation: [50.86036057501512, -0.08505821228027344]
+last-message-level: 0
+last-message-timestamp: 0
 last-update: z.flack@brighton.ac.uk
 last-update-timestamp: 1611688355
 last-update-message: >-

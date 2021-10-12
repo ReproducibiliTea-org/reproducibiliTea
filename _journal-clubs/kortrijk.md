@@ -17,6 +17,8 @@ address: [Faculty of Psychology and Educational Sciences, KULAK, Etienne Sabbela
 country: Belgium
 
 geolocation: [50.80707289999999, 3.292819]
+last-message-level: 0
+last-message-timestamp: 0
 
 ---
 

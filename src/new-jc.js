@@ -155,9 +155,9 @@ function cleanData(data) {
     // Remove the unnecessary bits of the OSF user input
     if(data.osf && data.osf.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
-            .exec(data.osfUser);
+            .exec(data.osf);
         if(match)
-            data.osfUser = match[1];
+            data.osf = match[1];
     }
     if(data.osfUser && data.osfUser.length) {
         const match = /^(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?$/i
@@ -720,6 +720,8 @@ additional-contact: [${data.emails.join(', ')}]
 address: [${data.post}]
 country: ${data.country}
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
+last-message-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
+last-message-level: 0
 last-update: ${editToken.email}
 last-update-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-update-message: >-

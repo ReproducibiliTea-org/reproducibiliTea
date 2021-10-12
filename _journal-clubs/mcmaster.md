@@ -20,6 +20,8 @@ last-update-timestamp: 1615417330
 last-update-message: >-
   Change organizer emails
 
+last-message-level: 0
+last-message-timestamp: 0
 ---
 
 Welcome to the McMaster ReproducibiliTea journal club! We discuss how we can help make science transparent, reproducible, and cumulative.
