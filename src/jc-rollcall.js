@@ -283,6 +283,8 @@ function sendEmail(JC, email) {
 
     mailgun.messages()
         .send(mailgunData, function(error) {
+            if(error)
+                console.warn(`Mailgun error: ${error}`);
             updateJC(JC, error);
         });
 }
