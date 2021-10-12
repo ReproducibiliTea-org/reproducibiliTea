@@ -269,7 +269,7 @@ function sendEmail(JC, email) {
         html: email.body
     };
     if(JC.contactEmails.length)
-        mailgunData.cc = JC.contactEmails.join("; ");
+        mailgunData.cc = JC.contactEmails.join(", ");
 
     mailgun.messages()
         .send(mailgunData, function(error) {
