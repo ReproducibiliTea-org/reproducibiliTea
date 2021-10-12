@@ -185,7 +185,7 @@ async function processRollcall(JC) {
     let action = ACTIONS[`action-${JC.newMessageLevel}`];
     if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
         JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
-    let updateFailed = true;
+    let updateFailed = "";
 
     // Send the email
     const emailFailed = await sendEmail(JC.contactEmails, email.subject, email.body);
@@ -229,7 +229,7 @@ function substituteHandlebars(template, subs) {
  * @param email {string[]} email to send to
  * @param subject {string} email subject
  * @param body {string} email body (HTML)
- * @return {Promise<{details: Array, title: string, status: string}>|true} a formatted response report
+ * @return {Error|null}
  */
 async function sendEmail(emails, subject, body) {
     // Load mailgun
@@ -259,7 +259,7 @@ async function sendEmail(emails, subject, body) {
         .send(mailgunData)
         .then(r => {
             if(r.status !== 200)
-                throw new Error(`Could not send email for ${jc.jcid}: ${r.statusText} (${r.status})`)
+                throw new Error(`Could not send email: ${r.statusText} (${r.status})`);
             else return null;
         })
         .catch(e => e);
@@ -290,7 +290,7 @@ function deactivateJC(jc) {
     )
         .then(r => {
             if(r.status !== 200)
-                throw new Error(`Could not archive ${jc.jcid}: ${r.statusText} (${r.status})`)
+                throw new Error(`Could not archive: ${r.statusText} (${r.status})`)
         })
         .then(() => {
             // Remove the old file
@@ -314,7 +314,7 @@ function deactivateJC(jc) {
         })
         .then(r => {
             if(r.status !== 200)
-                throw new Error(`Could not remove ${jc.path} file: ${r.statusText} (${r.status})`)
+                throw new Error(`Could not remove old file: ${r.statusText} (${r.status})`)
         })
         .catch(e => e);
 }
@@ -356,7 +356,7 @@ function updateMessageStatus(JC) {
     )
         .then(r => {
             if(r.status !== 200) {
-                throw new Error(`Could not update last message time for ${jc.jcid}: ${r.statusText} (${r.status})`)
+                throw new Error(`Could not update last message time: ${r.statusText} (${r.status})`)
             } return null;
         })
         .catch(e => e);
