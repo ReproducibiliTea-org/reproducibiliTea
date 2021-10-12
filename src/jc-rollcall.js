@@ -271,6 +271,8 @@ function sendEmail(JC, email) {
     if(JC.contactEmails.length)
         mailgunData.cc = JC.contactEmails.join(", ");
 
+    console.log(mailgunData)
+
     mailgun.messages()
         .send(mailgunData, function(error) {
             updateJC(JC, error);
@@ -404,9 +406,11 @@ function getOldestJC() {
                         modified = new Date(r.headers.get("last-modified"));
                         return r.json();
                     })
-                    .then(jc => {
-                        jc.modified = modified;
-                        return jc;
+                    .then(json => {
+                        if(typeof json === "undefined")
+                            console.warn(`undefined JC: ${jc.url}`)
+                        json.modified = modified;
+                        return json;
                     });
             }));
             console.log("Fetched JC details")
