@@ -51,22 +51,10 @@ const TOO_RECENT = new Date()
 let SANDBOX = true;
 
 exports.handler = function(event, context, callback) {
-    SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host);
+    SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host) || event.queryStringParameters.sandbox;
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
-    rateLimit()
-        .then(() => rollcall())
-        .then((summary)=>{
-            callback(null, {
-                statusCode: 200,
-                body: JSON.stringify(summary)
-            });
-        })
-        .then(() => saveRollcall())
-        .then(() => {
-            callback(null, {statusCode: 200, body: 'Rollcall complete.'})
-        })
-        .catch(e => callback(e));
+    rollcall(callback);
 };
 
 /**
