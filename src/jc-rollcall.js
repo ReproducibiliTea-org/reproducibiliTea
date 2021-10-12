@@ -339,12 +339,12 @@ function deactivateJC(JC) {
                     },
                     body: remove
                 }
-            );
-        })
-        .then(r => {
-            if(r.status !== 200)
-                throw new Error(`Could not remove old file: ${r.statusText} (${r.status})`)
-            console.log("Deleted file")
+            )
+                .then(r => {
+                    if(r.status !== 200)
+                        throw new Error(`Could not remove old file: ${r.statusText} (${r.status})`)
+                    console.log("Deleted file")
+                });
         })
         .catch(e => e);
 }
