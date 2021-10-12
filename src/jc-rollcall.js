@@ -220,7 +220,7 @@ async function updateJC(JC, emailFailed) {
     let action = ACTIONS[`action-${JC.newMessageLevel}`];
     let updateFailed = "";
 
-    if(emailFailed) {
+    if(emailFailed && !SANDBOX) {
         console.warn({emailFailed});
     } else {
         // Trigger other actions
@@ -301,18 +301,20 @@ function deactivateJC(JC) {
         message: `Rollcall: Archiving of ${JC.jcid}`,
         content: JC.gitHubResponse.content
     });
-    fetch(
+    const request = {
+        method: 'PUT',
+        headers: {
+            'User-Agent': GITHUB_API_USER,
+            Authorization: `token ${GITHUB_TOKEN}`,
+            'Content-Type': 'application/json',
+            'Content-Length': content.length
+        },
+        body: content
+    };
+    console.log({request})
+    return fetch(
         `${GITHUB_REPO_API}/${JC.gitHubResponse.path.replace(/^_/, '_inactive-')}`,
-        {
-            method: 'PUT',
-            headers: {
-                'User-Agent': GITHUB_API_USER,
-                Authorization: `token ${GITHUB_TOKEN}`,
-                'Content-Type': 'application/json',
-                'Content-Length': content.length
-            },
-            body: content
-        }
+        request
     )
         .then(r => {
             if(r.status !== 200 && r.status !== 201)
