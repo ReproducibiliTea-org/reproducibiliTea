@@ -282,9 +282,12 @@ function sendEmail(JC, email) {
     console.log(mailgunData)
 
     mailgun.messages()
-        .send(mailgunData, function(error) {
-            if(error)
-                console.warn(`Mailgun error: ${error}`);
+        .send(mailgunData, function(error, body) {
+            console.log("Sendmail callback.")
+            if(error) {
+                const mailgunError = {error, body};
+                console.warn(mailgunError);
+            }
             updateJC(JC, error);
         });
 }
