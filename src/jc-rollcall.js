@@ -327,7 +327,7 @@ function deactivateJC(JC) {
                 message: `Rollcall: Removing ${JC.gitHubResponse.path}`,
                 sha: JC.gitHubResponse.sha
             });
-            fetch(
+            return fetch(
                 JC.gitHubResponse.url,
                 {
                     method: 'DELETE',
