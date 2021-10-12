@@ -220,13 +220,16 @@ async function updateJC(JC, emailFailed) {
     let action = ACTIONS[`action-${JC.newMessageLevel}`];
     let updateFailed = "";
 
-    if(!emailFailed) {
+    if(emailFailed) {
+        console.warn({emailFailed});
+    } else {
         // Trigger other actions
-        if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
+        if(JC.newMessageLevel >= MESSAGE_LEVELS.JC_DEACTIVATED)
             updateFailed = await deactivateJC(JC);
         else
             updateFailed = await updateMessageStatus(JC);
     }
+
     if(emailFailed)
         action = action + " EMAIL FAILED! " + emailFailed;
     else if(updateFailed)
@@ -279,15 +282,10 @@ function sendEmail(JC, email) {
     if(JC.contactEmails.length)
         mailgunData.cc = JC.contactEmails.join(", ");
 
-    console.log(mailgunData)
+    console.log({mailgunData})
 
     mailgun.messages()
-        .send(mailgunData, function(error, body) {
-            console.log("Sendmail callback.")
-            if(error) {
-                const mailgunError = {error, body};
-                console.warn(mailgunError);
-            }
+        .send(mailgunData, function(error) {
             updateJC(JC, error);
         });
 }
@@ -297,6 +295,7 @@ function sendEmail(JC, email) {
  * @param JC {JournalClub} journal club to move (GitHub response object)
  */
 function deactivateJC(JC) {
+    console.log(`Deactivating ${JC.jcid}`);
     // Add the new file
     const content = JSON.stringify({
         message: `Rollcall: Archiving of ${JC.jcid}`,
@@ -354,6 +353,8 @@ function deactivateJC(JC) {
  * @return {Error|null}
  */
 function updateMessageStatus(JC) {
+    console.log(`Updating last message time for ${JC.jcid}`);
+
     const body = JC.content;
     let newBody = body.replace(
         /last-message-timestamp: .+$/m,
