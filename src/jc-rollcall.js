@@ -1,15 +1,24 @@
+/*
+* Script to update journal clubs. Designed for use on Amazon Web Services as a
+* scheduled function.
+*
+* The script does the following:
+* 1. Query GitHub for active journal clubs
+* 2. Select the JC updated least recently
+* 3. Check whether the JC owners need to be prompted to update
+* 4. Send the appropriate emails if any
+* 5. Update the JC to mark the last email sent
+*/
+
 // node fetch support
 const fetch = require("node-fetch");
 require('dotenv').config();
-const faunadb = require('faunadb');
-const FQ = faunadb.query;
 
 let {GITHUB_REPO_API} = process.env;
 
 const {
     GITHUB_API_USER,
     GITHUB_TOKEN,
-    FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
     MAILGUN_HOST,
@@ -39,27 +48,18 @@ const TOO_OLD = new Date()
 const TOO_RECENT = new Date()
     .setDate(new Date().getDate() - MIN_DAYS_BETWEEN_EMAILS);
 
-const ROLLCALL_DB = "rollcalls";
-
-const TEMPLATES = {};
-
 let SANDBOX = true;
 
 exports.handler = function(event, context, callback) {
     SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host);
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
-    rateLimit()
-        .then(() => rollcall())
-        .then((summary)=>{
+    rollcall()
+        .then(summary => {
             callback(null, {
                 statusCode: 200,
                 body: JSON.stringify(summary)
             });
-        })
-        .then(() => saveRollcall())
-        .then(() => {
-            callback(null, {statusCode: 200, body: 'Rollcall complete.'})
         })
         .catch(e => callback(e));
 };
@@ -94,6 +94,7 @@ class RollcallResult {
 class JournalClub {
     constructor(gitHubResponse) {
         this.gitHubResponse = gitHubResponse;
+        this.parseContent();
     }
 
     /**
@@ -135,34 +136,8 @@ class JournalClub {
      * @return {int} flag representing the new message level
      */
     get newMessageLevel() {
-         if(typeof this.lastMessageLevel === "undefined")
-             this.parseContent();
-         return this.lastMessageLevel << 1;
+         return this.lastMessageLevel + 1;
     }
-}
-
-/**
- * Test whether a check was made in the last week
- * @param minDaysSinceLast {int} minimum days to wait before allowing another rollcall
- * @return {Promise<boolean>} whether rate-limiting has passed successfully
- */
-function rateLimit(minDaysSinceLast = 6) {
-    const client = new faunadb.Client({ secret: FAUNA_KEY });
-    return client.query(
-        FQ.Map(
-            FQ.Paginate(FQ.Documents(FQ.Collection(ROLLCALL_DB))),
-            FQ.Lambda("D", FQ.Get(FQ.Var("D")))
-        )
-    )
-        .then(r => {
-            r.data.forEach(x => {
-                const oldDate = new Date(x.data.time);
-                oldDate.setDate(oldDate.getDate() + minDaysSinceLast);
-                if(oldDate < new Date().getDate())
-                    throw new Error(`A rollcall was triggered more recently than ${minDaysSinceLast} days ago, at ${new Date(x.data.time).toISOString()}`);
-            });
-            return true;
-        });
 }
 
 /**
@@ -175,31 +150,21 @@ function rateLimit(minDaysSinceLast = 6) {
  * @return {RollcallResult[]}
  */
 async function rollcall() {
-    return await fetchJCs()
-        .then(async JCs =>
-            await Promise.allSettled(JCs.map(jc => rollcallJC(jc))))
-        .then(JCs => {
-            const results = {};
-            for(jc of JCs) {
-                if(typeof jc.action !== "string")
-                    jc.action = "None";
-                if(typeof results[jc.action] === "undefined")
-                    results[jc.action] = 1;
-                else
-                    results[jc.action]++;
-            }
-            console.table(results);
-        });
+     const JC = await getOldestJC();
+     if(JC === null)
+         return "Rollcall: All JCs okay.";
+     const rc = await processRollcall(JC);
+     return `Rollcall: ${rc.journalClub.jcid} -- ${rc.action}`;
 }
 
 /**
- * Perform a rollcall on a journal club
- * @param jc {object} journal club gitHub response to rollcall
- * @return {RollcallResult}
+ * Send appropriate emails and deactivate JC if required.
+ * @param JC {JournalClub}
+ * @return {RollCallResult}
  */
-async function rollcallJC(jc) {
-    const file = await fetch(
-        jc.url,
+async function processRollcall(JC) {
+    const template = await fetch(
+        `${GITHUB_REPO_API}/contents/_emails/rollcall-message-${JC.newMessageLevel}.json`,
         {
             headers: {
                 'User-Agent': GITHUB_API_USER,
@@ -207,43 +172,9 @@ async function rollcallJC(jc) {
             }
         }
     )
-        .then(r => r.json());
-    const JC = new JournalClub(file);
-    JC.parseContent();
-
-    // Has the JC been updated recently enough?
-    if(JC.lastUpdate >= TOO_OLD)
-        return new RollcallResult(JC, null);
-
-    // Have we sent an email recently?
-    if(JC.lastMessage >= TOO_RECENT)
-        return new RollcallResult(JC, null);
-
-    // Send the appropriate email message
-    return await processRollcall(JC);
-}
-
-/**
- * Send appropriate emails and deactivate JC if required.
- * @param JC {JournalClub}
- * @return {Promise<RollCallResult>}
- */
-async function processRollcall(JC) {
-    // Do we have a cached version of the message template?
-    if(!TEMPLATES.hasOwnProperty(`rollcall-message-${JC.newMessageLevel}`))
-        TEMPLATES[`message-${JC.newMessageLevel}`] = await fetch(
-            `${GITHUB_REPO_API}/contents/_emails/rollcall-message-${JC.newMessageLevel}.json`,
-            {
-                headers: {
-                    'User-Agent': GITHUB_API_USER,
-                    Authorization: `token ${GITHUB_TOKEN}`
-                }
-            }
-        )
-            .then(r => r.json())
-            .then(json => new Buffer.from(json.content, 'base64').toString())
-            .then(s => JSON.parse(s));
-    const template = TEMPLATES[`message-${JC.newMessageLevel}`];
+        .then(r => r.json())
+        .then(json => new Buffer.from(json.content, 'base64').toString())
+        .then(s => JSON.parse(s));
 
     // Update the template into a proper email
     const email = substituteHandlebars(
@@ -251,20 +182,24 @@ async function processRollcall(JC) {
         {jcTitle: JC.title}
     );
 
-    // Send the email
-    if(JC.newMessageLevel == MESSAGE_LEVELS.JC_DEACTIVATED)
-        JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
-    await sendEmail(JC.contactEmails, email.subject, email.body);
-
-    // Trigger other actions
+    let action = ACTIONS[`action-${JC.newMessageLevel}`];
     if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
-        deactivateJC(JC.gitHubResponse);
-    else
-        updateMessageStatus(JC);
+        JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
+    let updateFailed = true;
 
-    const action = ACTIONS[`action-${JC.newMessageLevel}`];
-    console.log(`Action for ${JC.jcid}: ${action}`)
-    return RollcallResult(JC.gitHubResponse, action);
+    // Send the email
+    const emailFailed = await sendEmail(JC.contactEmails, email.subject, email.body);
+
+    if(!emailFailed) {
+        // Trigger other actions
+        if(JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
+            updateFailed = await deactivateJC(JC.gitHubResponse);
+        else
+            updateFailed = await updateMessageStatus(JC);
+    }
+    if(updateFailed || emailFailed)
+        action = action + " FAILED! " + emailFailed + updateFailed;
+    return new RollcallResult(JC, action);
 }
 
 /**
@@ -317,11 +252,17 @@ async function sendEmail(emails, subject, body) {
     if(SANDBOX) {
         console.log(`SANDBOX MODE: skipping send email:`);
         console.log(mailgunData);
-        return true;
+        return null;
     }
 
     return mailgun.messages()
-        .send(mailgunData);
+        .send(mailgunData)
+        .then(r => {
+            if(r.status !== 200)
+                throw new Error(`Could not send email for ${jc.jcid}: ${r.statusText} (${r.status})`)
+            else return null;
+        })
+        .catch(e => e);
 }
 
 /**
@@ -331,7 +272,7 @@ async function sendEmail(emails, subject, body) {
 function deactivateJC(jc) {
     // Add the new file
     const content = JSON.stringify({
-        message: `Rollcall: Archiving of ${jc.name}`,
+        message: `Rollcall: Archiving of ${jc.jcid}`,
         content: jc
     });
     fetch(
@@ -349,7 +290,7 @@ function deactivateJC(jc) {
     )
         .then(r => {
             if(r.status !== 200)
-                throw new Error(`Could not archive ${jc.name}: ${r.statusText} (${r.status})`)
+                throw new Error(`Could not archive ${jc.jcid}: ${r.statusText} (${r.status})`)
         })
         .then(() => {
             // Remove the old file
@@ -370,12 +311,18 @@ function deactivateJC(jc) {
                     body: remove
                 }
             );
-        });
+        })
+        .then(r => {
+            if(r.status !== 200)
+                throw new Error(`Could not remove ${jc.path} file: ${r.statusText} (${r.status})`)
+        })
+        .catch(e => e);
 }
 
 /**
  * Update a journal club to indicate that a new message has been dispatched
  * @param JC {JournalClub}
+ * @return {Error|null}
  */
 function updateMessageStatus(JC) {
     const body = JC.content;
@@ -406,14 +353,20 @@ function updateMessageStatus(JC) {
             },
             body: commit
         }
-    );
+    )
+        .then(r => {
+            if(r.status !== 200) {
+                throw new Error(`Could not update last message time for ${jc.jcid}: ${r.statusText} (${r.status})`)
+            } return null;
+        })
+        .catch(e => e);
 }
 
 /**
  * Return a list of journal club objects as fetched from the GitHub repository.
  * @return {object[]}
  */
-function fetchJCs() {
+function getOldestJC() {
     return fetch(
         `${GITHUB_REPO_API}/contents/_journal-clubs`,
         {headers: {
@@ -422,24 +375,43 @@ function fetchJCs() {
         }}
     )
         .then(r => r.json())
-}
-
-function saveRollcall() {
-
-    if(SANDBOX) {
-        console.log(`SANDBOX MODE: skipping register Rollcall.`);
-        return true;
-    }
-
-    const client = new faunadb.Client({ secret: FAUNA_KEY });
-    return client.query(
-        FQ.Create(
-            FQ.Collection(ROLLCALL_DB),
-            {
-                data: {
-                    time: new Date().toJSON()
-                }
+        .then(async jcs => {
+            const jc_details = await Promise.allSettled(jcs.map(jc => {
+                let modified = new Date(0);
+                return fetch(
+                    jc.url,
+                    {
+                        headers: {
+                            'User-Agent': GITHUB_API_USER,
+                            Authorization: `token ${GITHUB_TOKEN}`
+                        }
+                    }
+                )
+                    .then(r => {
+                        modified = new Date(r.headers.get("last-modified"));
+                        return r.json();
+                    })
+                    .then(jc => {
+                        jc.modified = modified;
+                        return jc;
+                    });
+            }));
+            return jc_details.map(jc => new JournalClub(jc.value));
+        })
+        // Has the JC been updated recently enough to skip?
+        .then(jcs => jcs.filter(jc =>
+            jc.lastUpdate < TOO_OLD && jc.lastMessage < TOO_RECENT
+        ))
+        .then(jcs => {
+            if(!jcs.length)
+                return null;
+            else
+                // Find oldest
+                return jcs.reduce((a, b) =>
+                    a.gitHubResponse.modified.getTime() <
+                    b.gitHubResponse.modified.getTime()?
+                        a : b
+                )
             }
-        )
-    )
+        );
 }
