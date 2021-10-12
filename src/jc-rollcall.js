@@ -250,12 +250,11 @@ async function sendEmail(emails, subject, body) {
         mailgunData.cc = emails.join("; ");
 
     return mailgun.messages()
-        .send(mailgunData)
-        .then(r => {
-            if(r.status !== 200)
-                throw new Error(`${r.statusText} (${r.status})`);
-            else return null;
+        .send(mailgunData, function(error) {
+            if(error)
+                throw new Error(error);
         })
+        .then(() => null)
         .catch(e => `Could not send email: ${e}`);
 }
 
