@@ -49,11 +49,17 @@ const TOO_RECENT = new Date()
     .setDate(new Date().getDate() - MIN_DAYS_BETWEEN_EMAILS);
 
 let SANDBOX = true;
+let JC_TARGET = null;
 
 exports.handler = function(event, context, callback) {
     SANDBOX = /^localhost(?::[0-9]+$|$)/i.test(event.headers.host) || event.queryStringParameters.sandbox;
+    JC_TARGET = event.queryStringParameters.jc;
+    if(JC_TARGET)
+        JC_TARGET = decodeURI(JC_TARGET).toLowerCase();
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+    if(SANDBOX && !JC_TARGET)
+            JC_TARGET = process.env.SANDBOX_JOURNAL_CLUB;
     rollcall(callback);
 };
 
@@ -155,11 +161,14 @@ async function rollcall(callback) {
     console.log("Fetching journal club to rollcall...");
     const JC = await getOldestJC();
     console.log("Done");
-    if (JC === null)
+    if (JC === null) {
+        const response = `Rollcall: ${JC_TARGET? JC_TARGET : "All JCs"} okay.`;
         callback(null, {
             statusCode: 200,
-            body: JSON.stringify("Rollcall: All JCs okay.")
+            body: JSON.stringify(response)
         });
+    }
+
     else {
         console.log(`Rollcalling ${JC.jcid}`);
         JC.callback = callback;
@@ -202,6 +211,9 @@ async function processRollcall(JC) {
         template,
         {jcTitle: JC.title}
     );
+    if(SANDBOX)
+        email.subject = "[TESTING] " + email.subject;
+
     if (JC.newMessageLevel === MESSAGE_LEVELS.JC_DEACTIVATED)
         JC.contactEmails.push(FROM_EMAIL_ADDRESS); // cc RpT for deactivations
 
@@ -311,7 +323,6 @@ function deactivateJC(JC) {
         },
         body: content
     };
-    console.log({request})
     return fetch(
         `${GITHUB_REPO_API}/contents/${JC.gitHubResponse.path.replace(/^_/, '_inactive-')}`,
         request
@@ -439,20 +450,21 @@ function getOldestJC() {
             jc.lastUpdate < TOO_OLD && jc.lastMessage < TOO_RECENT
         ))
         .then(jcs => {
-            if(!jcs.length)
-                return null;
-            else if(SANDBOX) {
-                const ox = jcs.filter(jc => jc.jcid === "oxford");
-                if(ox.length)
-                    return ox[0];
-                return null;
-            } else
+                if(!jcs.length)
+                    return null;
+                if(JC_TARGET) {
+                    // Search for specific target
+                    const x = jcs.filter(jc => jc.jcid.toLowerCase() === JC_TARGET);
+                    if(x.length)
+                        return x[0];
+                    return null;
+                }
                 // Find oldest
                 return jcs.reduce((a, b) =>
-                    a.gitHubResponse.modified.getTime() <
-                    b.gitHubResponse.modified.getTime()?
-                        a : b
-                )
+                    b.gitHubResponse.modified.getTime() <
+                    a.gitHubResponse.modified.getTime()?
+                        b : a
+                );
             }
         );
 }
