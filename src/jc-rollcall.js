@@ -454,7 +454,13 @@ function getOldestJC() {
                     return null;
                 if(JC_TARGET) {
                     // Search for specific target
-                    const x = jcs.filter(jc => jc.jcid.toLowerCase() === JC_TARGET);
+                    const x = jcs.filter(jc => {
+                        if(!jc.jcid) {
+                            console.warn(`No jcid for ${jc.gitHubResponse.path}.`);
+                            return null;
+                        }
+                        return jc.jcid.toLowerCase() === JC_TARGET;
+                    });
                     if(x.length)
                         return x[0];
                     return null;

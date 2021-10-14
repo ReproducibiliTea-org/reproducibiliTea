@@ -1,4 +1,5 @@
 ---
+jcid: canterbury
 title: Canterbury
 host-organisation: University of Kent
 host-org-url: https://www.kent.ac.uk/ 
