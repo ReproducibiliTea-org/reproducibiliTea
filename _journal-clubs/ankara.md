@@ -1,20 +1,27 @@
 ---
+
 jcid: ankara
 title: Ankara
-host-organisation: Başkent University
-host-org-url: psk.baskent.edu.tr
+host-organisation: Ankara Medipol University & Turkey Open Science Initiation
+host-org-url: https://ankaramedipol.edu.tr
 osf: k3u7r
 zotero: HCX53JKZ
 website: 
-twitter: 
+twitter: OpenSciTurkey
 signup: https://forms.gle/Qjd9bC3Ff5DvG6FCA
-organisers: [Ilker Dalgar, Fatih Bayrak]
+organisers: [Ilker Dalgar, Bahar Balci]
 contact: ilkerdalgar@gmail.com
-address: [Room F410, Başkent University, Department of Psychology, Faculty of Science and Letters, Baglica Campus, Fatih Sultan District, Eskişehir Yolu 18. Km, 06790 Etimesgut, Ankara]
+additional-contact: []
+address: [Psychology Department, Ankara Medipol University, A Block, A214, Altindag, Ankara]
 country: Turkey
-geolocation: [39.93501296038254, 32.860107421875]
-last-message-level: 1
-last-message-timestamp: 1634806730
+geolocation: [39.93601659603629, 32.84545183181763]
+last-message-timestamp: 1634812603
+last-message-level: 0
+last-update: ilkerdalgar@gmail.com
+last-update-timestamp: 1634812603
+last-update-message: >-
+  Changed organization and lead. 
+
 ---
 
 This journal club meets twice every month and discusses selected papers on scientific rigor. An attendee takes the responsibility at each meeting that makes a short summary of the paper and leads the discussion.
