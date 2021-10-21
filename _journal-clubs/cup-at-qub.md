@@ -14,8 +14,8 @@ additional-contact: []
 address: [The Graduate School,  Queen's University Belfast,  University Road,  Belfast,  BT7 1NN]
 country: United Kingdom
 geolocation: [54.585138695562506, -5.934687852859497]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1634810451
 ---
 
 We are aiming to create a welcoming space at Queen's where researchers from all fields, and from any career stage, can relax and discuss reproducible practices and open science. Anyone with an interest is more than welcome to apply.
