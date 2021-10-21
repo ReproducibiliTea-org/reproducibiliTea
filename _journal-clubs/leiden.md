@@ -1,23 +1,34 @@
 ---
+
 jcid: leiden
 title: Leiden
 host-organisation: Open Science Community Leiden
 host-org-url: https://www.universiteitleiden.nl/open-science-community-leiden
+osf: null
+zotero: null
 website: 
-signup: 
 twitter: LeidenTea
+signup: https://gmail.us20.list-manage.com/subscribe?u=a401739a818a4ec097d309263&id=d1c0b4e5f8
 organisers: [Ricarda Proppert, Myrthe Vel Tromp]
 contact: leidentea@gmail.com
+additional-contact: []
+address: [Wassenaarseweg 52, 2333 AK Leiden, The Netherlands]
 country: Netherlands
 geolocation: [52.1571485, 4.485209]
-last-message-level: 1
-last-message-timestamp: 1634818725
+last-message-timestamp: 1634827528
+last-message-level: 0
+last-update: leidentea@gmail.com
+last-update-timestamp: 1634827528
+last-update-message: >-
+  Updating our page with the latest details!
+
 ---
+
 **About**
 
 The ReproducibiliTea journal club is a member initiative of the *Open Science Community Leiden (OSCL)*. We discuss papers related to open science, replication, and of course reproducibility. Our journal club is open to anyone affiliated with Leiden University, no matter their background, discipline, or career status.
 
-Anyone who’s never heard the term *open science* before is particularly welcome! No sign-up needed - just **join OSCL Teams channel**.
+Anyone whoâs never heard the term *open science* before is particularly welcome! No sign-up needed - just **join OSCL Teams channel**.
 
 **Mission**
 
@@ -35,4 +46,3 @@ We want to stimulate open, critical conversations, and *encourage* but don't exp
 
 Our monthly-ish sessions are currently hosted online, at the Open Science Community MS Teams channel. If you're not sure how to find it, or have any questions, shoot us an [**email**](mailto:Leiden.Tea@gmail.com). 
 Stay up to date by joining our [**mailing list**](https://gmail.us20.list-manage.com/subscribe?u=a401739a818a4ec097d309263&id=d1c0b4e5f8) and [**twitter**](http://twitter.com/LeidenTea).
-
