@@ -18,8 +18,8 @@ address: [Department of Clinical Neuroscience, Karolinska Institutet, Nobels vä
 country: Sweden
 
 geolocation: [59.34814839999999, 18.0236579]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1634816451
 
 ---
 Our journal club is open to everyone. We are hoping for a diverse range of attendees from all career stages, disciplines, and backgrounds. No matter how much or little you know about open science and reproducibility, you are most welcome to join us!
