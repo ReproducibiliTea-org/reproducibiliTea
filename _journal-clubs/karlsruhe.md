@@ -13,8 +13,8 @@ contact: yvonne.oberholzer@kit.edu
 address: [Raum 3C-04,Gebäude 05.20, Karlsruhe Institute of Technology (KIT), Information Systems & Service Design, Kaiserstr. 93, 76133 Karlsruhe, Germany]
 country: Germany
 geolocation: [49.00918452114394, 8.408902287483215]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1634816321
 ---
 
 The goal of the journal club is to discuss Open Science and Reproducibility at the Karlsruhe Institute of Technology. We are meeting bi-weekly on Thursdays at 11:15 (online).
