@@ -5,7 +5,6 @@ const faunadb = require('faunadb');
 const FQ = faunadb.query;
 
 const {
-    GITHUB_REPO_API,
     FAUNA_KEY,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
@@ -138,9 +137,9 @@ async function sendEmail(email, jcid, token) {
 <p>The ReproducibiliTea Web Team</p>
         `
     };
-    
+
    console.log({mailgun, mailgunData})
-    
+
     await mailgun.messages()
         .send(mailgunData);
 }
