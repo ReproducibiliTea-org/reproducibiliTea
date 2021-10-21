@@ -8,8 +8,8 @@ contact: prash@bioclues.org
 address: [Bioclues.org]
 country: India
 geolocation: [17.494804, 78.411324]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1634807864
 ---
 
 Have you ever seen researchers chatting online?  Yes, we at Bioclues.org have been exchanging e-mails, and messaging everywhere from erstwhile PhpBB2 forums to the WhatsApp chats.  It is time we all came together to discuss interesting topics.  Bioinformatics club for experimenting scientists (a.k.a. Bioclues) has set up a virtual journal club and you're welcome to join! We already have state reps from India to help you get started. 
