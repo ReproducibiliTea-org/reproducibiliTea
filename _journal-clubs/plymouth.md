@@ -1,36 +1,29 @@
 ---
 
 jcid: plymouth
-title: Plymouth 
-
-host-organisation: School of Psychology, University of Plymouth 
-
-host-org-url: https://www.plymouth.ac.uk/ 
-
-website: https://lenarddome.github.io/reproducibilitea/
-
+title: Plymouth
+host-organisation: University of Plymouth
+host-org-url: https://www.plymouth.ac.uk/schools/psychology
+osf: null
+zotero: null
+website: https://www.roryspanton.com/reproducibilitea-plymouth
+twitter: 
+signup: 
 organisers: [Rory Spanton, Lenard Dome, Karol Nedza]
-
 contact: rory.spanton@plymouth.ac.uk
-additional-contact: [lenard.dome@plymouth.ac.uk]
-
-address: [301a Link Building, University of Plymouth, Drakes Circus, Plymouth, PL4 8AA]
+additional-contact: []
+address: [Rory Spanton, School of Psychology, Portland Square, University of Plymouth, Drake Circus, Plymouth, PL4 8AA,]
 country: United Kingdom
-geolocation: [50.3761866, -4.139491899999999]
+geolocation: [50.374637140930766, -4.138927459716797]
+last-message-timestamp: 1634830753
 last-message-level: 0
-last-message-timestamp: 0
+last-update: rory.spanton@plymouth.ac.uk
+last-update-timestamp: 1634830753
+last-update-message: >-
+  Changed journal club description and linked website.
+
 ---
 
-Our ReproducibiliTea Journal Club welcomes both staff and students. 
-Our aim is to create a safe space, where we can discuss how should we do 
-Open Science, how should we think about Transparent Science, and a bit of 
-philosophy of Open Science. For each session, we select a target paper to read
-and discuss. 
+ReproducibiliTea Plymouth welcomes both staff and students at all career stages. We meet fortnightly (in-person, as of late 2021) to discuss target papers about open and transparent science, research methods, research culture, and science reform. Our papers mostly focus on issues prevalent in Psychology and Cognitive Science, but we also welcome researchers from other disciplines.
 
-We maintain a webpage where we have links to papers, dates and places, journal club entries, and follow-up materials: [Plymouth ReproducibiliTea](https://lenarddome.github.io/reproducibilitea/)
-
-To get on our mailing list, please contact one of the organisers:
-
-Karol Nedza <karol.nedza@plymouth.ac.uk>
-
-Lenard Dome <lenard.dome@plymouth.ac.uk>
+If you'd like to join our mailing list, please contact our lead organizer Rory Spanton at rory.spanton@plymouth.ac.uk
