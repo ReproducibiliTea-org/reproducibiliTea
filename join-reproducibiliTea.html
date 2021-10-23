@@ -35,7 +35,7 @@ layout: default
                 <td>
                     <p>The Open Science Framework (OSF) provides storage for various kinds of files. We have a main <a href="https://osf.io/3qrj6/" target="_blank">ReproducibiliTea project <sup><i class="fas fa-external-link-square-alt"></i></sup></a> and each of the journal clubs have their own repository within it.</p>
                     <p> We will create a repository for your journal club automatically and make you the repository admin. You can then manage it as you see fit. But to do this we will need your OSF profile ID (a few letters and numbers looking like '3qrj6') so you will need to have <a href="https://osf.io/register" target="_blank">created an OSF account <sup><i class="fas fa-external-link-square-alt"></i></sup></a></strong> and know your profile ID . Don't worry if you can't find your ID now, we'll explain how to find it in Step 3.</p>
-           
+
                 </td>
             </tr>
             <tr>
@@ -685,6 +685,12 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 form.querySelector('#post').value = addr;
             }
         }
+        if(data.country) {
+            const match = /^\W*(\w+)\W*$/.exec(data.country);
+            if(match) {
+                form.querySelector(`[value="${match[1]}"]`).selected = true;
+            }
+        }
         if(data.geolocation) {
             const match = /^\[?(.+?)\]?$/.exec(data.geolocation);
             if(match) {
@@ -709,7 +715,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         if(data.contact)
             form.querySelector('#email').value = data.contact;
         if(data['additional-contact']) {
-            const match = /^\[?(.+?)\]?$/.exec(data['additional-contact']);
+            const match = /^\[?([^\[\]]+?)\]?$/.exec(data['additional-contact']);
             if(match) {
                 const contacts = match[1].split(', ');
                 let last = form.querySelector('#email');
