@@ -13,7 +13,7 @@ organisers: [Ashley Neville]
 contact: MAReproducibiliTea@gmail.com
 additional-contact: []
 address: [97 Federal Street, Northampton, MA 01062]
-country: United Kingdom
+country: United States
 geolocation: [42.36260292171999, -71.0540771484375]
 last-message-level: 0
 last-message-timestamp: 0

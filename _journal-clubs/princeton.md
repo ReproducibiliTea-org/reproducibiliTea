@@ -13,7 +13,7 @@ organisers: [Meghan Testerman, Jesica Kosie, Jason Geller]
 contact: mtesterman@princeton.edu
 additional-contact: []
 address: [Peretsman Scully Hall, Princeton University, Washington Ave, 08544, Princeton, NJ, United States]
-country: United Kingdom
+country: United States
 geolocation: [40.3434371, -74.65227890000001]
 last-message-level: 0
 last-message-timestamp: 0
