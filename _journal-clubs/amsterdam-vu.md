@@ -1,4 +1,5 @@
 ---
+
 jcid: amsterdam-vu
 title: Amsterdam VU
 host-organisation: Vrije Universiteit Amsterdam (VU)
@@ -6,15 +7,21 @@ host-org-url: https://www.vu.nl/en
 osf: gjb6u
 zotero: KXD3DP6P
 website: 
-twitter: 
+twitter: VuAmsterdamTea
 signup: emil.uffelmann@gmail.com
 organisers: [Emil Uffelmann, Eduarda Centeno]
 contact: emil.uffelmann@gmail.com
+additional-contact: []
 address: [Center for Neurogenomics and Cognitive Research (CNCR), VU University Science Building B4 & B5 Wing, De Boelelaan 1085, 1081HV Amsterdam, North Holland]
 country: Netherlands
 geolocation: [52.3337568, 4.8657199]
-last-message-level: 1
-last-message-timestamp: 1634805149
+last-message-timestamp: 1635236410
+last-message-level: 0
+last-update: emil.uffelmann@gmail.com
+last-update-timestamp: 1635236410
+last-update-message: >-
+  
+
 ---
 
 The journal club is open to everyone across the the VU Amsterdam and nearby universities, from any discipline or department.
