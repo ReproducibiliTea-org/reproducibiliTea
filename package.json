@@ -2,7 +2,8 @@
   "name": "reproducibiliTea",
   "version": "1.0.0",
   "scripts": {
-    "debug": "netlify dev --inspect"
+    "debug": "netlify dev --inspect",
+    "serve": "netlify dev"
   },
   "dependencies": {},
   "devDependencies": {
