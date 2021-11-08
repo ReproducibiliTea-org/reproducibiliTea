@@ -8,9 +8,9 @@ zotero: TDE3ISP4
 website: 
 twitter: 
 signup: 
-organisers: [Samuel Forbes, Prerna Aneja]
+organisers: [Samuel Forbes, Prerna Aneja, Ann-Kathrin Johnen]
 contact: samuel.forbes@uea.ac.uk
-additional-contact: []
+additional-contact: [P.Aneja@uea.ac.uk, A.Johnen@uea.ac.uk]
 address: [School of Psychology, Lawrence Stenhouse Building, University of East Anglia, Norwich, NR4 7TJ]
 country: United Kingdom
 geolocation: [54.16243396806779, -1.40625]
