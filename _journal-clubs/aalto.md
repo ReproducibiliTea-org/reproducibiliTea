@@ -9,16 +9,16 @@ zotero: RW7T84ES
 website: 
 twitter: 
 signup: jan.vornhagen@aalto.fi
-organisers: [Jan B. Vornhagen, Janne Töykkälä]
+organisers: [Jan B. Vornhagen, Janne TÃ¶ykkÃ¤lÃ¤]
 contact: jan.vornhagen@aalto.fi
 additional-contact: [janne.toykkala@gmail.com]
 address: [Tietotekniikka, B121;, Konemiehentie 2;, 02150 Espoo;]
 country: Finland
 geolocation: [60.18677975700706, 24.822366535663605]
-last-message-timestamp: 1635865858
+last-message-timestamp: 1636357026
 last-message-level: 0
 last-update: jan.vornhagen@aalto.fi
-last-update-timestamp: 1635865858
+last-update-timestamp: 1636357026
 last-update-message: >-
   
 
