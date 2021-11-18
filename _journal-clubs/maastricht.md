@@ -14,8 +14,8 @@ additional-contact: []
 address: [P.O. Box 616,  6200 MD,  Maastricht]
 country: Netherlands
 geolocation: [50.847572953653916, 5.6964111328125]
-last-message-level: 1
-last-message-timestamp: 1634821242
+last-message-level: 2
+last-message-timestamp: 1637241530
 ---
 
 Our Reproducibilitea journal club will meet 4 times per year, and will be in collaboration with the Open Science Community Maastricht. We aim to make Open Science visible at Maastricht University, and to facilitate discussion between researchers, departments and faculties on integrating open science in everyday research.
