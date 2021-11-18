@@ -14,8 +14,8 @@ additional-contact: []
 address: [Av. Carlos Chagas Filho, 373, Centro de Ciências da Saúde - Bloco E - Sala 38, Cidade Universitária, Rio de Janeiro-RJ, Brasil, 21941-590, A/C Clarissa Carneiro]
 country: Brazil
 geolocation: [-22.897683210648072, -43.154296875]
-last-message-level: 1
-last-message-timestamp: 1634807923
+last-message-level: 2
+last-message-timestamp: 1637228259
 ---
 
 We are an online chapter of ReproducibiliTea journal clubs, based in Brazil. 
