@@ -15,10 +15,10 @@ additional-contact: []
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
 geolocation: [51.4584172, -2.6029792]
-last-message-timestamp: 1637245240
+last-message-timestamp: 1637245366
 last-message-level: 0
 last-update: robert.thibault@bristol.ac.uk
-last-update-timestamp: 1637245240
+last-update-timestamp: 1637245366
 last-update-message: >-
   
 
@@ -32,7 +32,7 @@ We run an ECR-led weekly journal club open to all staff and students from any di
 
 ## Time & Place
 
-Every other Monday, 4-5pm, via Zoom
+Every other Monday, 4-5pm, via Zoom & in person
 
 ## Format
 
@@ -44,4 +44,4 @@ Everyone is welcome to join us - skeptics and open science enthusiasts alike! We
 
 ## How to join
 
-To join the mailing list please email the club organiser, Benji Woolf (Benjamin.woolf@bristol.ac.uk)
+To join the mailing list please email one of the club organisers, Benji Woolf (Benjamin.woolf@bristol.ac.uk) and Robbie Clark
