@@ -15,10 +15,10 @@ additional-contact: []
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
 geolocation: [51.4584172, -2.6029792]
-last-message-timestamp: 1637245163
+last-message-timestamp: 1637245240
 last-message-level: 0
 last-update: robert.thibault@bristol.ac.uk
-last-update-timestamp: 1637245163
+last-update-timestamp: 1637245240
 last-update-message: >-
   
 
@@ -44,4 +44,4 @@ Everyone is welcome to join us - skeptics and open science enthusiasts alike! We
 
 ## How to join
 
-To join the mailing list please email the club organiser, Robert Thibault (robert.thibault@bristol.ac.uk).
+To join the mailing list please email the club organiser, Benji Woolf (Benjamin.woolf@bristol.ac.uk)
