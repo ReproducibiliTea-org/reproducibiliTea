@@ -11,8 +11,8 @@ contact: robert.thibault@bristol.ac.uk
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
 geolocation: [51.4584172, -2.6029792]
-last-message-level: 1
-last-message-timestamp: 1634808044
+last-message-level: 2
+last-message-timestamp: 1637228321
 ---
 
 # The University of Bristol ReproducibiliTea journal club 
