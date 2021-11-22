@@ -3,7 +3,7 @@
 jcid: graz
 title: Graz
 host-organisation: University of Graz
-host-org-url: 
+host-org-url: https://www.uni-graz.at/en/
 osf: r3hcn
 zotero: null
 website: 
@@ -12,13 +12,13 @@ signup: graz_open_science@zoho.com
 organisers: [Gaby Hofer, Hilmar Brohmer]
 contact: graz_open_science@zoho.com
 additional-contact: []
-address: [University of Graz, Universitätsplatz 2, 8010 Graz]
+address: [University of Graz, UniversitÃ¤tsplatz 2, 8010 Graz]
 country: Austria
 geolocation: [47.07763334280813, 15.44952392578125]
-last-message-timestamp: 1637242763
+last-message-timestamp: 1637597435
 last-message-level: 0
 last-update: graz_open_science@zoho.com
-last-update-timestamp: 1637242763
+last-update-timestamp: 1637597435
 last-update-message: >-
   
 
