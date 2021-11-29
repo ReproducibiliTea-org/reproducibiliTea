@@ -1,4 +1,5 @@
 ---
+
 jcid: montpellier
 title: Montpellier
 host-organisation: Institut Agro | INRAE Montpellier
@@ -14,8 +15,13 @@ additional-contact: [thibault.nidelet@inrae.fr]
 address: [L'institut Agro | Montpellier SupAgro, 2 Place Pierre Viala, 34060 Montpellier, France]
 country: France
 geolocation: [43.61734533411955, 3.854902982711792]
-last-message-level: 1
-last-message-timestamp: 1638179860
+last-message-timestamp: 1638180263
+last-message-level: 0
+last-update: jean-francois.martin@supagro.fr
+last-update-timestamp: 1638180263
+last-update-message: >-
+  
+
 ---
 
 The journal club is dedicated to exchanges about reproducibility in Science and is open to anyone at the Supagro Campus, both students and scientists. Each session is based on a specific paper that is discussed during lunch breaks.
