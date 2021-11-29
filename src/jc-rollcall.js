@@ -131,7 +131,7 @@ class JournalClub {
             ];
         }
         this.contactEmails = this.contactEmails.map(e => {
-            const re = /^ *([^ ]*) *$/.exec(e);
+            const re = /^ *([^ ]*)/.exec(e);
             if(re)
                 return re[1];
             else
@@ -183,7 +183,7 @@ async function rollcall(callback) {
  */
 function finish(rc) {
     rc.journalClub.callback(null, {
-        statusCode: 200,
+        statusCode: / FAILED! /.test(rc.action)? 500 : 200,
         body: JSON.stringify(`Rollcall: ${rc.journalClub.jcid} -- ${rc.action}`)
     });
 }
