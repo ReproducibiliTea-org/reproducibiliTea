@@ -12,7 +12,7 @@ signup: govaart@cbs.mpg.de; gugnowska@cbs.mpg.de
 organisers: [Gisela Govaart, Katarzyna Gugnowska, Greta Häberle]
 contact: govaart@cbs.mpg.de
 additional-contact: [gugnowska@cbs.mpg.de, g.haeberle@fu-berlin.de]
-address: [Max Planck Institute for Human Cognitive and Brain Sciences, Gisela Govaart, StephanstraÃe 1a, 04103 Leipzig, Germany]
+address: [Max Planck Institute for Human Cognitive and Brain Sciences, Gisela Govaart, Stephanstraße 1a, 04103 Leipzig, Germany]
 country: Germany
 geolocation: [51.334935289027776, 12.388930320739746]
 last-message-timestamp: 1637240605
