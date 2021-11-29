@@ -13,8 +13,8 @@ contact: wngiam@uchicago.edu
 address: [940 E 57th Street, Chicago, Illinois 60637]
 country: United States
 geolocation: [41.788816943128815, -87.59935855865479]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1638199061
 ---
 
 The University of Chicago ReproducibliTea Journal Club meets every two weeks during each quarter to discuss meta-science topics such as reproducibility, open science and others! An initiative started by graduate students and early-career researchers in the Psychology and Neuroscience/Neurobiology departments, we hope to have broad discussions about different aspects of science relevant across disciplines.
