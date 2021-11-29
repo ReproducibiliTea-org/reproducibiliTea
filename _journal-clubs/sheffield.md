@@ -1,59 +1,44 @@
 ---
+
 jcid: sheffield
 title: Sheffield
 host-organisation: The University of Sheffield
 host-org-url: https://www.sheffield.ac.uk/
-website: 
 osf: hgq26
+zotero: null
+website: 
+twitter: 
 signup: https://bit.ly/tuosrepro
-organisers: [James Shaw, Zuzanna B Zagrodzka]
+organisers: [Zuzanna B Zagrodzka, Jim Uttley]
 contact: z.zagrodzka@sheffield.ac.uk
-address: [University of Sheffield, Sheffield S10 2TG]
+additional-contact: []
+address: [University of Sheffield, Sheffield S10 2TG,]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
-last-message-level: 1
-last-message-timestamp: 1638191860
+last-message-timestamp: 1638193893
+last-message-level: 0
+last-update: z.zagrodzka@sheffield.ac.uk
+last-update-timestamp: 1638193893
+last-update-message: >-
+  Changed lead organiser. 
+
 ---
-The Sheffield branch of ReproducibiliTea meets monthly starting in Autumn term 2019, and we will have people coming from a range of departments across the university.
-If you're a student, early career researcher or staff, please do come and join us!  Just log into MUSE, then [sign up to our Google group](https://bit.ly/tuosrepro) and [subscribe to our Google calendar](https://calendar.google.com/calendar?cid=c2hlZmZpZWxkLmFjLnVrX3BxYnVmMWQzNDk5dXVyaTgzZDJyYjVvYXJzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).
 
-### Spring 2020 programme
+The Sheffield branch of ReproducibiliTea meets monthly and has people coming from a range of departments across the University of Sheffield and beyond.
+We might increase the frequency of our meetings in 2022.
 
-#### 1pm Tuesday 17 March
+Aims
 
-Pam Liversidge E05
+At our sessions, we are aiming to provide an informal, friendly and supportive space to discuss topics related to, among others, reproducibility, replicability and transparency, open research practices, diversity, equity and inclusion issues, and research culture change.
 
-[Estimating the reproducibility of psychological science](https://doi.org/10.1126/science.aac4716)
+Format
 
-#### 1pm Thursday 20 February
+Anyone is welcome to propose a paper or topic to discuss. 
 
-Information Commons Collaboratory 2
-
-[Tumult over Transparency: Decoupling Transparency from Replication in Establishing Trustworthy Qualitative Research](https://doi.org/10.1177/0001839219887663)
-
-#### 1pm Tuesday 14 January
-
-Hicks Lecture Theatre 11
-
-Round-table discussion
-
-### Autumn 2019 programme
-
-#### 1pm Tuesday 10 December
-
-Jessop Ensemble Room 1
-
-[Is science really facing a reproducibility crisis, and do we need it to?](https://doi.org/10.1073/pnas.1708272114)
+During each session, one or more members volunteer to lead the discussion. The volunteer/-s prepare a short introduction to the paper/blog post/talk/topic and facilitate discussion. 
 
 
-#### 1pm Thursday 14 November
+Practical information
 
-Pam Liversidge E06
-
-[Reproducible and Replicable Computational Fluid Dynamics: It’s Harder Than You Think](https://doi.org/10.1109/MCSE.2017.3151254)
-
-#### 1pm Thursday 17 October
-
-Information Commons Collaboratory 1
-
-[Is the Replicability Crisis Overblown? Three Arguments Examined](https://doi.org/10.1177/1745691612463401)
+If you're a student, early career researcher or staff, please do come and join us!  Just log into MUSE, then [sign up to our Google group](https://bit.ly/tuosrepro) and [subscribe to our Google calendar](https://calendar.google.com/calendar/u/0?cid=Y19jcmJkYm8wbHVwNXJmZDlnam90aHN2MWRxMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
+Do not hesitate to get in touch if you have any trouble joining the group!
