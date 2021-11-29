@@ -14,8 +14,8 @@ additional-contact: []
 address: [No. 67, Jieren Street, Hualien City, Hualien County, 970]
 country: Taiwan
 geolocation: [24.206889622398023, 121.0693359375]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1638196729
 ---
 
 TCPSR is the Chinese-speaking community where we wish more Chinese-as-first-language scholars realize and join ReproducibiliTea journal clubs. We expect each mega city in Taiwan will have a standalone journal club.
