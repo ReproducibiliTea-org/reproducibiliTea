@@ -14,8 +14,8 @@ additional-contact: []
 address: [CS 300, Peter Landin Building, Queen Mary University of London, Mile End Rd, Bethnal Green, London E1 4NS]
 country: United Kingdom
 geolocation: [51.523076959363024, -0.043408870697021484]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1638187259
 ---
 
 Welcome to the Queen Mary ReproducibiliTea! Founded fall 2020, we host various open science and reproducibility-related events and meetings with the goal of improving the trustworthiness of research across a wide range of scientific disciplines.
