@@ -6,8 +6,8 @@ host-org-url: https://www.sheffield.ac.uk/
 website: 
 osf: hgq26
 signup: https://bit.ly/tuosrepro
-organisers: [James Shaw]
-contact: js102@zepler.net 
+organisers: [James Shaw, Zuzanna B Zagrodzka]
+contact: z.zagrodzka@sheffield.ac.uk
 address: [University of Sheffield, Sheffield S10 2TG]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
