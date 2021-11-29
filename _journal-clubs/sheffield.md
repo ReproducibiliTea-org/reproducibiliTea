@@ -15,10 +15,10 @@ additional-contact: []
 address: [University of Sheffield, Sheffield S10 2TG,]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
-last-message-timestamp: 1638193893
+last-message-timestamp: 1638197966
 last-message-level: 0
 last-update: z.zagrodzka@sheffield.ac.uk
-last-update-timestamp: 1638193893
+last-update-timestamp: 1638197966
 last-update-message: >-
   Changed lead organiser. 
 
@@ -29,7 +29,7 @@ We might increase the frequency of our meetings in 2022.
 
 Aims
 
-At our sessions, we are aiming to provide an informal, friendly and supportive space to discuss topics related to, among others, reproducibility, replicability and transparency, open research practices, diversity, equity and inclusion issues, and research culture change.
+At our sessions, we are aiming to provide an informal, friendly and supportive space to discuss topics related to reproducibility, replicability and transparency, open research practices and research culture change.
 
 Format
 
