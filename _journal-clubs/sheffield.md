@@ -11,8 +11,8 @@ contact: z.zagrodzka@sheffield.ac.uk
 address: [University of Sheffield, Sheffield S10 2TG]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1638191860
 ---
 The Sheffield branch of ReproducibiliTea meets monthly starting in Autumn term 2019, and we will have people coming from a range of departments across the university.
 If you're a student, early career researcher or staff, please do come and join us!  Just log into MUSE, then [sign up to our Google group](https://bit.ly/tuosrepro) and [subscribe to our Google calendar](https://calendar.google.com/calendar?cid=c2hlZmZpZWxkLmFjLnVrX3BxYnVmMWQzNDk5dXVyaTgzZDJyYjVvYXJzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).
