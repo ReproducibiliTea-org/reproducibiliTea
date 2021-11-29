@@ -15,8 +15,8 @@ address: [School of Historical and Philosophical Studies, The University of Melb
 
 country: Australia
 geolocation: [-37.7983459, 144.960974]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1638178724
 ---
 
 **About**
