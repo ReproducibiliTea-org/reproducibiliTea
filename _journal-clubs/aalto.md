@@ -9,7 +9,7 @@ zotero: RW7T84ES
 website: 
 twitter: 
 signup: jan.vornhagen@aalto.fi
-organisers: [Jan B. Vornhagen, Janne TÃÂ¶ykkÃÂ¤lÃÂ¤]
+organisers: [Jan B. Vornhagen, Janne Töykkälä]
 contact: jan.vornhagen@aalto.fi
 additional-contact: [janne.toykkala@gmail.com]
 address: [Tietotekniikka, B121;, Konemiehentie 2;, 02150 Espoo;]
