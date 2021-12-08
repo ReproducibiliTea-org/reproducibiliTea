@@ -8,19 +8,19 @@ osf: yk9pf
 zotero: null
 website: https://www.openscience-rotterdam.com/home/
 twitter: OSCRotterdam
-signup: 
-organisers: [Antonio Schettino]
+signup: info@openscience-rotterdam.com
+organisers: [Antonio Schettino, Eirini Botsari]
 contact: schettino@eur.nl
-additional-contact: []
+additional-contact: [eirini.botsari@eur.nl]
 address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
 country: Netherlands
 geolocation: [51.9170494, 4.525585899999999]
-last-message-level: 1
-last-message-timestamp: 1638190726
+last-message-timestamp: 1638957793
+last-message-level: 0
 last-update: schettino@eur.nl
-last-update-timestamp: 1605691617
+last-update-timestamp: 1638957793
 last-update-message: >-
-  update Practical Information section
+  add new Community Manager
 
 ---
 
