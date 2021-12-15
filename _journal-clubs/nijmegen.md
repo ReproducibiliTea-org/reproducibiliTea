@@ -7,7 +7,7 @@ host-org-url: https://openscience-nijmegen.nl/
 osf: null
 zotero: null
 website: https://openscience-nijmegen.nl/_pages/reproducibilitea/
-twitter: 
+twitter: OSCNijmegen
 signup: 
 organisers: [Johannes Algermissen, Lena Ackermann, Eva Poort]
 contact: contact@openscience-nijmegen.nl
@@ -15,12 +15,12 @@ additional-contact: []
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen]
 country: Netherlands
 geolocation: [51.81799340000001, 5.8570934]
-last-message-level: 1
-last-message-timestamp: 1638456087
+last-message-timestamp: 1639559768
+last-message-level: 0
 last-update: contact@openscience-nijmegen.nl
-last-update-timestamp: 1606913691
+last-update-timestamp: 1639559768
 last-update-message: >-
-  Added time we meet back in. Accidentally removed it!
+  
 
 ---
 
