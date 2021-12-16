@@ -13,8 +13,8 @@ contact: ramdunyj@tcd.ie
 address: [Trinity College Institute of Neuroscience, Room 3.14, Lloyd Building, Trinity College Dublin, College Green, Dublin]
 country: Ireland
 geolocation: [53.3438181, -6.2509871]
-last-message-level: 2
-last-message-timestamp: 1637233129
+last-message-level: 3
+last-message-timestamp: 1639665868
 ---
 
 The TCD ReproducibiliTea journal club is currently tailored to early career researchers (i.e. PhD Students, Postdocs, Fellows), undergraduate/postgraduate students and senior academics within the realms of neuroimaging, psychology and neuroscience. We promote collaborative efforts to address the barriers impacting the reproducibility and replicability of studies and results in the aforementioned fields. We aim to leverage on the interdiscilinary experiences of the journal club to implement proposed solutions to critical problems in the literature and help researchers move a step closer towards open science in their own line of work.
