@@ -1,14 +1,28 @@
 ---
+
 jcid: hobart
-title: Hobart 
-host-organisation: University of Tasmania 
+title: Hobart
+host-organisation: University of Tasmania
 host-org-url: https://www.utas.edu.au/
-organisers: [Emily Lowe-Calverley, Jim Sauer] 
-contact: Emily.Lowe@utas.edu.au 
+osf: null
+zotero: null
+website: 
+twitter: 
+signup: 
+organisers: [Emily Lowe-Calverley, Jim Sauer]
+contact: Emily.Lowe@utas.edu.au
+additional-contact: []
 address: [Psychology, University of Tasmania, Private Bag 30, 7001, Tasmania]
 country: Australia
 geolocation: [-42.9036462, 147.325848]
-last-message-level: 3
-last-message-timestamp: 1639680087
+last-message-timestamp: 1639688372
+last-message-level: 0
+last-update: Emily.Lowe@utas.edu.au
+last-update-timestamp: 1639688372
+last-update-message: >-
+  
+
 ---
-This journal club is currently in the process of being founded, please get in touch if you want to be involved!
+
+
+
