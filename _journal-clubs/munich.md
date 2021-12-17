@@ -2,17 +2,17 @@
 
 jcid: munich
 title: Munich
-host-organisation: Ludwig-Maximilians-UniversitÃ¤t Munich
+host-organisation: "Ludwig-Maximilians-Universität Munich"
 host-org-url: https://www.uni-muenchen.de
 osf: null
 zotero: null
 website: 
 twitter: LMUMunichTea
 signup: 
-organisers: [Stephan Nuding, Leonhard Schramm, Laura Goetz, Felix SchÃ¶nbrodt]]
+organisers: [Stephan Nuding, Leonhard Schramm, Laura Goetz, Felix Schönbrodt]
 contact: stephan.nuding@campus.lmu.de
 additional-contact: []
-address: [Psychology (student council psychology), LMU Munich, LeopoldstraÃe 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
+address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
 country: Germany
 geolocation: [48.15928719999999, 11.5853531]
 last-message-timestamp: 1639734271
