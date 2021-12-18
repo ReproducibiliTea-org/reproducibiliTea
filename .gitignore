@@ -14,3 +14,4 @@ npm-debug.log
 # Python development virtual environment
 _local/.idea*
 _local/venv
+_journal-clubs/.Rhistory
