@@ -1,17 +1,27 @@
 ---
+
 jcid: charlottesville-school-of-education-and-human-devlopment
-title: Charlottesville (School of Education and Human Development)
-host-organisation: University of Virginia (School of Education and Human Development) 
+title: Charlottesville School of Education and Human Development
+host-organisation: University of Virginia (School of Education and Human Development)
 host-org-url: https://www.virginia.edu (or https://curry.virginia.edu for School of Education)
-organisers: [Bryan G. Cook, Jesse Fleming] 
-contact: bc3qu@virginia.edu 
+osf: null
+zotero: null
+website: 
+twitter: 
+signup: 
+organisers: [Bryan G. Cook, Jesse Fleming]
+contact: bc3qu@virginia.edu
+additional-contact: []
 address: [Department of Curriculum, Instruction, and Special Education, University of Virginia, Bavaro Hall 312, 417 Emmet Street South, Charlottesville, VA 22903]
 country: United States
-geolocation: [38.0346324, -78.5089088]
+geolocation: [38.03321950909025, -78.50761413574219]
+last-message-timestamp: 1639989962
 last-message-level: 0
-last-message-timestamp: 1639734271
-last-update-timestamp: 1639734271
+last-update: bc3qu@virginia.edu
+last-update-timestamp: 1639989962
 last-update-message: >-
   
+
 ---
+
 
