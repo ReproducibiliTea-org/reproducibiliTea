@@ -11,8 +11,8 @@ contact: nathan.khadaroo@postgrad.manchester.ac.uk # Email contact for the JC
 country: United Kingdom
 address: [Oxford Rd, Manchester M13 9PL]
 geolocation: [53.4663853, -2.2339112]
-last-message-level: 1
-last-message-timestamp: 1638178660
+last-message-level: 2
+last-message-timestamp: 1640601687
 ---
 **About:**
 The journal club is open to everyone across the University of Manchester and nearby universities, from any discipline or department.
