@@ -16,8 +16,8 @@ address: [Graduate Institute of Mind, Brain and Consciousness, Taipei Medical Un
 
 country: Taiwan
 geolocation: [25.0253584, 121.5616235]
-last-message-level: 1
-last-message-timestamp: 1638196660
+last-message-level: 2
+last-message-timestamp: 1640680942
 ---
 
 **About us**
