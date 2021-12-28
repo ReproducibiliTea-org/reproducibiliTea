@@ -14,8 +14,8 @@ additional-contact: []
 address: [B220 Wells Hall, Michigan State University, East Lansing, 48824 MI, USA]
 country: United States
 geolocation: [42.726476605516446, -84.48488473892212]
-last-message-level: 1
-last-message-timestamp: 1638193126
+last-message-level: 2
+last-message-timestamp: 1640666488
 ---
 
 This is the MSU chapter of ReproducibiliTEA where spartan scientists can gather and discuss open science practices.
