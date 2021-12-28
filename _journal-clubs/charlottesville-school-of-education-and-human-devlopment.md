@@ -14,7 +14,7 @@ contact: bc3qu@virginia.edu
 additional-contact: []
 address: [Department of Curriculum, Instruction, and Special Education, University of Virginia, Bavaro Hall 312, 417 Emmet Street South, Charlottesville, VA 22903]
 country: United States
-geolocation: [38.03321950909025, -78.50761413574219]
+geolocation: [38.034475, -78.509094]
 last-message-timestamp: 1639989962
 last-message-level: 0
 last-update: bc3qu@virginia.edu
