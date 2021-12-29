@@ -18,4 +18,4 @@ last-message-level: 0
 last-message-timestamp: 1640707200
 ---
 
-TCPSR is the Chinese-speaking community where we wish more Chinese-as-first-language scholars realize and join ReproducibiliTea journal clubs. We expect each mega city in Taiwan will have a standalone journal club.
+TCPSR is the Chinese-speaking community where we wish more Chinese-as-first-language scholars realize and join ReproducibiliTea journal clubs. We expect each mega city in Taiwan will have a standalone journal club. Since 2021 winter, we are managing bimonthly workshops about the pre-research estimations on power, effect size and sample size.
