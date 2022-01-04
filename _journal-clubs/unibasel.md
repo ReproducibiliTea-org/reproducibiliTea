@@ -15,8 +15,8 @@ additional-contact: []
 address: [Radiological Physics, University Hospital Basel, Petersgraben 4, 4031 Basel]
 country: Switzerland
 geolocation: [47.56103469106742, 7.583484649658203]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1641336087
 last-update: tugba.akincidantonoli@unibas.ch
 last-update-timestamp: 1609793601
 last-update-message: >-
