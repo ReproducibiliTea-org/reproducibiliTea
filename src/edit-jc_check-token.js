@@ -20,7 +20,6 @@ exports.handler = function(event, context, callback) {
     }
 
     // Check input
-    let token = null;
     const data = JSON.parse(event.body);
     if(!data.token) {
         return callback('Authorisation token must be specified in JSON format in the request body.');
@@ -30,7 +29,7 @@ exports.handler = function(event, context, callback) {
     const client = new faunadb.Client({ secret: FAUNA_KEY });
     client.query(
         FQ.Map(
-            FQ.Paginate(FQ.Documents(FQ.Collection("editTokens"))),
+            FQ.Paginate(FQ.Match(FQ.Index('by_token'), data.token), {size:1}),
             FQ.Lambda("D", FQ.Get(FQ.Var("D")))
         )
     )

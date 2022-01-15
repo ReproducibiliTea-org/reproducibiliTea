@@ -50,24 +50,24 @@ exports.handler = function(event, context, callback) {
             }
             throw new Error(`Requested journal club ${data.jcid} does not exist.`);
         })
-        .then(() => {
-            // Protect against flooding (max 5 active entries per JC)
-            return client.query(
+        .then(async () => {
+            await client.query(
                 FQ.Map(
-                    FQ.Paginate(FQ.Documents(FQ.Collection("editTokens"))),
+                    FQ.Paginate(
+                        FQ.Filter(
+                            FQ.Match(Index('by_owner'), [ data.jcid, data.email ]),
+                            FQ.Lambda(
+                                "x",
+                                FQ.GT(FQ.Now(), FQ.Select(["data", "expires"], Get(Var("x"))))
+                            )
+                        )
+                    ),
                     FQ.Lambda("D", FQ.Get(FQ.Var("D")))
                 )
             )
         })
         .then(r => {
-            let count = 5;
-            r.data.forEach(x => {
-                if(x.data.jcid === data.jcid
-                    && x.data.expires
-                    && x.data.expires < new Date())
-                    count--;
-            });
-            if(!count)
+            if(r.length > 5)
                 throw new Error('Too many recent edit attempts for this journal club. Please check your email (including junk folders) for recent access tokens.')
         })
         .then(() => {
