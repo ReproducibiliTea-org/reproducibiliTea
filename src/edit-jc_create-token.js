@@ -51,7 +51,7 @@ exports.handler = function(event, context, callback) {
             throw new Error(`Requested journal club ${data.jcid} does not exist.`);
         })
         .then(async () => {
-            await client.query(
+            return await client.query(
                 FQ.Map(
                     FQ.Paginate(
                         FQ.Filter(
@@ -67,7 +67,7 @@ exports.handler = function(event, context, callback) {
             )
         })
         .then(r => {
-            if(r.length > 5)
+            if(r.data.length > 5)
                 throw new Error('Too many recent edit attempts for this journal club. Please check your email (including junk folders) for recent access tokens.')
         })
         .then(() => {

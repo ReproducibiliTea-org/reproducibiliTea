@@ -35,6 +35,7 @@ exports.handler = function(event, context, callback) {
         // Check the token we've been supplied against the tokens
         // Return the token data if it matches
         .then(r => {
+            console.log(r)
             let tokenOK = false;
             r.data.forEach(x => {
                 if(x.data.token === data.token) {
