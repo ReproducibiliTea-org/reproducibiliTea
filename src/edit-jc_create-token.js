@@ -58,7 +58,7 @@ exports.handler = function(event, context, callback) {
                             FQ.Match(FQ.Index('by_owner'), [ data.jcid, data.email ]),
                             FQ.Lambda(
                                 "x",
-                                FQ.GT(FQ.Now(), FQ.Select(["data", "expires"], Get(Var("x"))))
+                                FQ.GT(FQ.Now(), FQ.Select(["data", "expires"], FQ.Get(FQ.Var("x"))))
                             )
                         )
                     ),

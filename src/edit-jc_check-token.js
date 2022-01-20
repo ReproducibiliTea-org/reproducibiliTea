@@ -1,5 +1,4 @@
 // node fetch support
-const fetch = require("node-fetch");
 require('dotenv').config();
 const faunadb = require('faunadb');
 const FQ = faunadb.query;
