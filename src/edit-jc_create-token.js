@@ -55,7 +55,7 @@ exports.handler = function(event, context, callback) {
                 FQ.Map(
                     FQ.Paginate(
                         FQ.Filter(
-                            FQ.Match(Index('by_owner'), [ data.jcid, data.email ]),
+                            FQ.Match(FQ.Index('by_owner'), [ data.jcid, data.email ]),
                             FQ.Lambda(
                                 "x",
                                 FQ.GT(FQ.Now(), FQ.Select(["data", "expires"], Get(Var("x"))))
