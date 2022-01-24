@@ -14,8 +14,8 @@ additional-contact: []
 address: [School of Medicine, Division of Psychiatry & Applied Psychology, Institute of Mental Health, Triumph Road,  University of Nottingham, NG7 2TU]
 country: United Kingdom
 geolocation: [52.955256978454685, -1.142578125]
-last-message-level: 2
-last-message-timestamp: 1640616260
+last-message-level: 3
+last-message-timestamp: 1643064087
 ---
 
 The ReproducibiliTea journal club at the University of Nottingham is set up by researchers at the Institute of Mental Health, School of Psychology and the Precision Imaging Beacon. Our group will focus primarily on the practice of open science in the field of neuroimaging and clinical research. People from all backgrounds and disciplines are welcome to join!
