@@ -1,20 +1,27 @@
 ---
+
 jcid: moscow
 title: Moscow
 host-organisation: HSE University
 host-org-url: 
 osf: qs9nf
 zotero: TZJ6ZJTF
-website: 
+website: https://t.me/reproducibilitea_moscow
 twitter: 
 signup: https://t.me/reproducibilitea_moscow
-organisers: [Elena Rybina, Evgenii Kalenkovich, Ekaterina Stupina]
+organisers: [Elena Rybina, Evgenii Kalenkovich, Anastasia Poltarzhitskaya]
 contact: rybina.e.p@gmail.com
-address: [Room 409, Elena Rybina, School of Psychology, HSE University, 101000, Russia, Moscow, Armyanskiy per. 4, c2]
+additional-contact: []
+address: [Room 209, Elena Rybina, HSE University, 101000, Russia, Moscow, Krivokolenny per. 3]
 country: Russian Federation
 geolocation: [55.7594715658183, 37.636274099349976]
-last-message-level: 3
-last-message-timestamp: 1643049752
+last-message-timestamp: 1643135557
+last-message-level: 0
+last-update: rybina.e.p@gmail.com
+last-update-timestamp: 1643135557
+last-update-message: >-
+  
+
 ---
 
 
