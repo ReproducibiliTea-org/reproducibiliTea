@@ -20,8 +20,8 @@ address: [Mälardalens Universitet, HVV, Box 883, 721 23 Västerås]
 country: Sweden
 
 geolocation: [59.61870247646153,16.54038906097412]
-last-message-level: 3
-last-message-timestamp: 1643056951
+last-message-level: 0
+last-message-timestamp: 1643166206
 
 ---
 
