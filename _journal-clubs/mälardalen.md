@@ -15,7 +15,7 @@ organisers: [Jennifer Gothilander, Oskar Ullberg, Lisa Waltersson]
 contact: jennifer.gothilander@mdh.se
 additional-contact: [oskar.ullberg@mdh.se, lisa.waltersson@mdh.se]
 
-address: [Mälardalens Högskola, HVV, Box 883, 721 23 Västerås]
+address: [Mälardalens Universitet, HVV, Box 883, 721 23 Västerås]
 
 country: Sweden
 
