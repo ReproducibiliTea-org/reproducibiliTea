@@ -9,16 +9,16 @@ zotero: IG59GZD6
 website: 
 twitter: LeuvenTea
 signup: reproducibilitealeuven@kuleuven.be
-organisers: [Olivia Kirtley, Aline Claesen, Eline Van Geert, Natalie Schroyens, Stien Van De Plas]
+organisers: [Olivia Kirtley, Aline Claesen, Eline Van Geert, Stien Van De Plas]
 contact: reproducibilitealeuven@kuleuven.be
 additional-contact: []
 address: [Eline Van Geert, Laboratorium voor Experimentele Psychologie, Tiensestraat 102 - box 3711, BE-3000 Leuven]
 country: Belgium
 geolocation: [50.8760129, 4.7051696]
-last-message-level: 1
-last-message-timestamp: 1644403287
+last-message-timestamp: 1644403449
+last-message-level: 0
 last-update: reproducibilitealeuven@kuleuven.be
-last-update-timestamp: 1612861106
+last-update-timestamp: 1644403449
 last-update-message: >-
   
 
