@@ -15,8 +15,8 @@ additional-contact: []
 address: [Eline Van Geert, Laboratorium voor Experimentele Psychologie, Tiensestraat 102 - box 3711, BE-3000 Leuven]
 country: Belgium
 geolocation: [50.8760129, 4.7051696]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1644403287
 last-update: reproducibilitealeuven@kuleuven.be
 last-update-timestamp: 1612861106
 last-update-message: >-
