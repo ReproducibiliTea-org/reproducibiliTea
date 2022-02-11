@@ -1,4 +1,5 @@
 ---
+
 jcid: rvcresearchintegrityjc
 title: RVCResearchIntegrityJC
 host-organisation: Royal Veterinary College
@@ -8,14 +9,19 @@ zotero: WJNHRQR3
 website: 
 twitter: 
 signup: rvcresearchintegrityjc@gmail.com
-organisers: [Eleanor Lynam, Charlotte Burns]
-contact: elynam1@rvc.ac.uk
-additional-contact: [cburn@rvc.ac.uk]
-address: [Dr Eleanor Lynam, The Royal Veterinary College, 4 Royal College St, London NW1 0TU]
+organisers: [Charlotte Burn]
+contact: cburn@rvc.ac.uk
+additional-contact: []
+address: [Dr Charlotte Burn, The Royal Veterinary College, Hawkshead Lane, AL9 7TA]
 country: United Kingdom
 geolocation: [51.6180165487737, -0.17578125]
-last-message-level: 3
-last-message-timestamp: 1643085687
+last-message-timestamp: 1644574442
+last-message-level: 0
+last-update: cburn@rvc.ac.uk
+last-update-timestamp: 1644574442
+last-update-message: >-
+  Hi. We are still running Repro'Teas, but your email had gone into my junk mail. Ellie Lynam is no longer involved. Best wishes, Charlotte
+
 ---
 
 
