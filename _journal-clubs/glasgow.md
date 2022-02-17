@@ -15,8 +15,8 @@ additional-contact: [rebecca.johnson@gcu.ac.uk, Rachel.Taylor@strath.ac.uk]
 address: [Rebecca Johnson, Flat 3/2, 103 Cambridge Street , Glasgow , G3 6RU]
 country: United Kingdom
 geolocation: [55.850649874337165, -4.2626953125]
-last-message-level: 1
-last-message-timestamp: 1642675287
+last-message-level: 2
+last-message-timestamp: 1645101687
 last-update: glasgowreproducibilitea@gmail.com
 last-update-timestamp: 1611133535
 last-update-message: >-
