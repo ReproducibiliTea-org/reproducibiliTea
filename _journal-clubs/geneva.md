@@ -12,7 +12,7 @@ signup: beatrice.valentini@unige.ch
 organisers: [Beatrice Valentini, Caro Hautekiet]
 contact: beatrice.valentini@unige.ch
 additional-contact: [caro.hautekiet@unige.ch]
-address: [UniversitÃÂ© de GenÃÂ¨ve, FacultÃÂ© de psychologie et Sciences de l'ÃÂ©ducation, Bureau 5158, 40 Boulevard Pont d'Arve, 1205 GenÃÂ¨ve]
+address: [Université de Genéve, Faculté de psychologie et Sciences de l'éducation, Bureau 5158, 40 Boulevard Pont d'Arve, 1205 Genéve]
 country: Switzerland
 geolocation: [46.19459651321258, 6.139898300170898]
 last-message-timestamp: 1642943138
