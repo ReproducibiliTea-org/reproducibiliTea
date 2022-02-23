@@ -15,8 +15,8 @@ address: [Psychology, York University, 4700 Keele Street, M3J 1P3, Ontario, Cana
 country: Canada
 osf: h3adt
 geolocation: [43.7728399, -79.49499449999999]
-last-message-level: 3
-last-message-timestamp: 1643121688
+last-message-level: 0
+last-message-timestamp: 1645596312
 ---
 
 The journal club is open to everyone across York University, from any discipline, department, or level of study.
