@@ -1,5 +1,5 @@
 ---
-jcid: mälardalen
+jcid: malardalen
 
 title: Mälardalen 
 
@@ -20,8 +20,10 @@ address: [Mälardalens Universitet, HVV, Box 883, 721 23 Västerås]
 country: Sweden
 
 geolocation: [59.61870247646153,16.54038906097412]
-last-message-level: 1
-last-message-timestamp: 1645591287
+
+last-update-timestamp: 1645693415
+last-message-level: 0
+last-message-timestamp: 1645693415
 
 ---
 
