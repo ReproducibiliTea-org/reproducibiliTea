@@ -14,8 +14,10 @@ additional-contact: []
 address: [101 Main St, Apt 417, Lafayette, IN, USA]
 country: United States
 geolocation: [40.42493137196909, -86.92159652709957]
-last-message-level: 2
+last-update-timestamp: 1645693415
+last-message-level: 0
 last-message-timestamp: 1645663287
+
 ---
 
 ReproducibiliTea Purdue was started by postdocs in the human development and family studies department to discuss meta-science topics relevant to both disciplines and cultivate an open science culture.
