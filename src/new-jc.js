@@ -1,6 +1,7 @@
 // node fetch support
 const fetch = require("node-fetch");
 require('dotenv').config();
+const Diacritics = require('diacritic');
 
 // Extract .env variables
 const {
@@ -141,7 +142,7 @@ function cleanData(data) {
     }
 
     if(data.jcid)
-        data.jcid = data.jcid.toLowerCase();
+        data.jcid = Diacritics.clean(data.jcid.toLowerCase());
 
     // Remove leading and trailing spaces from all string fields
     for(const x in data) {

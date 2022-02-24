@@ -7,6 +7,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "diacritic": "0.0.2",
     "dotenv": "^8.6.0",
     "faunadb": "^3.0.1",
     "mailgun-js": "^0.22.0",
