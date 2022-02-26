@@ -15,12 +15,12 @@ additional-contact: []
 address: [Room A3Y-116, Department of Leadership and Organizational Behavior, BI Norwegian Business School]
 country: Norway
 geolocation: [59.94856358048637, 10.768575668334961]
-last-message-level: 2
-last-message-timestamp: 1645555288
+last-message-timestamp: 1645900407
+last-message-level: 0
 last-update: lewend.mayiwar@bi.no
-last-update-timestamp: 1611587708
+last-update-timestamp: 1645900407
 last-update-message: >-
-  Update information about BI Oslo journal club on the ReproducibiliTea website.
+  updated "about us"
 
 ---
 
@@ -31,6 +31,6 @@ last-update-message: >-
 *	help each other get familiarized with open science practices (e.g., pre-registrations, sharing data, sharing preprints, etc.)
 *	connect students and researchers from various specializations who are interested in open science
 
-**Format:** Before each meeting, we read an article on open science practices and methods in general, which we then discuss during the meeting. At each meeting, a different presenter will begin by providing a short overview of the paper and facilitate discussion throughout the meeting. Anyone can propose a possible paper or topic to present if we have not covered it already. Grab a cup of tea (coffee?) and join us! Due to the current pandemic, all sessions will be held online (Zoom) for the time being.
+**Format:** Before each meeting, we read an article on open science practices and methods in general, which we then discuss during the meeting. At each meeting, a presenter begins by providing a short overview of the paper and facilitates the discussion throughout the meeting. Anyone can propose a possible paper or topic to present if we have not covered it already. More recently, we have held more practical workshops on open science practices. We have also invited guest speakers. Please feel free to reach out to us if you'd like to give us a talk or workshop on anything related to open science and reproducibility!  
 
 Follow us on Twitter!
