@@ -1,4 +1,5 @@
 ---
+
 jcid: mannheim
 title: Mannheim
 host-organisation: Mannheim Open Science Meetup
@@ -6,20 +7,20 @@ host-org-url:
 osf: 2r8h7
 zotero: FWXTNAFM
 website: 
-twitter: 
+twitter: MAOpenScience
 signup: 
 organisers: [Juli Tkotz]
 contact: juliane.tkotz@zi-mannheim.de
 additional-contact: []
-address: [Zentralinstitut für Seelische Gesundheit, "J5 Forschungs- und Verwaltungsgebäude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
-country: Netherlands
+address: [Zentralinstitut fÃ¼r Seelische Gesundheit, "J5 Forschungs- und VerwaltungsgebÃ¤ude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
+country: Germany
 geolocation: [49.492793033169804, 8.46544861793518]
-last-message-timestamp: 1635933018
+last-message-timestamp: 1646144422
 last-message-level: 0
 last-update: juliane.tkotz@zi-mannheim.de
-last-update-timestamp: 1635933018
+last-update-timestamp: 1646144422
 last-update-message: >-
-  Update meeting details
+  update meeting information
 
 ---
 
@@ -27,8 +28,8 @@ This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bring
 
 As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings will be held monthly. Being "born" during the pandemic, we don't have a real life meeting location (yet!).
 
-Our next meeting will take place on November 10th 2021, 17:30 GMT +2, where we will discuss
+Our next meeting will take place on March 9th 2021, 17:30 (timezone: Berlin), where we will discuss
 
-Szollosi, A., Kellen, D., Navarro, D. J., Shiffrin, R., van Rooij, I., Van Zandt, T., & Donkin, C. (2020). Is preregistration worthwhile? Trends in Cognitive Sciences, 24(2), 94–95. https://doi.org/10.1016/j.tics.2019.11.009
+Schneider, J., Ye, D., Hill, A.M., & Whitehorn, A.S. (2020). Continued post-retraction citation of a fraudulent clinical trial report, 11 years after it was retracted for falsifying data. Scientometrics 125 (2877–2913)
 
 Email us for the link to join!
