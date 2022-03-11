@@ -15,8 +15,8 @@ additional-contact: [Diana.A.Liao@gmail.com, milliej.johnston@gmail.com]
 address: [Katharina Brecht, LS Tierphysiologie, Institut für Neurobiologie, Auf der Morgenstelle 28, 72076 Tübingen]
 country: Germany
 geolocation: [48.5202429064003, 9.063720703125]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1647016887
 last-update: katharinabrecht@gmail.com
 last-update-timestamp: 1615475667
 last-update-message: >-
