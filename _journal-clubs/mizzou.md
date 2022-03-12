@@ -15,8 +15,8 @@ additional-contact: [erynadams@mizzou.edu]
 address: [Eryn Adams, 210 McAlester Hall, Columbia, MO, United States, 65211]
 country: United States
 geolocation: [38.93377552819722, -92.30712890625]
-last-message-level: 1
-last-message-timestamp: 1644684088
+last-message-level: 2
+last-message-timestamp: 1647110488
 last-update: aliciaforsberg@missouri.edu
 last-update-timestamp: 1613147685
 last-update-message: >-
