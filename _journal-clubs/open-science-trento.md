@@ -6,7 +6,7 @@ host-organisation: University of Trento
 host-org-url: https://www.cogsci.unitn.it/
 osf: da7s2
 zotero: AV92XNIX
-website: https://reproducibiliteaun.wixsite.com/website
+website: https://sites.google.com/unitn.it/reproducibilitea
 twitter: ReproTeaUnitn
 signup: reproducibilitea@unitn.it
 organisers: [Gianluca Esposito, Eleonora Paolizzi, Gabriele Penazzi, Federica Stablum]
@@ -15,12 +15,12 @@ additional-contact: []
 address: [Palazzo Piomarta, Corso Bettini 84, 38068 Rovereto (Trento)]
 country: Italy
 geolocation: [45.89371573694437, 11.043362617492676]
-last-message-timestamp: 1647256902
+last-message-timestamp: 1648029090
 last-message-level: 0
 last-update: reproducibilitea@unitn.it
-last-update-timestamp: 1647256902
+last-update-timestamp: 1648029090
 last-update-message: >-
-  Change the name of twitter account
+  need to update website
 
 ---
 
