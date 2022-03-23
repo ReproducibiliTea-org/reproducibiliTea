@@ -15,8 +15,8 @@ additional-contact: []
 address: [School of Human Sciences Old Royal Naval College, Park Row London SE10 9LS]
 country: United Kingdom
 geolocation: [51.48329378948829, -0.0074350833892822266]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1648039287
 last-update: a.samara@greenwich.ac.uk
 last-update-timestamp: 1616501196
 last-update-message: >-
