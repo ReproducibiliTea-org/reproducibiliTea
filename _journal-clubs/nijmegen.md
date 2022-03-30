@@ -9,22 +9,24 @@ zotero: null
 website: https://openscience-nijmegen.nl/_pages/reproducibilitea/
 twitter: OSCNijmegen
 signup: 
-organisers: [Johannes Algermissen, Lena Ackermann, Eva Poort]
+organisers: [Johannes Algermissen (inactive), Lena Ackermann (inactive), Eva Poort (inactive)]
 contact: contact@openscience-nijmegen.nl
 additional-contact: []
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen]
 country: Netherlands
 geolocation: [51.81799340000001, 5.8570934]
-last-message-timestamp: 1639559768
+last-message-timestamp: 1648644160
 last-message-level: 0
 last-update: contact@openscience-nijmegen.nl
-last-update-timestamp: 1639559768
+last-update-timestamp: 1648644160
 last-update-message: >-
-  
+  Setting ReproTea Nijmegen to inactive until further notice.
 
 ---
 
 ## About
+
+**ReproducibiliTea Nijmegen is currently inactive due to the organising members's recent moves away from Nijmegen/academia. If you're interested in bringing this back alove, reach out to the OSCN via the contact email address!**
 
 ReproducibiliTea Nijmegen is organised by the local Open Science Community.
 Like the community, the journal club is open to people from anywhere in the Nijmegen campus, regardless of affiliation or career stage. 
