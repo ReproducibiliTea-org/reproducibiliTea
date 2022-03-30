@@ -15,10 +15,10 @@ additional-contact: []
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen]
 country: Netherlands
 geolocation: [51.81799340000001, 5.8570934]
-last-message-timestamp: 1648644160
+last-message-timestamp: 1648644464
 last-message-level: 0
 last-update: contact@openscience-nijmegen.nl
-last-update-timestamp: 1648644160
+last-update-timestamp: 1648644464
 last-update-message: >-
   Setting ReproTea Nijmegen to inactive until further notice.
 
@@ -26,7 +26,7 @@ last-update-message: >-
 
 ## About
 
-**ReproducibiliTea Nijmegen is currently inactive due to the organising members's recent moves away from Nijmegen/academia. If you're interested in bringing this back alove, reach out to the OSCN via the contact email address!**
+**ReproducibiliTea Nijmegen is currently inactive [as of March 31, 2022] due to the organising members's recent moves away from Nijmegen/academia. If you're interested in bringing this back alive, reach out to the OSCN via the contact email address!**
 
 ReproducibiliTea Nijmegen is organised by the local Open Science Community.
 Like the community, the journal club is open to people from anywhere in the Nijmegen campus, regardless of affiliation or career stage. 
