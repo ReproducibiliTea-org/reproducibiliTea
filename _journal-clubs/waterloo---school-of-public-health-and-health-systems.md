@@ -15,8 +15,8 @@ additional-contact: [katherine.east@uwaterloo.ca, ewadsworth@uwaterloo.ca, acork
 address: [N/A - online during the COVID-19 pandemic]
 country: Canada
 geolocation: [43.46914792581902, -80.54021358489996]
-last-message-level: 1
-last-message-timestamp: 1646505688
+last-message-level: 2
+last-message-timestamp: 1648932087
 last-update: katherine.east@uwaterloo.ca
 last-update-timestamp: 1614966057
 last-update-message: >-
