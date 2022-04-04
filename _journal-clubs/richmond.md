@@ -9,7 +9,7 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Dana Lapato, Nina Exner, Timothy P. York]]
+organisers: [Dana Lapato, Nina Exner, Timothy P. York]
 contact: dana.lapato@vcuhealth.org
 additional-contact: []
 address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
