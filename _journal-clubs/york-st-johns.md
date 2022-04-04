@@ -23,7 +23,10 @@ address: [Department of Psychology, York St John University, Lord MayorÕs Walk,
 country: United Kingdom
 
 geolocation: [53.9649139, -1.0800959]
-last-message-level: 3
-last-message-timestamp: 1643157688
+last-message-level: 0
+last-message-timestamp: 1649048400
+last-update: n.smith2@yorksj.ac.uk
+last-update-timestamp: 1649048400
+last-update-message: >-
 
 ---
