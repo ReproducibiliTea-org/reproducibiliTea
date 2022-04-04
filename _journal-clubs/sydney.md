@@ -15,10 +15,10 @@ additional-contact: []
 address: [Level 3, Australian Hearing Hub, 16 University Avenue, Macquarie University, Sydney NSW 2109]
 country: Australia
 geolocation: [-33.87041555094182, 151.259765625]
-last-message-level: 3
-last-message-timestamp: 1648528887
+last-message-level: 0
+last-message-timestamp: 1649048400
 last-update: mqsobalab@gmail.com
-last-update-timestamp: 1612135580
+last-update-timestamp: 1649048400
 last-update-message: >-
   Change journal club name from "Sydney" to "Macquarie"
 
