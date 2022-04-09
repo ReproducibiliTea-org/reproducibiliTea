@@ -9,18 +9,18 @@ zotero: null
 website: https://ecr-psychology.univie.ac.at/activities/reproducibilitea-an-open-science-journal-club/
 twitter: 
 signup: https://lists.univie.ac.at/mailman/listinfo/reproducibilitea
-organisers: [Elisabeth Graf, Trinh Nguyen, Isabella Wagner]
+organisers: [Elisabeth Graf, Julia Reiter]
 contact: ecr.psychology@univie.ac.at
 additional-contact: []
 address: [ECR Psychology, Faculty of Psychology, University of Vienna, Liebiggasse 5, 1010 Wien]
 country: Austria
 geolocation: [48.21334233435572, 16.357580423355103]
-last-message-level: 1
-last-message-timestamp: 1648629690
+last-message-timestamp: 1649495558
+last-message-level: 0
 last-update: ecr.psychology@univie.ac.at
-last-update-timestamp: 1617092468
+last-update-timestamp: 1649495558
 last-update-message: >-
-  API creation of vienna.md
+  change responsible person
 
 ---
 
