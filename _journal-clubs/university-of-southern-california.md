@@ -15,8 +15,8 @@ additional-contact: []
 address: [Room 341, Davis School of Gerontology, University of Southern California, 3715 McClintock Avenue, Los Angeles, CA, USA 90089]
 country: United States
 geolocation: [34.021506327450496, -118.28584671020504]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1649810488
 last-update: sbachman@usc.edu
 last-update-timestamp: 1618269586
 last-update-message: >-
