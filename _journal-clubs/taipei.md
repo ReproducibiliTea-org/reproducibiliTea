@@ -1,24 +1,27 @@
 ---
+
 jcid: taipei
-
-title: Taipei 
-
-host-organisation: Taipei Medical University 
-
+title: Taipei
+host-organisation: Taipei Medical University
 host-org-url: http://eng.tmu.edu.tw/
-
-
-organisers: [Elizaveta Parfenova, Niall Duncan] 
-
-contact: parfenova.ev.2610@gmail.com 
-
+osf: null
+zotero: null
+website: 
+twitter: 
+signup: 
+organisers: [Elizaveta Parfenova, Niall Duncan]
+contact: parfenova.ev.2610@gmail.com
+additional-contact: []
 address: [Graduate Institute of Mind, Brain and Consciousness, Taipei Medical University, 172-1 Keelung Road Section 2, 106, Taipei, Taiwan]
-
 country: Taiwan
 geolocation: [25.0253584, 121.5616235]
-last-update-timestamp: 1645693415
-last-message-level: 2
-last-message-timestamp: 1645693415
+last-message-timestamp: 1651825615
+last-message-level: 0
+last-update: parfenova.ev.2610@gmail.com
+last-update-timestamp: 1651825615
+last-update-message: >-
+  Nothing has changed, Taipei ReproducibiliTea works
+
 ---
 
 **About us**
