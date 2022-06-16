@@ -48,7 +48,7 @@ exports.handler = async (event, context, callback) => {
         GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
     }
 
-    let data = {};
+    let data = {token: null};
 
     try{
         data = cleanData(JSON.parse(event.body));
@@ -101,7 +101,7 @@ exports.handler = async (event, context, callback) => {
         data.authCode = AUTH_CODE;
     }
 
-    const check = checkData(data, isEdit);
+    const check = checkData(data);
 
     if (check !== null) {
         console.error(`Failed data check:`)
@@ -138,7 +138,7 @@ function cleanData(data) {
     if(data.post) {
         data.post = data.post.replace(/,\s*/g, '\n');
         data.post = data.post.replace(/[\n\r]\r?/g, ', ');
-        data.post = data.post.replace(/  /sg, ' ');
+        data.post = data.post.replace(/ {2,}/sg, ' ');
     }
 
     if(data.jcid)
@@ -252,7 +252,7 @@ function checkData(data) {
  * @param data
  * @returns {Promise<{zotero: *, osf: *, slack: *}>}
  */
-async function callAPIs(data, isEdit = false) {
+async function callAPIs(data) {
     const [slack, osf, zotero] = await Promise.all([
         callSlack(data),
         callOSF(data),
@@ -808,7 +808,7 @@ async function callMailgun(data, results) {
         'h:Reply-To': FROM_EMAIL_ADDRESS,
         subject: `New ReproducibiliTea: ${data.name}`,
         html: `
-<style type="text/css">
+<style>
     .status {font-weight: bold;color: darkgoldenrod;}
     .status.okay {color: #009926;}
     .status.error {color: #990000;}
