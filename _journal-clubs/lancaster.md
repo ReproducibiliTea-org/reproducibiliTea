@@ -20,8 +20,8 @@ last-update-timestamp: 1624436747
 last-update-message: >-
   I'd like to add an additional person as a co-organiser of the club.
 
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1655973687
 ---
 
 Lancaster University's Psychology Department and the PROSPR group (Promoting Open Science Practices) launched the ReproducibiliTea Journal Club in July 2019. We meet twice a month during term time to discuss key papers on open science and reproducibility issues. All are welcome regardless of the experience and career status!
