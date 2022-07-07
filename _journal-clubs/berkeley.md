@@ -15,8 +15,8 @@ additional-contact: [khoeberling@berkeley.edu]
 address: [Earth Sciences & Map Library, 50 McCone Hall, UC Berkeley, Berkeley, CA 94705]
 country: United States
 geolocation: [37.87268533717657, -122.25791931152344]
-last-message-level: 1
-last-message-timestamp: 1654735287
+last-message-level: 2
+last-message-timestamp: 1657161688
 last-update: steplitz@berkeley.edu
 last-update-timestamp: 1623192348
 last-update-message: >-
