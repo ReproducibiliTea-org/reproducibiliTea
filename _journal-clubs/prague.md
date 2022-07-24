@@ -15,8 +15,8 @@ additional-contact: []
 address: [Celetna 20, Prague, Czech Republic]
 country: Czech Republic
 geolocation: [50.08723060740119, 14.42631483078003]
-last-message-level: 1
-last-message-timestamp: 1656254487
+last-message-level: 2
+last-message-timestamp: 1658680887
 last-update: fortjaku@gmail.com
 last-update-timestamp: 1624714765
 last-update-message: >-
