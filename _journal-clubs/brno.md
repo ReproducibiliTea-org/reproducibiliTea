@@ -15,8 +15,8 @@ additional-contact: [staskovaa@mail.muni.cz, 421195@mail.muni.cz, 439256@mail.mu
 address: [Žerotínovo nám. 617/9, 601 77 Brno, Czechia]
 country: Czech Republic
 geolocation: [49.19862294969194, 16.605384349822998]
-last-message-level: 2
-last-message-timestamp: 1659631287
+last-message-level: 3
+last-message-timestamp: 1662057687
 last-update: edita.chvojkova@mail.muni.cz
 last-update-timestamp: 1625665782
 last-update-message: >-
