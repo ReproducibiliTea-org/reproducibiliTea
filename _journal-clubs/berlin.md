@@ -2,7 +2,7 @@
 
 jcid: berlin
 title: Berlin
-host-organisation: CharitÃ© - UniversitÃ¤tsmedizin Berlin
+host-organisation: CharitÃÂ© - UniversitÃÂ¤tsmedizin Berlin
 host-org-url: 
 osf: sgh7w
 zotero: null
@@ -15,16 +15,16 @@ additional-contact: [lina.hellwig@charite.de]
 address: [Berlin, Germany]
 country: Germany
 geolocation: [52.520361618280944, 13.401684165000916]
-last-message-timestamp: 1662565918
+last-message-timestamp: 1662566851
 last-message-level: 0
 last-update: yu-fang.yang@fu-berlin.de
-last-update-timestamp: 1662565918
+last-update-timestamp: 1662566851
 last-update-message: >-
   
 
 ---
 
-We meet every second or third Wednesday, from 6 pm to 7 pm. A meeting begins with a short presentation about the paper we read, followed by a discussion. Everyone and every perspective are welcome!
+We meet every second or third Wednesday, from 5 pm to 6 pm. A meeting begins with a short presentation about the paper we read, followed by a discussion. Everyone and every perspective are welcome!
 
 Please get in touch via email Read the paper and come by for tea and discussion!
 
