@@ -15,8 +15,8 @@ additional-contact: []
 address: [Sarah Sauvé, Division of Community Health and Humanities Faculty of Medicine, Memorial University of Newfoundland, St. John’s, Newfoundland and Labrador Canada, A1B 3V6]
 country: Canada
 geolocation: [47.57287777320581, -52.73308753967283]
-last-message-level: 0
-last-message-timestamp: 0
+last-message-level: 1
+last-message-timestamp: 1664901687
 last-update: sarah.sauve@mun.ca
 last-update-timestamp: 1633359035
 last-update-message: >-
