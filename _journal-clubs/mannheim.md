@@ -12,7 +12,7 @@ signup:
 organisers: [Juli Nagel]
 contact: juliane.nagel@zi-mannheim.de
 additional-contact: []
-address: [Zentralinstitut fÃÂ¼r Seelische Gesundheit, "J5 Forschungs- und VerwaltungsgebÃÂ¤ude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
+address: [Zentralinstitut für Seelische Gesundheit, "J5 Forschungs- und Verwaltungsgebäude", "Dep. Klinische Psychologie", "Room 333", "68159 Mannheim"]
 country: Germany
 geolocation: [49.492793033169804, 8.46544861793518]
 last-message-timestamp: 1664886530
