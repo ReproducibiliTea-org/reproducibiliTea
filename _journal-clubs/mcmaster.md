@@ -15,10 +15,10 @@ additional-contact: []
 address: [Psychology, McMaster University, 1280 Main St. W., L8S 4K1, Hamilton, Ontario]
 country: Canada
 geolocation: [43.260879, -79.9192254]
-last-update: jordanml@mcmaster.ca
-last-update-timestamp: 1615417330
+last-update: 
+last-update-timestamp: 1665737367
 last-update-message: >-
-  Change organizer emails
+  Reactivated
 
 last-message-level: 0
 last-message-timestamp: 1665737367
