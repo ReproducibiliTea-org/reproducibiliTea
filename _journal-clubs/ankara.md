@@ -15,8 +15,8 @@ additional-contact: []
 address: [Psychology Department, Ankara Medipol University, A Block, A214, Altindag, Ankara]
 country: Turkey
 geolocation: [39.93601659603629, 32.84545183181763]
-last-message-timestamp: 1634812603
-last-message-level: 0
+last-message-timestamp: 1666348887
+last-message-level: 1
 last-update: ilkerdalgar@gmail.com
 last-update-timestamp: 1634812603
 last-update-message: >-
