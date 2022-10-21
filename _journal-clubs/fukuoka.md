@@ -15,8 +15,8 @@ additional-contact: []
 address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka]
 country: Japan
 geolocation: [33.59626100000001, 130.2166993]
-last-message-timestamp: 1634814460
-last-message-level: 0
+last-message-timestamp: 1666356088
+last-message-level: 1
 last-update: yamadayuk@gmail.com
 last-update-timestamp: 1634814460
 last-update-message: >-
