@@ -7,18 +7,18 @@ host-org-url: http://www.bioclues.org
 osf: null
 zotero: null
 website: 
-twitter: 
+twitter: bioclues
 signup: 
-organisers: [Prash Suravajhala, Aparna Banerjee, Sugunakar Vure]
-contact: prash@bioclues.org
-additional-contact: []
-address: [Bioclues.org]
+organisers: [Indrani Biswas, KSri Manjari, Somenath Dutta, Ananya Verma, Prash Suravajhala]
+contact: core@bioclues.org
+additional-contact: [prash@Bioclues.org]
+address: [Bioclues.org, India]
 country: India
 geolocation: [17.494804, 78.411324]
-last-message-timestamp: 1666766487
-last-message-level: 1
+last-message-timestamp: 1666843940
+last-message-level: 0
 last-update: prash@bioclues.org
-last-update-timestamp: 1635226329
+last-update-timestamp: 1666843940
 last-update-message: >-
   
 
