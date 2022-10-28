@@ -12,18 +12,18 @@ signup:
 organisers: [Rory Spanton, Lenard Dome, Karol Nedza]
 contact: rory.spanton@plymouth.ac.uk
 additional-contact: []
-address: [Rory Spanton, School of Psychology, Portland Square, University of Plymouth, Drake Circus, Plymouth, PL4 8AA,]
+address: [Rory Spanton, School of Psychology, University of Plymouth, Drake Circus, Plymouth, PL4 8AA,]
 country: United Kingdom
-geolocation: [50.374637140930766, -4.138927459716797]
-last-message-timestamp: 1666370546
-last-message-level: 1
+geolocation: [50.37581574281639, -4.138133525848389]
+last-message-timestamp: 1666949711
+last-message-level: 0
 last-update: rory.spanton@plymouth.ac.uk
-last-update-timestamp: 1634830753
+last-update-timestamp: 1666949711
 last-update-message: >-
-  Changed journal club description and linked website.
+  One-year update (changing nothing)
 
 ---
 
-ReproducibiliTea Plymouth welcomes both staff and students at all career stages. We meet fortnightly (in-person, as of late 2021) to discuss target papers about open and transparent science, research methods, research culture, and science reform. Our papers mostly focus on issues prevalent in Psychology and Cognitive Science, but we also welcome researchers from other disciplines.
+ReproducibiliTea Plymouth welcomes staff and students at all career stages. We meet fortnightly (in-person, as of late 2021) to discuss papers about open and transparent science, research methods, research culture, and science reform. Our papers mostly focus on issues in Psychology and Cognitive Science, but we also welcome researchers from other disciplines.
 
 If you'd like to join our mailing list, please contact our lead organizer Rory Spanton at rory.spanton@plymouth.ac.uk
