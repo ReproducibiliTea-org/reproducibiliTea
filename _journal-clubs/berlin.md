@@ -2,7 +2,7 @@
 
 jcid: berlin
 title: Berlin
-host-organisation: CharitÃÂ© - UniversitÃÂ¤tsmedizin Berlin
+host-organisation: Charité - Universitätsmedizin Berlin
 host-org-url: 
 osf: sgh7w
 zotero: null
