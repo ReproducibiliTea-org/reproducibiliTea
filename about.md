@@ -7,7 +7,7 @@ permalink: /about/
 ReproducibiliTea journal clubs help early career researchers build a local community of ECRs interested in open and reproducible research. It can be very isolating to be one of the few within a research group, or department, that are actively engaged or interested in improving research practices. ReproducibiliTea helps researchers who want to change this.
 
 
-We are ReproducibiliTea.
+We are ReproducibiliTea.<a rel="me" href="https://scicomm.xyz/@ReproducibiliTeaGlobal"></a>
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/569957287?h=1c48d63467" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
