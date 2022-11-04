@@ -9,21 +9,18 @@ zotero: 6AGMUFBJ
 website: 
 twitter: 
 signup: 
-organisers: [Veit Kubik, Martin Wegrzyn, Usama El-Awad, Hannah Nilles]
-contact: veit.kubik@uni-bielefeld.de
-additional-contact: []
+organisers: [Martin Wegrzyn, Usama El-Awad]
+contact: martin.wegrzyn@uni-bielefeld.de
+additional-contact: [usama.el-awad@uni-bielefeld.de]
 address: [Fakultaet fuer Psychologie und Sportwissenschaft, Abteilung fuer Psychologie, Postfach 10 01 31, D-33501 Bielefeld]
 country: Germany
 geolocation: [52.02545860348811, 8.558349609375]
-last-message-level: 2
-last-message-timestamp: 1667551287
+last-message-timestamp: 1667554835
+last-message-level: 0
 last-update: veit.kubik@uni-bielefeld.de
-last-update-timestamp: 1633585035
+last-update-timestamp: 1667554835
 last-update-message: >-
-  I am trying to change the journal club "Veit Kubik" to Bielefeld, and would like to  add three further names as co-organizers.
-  
-  Cheers
-  Veit
+  Change lead organizer to "Martin Wegrzyn" (martin.wegrzyn@uni-bielefeld.de)
 
 ---
 
