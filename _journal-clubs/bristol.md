@@ -15,8 +15,8 @@ additional-contact: []
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
 geolocation: [51.4584172, -2.6029792]
-last-message-timestamp: 1637245366
-last-message-level: 0
+last-message-timestamp: 1668782545
+last-message-level: 1
 last-update: robert.thibault@bristol.ac.uk
 last-update-timestamp: 1637245366
 last-update-message: >-
