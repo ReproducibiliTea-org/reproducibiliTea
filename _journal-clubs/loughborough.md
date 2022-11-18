@@ -15,8 +15,8 @@ additional-contact: []
 address: [School of Sport, Excercise and Health Sciences, Loughborough University, National Centre for Sport and Excercise Medicine, Tower Way, LE11 3TU, Leicestershire]
 country: United Kingdom
 geolocation: [52.767866, -1.223692]
-last-message-timestamp: 1637244160
-last-message-level: 0
+last-message-timestamp: 1668789751
+last-message-level: 1
 last-update: k.burdenski@lboro.ac.uk
 last-update-timestamp: 1637244160
 last-update-message: >-
