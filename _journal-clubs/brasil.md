@@ -15,8 +15,8 @@ additional-contact: []
 address: [Av. Carlos Chagas Filho, 373, Centro de Ciencias da Saude - Bloco E - Sala 38, Cidade Universitaria, Rio de Janeiro-RJ, Brasil, 21941-590, A/C Clarissa Carneiro]
 country: Brazil
 geolocation: [-22.897683210648072, -43.154296875]
-last-message-timestamp: 1637243624
-last-message-level: 0
+last-message-timestamp: 1668782487
+last-message-level: 1
 last-update: clarissa.franca@bioqmed.ufrj.br
 last-update-timestamp: 1637243624
 last-update-message: >-
