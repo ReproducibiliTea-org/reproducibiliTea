@@ -7,20 +7,20 @@ host-org-url: https://www.lboro.ac.uk/
 osf: r2pj8
 zotero: 2FMKTH74
 website: 
-twitter: 
+twitter: LboroORC
 signup: 
-organisers: [Kathrin Burdenski, Theresa Wege, Jacob Strauss, Krystof Cipora]
+organisers: [Theresa Wege, Michael Bukur, Inka Kosonen, Krystof Cipora, Petra Salaric]
 contact: ukrn@lboro.ac.uk
 additional-contact: []
 address: [School of Sport, Excercise and Health Sciences, Loughborough University, National Centre for Sport and Excercise Medicine, Tower Way, LE11 3TU, Leicestershire]
 country: United Kingdom
 geolocation: [52.767866, -1.223692]
-last-message-timestamp: 1668789751
-last-message-level: 1
-last-update: k.burdenski@lboro.ac.uk
-last-update-timestamp: 1637244160
+last-message-timestamp: 1669025238
+last-message-level: 0
+last-update: ukrn@lboro.ac.uk
+last-update-timestamp: 1669025238
 last-update-message: >-
-  
+  Hi, I am just checking we will have all the details utd as we have had a few changes recently. thanks
 
 ---
 
