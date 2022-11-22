@@ -15,8 +15,8 @@ additional-contact: []
 address: [University of Graz, UniversitÃ¤tsplatz 2, 8010 Graz]
 country: Austria
 geolocation: [47.07763334280813, 15.44952392578125]
-last-message-timestamp: 1637597435
-last-message-level: 0
+last-message-timestamp: 1669135287
+last-message-level: 1
 last-update: graz_open_science@zoho.com
 last-update-timestamp: 1637597435
 last-update-message: >-
