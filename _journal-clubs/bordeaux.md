@@ -15,14 +15,13 @@ additional-contact: [fjola.hyseni@u-bordeaux.fr, rtea.ubordeaux@gmail.com]
 address: [Cristina Lemos (Cheffe de Projet), School of Neurosciences - CFGB - 1er etage., Campus Carreire 146 Rue Leo Saignat, 33076 BORDEAUX Cedex]
 country: France
 geolocation: [44.828117285549105, -0.6075096130370694]
-last-message-level: 3
-last-message-timestamp: 1669142487
-last-update: egervinizamp@u-bordeaux.fr
-last-update-timestamp: 1632749862
+last-message-timestamp: 1669142855
+last-message-level: 0
+last-update: rtea.ubordeaux@gmail.com
+last-update-timestamp: 1669142855
 last-update-message: >-
-  Hey!
-  I would like to add a co-host to the out JC's description. 
+  nothing to change but scary email
 
 ---
 
-ReproducibiliTea journal club at the Université de Bordeaux. We meet monthly, every last Tuesday of the month, at 5:30pm.
+ReproducibiliTea journal club at the UniversitÃ© de Bordeaux. We meet monthly, every last Tuesday of the month, at 5:30pm.
