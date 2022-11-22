@@ -6,21 +6,21 @@ host-organisation: Kyushu University
 host-org-url: http://www.kyushu-u.ac.jp/en/
 osf: pdc9m
 zotero: null
-website: 
+website: https://sites.google.com/view/reproducibilitea-fukuoka/home
 twitter: 
 signup: 
-organisers: [Yuki Yamada]
+organisers: [Yuki Yamada, Kohei Ueda]
 contact: yamadayuk@gmail.com
-additional-contact: []
+additional-contact: [ueda3156@gmail.com]
 address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka]
 country: Japan
 geolocation: [33.59626100000001, 130.2166993]
-last-message-timestamp: 1668782667
-last-message-level: 2
+last-message-timestamp: 1669089569
+last-message-level: 0
 last-update: yamadayuk@gmail.com
-last-update-timestamp: 1634814460
+last-update-timestamp: 1669089569
 last-update-message: >-
-  After a long period of self-restraint in the prevention of coronavirus infections, we are planning to boost our activities from this October. Several of our ECRs are planning to host a new, intercollegiate study group.
+  Add website address
 
 ---
 
