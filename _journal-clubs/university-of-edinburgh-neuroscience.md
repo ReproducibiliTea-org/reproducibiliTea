@@ -15,8 +15,8 @@ additional-contact: []
 address: [University of Edinburgh]
 country: United Kingdom
 geolocation: [55.92800001097837, -3.2141876220703125]
-last-message-timestamp: 1638201439
-last-message-level: 0
+last-message-timestamp: 1669740144
+last-message-level: 1
 last-update: Edinburgh.ReproducibiliTea@ed.ac.uk
 last-update-timestamp: 1638201439
 last-update-message: >-
