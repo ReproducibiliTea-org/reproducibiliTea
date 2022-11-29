@@ -15,8 +15,8 @@ additional-contact: []
 address: [CS 300, Peter Landin Building, Queen Mary University of London, Mile End Rd, Bethnal Green, London E1 4NS]
 country: United Kingdom
 geolocation: [51.523076959363024, -0.043408870697021484]
-last-message-timestamp: 1638187883
-last-message-level: 0
+last-message-timestamp: 1669725750
+last-message-level: 1
 last-update: n.b.ballou@qmul.ac.uk
 last-update-timestamp: 1638187883
 last-update-message: >-
