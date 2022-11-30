@@ -11,21 +11,20 @@ twitter:
 signup: https://bit.ly/tuosrepro
 organisers: [Zuzanna B Zagrodzka, Jim Uttley]
 contact: z.zagrodzka@sheffield.ac.uk
-additional-contact: []
+additional-contact: [j.uttley@sheffield.ac.uk]
 address: [University of Sheffield, Sheffield S10 2TG,]
 country: United Kingdom
 geolocation: [53.3809409, -1.4879469]
-last-message-timestamp: 1669740089
-last-message-level: 1
+last-message-timestamp: 1669798302
+last-message-level: 0
 last-update: z.zagrodzka@sheffield.ac.uk
-last-update-timestamp: 1638197966
+last-update-timestamp: 1669798302
 last-update-message: >-
-  Changed lead organiser. 
+  Edit description 
 
 ---
 
 The Sheffield branch of ReproducibiliTea meets monthly and has people coming from a range of departments across the University of Sheffield and beyond.
-We might increase the frequency of our meetings in 2022.
 
 Aims
 
