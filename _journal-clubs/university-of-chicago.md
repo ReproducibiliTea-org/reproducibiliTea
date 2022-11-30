@@ -15,8 +15,8 @@ additional-contact: [benmorris@uchicago.edu]
 address: [940 E 57th St, Chicago, Illinois 60637]
 country: United States
 geolocation: [41.78942490113616, -87.60309219360352]
-last-message-timestamp: 1638308483
-last-message-level: 0
+last-message-timestamp: 1669848087
+last-message-level: 1
 last-update: wngiam@uchicago.edu
 last-update-timestamp: 1638308483
 last-update-message: >-
