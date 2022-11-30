@@ -9,18 +9,18 @@ zotero: 3AD52KPU
 website: 
 twitter: UChicagoTea
 signup: 
-organisers: [William Ngiam, Michelle Hurst, Ben Morris, Claire Bergey]
+organisers: [William Ngiam, Claire Bergey, Anna Corriveau, Katie Reis]
 contact: wngiam@uchicago.edu
-additional-contact: [benmorris@uchicago.edu]
+additional-contact: [cbergey@uchicago.edu, corriveaual@chicago.edu]
 address: [940 E 57th St, Chicago, Illinois 60637]
 country: United States
-geolocation: [41.78942490113616, -87.60309219360352]
-last-message-timestamp: 1669848087
-last-message-level: 1
+geolocation: [41.7890089304908, -87.59953022003174]
+last-message-timestamp: 1669849060
+last-message-level: 0
 last-update: wngiam@uchicago.edu
-last-update-timestamp: 1638308483
+last-update-timestamp: 1669849060
 last-update-message: >-
-  Updated journal club details, organizers and emails
+  Update the lead organizers and any other details.
 
 ---
 
