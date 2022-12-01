@@ -15,10 +15,10 @@ additional-contact: []
 address: [Tietotekniikka, B121;, Konemiehentie 2;, 02150 Espoo;]
 country: Finland
 geolocation: [60.18677975700706, 24.822366535663605]
-last-message-timestamp: 1666081809
+last-message-timestamp: 1669873116
 last-message-level: 0
 last-update: jan.vornhagen@aalto.fi
-last-update-timestamp: 1666081809
+last-update-timestamp: 1669873116
 last-update-message: >-
   
 
