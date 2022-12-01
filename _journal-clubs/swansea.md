@@ -15,8 +15,8 @@ additional-contact: []
 address: [Singleton Park, Sketty, Swansea SA2 8PP]
 country: United Kingdom
 geolocation: [51.6079698, -3.9825282]
-last-message-timestamp: 1638376529
-last-message-level: 0
+last-message-timestamp: 1669912950
+last-message-level: 1
 last-update: l.l.wilkinson@swansea.ac.uk
 last-update-timestamp: 1638376529
 last-update-message: >-
