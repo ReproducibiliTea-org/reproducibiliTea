@@ -12,15 +12,15 @@ signup:
 organisers: [Laura Wilkinson]
 contact: l.l.wilkinson@swansea.ac.uk
 additional-contact: []
-address: [Singleton Park, Sketty, Swansea SA2 8PP]
+address: [Singleton Park, Swansea SA2 8PP]
 country: United Kingdom
 geolocation: [51.6079698, -3.9825282]
-last-message-timestamp: 1669912950
-last-message-level: 1
+last-message-timestamp: 1669973303
+last-message-level: 0
 last-update: l.l.wilkinson@swansea.ac.uk
-last-update-timestamp: 1638376529
+last-update-timestamp: 1669973303
 last-update-message: >-
-  Checking details
+  
 
 ---
 
