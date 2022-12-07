@@ -15,8 +15,8 @@ additional-contact: []
 address: [Rico Haas, OE 7180, Carl-Neuberg-Strasse 1, 30625 Hannover, Germany]
 country: Germany
 geolocation: [52.3755991766591, 9.73388671875]
-last-message-timestamp: 1668004887
-last-message-level: 1
+last-message-timestamp: 1670431288
+last-message-level: 2
 last-update: haas.rico@mh-hannover.de
 last-update-timestamp: 1636466140
 last-update-message: >-
