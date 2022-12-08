@@ -15,8 +15,8 @@ additional-contact: [eirini.botsari@eur.nl]
 address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
 country: Netherlands
 geolocation: [51.9170494, 4.525585899999999]
-last-message-timestamp: 1638957793
-last-message-level: 0
+last-message-timestamp: 1670496087
+last-message-level: 1
 last-update: schettino@eur.nl
 last-update-timestamp: 1638957793
 last-update-message: >-
