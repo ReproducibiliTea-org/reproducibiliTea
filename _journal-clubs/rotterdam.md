@@ -15,12 +15,12 @@ additional-contact: [eirini.botsari@eur.nl]
 address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
 country: Netherlands
 geolocation: [51.9170494, 4.525585899999999]
-last-message-timestamp: 1670496087
-last-message-level: 1
+last-message-timestamp: 1670510918
+last-message-level: 0
 last-update: schettino@eur.nl
-last-update-timestamp: 1638957793
+last-update-timestamp: 1670510918
 last-update-message: >-
-  add new Community Manager
+  
 
 ---
 
@@ -38,8 +38,9 @@ ReproducibiliTea Rotterdam is a journal club organized by the Open Science Commu
 
 **Attendees**
 
-This journal club is open to everyone: PhD students, post-docs, junior and senior faculty, from any school/department at EUR and ErasmusMC. Interested Bachelor and Master students are also welcome to join, especially if it can be helpful for their thesis.
+This journal club is open to everyone: PhD candidates, post-docs, junior and senior faculty, from any school/department at EUR and ErasmusMC. Interested Bachelor and Master students are also welcome to join, especially if it can be helpful for their thesis.
+Interested parties not employed at EUR or ErasmusMC can send an email to the lead organizer with a request to join specific sessions.  
 
 **Practical Information**
 
-From November 2019 to March 2020 we used to meet on the second Wednesday of every month at 11:00. From April 2020 onward we meet online, once a month. Around two weeks before the session, an invitation is sent via the mailing list of the [Open Science Community Rotterdam](https://www.openscience-rotterdam.com/home/) (to be included, please contact [Antonio Schettino](mailto:schettino@eur.nl)). Announcements are also made on our website ([News](https://www.openscience-rotterdam.com/categories/news/) section) and on Twitter ([@OSCRotterdam](https://twitter.com/OSCRotterdam)).
+From November 2019 to March 2020 we used to meet on the second Wednesday of every month at 11:00. From April 2020 onward we meet online. Around two weeks before the session, an invitation is sent via the mailing list of the [Open Science Community Rotterdam](https://www.openscience-rotterdam.com/home/) (to be included, please contact the lead organizer). Announcements are also made on our website ([News](https://www.openscience-rotterdam.com/categories/news/) section) and on Twitter ([@OSCRotterdam](https://twitter.com/OSCRotterdam)).
