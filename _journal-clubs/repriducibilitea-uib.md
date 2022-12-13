@@ -9,18 +9,18 @@ zotero: E8J2PWHA
 website: 
 twitter: 
 signup: 
-organisers: [Samantha Marie Harris, Razieh Chegeni, Bjorn Satrevik]
-contact: Samantha.Harris@uib.no
-additional-contact: [Razieh.chegeni@uib.no, bjorn.satrevik@uib.no]
+organisers: [Sebastian Brun Bjørkheim, Bjorn Satrevik]
+contact: sebastian.bjorkheim@uib.no
+additional-contact: [sebastian.bjorkheim@uib.no, sebastian.bjorkheim@uib.no]
 address: [Room 446 (lunch room), Christies gate 12, 5020 Bergen, Norway]
 country: Norway
 geolocation: [60.403001945865476, 5.33935546875]
-last-message-timestamp: 1669912888
-last-message-level: 1
-last-update: Bjorn.Satrevik@uib.no
-last-update-timestamp: 1638370801
+last-message-timestamp: 1670939498
+last-message-level: 0
+last-update: Samantha.Harris@uib.no
+last-update-timestamp: 1670939498
 last-update-message: >-
-  Change name, change lead organizer
+  
 
 ---
 
