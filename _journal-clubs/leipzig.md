@@ -15,8 +15,8 @@ additional-contact: [gugnowska@cbs.mpg.de, g.haeberle@fu-berlin.de]
 address: [Max Planck Institute for Human Cognitive and Brain Sciences, Gisela Govaart, Stephanstraße 1a, 04103 Leipzig, Germany]
 country: Germany
 geolocation: [51.334935289027776, 12.388930320739746]
-last-message-timestamp: 1668789687
-last-message-level: 1
+last-message-timestamp: 1671216087
+last-message-level: 2
 last-update: govaart@cbs.mpg.de
 last-update-timestamp: 1637240605
 last-update-message: >-
