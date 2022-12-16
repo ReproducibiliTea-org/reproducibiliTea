@@ -15,8 +15,8 @@ additional-contact: []
 address: [Trinity College Institute of Neuroscience, Room 3.14, Lloyd Building, Trinity College Dublin, College Green, Dublin]
 country: Ireland
 geolocation: [53.3438181, -6.2509871]
-last-message-timestamp: 1639666073
-last-message-level: 0
+last-message-timestamp: 1671208952
+last-message-level: 1
 last-update: ramdunyj@tcd.ie
 last-update-timestamp: 1639666073
 last-update-message: >-
