@@ -15,8 +15,8 @@ additional-contact: []
 address: [Wassenaarseweg 52, 2333 AK Leiden, The Netherlands]
 country: Netherlands
 geolocation: [52.1571485, 4.485209]
-last-message-timestamp: 1668796887
-last-message-level: 2
+last-message-timestamp: 1671223287
+last-message-level: 3
 last-update: leidentea@gmail.com
 last-update-timestamp: 1634827528
 last-update-message: >-
