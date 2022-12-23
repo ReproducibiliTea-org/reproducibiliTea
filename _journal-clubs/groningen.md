@@ -4,7 +4,7 @@ title: Groningen
 host-organisation: University of Groningen
 host-org-url: https://www.rug.nl 
 organisers: [Daan Ornée] 
-contact: d.a.ornee@umcg.nl 
+contact: groningentea@rug.nl
 twitter account: GroningenTea
 address: [ICPE, in-house postalcode 72, University Medical Center Groningen, Hanzeplein 1, 9713GZ, Groningen]
 osf: f6brg
