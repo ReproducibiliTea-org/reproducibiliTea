@@ -15,8 +15,8 @@ additional-contact: []
 address: [Sven Kasser, University of St Andrews School of Biology, Sir Harold Mitchell Building & Dyers Brae, Greenside Pl, KY16 9TH, St Andrews, Fife, UK]
 country: United Kingdom
 geolocation: [56.33650056889435, -2.792501449584961]
-last-message-timestamp: 1669466487
-last-message-level: 2
+last-message-timestamp: 1671892887
+last-message-level: 3
 last-update: smk30@st-andrews.ac.uk
 last-update-timestamp: 1635501092
 last-update-message: >-
