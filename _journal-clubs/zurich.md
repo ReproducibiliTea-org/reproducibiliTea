@@ -15,8 +15,8 @@ additional-contact: []
 address: [University of Zurich, Center for Reproducible Science, Hirschengraben 84, 8001 Zurich, Switzerland]
 country: Switzerland
 geolocation: [47.376031000800445, 8.545426726341248]
-last-message-timestamp: 1669819289
-last-message-level: 1
+last-message-timestamp: 1672245687
+last-message-level: 2
 last-update: crs@ebpi.uzh.ch
 last-update-timestamp: 1638282767
 last-update-message: >-
