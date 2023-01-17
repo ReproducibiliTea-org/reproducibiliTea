@@ -24,6 +24,8 @@ last-update-message: >-
 
 ---
 
+N.B: Clarissa offered tips/tricks if anyone wants to start the JC up again! - Jan
+
 We are an national-level online chapter of ReproducibiliTea journal clubs, based in Brazil. 
 We used to meet once a month (2020-21) to discuss relevant articles on reproducibility and other good scientific practices with students and researchers from the whole country. For 2022, our meetings will be less frequent and we hope new local chapters will begin to meet in person throughout the country.
 Our presentations and discussions are always in Portuguese.
