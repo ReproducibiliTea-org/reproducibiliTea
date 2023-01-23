@@ -15,8 +15,8 @@ additional-contact: [caro.hautekiet@unige.ch]
 address: [Université de Genéve, Faculté de psychologie et Sciences de l'éducation, Bureau 5158, 40 Boulevard Pont d'Arve, 1205 Genéve]
 country: Switzerland
 geolocation: [46.19459651321258, 6.139898300170898]
-last-message-timestamp: 1642943138
-last-message-level: 0
+last-message-timestamp: 1674484887
+last-message-level: 1
 last-update: beatrice.valentini@unige.ch
 last-update-timestamp: 1642943138
 last-update-message: >-
