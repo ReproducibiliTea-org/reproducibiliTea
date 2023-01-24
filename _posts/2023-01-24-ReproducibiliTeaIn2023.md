@@ -49,8 +49,8 @@ Sophia started the ReproducibiliTea journal clubs at Oxford (with Sam & Amy), Am
 
 Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
 
-Matt is an Oxford DPhil student on secondment to the UKRN as Coordinator for Open Research Training. 
-He manages the Oxford Experimental Psychology ReproducibiliTea and does a bunch of technical stuff for the core organisation.
+Matt is a Research Software Engineer at the University of Oxford. He completed a DPhil in Experimental Psychology in January 2023.
+Matt manged the Oxford Experimental Psychology ReproducibiliTea while a DPhil student there, and has contributed to various open science projects with the UKRN, FORRT, and other organisations. He does a bunch of the technical stuff for the core ReproducibiliTea organisation.
 
 {% include image.html url="blog/matt.png" alt="Matt Jaquiery" description="" %}
 
