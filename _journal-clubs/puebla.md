@@ -12,7 +12,7 @@ signup: pueblareproducibilitea@gmail.com
 organisers: [Jose L. Flores-Guerrero, Jorge Castro]
 contact: joseluis.dbt@gmail.com
 additional-contact: []
-address: [Coordinacion de Optica (Dr Jorge Castro), Calle Luis Enrique Erro No.1, Santa MarÃÂ­a Tonantzintla, San AndrÃÂ©s Cholula, Puebla.]
+address: [Coordinacion de Optica (Dr Jorge Castro), Calle Luis Enrique Erro No.1, Santa María Tonantzintla, San Andrés Cholula, Puebla.]
 country: Mexico
 geolocation: [19.05595233220233, -98.32626342773438]
 last-message-timestamp: 1670523385
