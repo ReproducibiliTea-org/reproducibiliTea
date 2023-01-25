@@ -15,8 +15,8 @@ additional-contact: []
 address: [Room 209, Elena Rybina, HSE University, 101000, Russia, Moscow, Krivokolenny per. 3]
 country: Russian Federation
 geolocation: [55.7594715658183, 37.636274099349976]
-last-message-timestamp: 1643135557
-last-message-level: 0
+last-message-timestamp: 1674672087
+last-message-level: 1
 last-update: rybina.e.p@gmail.com
 last-update-timestamp: 1643135557
 last-update-message: >-
