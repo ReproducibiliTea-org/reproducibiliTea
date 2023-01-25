@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ReproducibiliTea in 2023"
-date:   2023-01-23 14:00:27 +0000
+date:   2023-01-25 14:00:00 +0000
 author: Jan B. Vornhagen
 categories: [JC]
 tags: [Steering Committee]
@@ -76,8 +76,9 @@ We have a lot of exciting things planned for next year.
 * and we are looking to rework our community outreach.
 
 Like last year, we will also reflect on our recruiting process. We will add that soon.
-In the mean time, we are always looking for ideas. If you yourself want to get involved, have a cool idea you think we could tackle, or have some critic for us, please [get in touch](mailto: ReproducibilITea@gmail.com)
+In the mean time, we are always looking for ideas. If you yourself want to get involved, have a cool idea you think we could tackle, or have some critique for us, please [get in touch](mailto: ReproducibilITea@gmail.com)
 
 In conclusion: A new year, a new steering committee and a lot of things to do.
+
 We are looking forward to it.
 
