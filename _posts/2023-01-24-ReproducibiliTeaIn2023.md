@@ -5,7 +5,6 @@ date:   2023-01-23 14:00:27 +0000
 author: Jan B. Vornhagen
 categories: [JC]
 tags: [Steering Committee]
-published: false
 ---
 
 In late 2020, we decided to expand the [ReproducibiliTea Steering Community]({% post_url 2021-01-28-A-new-year,-a-new-ReproducibiliTea-Steering-Committee %}) in order to make sure, we keep the early career researcher (ECR) perspective to building open science communities as well as allowing for more diverse perspectives.
@@ -32,7 +31,7 @@ Paulina is a psychology student at the SWPS University in Warsaw, Poland, workin
 
 Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB)
 
-Jan will replace Sam as the chair of the steering committee for 2023.
+Jan will follow Sam as the chair of the steering committee for 2023.
 
 Jan is a cognitive Psychologist and PhD fellow at the IT university Copenhagen, Denmark. He joined the ReproducibiliTea Steering Committee in 2021.
 
@@ -42,7 +41,7 @@ Jan is a cognitive Psychologist and PhD fellow at the IT university Copenhagen, 
 
 Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli)
 
-Sophia is a PhD student in Philosophy of Science at the University of Cambridge, working on conceptual issues of the replication crisis and also working on empirical metaresearch projects with METRIC-B in Berlin.
+Sophia is a PhD student in Philosophy of Science at the University of Cambridge, working on conceptual issues of the replication crisis and also working on empirical metaresearch projects with the QUEST Center in Berlin.
 Sophia started the ReproducibiliTea journal clubs at Oxford (with Sam & Amy), Amsterdam (with Angelika Stefan & Florian Wanders), and Berlin (with Corinna Hartling).
 
 {% include image.html url="blog/sophia.png" alt="Sophia Crüwell" description="" %}
@@ -60,6 +59,13 @@ William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
 William is a postdoc in the Department of Psychology at the University of Chicago, where he started and co-organizes the ReproducibiliTea journal club!
 
 {% include image.html url="blog/william.png" alt="William Ngiam" description="" %}
+
+
+Sam Parsons [@sam_d_parsons](https://twitter.com/Sam_D_Parsons)
+
+Sam is a Postdoctoral Research Fellow at the Donders Institute for Brain, Cognition and Behaviour. He started ReproducibiliTea with Sophia and Amy, and also founded the Framework for Open and Reproducible Research Training (FORRT) project.
+
+{% include image.html url="blog/sam.png" alt="Sam Parsons" description="" %}
 
 
 # The coming year

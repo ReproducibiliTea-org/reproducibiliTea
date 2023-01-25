@@ -23,12 +23,14 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 
 The ReproducibiliTea parent organisation is run by a Steering Committee of ECR volunteers: 
 
-* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder, Chair)
+
 * Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli) (Co-founder)
+* Hellena Gellerson
 * Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
-* Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
-* Jan Vornhagen [@VornhagenJB](https://twitter.com/VornhagenJB)
+* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
 * William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
+* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
+* Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) (Chair)
 
 The Steering Committee alumni act as an Advisory Board who can be consulted when necessary.
 The Advisory Board are:
