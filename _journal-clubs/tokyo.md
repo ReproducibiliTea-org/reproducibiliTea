@@ -15,8 +15,8 @@ additional-contact: []
 address: [Kai Hiraishi, Faculty of Letters, Keio University, 2-14-45 Mita, Minatoku, Tokyo, 108-8345 Japan]
 country: Japan
 geolocation: [35.649597345376385, 139.74255189299583]
-last-message-timestamp: 1643161160
-last-message-level: 0
+last-message-timestamp: 1674700887
+last-message-level: 1
 last-update: kokiikd@gmail.com
 last-update-timestamp: 1643161160
 last-update-message: >-
