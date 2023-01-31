@@ -9,18 +9,18 @@ zotero: 7EU7KK6K
 website: 
 twitter: Repro_T
 signup: 
-organisers: [Zoe Flack, Kerry Fox]
+organisers: [Zoe Flack, Isaac Thornton]
 contact: z.flack@brighton.ac.uk
-additional-contact: [k.j.fox@brighton.ac.uk]
+additional-contact: [i.thornton@brighton.ac.uk]
 address: [University of Brighton, D331 Checkland Building, Falmer, BN1 9PH]
 country: United Kingdom
 geolocation: [50.86036057501512, -0.08505821228027344]
-last-message-timestamp: 1674772887
-last-message-level: 1
-last-update: z.flack@brighton.ac.uk
-last-update-timestamp: 1643229957
+last-message-timestamp: 1675172160
+last-message-level: 0
+last-update: k.j.fox@brighton.ac.uk
+last-update-timestamp: 1675172160
 last-update-message: >-
-  No change, just an annual confirmation
+  Amend the name of who is running the journal club
 
 ---
 
