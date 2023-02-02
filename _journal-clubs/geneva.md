@@ -8,19 +8,19 @@ osf: khv7m
 zotero: BV9D6PMV
 website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
-signup: beatrice.valentini@unige.ch
-organisers: [Beatrice Valentini, Caro Hautekiet]
-contact: beatrice.valentini@unige.ch
-additional-contact: [caro.hautekiet@unige.ch]
-address: [Université de Genéve, Faculté de psychologie et Sciences de l'éducation, Bureau 5158, 40 Boulevard Pont d'Arve, 1205 Genéve]
+signup: caro.hautekiet@unige.ch
+organisers: [Caro Hautekiet, Stéphanie Jeanneret]
+contact: caro.hautekiet@unige.ch
+additional-contact: [stephanie.jeanneretcuervo@unige.ch]
+address: [University of Geneva, Faculty of Psychology and Educational Sciences, 40 Boulevard Pont d'Arve, 1205 Geneva]
 country: Switzerland
 geolocation: [46.19459651321258, 6.139898300170898]
-last-message-timestamp: 1674484887
-last-message-level: 1
-last-update: beatrice.valentini@unige.ch
-last-update-timestamp: 1642943138
+last-message-timestamp: 1675340929
+last-message-level: 0
+last-update: caro.hautekiet@unige.ch
+last-update-timestamp: 1675340929
 last-update-message: >-
-  Time to update ReproducibiliTea Journal Club details for Geneva
+  
 
 ---
 
