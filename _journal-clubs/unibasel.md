@@ -9,18 +9,18 @@ zotero: W6P4NPXF
 website: 
 twitter: RTeaUnibasel
 signup: https://forms.gle/ccX4physW1SmiX2w7
-organisers: [Tugba Akinci D'Antonoli, Claudia Weidenseiner, Xenia Deligianni, Francesco Santini, Valentin Amrhein]
+organisers: [Tugba Akinci D'Antonoli, Claudia Weidenseiner, Xenia Deligianni, Francesco Santini, Valentin Amrhein, Noëmi Capdevila]
 contact: tugba.akincidantonoli@unibas.ch
 additional-contact: []
 address: [Radiological Physics, University Hospital Basel, Petersgraben 4, 4031 Basel]
 country: Switzerland
 geolocation: [47.56103469106742, 7.583484649658203]
-last-message-timestamp: 1675370487
-last-message-level: 1
+last-message-timestamp: 1675462154
+last-message-level: 0
 last-update: tugba.akincidantonoli@unibas.ch
-last-update-timestamp: 1643830261
+last-update-timestamp: 1675462154
 last-update-message: >-
-  Hi, we are active, and we want to edit our page. 
+  Hi, I would like to update our page. Best, Tugba
 
 ---
 
