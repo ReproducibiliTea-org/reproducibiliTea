@@ -15,8 +15,8 @@ additional-contact: [amanda.klysing@psy.lu.se, jpmillsmaurer@gmail.com]
 address: [Department of Psychology, Lund University, Box 213, 221 00 LUND, Sweden,]
 country: Sweden
 geolocation: [55.70545032520298, 13.2000732421875]
-last-message-timestamp: 1644399387
-last-message-level: 0
+last-message-timestamp: 1675939286
+last-message-level: 1
 last-update: nathalie_ophelia.iotti@psy.lu.se
 last-update-timestamp: 1644399387
 last-update-message: >-
