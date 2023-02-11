@@ -15,8 +15,8 @@ additional-contact: []
 address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
 country: Germany
 geolocation: [48.15928719999999, 11.5853531]
-last-message-timestamp: 1673700087
-last-message-level: 2
+last-message-timestamp: 1676126486
+last-message-level: 3
 last-update: stephan.nuding@campus.lmu.de
 last-update-timestamp: 1639734271
 last-update-message: >-
