@@ -8,19 +8,19 @@ osf: sn6dk
 zotero: null
 website: https://osf.io/sn6dk/
 twitter: UvARepTea
-signup: 
-organisers: [František Bartoš]
+signup: https://list.uva.nl/mailman/listinfo/reproducibilitea
+organisers: [Frantisek Bartos]
 contact: f.bartos@uva.nl
 additional-contact: []
 address: [Department of Psychological Methods, Nieuwe Achtergracht 129 B, Postbus 15906, 1001 NK AMSTERDAM]
 country: Netherlands
 geolocation: [52.3636688, 4.9128393]
-last-message-timestamp: 1667991894
+last-message-timestamp: 1676290903
 last-message-level: 0
-last-update: a.m.stefan@uva.nl
-last-update-timestamp: 1667991894
+last-update: f.bartos@uva.nl
+last-update-timestamp: 1676290903
 last-update-message: >-
-  I'd like to change the name of the organizer
+  Hi. We occasionally still run ReproducibiliTea JCs. Thanks for checking. Is there particular information you are asking for?
 
 ---
 
