@@ -8,19 +8,19 @@ osf: null
 zotero: null
 website: 
 twitter: LMUMunichTea
-signup: 
-organisers: [Stephan Nuding, Leonhard Schramm, Laura Goetz, Felix Schönbrodt]
-contact: stephan.nuding@campus.lmu.de
+signup: reproducibilitea.munich@gmail.com
+organisers: [Leonhard Schramm, Laura Goetz, Franka Etzel, Viktoria Wiegelmann, Gracia Pruem, Alp Kaan Aksu, Finia Loeb, Stephan Nuding]
+contact: reproducibilitea.munich@gmail.com
 additional-contact: []
-address: [Psychology (student council psychology), LMU Munich, Leopoldstraße 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
+address: [Psychology (student council psychology), LMU Munich, Leopoldstrasse 13 (Briefkasten Nr. 7), 80802 Munich, Bavaria]
 country: Germany
 geolocation: [48.15928719999999, 11.5853531]
-last-message-timestamp: 1676126486
-last-message-level: 3
+last-message-timestamp: 1676296020
+last-message-level: 0
 last-update: stephan.nuding@campus.lmu.de
-last-update-timestamp: 1639734271
+last-update-timestamp: 1676296020
 last-update-message: >-
-  
+  Change corresponding mail adress and journal club organisation team
 
 ---
 
