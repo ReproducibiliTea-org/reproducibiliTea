@@ -14,8 +14,8 @@ additional-contact: []
 address: [Department of Psychology, Stockholm University, Frescati Hage 9A, Room 213, 106 91, Stockholm]
 country: Sweden
 geolocation: [59.3621737, 18.057831]
-last-message-timestamp: 1644843723
-last-message-level: 0
+last-message-timestamp: 1676385745
+last-message-level: 1
 last-update: stephen.pierzchajlo@psychology.su.se
 last-update-timestamp: 1644843723
 last-update-message: >-
