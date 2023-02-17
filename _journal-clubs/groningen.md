@@ -10,8 +10,8 @@ address: [ICPE, in-house postalcode 72, University Medical Center Groningen, Han
 osf: f6brg
 country: Netherlands
 geolocation: [53.220974, 6.577026099999999]
-last-message-level: 1
-last-message-timestamp: 1674204087
+last-message-level: 2
+last-message-timestamp: 1676630486
 ---
 
 The ReproducibiliTea Groningen aims to 
