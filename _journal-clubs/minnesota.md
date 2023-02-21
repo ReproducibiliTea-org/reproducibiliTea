@@ -15,8 +15,8 @@ additional-contact: []
 address: [Minneapolis, MN 55455]
 country: United States
 geolocation: [44.97415609999999, -93.2342]
-last-message-timestamp: 1674592887
-last-message-level: 1
+last-message-timestamp: 1677019287
+last-message-level: 2
 last-update: aspringe@umn.edu
 last-update-timestamp: 1643052683
 last-update-message: >-
