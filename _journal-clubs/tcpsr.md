@@ -15,8 +15,8 @@ additional-contact: []
 address: [No. 67, Jieren Street, Hualien City, Hualien County, 970]
 country: Taiwan
 geolocation: [24.206889622398023, 121.0693359375]
-last-message-timestamp: 1674708086
-last-message-level: 1
+last-message-timestamp: 1677134487
+last-message-level: 2
 last-update: pmsp96@gmail.com
 last-update-timestamp: 1643167593
 last-update-message: >-
