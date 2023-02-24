@@ -21,8 +21,8 @@ country: Sweden
 geolocation: [56.8544846, 14.8300257]
 
 last-update-timestamp: 1645693415
-last-message-level: 0
-last-message-timestamp: 1645687254
+last-message-level: 1
+last-message-timestamp: 1677249686
 
 ---
 
