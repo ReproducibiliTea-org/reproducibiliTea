@@ -9,8 +9,8 @@ address: [Linköping University, Lina Koppel, IEI A-huset campus Valla, 58183 Li
 country: Sweden
 geolocation: [58.4038916, 15.4703496]
 last-update-timestamp: 1645693415
-last-message-level: 0
-last-message-timestamp: 1645693415
+last-message-level: 1
+last-message-timestamp: 1677235287
 ---
 **About:**
 The journal club is open to everyone across Linköping University, from any discipline or department (all campuses included). Everyone is welcome to join us - skeptics and enthusiasts alike! For each session, the presenter will provide a short (5-15mins) overview of the chosen paper with the remainder of the session dedicated to free discussion amongst all attendees.
