@@ -15,8 +15,8 @@ address: [101 Main St, Apt 417, Lafayette, IN, USA]
 country: United States
 geolocation: [40.42493137196909, -86.92159652709957]
 last-update-timestamp: 1645693415
-last-message-level: 0
-last-message-timestamp: 1645663287
+last-message-level: 1
+last-message-timestamp: 1677235470
 
 ---
 
