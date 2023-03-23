@@ -15,8 +15,8 @@ additional-contact: []
 address: [Palazzo Piomarta, Corso Bettini 84, 38068 Rovereto (Trento)]
 country: Italy
 geolocation: [45.89371573694437, 11.043362617492676]
-last-message-timestamp: 1648029090
-last-message-level: 0
+last-message-timestamp: 1679568087
+last-message-level: 1
 last-update: reproducibilitea@unitn.it
 last-update-timestamp: 1648029090
 last-update-message: >-
