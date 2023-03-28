@@ -9,7 +9,7 @@ website:
 twitter: PurdueTea
 signup: purduetea@gmail.com
 organisers: [Alexa Ellis, Erica Zippert, Connor O'Rear]
-contact: alexa@purdue.edu
+contact: aclosser@purdue.edu
 additional-contact: []
 address: [101 Main St, Apt 417, Lafayette, IN, USA]
 country: United States
