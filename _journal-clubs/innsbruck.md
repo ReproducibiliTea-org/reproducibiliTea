@@ -15,8 +15,8 @@ additional-contact: []
 address: [Nicole Cruz, Innrain 9, Room 9, Psychology Department, University of Innsbruck, Innsbruck, 6020, Austria]
 country: Austria
 geolocation: [47.286681888764214, 11.4093017578125]
-last-message-timestamp: 1678221687
-last-message-level: 2
+last-message-timestamp: 1680648087
+last-message-level: 3
 last-update: nicole.cruz@uibk.ac.at
 last-update-timestamp: 1644252791
 last-update-message: >-
