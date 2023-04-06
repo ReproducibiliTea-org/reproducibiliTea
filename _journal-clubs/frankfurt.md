@@ -9,18 +9,18 @@ zotero: null
 website: https://frankfurt-osi.netlify.app/top/reproducibilitea/
 twitter: OpenScienceFFM
 signup: https://dlist.server.uni-frankfurt.de/mailman/listinfo/openscience
-organisers: [Julia Beitner, Elli Zey, Gözem Turan, Alexa von Hagen, Björn Siepe]
+organisers: [Julia Beitner, Zoë Bolz]
 contact: beitner@psych.uni-frankfurt.de
 additional-contact: []
 address: [Frankfurt am Main]
 country: Germany
 geolocation: [50.121301, 8.5665245]
-last-message-timestamp: 1649944372
+last-message-timestamp: 1680794945
 last-message-level: 0
 last-update: beitner@psych.uni-frankfurt.de
-last-update-timestamp: 1649944372
+last-update-timestamp: 1680794945
 last-update-message: >-
-  Add organization members
+  Change contributors of the Journal Club
 
 ---
 
