@@ -15,12 +15,12 @@ additional-contact: []
 address: [Room A3Y-116, Department of Leadership and Organizational Behavior, BI Norwegian Business School]
 country: Norway
 geolocation: [59.94856358048637, 10.768575668334961]
-last-message-timestamp: 1679863286
-last-message-level: 2
+last-message-timestamp: 1680942946
+last-message-level: 0
 last-update: lewend.mayiwar@bi.no
-last-update-timestamp: 1645900407
+last-update-timestamp: 1680942946
 last-update-message: >-
-  updated "about us"
+  
 
 ---
 
