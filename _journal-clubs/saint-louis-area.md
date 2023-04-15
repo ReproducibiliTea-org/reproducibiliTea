@@ -9,16 +9,16 @@ zotero: 3HUHZ7RD
 website: 
 twitter: 
 signup: hrcobb.iop@gmail.com
-organisers: [Haley R. Cobb]
+organisers: [Haley R. Cobb, Jack Friedrich]
 contact: hrcobb.iop@gmail.com
-additional-contact: []
+additional-contact: [Jack.friedrich@slu.edu]
 address: [3700 Lindell Blvd, Morrissey Hall 2605, St. Louis, MO 63108]
 country: United States
 geolocation: [38.62545397209084, -90.19981384277344]
-last-message-timestamp: 1681526487
-last-message-level: 3
+last-message-timestamp: 1681530574
+last-message-level: 0
 last-update: hrcobb.iop@gmail.com
-last-update-timestamp: 1645132278
+last-update-timestamp: 1681530574
 last-update-message: >-
   
 
