@@ -16,8 +16,8 @@ country: Canada
 osf: h3adt
 geolocation: [43.7728399, -79.49499449999999]
 last-update-timestamp: 1645693415
-last-message-level: 2
-last-message-timestamp: 1679668887
+last-message-level: 3
+last-message-timestamp: 1682095287
 ---
 
 The journal club is open to everyone across York University, from any discipline, department, or level of study.
