@@ -15,8 +15,8 @@ additional-contact: []
 address: [Heslington, York , YO10 5DD]
 country: United Kingdom
 geolocation: [53.9485295, -1.0533357]
-last-message-level: 0
-last-message-timestamp: 1650520800
+last-message-level: 1
+last-message-timestamp: 1682059287
 last-update: psychology-reproducibilitea@york.ac.uk
 last-update-timestamp: 1650520800
 last-update-message: >-
