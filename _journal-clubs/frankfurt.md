@@ -9,16 +9,16 @@ zotero: null
 website: https://frankfurt-osi.netlify.app/top/reproducibilitea/
 twitter: OpenScienceFFM
 signup: https://dlist.server.uni-frankfurt.de/mailman/listinfo/openscience
-organisers: [Julia Beitner, ZoÃ« Bolz]
+organisers: [Julia Beitner, Zoe Bolz]
 contact: beitner@psych.uni-frankfurt.de
 additional-contact: []
 address: [Frankfurt am Main]
 country: Germany
 geolocation: [50.121301, 8.5665245]
-last-message-timestamp: 1681917205
+last-message-timestamp: 1682089844
 last-message-level: 0
 last-update: beitner@psych.uni-frankfurt.de
-last-update-timestamp: 1681917205
+last-update-timestamp: 1682089844
 last-update-message: >-
   
 
