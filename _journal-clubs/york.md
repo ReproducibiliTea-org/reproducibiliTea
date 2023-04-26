@@ -9,18 +9,18 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Anna á Váli Guttesen, Jamie Cockcroft, Cátia Ferreira De Oliveira]
+organisers: [Emma Sullivan, CÃ¡tia Ferreira De Oliveira, Kirralise Hansford]
 contact: psychology-reproducibilitea@york.ac.uk
 additional-contact: []
 address: [Heslington, York , YO10 5DD]
 country: United Kingdom
 geolocation: [53.9485295, -1.0533357]
-last-message-level: 1
-last-message-timestamp: 1682059287
+last-message-timestamp: 1682515442
+last-message-level: 0
 last-update: psychology-reproducibilitea@york.ac.uk
-last-update-timestamp: 1650520800
+last-update-timestamp: 1682515442
 last-update-message: >-
-  
+  update ReproducibiliTea Journal Club details
 
 ---
 
