@@ -15,8 +15,8 @@ additional-contact: []
 address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
 country: United States
 geolocation: [37.544324, -77.4311636]
-last-message-timestamp: 1680201687
-last-message-level: 1
+last-message-timestamp: 1682628086
+last-message-level: 2
 last-update: dana.lapato@vcuhealth.org
 last-update-timestamp: 1648665437
 last-update-message: >-
