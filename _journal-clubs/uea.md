@@ -9,7 +9,7 @@ website:
 twitter: 
 signup: 
 organisers: [Samuel Forbes, Prerna Aneja, Ann-Kathrin Johnen]
-contact: samuel.forbes@uea.ac.uk
+contact: s.garayeva@uea.ac.uk
 additional-contact: [P.Aneja@uea.ac.uk, A.Johnen@uea.ac.uk]
 address: [School of Psychology, Lawrence Stenhouse Building, University of East Anglia, Norwich, NR4 7TJ]
 country: United Kingdom
