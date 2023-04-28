@@ -15,12 +15,12 @@ additional-contact: []
 address: [Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Biotech 1, Suite 100, 800 E. Leigh Street, Box 980126, Richmond, Virginia 23298-0126]
 country: United States
 geolocation: [37.544324, -77.4311636]
-last-message-timestamp: 1682628086
-last-message-level: 2
+last-message-timestamp: 1682693210
+last-message-level: 0
 last-update: dana.lapato@vcuhealth.org
-last-update-timestamp: 1648665437
+last-update-timestamp: 1682693210
 last-update-message: >-
-  Update RTea page
+  
 
 ---
 
@@ -36,4 +36,4 @@ RTea meetings are informal, and everyone is welcome to attend. Each month we wil
 Everyone benefits from inclusivity and diversity. Your voice is welcome here--open science skeptics and enthusiasts alike! No matter your career stage, discipline, familiarity with open science, or university affiliation, you are welcome.
 
 **Get all the latest updates:**   
-Join our mailing list by sending an email to listserv@lists.vcu.edu. Include a *single* line of text in the body of the message saying “SUBSCRIBE RTEA-L <your name>” (No need to include the quotes in your email).
+Join our mailing list by sending an email to listserv@lists.vcu.edu. Include a *single* line of text in the body of the message saying âSUBSCRIBE RTEA-L <your name>â (No need to include the quotes in your email).
