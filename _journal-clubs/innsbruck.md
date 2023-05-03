@@ -9,16 +9,16 @@ zotero: UJ2CR65C
 website: 
 twitter: 
 signup: nicole.cruz@uibk.ac.at
-organisers: [Nicole Cruz]
+organisers: [Nicole Cruz, Irene Alfarone]
 contact: nicole.cruz@uibk.ac.at
-additional-contact: []
-address: [Nicole Cruz, Universitätsstraße 5-7, Psychology Department, University of Innsbruck, Innsbruck, 6020, Austria]
+additional-contact: [irene.alfarone@uibk.ac.at]
+address: [Nicole Cruz, UniversitÃ¤tsstraÃe 5-7, Psychology Department, University of Innsbruck, Innsbruck, 6020, Austria]
 country: Austria
 geolocation: [47.286681888764214, 11.4093017578125]
-last-message-timestamp: 1680648665
+last-message-timestamp: 1683126583
 last-message-level: 0
 last-update: nicole.cruz@uibk.ac.at
-last-update-timestamp: 1680648665
+last-update-timestamp: 1683126583
 last-update-message: >-
   
 
