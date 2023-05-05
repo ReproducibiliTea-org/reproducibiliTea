@@ -2,25 +2,25 @@
 
 jcid: berlin
 title: Berlin
-host-organisation: CharitÃ© - UniversitÃ¤tsmedizin Berlin
+host-organisation: CharitÃÂ© - UniversitÃÂ¤tsmedizin Berlin
 host-org-url: 
 osf: sgh7w
 zotero: null
 website: 
 twitter: ReproTeaBerlin
 signup: 
-organisers: [Yu-Fang Yang, Lina Hellwig, Eva Maria Funk]
+organisers: [Yu-Fang Yang, Eva Maria Funk]
 contact: yu-fang.yang@fu-berlin.de
-additional-contact: [lina.hellwig@charite.de, eva-maria.funk@charite.de]
+additional-contact: [eva-maria.funk@charite.de]
 address: [Berlin, Germany]
 country: Germany
 geolocation: [52.520361618280944, 13.401684165000916]
-last-message-timestamp: 1682084411
+last-message-timestamp: 1683299904
 last-message-level: 0
 last-update: yu-fang.yang@fu-berlin.de
-last-update-timestamp: 1682084411
+last-update-timestamp: 1683299904
 last-update-message: >-
-  add new person 
+  
 
 ---
 
