@@ -15,8 +15,8 @@ additional-contact: []
 address: [CRNL - CH Le Vinatier - Batiment 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron]
 country: France
 geolocation: [45.7437964, 4.902354]
-last-message-timestamp: 1681584087
-last-message-level: 1
+last-message-timestamp: 1684010486
+last-message-level: 2
 last-update: wanda.grabon@univ-lyon1.fr
 last-update-timestamp: 1650041091
 last-update-message: >-
