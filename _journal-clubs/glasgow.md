@@ -15,13 +15,13 @@ additional-contact: [rebecca.johnson@gcu.ac.uk]
 address: [Rebecca Johnson, Flat 3/2, 103 Cambridge Street , Glasgow , G3 6RU]
 country: United Kingdom
 geolocation: [55.850649874337165, -4.2626953125]
-last-message-timestamp: 1683924086
-last-message-level: 3
-last-update: glasgowreproducibilitea@gmail.com
-last-update-timestamp: 1647529834
+last-message-timestamp: 1684147390
+last-message-level: 0
+last-update: rebecca.johnson@gcu.ac.uk
+last-update-timestamp: 1684147390
 last-update-message: >-
-  Updating of details, apologies for the delay! 
+  
 
 ---
 
-
+Glasgow Tea is currently looking for new members / club hosts!
