@@ -9,18 +9,18 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Wanda Grabon, Valentin Ghuibaudo]
-contact: wanda.grabon@univ-lyon1.fr
-additional-contact: []
+organisers: [Guillaume Sescousse, Wanda Grabon]
+contact: guillaume.sescousse@inserm.fr
+additional-contact: [wanda.grabon@univ-lyon1.fr]
 address: [CRNL - CH Le Vinatier - Batiment 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron]
 country: France
 geolocation: [45.7437964, 4.902354]
-last-message-timestamp: 1684134957
+last-message-timestamp: 1684417326
 last-message-level: 0
 last-update: wanda.grabon@univ-lyon1.fr
-last-update-timestamp: 1684134957
+last-update-timestamp: 1684417326
 last-update-message: >-
-  Change the list of organizers
+  Modification of members and description of the club.
 
 ---
 
