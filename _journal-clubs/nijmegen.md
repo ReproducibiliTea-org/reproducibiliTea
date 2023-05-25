@@ -15,8 +15,8 @@ additional-contact: []
 address: [Max Planck Institute for Psycholinguistics, Wundtlaan 1, 6525 XD Nijmegen]
 country: Netherlands
 geolocation: [51.81799340000001, 5.8570934]
-last-message-timestamp: 1682613687
-last-message-level: 2
+last-message-timestamp: 1685040086
+last-message-level: 3
 last-update: contact@openscience-nijmegen.nl
 last-update-timestamp: 1648644464
 last-update-message: >-
