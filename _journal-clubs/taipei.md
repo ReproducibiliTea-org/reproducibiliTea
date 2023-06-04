@@ -6,21 +6,21 @@ host-organisation: Taipei Medical University
 host-org-url: http://eng.tmu.edu.tw/
 osf: null
 zotero: null
-website: 
+website: https://www.reproducibilitea-taipei.com
 twitter: 
 signup: 
-organisers: [Elizaveta Parfenova, Niall Duncan]
+organisers: [Elizaveta Baranova-Parfenova, Niall Duncan]
 contact: parfenova.ev.2610@gmail.com
 additional-contact: []
-address: [Graduate Institute of Mind, Brain and Consciousness, Taipei Medical University, 172-1 Keelung Road Section 2, 106, Taipei, Taiwan]
+address: [GIMBC, Shuangho Campus: 5F., No.301, Yuantong Rd., Zhonghe Dist., New Taipei City, Taiwan, R.O.C, 235]
 country: Taiwan
 geolocation: [25.0253584, 121.5616235]
-last-message-timestamp: 1685659287
-last-message-level: 1
+last-message-timestamp: 1685868943
+last-message-level: 0
 last-update: parfenova.ev.2610@gmail.com
-last-update-timestamp: 1654122296
+last-update-timestamp: 1685868943
 last-update-message: >-
-  
+  No changes in the work of the club this year
 
 ---
 
