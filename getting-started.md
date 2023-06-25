@@ -20,7 +20,7 @@ We have an [OSF page <sup><i class="fas fa-external-link-square-alt"></i></sup>]
 - The ReproducibiliTea Logo
 - Various ReproducibiliTea poster templates
 - A sample checklist for organising your own Journal Club
-- Paper suggestions for what to cover
+- Our [reading lists <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://rpt-rl.netlify.app/) on many Open Science topics
 - And much much more ...
 
 <!---
