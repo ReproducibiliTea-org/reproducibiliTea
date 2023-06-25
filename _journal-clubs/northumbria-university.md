@@ -9,7 +9,7 @@ zotero: QK6BNIHX
 website: https://osf.io/s9rz6/
 twitter: 
 signup: David.smailes@northumbria.ac.uk
-organisers: [https://scholar.google.com/citations?user=STEqMdkAAAAJ&hl=en]
+organisers: [David Smailes]
 contact: david.smailes@northumbria.ac.uk
 additional-contact: []
 address: [Department of Psychology , Northumberland Building , Northumbria University , Newcastle upon Tyne , NE1 8ST]

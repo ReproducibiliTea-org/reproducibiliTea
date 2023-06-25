@@ -9,7 +9,7 @@ zotero: 2BVCCUWG
 website: 
 twitter: 
 signup: 
-organisers: [https://scholar.google.co.jp/citations?user=JSD7AfMAAAAJ&hl=en]
+organisers: [Samuel Jones]
 contact: samuel.jones@bangor.ac.uk
 additional-contact: []
 address: [Bangor University, Bangor, Gwynedd, LL57 2DG, UK]
