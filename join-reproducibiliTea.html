@@ -599,9 +599,8 @@ You might want to describe what you hope to achieve, how often you plan to meet,
     </div>
 </section>
 
-
+<script type="text/javascript" src="/assets/js/js-yaml.min.js"></script>
 <script>
-    const YAML = require('yaml')
 
     /* Used to allow us to handle special characters.
         https://stackoverflow.com/a/64752311
@@ -657,7 +656,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      */
     function parseMD(data) {
         data = decodeBase64(data);
-        return YAML.parse(data);
+        return jsyaml.load(data);
         // const match = /^---(.*)---\s*(.*)$/s.exec(data);
         // if(!match)
         //     throw new Error('Badly formed markdown file received from GitHub.');
