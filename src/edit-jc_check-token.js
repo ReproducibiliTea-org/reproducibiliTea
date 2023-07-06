@@ -23,6 +23,7 @@ exports.handler = function(event, context, callback) {
     if(!data.token) {
         return callback('Authorisation token must be specified in JSON format in the request body.');
     }
+    console.log("Checking token", data.token)
 
     // Fetch the available tokens
     const client = new faunadb.Client({ secret: FAUNA_KEY });
