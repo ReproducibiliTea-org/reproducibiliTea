@@ -47,7 +47,7 @@ exports.handler = async (event, context, callback) => {
                         if(!match) {
                             // Add the jcid field
                             const updatedBody = body.replace(/^---.*\n/, `---\njcid: ${name}\n`);
-                            const updatedBuffer = Buffer.from(updatedBody);
+                            const updatedBuffer = Buffer.from(updatedBody, 'utf8');
                             const content = updatedBuffer.toString('base64');
                             // Commit the change
                             const commit = {

@@ -671,8 +671,8 @@ async function callGitHub(data, results, editToken = null) {
                             const buff = new Buffer.from(f.content, 'base64');
                             const body = buff.toString();
                             // Hack out the bits of the results we need
-                            const osf = /^osf: (.*)$/m.exec(body);
-                            const zotero = /^zotero: (.*)$/m.exec(body);
+                            const osf = /^osf: "?(.*)"?$/m.exec(body);
+                            const zotero = /^zotero: "?(.*)"?$/m.exec(body);
                             results = {
                                 osf: {osfRepoId: osf? osf[1] : null},
                                 zotero: {zoteroCollectionId: zotero? zotero[1] : null},
@@ -706,24 +706,24 @@ async function callGitHub(data, results, editToken = null) {
 
     out.githubFile = `---
 
-jcid: ${data.jcid}
-title: ${data.name}
-host-organisation: ${data.uni}
-host-org-url: ${data.uniWWW}
-osf: ${results.osf.osfRepoId}
-zotero: ${results.zotero.zoteroCollectionId}
-website: ${data.www}
-twitter: ${data.twitter}
-signup: ${data.signup}
-organisers: [${[data.lead, ...data.helpers].join(', ')}]
-contact: ${data.email}
-additional-contact: [${data.emails.join(', ')}]
-address: [${data.post}]
-country: ${data.country}
+jcid: "${data.jcid}"
+title: "${data.name}"
+host-organisation: "${data.uni}"
+host-org-url: "${data.uniWWW}"
+osf: "${results.osf.osfRepoId}"
+zotero: "${results.zotero.zoteroCollectionId}"
+website: "${data.www}"
+twitter: "${data.twitter}"
+signup: "${data.signup}"
+organisers: [${[data.lead, ...data.helpers].map(s => `"${s}"`).join(', ')}]
+contact: "${data.email}"
+additional-contact: [${data.emails.map(s => `"${s}"`).join(', ')}]
+address: [${data.post.split(/[\n,]+/).map(s => `"${s.trim()}"`).join(', ')}]
+country: "${data.country}"
 geolocation: [${data.geolocation[0]}, ${data.geolocation[1]}]
 last-message-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-message-level: 0
-last-update: ${editToken.email}
+last-update: "${editToken.email}"
 last-update-timestamp: ${Math.floor((new Date()).getTime() / 1000)}
 last-update-message: >-
   ${editToken.message.replace(/\n */g, '\n  ')}
@@ -740,12 +740,12 @@ ${data.description}
         JSON.stringify({
         message: `Form update of ${data.jcid}.md by ${editToken.email}.  
 ${editToken.message}`,
-        content: new Buffer.from(out.githubFile).toString('base64'),
+        content: new Buffer.from(out.githubFile, 'utf8').toString('base64'),
         sha: results.sha
     }) :
         JSON.stringify({
             message: `API creation of ${data.jcid}.md`,
-            content: new Buffer.from(out.githubFile).toString('base64')
+            content: new Buffer.from(out.githubFile, 'utf8').toString('base64')
         });
 
     try {

@@ -102,7 +102,7 @@ class JournalClub {
      * @return {string}
      */
     get content() {
-        return new Buffer.from(this.gitHubResponse.content, 'base64').toString();
+        return new Buffer.from(this.gitHubResponse.content, 'base64').toString('utf8');
     }
 
     /**
@@ -203,7 +203,7 @@ async function processRollcall(JC) {
         }
     )
         .then(r => r.json())
-        .then(json => new Buffer.from(json.content, 'base64').toString())
+        .then(json => new Buffer.from(json.content, 'base64').toString('utf8'))
         .then(s => JSON.parse(s));
 
     // Update the template into a proper email
@@ -378,7 +378,7 @@ function updateMessageStatus(JC) {
         `last-message-level: ${JC.newMessageLevel}`
     );
     // Commit to gitHub with the new body as content
-    const newContent = new Buffer.from(newBody).toString('base64');
+    const newContent = new Buffer.from(newBody, 'utf8').toString('base64');
     const commit = JSON.stringify({
         message: `Rollcall: Update ${JC.jcid}.md last message time.`,
         content: newContent,
