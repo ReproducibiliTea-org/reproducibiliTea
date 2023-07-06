@@ -19,6 +19,7 @@ exports.handler = function(event, context, callback) {
     }
 
     // Check input
+    console.log("event.body", event.body)
     const data = JSON.parse(event.body);
     if(!data.token) {
         return callback('Authorisation token must be specified in JSON format in the request body.');
