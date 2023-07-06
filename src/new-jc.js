@@ -51,7 +51,9 @@ exports.handler = async (event, context, callback) => {
     let data = {token: null};
 
     try{
+        console.log('Cleaning input data', event.body)
         data = cleanData(JSON.parse(event.body));
+        console.log('Cleaned input data', data)
     } catch(e) {
         console.error(`Failed to clean input data.`)
         return {
@@ -65,7 +67,7 @@ exports.handler = async (event, context, callback) => {
     let editToken = null;
     if(token) {
         // Check authorisation to edit
-        console.log(`Checking token ${token}`)
+        console.log(`Checking token`, token)
         editToken = await fetch(`${event.headers.origin}/.netlify/functions/edit-jc_check-token`, {
             method: 'POST',
             body: token,
