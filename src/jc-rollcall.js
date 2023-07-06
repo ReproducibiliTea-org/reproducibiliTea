@@ -13,6 +13,7 @@
 // node fetch support
 const fetch = require("node-fetch");
 require('dotenv').config();
+const YAML = require('yaml')
 
 let {GITHUB_REPO_API} = process.env;
 
@@ -111,13 +112,21 @@ class JournalClub {
      parseContent() {
 
         // Hack out the bits of the results we need
-        const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
-        const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
-        const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
-        const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
-        const title = /^title: "?(.*?)"?$/m.exec(this.content);
-        const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
-        const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
+        const yaml = YAML.parse(this.content)
+        const lastUpdate = yaml['last-update-timestamp'];
+        const lastMessage = yaml['last-message-timestamp'];
+        const lastMessageLevel = yaml['last-message-level'];
+        const jcid = yaml['jcid'];
+        const title = yaml['title'];
+        const contact = yaml['contact'];
+        const additionalContacts = yaml['additional-contact'];
+        // const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
+        // const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
+        // const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
+        // const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
+        // const title = /^title: "?(.*?)"?$/m.exec(this.content);
+        // const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
+        // const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
         this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
         this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
         this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
@@ -131,7 +140,7 @@ class JournalClub {
             ];
         }
         this.contactEmails = this.contactEmails.map(e => {
-            const re = /^ *"?([^ ]*?)"?/.exec(e);
+            const re = /^ *([^ ]*?)/.exec(e);
             if(re)
                 return re[1];
             else

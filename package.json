@@ -5,7 +5,9 @@
     "debug": "netlify dev --inspect",
     "serve": "netlify dev"
   },
-  "dependencies": {},
+  "dependencies": {
+    "yaml": "^2.3.1"
+  },
   "devDependencies": {
     "diacritic": "0.0.2",
     "dotenv": "^8.6.0",

@@ -601,6 +601,8 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
 
 <script>
+    const YAML = require('yaml')
+
     /* Used to allow us to handle special characters.
         https://stackoverflow.com/a/64752311
     */
@@ -655,18 +657,19 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      */
     function parseMD(data) {
         data = decodeBase64(data);
-        const match = /^---(.*)---\s*(.*)$/s.exec(data);
-        if(!match)
-            throw new Error('Badly formed markdown file received from GitHub.');
-        const lines = match[1].split('\n');
-        const pairs = lines.map(s => {
-            const m = /^(.+?):\s*"?(.*?)"?$/.exec(s);
-            return m? {key: m[1], value: m[2]} : null;
-        })
-            .filter(o => o !== null);
-        const out = {content: match.length >= 3? match[2] : ''};
-        pairs.forEach(p => out[p.key] = p.value);
-        return out;
+        return YAML.parse(data);
+        // const match = /^---(.*)---\s*(.*)$/s.exec(data);
+        // if(!match)
+        //     throw new Error('Badly formed markdown file received from GitHub.');
+        // const lines = match[1].split('\n');
+        // const pairs = lines.map(s => {
+        //     const m = /^(.+?):\s*"?(.*?)"?$/.exec(s);
+        //     return m? {key: m[1], value: m[2]} : null;
+        // })
+        //     .filter(o => o !== null);
+        // const out = {content: match.length >= 3? match[2] : ''};
+        // pairs.forEach(p => out[p.key] = p.value);
+        // return out;
     }
     function acceptToken(data) {
         document.getElementById('LoadingModal').classList.add('token-okay');

@@ -146,14 +146,11 @@ function cleanData(data) {
     if(data.jcid)
         data.jcid = Diacritics.clean(data.jcid.toLowerCase());
 
-    // Remove leading and trailing spaces from all string fields and escape quotes
+    // Remove leading and trailing spaces from all string fields
     for(const x in data) {
-        if(x === 'editToken')
-            continue;
         if(typeof data[x] !== "string")
             continue;
         data[x] = data[x].trim();
-        data[x] = data[x].replace(/[^\\]"/g, '\\"');
     }
 
     // Remove the unnecessary bits of the OSF user input
