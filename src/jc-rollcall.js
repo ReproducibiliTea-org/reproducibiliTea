@@ -111,13 +111,13 @@ class JournalClub {
      parseContent() {
 
         // Hack out the bits of the results we need
-        const lastUpdate = /^last-update-timestamp: (.*)$/m.exec(this.content);
-        const lastMessage = /^last-message-timestamp: (.*)$/m.exec(this.content);
-        const lastMessageLevel = /^last-message-level: (.*)$/m.exec(this.content);
-        const jcid = /^jcid: (.*)$/m.exec(this.content);
-        const title = /^title: (.*)$/m.exec(this.content);
-        const contact = /^contact: (.*)$/m.exec(this.content);
-        const additionalContacts = /^additional-contact: \[?([^\]]*)]?$/m.exec(this.content);
+        const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
+        const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
+        const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
+        const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
+        const title = /^title: "?(.*?)"?$/m.exec(this.content);
+        const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
+        const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
         this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
         this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
         this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
@@ -131,7 +131,7 @@ class JournalClub {
             ];
         }
         this.contactEmails = this.contactEmails.map(e => {
-            const re = /^ *([^ ]*)/.exec(e);
+            const re = /^ *"?([^ ]*?)"?/.exec(e);
             if(re)
                 return re[1];
             else

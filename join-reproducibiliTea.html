@@ -646,7 +646,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             throw new Error('Badly formed markdown file received from GitHub.');
         const lines = match[1].split('\n');
         const pairs = lines.map(s => {
-            const m = /^(.+?):\s*(.*)$/.exec(s);
+            const m = /^(.+?):\s*"?(.*?)"?$/.exec(s);
             return m? {key: m[1], value: m[2]} : null;
         })
             .filter(o => o !== null);
@@ -679,7 +679,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         if(data.signup)
             form.querySelector('#signup').value = data.signup;
         if(data.address) {
-            const match = /^\[?(.+?)\]?$/.exec(data.address);
+            const match = /^\[?"?(.+?)"?]?$/.exec(data.address);
             if(match) {
                 const addr = match[1].replace(/,\s*/g, ',\n');
                 form.querySelector('#post').value = addr;
@@ -692,7 +692,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
             }
         }
         if(data.geolocation) {
-            const match = /^\[?(.+?)\]?$/.exec(data.geolocation);
+            const match = /^\[?(.+?)]?$/.exec(data.geolocation);
             if(match) {
                 form.querySelector('#geolocation').value = match[1];
             }
@@ -700,7 +700,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         if(data.content)
             form.querySelector('#description').value = data.content;
         if(data.organisers) {
-            const match = /^\[?(.+?)\]?$/.exec(data.organisers);
+            const match = /^\[?"?(.+?)"?]?$/.exec(data.organisers);
             if(match) {
                 const organisers = match[1].split(', ');
                 form.querySelector('#lead').value = organisers[0];
@@ -715,7 +715,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         if(data.contact)
             form.querySelector('#email').value = data.contact;
         if(data['additional-contact']) {
-            const match = /^\[?([^\[\]]+?)\]?$/.exec(data['additional-contact']);
+            const match = /^\[?"?([^\[\]]+?)"?]?$/.exec(data['additional-contact']);
             if(match) {
                 const contacts = match[1].split(', ');
                 let last = form.querySelector('#email');
@@ -726,7 +726,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 }
             }
         }
-        // Remove the unneded fields
+        // Remove the unneeded fields
         document.getElementById('AuthCodeRow').remove();
         document.getElementById('osfUserRow').remove();
         document.getElementById('zoteroUserRow').remove();

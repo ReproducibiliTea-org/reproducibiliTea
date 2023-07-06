@@ -153,7 +153,7 @@ function cleanData(data) {
         if(typeof data[x] !== "string")
             continue;
         data[x] = data[x].trim();
-        data[x] = data[x].replace(/"/g, '\\"');
+        data[x] = data[x].replace(/[^\\]"/g, '\\"');
     }
 
     // Remove the unnecessary bits of the OSF user input
