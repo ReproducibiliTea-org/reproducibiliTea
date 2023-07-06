@@ -25,7 +25,7 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 
 
 * Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli) (Co-founder)
-* Hellena Gellerson
+* Helena Gellersen [@hgellersen](https://twitter.com/hgellersen)
 * Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
 * Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
 * William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
