@@ -731,7 +731,7 @@ last-update-message: >-
 ---
 
 ${data.description}
-`;
+`.replace(/^(.+: )""\n/g, '$1\n');
 
     console.log({gitHubFile: out.githubFile})
 
