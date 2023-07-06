@@ -148,6 +148,8 @@ function cleanData(data) {
 
     // Remove leading and trailing spaces from all string fields and escape quotes
     for(const x in data) {
+        if(x === 'editToken')
+            continue;
         if(typeof data[x] !== "string")
             continue;
         data[x] = data[x].trim();
