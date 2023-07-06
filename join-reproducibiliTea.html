@@ -601,6 +601,20 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
 
 <script>
+    /* Used to allow us to handle special characters.
+        https://stackoverflow.com/a/64752311
+    */
+    function decodeBase64(base64) {
+        const text = atob(base64);
+        const length = text.length;
+        const bytes = new Uint8Array(length);
+        for (let i = 0; i < length; i++) {
+            bytes[i] = text.charCodeAt(i);
+        }
+        const decoder = new TextDecoder(); // default is utf-8
+        return decoder.decode(bytes);
+    }
+
     /* If we're editing an existing JC, look up the existing values and use them to fill in the field values. */
     async function checkToken() {
         const gitURL = `https://api.github.com/repos/{{ site.github_user }}/reproducibiliTea/contents/_journal-clubs`;
@@ -640,7 +654,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      * @return {object}
      */
     function parseMD(data) {
-        data = atob(data);
+        data = decodeBase64(data);
         const match = /^---(.*)---\s*(.*)$/s.exec(data);
         if(!match)
             throw new Error('Badly formed markdown file received from GitHub.');
