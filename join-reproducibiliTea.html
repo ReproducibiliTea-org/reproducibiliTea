@@ -656,19 +656,10 @@ You might want to describe what you hope to achieve, how often you plan to meet,
      */
     function parseMD(data) {
         data = decodeBase64(data);
-        return jsyaml.load(data);
-        // const match = /^---(.*)---\s*(.*)$/s.exec(data);
-        // if(!match)
-        //     throw new Error('Badly formed markdown file received from GitHub.');
-        // const lines = match[1].split('\n');
-        // const pairs = lines.map(s => {
-        //     const m = /^(.+?):\s*"?(.*?)"?$/.exec(s);
-        //     return m? {key: m[1], value: m[2]} : null;
-        // })
-        //     .filter(o => o !== null);
-        // const out = {content: match.length >= 3? match[2] : ''};
-        // pairs.forEach(p => out[p.key] = p.value);
-        // return out;
+        const match = /^---(.*)---\s*(.*)$/s.exec(data);
+        if(!match)
+            throw new Error('Badly formed markdown file received from GitHub.');
+        return {...jsyaml.load(match[1]), content: match[2]};
     }
     function acceptToken(data) {
         document.getElementById('LoadingModal').classList.add('token-okay');

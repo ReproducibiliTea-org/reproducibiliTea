@@ -112,7 +112,10 @@ class JournalClub {
      parseContent() {
 
         // Hack out the bits of the results we need
-        const yaml = YAML.parse(this.content)
+        const match = /^---(.*)---\s*(.*)$/s.exec(this.content);
+        if (!match)
+            throw new Error("Invalid journal club file - no YAML header found.");
+        const yaml = YAML.parse(match[1])
         const lastUpdate = yaml['last-update-timestamp'];
         const lastMessage = yaml['last-message-timestamp'];
         const lastMessageLevel = yaml['last-message-level'];
