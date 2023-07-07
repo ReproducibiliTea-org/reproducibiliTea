@@ -721,7 +721,12 @@ async function callGitHub(data, results, editToken = null) {
         'additional-contact': data.emails,
         address: data.post.split(/[\n,]+/).map(s => s.trim()),
         country: data.country,
-        geolocation: data.geolocation
+        geolocation: data.geolocation,
+        'last-message-timestamp': Math.floor((new Date()).getTime() / 1000),
+        'last-message-level': 0,
+        'last-update': editToken.email,
+        'last-update-timestamp': Math.floor((new Date()).getTime() / 1000),
+        'last-update-message': editToken.message.replace(/\n */g, '\n ')
     });
 
     out.githubFile = `---
