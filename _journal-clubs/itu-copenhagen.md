@@ -26,4 +26,3 @@ geolocation:
 ---
 
 We discuss Open Science and Academia, mostly focused on Design and HCI. If you are interested to join, please reach out.
-töøæ'æ
