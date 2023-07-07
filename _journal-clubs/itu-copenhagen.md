@@ -20,6 +20,11 @@ country: Denmark
 geolocation:
   - 55.659407655020196
   - 12.591029405593872
+last-message-timestamp: 1688735484
+last-message-level: 0
+last-update: javo@itu.dk
+last-update-timestamp: 1688735484
+last-update-message: ""
 
 
 ---
