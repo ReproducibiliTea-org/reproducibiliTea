@@ -659,7 +659,13 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         const match = /^---(.*)---\s*(.*)$/s.exec(data);
         if(!match)
             throw new Error('Badly formed markdown file received from GitHub.');
-        return {...jsyaml.load(match[1]), content: match[2]};
+        const out = {...jsyaml.load(match[1]), content: match[2]};
+        for (const key in out) {
+            if (out.hasOwnProperty(key) && out[key] === "''" || out[key] === '""') {
+                out[key] = null;
+            }
+        }
+        return out;
     }
     function acceptToken(data) {
         document.getElementById('LoadingModal').classList.add('token-okay');

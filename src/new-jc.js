@@ -136,7 +136,7 @@ function cleanData(data) {
     // mandatory fields are checked later
     for(const s of OPTIONAL_FIELDS) {
         if(!data.hasOwnProperty(s))
-            data[s] = null;
+            data[s] = "";
     }
 
     if(data.post) {
