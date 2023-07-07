@@ -60,7 +60,7 @@ exports.handler = function(event, context, callback) {
     if(SANDBOX)
         GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
     if(SANDBOX && !JC_TARGET)
-            JC_TARGET = process.env.SANDBOX_JOURNAL_CLUB;
+        JC_TARGET = process.env.SANDBOX_JOURNAL_CLUB;
     rollcall(callback);
 };
 
@@ -109,54 +109,63 @@ class JournalClub {
     /**
      * Extract the relevant content information from a journal club file
      */
-     parseContent() {
+    parseContent() {
 
-        // Hack out the bits of the results we need
-        const match = /^---(.*)---\s*(.*)$/s.exec(this.content);
-        if (!match)
-            throw new Error("Invalid journal club file - no YAML header found.");
-        const yaml = YAML.parse(match[1])
-        const lastUpdate = yaml['last-update-timestamp'];
-        const lastMessage = yaml['last-message-timestamp'];
-        const lastMessageLevel = yaml['last-message-level'];
-        const jcid = yaml['jcid'];
-        const title = yaml['title'];
-        const contact = yaml['contact'];
-        const additionalContacts = yaml['additional-contact'];
-        // const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
-        // const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
-        // const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
-        // const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
-        // const title = /^title: "?(.*?)"?$/m.exec(this.content);
-        // const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
-        // const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
-        this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
-        this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
-        this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
-        this.jcid = jcid? jcid[1] : null;
-        this.title = title? title[1] : null;
-        this.contactEmails = [contact? contact[1] : ""];
-        if(additionalContacts !== null) {
-            this.contactEmails = [
-                ...this.contactEmails,
-                ...additionalContacts[1].split(';')
-            ];
+        try {
+            // Hack out the bits of the results we need
+            const match = /^---(.*)---\s*(.*)$/s.exec(this.content);
+            if (!match)
+                throw new Error("Invalid journal club file - no YAML header found.");
+            const yaml = YAML.parse(match[1])
+            const lastUpdate = yaml['last-update-timestamp'];
+            const lastMessage = yaml['last-message-timestamp'];
+            const lastMessageLevel = yaml['last-message-level'];
+            const jcid = yaml['jcid'];
+            const title = yaml['title'];
+            const contact = yaml['contact'];
+            const additionalContacts = yaml['additional-contact'];
+            // const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
+            // const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
+            // const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
+            // const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
+            // const title = /^title: "?(.*?)"?$/m.exec(this.content);
+            // const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
+            // const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
+            this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
+            this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
+            this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
+            this.jcid = jcid? jcid[1] : null;
+            this.title = title? title[1] : null;
+            this.contactEmails = [contact? contact[1] : ""];
+            if(additionalContacts !== null) {
+                this.contactEmails = [
+                    ...this.contactEmails,
+                    ...additionalContacts[1].split(';')
+                ];
+            }
+            this.contactEmails = this.contactEmails.map(e => {
+                const re = /^ *([^ ]*?)/.exec(e);
+                if(re)
+                    return re[1];
+                else
+                    return null;
+            })
+                .filter(e => e !== null)
+        } catch (e) {
+            console.error({
+                message: "Error parsing journal club file",
+                error: e,
+                content: this.content
+            })
+            throw e;
         }
-        this.contactEmails = this.contactEmails.map(e => {
-            const re = /^ *([^ ]*?)/.exec(e);
-            if(re)
-                return re[1];
-            else
-                return null;
-        })
-            .filter(e => e !== null)
     }
 
     /**
      * @return {int} flag representing the new message level
      */
     get newMessageLevel() {
-         return this.lastMessageLevel + 1;
+        return this.lastMessageLevel + 1;
     }
 }
 
@@ -425,9 +434,9 @@ function getOldestJC() {
     return fetch(
         `${GITHUB_REPO_API}/contents/_journal-clubs`,
         {headers: {
-            'User-Agent': GITHUB_API_USER,
-            Authorization: `token ${GITHUB_TOKEN}`
-        }}
+                'User-Agent': GITHUB_API_USER,
+                Authorization: `token ${GITHUB_TOKEN}`
+            }}
     )
         .then(r => r.json())
         .then(async jcs => {
