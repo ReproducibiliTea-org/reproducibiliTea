@@ -137,7 +137,7 @@ class JournalClub {
             this.jcid = jcid || null;
             this.title = title || null;
             this.contactEmails = contact? [contact] : [];
-            if(additionalContacts !== null) {
+            if(additionalContacts?.length > 0) {
                 this.contactEmails = [
                     ...this.contactEmails,
                     ...additionalContacts
