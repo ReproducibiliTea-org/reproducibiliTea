@@ -5,7 +5,7 @@ title: ITU Copenhagen
 host-organisation: IT University of Copenhagen
 host-org-url: 
 osf: dcekr
-zotero: WR5KZ5EU"
+zotero: WR5KZ5EU
 website: 
 twitter: 
 signup: 
