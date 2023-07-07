@@ -52,8 +52,9 @@ exports.handler = async (event, context, callback) => {
     let data = {token: null};
 
     try{
-        console.log('Cleaning input data', event.body)
-        data = cleanData(JSON.parse(event.body));
+        const input = JSON.parse(event.body);
+        console.log('Cleaning input data', input)
+        data = cleanData(input);
         console.log('Cleaned input data', data)
     } catch(e) {
         console.error(`Failed to clean input data.`)
@@ -135,7 +136,7 @@ function cleanData(data) {
     // mandatory fields are checked later
     for(const s of OPTIONAL_FIELDS) {
         if(!data.hasOwnProperty(s))
-            data[s] = "";
+            data[s] = null;
     }
 
     if(data.post) {
