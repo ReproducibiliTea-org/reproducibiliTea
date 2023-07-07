@@ -134,17 +134,18 @@ class JournalClub {
             this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
             this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
             this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
-            this.jcid = jcid? jcid[1] : null;
-            this.title = title? title[1] : null;
-            this.contactEmails = [contact? contact[1] : ""];
+            this.jcid = jcid || null;
+            this.title = title || null;
+            this.contactEmails = contact? [contact] : [];
             if(additionalContacts !== null) {
                 this.contactEmails = [
                     ...this.contactEmails,
-                    ...additionalContacts[1].split(';')
+                    ...additionalContacts
                 ];
             }
             this.contactEmails = this.contactEmails.map(e => {
-                const re = /^ *([^ ]*?)/.exec(e);
+                const trim = e.trim();
+                const re = /^([^ ]+)/.exec(trim);
                 if(re)
                     return re[1];
                 else
