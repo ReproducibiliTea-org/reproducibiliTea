@@ -705,7 +705,7 @@ async function callGitHub(data, results, editToken = null) {
         };
     }
 
-    yaml = YAML.dump({
+    yaml = YAML.stringify({
         jcid: data.jcid,
         title: data.name,
         'host-organisation': data.uni,
