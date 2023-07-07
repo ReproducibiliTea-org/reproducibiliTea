@@ -3,12 +3,12 @@
 jcid: itu-copenhagen
 title: ITU Copenhagen
 host-organisation: IT University of Copenhagen
-host-org-url: 
+host-org-url: ""
 osf: dcekr
 zotero: WR5KZ5EU
-website: 
-twitter: 
-signup: 
+website: ""
+twitter: ""
+signup: ""
 organisers:
   - Jan Vornhagen
 contact: javo@itu.dk
