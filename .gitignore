@@ -15,3 +15,4 @@ npm-debug.log
 _local/.idea*
 _local/venv
 _journal-clubs/.Rhistory
+.Rhistory

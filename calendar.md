@@ -5,7 +5,7 @@ title:  "ReproducibiliTea Calendar"
 
 # ReproducibiliTea Online
 
-As travel and meetings are postponed or cancelled to help reduce the spread of COVID-19, ReproducibiliTea is encouraging journal clubs to continue meeting remotely. Firstly, openness and reproducibility stop for no pandemic (especially if you wash your hands before turning on video chat!). Secondly, and much more importantly, while social distancing and self-isolation are needed, it can be lonely working out-of-office, and maybe completely by yourself, for too long. Virtual ReproducibiliTea meetings could help provide community in a time where it is most needed! 
+Many Journal Clubs meet (partly) online and are happy to welcome guests! 
 
 The ReproducibiliTea calendar below lists online journal club sessions and events which are open to wider participation. Spaces at events may be limited, and will be distributed at the discretion of the organisers. See an event's details for more information on how to attend.
 
