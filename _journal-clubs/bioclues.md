@@ -1,26 +1,33 @@
 ---
-
+    
 jcid: bioclues
 title: Bioclues
 host-organisation: Bioclues.org
-host-org-url: http://www.bioclues.org
-osf: null
-zotero: null
-website: 
+host-org-url: http://bioclues.org
+osf: "null"
+zotero: "null"
+website: ""
 twitter: bioclues
-signup: 
-organisers: [Indrani Biswas, KSri Manjari, Somenath Dutta, Ananya Verma, Prash Suravajhala]
+signup: core@bioclues.org
+organisers:
+  - Indrani Biswas, Goldy Singh, Malavika J, KS Manjari, Rajul Jain, Anil Kumar
+    S and Prash Suravajhala
 contact: core@bioclues.org
-additional-contact: [prash@Bioclues.org]
-address: [Bioclues.org, India]
+additional-contact:
+  - prash@Bioclues.org
+address:
+  - Bioclues.org
+  - India
 country: India
-geolocation: [17.494804, 78.411324]
-last-message-timestamp: 1666843940
+geolocation:
+  - 17.494804
+  - 78.411324
+last-message-timestamp: 1690373711
 last-message-level: 0
-last-update: prash@bioclues.org
-last-update-timestamp: 1666843940
-last-update-message: >-
-  
+last-update: core@bioclues.org
+last-update-timestamp: 1690373711
+last-update-message: ""
+
 
 ---
 
