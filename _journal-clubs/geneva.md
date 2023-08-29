@@ -1,5 +1,5 @@
 ---
-
+    
 jcid: geneva
 title: Geneva
 host-organisation: University of Geneva
@@ -9,18 +9,26 @@ zotero: BV9D6PMV
 website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
 signup: caro.hautekiet@unige.ch
-organisers: [Caro Hautekiet, Stéphanie Jeanneret]
+organisers:
+  - Caro Hautekiet
+  - Abigail Licata
 contact: caro.hautekiet@unige.ch
-additional-contact: [stephanie.jeanneretcuervo@unige.ch]
-address: [University of Geneva, Faculty of Psychology and Educational Sciences, 40 Boulevard Pont d'Arve, 1205 Geneva]
+additional-contact: []
+address:
+  - University of Geneva
+  - Faculty of Psychology and Educational Sciences
+  - 40 Boulevard Pont d'Arve
+  - 1205 Geneva
 country: Switzerland
-geolocation: [46.19459651321258, 6.139898300170898]
-last-message-timestamp: 1675340929
+geolocation:
+  - 46.19459651321258
+  - 6.139898300170898
+last-message-timestamp: 1693296997
 last-message-level: 0
 last-update: caro.hautekiet@unige.ch
-last-update-timestamp: 1675340929
-last-update-message: >-
-  
+last-update-timestamp: 1693296997
+last-update-message: ""
+
 
 ---
 
