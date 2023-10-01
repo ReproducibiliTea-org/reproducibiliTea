@@ -4,31 +4,35 @@ jcid: munich
 title: Munich
 host-organisation: Ludwig-Maximilians-Universität Munich
 host-org-url: https://www.uni-muenchen.de
-osf: "null"
-zotero: "null"
+osf: null"
+zotero: null"
 website: https://www.osc.uni-muenchen.de/members/reproducibilitea/index.html
 twitter: LMUMunichTea
 signup: reproducibilitea.munich@gmail.com
 organisers:
-  - Laura Goetz,Viktoria Wiegelmann,Gracia Pruem,Alp Kaan Aksu,Finia Loeb,Julian
-    Lange
+  - Laura Goetz
+  - Viktoria Wiegelmann
+  - Gracia Pruem
+  - Alp Kaan Aksu
+  - Finia Loeb
+  - Julian Lange
 contact: reproducibilitea.munich@gmail.com
 additional-contact: []
 address:
-  - Psychology (student council psychology)
+  - "[Psychology (student council psychology)"
   - LMU Munich
   - Leopoldstrasse 13 (Briefkasten Nr. 7)
   - 80802 Munich
-  - Bavaria
+  - Bavaria]
 country: Germany
 geolocation:
   - 48.15928719999999
   - 11.5853531
-last-message-timestamp: 1696154658
+last-message-timestamp: 1696155480
 last-message-level: 0
 last-update: reproducibilitea.munich@gmail.com
-last-update-timestamp: 1696154658
-last-update-message: Updated list of organizers; added second, more specific url
+last-update-timestamp: 1696155480
+last-update-message: Fixed formatting
 
 
 ---
