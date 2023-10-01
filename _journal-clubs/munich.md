@@ -28,10 +28,10 @@ country: Germany
 geolocation:
   - 48.15928719999999
   - 11.5853531
-last-message-timestamp: 1696155774
+last-message-timestamp: 1696155921
 last-message-level: 0
 last-update: reproducibilitea.munich@gmail.com
-last-update-timestamp: 1696155774
+last-update-timestamp: 1696155921
 last-update-message: Fixed formatting
 
 
