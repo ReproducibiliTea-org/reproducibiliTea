@@ -12,7 +12,7 @@
 
     <aside class="jc-info">
         <div class="jc-details">
-            {% if jc.host-organisation %}
+            {% if jc.host-organisation and host-organisation != "" and host-organisation != "null" %}
             <div class="icon-item" title="Organisation website"><i class="fas fa-globe"></i>
                 {% if jc.host-org-url %}
                 <a href="{{ jc.host-org-url }}" title="{{ jc.host-organisation }}">
@@ -26,27 +26,27 @@
             </div>
             {% endif %}
 
-            {% if jc.website %}
+            {% if jc.website and jc.website != "" and jc.website != "null" %}
             <div class="icon-item" title="JC website"><i class="fas fa-globe"></i> <a href="{{ jc.website }}" title="{{ jc.website }}">{{ jc.website | truncate: 25 }}</a></div>
             {% endif %}
 
-            {% if jc.osf %}
+            {% if jc.osf and jc.osf != "" and jc.osf != "null" %}
             <div class="icon-item" title="OSF repository"><i class="ai ai-osf"></i> <a href="https://osf.io/{{ jc.osf }}/">osf.io/{{ jc.osf }}</a></div>
             {% endif %}
 
-            {% if jc.zotero %}
+            {% if jc.zotero and jc.zotero != "" and jc.zotero != "null" %}
             <div class="icon-item" title="Zotero repository"><i class="ai ai-zotero"></i> <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/{{ jc.zotero }}/">collection</a></div>
             {% endif %}
 
-            {% if jc.twitter %}
+            {% if jc.twitter and jc.twitter != "" and jc.twitter != "null" %}
             <div class="icon-item" title="Twitter"><i class="fab fa-twitter"></i> <a href="https://twitter.com/{{ jc.twitter }}" title="@{{ jc.twitter }}">@{{ jc.twitter | truncate: 25 }}</a></div>
             {% endif %}
 
-            {% if jc.signup %}
+            {% if jc.signup and jc.signup != "" and jc.signup != "null" %}
             <div class="icon-item" title="Signup"><i class="fas fa-envelope"></i> <a href="{% if jc.signup contains '@' %}mailto:{% endif %}{{ jc.signup }}" title="{{ jc.signup }}">{{ jc.signup | truncate: 25 }}</a></div>
             {% endif %}
 
-            {% if jc.contact %}
+            {% if jc.contact and jc.contact != "" and jc.contact != "null" %}
             <div class="icon-item" title="Enquiries"><i class="fas fa-question"></i>
                 <a href="mailto:{{jc.contact}}?Subject=ReproducibiliTea website query" title="{{ jc.contact }}">{{ jc.contact | truncate: 25 }}</a></div>
             {% endif %}
@@ -54,7 +54,7 @@
 
         <hr/>
 
-        {% if jc.organisers %}
+        {% if jc.organisers and jc.organisers != "" and jc.organisers != "null" %}
         <div class="jc-organisers">
             {% for p in jc.organisers %}
             <div class="icon-item" title="Organisers"><i class="fas fa-user"></i> <span title="{{ p }}">{{ p | truncate: 25 }}</span></div>
