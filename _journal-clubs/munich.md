@@ -4,8 +4,8 @@ jcid: munich
 title: Munich
 host-organisation: Ludwig-Maximilians-Universität Munich
 host-org-url: https://www.uni-muenchen.de
-osf: null"
-zotero: null"
+osf: 
+zotero: 
 website: https://www.osc.uni-muenchen.de/members/reproducibilitea/index.html
 twitter: LMUMunichTea
 signup: reproducibilitea.munich@gmail.com

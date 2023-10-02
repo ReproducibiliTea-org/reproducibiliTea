@@ -4,9 +4,9 @@ jcid: bioclues
 title: Bioclues
 host-organisation: Bioclues.org
 host-org-url: http://bioclues.org
-osf: "null"
-zotero: "null"
-website: ""
+osf: 
+zotero:
+website: 
 twitter: bioclues
 signup: core@bioclues.org
 organisers:
