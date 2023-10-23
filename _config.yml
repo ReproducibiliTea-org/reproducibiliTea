@@ -16,7 +16,7 @@
 title: ReproducibiliTea
 email: reproducibilitea@gmail.com
 github_user: mjaquiery
-logo: /assets/images/reproducibiliTea_logo.svg
+logo: /assets/images/reproducibiliTea_logo.jpg
 description: >- # this means to ignore newlines until "baseurl:"
   ReproducibiliTea - Journal Clubs for Open Science
 baseurl: "" # the subpath of your site, e.g. /blog
