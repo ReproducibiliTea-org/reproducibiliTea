@@ -9,8 +9,8 @@ zotero: VIK5MN2M
 website: 
 twitter: 
 signup: https://mailman.stanford.edu/mailman/listinfo/reproducibilitea
-organisers: [Robert Thibault]
-contact: robert.thibault@stanford.edu
+organisers: [Mario Malički]
+contact: mario.malicki@stanford.edu
 additional-contact: []
 address: [We meet on campus. Room details are sent to the mailing list before each meeting.]
 country: United States
