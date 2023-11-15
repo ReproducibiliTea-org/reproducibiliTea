@@ -9,7 +9,7 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Emma Sullivan, CÃ¡tia Ferreira De Oliveira, Kirralise Hansford]
+organisers: [Emma Sullivan, Cátia Ferreira De Oliveira, Kirralise Hansford]
 contact: psychology-reproducibilitea@york.ac.uk
 additional-contact: []
 address: [Heslington, York , YO10 5DD]
