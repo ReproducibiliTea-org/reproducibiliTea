@@ -35,7 +35,11 @@
             {% endif %}
 
             {% if jc.zotero and jc.zotero != "" and jc.zotero != "null" %}
-            <div class="icon-item" title="Zotero repository"><i class="ai ai-zotero"></i> <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/{{ jc.zotero }}/">collection</a></div>
+                {% if jc.zotero contains "/" %}
+                <div class="icon-item" title="Zotero repository"><i class="ai ai-zotero"></i> <a href="https://www.zotero.org/{{ jc.zotero }}/">collection</a></div>
+                {% else %}
+                <div class="icon-item" title="Zotero repository"><i class="ai ai-zotero"></i> <a href="https://www.zotero.org/groups/2354006/reproducibilitea/items/collectionKey/{{ jc.zotero }}/">collection</a></div>
+                {% endif %}
             {% endif %}
 
             {% if jc.twitter and jc.twitter != "" and jc.twitter != "null" %}
