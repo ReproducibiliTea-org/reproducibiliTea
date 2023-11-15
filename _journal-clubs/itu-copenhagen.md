@@ -3,12 +3,12 @@
 jcid: itu-copenhagen
 title: ITU Copenhagen
 host-organisation: IT University of Copenhagen
-host-org-url: 
+host-org-url: ""
 osf: dcekr
 zotero: WR5KZ5EU
-website: 
-twitter: 
-signup: 
+website: ""
+twitter: ""
+signup: ""
 organisers:
   - Jan Vornhagen
 contact: javo@itu.dk
@@ -20,10 +20,10 @@ country: Denmark
 geolocation:
   - 55.659407655020196
   - 12.591029405593872
-last-message-timestamp: 1688735484
+last-message-timestamp: 1700037645
 last-message-level: 0
 last-update: javo@itu.dk
-last-update-timestamp: 1688735484
+last-update-timestamp: 1700037645
 last-update-message: ""
 
 
