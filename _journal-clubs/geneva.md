@@ -8,11 +8,10 @@ osf: khv7m
 zotero: BV9D6PMV
 website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
-signup: caro.hautekiet@unige.ch
+signup: johanna.hein@unige.ch
 organisers:
-  - Caro Hautekiet
-  - Abigail Licata
-contact: caro.hautekiet@unige.ch
+  - Johanna Hein,Abigail Licata
+contact: johanna.hein@unige.ch
 additional-contact: []
 address:
   - University of Geneva
@@ -23,10 +22,10 @@ country: Switzerland
 geolocation:
   - 46.19459651321258
   - 6.139898300170898
-last-message-timestamp: 1693296997
+last-message-timestamp: 1702375583
 last-message-level: 0
 last-update: caro.hautekiet@unige.ch
-last-update-timestamp: 1693296997
+last-update-timestamp: 1702375583
 last-update-message: ""
 
 
