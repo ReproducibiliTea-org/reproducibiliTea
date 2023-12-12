@@ -12,21 +12,21 @@ host-org-url: https://www.yorksj.ac.uk
 
 # Replace "[JC Comm Lead, Organiser Two, Organiser Three]" with a list of the people/person organising the journal club separated by commas 
 # The first name will be the person ("JC Communication Lead") we will contact to communicate news about ReproducibiliTea 
-organisers: [Natalie Smith, Danielle Paddock] 
+organisers: [Emma Tecwyn] 
 
 # Replace "j.c.Owner@yourCity.ac.uk" with the email of the JC Communication Lead
-contact: n.smith2@yorksj.ac.uk 
+contact: e.tecwyn@yorksj.ac.uk
 
 # Replace "department, university, street, postcode/zipcode, state, country" with the departmental address of the JC Communication Lead (we need that to send you merchandise)
-address: [Department of Psychology, York St John University, Lord MayorÕs Walk, York, North Yorkshire, Y031 7EX]
+address: [Department of Psychology, York St John University, Lord Mayor's Walk, York, North Yorkshire, Y031 7EX]
 
 country: United Kingdom
 
 geolocation: [53.9649139, -1.0800959]
-last-message-level: 3
-last-message-timestamp: 1685443345
-last-update: n.smith2@yorksj.ac.uk
-last-update-timestamp: 1649048400
+last-message-level: 0
+last-message-timestamp: 1702378527
+last-update: 
+last-update-timestamp: 1702378527
 last-update-message: >-
 
 ---
