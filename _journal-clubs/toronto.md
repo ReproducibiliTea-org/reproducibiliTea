@@ -10,7 +10,7 @@ website: ""
 twitter: ""
 signup: https://calendar.google.com/calendar/u/0?cid=MzNiZjBlYWU4NzMyYWFiMTg0MTI2MWY5ZWY2NzlhN2JmNTgyMDAxNzBkNTdiZWI1MWQ4YTkwM2UwODYyNDI2OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 organisers:
-  - Gabriel Crone
+  - Gabriel Crone and Spencer Arshinoff
 contact: reproducibiliteatoronto@gmail.com
 additional-contact: []
 address:
@@ -24,14 +24,11 @@ country: Canada
 geolocation:
   - 43.7728399
   - -79.49499449999999
-last-message-timestamp: 1697155201
+last-message-timestamp: 1705420189
 last-message-level: 0
-last-update: gcrone14@gmail.com
-last-update-timestamp: 1697155201
-last-update-message: >-
-  Request to edit for Toronto Journal Club.
-   
-   Club description: Journal club meeting every 2 weeks to discuss topics and papers related to reproducibilty! Reading the papers is encouraged, but optional. Come along for discussion, snacks, & open science!
+last-update: reproducibiliteatoronto@gmail.com
+last-update-timestamp: 1705420189
+last-update-message: ""
 
 
 ---
