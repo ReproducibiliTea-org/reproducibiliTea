@@ -10,7 +10,7 @@ website: ""
 twitter: ""
 signup: https://calendar.google.com/calendar/u/0?cid=MzNiZjBlYWU4NzMyYWFiMTg0MTI2MWY5ZWY2NzlhN2JmNTgyMDAxNzBkNTdiZWI1MWQ4YTkwM2UwODYyNDI2OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 organisers:
-  - Gabriel Crone and Spencer Arshinoff
+  - Gabriel Crone, Spencer Arshinoff
 contact: reproducibiliteatoronto@gmail.com
 additional-contact: []
 address:
@@ -24,10 +24,10 @@ country: Canada
 geolocation:
   - 43.7728399
   - -79.49499449999999
-last-message-timestamp: 1705420189
+last-message-timestamp: 1705421740
 last-message-level: 0
 last-update: reproducibiliteatoronto@gmail.com
-last-update-timestamp: 1705420189
+last-update-timestamp: 1705421740
 last-update-message: ""
 
 
