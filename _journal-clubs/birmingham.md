@@ -9,19 +9,18 @@ zotero: N32UZXI6
 website: 
 twitter: BrumReproTea
 signup: 
-organisers: [Connor Keating, Joanne McCuaig, Mahmoud Elsherif, Catherine Laverty]
-contact: cxk655@student.bham.ac.uk
-additional-contact: [JXM909@student.bham.ac.uk, mahmoud.medhat.elsherif@gmail.com, cml704@student.bham.ac.uk]
+organisers: [Vicky Lyon]
+contact: v.lyon@bham.ac.uk
+additional-contact: []
 address: [52 Pritchatts Rd, University of Birmingham, Edgbaston, Birmingham , B15 2SA]
 country: United Kingdom
 geolocation: [52.45291034989549, -1.9277572631835938]
 last-message-timestamp: 1671169843
 last-message-level: 0
 last-update: JXM909@student.bham.ac.uk
-last-update-timestamp: 1671169843
+last-update-timestamp: 1705589739
 last-update-message: >-
   
 
 ---
 
-This journal club is no longer active but the content on the osf page remains posted. If you are interested in restarting the group, please do get in touch and the previous organisers would be happy to assist with handover.
