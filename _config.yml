@@ -25,6 +25,10 @@ twitter_username: ReproducibiliT
 mastodon:
   - username: ReproducibiliTeaGlobal
     instance: scicomm.xyz
+linkedin_username: reproducibilitea
+bluesky: 
+  - username: reproducibilitea
+    instance: bsky.social
 
 collections:
   - journal-clubs
