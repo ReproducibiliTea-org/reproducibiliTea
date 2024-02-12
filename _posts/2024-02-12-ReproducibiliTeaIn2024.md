@@ -9,7 +9,7 @@ tags: [Steering Committee]
 
 The [ReproducibiliTea Steering Community]({% post_url 2021-01-28-A-new-year,-a-new-ReproducibiliTea-Steering-Committee %}) is expanding and changing yet again to make sure that we keep the early career researcher (ECR) perspective to building open science communities as well as allowing for more diverse perspectives. This year, we are welcoming two new committee members who will bring fresh impulses to our work while saying thank you and goodbye to our fantastic former committee chair Jan Vornhagen.
 
-So without further ado:
+So without further ado,
 
 **Please join us in welcoming our new committee members:**
 
@@ -61,7 +61,7 @@ William is currently a postdoc in the Department of Psychology at the University
 {% include image.html url="blog/William2.png" alt="William Ngiam" description="" %}
 
 
+# Plans for 2024
 
-
-We have a lot of exciting projects and we are always looking for ideas. If you want to get involved, have a cool idea you think we could tackle, or have some critique for us, please [get in touch](mailto: ReproducibilITea@gmail.com)
+We have a lot of exciting projects and we are always looking for ideas. If you want to get involved, have a cool idea you think we could tackle, or have some critique for us, please [get in touch](mailto: ReproducibilITea@gmail.com).
 
