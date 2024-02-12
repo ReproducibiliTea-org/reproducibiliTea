@@ -24,19 +24,23 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 The ReproducibiliTea parent organisation is run by a Steering Committee of ECR volunteers: 
 
 
-* Sophia Crüwell [@cruwelli](https://twitter.com/cruwelli) (Co-founder)
+* Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Chair & Co-founder)
 * Helena Gellersen [@hgellersen](https://twitter.com/hgellersen)
 * Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
 * Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
-* William Ngiam [@will_ngiam](https://twitter.com/will_ngiam)
-* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
-* Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) (Chair)
+* Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
+* William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
+* Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
+
+
 
 The Steering Committee alumni act as an Advisory Board who can be consulted when necessary.
 The Advisory Board are:
 
-* Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
 * Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy) (Co-founder)
+* Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
+* Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
+* Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) 
 
 
 ## Podcast
