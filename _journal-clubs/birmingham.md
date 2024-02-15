@@ -11,23 +11,26 @@ twitter: BrumReproTea
 signup: ""
 organisers:
   - Vicky Lyon
+  - Danai Bagkou Dimakou
+  - Katherine Eales
+  - Bircan Ciytak
 contact: v.lyon@bham.ac.uk
-additional-contact: []
+additional-contact:
+  - k.l.eales@bham.ac.uk
+  - d.bagkou@bham.ac.uk
+  - b.ciytak.1@bham.ac.uk
 address:
-  - 52 Pritchatts Rd
+  - College of Medical and Dental Sciences (MDS)
   - University of Birmingham
-  - Edgbaston
-  - Birmingham
-  - B15 2SA
 country: United Kingdom
 geolocation:
   - 52.45291034989549
   - -1.9277572631835938
-last-message-timestamp: 1705937848
+last-message-timestamp: 1707999244
 last-message-level: 0
 last-update: v.lyon@bham.ac.uk
-last-update-timestamp: 1705937848
-last-update-message: change organisers
+last-update-timestamp: 1707999244
+last-update-message: add new admins
 
 
 ---
