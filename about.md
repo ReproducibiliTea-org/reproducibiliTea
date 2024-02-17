@@ -37,6 +37,8 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 The Steering Committee alumni act as an Advisory Board who can be consulted when necessary.
 The Advisory Board are:
 
+* Katie Drax
+* Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
 * Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
 * Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
