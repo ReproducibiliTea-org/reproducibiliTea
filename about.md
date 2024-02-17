@@ -47,6 +47,6 @@ The Advisory Board are:
 
 ## Podcast
 
-Not ready to start your own journal club, but interested in Open Science and want to learn more? We regularly resease ReproducibiliTea podcast episodes that highlight the great work of early career researchers in Open Science. To listen in, check out the [podcast webpage <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://soundcloud.com/reproducibilitea).
+Not ready to start your own journal club, but interested in Open Science and want to learn more? We also resease ReproducibiliTea podcast episodes that highlight the great work of early career researchers in Open Science. To listen in, check out the [podcast webpage <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://soundcloud.com/reproducibilitea).
 
 
