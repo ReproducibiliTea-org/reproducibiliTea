@@ -1,26 +1,35 @@
 ---
-
+    
 jcid: leuven
 title: Leuven
 host-organisation: KU Leuven
 host-org-url: https://www.kuleuven.be/kuleuven/
 osf: zjbkt
 zotero: IG59GZD6
-website: 
+website: ""
 twitter: LeuvenTea
 signup: reproducibilitealeuven@kuleuven.be
-organisers: [Olivia Kirtley, Aline Claesen, Eline Van Geert, Naeem Muhammad, Amélie Godefroidt, Ginette Lafit, Benjamín Šímsa]
+organisers:
+  - Joanne Beames, Benjamin Kunc
 contact: reproducibilitealeuven@kuleuven.be
 additional-contact: []
-address: [Olivia Kirtley, Center for Contextual Psychiatry, KU Leuven, Onderzoeksgroep Psychiatrie, ON V Herestraat 49 - bus 1029, 3000 Leuven]
+address:
+  - Joanne Beames
+  - Center for Contextual Psychiatry
+  - KU Leuven
+  - Onderzoeksgroep Psychiatrie
+  - ON V Herestraat 49 - bus 1029
+  - 3000 Leuven
 country: Belgium
-geolocation: [50.8760129, 4.7051696]
-last-message-timestamp: 1678379786
+geolocation:
+  - 50.8760129
+  - 4.7051696
+last-message-timestamp: 1709117756
 last-message-level: 0
 last-update: reproducibilitealeuven@kuleuven.be
-last-update-timestamp: 1678379786
-last-update-message: >-
-  Change group coordinators
+last-update-timestamp: 1709117756
+last-update-message: Change organising committee
+
 
 ---
 
