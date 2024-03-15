@@ -10,26 +10,23 @@ website: ""
 twitter: UChicagoTea
 signup: ""
 organisers:
-  - Anna Corriveau
-  - Anita Restrepo
-  - John Veillette
-  - Brady Roberts
+  - Anna Corriveau,Anita Restrepo,John Veillette,Brady Roberts
 contact: corriveaual@chicago.edu
 additional-contact:
   - wngiam@uchicago.edu
 address:
-  - 940 E 57th St
-  - Chicago
+  - Green 117
+  - University of Chicago
   - Illinois 60637
-country: United Kingdom
+country: United States
 geolocation:
   - 41.7890089304908
   - -87.59953022003174
-last-message-timestamp: 1710535104
+last-message-timestamp: 1710535348
 last-message-level: 0
 last-update: wngiam@uchicago.edu
-last-update-timestamp: 1710535104
-last-update-message: Update organizers for Summer 2024
+last-update-timestamp: 1710535348
+last-update-message: Fix mistake that put us in the UK!
 
 
 ---
