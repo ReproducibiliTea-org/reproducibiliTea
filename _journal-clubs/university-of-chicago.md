@@ -10,7 +10,10 @@ website: ""
 twitter: UChicagoTea
 signup: ""
 organisers:
-  - Anna Corriveau,Anita Restrepo,John Veillette,Brady Roberts
+  - Anna Corriveau
+  - Anita Restrepo
+  - John Veillette
+  - Brady Roberts
 contact: corriveaual@chicago.edu
 additional-contact:
   - wngiam@uchicago.edu
@@ -22,15 +25,15 @@ country: United States
 geolocation:
   - 41.7890089304908
   - -87.59953022003174
-last-message-timestamp: 1710535348
+last-message-timestamp: 1710536035
 last-message-level: 0
 last-update: wngiam@uchicago.edu
-last-update-timestamp: 1710535348
-last-update-message: Fix mistake that put us in the UK!
+last-update-timestamp: 1710536035
+last-update-message: Update organizers for Summer 2024 onwards
 
 
 ---
 
 The University of Chicago ReproducibliTea Journal Club meets every second week during each quarter to discuss meta-science topics such as reproducibility, open science and more! An initiative started by graduate students and early-career researchers in the Psychology department, the goal is to create a supportive community and empower each other to undertake rigorous and open research practices!
 
-To subscribe to our mailing list, please email Anna Corriveau(mailto:corriveaual@uchicago.edu) with your @uchicago.edu email.
+To subscribe to our mailing list, please email [Anna Corriveau](mailto:corriveaual@uchicago.edu) with your @uchicago.edu email.
