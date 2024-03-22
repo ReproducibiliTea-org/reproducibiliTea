@@ -10,8 +10,13 @@ website: ""
 twitter: RTeaUnibasel
 signup: https://forms.gle/ccX4physW1SmiX2w7
 organisers:
-  - Tugba Akinci D'Antonoli, Claudia Weidenseiner, Xenia Deligianni, Francesco
-    Santini, Valentin Amrhein, Noëmi Capdevila, Paul Ritsche
+  - Tugba Akinci D'Antonoli
+  - Claudia Weidenseiner
+  - Xenia Deligianni
+  - Francesco Santini
+  - Valentin Amrhein
+  - Noëmi Capdevila
+  - Paul Ritsche
 contact: tugba.akincidantonoli@unibas.ch
 additional-contact: []
 address:
@@ -23,10 +28,10 @@ country: Switzerland
 geolocation:
   - 47.56103469106742
   - 7.583484649658203
-last-message-timestamp: 1711122550
+last-message-timestamp: 1711122766
 last-message-level: 0
 last-update: tugba.akincidantonoli@unibas.ch
-last-update-timestamp: 1711122550
+last-update-timestamp: 1711122766
 last-update-message: Adding a new member
 
 
