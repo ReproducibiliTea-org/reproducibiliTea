@@ -8,11 +8,13 @@ osf: 3nk9t
 zotero: KRMVQQ4E
 website: https://www.facebook.com/StudenckieKoloOpenScienceSKOS
 twitter: ""
-signup: ""
+signup: skos@swps.edu.pl
 organisers:
+  - Małgorzata Wiener
   - Paulina Manduch
-contact: paulina.manduch@gmail.com
-additional-contact: []
+contact: skos@swps.edu.pl
+additional-contact:
+  - paulina.manduch@gmail.com
 address:
   - N210
   - Chodakowska 19/31
@@ -22,11 +24,11 @@ country: Poland
 geolocation:
   - 52.22779941887071
   - 21.02783203124996
-last-message-timestamp: 1696948078
+last-message-timestamp: 1711276171
 last-message-level: 0
 last-update: paulina.manduch@gmail.com
-last-update-timestamp: 1696948078
-last-update-message: ""
+last-update-timestamp: 1711276171
+last-update-message: Adding additional email address
 
 
 ---
