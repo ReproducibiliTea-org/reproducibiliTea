@@ -1,26 +1,35 @@
 ---
-
+    
 jcid: sheffield
 title: Sheffield
 host-organisation: The University of Sheffield
 host-org-url: https://www.sheffield.ac.uk/
 osf: hgq26
-zotero: null
-website: 
-twitter: 
+zotero: "null"
+website: https://reproducibilitea-sheffield.github.io/
+twitter: ""
 signup: https://bit.ly/tuosrepro
-organisers: [Zuzanna B Zagrodzka, Jim Uttley]
+organisers:
+  - Zuzanna Zagrodzka
+  - Neil Shephard
+  - Jim Uttley
 contact: z.zagrodzka@sheffield.ac.uk
-additional-contact: [j.uttley@sheffield.ac.uk]
-address: [University of Sheffield, Sheffield S10 2TG,]
+additional-contact:
+  - n.shephard@sheffield.ac.uk
+  - j.uttley@sheffield.ac.uk
+address:
+  - University of Sheffield
+  - Sheffield S10 2TG
 country: United Kingdom
-geolocation: [53.3809409, -1.4879469]
-last-message-timestamp: 1669798302
+geolocation:
+  - 53.3809409
+  - -1.4879469
+last-message-timestamp: 1711467163
 last-message-level: 0
 last-update: z.zagrodzka@sheffield.ac.uk
-last-update-timestamp: 1669798302
-last-update-message: >-
-  Edit description 
+last-update-timestamp: 1711467163
+last-update-message: "Add lead organiser and update the description of the group "
+
 
 ---
 
@@ -36,8 +45,9 @@ Anyone is welcome to propose a paper or topic to discuss.
 
 During each session, one or more members volunteer to lead the discussion. The volunteer/-s prepare a short introduction to the paper/blog post/talk/topic and facilitate discussion. 
 
+To learn more, check out our website: https://reproducibilitea-sheffield.github.io/ 
 
 Practical information
 
-If you're a student, early career researcher or staff, please do come and join us!  Just log into MUSE, then [sign up to our Google group](https://bit.ly/tuosrepro) and [subscribe to our Google calendar](https://calendar.google.com/calendar/u/0?cid=Y19jcmJkYm8wbHVwNXJmZDlnam90aHN2MWRxMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
+To join us [sign up to our Google group](https://groups.google.com/a/sheffield.ac.uk/g/reproducibilitea-googlegroup) and [subscribe to our Google calendar](https://calendar.google.com/calendar/u/0?cid=Y19jcmJkYm8wbHVwNXJmZDlnam90aHN2MWRxMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
 Do not hesitate to get in touch if you have any trouble joining the group!
