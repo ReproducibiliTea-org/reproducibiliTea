@@ -5,18 +5,15 @@ title: Sheffield
 host-organisation: The University of Sheffield
 host-org-url: https://www.sheffield.ac.uk/
 osf: hgq26
-zotero: "null"
+zotero: null"
 website: https://reproducibilitea-sheffield.github.io/
 twitter: ""
-signup: https://bit.ly/tuosrepro
+signup: https://groups.google.com/a/sheffield.ac.uk/g/reproducibilitea-googlegroup
 organisers:
-  - Zuzanna Zagrodzka
-  - Neil Shephard
-  - Jim Uttley
+  - Zuzanna Zagrodzka,Neil Shephard,Jim Uttley
 contact: z.zagrodzka@sheffield.ac.uk
 additional-contact:
-  - n.shephard@sheffield.ac.uk
-  - j.uttley@sheffield.ac.uk
+  - n.shephard@sheffield.ac.uk,j.uttley@sheffield.ac.uk
 address:
   - University of Sheffield
   - Sheffield S10 2TG
@@ -24,10 +21,10 @@ country: United Kingdom
 geolocation:
   - 53.3809409
   - -1.4879469
-last-message-timestamp: 1711467163
+last-message-timestamp: 1711467518
 last-message-level: 0
 last-update: z.zagrodzka@sheffield.ac.uk
-last-update-timestamp: 1711467163
+last-update-timestamp: 1711467518
 last-update-message: "Add lead organiser and update the description of the group "
 
 
