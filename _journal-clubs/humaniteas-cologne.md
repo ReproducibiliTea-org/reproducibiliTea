@@ -10,13 +10,10 @@ website: https://ub.uni-koeln.de/en/courses-consultations/reproducibilitea-in-th
 twitter: ""
 signup: https://lists.uni-koeln.de/mailman/listinfo/reproducibilitea-humaniteas
 organisers:
-  - Elen le Foll
-  - Denis Arnold
-  - Gabriele Schwiertz
+  - Elen Le Foll,Denis Arnold,Gabriele Schwiertz
 contact: elefoll@uni-koeln.de
 additional-contact:
-  - darnold4@uni-koeln.de
-  - gabriele.schwiertz@uni-koeln.de
+  - darnold4@uni-koeln.de,gabriele.schwiertz@uni-koeln.de
 address:
   - Room 4.006
   - Cologne University and City Library
@@ -26,11 +23,11 @@ country: Germany
 geolocation:
   - 50.92551750567929
   - 6.928178071975708
-last-message-timestamp: 1711532143
+last-message-timestamp: 1711618118
 last-message-level: 0
-last-update: elefoll@uni-koeln.de
-last-update-timestamp: 1711532143
-last-update-message: API creation of humaniteas-cologne.md
+last-update: gabriele.schwiertz@uni-koeln.de
+last-update-timestamp: 1711618118
+last-update-message: typo corrected in elen's name
 
 
 ---
