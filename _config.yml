@@ -25,7 +25,9 @@ twitter_username: ReproducibiliT
 mastodon:
   - username: ReproducibiliTeaGlobal
     instance: scicomm.xyz
-linkedin_username: reproducibilitea
+linkedin: 
+  - username: reproducibilitea
+    instance: company 
 bluesky: 
   - username: reproducibilitea
     instance: bsky.social
