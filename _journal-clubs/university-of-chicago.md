@@ -14,7 +14,7 @@ organisers:
   - Anita Restrepo
   - John Veillette
   - Brady Roberts
-contact: corriveaual@chicago.edu
+contact: corriveaual@uchicago.edu
 additional-contact:
   - wngiam@uchicago.edu
 address:
