@@ -11,7 +11,7 @@ twitter: ""
 signup: forwardfocusonvoice@gmail.com
 organisers:
   - Maura Philippone (she/her), M.A., CCC-SLP
-  - Rebecca von Duering (they/them), M.S., CCC-SLP
+  - Becks von Duering (they/them), M.S., CCC-SLP
 contact: forwardfocusonvoice@gmail.com
 additional-contact: []
 address:
