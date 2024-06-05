@@ -10,12 +10,10 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Lianne Wolsink
-  - George Jacob
-  - Gen Hartanto
-  - Robert Reichert
-contact: lianne.wolsink@ruhr-uni-bochum.de
-additional-contact: []
+  - Lianne Wolsink, George Jacob, Gen Hartanto, Raphael Merz, Robert Reichert
+contact: reproducibilitea@ruhr-uni-bochum.de
+additional-contact:
+  - lianne.wolsink@ruhr-uni-bochum.de
 address:
   - Room IB/6-127
   - Ruhr University Bochum
@@ -27,11 +25,11 @@ country: Germany
 geolocation:
   - 51.44589656245322
   - 7.263894081115723
-last-message-timestamp: 1696964984
+last-message-timestamp: 1717599137
 last-message-level: 0
 last-update: lianne.wolsink@ruhr-uni-bochum.de
-last-update-timestamp: 1696964984
-last-update-message: API creation of bochum.md
+last-update-timestamp: 1717599137
+last-update-message: ""
 
 
 ---
