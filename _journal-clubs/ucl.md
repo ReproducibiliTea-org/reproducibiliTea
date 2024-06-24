@@ -3,7 +3,7 @@ jcid: ucl
 title: University College London
 host-organisation: University College London
 host-org-url: 
-website: https://osf.io/q7pr4/
+website: https://sites.google.com/view/reproducibilitea-ucl/ 
 signup:
 organisers: [Jessie Baldwin, Tabea Schoeler]
 contact: reproducibility@ucl.ac.uk
