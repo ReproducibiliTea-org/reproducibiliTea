@@ -1,7 +1,7 @@
 ---
     
 jcid: makerere-university-center-for-health-and-population-research
-title: Makerere University Center for Health and Population Research
+title: MUCHAP
 host-organisation: Makerere University Center for Health and Population Research
 host-org-url: https://muchap.org/
 osf: jpx4c
