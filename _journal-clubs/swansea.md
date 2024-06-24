@@ -9,8 +9,8 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Laura Wilkinson]
-contact: l.l.wilkinson@swansea.ac.uk
+organisers: [Alecia Cousins]
+contact: A.L.Cousins@swansea.ac.uk
 additional-contact: []
 address: [Singleton Park, Swansea SA2 8PP]
 country: United Kingdom
