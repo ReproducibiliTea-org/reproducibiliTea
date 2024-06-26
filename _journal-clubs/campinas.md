@@ -8,7 +8,7 @@ osf: mhkxs
 zotero: G4KAX6AF
 website: ""
 twitter: reproTeaBR
-signup: reproducibiliteacampians@gmail.com
+signup: reproducibiliteacampinas@gmail.com
 organisers:
   - Rafael Bastos
 contact: rafavsbastos@gmail.com
@@ -20,11 +20,12 @@ country: Brazil
 geolocation:
   - -22.90780345105838
   - -47.0654296875
-last-message-timestamp: 1719365815
+last-message-timestamp: 1719366684
 last-message-level: 0
 last-update: rafavsbastos@gmail.com
-last-update-timestamp: 1719365815
-last-update-message: API creation of campinas.md
+last-update-timestamp: 1719366684
+last-update-message: Change the contact info for email subscription from
+  "reproducibiliteacampians@gmail.com" to "reproducibiliteacampinas@gmail.com".
 
 
 ---
