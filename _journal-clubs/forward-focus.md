@@ -6,7 +6,7 @@ host-organisation: United States
 host-org-url: ""
 osf: grhxn
 zotero: forwardfocus/library
-website: https://www.instagram.com/forwardfocus_on_voice/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==
+website: https://www.instagram.com/forwardfocusonvoice/ 
 twitter: ""
 signup: forwardfocusonvoice@gmail.com
 organisers:
