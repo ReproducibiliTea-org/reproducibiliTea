@@ -10,8 +10,7 @@ website:
 twitter: bioclues
 signup: bet@bioclues.org
 organisers:
-  - Indrani Biswas, Goldy Singh, Malavika J, KS Manjari, Rajul Jain, Anil Kumar
-    S and Prash Suravajhala
+  - Hemani Sharma, K Sri Manjari, Anil Kumar S and Prash Suravajhala 
 contact: bet@bioclues.org
 additional-contact:
   - prash@Bioclues.org
