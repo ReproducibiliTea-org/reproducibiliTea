@@ -8,11 +8,11 @@ osf:
 zotero:
 website: 
 twitter: bioclues
-signup: core@bioclues.org
+signup: bet@bioclues.org
 organisers:
   - Indrani Biswas, Goldy Singh, Malavika J, KS Manjari, Rajul Jain, Anil Kumar
     S and Prash Suravajhala
-contact: core@bioclues.org
+contact: bet@bioclues.org
 additional-contact:
   - prash@Bioclues.org
 address:
