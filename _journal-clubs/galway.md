@@ -1,0 +1,35 @@
+---
+    
+jcid: galway
+title: Galway
+host-organisation: University of Galway
+host-org-url: https://www.universityofgalway.ie/
+osf: 97usx
+zotero: TTRG2DX6
+website: ""
+twitter: ""
+signup: https://forms.office.com/e/PG6x1UeGnK
+organisers:
+  - Jen Smith
+contact: jen.smith@universityofgalway.ie
+additional-contact: []
+address:
+  - Open and Digital Research Team
+  - James Hardiman Library
+  - University of Galway
+  - Ireland
+  - H91 TK33
+country: Ireland
+geolocation:
+  - 53.27922545838483
+  - -9.061574935913086
+last-message-timestamp: 1722003022
+last-message-level: 0
+last-update: jen.smith@universityofgalway.ie
+last-update-timestamp: 1722003022
+last-update-message: API creation of galway.md
+
+
+---
+
+If you're interested in open research and you're not sure where to start, or if you have plenty of experience and you're willing to share, please join our friendly group. We welcome researchers at all levels for interesting conversations!
