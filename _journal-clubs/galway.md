@@ -23,10 +23,10 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1722244372
+last-message-timestamp: 1722245606
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1722244372
+last-update-timestamp: 1722245606
 last-update-message: I've booked rooms for all of our meetings for the year, so
   I'd like to add them to our home page. How do I add them to the calendar as
   well please? Thanks!
@@ -39,10 +39,17 @@ If you're interested in open research and you're not sure where to start, or if 
 All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. Readings/topics will be updated in our calendar events.
 
 9 October 2024 (W), 11am-12pm
+
 14 November (Th), 2-3pm
+
 9 December (M), 12-1pm
+
 21 January 2025 (Tu), 1-2pm
+
 28 February (F), 10-11am
+
 26 March (W), 2-3pm
+
 29 April (Tu), 2-3pm
+
 22 May (Th), 11am-12pm
