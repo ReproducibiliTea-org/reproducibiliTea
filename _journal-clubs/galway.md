@@ -23,10 +23,10 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1722245606
+last-message-timestamp: 1722282324
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1722245606
+last-update-timestamp: 1722282324
 last-update-message: I've booked rooms for all of our meetings for the year, so
   I'd like to add them to our home page. How do I add them to the calendar as
   well please? Thanks!
@@ -36,7 +36,7 @@ last-update-message: I've booked rooms for all of our meetings for the year, so
 
 If you're interested in open research and you're not sure where to start, or if you have plenty of experience and you're willing to share, please join our friendly group. We welcome researchers at all levels for interesting conversations!
 
-All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. Readings/topics will be updated in our calendar events.
+All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. Readings are listed in our calendar events.
 
 9 October 2024 (W), 11am-12pm
 
