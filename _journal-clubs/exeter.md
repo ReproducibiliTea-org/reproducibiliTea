@@ -11,8 +11,10 @@ twitter: ""
 signup: ""
 organisers:
   - Olivia Hill-Cousins
+  - Alex Carter
 contact: o.hill-cousins@exeter.ac.uk
-additional-contact: []
+additional-contact:
+  - ac1037@exeter.ac.uk
 address:
   - Washington Singer Building
   - University of Exeter
@@ -22,11 +24,11 @@ country: United Kingdom
 geolocation:
   - 50.73311426127473
   - -3.536449670791626
-last-message-timestamp: 1721731599
+last-message-timestamp: 1724939223
 last-message-level: 0
-last-update: xd247@exeter.ac.uk
-last-update-timestamp: 1721731599
-last-update-message: Change organisers
+last-update: o.hill-cousins@exeter.ac.uk
+last-update-timestamp: 1724939223
+last-update-message: Add another organiser to page
 
 
 ---
