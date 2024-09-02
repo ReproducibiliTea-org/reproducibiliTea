@@ -1,26 +1,34 @@
 ---
-
+    
 jcid: igdore
 title: IGDORE
 host-organisation: Institute for Globally Distributed Open Research and Education
 host-org-url: https://igdore.org/
 osf: fsa9b
 zotero: 4HXFSTB7
-website: 
+website: ""
 twitter: https://twitter.com/igdoreinstitute
 signup: reproducibilitea@igdore.org
-organisers: [Paola Masuzzo, Gavin Taylor]
-contact: paola.masuzzo@igdore.org
-additional-contact: [gavin.taylor@igdore.org]
-address: [Box 1074, Kristinehöjdsgatan 9A, Gothenburg, 412 82, Sweden]
+organisers:
+  - Natalie Hyltse
+contact: natalie.hyltse@igdore.org
+additional-contact: []
+address:
+  - Sahlgrenska Science Park
+  - Medicinaregatan 8A
+  - Plan 4
+  - 413 90 Gothenburg
+  - Sweden
 country: Sweden
-geolocation: [57.706806934227394, 11.954755783081055]
-last-message-timestamp: 1661122217
+geolocation:
+  - 57.68596834561995
+  - 11.958773732185364
+last-message-timestamp: 1725277974
 last-message-level: 0
-last-update: paola.masuzzo@igdore.org
-last-update-timestamp: 1661122217
-last-update-message: >-
-  API creation of igdore.md
+last-update: gavin.taylor@igdore.org
+last-update-timestamp: 1725277974
+last-update-message: Change organizer
+
 
 ---
 
