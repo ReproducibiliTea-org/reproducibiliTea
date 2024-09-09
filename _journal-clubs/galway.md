@@ -23,10 +23,10 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1725881416
+last-message-timestamp: 1725908078
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1725881416
+last-update-timestamp: 1725908078
 last-update-message: Adding references to include Atlantic Technological University
 
 
@@ -38,7 +38,7 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 9 October 2024 (W), 11am-12pm
 
-14 November (Th), 2-3pm
+14 November (Th), 10-11am
 
 9 December (M), 12-1pm
 
