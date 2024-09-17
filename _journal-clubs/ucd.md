@@ -10,7 +10,9 @@ website: http://www.cstar.ie/
 twitter: UCD_CSTAR
 signup: cstar@ucd.ie
 organisers:
-  - Katayoun Bahramian, Dr Ricardo Segurado, Dr Keith Smart
+  - Katayoun Bahramian
+  - Dr Ricardo Segurado
+  - Dr Keith Smart
 contact: cstar@ucd.ie
 additional-contact: []
 address:
@@ -24,14 +26,19 @@ country: Ireland
 geolocation:
   - 53.310384290574774
   - -6.223207712173462
-last-message-timestamp: 1698142311
+last-message-timestamp: 1726575670
 last-message-level: 0
 last-update: cstar@ucd.ie
-last-update-timestamp: 1698142311
-last-update-message: "We would like to categorise our journal club under Dublin
-  similar to say Graz. "
+last-update-timestamp: 1726575670
+last-update-message: We're trying to add journal club dates for Sep/Oct 2024
 
 
 ---
 
+Are you interested in Open Science/Open Research? If so, consider dropping by our informal, monthly journal club that will take place in-person over lunchtime in Link 3 of the UCD James Joyce Library. All are welcome! 
 
+Readings are listed in our OSF Repository, UCD CSTAR website and below. Please read the paper beforehand so that we can have interesting discussions!
+
+Tue, 24 Sep 2024, 1-2pm
+
+Tue, 22 Oct 2024, 1-2pm
