@@ -4,7 +4,7 @@ jcid: cup-at-qub
 title: Belfast
 host-organisation: Queen's University Belfast
 host-org-url: https://www.qub.ac.uk/
-osf: https://osf.io/2rgth/
+osf: 2rgth
 zotero: U59BCX9W
 website: 
 twitter: 
