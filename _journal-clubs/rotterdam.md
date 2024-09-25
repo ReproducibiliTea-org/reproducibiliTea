@@ -9,9 +9,9 @@ zotero: null
 website: https://www.openscience-rotterdam.com/home/
 twitter: OSCRotterdam
 signup: info@openscience-rotterdam.com
-organisers: [Antonio Schettino, Eirini Botsari]
-contact: schettino@eur.nl
-additional-contact: [eirini.botsari@eur.nl]
+organisers: [Steven Verheyen, Ana Barbosa Mendes]
+contact: verheyen@essb.eur.nl
+additional-contact: [barbosamendes@esphil.eur.nl]
 address: [Erasmus Research Services, Erasmus Universiteit Rotterdam, Burgemeester Oudlaan 50, 3062 PA Rotterdam]
 country: Netherlands
 geolocation: [51.9170494, 4.525585899999999]
