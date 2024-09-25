@@ -5,16 +5,17 @@ title: Rotterdam
 host-organisation: Erasmus Universiteit Rotterdam
 host-org-url: https://www.eur.nl/en
 osf: yk9pf
-zotero: "null"
+zotero: null"
 website: https://www.openscience-rotterdam.com/home/
 twitter: OSCRotterdam
 signup: info@openscience-rotterdam.com
 organisers:
-  - Steven Verheyen, Ana Barbosa Mendes, Antonio Schettino
+  - Steven Verheyen
+  - Ana Barbosa Mendes
+  - Antonio Schettino
 contact: verheyen@essb.eur.nl
 additional-contact:
-  - barbosamendes@esphil.eur.nl
-  - schettino@eur.nl
+  - barbosamendes@esphil.eur.nl,schettino@eur.nl
 address:
   - Erasmus Research Services
   - Erasmus Universiteit Rotterdam
@@ -24,10 +25,10 @@ country: Netherlands
 geolocation:
   - 51.9170494
   - 4.525585899999999
-last-message-timestamp: 1727275596
+last-message-timestamp: 1727278924
 last-message-level: 0
 last-update: verheyen@essb.eur.nl
-last-update-timestamp: 1727275596
+last-update-timestamp: 1727278924
 last-update-message: Update logistics after long hiatus
 
 
