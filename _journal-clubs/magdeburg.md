@@ -11,8 +11,10 @@ twitter: ""
 signup: ""
 organisers:
   - Larissa Fischer
+  - Parthiban Saravanakumar
 contact: larissa.fischer@dzne.de
-additional-contact: []
+additional-contact:
+  - Parthiban.Saravanakumar@lin-magdeburg.de
 address:
   - DZNE Magdeburg
   - Leipziger Straße 44
@@ -21,11 +23,11 @@ country: Germany
 geolocation:
   - 52.10327740355333
   - 11.616153717041016
-last-message-timestamp: 1727102271
+last-message-timestamp: 1727254990
 last-message-level: 0
 last-update: larissa.fischer@dzne.de
-last-update-timestamp: 1727102271
-last-update-message: API creation of magdeburg.md
+last-update-timestamp: 1727254990
+last-update-message: ""
 
 
 ---
