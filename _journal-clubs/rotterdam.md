@@ -10,9 +10,7 @@ website: https://www.openscience-rotterdam.com/home/
 twitter: OSCRotterdam
 signup: info@openscience-rotterdam.com
 organisers:
-  - Steven Verheyen
-  - Ana Barbosa Mendes
-  - Antonio Schettino
+  - Steven Verheyen,Ana Barbosa Mendes,Antonio Schettino
 contact: verheyen@essb.eur.nl
 additional-contact:
   - barbosamendes@esphil.eur.nl,schettino@eur.nl
@@ -25,10 +23,10 @@ country: Netherlands
 geolocation:
   - 51.9170494
   - 4.525585899999999
-last-message-timestamp: 1727278924
+last-message-timestamp: 1727350625
 last-message-level: 0
 last-update: verheyen@essb.eur.nl
-last-update-timestamp: 1727278924
+last-update-timestamp: 1727350625
 last-update-message: Update logistics after long hiatus
 
 
@@ -52,4 +50,4 @@ Interested parties not employed at EUR or Erasmus MC can send an email to the le
 
 **Practical Information**
 
-After a long hiatus, ReproducibiliTea Rotterdam is starting up again in September 2024 with monthly on campus meetings. Around two weeks before the session, an invitation is sent via the mailing list of the [Open Science Community Rotterdam](https://www.openscience-rotterdam.com/home/) (to be included, please contact the lead organizer). Announcements are also made on our website ([News](https://www.openscience-rotterdam.com/categories/news/) section) and on Twitter ([@OSCRotterdam](https://twitter.com/OSCRotterdam)).
+After a long hiatus, ReproducibiliTea Rotterdam is starting up again in September 2024 with monthly on campus meetings. Around two weeks before the session, an invitation is sent through the Teams environment of the Open Science Community Rotterdam. To gain access to this environment, first register as a member of the community through the website (https://www.openscience-rotterdam.com/home/).
