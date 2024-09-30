@@ -607,9 +607,10 @@ async function callZotero(data) {
 async function callSlack(data) {
     return {
         title: 'Slack',
-        status: 'Warning',
+        status: 'Okay',
         details: [
-            `We are currently unable to automate Slack invites. Please join the workspace using the direct link: <a href="${SLACK_LINK}" target="_blank">${SLACK_LINK}</a>`
+            `Please join the workspace using the direct link: <a href="${SLACK_LINK}" target="_blank">${SLACK_LINK}</a>. 
+Please share this link with any organisers and members of your journal club who might like to join our discussions, attend networking events, or get notified about related initiatives.`
         ]
     }
 }
