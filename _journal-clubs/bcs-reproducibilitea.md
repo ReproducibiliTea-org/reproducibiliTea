@@ -1,7 +1,7 @@
 ---
     
 jcid: bcs-reproducibilitea
-title: BCS ReproducibiliTea
+title: MIT BCS
 host-organisation: Massachusetts Institute of Technology
 host-org-url: https://mit.edu/
 osf: vj8ck
@@ -11,8 +11,10 @@ twitter: ""
 signup: ""
 organisers:
   - Margaret Schroeder
+  - Djuna Von Maydell
 contact: mschro@mit.edu
-additional-contact: []
+additional-contact:
+  - djuna@mit.edu
 address:
   - Building 46
   - 43 Vassar Street
@@ -20,15 +22,17 @@ address:
   - MA 02139
 country: United States
 geolocation:
-  - 42.553080288955805
-  - -75.5859375
-last-message-timestamp: 1708979088
+  - 42.362468154303976
+  - -71.09149932861328
+last-message-timestamp: 1727719035
 last-message-level: 0
 last-update: mschro@mit.edu
-last-update-timestamp: 1708979088
-last-update-message: API creation of bcs-reproducibilitea.md
+last-update-timestamp: 1727719035
+last-update-message: I'd like to update the name to MIT BCS ReproducibiliTea and
+  update the description to reflect the fact that we are now beyond the pilot
+  stage, and have expanded in Fall 2024!
 
 
 ---
 
-We are BCS ReproducibiliTea, a community of trainees, research staff, and faculty who care about open science and rigor in MIT's Brain and Cognitive Sciences department. We are starting with a pilot semester in Spring 2024 with BCS graduate students. We will meet once a month for 3 months.
+We are MIT BCS ReproducibiliTea, a community of graduate students, postdocs, research staff, and faculty who care about open science and rigor in MIT's Brain and Cognitive Sciences department. We started in Spring 2024 with a small group, and have recently expanded. We meet about once a month to discuss topics such as mistakes, experimental design, and code and data management.
