@@ -25,10 +25,10 @@ twitter_username: ReproducibiliT
 mastodon:
   - username: ReproducibiliTeaGlobal
     instance: scicomm.xyz
-linkedin: 
+linkedin:
   - username: reproducibilitea
-    instance: company 
-bluesky: 
+    instance: company
+bluesky:
   - username: reproducibilitea
     instance: bsky.social
 
@@ -45,7 +45,7 @@ plugins:
   - jekyll-email-protect # email protection vs bots
 
 APIkeys:
-  - [maps, AIzaSyDrazW6BV7nG6ymgWdRW4VhZXLBjBtzD4g] # google Maps API key
+  - [maps, AIzaSyDsXPnhrJW3Q__6xb9DaW5C0RalHmQsz3g] # google Maps API key
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
