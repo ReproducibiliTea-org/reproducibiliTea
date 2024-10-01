@@ -10,12 +10,16 @@ website: ""
 twitter: BrumReproTea
 signup: ""
 organisers:
-  - Vicky Lyon,Katherine Eales,Danai Bagkou Dimakou,Bircan Ciytak
+  - Danai Bagkou Dimakou
+  - Katherine Eales
+  - Aamir Sohail
 contact: v.lyon@bham.ac.uk
 additional-contact:
-  - k.l.eales@bham.ac.uk,d.bagkou@bham.ac.uk,b.ciytak.1@bham.ac.uk
+  - k.l.eales@bham.ac.uk
+  - d.bagkou@bham.ac.u
+  - axs2210@student.bham.ac.uk
 address:
-  - College of Medical and Dental Sciences (MDS)
+  - College of Medicine and Health
   - University of Birmingham
   - Edgbaston
   - Birmingham
@@ -23,15 +27,15 @@ country: United Kingdom
 geolocation:
   - 52.45291034989549
   - -1.9277572631835938
-last-message-timestamp: 1713265675
+last-message-timestamp: 1727774597
 last-message-level: 0
 last-update: v.lyon@bham.ac.uk
-last-update-timestamp: 1713265675
-last-update-message: Change description to include meeting dates
+last-update-timestamp: 1727774597
+last-update-message: add new co-runner and adjust descriptions
 
 
 ---
 
-Welcome to the University of Birmingham's journal club! We are currently based in the College of Medical and Dental Sciences but hope to expand soon. 
+Welcome to the University of Birmingham's journal club! 
 
-Our next meeting will be held on the 22nd of May, 12-1pm in the Medical School (WF38).
+We are currently based in the College of Medicine and Health. We aim to meet approximately twice per term.
