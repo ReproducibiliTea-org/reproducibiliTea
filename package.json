@@ -1,6 +1,6 @@
 {
   "name": "reproducibiliTea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "debug": "netlify dev --inspect",
     "serve": "netlify dev"
