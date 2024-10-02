@@ -87,3 +87,16 @@
         {%- endif -%}
     </div>
 </header>
+<script type="text/javascript">
+    // Make the input.page-link checkboxes mutually exclusive
+    var pageLinks = document.querySelectorAll('input.page-link');
+    pageLinks.forEach(function(pageLink) {
+        pageLink.addEventListener('click', function() {
+            pageLinks.forEach(function(otherPageLink) {
+                if (otherPageLink !== pageLink) {
+                    otherPageLink.checked = false;
+                }
+            });
+        });
+    });
+</script>
