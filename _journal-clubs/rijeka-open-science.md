@@ -10,8 +10,7 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Darko Lončarić
-  - Vanja Brandić
+  - Darko Lončarić, Vanja Brandić, Valentina Martan
 contact: loncaricd@gmail.com
 additional-contact:
   - vanja.brandic1@ufri.uniri.hr
@@ -23,11 +22,12 @@ country: Croatia
 geolocation:
   - 45.32798112492116
   - 14.466020911931992
-last-message-timestamp: 1727768068
+last-message-timestamp: 1727975797
 last-message-level: 0
 last-update: loncaricd@gmail.com
-last-update-timestamp: 1727768068
-last-update-message: API creation of rijeka-open-science.md
+last-update-timestamp: 1727975797
+last-update-message: Valentina Martan (vmartan@uniri.hr) needs to be added as
+  the third organizing member of the Rijeka Open Science Club.
 
 
 ---
