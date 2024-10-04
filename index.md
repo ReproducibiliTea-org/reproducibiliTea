@@ -25,12 +25,6 @@ Want to join the movement? Just curious for now? Grab your cup of (Reproducibili
 
 <br/>
 
-# Latest Podcast
-
-{% include podcast.html %}
-
-<br/>
-
 
 # Current Journal Clubs
 
@@ -51,4 +45,8 @@ Want to join the movement? Just curious for now? Grab your cup of (Reproducibili
 {% endif %}
 {% endfor %}
 
+<br/>
 
+# Latest Podcast
+
+{% include podcast.html %}
