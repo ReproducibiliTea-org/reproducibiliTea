@@ -36,4 +36,4 @@ end
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
