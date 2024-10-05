@@ -9,8 +9,8 @@ zotero: null
 website: 
 twitter: RT_CHSUP
 signup: 
-organisers: [Jakub Smetana]
-contact: jakub.smetana02@upol.cz
+organisers: [Kryštof Klásek]
+contact: krystof.klasek01@upol.cz
 additional-contact: []
 address: [Faculty of Science, Palacky University Olomouc, 17. listopadu 1192/12, Olomouc, 771 46]
 country: Czech Republic
