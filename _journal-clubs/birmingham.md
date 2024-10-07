@@ -13,9 +13,9 @@ organisers:
   - Danai Bagkou Dimakou
   - Katherine Eales
   - Aamir Sohail
-contact: k.l.eales@bham.ac.uk
+contact: d.bagkou@bham.ac.uk
 additional-contact:
-  - d.bagkou@bham.ac.uk
+  - k.l.eales@bham.ac.uk
   - axs2210@student.bham.ac.uk
 address:
   - College of Medicine and Health
