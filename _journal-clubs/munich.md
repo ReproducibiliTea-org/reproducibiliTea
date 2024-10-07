@@ -6,7 +6,7 @@ host-organisation: Ludwig-Maximilians-Universität Munich
 host-org-url: https://www.uni-muenchen.de
 osf: 
 zotero: 
-website: https://www.osc.uni-muenchen.de/members/reproducibilitea/index.html
+website: https://www.osc.uni-muenchen.de/meetups/reproducibilitea/index.html 
 twitter: LMUMunichTea
 signup: reproducibilitea.munich@gmail.com
 organisers:
