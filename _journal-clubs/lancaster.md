@@ -9,9 +9,9 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Marina Bazhydai, Agata Dymarska]
+organisers: [Marina Bazhydai]
 contact: m.bazhydai@lancaster.ac.uk
-additional-contact: [a.dymarska@lancaster.ac.uk]
+additional-contact: []
 address: [Department of Psychology, Lancaster University, Fylde College, Lancaster, LA1 4YW]
 country: United Kingdom
 geolocation: [54.0087763, -2.7852628]
