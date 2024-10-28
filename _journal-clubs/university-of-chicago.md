@@ -16,7 +16,7 @@ organisers:
   - Brady Roberts
 contact: corriveaual@uchicago.edu
 additional-contact:
-  - wngiam@uchicago.edu
+  - 
 address:
   - Green 117
   - University of Chicago
