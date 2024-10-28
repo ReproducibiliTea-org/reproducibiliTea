@@ -11,10 +11,9 @@ twitter: ""
 signup: skos@swps.edu.pl
 organisers:
   - Małgorzata Wiener
-  - Paulina Manduch
 contact: skos@swps.edu.pl
 additional-contact:
-  - paulina.manduch@gmail.com
+  - 
 address:
   - N210
   - Chodakowska 19/31
