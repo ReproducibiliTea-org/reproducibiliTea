@@ -1,26 +1,38 @@
 ---
-
+    
 jcid: melbourne
 title: Melbourne
 host-organisation: The University of Melbourne
-host-org-url: 
+host-org-url: ""
 osf: wh7c9
 zotero: U9SVCG7K
-website: 
-twitter: 
+website: ""
+twitter: ""
 signup: https://shorturl.at/mELZ3
-organisers: [Beth Clarke, Tom Hardwicke]
-contact: bethc1@student.unimelb.edu.au
-additional-contact: [tom.hardwicke@unimelb.edu.au]
-address: [The University of Melbourne, Grattan Street, Parkville, Victoria , 3010]
+organisers:
+  - Annie Whamond, Ger Post
+contact: anniewhamond@gmail.com
+additional-contact:
+  - gerspost@gmail.com
+address:
+  - The University of Melbourne
+  - Grattan Street
+  - Parkville
+  - Victoria
+  - "3010"
 country: Australia
-geolocation: [-37.79829764541099, 144.9614775180817]
-last-message-timestamp: 1678244656
+geolocation:
+  - -37.79829764541099
+  - 144.9614775180817
+last-message-timestamp: 1731298246
 last-message-level: 0
 last-update: bethc1@student.unimelb.edu.au
-last-update-timestamp: 1678244656
+last-update-timestamp: 1731298246
 last-update-message: >-
-  The mailing list URL link on our page is currently broken: the hyperlink currently links to (https://reproducibilitea.org/journal-clubs/shorturl.at/mELZ3) but should instead link to (shorturl.at/mELZ3). Thanks! :) 
+  Could you please update the organisers to be Annie Whamond and Ger Post, and
+  for the email for enquiries to be: anniewhamond@gmail.com 
+   Many thanks!
+
 
 ---
 
