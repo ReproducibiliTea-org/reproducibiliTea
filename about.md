@@ -19,12 +19,13 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 The ReproducibiliTea parent organisation is run by a Steering Committee of ECR volunteers: 
 
 
-* Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Chair & Co-founder)
-* Helena Gellersen [@hgellersen](https://twitter.com/hgellersen)
-* Matt Jaquiery
-* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
+* Helena Gellersen [@hgellersen](https://twitter.com/hgellersen) (Co-chair)
+* Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social)
+* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/) (Co-chair)
+* Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 * Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
-* William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
+* Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
+* Hazel Aileen van der Walle [@hazelvanderwalle.bsky.social](https://bsky.app/profile/hazelvanderwalle.bsky.social)
 * Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
 
@@ -32,8 +33,11 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 The Steering Committee alumni act as an Advisory Board who can be consulted when necessary.
 The Advisory Board are:
 
+* Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Co-founder)
 * Katie Drax
 * Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
+* Matt Jaquiery
+* William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
 * Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
 * Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
