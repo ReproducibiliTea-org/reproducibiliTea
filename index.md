@@ -47,6 +47,6 @@ Want to join the movement? Just curious for now? Grab your cup of (Reproducibili
 
 <br/>
 
-# Latest Podcast
+# Podcast
 
 {% include podcast.html %}
