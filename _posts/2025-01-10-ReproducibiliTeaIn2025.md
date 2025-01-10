@@ -15,9 +15,9 @@ Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.so
 
 Abigail is a PhD student in Neuroscience at the University of Geneva (Switzerland) and is a part of the Swiss Reproducibility Network. She has co-organized the ReproducibiliTea journal clubs since 2023 and has been involved with reproducibility-focused events including BrainHack and a workshop on reproducible analysis with R Quarto. Prior to her PhD, she worked in clinics in the US and Germany, assisting professionals of different backgrounds with neuroimaging analysis in various patient populations. Beyond her passion for reproducible neuroimaging, she also helps connect women in neuroscience across the globe as a member and event co-organizer for the Women in Neuroscience Repository. She believes in science as a collaborative effort for the benefit of humanity and hopes to spread FAIR neuroimaging methods far and wide!
 
-{% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" style="margin: 25px;" %}
+{% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" %}
 
----
+<br/>
 
 Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 
@@ -25,7 +25,7 @@ Anastasiia is an avid mitochondria enthusiast, which drove her to pursue a Docto
 
 {% include image.html url="blog/Anastasiia.png" alt="Anastasiia Marmyleva" description="" %}
 
----
+<br/>
 
 Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
 
@@ -33,7 +33,7 @@ Hemani is a dedicated professional in the field of Bioinformatics. She is curren
 
 {% include image.html url="blog/Hemani.png" alt="Hemani Sharma" description="" %}
 
----
+<br/>
 
 Hazel Aileen van der Walle [@hazelvanderwalle.bsky.social](https://bsky.app/profile/hazelvanderwalle.bsky.social)
 
@@ -41,8 +41,7 @@ Hazel is a PhD student in Music Psychology at Durham University (UK), where she 
 
 {% include image.html url="blog/Hazel.png" alt="Hazel Aileen van der Walle" description="" %}
 
----
----
+<br/><br/>
 
 **And, our new committee co-chairs:**
 
@@ -52,7 +51,7 @@ Helena received her PhD in psychology from the University of Cambridge where she
 
 {% include image.html url="blog/Helena.png" alt="Helena Gellersen" description="" %}
 
-----
+<br/>
 
 Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
 
@@ -60,8 +59,7 @@ Paulina studied at SGH Warsaw School of Economics and SWPS University in Warsaw,
 
 {% include image.html url="blog/Paulina.png" alt="Paulina Manduch" description="" %}
 
----
----
+<br/><br/>
 
 **And, give a warm ‘welcome back’ to our returning members:**
 
@@ -71,7 +69,7 @@ Michael is a PhD student in Healthcare Policy and Research at Virginia Commonwea
 
 {% include image.html url="blog/Michael2.png" alt="Michael Muhoozi" description="" %}
 
----
+<br/>
 
 Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
@@ -79,8 +77,7 @@ Lianne is a PhD student at the Department of Cognitive Psychology at Ruhr Univer
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
----
----
+<br/>
 
 # Plans for 2025
 
