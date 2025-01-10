@@ -17,7 +17,7 @@ Abigail is a PhD student in Neuroscience at the University of Geneva (Switzerlan
 
 {% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" %}
 
-<br/>
+<br/><br/>
 
 Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 
@@ -25,7 +25,7 @@ Anastasiia is an avid mitochondria enthusiast, which drove her to pursue a Docto
 
 {% include image.html url="blog/Anastasiia.png" alt="Anastasiia Marmyleva" description="" %}
 
-<br/>
+<br/><br/>
 
 Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
 
@@ -33,7 +33,7 @@ Hemani is a dedicated professional in the field of Bioinformatics. She is curren
 
 {% include image.html url="blog/Hemani.png" alt="Hemani Sharma" description="" %}
 
-<br/>
+<br/><br/>
 
 Hazel Aileen van der Walle [@hazelvanderwalle.bsky.social](https://bsky.app/profile/hazelvanderwalle.bsky.social)
 
@@ -51,7 +51,7 @@ Helena received her PhD in psychology from the University of Cambridge where she
 
 {% include image.html url="blog/Helena.png" alt="Helena Gellersen" description="" %}
 
-<br/>
+<br/><br/>
 
 Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
 
@@ -69,7 +69,7 @@ Michael is a PhD student in Healthcare Policy and Research at Virginia Commonwea
 
 {% include image.html url="blog/Michael2.png" alt="Michael Muhoozi" description="" %}
 
-<br/>
+<br/><br/>
 
 Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
@@ -77,7 +77,7 @@ Lianne is a PhD student at the Department of Cognitive Psychology at Ruhr Univer
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
-<br/>
+<br/><br/>
 
 # Plans for 2025
 
