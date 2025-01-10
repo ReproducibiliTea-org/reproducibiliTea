@@ -9,6 +9,8 @@ tags: [Steering Committee]
 
 The ReproducibiliTea Steering Community is expanding and changing yet again to make sure that we keep the early career researcher (ECR) perspective to building open science communities as well as allowing for more diverse perspectives. This year, we are welcoming four new committee members who will bring fresh impulses to our work.
 
+<br/>
+
 **Please join us in welcoming our new committee members:**
 
 Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social)
