@@ -15,7 +15,7 @@ Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.so
 
 Abigail is a PhD student in Neuroscience at the University of Geneva (Switzerland) and is a part of the Swiss Reproducibility Network. She has co-organized the ReproducibiliTea journal clubs since 2023 and has been involved with reproducibility-focused events including BrainHack and a workshop on reproducible analysis with R Quarto. Prior to her PhD, she worked in clinics in the US and Germany, assisting professionals of different backgrounds with neuroimaging analysis in various patient populations. Beyond her passion for reproducible neuroimaging, she also helps connect women in neuroscience across the globe as a member and event co-organizer for the Women in Neuroscience Repository. She believes in science as a collaborative effort for the benefit of humanity and hopes to spread FAIR neuroimaging methods far and wide!
 
-{% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" style="margin: 50px;" %}
+{% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" style="margin: 25px;" %}
 
 ---
 
