@@ -19,11 +19,15 @@ Michael is a researcher at Makerere University, Center for Health and Population
 
 {% include image.html url="blog/Michael.png" alt="Michael Muhoozi" description="" %}
 
+<br/><br/>
+
 Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
 Lianne is a PhD student at the Department of Cognitive Psychology at Ruhr University Bochum, Germany. She is originally from the Netherlands, where she studied Psychology and Neuroscience in Nijmegen and Maastricht. Lianne started and co-organises the ReproducibiliTea in Bochum.
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
+
+<br/><br/>
 
 **And, our new committee chair:**
 
@@ -33,6 +37,8 @@ Sophia is a PhD student in Philosophy of Science at the University of Cambridge,
 
 {% include image.html url="blog/sophia.png" alt="Sophia Crüwell" description="" %}
 
+<br/><br/>
+
 **And, give a warm ‘welcome back’ to our returning members:**
 
 Helena Gellersen
@@ -41,6 +47,8 @@ Helena received her PhD in psychology from the University of Cambridge where she
 
 {% include image.html url="blog/Helena.png" alt="Helena Gellersen" description="" %}
 
+<br/><br/>
+
 Matt Jaquiery [@MJaquiery](https://twitter.com/MJaquiery)
 
 Matt is a Research Software Engineer at the University of Oxford. He completed a DPhil in Experimental Psychology in January 2023.
@@ -48,11 +56,15 @@ Matt manged the Oxford Experimental Psychology ReproducibiliTea while a DPhil st
 
 {% include image.html url="blog/matt.png" alt="Matt Jaquiery" description="" %}
 
+<br/><br/>
+
 Paulina Manduch [(on LinkedIn)](https://www.linkedin.com/in/paulinamanduch/)
 
 Paulina is a psychology student at the SWPS University in Warsaw, Poland, working on her master’s thesis on creativity and memory. Paulina is the chair of the Open Science Society at her university and she co-organises online ReproducibiliTea meetings in the Polish language.
 
 {% include image.html url="blog/Paulina.png" alt="Paulina Manduch" description="" %}
+
+<br/><br/>
 
 William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
 
@@ -60,6 +72,7 @@ William is currently a postdoc in the Department of Psychology at the University
 
 {% include image.html url="blog/William2.png" alt="William Ngiam" description="" %}
 
+<br/><br/>
 
 # Plans for 2024
 
