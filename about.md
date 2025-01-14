@@ -14,7 +14,7 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 
 {% include sponsors.html %}
 
-<br/><br/>
+<br/>
 
 ## ReproducibiliTeam
 
@@ -45,7 +45,7 @@ The Advisory Board are:
 * Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
 * Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) 
 
-<br/><br/>
+<br/>
 
 ## Podcast
 
@@ -53,7 +53,7 @@ Not ready to start your own journal club, but interested in Open Science and wan
 
 {% include podcast.html %}
 
-<br/><br/>
+<br/>
 
 ## Articles
 
