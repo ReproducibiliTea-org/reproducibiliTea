@@ -45,12 +45,15 @@ The Advisory Board are:
 * Jade Pickering [@Jade_Pickering](https://twitter.com/Jade_Pickering)
 * Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) 
 
+<br/><br/>
 
 ## Podcast
 
 Not ready to start your own journal club, but interested in Open Science and want to learn more? We also resease ReproducibiliTea podcast episodes that highlight the great work of early career researchers in Open Science.
 
 {% include podcast.html %}
+
+<br/><br/>
 
 ## Articles
 
