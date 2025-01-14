@@ -13,6 +13,7 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 ## Our sponsors
 
 {% include sponsors.html %}
+<br/>
 
 ## ReproducibiliTeam
 
