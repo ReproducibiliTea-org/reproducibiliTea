@@ -8,7 +8,7 @@ osf: 97usx
 zotero: TTRG2DX6
 website: ""
 twitter: ""
-signup: https://forms.office.com/e/PG6x1UeGnK
+signup: https://universityofgalway.libcal.com/calendar/workshopsevents?cid=8158&t=d&d=0000-00-00&cal=8158&audience=664&ct=34756&inc=0
 organisers:
   - Jen Smith
 contact: jen.smith@universityofgalway.ie
@@ -23,11 +23,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1725908078
+last-message-timestamp: 1738255288
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1725908078
-last-update-message: Adding references to include Atlantic Technological University
+last-update-timestamp: 1738255288
+last-update-message: Change the time for the February meeting.
 
 
 ---
@@ -44,7 +44,7 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 21 January 2025 (Tu), 1-2pm
 
-28 February (F), 10-11am
+28 February (F), 12-1pm
 
 26 March (W), 2-3pm
 
