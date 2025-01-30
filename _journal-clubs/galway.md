@@ -10,7 +10,7 @@ website: ""
 twitter: ""
 signup: https://universityofgalway.libcal.com/calendar/workshopsevents?cid=8158&t=d&d=0000-00-00&cal=8158&audience=664&ct=34756&inc=0
 organisers:
-  - Jen Smith
+  - Dr. Jen Smith
 contact: jen.smith@universityofgalway.ie
 additional-contact: []
 address:
@@ -23,11 +23,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1738255288
+last-message-timestamp: 1738256213
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1738255288
-last-update-message: Change the time for the February meeting.
+last-update-timestamp: 1738256213
+last-update-message: Change the time of the February meeting.
 
 
 ---
