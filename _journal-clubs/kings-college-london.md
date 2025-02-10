@@ -14,7 +14,7 @@ organisers:
   - Morwenna Rickard
   - Lauren Makin
 contact: ze.freeman@kcl.ac.uk
-additional-contact: [morwenna.e.rickard@kcl.ac.uk; lauren.makin@kcl.ac.uk]
+additional-contact: morwenna.e.rickard@kcl.ac.uk, lauren.makin@kcl.ac.uk
 address:
   - Institute of Psychiatry
   - Psychology & Neuroscience
