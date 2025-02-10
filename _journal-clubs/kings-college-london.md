@@ -11,8 +11,10 @@ twitter: ""
 signup: ""
 organisers:
   - Ze Freeman
+  - Morwenna Rickard
+  - Lauren Makin
 contact: ze.freeman@kcl.ac.uk
-additional-contact: []
+additional-contact: [morwenna.e.rickard@kcl.ac.uk; lauren.makin@kcl.ac.uk]
 address:
   - Institute of Psychiatry
   - Psychology & Neuroscience
