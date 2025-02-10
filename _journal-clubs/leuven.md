@@ -10,9 +10,8 @@ website: ""
 twitter: LeuvenTea
 signup: reproducibilitealeuven@kuleuven.be
 organisers:
-  - Joanne Beames
-  - Benjamin Kunc
-  - Eline Van Geert
+  - Joanne Beames,Benjamin Kunc,Eline Van Geert,Jan-Peter Sandler,Peer-Ole
+    Jacobsen
 contact: reproducibilitealeuven@kuleuven.be
 additional-contact: []
 address:
@@ -26,11 +25,11 @@ country: Belgium
 geolocation:
   - 50.8760129
   - 4.7051696
-last-message-timestamp: 1713787723
+last-message-timestamp: 1739219896
 last-message-level: 0
 last-update: reproducibilitealeuven@kuleuven.be
-last-update-timestamp: 1713787723
-last-update-message: Change organisers
+last-update-timestamp: 1739219896
+last-update-message: I want to add 2 new members
 
 
 ---
