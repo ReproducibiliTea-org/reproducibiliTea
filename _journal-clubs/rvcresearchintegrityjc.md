@@ -8,7 +8,7 @@ osf: wgbrv
 zotero: WJNHRQR3
 website: 
 twitter: 
-signup: rvcreproducibilityjc@gmail.com
+signup: 
 organisers: [Andrew Crump]
 contact: acrump@rvc.ac.uk
 additional-contact: []
