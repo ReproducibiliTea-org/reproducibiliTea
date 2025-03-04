@@ -11,7 +11,7 @@ twitter:
 signup: 
 organisers: [Billy Church, Mahmoud Noeutou, Helen Walters]
 contact: bagc1@leicester.ac.uk
-additional-contact: [me237@leicester.ac.uk; hlw41@leicester.ac.uk]
+additional-contact: [me237@leicester.ac.uk, hlw41@leicester.ac.uk]
 address: [Department of Neuroscience, Psychology and Behaviour, University of Leicester, University Road, LE1 7RH, Leicester]
 country: United Kingdom
 geolocation: [52.6211393, -1.1246325]
