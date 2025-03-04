@@ -10,7 +10,7 @@ website:
 twitter: 
 signup: 
 organisers: [Kelly Lloyd, Eike Mark Rinke, Stephen Bradley, Queen Saikia, Sophia Batchelor, Nick Cooper]
-contact: umkel@leeds.ac.uk
+contact: K.E.Lloyd@leeds.ac.uk; library@leeds.ac.uk
 additional-contact: []
 address: [Leeds LS2 9JT]
 country: United Kingdom
@@ -29,7 +29,12 @@ last-update-message: >-
 
 ---
 
-The University of Leeds ReproducibiliTea journal club. Find some of our previous sessions and papers here:
+The Leeds ReproducibliTea journal club is currently on hiatus. The previous chair was Kelly Lloyd (k.e.lloyd@leeds.ac.uk). Please contact her if you are interested in leading and organising future Leeds ReproducibliTea journal club events.
+
+Additional contact: library@leeds.ac.uk
+
+---
+Find some of our previous sessions and papers here:
 
 Our OSF page: https://osf.io/qvyk4/
 
