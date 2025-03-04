@@ -11,7 +11,7 @@ twitter:
 signup: 
 organisers: [Guillaume Sescousse, Wanda Grabon]
 contact: guillaume.sescousse@inserm.fr
-additional-contact: [wanda.grabon@univ-lyon1.fr]
+additional-contact: []
 address: [CRNL - CH Le Vinatier - Batiment 462 - Neurocampus, 95 Boulevard Pinel, 69500 Bron]
 country: France
 geolocation: [45.7437964, 4.902354]
