@@ -10,8 +10,8 @@ website:
 twitter: 
 signup: 
 organisers: [Kelly Lloyd, Eike Mark Rinke, Stephen Bradley, Queen Saikia, Sophia Batchelor, Nick Cooper]
-contact: K.E.Lloyd@leeds.ac.uk; library@leeds.ac.uk
-additional-contact: []
+contact: K.E.Lloyd@leeds.ac.uk
+additional-contact: [library@leeds.ac.uk]
 address: [Leeds LS2 9JT]
 country: United Kingdom
 geolocation: [53.8079251, -1.5540873]
