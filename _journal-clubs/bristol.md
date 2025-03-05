@@ -9,8 +9,8 @@ zotero: null
 website: 
 twitter: 
 signup: 
-organisers: [Benji Woolf, Robbie Clark]
-contact: benjamin.woolf@bristol.ac.uk
+organisers: [Richard Westaway]
+contact: r.westaway@bristol.ac.uk
 additional-contact: []
 address: [5 Priory Road, University of Bristol, Bristol]
 country: United Kingdom
@@ -44,4 +44,4 @@ Everyone is welcome to join us - skeptics and open science enthusiasts alike! We
 
 ## How to join
 
-To join the mailing list please email one of the club organisers, Benji Woolf (Benjamin.woolf@bristol.ac.uk) and Robbie Clark
+To join the mailing list please email the club organiser: Richard Westaway (r.westaway@bristol.ac.uk)
