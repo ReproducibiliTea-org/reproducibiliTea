@@ -3,7 +3,7 @@
 jcid: galway
 title: Galway
 host-organisation: University of Galway
-host-org-url: https://www.universityofgalway.ie/
+host-org-url: https://library.universityofgalway.ie/
 osf: 97usx
 zotero: TTRG2DX6
 website: ""
@@ -23,11 +23,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1738256213
+last-message-timestamp: 1741366770
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1738256213
-last-update-message: Change the time of the February meeting.
+last-update-timestamp: 1741366770
+last-update-message: I need to change the date of our next session, thanks.
 
 
 ---
@@ -46,7 +46,7 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 28 February (F), 12-1pm
 
-26 March (W), 2-3pm
+18 March (Tu), 12-1pm
 
 29 April (Tu), 2-3pm
 
