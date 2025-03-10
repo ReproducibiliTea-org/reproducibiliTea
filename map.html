@@ -17,8 +17,11 @@
 
 <script>
     let map;
-    function initMap() {
-        map = new google.maps.Map(
+    async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        
+        map = new Map(
             document.getElementById('map'),
             {
                 center: {lat: 0, lng: 0},
@@ -27,7 +30,8 @@
         );
 
         let markers = locations.map(function(location, i) {
-            return new google.maps.Marker({
+            return new AdvancedMarkerElement({
+                title: location[0],
                 position: {lat: location[1], lng: location[2]},
                 map: map
             });
