@@ -9,7 +9,7 @@ zotero: WB22JUC5
 website: 
 twitter: 
 signup: ReproducibiliTea@warwick.ac.uk
-organisers: [Talar Moukhtarian]
+organisers: [Talar Moukhtarian,  Mathew Mak, Lucas Castillo, Sutong Duan, Peter To, Daniel Sutherland, Pablo Fuentes Castillo, Kuangheng Li, Ying Guo, Andrew Camara]
 contact: talar.moukhtarian@warwick.ac.uk
 additional-contact: []
 address: [University of Warwick, Coventry CV4 7AL, UK]
