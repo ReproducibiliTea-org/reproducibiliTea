@@ -11,7 +11,7 @@ twitter:
 signup: ReproducibiliTea@warwick.ac.uk
 organisers: [Talar Moukhtarian,  Mathew Mak, Lucas Castillo, Sutong Duan, Peter To, Daniel Sutherland, Pablo Fuentes Castillo, Kuangheng Li, Ying Guo, Andrew Camara]
 contact: talar.moukhtarian@warwick.ac.uk
-additional-contact: []
+additional-contact: [Andrew.Camara@warwick.ac.uk]
 address: [University of Warwick, Coventry CV4 7AL, UK]
 country: United Kingdom
 geolocation: [52.38307837707018, -1.562654972076416]
