@@ -1,7 +1,7 @@
 ---
     
 jcid: opensciencelab
-title: OpenScienceLab | UC3M
+title: OpenScienceLab UC3M
 host-organisation: Universidad Carlos III de Madrid
 host-org-url: https://www.uc3m.es/
 osf: fm95j
