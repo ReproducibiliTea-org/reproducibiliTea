@@ -23,11 +23,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1742313924
+last-message-timestamp: 1746023716
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1742313924
-last-update-message: Change the date of our next meeting.
+last-update-timestamp: 1746023716
+last-update-message: Change the May meeting date
 
 
 ---
@@ -50,4 +50,4 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 30 April (Wed), 2-3pm
 
-22 May (Th), 11am-12pm
+20 May (Tu), 11am-12pm
