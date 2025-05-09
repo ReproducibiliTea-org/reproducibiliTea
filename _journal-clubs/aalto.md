@@ -12,7 +12,7 @@ signup: jan.vornhagen@aalto.fi
 organisers: [Jan B. Vornhagen]
 contact: jan.vornhagen@aalto.fi
 additional-contact: []
-address: [Tietotekniikka, B121;, Konemiehentie 2;, 02150 Espoo;]
+address: [Konemiehentie 2;, 02150 Espoo;]
 country: Finland
 geolocation: [60.18677975700706, 24.822366535663605]
 last-message-timestamp: 1669873116
@@ -24,4 +24,4 @@ last-update-message: >-
 
 ---
 
-A journal club hosted by the AERIS Lab (CS department, School of Science, Aalto University). We cover methods and open science practices primarily in games research. Our home disciplines are HCI and Psychology, but every discipline is welcome!
+A journal club hosted by the Aalto [GoodLifeLab](https://goodlife.aalto.fi/). We cover methods and open science practices primarily in HCI. Everybody is welcome.
