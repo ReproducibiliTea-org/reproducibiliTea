@@ -1,26 +1,41 @@
 ---
-
+    
 jcid: lancaster
 title: Lancaster
 host-organisation: Lancaster University
 host-org-url: https://www.lancaster.ac.uk/psychology/research/open-science/
-osf: null
-zotero: null
-website: 
-twitter: 
-signup: 
-organisers: [Marina Bazhydai]
-contact: m.bazhydai@lancaster.ac.uk
-additional-contact: []
-address: [Department of Psychology, Lancaster University, Fylde College, Lancaster, LA1 4YW]
+osf: "null"
+zotero: "null"
+website: ""
+twitter: ""
+signup: ""
+organisers:
+  - Hambel Willow
+  - Jessica Pepper
+contact: h.willow@lancaster.ac.uk
+additional-contact:
+  - j.l.pepper@lancaster.ac.uk
+address:
+  - Department of Psychology
+  - Lancaster University
+  - Fylde College
+  - Lancaster
+  - LA1 4YW
 country: United Kingdom
-geolocation: [54.0087763, -2.7852628]
-last-message-timestamp: 1658430329
+geolocation:
+  - 54.0087763
+  - -2.7852628
+last-message-timestamp: 1747224001
 last-message-level: 0
-last-update: a.dymarska@lancaster.ac.uk
-last-update-timestamp: 1658430329
+last-update: m.bazhydai@lancaster.ac.uk
+last-update-timestamp: 1747224001
 last-update-message: >-
-  
+  I would like to change the name of the lead organisers of the club and list
+  them with their emails instead of myself please:
+   
+   Hambel Willow, email: h.willow@lancaster.ac.uk
+   Jessica Pepper, email: j.l.pepper@lancaster.ac.uk
+
 
 ---
 
