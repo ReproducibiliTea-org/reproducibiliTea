@@ -24,10 +24,10 @@ country: Ireland
 geolocation:
   - 53.310384290574774
   - -6.223207712173462
-last-message-timestamp: 1747737331
+last-message-timestamp: 1747738204
 last-message-level: 0
 last-update: cstar@ucd.ie
-last-update-timestamp: 1747737331
+last-update-timestamp: 1747738204
 last-update-message: ""
 
 
@@ -35,4 +35,4 @@ last-update-message: ""
 
 Are you interested in Open Science/Open Research? If so, consider dropping by our informal, monthly journal club that takes place in-person over lunchtime on the Belfield campus. All are welcome, especially early career researchers. 
 
-Current readings are available on our UCD CSTAR website. Please read the paper beforehand so that we can have interesting discussions!
+Current readings are available on the UCD CSTAR website. Please read the paper beforehand so that we can have interesting discussions!
