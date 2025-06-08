@@ -9,7 +9,10 @@ zotero: MW8UIRVU
 website: 
 twitter: 
 signup: journalclub.nantes@gmail.com
-organisers: [Giorgio Varesco, PhD, Valentin Goreau, MSc, PT, Cyril Forestier, PhD]
+organisers: 
+- Giorgio Varesco, PhD
+- Valentin Goreau, MSc, PT
+- Cyril Forestier, PhD
 contact: journalclub.nantes@gmail.com
 additional-contact: []
 address: [Campus Tertre, Nantes Université, 44000 nantes]
