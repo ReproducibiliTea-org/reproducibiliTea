@@ -10,7 +10,8 @@ website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
 signup: johanna.hein@unige.ch
 organisers:
-  - Johanna Hein,Abigail Licata
+  - Johanna Hein
+  - Abigail Licata
 contact: johanna.hein@unige.ch
 additional-contact: []
 address:
