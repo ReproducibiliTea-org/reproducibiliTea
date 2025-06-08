@@ -10,7 +10,8 @@ website: ""
 twitter: ""
 signup: https://shorturl.at/mELZ3
 organisers:
-  - Annie Whamond, Ger Post
+  - Annie Whamond
+  - Ger Post
 contact: anniewhamond@gmail.com
 additional-contact:
   - gerspost@gmail.com
