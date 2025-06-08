@@ -10,7 +10,11 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Lianne Wolsink, George Jacob, Gen Hartanto, Raphael Merz, Robert Reichert
+  - Lianne Wolsink
+  - George Jacob
+  - Gen Hartanto
+  - Raphael Merz
+  - Robert Reichert
 contact: reproducibilitea@ruhr-uni-bochum.de
 additional-contact:
   - lianne.wolsink@ruhr-uni-bochum.de
