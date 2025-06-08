@@ -10,7 +10,8 @@ website: https://frankfurt-osi.netlify.app/top/reproducibilitea/
 twitter: OpenScienceFFM
 signup: https://dlist.server.uni-frankfurt.de/mailman/listinfo/reprotea
 organisers:
-  - Lea Müller Karoza, Zoë Bolz
+  - Lea Müller Karoza
+  - Zoë Bolz
 contact: muellerkaroza@psych.uni-frankfurt.de
 additional-contact: []
 address:
