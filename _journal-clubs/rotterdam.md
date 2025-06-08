@@ -10,10 +10,13 @@ website: https://www.openscience-rotterdam.com/home/
 twitter: OSCRotterdam
 signup: info@openscience-rotterdam.com
 organisers:
-  - Steven Verheyen,Ana Barbosa Mendes,Antonio Schettino
+  - Steven Verheyen
+  - Ana Barbosa Mendes
+  - Antonio Schettino
 contact: verheyen@essb.eur.nl
 additional-contact:
-  - barbosamendes@esphil.eur.nl,schettino@eur.nl
+  - barbosamendes@esphil.eur.nl
+  - schettino@eur.nl
 address:
   - Erasmus Research Services
   - Erasmus Universiteit Rotterdam
