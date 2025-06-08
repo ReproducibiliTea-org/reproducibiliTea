@@ -10,7 +10,10 @@ website: http://www.cstar.ie/
 twitter: ""
 signup: cstar@ucd.ie
 organisers:
-  - Katayoun Bahramian, Dr Ricardo Segurado, Dr Keith Smart, Dr Massimiliano Ditroilo
+  - Katayoun Bahramian
+  - Dr Ricardo Segurado
+  - Dr Keith Smart
+  - Dr Massimiliano Ditroilo
 contact: cstar@ucd.ie
 additional-contact: [massimiliano.ditroilo@ucd.ie]
 address:
