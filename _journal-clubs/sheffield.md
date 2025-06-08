@@ -10,10 +10,13 @@ website: https://reproducibilitea-sheffield.github.io/
 twitter: ""
 signup: https://groups.google.com/a/sheffield.ac.uk/g/reproducibilitea-googlegroup
 organisers:
-  - Zuzanna Zagrodzka,Neil Shephard,Jim Uttley
+  - Zuzanna Zagrodzka
+  - Neil Shephard
+  - Jim Uttley
 contact: z.zagrodzka@sheffield.ac.uk
 additional-contact:
-  - n.shephard@sheffield.ac.uk,j.uttley@sheffield.ac.uk
+  - n.shephard@sheffield.ac.uk
+  - j.uttley@sheffield.ac.uk
 address:
   - University of Sheffield
   - Sheffield S10 2TG
