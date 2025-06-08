@@ -10,7 +10,8 @@ website: ""
 twitter: ""
 signup: https://calendar.google.com/calendar/u/0?cid=MzNiZjBlYWU4NzMyYWFiMTg0MTI2MWY5ZWY2NzlhN2JmNTgyMDAxNzBkNTdiZWI1MWQ4YTkwM2UwODYyNDI2OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 organisers:
-  - Gabriel Crone, Spencer Arshinoff
+  - Gabriel Crone
+  - Spencer Arshinoff
 contact: reproducibiliteatoronto@gmail.com
 additional-contact: []
 address:
