@@ -10,7 +10,8 @@ website: https://musicscience.net/
 twitter: MusicScienceDU
 signup: ""
 organisers:
-  - Hazel Aileen van der Walle,Connor Kirts
+  - Hazel Aileen van der Walle
+  - Connor Kirts
 contact: hazel.a.van-der-walle@durham.ac.uk
 additional-contact:
   - connor.g.kirts@durham.ac.uk
