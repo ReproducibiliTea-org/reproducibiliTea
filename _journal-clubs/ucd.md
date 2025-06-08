@@ -10,9 +10,9 @@ website: http://www.cstar.ie/
 twitter: ""
 signup: cstar@ucd.ie
 organisers:
-  - Katayoun Bahramian,Dr Ricardo Segurado,Dr Keith Smart
+  - Katayoun Bahramian, Dr Ricardo Segurado, Dr Keith Smart, Dr Massimiliano Ditroilo
 contact: cstar@ucd.ie
-additional-contact: []
+additional-contact: [massimiliano.ditroilo@ucd.ie]
 address:
   - Woodview House
   - School of Public Health
