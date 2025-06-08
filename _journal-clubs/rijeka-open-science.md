@@ -10,7 +10,9 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Darko Lončarić, Vanja Brandić, Valentina Martan
+  - Darko Lončarić
+  - Vanja Brandić
+  - Valentina Martan
 contact: loncaricd@gmail.com
 additional-contact:
   - vanja.brandic1@ufri.uniri.hr
