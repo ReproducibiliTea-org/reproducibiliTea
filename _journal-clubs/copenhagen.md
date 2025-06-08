@@ -33,4 +33,15 @@ last-update-message: API creation of copenhagen.md
 
 ---
 
+We are an interdisciplinary team of researchers based in Copenhagen, Denmark passionate about mental health, the brain, the microbiome, and advancing reproducibility in sciences. We believe that the only way to advance science is through openness, transparency, collaboration, and a strong commitment to reproducibility.
 
+Our goals are:
+* Be inclusive in terms of types of research discussed (i.e., not limited to psychological sciences)
+* Discuss the issues posed by the lack of reproducibility in science
+* Discuss how we can best promote efforts for advancing reproducibility in science
+* Share good practices
+* Foster collaboration between researchers and research topics
+* Create a network of researchers interested in science reproducibility
+
+
+Our Linkedin page: https://www.linkedin.com/company/reproducibilitea-copenhagen/
