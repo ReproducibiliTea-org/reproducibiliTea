@@ -44,4 +44,4 @@ Our goals are:
 * Create a network of researchers interested in science reproducibility
 
 
-Our Linkedin page: https://www.linkedin.com/company/reproducibilitea-copenhagen/
+Our Linkedin page: [https://www.linkedin.com/company/reproducibilitea-copenhagen/](https://www.linkedin.com/company/reproducibilitea-copenhagen/)
