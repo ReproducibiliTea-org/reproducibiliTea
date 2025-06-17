@@ -36,8 +36,6 @@ The Steering Committee alumni act as an Advisory Board who can be consulted when
 The Advisory Board are:
 
 * Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Co-founder)
-* Katie Drax
-* Alexa von Hagen [@alexavonhagen](https://twitter.com/alexavonhagen)
 * Matt Jaquiery
 * William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
 * Amy Orben [@OrbenAmy](https://twitter.com/OrbenAmy) (Co-founder)
