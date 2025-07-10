@@ -6,8 +6,8 @@ host-organisation: Mannheim Open Science Meetup
 host-org-url: ""
 osf: 2r8h7
 zotero: FWXTNAFM
-website: ""
-twitter: MAOpenScience
+website: "https://bsky.app/profile/maopenscience.bsky.social"
+twitter: 
 signup: ""
 organisers:
   - Juli Nagel
@@ -33,12 +33,18 @@ last-update-message: update meeting details
 
 ---
 
-This ReproducibiliTea is associated with the Mannheim Open Science Meetup, bringing together open science enthusiasts across various institutions in Mannheim. Find us on Twitter @MAOpenScience
+This ReproducibiliTea is associated with the Open Science Office of the CIMH Mannheim and the Mannheim Open Science Meetup, bringing together open science enthusiasts across various institutions in Mannheim. Find us on Bluesky [@maopenscience.bsky.social](https://bsky.app/profile/maopenscience.bsky.social)
 
-As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings will be held monthly at every 2nd Tuesday of the month at the Central Institute of Mental Health, Mannheim
+As our community consists of various disciplines, the ReproducibiliTea Mannheim wants to cover open science topics of broader interest. Meetings are held at the CIMH Mannheim, or online via Zoom.
 
-Our next meeting will take place on August 8th, 17:30, where we will discuss
 
-Fanelli, D. (2009) How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data. PLoS ONE 4(5): e5738. https://doi.org/10.1371/journal.pone.0005738
 
-Email us for details on how to join!
+Our next meeting will take place at the CIMH Mannheim (Small Seminar Room, Forschungs- und Verwaltungsgebäude, 4. Stock) on July 21st, 14:00, where we will discuss
+
+Rubin, M. (2023). Questionable Metascience Practices. Journal of Trial & Error, https://doi.org/10.36850/mr4
+
+
+
+Email us for details on where to find the room!
+
+
