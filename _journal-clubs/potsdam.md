@@ -9,9 +9,9 @@ zotero: AFKEMJW5
 website: 
 twitter: PotsdamTea
 signup: https://forms.gle/GBFLbymwGRu3KkgL7
-organisers: [Yana Arkhipova, Alice Hodapp]
+organisers: [Yana Arkhipova]
 contact: arkhipova@uni-potsdam.de
-additional-contact: [alice.hodapp@uni-potsdam.de]
+additional-contact: []
 address: [room 4.09/4.10, Karl-Liebknecht-Str. 24/25, Campus Golm, House 14, 14476 Potsdam]
 country: Germany
 geolocation: [52.4076274, 12.9735416]
