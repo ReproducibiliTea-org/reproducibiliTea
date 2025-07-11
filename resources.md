@@ -55,5 +55,6 @@ Presentations
 *  ReproducibiliTea Birmingham [2020a](https://osf.io/uns3b) , [2020b](https://osf.io/c5njh) , [2021a](https://osf.io/e5sbp) , [2021b](https://osf.io/trb4p) , [2022a](https://osf.io/dgjnx) , [2022b](https://osf.io/rkn67)
 *  ReproducibiliTea Bochum [2023](https://osf.io/ev4zw) , [2023/2024](https://osf.io/957d3) , [2024](https://osf.io/azr2q) , [2024/2025](https://osf.io/fcbw7) , [2025](https://osf.io/zmrpj)
 *  ReproducibiliTea Bordeaux [2021](https://osf.io/jqxw6/wiki/Schedule-21/) , [2022](https://osf.io/jqxw6/wiki/Schedule/)
-*  ReproducibiliTea Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25) 
+*  ReproducibiliTea Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25)
+*  ReproducibiliTea Frankfurt [2019/2020](https://osf.io/jk74w) , [2020/2021](https://osf.io/jfbv5) , [2021](https://osf.io/8v764) , [2021/2022](https://osf.io/ebd6x) , [2022](https://osf.io/vqhkw) , [2022/2023](https://osf.io/zng2d) , [2023/2024](https://osf.io/9hrtw) 
 
