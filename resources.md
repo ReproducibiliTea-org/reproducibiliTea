@@ -6,7 +6,7 @@ title:  "ReproducibiliTea Online Resources"
 # Resources published by ReproducibiliTea journal clubs:
 
 
-Recordings of previous events organised by ReproducibiliTea journal clubs:
+Recordings of previous events:
 
 
 *  BordeauxTea [YouTube](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
