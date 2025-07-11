@@ -6,7 +6,7 @@ title:  "ReproducibiliTea Online Resources"
 # Resources published by ReproducibiliTea journal clubs:
 
 
-Recordings of previous events:
+Recordings
 
 
 *  BordeauxTea [YouTube](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
@@ -47,3 +47,9 @@ Presentations
 *  ReproducibiliTea University of Bristol [OSF](https://osf.io/9zbcw/files/osfstorage) 
 *  ReproducibiliTea Zurich [OSF](https://osf.io/f2dt8/files/osfstorage) 
 *  Wolsink, L. (2024). First steps into Open Science as an Early Career Researcher. Retrieved from [https://osf.io/cbeq4](https://osf.io/cbeq4)
+
+  Reading lists
+
+*  ReproducibiliTea BI Oslo [2020](https://osf.io/cf8ja) , [2021a](https://osf.io/8tpjc) , [2021b](https://osf.io/3k7zp) , [2022](https://osf.io/6ubwk)
+*  ReproducibiliTea Bielefeld [2021-ongoing](https://burst.pages.ub.uni-bielefeld.de/burst/resources/2021-11-05-paper/)
+*  ReproducibiliTea Birmingham [2020a](https://osf.io/uns3b) , [2020b](https://osf.io/c5njh) , [2021a](https://osf.io/e5sbp) , [2021b](https://osf.io/trb4p) , [2022a](https://osf.io/dgjnx) , [2022b](https://osf.io/rkn67) 
