@@ -3,7 +3,7 @@ layout: page
 title:  "ReproducibiliTea Online Resources"
 ---
 
-# ReproducibiliTea Resources List
+# Resources published by ReproducibiliTea journal clubs:
 
 
 Recordings of previous events organised by ReproducibiliTea journal clubs:
