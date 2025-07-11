@@ -5,9 +5,10 @@ title:  "ReproducibiliTea Online Resources"
 
 # ReproducibiliTea Resources List
 
-<section id="resource-list" class="resource-list">
 
 Recordings of previous events organised by ReproducibiliTea journal clubs:
+
+
 * BordeauxTea [YouTube](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
 * ReproducibiliTea Brasil [YouTube](https://www.youtube.com/playlist?list=PLfID5M8U8w5tfNmLgz2jM0ggn_azVVT4j)  
 * ReproducibiliTea Chicago - Dr William Ngiam [YouTube](https://www.youtube.com/@WilliamNgiam/videos)
