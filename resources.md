@@ -60,5 +60,11 @@ Presentations
 *  ReproducibiliTea Geneva [2021/2022](https://osf.io/qrsgc) , [2022a](https://osf.io/9yek7) , [2022b](https://osf.io/yt2rs) , [2023a](https://osf.io/cjg7m) , [2023b](https://osf.io/mt7rj) , [2024](https://osf.io/gf53t)
 *  ReproducibiliTea Graz [2019](https://osf.io/g4e8j) , [2019/2020](https://osf.io/8kbm2) , [2021](https://osf.io/buv2g) , [2021/2022](https://osf.io/v7f4t) , [2022](https://osf.io/rkfbs) , [2023](https://osf.io/2mjgh) , [2024](https://osf.io/x2unk) , [2024/2025](https://osf.io/2at7j)
 *  ReproducibiliTea Innsbruck [2023](https://osf.io/jtx2m/wiki/home/)
-*  ReproducibiliTea Karolinska Institute [2022](https://osf.io/k9wzn) 
+*  ReproducibiliTea Karolinska Institute [2022](https://osf.io/k9wzn)
+*  ReproducibiliTea Kingston [2020a](https://osf.io/y7sed) , [2020b](https://osf.io/z2wrq) , [2020/2021](https://osf.io/q7dk4) , [2021](https://osf.io/4gkcj)
+*  ReproducibiliTea Lausanne [2022](https://osf.io/76gcb)
+*  ReproducibiliTea Melbourne [2023-ongoing](https://www.aus-rn.org/journal-clubs)
+*  ReproducibiliTea Munich [2024](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf)
+*  ReproducibiliTea México [2020-ongoing](https://sites.google.com/view/rptmx)
+*  ReproducibiliTea Newcastle [2022-ongoing](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/) 
 
