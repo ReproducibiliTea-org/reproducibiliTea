@@ -3,7 +3,7 @@ layout: page
 title:  "ReproducibiliTea Online Resources"
 ---
 
-# Resources published by ReproducibiliTea journal clubs:
+# Resources published by ReproducibiliTea journal clubs
 
 
 Recordings
@@ -142,7 +142,7 @@ Podcasts
 *  #AskDifferent [podcast](https://www.einsteinfoundation.de/en/podcast)
 *  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7) 
 
-Games:
+Games
 *  Escape the Lab (University of Geneva Library) [link](https://www.unige.ch/innovations-pedagogiques/en/project-list/escape-the-lab)
 *  Open Access Escape Room (University of Essex) [link](https://figshare.com/articles/journal_contribution/Open_Access_Escape_Room_-_Instructions/7359398?file=13599407)
 *  The Publishing Trap (UK Copyright Literacy team) [link](https://copyrightliteracy.org/resources/the-publishing-trap/)
