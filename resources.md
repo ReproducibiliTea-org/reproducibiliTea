@@ -66,5 +66,15 @@ Presentations
 *  ReproducibiliTea Melbourne [2023-ongoing](https://www.aus-rn.org/journal-clubs)
 *  ReproducibiliTea Munich [2024](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf)
 *  ReproducibiliTea México [2020-ongoing](https://sites.google.com/view/rptmx)
-*  ReproducibiliTea Newcastle [2022-ongoing](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/) 
+*  ReproducibiliTea Newcastle [2022-ongoing](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
+*  Reproducibilitea for Psychopathology - Northumbria University [2021-ongoing](https://osf.io/3vd59/files/osfstorage)
+*  ReproducibiliTea Open Science Trento [2022](https://sites.google.com/unitn.it/reproducibilitea/reading-list/our-reading-list?authuser=0)
+*  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
+*  ReproducibiliTea Queen's University Belfast [2021/2022](https://osf.io/cnu82)
+*  ReproducibiliTea RHUL [2023](https://osf.io/9zxbh) ,  [2024a](https://osf.io/x4ynd) ,  [2024b](https://osf.io/8mqat) , [2024/2025](https://osf.io/r9uts)
+*  ReproducibiliTea Saint Louis Area [2021](https://osf.io/edpx6)
+*  ReproducibiliTea Sheffield [2023-ongoing](https://reproducibilitea-sheffield.github.io/)
+*  ReproducibiliTea Southampton [2019-ongoing](https://library.soton.ac.uk/lovedata/reproducibiliTea#previous)
+*  ReproducibiliTea Stanford [2022-ongoing](https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html)  
+
 
