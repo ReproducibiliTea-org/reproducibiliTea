@@ -92,6 +92,13 @@ Published by other organisations
 *  UKRN Primers [link](https://www.ukrn.org/primers/)
 *  AREN Community Resources [link](https://osf.io/zdp83/)
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants [link](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
-*  Guidance for best practices for clinical trials. Geneva: World Health Organization; 2024 [link](https://www.who.int/publications/i/item/9789240097711) 
+*  Guidance for best practices for clinical trials. Geneva: World Health Organization; 2024 [link](https://www.who.int/publications/i/item/9789240097711)
+
+Blogs
+*  Datacolada [link](https://datacolada.org/)
+*  The 100% Confidence Interval blog [link](https://www.the100.ci/)
+*  The 20% Statistician [link](https://daniellakens.blogspot.com/)
+*  Critical Metascience [link](https://markrubin.substack.com/)
+*  Statistical Modeling, Causal Inference, and Social Science [link](https://statmodeling.stat.columbia.edu/)
 
 
