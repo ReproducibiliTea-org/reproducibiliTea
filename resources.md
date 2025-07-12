@@ -106,17 +106,17 @@ Blogs
 *  Statistical Modeling, Causal Inference, and Social Science [blog](https://statmodeling.stat.columbia.edu/)
 
 Books (in print)
-*  Science Fictions by Stuart Ritchie (2020) [book](https://www.sciencefictions.org/p/book)
-*  Bad Science by Ben Goldacre (2009) [book](https://www.amazon.co.uk/Bad-Science-Ben-Goldacre/dp/000728487X/?tag=bs0b-21)
-*  A Student’s Guide to Open Science by Charlotte Pennington (2023) [book](https://www.mheducation.co.uk/a-student-s-guide-to-open-science-using-the-replication-crisis-to-reform-psychology-9780335251162-emea-group)
-*  The 7 Deadly Sins of Psychology by Chris Chambers (2017) [book](https://press.princeton.edu/books/hardcover/9780691158907/the-seven-deadly-sins-of-psychology)
-*  Psychology in Crisis by Brian M. Hughes (2018) [book](https://brianmhughes.com/2018/08/13/psychology-in-crisis/)
+*  Science Fictions by Stuart Ritchie (2020) [link](https://www.sciencefictions.org/p/book)
+*  Bad Science by Ben Goldacre (2009) [link](https://www.amazon.co.uk/Bad-Science-Ben-Goldacre/dp/000728487X/?tag=bs0b-21)
+*  A Student’s Guide to Open Science by Charlotte Pennington (2023) [link](https://www.mheducation.co.uk/a-student-s-guide-to-open-science-using-the-replication-crisis-to-reform-psychology-9780335251162-emea-group)
+*  The 7 Deadly Sins of Psychology by Chris Chambers (2017) [link](https://press.princeton.edu/books/hardcover/9780691158907/the-seven-deadly-sins-of-psychology)
+*  Psychology in Crisis by Brian M. Hughes (2018) [link](https://brianmhughes.com/2018/08/13/psychology-in-crisis/)
 
 
 Books (online only)
-*  Lakens, D. (2022). Improving Your Statistical Inferences. [ebook](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
-*  Heathers, J. (2025). An Introduction To Forensic Metascience. [ebook](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
-*  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [ebook](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
+*  Lakens, D. (2022). Improving Your Statistical Inferences. [website](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
+*  Heathers, J. (2025). An Introduction To Forensic Metascience. [website](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
+*  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [website](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
 
 Recordings 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
@@ -139,3 +139,17 @@ Podcasts
 *  Répare Ta Science [podcast](https://open.spotify.com/show/0b98zlhi0Axosw96tmcZ86)
 *  #AskDifferent [podcast](https://www.einsteinfoundation.de/en/podcast)
 *  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7) 
+
+Games:
+*  Escape the Lab (University of Geneva Library) [link](https://www.unige.ch/innovations-pedagogiques/en/project-list/escape-the-lab)
+*  Open Access Escape Room (University of Essex) [link](https://figshare.com/articles/journal_contribution/Open_Access_Escape_Room_-_Instructions/7359398?file=13599407)
+*  The Publishing Trap (UK Copyright Literacy team) [link](https://copyrightliteracy.org/resources/the-publishing-trap/)
+*  The Game of Open Access (University of Huddersfield) [link](https://eprints.hud.ac.uk/id/eprint/33874/) 
+*  Open Science Quest (Jonathon England) [link](https://openscience.quest/) 
+*  Games of Horror for Open Science (Netherland Universities) [link](https://ghostcollective.github.io/) 
+*  OpenScientoMètre (French language only; University of Liège) [link](https://lib.uliege.be/fr/open-science/nos-outils/openscientometre)
+*  Open Access the Game (Juan Puppin) [link](https://www.construct.net/en/free-online-games/open-access-game-542/play)
+*  Open Science in Peril (Sundsbø, Coyne, & Coombs, 2023) [link](https://figshare.com/projects/Open_Science_in_Peril/194243)
+*  List of 'serious' games linked to Open Science [link](https://openplato.eu/mod/page/view.php?id=1102) 
+*  Research Support Games List [link](https://figshare.com/articles/online_resource/Research_Support_Games_List/16652701/5?file=34327916)
+*  Last contact online escape room game (the Netherlands) [link](https://www.sherlocked.nl/last-contact) 
