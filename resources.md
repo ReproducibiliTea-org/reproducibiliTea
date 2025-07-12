@@ -6,7 +6,7 @@ title:  "ReproducibiliTea Online Resources"
 # Resources published by ReproducibiliTea journal clubs
 
 
-Recordings
+**Recordings**
 
 
 *  BordeauxTea [YouTube](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
@@ -28,7 +28,7 @@ Recordings
 
 <br/>
 
-Presentations
+**Presentations**
 
 *  ReproducibiliTea Adelaide [website](https://sites.google.com/view/rtea-adelaide/archive?authuser=0#h.vhxe0weq4031) 
 *  ReproducibiliTea Amsterdam [OSF](https://osf.io/sn6dk/files/osfstorage) 
@@ -51,7 +51,7 @@ Presentations
 
 <br/>
 
-  Reading lists
+ **Reading lists**
 
 *  ReproducibiliTea BI Oslo [2020](https://osf.io/cf8ja) , [2021a](https://osf.io/8tpjc) , [2021b](https://osf.io/3k7zp) , [2022](https://osf.io/6ubwk)
 *  ReproducibiliTea Bielefeld [2021-ongoing](https://burst.pages.ub.uni-bielefeld.de/burst/resources/2021-11-05-paper/)
@@ -88,7 +88,7 @@ Presentations
 
 <br/>
 
-Blogs
+**Blogs**
 *  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
 *  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news) 
@@ -97,7 +97,7 @@ Blogs
 
 # Other resources
 
-Resources published by other organisations
+**Resources published by other organisations**
 *  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [website](https://forrt.org/clusters/)
 *  Repro4Everyone [website](https://www.repro4everyone.org/resources)
 *  UKRN Primers [website](https://www.ukrn.org/primers/)
@@ -107,7 +107,7 @@ Resources published by other organisations
 
 <br/>
 
-Blogs
+**Blogs**
 *  Datacolada [blog](https://datacolada.org/)
 *  The 100% Confidence Interval [blog](https://www.the100.ci/)
 *  The 20% Statistician [blog](https://daniellakens.blogspot.com/)
@@ -116,7 +116,7 @@ Blogs
 
 <br/>
 
-Books (in print)
+**Books (in print)**
 *  Science Fictions by Stuart Ritchie (2020) [link](https://www.sciencefictions.org/p/book)
 *  Bad Science by Ben Goldacre (2009) [link](https://www.amazon.co.uk/Bad-Science-Ben-Goldacre/dp/000728487X/?tag=bs0b-21)
 *  A Student’s Guide to Open Science by Charlotte Pennington (2023) [link](https://www.mheducation.co.uk/a-student-s-guide-to-open-science-using-the-replication-crisis-to-reform-psychology-9780335251162-emea-group)
@@ -125,14 +125,14 @@ Books (in print)
 
 <br/>
 
-Books (online only)
+**Books (online only)**
 *  Lakens, D. (2022). Improving Your Statistical Inferences. [website](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
 *  Heathers, J. (2025). An Introduction To Forensic Metascience. [website](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [website](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
 
 <br/>
 
-Recordings 
+**Recordings** 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
 *  Center for Open Science (COS) events and webinars [website](https://www.cos.io/event)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
@@ -147,7 +147,7 @@ Recordings
 
 <br/>
 
-Podcasts
+**Podcasts**
 *  ReproducibilITea [podcast](https://soundcloud.com/reproducibilitea)
 *  Nullius in Verba [podcast](https://nulliusinverba.podbean.com/)
 *  Everything Hertz [podcast](https://everythinghertz.com/)
@@ -158,7 +158,7 @@ Podcasts
 
 <br/>
 
-Games
+**Games**
 *  Escape the Lab (University of Geneva Library) [link](https://www.unige.ch/innovations-pedagogiques/en/project-list/escape-the-lab)
 *  Open Access Escape Room (University of Essex) [link](https://figshare.com/articles/journal_contribution/Open_Access_Escape_Room_-_Instructions/7359398?file=13599407)
 *  The Publishing Trap (UK Copyright Literacy team) [link](https://copyrightliteracy.org/resources/the-publishing-trap/)
