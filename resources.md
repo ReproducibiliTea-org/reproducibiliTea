@@ -114,6 +114,19 @@ Books (online only)
 *  Heathers, J. (2025). An Introduction To Forensic Metascience. [ebook](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [ebook](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
 
+Recordings 
+*  Reproducibility Rounds [Website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
+*  Center for Open Science (COS) events and webinars [Website](https://www.cos.io/event)
+*  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
+*  Perspectives on Scientific Error conference, February/March 2024 [YouTube](https://www.youtube.com/playlist?list=PL2jHUB0Qi4eMKMfEhumy5DHGcZZVEBiSB)
+*  The promises and pitfalls of preregistration meeting, March 2024 [YouTube](https://www.youtube.com/playlist?list=PLg7f-TkW11iWRzQbKFl7jWqgc9EDgK16V)
+*  ESMARConf Evidence Synthesis and Meta-Analysis in R Conference [YouTube](https://esmarconf.org/recordings/)
+*  Peer Review Congress [YouTube](https://www.youtube.com/@peerreviewcongress8496/videos)
+*  ReproducibiliTeach [YouTube](https://www.youtube.com/@reproducibiliteach/videos)
+*  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
+*  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
+*  African Reproducibility Network [YouTube](https://www.youtube.com/@africanrepro/videos) 
+
 Podcasts
 *  ReproducibilITea [podcast](https://soundcloud.com/reproducibilitea)
 *  Nullius in Verba [podcast](https://nulliusinverba.podbean.com/)
