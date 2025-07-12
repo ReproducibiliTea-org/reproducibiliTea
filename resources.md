@@ -119,6 +119,6 @@ Podcasts
 *  Nullius in Verba [podcast](https://nulliusinverba.podbean.com/)
 *  Everything Hertz [podcast](https://everythinghertz.com/)
 *  The Black Goat [podcast](https://www.theblackgoatpodcast.com/)
-*  Répare Ta Science (in French) [podcast](https://open.spotify.com/show/0b98zlhi0Axosw96tmcZ86)
+*  Répare Ta Science [podcast](https://open.spotify.com/show/0b98zlhi0Axosw96tmcZ86)
 *  #AskDifferent [podcast](https://www.einsteinfoundation.de/en/podcast)
 *  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7) 
