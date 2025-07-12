@@ -100,8 +100,8 @@ title:  "ReproducibiliTea Resources"
 **Resources published by other organisations**
 *  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [website](https://forrt.org/clusters/)
 *  Repro4Everyone [website](https://www.repro4everyone.org/resources)
-*  UKRN Primers [website](https://www.ukrn.org/primers/)
-*  AREN Community Resources [OSF](https://osf.io/zdp83/)
+*  The UK Reproducibility Network (UKRN) Primers [website](https://www.ukrn.org/primers/)
+*  African Reproducibility Network (AREN) Community Resources [OSF](https://osf.io/zdp83/)
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants (amended in 2024) [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 *  Guidance for best practices for clinical trials (WHO, 2024) [website](https://www.who.int/publications/i/item/9789240097711)
 
@@ -143,7 +143,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTeach [YouTube](https://www.youtube.com/@reproducibiliteach/videos)
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
-*  African Reproducibility Network [YouTube](https://www.youtube.com/@africanrepro/videos) 
+*  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos) 
 
 <br/>
 
