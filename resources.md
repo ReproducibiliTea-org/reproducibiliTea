@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "ReproducibiliTea Online Resources"
+title:  "ReproducibiliTea Resources"
 ---
 
 # Resources published by ReproducibiliTea journal clubs
