@@ -6,7 +6,7 @@ title:  "ReproducibiliTea Resources"
 # Resources published by ReproducibiliTea journal clubs
 
 
-**Recordings**
+**Video recordings of past events**
 
 
 *  BordeauxTea [YouTube](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
@@ -132,7 +132,7 @@ title:  "ReproducibiliTea Resources"
 
 <br/>
 
-**Recordings** 
+**Video recordings** 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
 *  Center for Open Science (COS) events and webinars [website](https://www.cos.io/event)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
