@@ -85,6 +85,7 @@ Presentations
 
 Blogs
 *  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
+*  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/) 
 
 # Other resources
 
