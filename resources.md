@@ -21,15 +21,15 @@ Recordings
 *  ReproducibiliTea Leeds [YouTube](https://www.youtube.com/@leedsreproducibilitea8534/videos)   
 *  ReproducibiliTea McMasters [OSF](https://osf.io/xtezw/)  
 *  ReproducibiliTea Rotterdam / Open Science Community Rotterdam [YouTube](https://www.youtube.com/@opensciencecommunityrotter4952/videos)   
-*  ReproducibiliTea UCL/UNIL [Website](https://sites.google.com/view/reproducibilitea-ucl/recordings?authuser=0)  
+*  ReproducibiliTea UCL/UNIL [website](https://sites.google.com/view/reproducibilitea-ucl/recordings?authuser=0)  
 *  ReproducibiliTea UniBasel [YouTube](https://www.youtube.com/@bam_mri/videos) 
-*  ReproducibiliTea UniHelsinki [Website](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) 
+*  ReproducibiliTea UniHelsinki [website](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) 
 *  ReproducibiliTea University of East Anglia [YouTube](https://www.youtube.com/@reproducibiliteauea1434/videos)
 
 Presentations
 
 
-*  ReproducibiliTea Adelaide [Website](https://sites.google.com/view/rtea-adelaide/archive?authuser=0#h.vhxe0weq4031) 
+*  ReproducibiliTea Adelaide [website](https://sites.google.com/view/rtea-adelaide/archive?authuser=0#h.vhxe0weq4031) 
 *  ReproducibiliTea Amsterdam [OSF](https://osf.io/sn6dk/files/osfstorage) 
 *  ReproducibiliTea Birmingham [OSF](https://osf.io/jbqw6/files/osfstorage) 
 *  ReproducibiliTea Bochum [OSF](https://osf.io/vak6y/files/osfstorage) 
@@ -87,12 +87,12 @@ Presentations
 # Other resources
 
 Resources published by other organisations
-*  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [link](https://forrt.org/clusters/)
-*  Repro4Everyone [link](https://www.repro4everyone.org/resources)
-*  UKRN Primers [link](https://www.ukrn.org/primers/)
-*  AREN Community Resources [link](https://osf.io/zdp83/)
-*  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants [link](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
-*  Guidance for best practices for clinical trials. Geneva: World Health Organization; 2024 [link](https://www.who.int/publications/i/item/9789240097711)
+*  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [website](https://forrt.org/clusters/)
+*  Repro4Everyone [website](https://www.repro4everyone.org/resources)
+*  UKRN Primers [website](https://www.ukrn.org/primers/)
+*  AREN Community Resources [OSF](https://osf.io/zdp83/)
+*  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
+*  Guidance for best practices for clinical trials. Geneva: World Health Organization; 2024 [website](https://www.who.int/publications/i/item/9789240097711)
 
 Blogs
 *  Datacolada [blog](https://datacolada.org/)
@@ -115,8 +115,8 @@ Books (online only)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [ebook](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
 
 Recordings 
-*  Reproducibility Rounds [Website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
-*  Center for Open Science (COS) events and webinars [Website](https://www.cos.io/event)
+*  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
+*  Center for Open Science (COS) events and webinars [website](https://www.cos.io/event)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
 *  Perspectives on Scientific Error conference, February/March 2024 [YouTube](https://www.youtube.com/playlist?list=PL2jHUB0Qi4eMKMfEhumy5DHGcZZVEBiSB)
 *  The promises and pitfalls of preregistration meeting, March 2024 [YouTube](https://www.youtube.com/playlist?list=PLg7f-TkW11iWRzQbKFl7jWqgc9EDgK16V)
