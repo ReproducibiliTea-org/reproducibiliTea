@@ -26,8 +26,9 @@ Recordings
 *  ReproducibiliTea UniHelsinki [website](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) 
 *  ReproducibiliTea University of East Anglia [YouTube](https://www.youtube.com/@reproducibiliteauea1434/videos)
 
-Presentations
+<br/>
 
+Presentations
 
 *  ReproducibiliTea Adelaide [website](https://sites.google.com/view/rtea-adelaide/archive?authuser=0#h.vhxe0weq4031) 
 *  ReproducibiliTea Amsterdam [OSF](https://osf.io/sn6dk/files/osfstorage) 
@@ -47,6 +48,8 @@ Presentations
 *  ReproducibiliTea University of Bristol [OSF](https://osf.io/9zbcw/files/osfstorage) 
 *  ReproducibiliTea Zurich [OSF](https://osf.io/f2dt8/files/osfstorage) 
 *  Wolsink, L. (2024). First steps into Open Science as an Early Career Researcher. Retrieved from [https://osf.io/cbeq4](https://osf.io/cbeq4)
+
+<br/>
 
   Reading lists
 
@@ -83,6 +86,8 @@ Presentations
 *  ReproducibiliTea York [2019a](https://osf.io/msr43) , [2019b](https://osf.io/3e2jb) , [2021a](https://osf.io/2hj3n) ,  [2021b](https://osf.io/yhzqw) ,  [2021c](https://osf.io/qg9ec) , [2022](https://osf.io/bq9na)
 *  ReproducibiliTea Zurich [2019-ongoing](https://www.crs.uzh.ch/en/training/ReproducibiliTea.html)
 
+<br/>
+
 Blogs
 *  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
@@ -100,12 +105,16 @@ Resources published by other organisations
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants (amended in 2024) [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 *  Guidance for best practices for clinical trials (WHO, 2024) [website](https://www.who.int/publications/i/item/9789240097711)
 
+<br/>
+
 Blogs
 *  Datacolada [blog](https://datacolada.org/)
 *  The 100% Confidence Interval [blog](https://www.the100.ci/)
 *  The 20% Statistician [blog](https://daniellakens.blogspot.com/)
 *  Critical Metascience [blog](https://markrubin.substack.com/)
 *  Statistical Modeling, Causal Inference, and Social Science [blog](https://statmodeling.stat.columbia.edu/)
+
+<br/>
 
 Books (in print)
 *  Science Fictions by Stuart Ritchie (2020) [link](https://www.sciencefictions.org/p/book)
@@ -114,11 +123,14 @@ Books (in print)
 *  The 7 Deadly Sins of Psychology by Chris Chambers (2017) [link](https://press.princeton.edu/books/hardcover/9780691158907/the-seven-deadly-sins-of-psychology)
 *  Psychology in Crisis by Brian M. Hughes (2018) [link](https://brianmhughes.com/2018/08/13/psychology-in-crisis/)
 
+<br/>
 
 Books (online only)
 *  Lakens, D. (2022). Improving Your Statistical Inferences. [website](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
 *  Heathers, J. (2025). An Introduction To Forensic Metascience. [website](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [website](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
+
+<br/>
 
 Recordings 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
@@ -132,6 +144,8 @@ Recordings
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
 *  African Reproducibility Network [YouTube](https://www.youtube.com/@africanrepro/videos) 
+
+<br/>
 
 Podcasts
 *  ReproducibilITea [podcast](https://soundcloud.com/reproducibilitea)
