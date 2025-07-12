@@ -86,7 +86,7 @@ Presentations
 
 # Other resources
 
-Published by other organisations
+Resources published by other organisations
 *  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [link](https://forrt.org/clusters/)
 *  Repro4Everyone [link](https://www.repro4everyone.org/resources)
 *  UKRN Primers [link](https://www.ukrn.org/primers/)
@@ -101,7 +101,7 @@ Blogs
 *  Critical Metascience [link](https://markrubin.substack.com/)
 *  Statistical Modeling, Causal Inference, and Social Science [link](https://statmodeling.stat.columbia.edu/)
 
-Books (in print):
+Books (in print)
 *  Science Fictions by Stuart Ritchie (2020) [link](https://www.sciencefictions.org/p/book)
 *  Bad Science by Ben Goldacre (2009) [link](https://www.amazon.co.uk/Bad-Science-Ben-Goldacre/dp/000728487X/?tag=bs0b-21)
 *  A Student’s Guide to Open Science by Charlotte Pennington (2023) [link](https://www.mheducation.co.uk/a-student-s-guide-to-open-science-using-the-replication-crisis-to-reform-psychology-9780335251162-emea-group)
@@ -109,9 +109,16 @@ Books (in print):
 *  Psychology in Crisis by Brian M. Hughes (2018) [link](https://brianmhughes.com/2018/08/13/psychology-in-crisis/)
 
 
-Books (online only):
+Books (online only)
 *  Lakens, D. (2022). Improving Your Statistical Inferences. [link](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
 *  Heathers, J. (2025). An Introduction To Forensic Metascience. [link](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [link](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV) 
 
-
+Podcasts
+*  ReproducibilITea podcast [link](https://soundcloud.com/reproducibilitea)
+*  Nullius in Verba [link](https://nulliusinverba.podbean.com/)
+*  Everything Hertz [link](https://everythinghertz.com/)
+*  The Black Goat [link](https://www.theblackgoatpodcast.com/)
+*  Répare Ta Science (in French) [link](https://open.spotify.com/show/0b98zlhi0Axosw96tmcZ86)
+*  #AskDifferent  [link](https://www.einsteinfoundation.de/en/podcast)
+*  Allegedly Does Not Replicate [link](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7) 
