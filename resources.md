@@ -83,6 +83,8 @@ Presentations
 *  ReproducibiliTea York [2019a](https://osf.io/msr43) , [2019b](https://osf.io/3e2jb) , [2021a](https://osf.io/2hj3n) ,  [2021b](https://osf.io/yhzqw) ,  [2021c](https://osf.io/qg9ec) , [2022](https://osf.io/bq9na)
 *  ReproducibiliTea Zurich [2019-ongoing](https://www.crs.uzh.ch/en/training/ReproducibiliTea.html)
 
+Blogs
+*  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
 
 # Other resources
 
