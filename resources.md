@@ -88,6 +88,8 @@ Blogs
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
 *  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news) 
 
+<br/><br/>
+
 # Other resources
 
 Resources published by other organisations
