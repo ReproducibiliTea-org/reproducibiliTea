@@ -11,20 +11,20 @@ title:  "ReproducibiliTea Resources"
 
 *  BordeauxTea [2021-2023](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
 *  ReproducibiliTea Brasil [2020-2021](https://www.youtube.com/playlist?list=PLfID5M8U8w5tfNmLgz2jM0ggn_azVVT4j)  
-*  ReproducibiliTea Chicago - Dr William Ngiam [2020-ongoing](https://www.youtube.com/@WilliamNgiam/videos)
+*  ReproducibiliTea Chicago - Dr William Ngiam [2020-2025](https://www.youtube.com/@WilliamNgiam/videos)
 *  ReproducibiliTea DiPSCo / Open Science Trento [2023](https://www.youtube.com/@ReproTeaUnitn/videos)    
 *  ReproducibiliTea Dundee [2021](https://www.youtube.com/@dundeereproducibilitea2015/videos)   
 *  ReproducibiliTea EARLI JURE [2023](https://www.youtube.com/playlist?list=PL3XjW1TIAkRRFJTjMY-AYLECF7-qAEUIy) 
-*  ReproducibiliTea Edinburgh [2020-ongoing](https://www.youtube.com/@edinburghreproducibilitea1277/videos)   
+*  ReproducibiliTea Edinburgh [2020-2025](https://www.youtube.com/@edinburghreproducibilitea1277/videos)   
 *  ReproducibiliTea Exeter [2023](https://osf.io/rmehf/files/osfstorage) 
 *  ReproducibiliTea Glasgow [2020-2021](https://www.youtube.com/@glasgowreproducibilitea1816/videos)    
 *  ReproducibiliTea Leeds [2020-2023](https://www.youtube.com/@leedsreproducibilitea8534/videos)   
-*  ReproducibiliTea McMasters [2022-2023](https://osf.io/xtezw/)  
+*  ReproducibiliTea McMasters [2022-2023](https://osf.io/xtezw/files/osfstorage)  
 *  ReproducibiliTea Rotterdam / Open Science Community Rotterdam [2022](https://www.youtube.com/@opensciencecommunityrotter4952/videos)   
 *  ReproducibiliTea UCL/UNIL [2022-2024](https://sites.google.com/view/reproducibilitea-ucl/recordings?authuser=0)  
-*  ReproducibiliTea UniBasel [2020-ongoing](https://www.youtube.com/@bam_mri/videos) 
+*  ReproducibiliTea UniBasel [2020-2025](https://www.youtube.com/@bam_mri/videos) 
 *  ReproducibiliTea UniHelsinki [2025](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) 
-*  ReproducibiliTea University of East Anglia [2022-ongoing](https://www.youtube.com/@reproducibiliteauea1434/videos)
+*  ReproducibiliTea University of East Anglia [2022-2025](https://www.youtube.com/@reproducibiliteauea1434/videos)
 
 <br/>
 
