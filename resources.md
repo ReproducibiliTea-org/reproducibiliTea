@@ -59,6 +59,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTea Bochum [2023](https://osf.io/ev4zw) , [2023/2024](https://osf.io/957d3) , [2024](https://osf.io/azr2q) , [2024/2025](https://osf.io/fcbw7) , [2025](https://osf.io/zmrpj)
 *  ReproducibiliTea Bordeaux [2021](https://osf.io/jqxw6/wiki/Schedule-21/) , [2022](https://osf.io/jqxw6/wiki/Schedule/)
 *  ReproducibiliTea Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25)
+*  ReproducibiliTea DiPSCo / Open Science Trento [2022](https://sites.google.com/unitn.it/reproducibilitea/reading-list/our-reading-list?authuser=0)
 *  ReproducibiliTea Frankfurt [2019/2020](https://osf.io/jk74w) , [2020/2021](https://osf.io/jfbv5) , [2021](https://osf.io/8v764) , [2021/2022](https://osf.io/ebd6x) , [2022](https://osf.io/vqhkw) , [2022/2023](https://osf.io/zng2d) , [2023/2024](https://osf.io/9hrtw)
 *  ReproducibiliTea Geneva [2021/2022](https://osf.io/qrsgc) , [2022a](https://osf.io/9yek7) , [2022b](https://osf.io/yt2rs) , [2023a](https://osf.io/cjg7m) , [2023b](https://osf.io/mt7rj) , [2024](https://osf.io/gf53t)
 *  ReproducibiliTea Graz [2019](https://osf.io/g4e8j) , [2019/2020](https://osf.io/8kbm2) , [2021](https://osf.io/buv2g) , [2021/2022](https://osf.io/v7f4t) , [2022](https://osf.io/rkfbs) , [2023](https://osf.io/2mjgh) , [2024](https://osf.io/x2unk) , [2024/2025](https://osf.io/2at7j)
@@ -71,7 +72,6 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTea México [2020-ongoing](https://sites.google.com/view/rptmx)
 *  ReproducibiliTea Newcastle [2022-ongoing](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
 *  Reproducibilitea for Psychopathology - Northumbria University [2021-ongoing](https://osf.io/3vd59/files/osfstorage)
-*  ReproducibiliTea Open Science Trento [2022](https://sites.google.com/unitn.it/reproducibilitea/reading-list/our-reading-list?authuser=0)
 *  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
 *  ReproducibiliTea Queen's University Belfast [2021/2022](https://osf.io/cnu82)
 *  ReproducibiliTea RHUL [2023](https://osf.io/9zxbh) ,  [2024a](https://osf.io/x4ynd) ,  [2024b](https://osf.io/8mqat) , [2024/2025](https://osf.io/r9uts)
@@ -80,7 +80,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTea Southampton [2019-ongoing](https://library.soton.ac.uk/lovedata/reproducibiliTea#previous)
 *  ReproducibiliTea Stanford [2022-ongoing](https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html)
 *  ReproducibiliTea Toronto [2020-ongoing](https://osf.io/h3adt/wiki/home/) , [2023](https://osf.io/r6t57) , [2024a](https://osf.io/j9c5m) , [2024b](https://osf.io/zjh3p) , [2024c](https://osf.io/wzagr) , [2025](https://osf.io/7dh3j)
-*  ReproducibiliTea UCL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-ongoing](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
+*  ReproducibiliTea UCL/UNIL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-ongoing](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
 *  ReproducibiliTea UniBasel [2023](https://osf.io/rqp56)
 *  ReproducibiliTea Vienna [2021-2023](https://drive.google.com/file/d/11y1iwtVbv_dPasHGWJUdfqLPh5i8T1IO/view)
 *  ReproducibiliTea York [2019a](https://osf.io/msr43) , [2019b](https://osf.io/3e2jb) , [2021a](https://osf.io/2hj3n) ,  [2021b](https://osf.io/yhzqw) ,  [2021c](https://osf.io/qg9ec) , [2022](https://osf.io/bq9na)
@@ -148,7 +148,7 @@ title:  "ReproducibiliTea Resources"
 <br/>
 
 **Podcasts**
-*  ReproducibilITea [podcast](https://soundcloud.com/reproducibilitea)
+*  ReproducibiliTea [podcast](https://soundcloud.com/reproducibilitea)
 *  Nullius in Verba [podcast](https://nulliusinverba.podbean.com/)
 *  Everything Hertz [podcast](https://everythinghertz.com/)
 *  The Black Goat [podcast](https://www.theblackgoatpodcast.com/)
