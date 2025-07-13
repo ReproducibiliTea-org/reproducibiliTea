@@ -46,7 +46,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTea UniBasel [OSF](https://osf.io/kp98v/files/osfstorage) 
 *  ReproducibiliTea UniHelsinki [OSF](https://osf.io/4r5xt/files/osfstorage) 
 *  ReproducibiliTea University of Bristol [OSF](https://osf.io/9zbcw/files/osfstorage) 
-*  ReproducibiliTea Zurich [OSF](https://osf.io/f2dt8/files/osfstorage) 
+*  ReproducibiliTea Zurich [2020-2025](https://osf.io/f2dt8/files/osfstorage) 
 *  Wolsink, L. (2024). First steps into Open Science as an Early Career Researcher. Retrieved from [https://osf.io/cbeq4](https://osf.io/cbeq4)
 
 <br/>
