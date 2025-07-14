@@ -131,7 +131,7 @@ title:  "ReproducibiliTea Resources"
 *  Lakens, D. (2022). Improving Your Statistical Inferences. [website](https://lakens.github.io/statistical_inferences/) , [doi](https://doi.org/10.5281/zenodo.6409077)
 *  Heathers, J. (2025). An Introduction To Forensic Metascience. [website](https://jamesheathers.curve.space/) , [doi](https://doi.org/10.5281/zenodo.14871843)
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [website](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV)
-*  Frank, M. C., Braginsky, M., Cachia, J., Coles, N. A., Hardwicke, T. E., Hawkins, R. D., Mathur, M. B., & Williams, R. (2025). Experimentology: An Open Science Approach to Experimental Psychology Methods. Stanford University. [website](https://experimentology.io/) , [doi](https://doi.org/10.25936/3JP6-5M50) 
+*  Frank, M. C. et al. (2025). Experimentology: An Open Science Approach to Experimental Psychology Methods. [website](https://experimentology.io/) , [doi](https://doi.org/10.25936/3JP6-5M50) 
 
 <br/>
 
