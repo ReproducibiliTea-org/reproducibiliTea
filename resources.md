@@ -123,6 +123,7 @@ title:  "ReproducibiliTea Resources"
 *  A Student’s Guide to Open Science by Charlotte Pennington (2023) [link](https://www.mheducation.co.uk/a-student-s-guide-to-open-science-using-the-replication-crisis-to-reform-psychology-9780335251162-emea-group)
 *  The 7 Deadly Sins of Psychology by Chris Chambers (2017) [link](https://press.princeton.edu/books/hardcover/9780691158907/the-seven-deadly-sins-of-psychology)
 *  Psychology in Crisis by Brian M. Hughes (2018) [link](https://brianmhughes.com/2018/08/13/psychology-in-crisis/)
+*  Unreliable. Bias, Fraud, and the Reproducibility Crisis in Biomedical Research by Csaba Szabo (2025) [link](https://cup.columbia.edu/book/unreliable/9780231216241/) 
 
 <br/>
 
