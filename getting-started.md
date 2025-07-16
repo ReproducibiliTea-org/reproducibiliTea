@@ -52,4 +52,4 @@ Here some great reading lists to get you in the know quick and easy with complem
 
 You can find all the Reading lists [here](https://rpt-rl.netlify.app/).
 
-Need even more resources? Check out our friends at [FORRT](https://forrt.org/).
+Need even more resources? Check out our [Resources](https://reproducibilitea.org/resources).
