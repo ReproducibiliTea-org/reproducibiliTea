@@ -158,7 +158,8 @@ title:  "ReproducibiliTea Resources"
 *  The Black Goat [podcast](https://www.theblackgoatpodcast.com/)
 *  Répare Ta Science [podcast](https://open.spotify.com/show/0b98zlhi0Axosw96tmcZ86)
 *  #AskDifferent [podcast](https://www.einsteinfoundation.de/en/podcast)
-*  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7) 
+*  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7)
+*  Science Works [podcast](https://www.rmz.hu-berlin.de/en/rmz-funk/podcast)
 
 <br/>
 
