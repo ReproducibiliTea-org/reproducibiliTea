@@ -139,6 +139,7 @@ title:  "ReproducibiliTea Resources"
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
 *  Center for Open Science (COS) events and webinars [website](https://www.cos.io/event)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
+*  LMU-MPG Open Science Summer School 2024 [OSF](https://osf.io/pxgsc/)
 *  Perspectives on Scientific Error conference, February/March 2024 [YouTube](https://www.youtube.com/playlist?list=PL2jHUB0Qi4eMKMfEhumy5DHGcZZVEBiSB)
 *  The promises and pitfalls of preregistration meeting, March 2024 [YouTube](https://www.youtube.com/playlist?list=PLg7f-TkW11iWRzQbKFl7jWqgc9EDgK16V)
 *  ESMARConf Evidence Synthesis and Meta-Analysis in R Conference [YouTube](https://esmarconf.org/recordings/)
