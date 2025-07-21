@@ -92,7 +92,7 @@ title:  "ReproducibiliTea Resources"
 **Blogs**
 *  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
-*  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news) 
+*  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news/categories/reproducibilitea-journal-club) 
 
 <br/><br/>
 
