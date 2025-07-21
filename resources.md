@@ -147,6 +147,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTeach [YouTube](https://www.youtube.com/@reproducibiliteach/videos)
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
+*  RIOT Science Club [YouTube](https://www.youtube.com/@RIOTScienceClub/videos)
 *  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos)
 *  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos) 
 
