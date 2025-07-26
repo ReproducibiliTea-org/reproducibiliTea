@@ -148,6 +148,7 @@ title:  "ReproducibiliTea Resources"
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
 *  RIOT Science Club [YouTube](https://www.youtube.com/@RIOTScienceClub/videos)
+*  COPE (Committee on Publication Ethics) [YouTube](https://www.youtube.com/@publicationethics/videos)
 *  European Association of Science Editors (EASE) [YouTube](https://www.youtube.com/@EASEeditors/videos)
 *  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos)
 *  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos) 
