@@ -164,6 +164,7 @@ title:  "ReproducibiliTea Resources"
 *  #AskDifferent [podcast](https://www.einsteinfoundation.de/en/podcast)
 *  Allegedly Does Not Replicate [podcast](https://open.spotify.com/show/1gH9YRve1SpkH8OvaWI0i7)
 *  Science Works [podcast](https://www.rmz.hu-berlin.de/en/rmz-funk/podcast)
+*  Research Culture Uncovered [podcast](https://research-culture.captivate.fm/)
 
 <br/>
 
