@@ -58,7 +58,7 @@ title:  "Resources"
 *  ReproducibiliTea Birmingham [2020a](https://osf.io/uns3b) , [2020b](https://osf.io/c5njh) , [2021a](https://osf.io/e5sbp) , [2021b](https://osf.io/trb4p) , [2022a](https://osf.io/dgjnx) , [2022b](https://osf.io/rkn67)
 *  ReproducibiliTea Bochum [2023](https://osf.io/ev4zw) , [2023/2024](https://osf.io/957d3) , [2024](https://osf.io/azr2q) , [2024/2025](https://osf.io/fcbw7) , [2025](https://osf.io/zmrpj)
 *  ReproducibiliTea Bordeaux [2021](https://osf.io/jqxw6/wiki/Schedule-21/) , [2022](https://osf.io/jqxw6/wiki/Schedule/)
-*  ReproducibiliTea Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25)
+*  ReproducibiliTea in the HumaniTeas / Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25)
 *  ReproducibiliTea DiPSCo / Open Science Trento [2022](https://sites.google.com/unitn.it/reproducibilitea/reading-list/our-reading-list?authuser=0)
 *  ReproducibiliTea Exeter [2021-2023](https://osf.io/rmehf/files/osfstorage)
 *  ReproducibiliTea Frankfurt [2019/2020](https://osf.io/jk74w) , [2020/2021](https://osf.io/jfbv5) , [2021](https://osf.io/8v764) , [2021/2022](https://osf.io/ebd6x) , [2022](https://osf.io/vqhkw) , [2022/2023](https://osf.io/zng2d) , [2023/2024](https://osf.io/9hrtw)
@@ -91,6 +91,7 @@ title:  "Resources"
 
 **Blogs**
 *  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
+*  ReproducibiliTea in the HumaniTeas / Cologne [blog](https://elenlefoll.quarto.pub/os-linguistics2025/posts.html)
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
 *  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news/categories/reproducibilitea-journal-club) 
 
