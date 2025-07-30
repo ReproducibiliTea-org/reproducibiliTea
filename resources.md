@@ -81,7 +81,7 @@ title:  "ReproducibiliTea Resources"
 *  ReproducibiliTea Southampton [2019-2025](https://library.soton.ac.uk/lovedata/reproducibiliTea#previous)
 *  ReproducibiliTea Stanford [2022-2025](https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html)
 *  ReproducibiliTea Toronto [2020-2025](https://osf.io/h3adt/wiki/home/) , [2023](https://osf.io/r6t57) , [2024a](https://osf.io/j9c5m) , [2024b](https://osf.io/zjh3p) , [2024c](https://osf.io/wzagr) , [2025](https://osf.io/7dh3j)
-*  ReproducibiliTea UCL/UNIL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-2024](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
+*  ReproducibiliTea UCL/UNIL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-2025](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
 *  ReproducibiliTea UniBasel [2023](https://osf.io/rqp56)
 *  ReproducibiliTea Vienna [2021-2023](https://drive.google.com/file/d/11y1iwtVbv_dPasHGWJUdfqLPh5i8T1IO/view)
 *  ReproducibiliTea York [2019a](https://osf.io/msr43) , [2019b](https://osf.io/3e2jb) , [2021a](https://osf.io/2hj3n) ,  [2021b](https://osf.io/yhzqw) ,  [2021c](https://osf.io/qg9ec) , [2022](https://osf.io/bq9na)
