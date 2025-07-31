@@ -102,7 +102,7 @@ title:  "Resources"
 **Resources published by other organisations**
 *  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [website](https://forrt.org/clusters/)
 *  Repro4Everyone [website](https://www.repro4everyone.org/resources)
-*  UK Reproducibility Network (UKRN) Primers [website](https://www.ukrn.org/primers/)
+*  UK Reproducibility Network (UKRN) Resources [website](https://www.ukrn.org/resources/)
 *  African Reproducibility Network (AREN) Community Resources [OSF](https://osf.io/zdp83/)
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants (amended in 2024) [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 *  Guidance for best practices for clinical trials (WHO, 2024) [website](https://www.who.int/publications/i/item/9789240097711)
