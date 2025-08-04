@@ -26,8 +26,8 @@ last-update-message: >-
 
 Hello, we're Edinburgh ReproducibiliTea and we host a mix of seminar/journal club style sessions on Open Research topics every 3rd Friday of the month from 11-12 UK time during the academic semesters. 
 
-For an overview of our schedule and blog posts about our previous sessions see https://edopenresearch.com/reproducibilitea-blog/. 
+For an overview of our schedule and blog posts about our previous sessions see [https://edopenresearch.com/reproducibilitea-blog/](https://edopenresearch.com/reproducibilitea-blog/). 
 
-We also have a YouTube channel were we upload our recordings https://www.youtube.com/channel/UC9y6VX6Dvs4-vC8eDuOKpNQ and we also post our recordings and other relevant materials on our OSF page: https://osf.io/kh5px/ 
+We also have a YouTube channel were we upload our recordings [https://www.youtube.com/channel/UC9y6VX6Dvs4-vC8eDuOKpNQ](https://www.youtube.com/channel/UC9y6VX6Dvs4-vC8eDuOKpNQ) and we also post our recordings and other relevant materials on our OSF page: [https://osf.io/kh5px/](https://osf.io/kh5px/)
 
-To sign up for our sessions you can join our mailing list by filling out this form https://docs.google.com/forms/d/e/1FAIpQLScjjpsLmzt-XIm21ec5sUz4LGE_YfOrjwnI321WcS5R5qgXFA/viewform or keep an eye on our Twitter (@Edinburgh_Tea) for links to our session-specific Eventbrite pages. We hope to see you at one of our sessions!
+To sign up for our sessions you can join our mailing list by filling out this form [https://docs.google.com/forms/d/e/1FAIpQLScjjpsLmzt-XIm21ec5sUz4LGE_YfOrjwnI321WcS5R5qgXFA/viewform](https://docs.google.com/forms/d/e/1FAIpQLScjjpsLmzt-XIm21ec5sUz4LGE_YfOrjwnI321WcS5R5qgXFA/viewform) or keep an eye on our Twitter ([@Edinburgh_Tea](https://twitter.com/Edinburgh_Tea)) for links to our session-specific Eventbrite pages. We hope to see you at one of our sessions!
