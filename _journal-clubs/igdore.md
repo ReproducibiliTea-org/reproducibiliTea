@@ -10,8 +10,8 @@ website: ""
 twitter: https://twitter.com/igdoreinstitute
 signup: reproducibilitea@igdore.org
 organisers:
-  - Natalie Hyltse
-contact: natalie.hyltse@igdore.org
+  - IGDORE Team
+contact: reproducibilitea@igdore.org
 additional-contact: []
 address:
   - Sahlgrenska Science Park
