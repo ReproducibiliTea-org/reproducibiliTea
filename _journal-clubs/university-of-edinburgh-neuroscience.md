@@ -9,7 +9,7 @@ zotero: NA9JUQF4
 website: https://edopenresearch.com/reproducibilitea-blog/
 twitter: https://twitter.com/Edinburgh_Tea
 signup: https://forms.gle/SHdKxcNG4dh2XeTF6
-organisers: [Sumbul Syed, Emma Wilson]
+organisers: [Sumbul Syed, Fiona Ramage]
 contact: Edinburgh.ReproducibiliTea@ed.ac.uk
 additional-contact: []
 address: [The University of Edinburgh]
