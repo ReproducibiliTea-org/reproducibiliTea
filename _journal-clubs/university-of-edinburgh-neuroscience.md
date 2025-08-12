@@ -6,9 +6,9 @@ host-organisation: The University of Edinburgh
 host-org-url: https://www.ed.ac.uk/
 osf: kh5px
 zotero: NA9JUQF4
-website: https://edopenresearch.com/reproducibilitea-blog/
-twitter: https://twitter.com/Edinburgh_Tea
-signup: https://forms.gle/SHdKxcNG4dh2XeTF6
+website: https://edopenresearch.wordpress.com/
+twitter: https://bsky.app/profile/edopenresearch.bsky.social
+signup: 
 organisers: [Fiona Ramage]
 contact: Edinburgh.ReproducibiliTea@ed.ac.uk
 additional-contact: []
@@ -24,10 +24,21 @@ last-update-message: >-
 
 ---
 
-Hello, we're Edinburgh ReproducibiliTea and we host a mix of seminar/journal club style sessions on Open Research topics every 3rd Friday of the month from 11-12 UK time during the academic semesters. 
+Hello and welcome to the Edinburgh branch of ReproducibiliTea! ReproducibiliTea is one of the flagship events of the Edinburgh Open Research Initiative (EORI), which has been running since 2019.
 
-For an overview of our schedule and blog posts about our previous sessions see [https://edopenresearch.com/reproducibilitea-blog/](https://edopenresearch.com/reproducibilitea-blog/). 
+ 
 
-We also have a YouTube channel were we upload our recordings [https://www.youtube.com/channel/UC9y6VX6Dvs4-vC8eDuOKpNQ](https://www.youtube.com/channel/UC9y6VX6Dvs4-vC8eDuOKpNQ) and we also post our recordings and other relevant materials on our OSF page: [https://osf.io/kh5px/](https://osf.io/kh5px/)
+From the 2025/26 academic year, we plan to host an open online ReproducibiliTea event every other month (details to follow – or email us for updates!) and focus on local in-person events on the alternating month. These will be paired events on a rotating reproducibility/open research theme. They are designed to be open to researchers of any career/study stage, discipline, or job title/role, and to present engaging content to people of any stage of their journey into reproducible research. We aim to make these events available to sign up on Eventbrite (as well as accessible via Outlook invites to UoE members), and to post regular updates on our social media channels.
 
-To sign up for our sessions you can join our mailing list by filling out this form [https://docs.google.com/forms/d/e/1FAIpQLScjjpsLmzt-XIm21ec5sUz4LGE_YfOrjwnI321WcS5R5qgXFA/viewform](https://docs.google.com/forms/d/e/1FAIpQLScjjpsLmzt-XIm21ec5sUz4LGE_YfOrjwnI321WcS5R5qgXFA/viewform) or keep an eye on our Twitter ([@Edinburgh_Tea](https://twitter.com/Edinburgh_Tea)) for links to our session-specific Eventbrite pages. We hope to see you at one of our sessions!
+ 
+
+Follow our updates on BlueSky ([https://bsky.app/profile/edopenresearch.bsky.social](https://bsky.app/profile/edopenresearch.bsky.social)) and LinkedIn ([https://www.linkedin.com/company/library-research-support-university-of-edinburgh/posts/?feedView=all](https://www.linkedin.com/company/library-research-support-university-of-edinburgh/posts/?feedView=all)) which we share with the University of Edinburgh Library Open Research Team. We will update session recordings on our MediaHopper page at UoE ([https://media.ed.ac.uk/search?keyword=reproducibilitea](https://media.ed.ac.uk/search?keyword=reproducibilitea)), as well as blog-style write-ups following the sessions (URL TBC).
+
+ 
+
+For any questions or updates, contact us at Edinburgh.ReproducibiliTea@ed.ac.uk.
+
+ 
+
+We look forward to seeing you at some of our sessions!
+
