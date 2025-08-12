@@ -7,7 +7,7 @@ host-org-url: https://www.ed.ac.uk/
 osf: kh5px
 zotero: NA9JUQF4
 website: https://edopenresearch.wordpress.com/
-twitter: https://bsky.app/profile/edopenresearch.bsky.social
+twitter: 
 signup: 
 organisers: [Fiona Ramage]
 contact: Edinburgh.ReproducibiliTea@ed.ac.uk
