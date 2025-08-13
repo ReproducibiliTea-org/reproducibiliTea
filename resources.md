@@ -138,7 +138,8 @@ title:  "Resources"
 
 **Video recordings** 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
-*  Center for Open Science (COS) events and webinars [website](https://www.cos.io/event)
+*  Center for Open Science (COS) events and webinars [website](https://www.youtube.com/@CenterforOpenScience/videos)
+*  Metascience 2025 Conference [website](https://cassyni.com/s/metascience-2025)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
 *  LMU-MPG Open Science Summer School 2024 [OSF](https://osf.io/pxgsc/)
 *  Perspectives on Scientific Error conference, February/March 2024 [YouTube](https://www.youtube.com/playlist?list=PL2jHUB0Qi4eMKMfEhumy5DHGcZZVEBiSB)
