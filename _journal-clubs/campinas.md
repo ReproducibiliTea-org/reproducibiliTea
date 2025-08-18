@@ -10,8 +10,8 @@ website: ""
 twitter: reproTeaBR
 signup: reproducibiliteacampinas@gmail.com
 organisers:
-  - Rafael Bastos
-contact: rafavsbastos@gmail.com
+  - Ellie Bastos
+contact: elliedegb@gmail.com
 additional-contact: []
 address:
   - Campinas
