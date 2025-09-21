@@ -37,7 +37,7 @@ The Advisory Board are:
 
 * Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Co-founder)
 * Matt Jaquiery
-* William Ngiam [@willngiam.bsky.social](https://bsky.app/profile/willngiam.bsky.social)
+* William Ngiam [@williamngiam.github.io](https://bsky.app/profile/williamngiam.github.io)
 * Amy Orben [@orbenamy.bsky.social](https://bsky.app/profile/orbenamy.bsky.social) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
 * Jade Pickering [@jadepickering.bsky.social](https://bsky.app/profile/jadepickering.bsky.social)
