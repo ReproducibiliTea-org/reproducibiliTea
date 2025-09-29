@@ -12,7 +12,7 @@ signup: https://universityofgalway.libcal.com/calendar/workshopsevents?cid=8158&
 organisers:
   - Dr. Jen Smith
 contact: jen.smith@universityofgalway.ie
-additional-contact: []
+additional-contact: [Libgal@gmail.com]
 address:
   - Open and Digital Research Team
   - James Hardiman Library
@@ -36,18 +36,5 @@ If you're interested in open research and you're not sure where to start, or if 
 
 All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. We encourage researchers from both Atlantic Technological University and University of Galway to attend in person--anyone is welcome online. Readings are listed in our calendar events.
 
-9 October 2024 (W), 11am-12pm
+1 October 2025 (W), 13.00-14.00 (UTC + 1); registration: https://universityofgalway.libcal.com/event/4398798 
 
-14 November (Th), 10-11am
-
-9 December (M), 12-1pm
-
-21 January 2025 (Tu), 1-2pm
-
-28 February (F), 12-1pm
-
-18 March (Tu), 12-1pm
-
-30 April (Wed), 2-3pm
-
-20 May (Tu), 11am-12pm
