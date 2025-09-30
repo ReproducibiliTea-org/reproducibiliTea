@@ -38,3 +38,7 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 1 October 2025 (W), 13.00-14.00 (UTC + 1); registration: [https://universityofgalway.libcal.com/event/4398798](https://universityofgalway.libcal.com/event/4398798)
 
+5 November 2025 (W), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4398799](https://universityofgalway.libcal.com/event/4398799)
+
+3 December 2025 (W), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4398800](https://universityofgalway.libcal.com/event/4398800)
+
