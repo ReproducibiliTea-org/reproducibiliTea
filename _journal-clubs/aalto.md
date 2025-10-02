@@ -24,4 +24,10 @@ last-update-message: >-
 
 ---
 
-A journal club hosted by the Aalto [GoodLifeLab](https://goodlife.aalto.fi/). We cover methods and open science practices primarily in HCI. Everybody is welcome.
+A journal club hosted by the Aalto [GoodLifeLab](https://goodlife.aalto.fi/). 
+We cover methods and open science practices primarily in HCI.
+
+Everybody is welcome and reading the paper is optional
+
+At the moment we meet weekly Thursdays from 15:00 to 16:00 in person and hybrid on request.
+If you want to take part, please reach out to Jan for further info.
