@@ -115,6 +115,7 @@ title:  "Resources"
 *  The 20% Statistician [blog](https://daniellakens.blogspot.com/)
 *  Critical Metascience [blog](https://markrubin.substack.com/)
 *  Statistical Modeling, Causal Inference, and Social Science [blog](https://statmodeling.stat.columbia.edu/)
+*  The blog of Trial & Error [blog](https://blog.trialanderror.org/blog/1)
 
 <br/>
 
