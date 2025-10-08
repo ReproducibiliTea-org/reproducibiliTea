@@ -27,7 +27,6 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 * Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 * Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
 * Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
-* Hazel Aileen van der Walle [@hazelvanderwalle.bsky.social](https://bsky.app/profile/hazelvanderwalle.bsky.social)
 * Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
 
@@ -41,6 +40,7 @@ The Advisory Board are:
 * Amy Orben [@orbenamy.bsky.social](https://bsky.app/profile/orbenamy.bsky.social) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
 * Jade Pickering [@jadepickering.bsky.social](https://bsky.app/profile/jadepickering.bsky.social)
+* Hazel Aileen van der Walle [@hazelvanderwalle.bsky.social](https://bsky.app/profile/hazelvanderwalle.bsky.social)
 * Jan Vornhagen [@VornhagenJB@hci.social](https://hci.social/@VornhagenJB) 
 
 <br/>
