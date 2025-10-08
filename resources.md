@@ -149,9 +149,11 @@ title:  "Resources"
 *  ReproducibiliTeach [YouTube](https://www.youtube.com/@reproducibiliteach/videos)
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
+*  ASAPbio [YouTube](https://www.youtube.com/@asapbio/videos)
 *  RIOT Science Club [YouTube](https://www.youtube.com/@RIOTScienceClub/videos)
 *  COPE (Committee on Publication Ethics) [YouTube](https://www.youtube.com/@publicationethics/videos)
 *  European Association of Science Editors (EASE) [YouTube](https://www.youtube.com/@EASEeditors/videos)
+*  Asian Council of Science Editors (ACSE) [YouTube](https://www.youtube.com/@TheACSEofficial/videos)
 *  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos)
 *  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos) 
 
@@ -168,6 +170,7 @@ title:  "Resources"
 *  Science Works [podcast](https://www.rmz.hu-berlin.de/en/rmz-funk/podcast)
 *  Research Culture Uncovered [podcast](https://research-culture.captivate.fm/)
 *  The HPS Podcast - History, Philosophy and Social Studies of Science [podcast](https://www.hpsunimelb.org/the-hps-podcast)
+*  Science in the Grey Zone [podcast](https://open.spotify.com/show/2AuVl4wyert71z2vskG5LX)
 
 <br/>
 
