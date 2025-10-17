@@ -151,7 +151,7 @@ title:  "Resources"
 *  Peer Review Congress [YouTube](https://www.youtube.com/@peerreviewcongress8496/videos)
 *  ReproducibiliTeach [YouTube](https://www.youtube.com/@reproducibiliteach/videos)
 *  Meta-research Methods [YouTube](https://www.youtube.com/@Metaresearch_methods/videos)
-*  METRICStanford [YouTube](https://www.youtube.com/@meta-researchinnovationcen4404/videos)
+*  METRICStanford International Forum [website](https://metrics.stanford.edu/metrics-international-forum)
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
 *  ASAPbio [YouTube](https://www.youtube.com/@asapbio/videos)
 *  RIOT Science Club [YouTube](https://www.youtube.com/@RIOTScienceClub/videos)
