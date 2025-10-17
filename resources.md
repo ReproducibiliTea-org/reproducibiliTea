@@ -104,6 +104,7 @@ title:  "Resources"
 *  Repro4Everyone [website](https://www.repro4everyone.org/resources)
 *  UK Reproducibility Network (UKRN) Resources [website](https://www.ukrn.org/resources/)
 *  African Reproducibility Network (AREN) Community Resources [OSF](https://osf.io/zdp83/)
+*  Danish Reproducibility Network (DKRN) [website](https://danish-repro.github.io/)
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants (amended in 2024) [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 *  Guidance for best practices for clinical trials (WHO, 2024) [website](https://www.who.int/publications/i/item/9789240097711)
 
@@ -157,7 +158,8 @@ title:  "Resources"
 *  European Association of Science Editors (EASE) [YouTube](https://www.youtube.com/@EASEeditors/videos)
 *  Asian Council of Science Editors (ACSE) [YouTube](https://www.youtube.com/@TheACSEofficial/videos)
 *  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos)
-*  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos) 
+*  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos)
+*  Danish Reproducibility Network (DKRN) [YouTube](https://www.youtube.com/@DanishReproducibilityNetwork)
 
 <br/>
 
