@@ -6,7 +6,7 @@ host-organisation: Palacky University Olomouc
 host-org-url: https://www.upol.cz/en/
 osf: null
 zotero: null
-website: 
+website: https://www.facebook.com/ChemickySpolekUP
 twitter: RT_CHSUP
 signup: 
 organisers: [Kryštof Klásek]
