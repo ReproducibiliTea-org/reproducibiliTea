@@ -63,7 +63,7 @@ title:  "Resources"
 *  ReproducibiliTea Exeter [2021-2023](https://osf.io/rmehf/files/osfstorage)
 *  ReproducibiliTea Frankfurt [2019/2020](https://osf.io/jk74w) , [2020/2021](https://osf.io/jfbv5) , [2021](https://osf.io/8v764) , [2021/2022](https://osf.io/ebd6x) , [2022](https://osf.io/vqhkw) , [2022/2023](https://osf.io/zng2d) , [2023/2024](https://osf.io/9hrtw)
 *  ReproducibiliTea Geneva [2021/2022](https://osf.io/qrsgc) , [2022a](https://osf.io/9yek7) , [2022b](https://osf.io/yt2rs) , [2023a](https://osf.io/cjg7m) , [2023b](https://osf.io/mt7rj) , [2024](https://osf.io/gf53t)
-*  ReproducibiliTea Graz [2019](https://osf.io/g4e8j) , [2019/2020](https://osf.io/8kbm2) , [2021](https://osf.io/buv2g) , [2021/2022](https://osf.io/v7f4t) , [2022](https://osf.io/rkfbs) , [2023](https://osf.io/2mjgh) , [2024](https://osf.io/x2unk) , [2024/2025](https://osf.io/2at7j) , [2025](https://osf.io/cws3p/files)
+*  ReproducibiliTea Graz [2019](https://osf.io/g4e8j) , [2019/2020](https://osf.io/8kbm2) , [2021](https://osf.io/buv2g) , [2021/2022](https://osf.io/v7f4t) , [2022](https://osf.io/rkfbs) , [2023](https://osf.io/2mjgh) , [2024](https://osf.io/x2unk) , [2024/2025](https://osf.io/2at7j) , [2025](https://osf.io/cws3p/files) , [2025/2026](https://osf.io/4czw8/files)
 *  ReproducibiliTea Innsbruck [2023](https://osf.io/jtx2m/wiki/home/)
 *  ReproducibiliTea Karolinska Institute [2022](https://osf.io/k9wzn)
 *  ReproducibiliTea Kingston [2020a](https://osf.io/y7sed) , [2020b](https://osf.io/z2wrq) , [2020/2021](https://osf.io/q7dk4) , [2021](https://osf.io/4gkcj)
