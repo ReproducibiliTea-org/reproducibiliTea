@@ -6,7 +6,7 @@ host-organisation: Carl von Ossietzky Universität Oldenburg
 host-org-url: ""
 osf: qpvzt
 zotero: KH6FX92U
-website: "https://uol.de/psychologie/open-science/osig"
+website: "https://osig-uol.github.io/"
 twitter: ""
 signup: ""
 organisers:
@@ -37,7 +37,7 @@ last-update-message: API creation of oldenburgpsych.md
 ---
 
 We’re thrilled to launch our ReproducibiliTea journal club as part of the Carl von Ossietzky Universität Oldenburg's Psychology Department Open Science Interest Group (OSIG)! OSIG is a grassroots initiative led by volunteer postdocs and PhD students, working to support staff and students in integrating open science practices into their research and the curriculum. Through our journal club, we aim to foster an inclusive, supportive environment for learning, discussion, and collaboration around transparent and reproducible research.
-Visit our website to learn more: [https://uol.de/psychologie/open-science/osig](https://uol.de/psychologie/open-science/osig)
+Visit our website to learn more: [https://osig-uol.github.io/](https://osig-uol.github.io/)
 
 
 
