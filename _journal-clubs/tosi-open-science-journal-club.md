@@ -11,8 +11,9 @@ twitter: ""
 signup: ""
 organisers:
   - Cathy Fang
+  - Hayden Wu
 contact: kaile.fang@mail.mcgill.ca
-additional-contact: []
+additional-contact: [hayden.wu@mail.mcgill.ca]
 address:
   - H3A 0G4
 country: Canada
