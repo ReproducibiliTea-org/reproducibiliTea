@@ -6,7 +6,7 @@ host-organisation: Carl von Ossietzky Universität Oldenburg
 host-org-url: ""
 osf: qpvzt
 zotero: KH6FX92U
-website: ""
+website: "https://uol.de/psychologie/open-science/osig"
 twitter: ""
 signup: ""
 organisers:
