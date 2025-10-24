@@ -12,8 +12,9 @@ signup: ""
 organisers:
   - Cassie Ann Short
   - Sumbul Jafri
-contact: cassie.ann.short@uni-oldenburg.de
+contact: osig-psychology@uni-oldenburg.de
 additional-contact:
+  - cassie.ann.short@uni-oldenburg.de
   - sumbul.jafri@uni-oldenburg.de
 address:
   - Carl von Ossietzky Universität Oldenburg
