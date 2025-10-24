@@ -3,7 +3,7 @@
 jcid: oldenburgpsych
 title: OldenburgPsych
 host-organisation: Carl von Ossietzky Universität Oldenburg
-host-org-url: ""
+host-org-url: "https://uol.de/psychologie/open-science/osig"
 osf: qpvzt
 zotero: KH6FX92U
 website: "https://osig-uol.github.io/"
