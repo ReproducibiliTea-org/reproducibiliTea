@@ -71,6 +71,7 @@ title:  "Resources"
 *  ReproducibiliTea Melbourne [2023-2025](https://www.aus-rn.org/journal-clubs)
 *  ReproducibiliTea Munich [2024](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf)
 *  ReproducibiliTea México [2020-2025](https://sites.google.com/view/rptmx)
+*  ReproducibiliTea NC State University [2021](https://github.com/sheilasaia/reproducibili-tea)
 *  ReproducibiliTea Newcastle [2022-2025](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
 *  Reproducibilitea for Psychopathology - Northumbria University [2021-2025](https://osf.io/3vd59/files/osfstorage)
 *  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
