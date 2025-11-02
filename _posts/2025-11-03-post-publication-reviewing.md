@@ -29,37 +29,26 @@ You can visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf
 <br/>
 
 Acknowledgments: We are very grateful for the ongoing feedback from the ReproducibiliTea community that helps us shape and improve this project. We would like to thank Marcus Munafò for his support.
-<br/>
+<br/><br/>
 
 References
 <br/>
-Alves T. (2025). Diversification and decentralization of peer review: part 1—initiatives at the forefront. *Sci Ed. 48*. [https://doi.org/10.36591/SE-4801-14](https://doi.org/10.36591/SE-4801-14) 
-<br/>
-Avissar-Whiting, M., Belliard, F., Bertozzi, S. M., Brand, A., Brown, K., Clément-Stoneham, G., Dawson, S., Dey, G., Ecer, D., Edmunds, S. C., Farley, A., Fischer, T. D., Franko, M., Fraser, J. S., Funk, K., Ganier, C., Harrison, M., Hatch, A., Hazlett, H., Hindle, S., … Williams, M. (2024). Recommendations for accelerating open preprint peer review to improve the culture of science. *PLoS biology, 22*(2), e3002502. [https://doi.org/10.1371/journal.pbio.3002502](https://doi.org/10.1371/journal.pbio.3002502) 
-<br/>
-Barbour, B., & Stell, B. M. (2020). PubPeer: Scientific Assessment Without Metrics. In M. 
+* Alves T. (2025). Diversification and decentralization of peer review: part 1—initiatives at the forefront. *Sci Ed. 48*. [https://doi.org/10.36591/SE-4801-14](https://doi.org/10.36591/SE-4801-14) 
+* Avissar-Whiting, M., Belliard, F., Bertozzi, S. M., Brand, A., Brown, K., Clément-Stoneham, G., Dawson, S., Dey, G., Ecer, D., Edmunds, S. C., Farley, A., Fischer, T. D., Franko, M., Fraser, J. S., Funk, K., Ganier, C., Harrison, M., Hatch, A., Hazlett, H., Hindle, S., … Williams, M. (2024). Recommendations for accelerating open preprint peer review to improve the culture of science. *PLoS biology, 22*(2), e3002502. [https://doi.org/10.1371/journal.pbio.3002502](https://doi.org/10.1371/journal.pbio.3002502) 
+* Barbour, B., & Stell, B. M. (2020). PubPeer: Scientific Assessment Without Metrics. In M. 
 Biagioli, & A. Lippman (Eds.), *Gaming the Metrics: Misconduct and Manipulation in Academic Research* (pp.149-155). Cambridge, MA: MIT Press.
-<br/>
-Byrne, J. A., & Barnett, A. G. (2024). The research literature is an unsafe workplace. 
+* Byrne, J. A., & Barnett, A. G. (2024). The research literature is an unsafe workplace. 
 *Accountability in Research, 1-8*. [https://doi.org/10.1080/08989621.2024.2428205](https://doi.org/10.1080/08989621.2024.2428205)
-<br/>
-Cooke, S. J., Young, N., Peiman, K. S., Roche, D. G., Clements, J. C., Kadykalo, A. N., ... & Browman, H. I. (2024). A harm reduction approach to improving peer review by acknowledging its imperfections. *Facets, 9*(1), 1-14. [https://doi.org/10.1139/facets-2024-0102](https://doi.org/10.1139/facets-2024-0102) 
-<br/>
-Hardwicke, T. E., Thibault, R. T., Kosie, J. E., Tzavella, L., Bendixen, T., Handcock, S. A., ... 
+* Cooke, S. J., Young, N., Peiman, K. S., Roche, D. G., Clements, J. C., Kadykalo, A. N., ... & Browman, H. I. (2024). A harm reduction approach to improving peer review by acknowledging its imperfections. *Facets, 9*(1), 1-14. [https://doi.org/10.1139/facets-2024-0102](https://doi.org/10.1139/facets-2024-0102) 
+* Hardwicke, T. E., Thibault, R. T., Kosie, J. E., Tzavella, L., Bendixen, T., Handcock, S. A., ... 
 & Ioannidis, J. P. (2022). Post-publication critique at top-ranked journals across scientific disciplines: a cross-sectional assessment of policies and practice. *Royal Society Open Science, 9*(8), 220139. [https://doi.org/10.1098/rsos.220139](https://doi.org/10.1098/rsos.220139)
-<br/>
-Huber, J., Inoua, S., Kerschbamer, R., König-Kersting, C., Palan, S., & Smith, V. L. (2022). 
+* Huber, J., Inoua, S., Kerschbamer, R., König-Kersting, C., Palan, S., & Smith, V. L. (2022). 
 Nobel and novice: Author prominence affects peer review. *Proceedings of the National Academy of Sciences of the United States of America, 119*(41), e2205779119. [https://doi.org/10.1073/pnas.2205779119](https://doi.org/10.1073/pnas.2205779119)
-<br/>
-Malički, M. (2024). Structure peer review to make it more robust. *Nature, 628*(8008), 476. 
+* Malički, M. (2024). Structure peer review to make it more robust. *Nature, 628*(8008), 476. 
 [https://doi.org/10.1038/d41586-024-01101-9](https://doi.org/10.1038/d41586-024-01101-9)
-<br/>
-Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Percie du Sert, 
+* Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Percie du Sert, 
 N., ... & Ioannidis, J. P. (2017). A manifesto for reproducible science. *Nature human behaviour, 1*(1), 0021. [https://doi.org/10.1038/s41562-016-0021](https://doi.org/10.1038/s41562-016-0021)
-<br/>
-Nosek, B. A., & Bar-Anan, Y. (2012). Scientific utopia: I. Opening scientific communication. 
+* Nosek, B. A., & Bar-Anan, Y. (2012). Scientific utopia: I. Opening scientific communication. 
 *Psychological Inquiry, 23*(3), 217-243. [https://doi.org/10.1080/1047840X.2012.692215](https://doi.org/10.1080/1047840X.2012.692215)
-<br/>
-O’Sullivan, L., Ma, L., & Doran, P. (2021). An overview of post-publication peer review. *Scholarly Assessment Reports, 3*(1). [https://doi.org/10.29024/sar.26](https://doi.org/10.29024/sar.26) 
-<br/>
-Vazire, S., & Holcombe, A. O. (2022). Where are the self-correcting mechanisms in science? *Review of General Psychology, 26*(2), 212–223. [https://doi.org/10.1177/10892680211033912](https://doi.org/10.1177/10892680211033912)  
+* O’Sullivan, L., Ma, L., & Doran, P. (2021). An overview of post-publication peer review. *Scholarly Assessment Reports, 3*(1). [https://doi.org/10.29024/sar.26](https://doi.org/10.29024/sar.26) 
+* Vazire, S., & Holcombe, A. O. (2022). Where are the self-correcting mechanisms in science? *Review of General Psychology, 26*(2), 212–223. [https://doi.org/10.1177/10892680211033912](https://doi.org/10.1177/10892680211033912)  
