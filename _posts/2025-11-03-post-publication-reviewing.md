@@ -26,7 +26,7 @@ We encourage journal clubs to discuss these topics further at their meetings. Th
 <br/>
 
 You can visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage) to **explore related reading lists**: e.g. a reading list on peer review created by Mario Malički. Additional reading lists will be available soon.
-<br/>
+<br/><br/>
 
 Acknowledgments: We are very grateful for the ongoing feedback from the ReproducibiliTea community that helps us shape and improve this project. We would like to thank Marcus Munafò for his support.
 <br/><br/>
