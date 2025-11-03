@@ -25,7 +25,7 @@ We believe this project is also a good opportunity to raise understanding of the
 We encourage journal clubs to discuss these topics further at their meetings. There are many thought-provoking readings on: peer review and its shortcomings (e.g. Byrne & Barnett, 2024; Cooke et al., 2024; Huber et al., 2022), self-correcting mechanisms in science (e.g. Hardwicke et al., 2022; Vazire & Holcombe, 2022) or on ideas to improve the peer review system: e.g. structured peer review (Malički, 2024), open continuous peer review (Nosek & Bar-Anan, 2012), diversifying peer review (Alves, 2025; Munafo et al., 2017), preprint review (Avissar-Whiting et al., 2024) and post-publication review (Barbour & Stell, 2020; O’Sullivan et al., 2021). Last but not least, we think it is vital to consider the topics of scholarly publishing, research quality, and research assessment. 
 <br/>
 
-You can visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage) to **explore related reading lists**: e.g. a reading list on peer review created by Mario Malički. Additional reading lists will be available soon.
+You can visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage) to **explore related reading lists**, e.g. a reading list on peer review created by Mario Malički. Additional reading lists will be available soon.
 <br/><br/>
 
 Acknowledgments: We are very grateful for the ongoing feedback from the ReproducibiliTea community that helps us shape and improve this project. We would like to thank Marcus Munafò for his support.
