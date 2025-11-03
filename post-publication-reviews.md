@@ -1,9 +1,8 @@
 ---
 layout: page
-title:  "Post-publication reviews"
+title:  "Post-publication reviews by ReproducibiliTea journal clubs"
 ---
 
-# Post-publication reviewing by ReproducibiliTea journal clubs
 
 
 **More info to be added**
