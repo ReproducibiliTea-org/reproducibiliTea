@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Special interest groups"
+title:  "Special Interest Groups"
 ---
 
 
