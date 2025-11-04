@@ -29,7 +29,7 @@ linkedin_username: reproducibilitea
 bluesky:
   - username: reproducibilitea.org
     instance: bsky.social
-youtube_username: @reproducibilitea
+youtube_username: '@reproducibilitea'
 
 collections:
   - journal-clubs
