@@ -11,7 +11,7 @@ twitter: RTeaUnibasel
 signup: https://forms.gle/ccX4physW1SmiX2w7
 organisers:
   - Tugba Akinci D'Antonoli
-  - Claudia Weidenseiner
+  - Claudia Weidensteiner
   - Xenia Deligianni
   - Francesco Santini
   - Valentin Amrhein
