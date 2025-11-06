@@ -16,7 +16,7 @@ Therefore, ReproducibiliTea and the UK Reproducibility Network (UKRN) decided to
 Because this project is still in its pilot phase (start January 2025), these documents are not publicly available yet. Interested in participating in the project? Send us an email: reproducibilitea@gmail.com and we will send you more information including resources.
 <br/>
 
-[TABLE]
+{% include image.html url="blog/post-publication-review.png" alt="Post-publication reviews"%}
 <br/>
 
 We believe this project is also a good opportunity to raise understanding of the current peer review system. Therefore, in October 2025, we organised two **webinars on the topic of peer review and its diversification** [(more info)]( https://docs.google.com/document/d/1xuFoCPYjMzKZ2kpBVBgXHVTPXl8stghAA9e6sVWdaEA/). The video recordings are available on our [YouTube channel](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7). 
