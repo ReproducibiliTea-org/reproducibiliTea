@@ -14,7 +14,7 @@ Therefore, ReproducibiliTea and the UK Reproducibility Network (UKRN) decided to
 <br/>
 
 Because this project is still in its pilot phase (start January 2025), these documents are not publicly available yet. Interested in participating in the project? Send us an email: reproducibilitea@gmail.com and we will send you more information including resources.
-<br/>
+<br/><br/>
 
 {% include image.html url="blog/post-publication-review.png" alt="Post-publication reviews"%}
 <br/>
