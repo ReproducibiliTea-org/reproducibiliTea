@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Post-publication reviewing by ReproducibiliTea journal clubs"
-date:   2025-11-03 14:00:00 +0000
+date:   2025-11-07 10:00:00 +0000
 author: Lianne Wolsink & Paulina Manduch
 categories: [JC]
 tags: [Steering Committee]
