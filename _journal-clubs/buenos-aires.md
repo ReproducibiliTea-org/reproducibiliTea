@@ -12,8 +12,9 @@ signup: ""
 organisers:
   - Florencia Altschuler
   - Fernando Steeb
-contact: faltschuler@udesa.edu.ar
+contact: reproducibilitea.ba@gmail.com
 additional-contact:
+  - faltschuler@udesa.edu.ar
   - fsteeb@udesa.edu.ar
 address:
   - Vito Dumas 284
