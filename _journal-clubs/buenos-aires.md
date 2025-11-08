@@ -33,3 +33,6 @@ last-update-message: API creation of buenos-aires.md
 ---
 
 
+Our journal club aims to explore the barriers and opportunities encountered at different stages of the scientific process in order to achieve reproducible, replicable, and rigorous science. The purpose of the meetings is to create a space for dialogue where we can exchange experiences and reflections on implementing Open Science practices in our scientific work.
+
+
