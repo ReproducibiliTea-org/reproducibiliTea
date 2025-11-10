@@ -10,9 +10,10 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Ignacio Leiva-Escobar
-contact: ignacioandres.leivaescobar@med-uni-heidelberg.de
-additional-contact: []
+  - Jule Neiß
+  - Dominik Krzoska
+contact: Jule.Neiss@med.uni-heidelberg.de
+additional-contact: [Dominik.Krzoska@med.uni-heidelberg.de]
 address:
   - Im Neuenheimer Feld 410
   - 69120 Heidelberg
