@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Post-publication reviewing - King’s College London ReproducibiliTea"
+title: "Post-publication reviewing - insights from King’s College London ReproducibiliTea"
 date:   2025-11-20 10:00:00 +0000
 author: Ze Freeman
 categories: [JC]
