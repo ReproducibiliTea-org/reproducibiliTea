@@ -16,9 +16,8 @@ Post-publication peer-review is the need of the hour which ensures we honor COPE
 *About the authors:
 <br/>
 Prashanth N Suravajhala, Professor, Systems Genomics Lab, Manipal University Jaipur and Founder, [Bioclues.org](https://bioclues.org)  ([@prashbio](https://x.com/prashbio) or [Linkedin](https://www.linkedin.com/in/prashbio/))  
-URL: https://bioclues.org
-Social handles:  @bioclues  
-Representative of Bioclues RT:  Hemani Sharma (PhD), Joint Secretary, Bioclues.org*
+Social handles:  [@bioclues](https://x.com/bioclues)
+Representative of Bioclues RT:  Hemani Sharma (PhD), Joint Secretary, [Bioclues.org](https://bioclues.org)*
  
 # Babraham Institute ReproducibiliTea
 
