@@ -7,20 +7,21 @@ categories: [JC]
 tags: [Bioclues, Babraham Institute]
 ---
 
-Story 1 - Bioclues ReproducibiliTea 
+In this blog post, we present insights from Bioclues and Babraham Institute ReproducibiliTea journal clubs.
+
+# Bioclues ReproducibiliTea 
+
+Post-publication peer-review is the need of the hour which ensures we honor COPE guidelines besides ensuring reproducibility and the articles’ transparency.  Peer-review is in the eye of the beholder and it may be possible that the post peer review could allow other researchers, including those authors of the published article take measures on improvement, ‘sci’tability and check scientific quotient. 
+
+About the authors:
 <br/>
 Prashanth N Suravajhala, Professor, Systems Genomics Lab, Manipal University Jaipur and Founder, Bioclues.org  (@prashbio or https://www.linkedin.com/in/prashbio/ )  
 Journal club:  Bioclues.org ReproducibiliTea 
 URL: https://bioclues.org
 Social handles:  @bioclues  
 Representative of Bioclues RT:  Hemani Sharma (PhD), Joint Secretary, Bioclues.org
-
-Post-publication peer-review is the need of the hour which ensures we honor COPE guidelines besides ensuring reproducibility and the articles’ transparency.  Peer-review is in the eye of the beholder and it may be possible that the post peer review could allow other researchers, including those authors of the published article take measures on improvement, ‘sci’tability and check scientific quotient. 
  
-
-Story 2 - Babraham Institute ReproducibiliTea
-<br/>
-Richard J. Acton 
+# Babraham Institute ReproducibiliTea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_qMAv97B390?si=Fb9U6RI0P2iCe56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br/><br/>
