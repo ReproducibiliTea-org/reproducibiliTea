@@ -31,13 +31,12 @@ As always, let us know if you have any further suggestions!
 
 If possible, use a video conferencing platform. Video allows for a more ‘social’ interaction that can help discussion and reduce isolation. Ideally, choose a platform that lets you **share your screen**, so that people can still present the paper or easily share something during the discussion. We've tested multiple technologies and suggest one of the following: 
 
-- [Zoom <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://zoom.us/) (recommended)
+- [Zoom <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://zoom.us/) 
     - High quality
     - Good tools like a shared workspace
     - The ‘host’ (not all the participants) has to sign up to Zoom and download the Zoom software and can share a link with participants to allow them to join the meeting (you can choose whether to require a password to enter the meeting). *[More information...](https://support.zoom.us/hc/en-us/articles/201362033-Getting-Started-on-Windows-and-Mac)*
     - Limited to 40 mins on the free version, we would therefore suggest using the free version but setting up **two Zoom links** in advance (or decide to host shorter 40 minute ReproducibiliTea meetings)
-        - <i class="fas fa-biohazard"></i> *Zoom have temporarily lifted the 40 minute limit **for schools***
-    - Possible scaling issues as it is highly likely that Zoom becomes really popular around the world and server capacity might become low
+
     
 - [Jitsi <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://meet.jit.si/)
     - Free and fairly unlimited
@@ -81,7 +80,7 @@ As group sizes get towards double figures, meeting using video may become prohib
 
 We are hoping to increase communication between journal clubs and allow those without a local journal club to join the discussion! To help with this, we have set up a [shared Google Calendar](/calendar/) which shows online journal clubs around the world that are happy to have further guests join. This is a place to publicly **advertise your online journal club** and **allow others to join**.  Organisers from journal clubs can also arrange to **host online journal clubs together** to increase attendance and build relationships between neighbouring universities or institutions with different cultures and perspectives. 
 
-Your ReproducibiliTea contact email will receive an email with instructions on how to add events to the shared calendar. This may be screened out by some institutions which block Google Groups invitations. If you have not received an invitation and want to access the calendar, please email us ({{ site.email }}).
+If you want to access the shared calendar to be able to add your events, please email us ({{ site.email }}).
 
 You can also use [this page](/card/) to make simple images to share with people which will remind them of when you're meeting.
 
