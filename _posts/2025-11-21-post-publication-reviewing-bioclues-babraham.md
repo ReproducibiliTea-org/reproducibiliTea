@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Post-publication reviewing - insights from Bioclues and Babraham Institute ReproducibiliTea journal clubs"
+title: "Post-publication reviewing - insights from Bioclues and Babraham ReproducibiliTea journal clubs"
 date:   2025-11-21 10:00:00 +0000
 author: Edited by Paulina Manduch
 categories: [JC]
 tags: [Bioclues, Babraham Institute]
 ---
 
-In this blog post, we present insights from Bioclues and Babraham Institute ReproducibiliTea journal clubs.
+In this blog post, we present insights from two journal clubs.
 
 # Bioclues ReproducibiliTea 
 
