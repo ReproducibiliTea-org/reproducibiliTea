@@ -20,7 +20,7 @@ Prashanth N Suravajhala ([@prashbio](https://x.com/prashbio) | [Linkedin](https:
 Hemani Sharma (PhD), Joint Secretary, [Bioclues.org](https://bioclues.org) | 
 [@bioclues](https://x.com/bioclues)*
  
-# Babraham Institute ReproducibiliTea
+# Babraham ReproducibiliTea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_qMAv97B390?si=Fb9U6RI0P2iCe56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br/><br/>
