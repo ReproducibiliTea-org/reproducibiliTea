@@ -18,7 +18,7 @@ There were understandable concerns about being open in critiques of research. In
 The process has given us an opportunity to talk about why open reviews can be a positive contribution to journal clubs and the research community. Reviewing preprints openly provides an alternative way of engaging with research in the public domain, beyond journals that allow for hosted post-publication critiques, such as letters to the editor or validation reports. There are often specific restrictions to these forms of feedback: they may not be linked directly to the original article, and are sometimes not published at all. By using [the PREreview platform](https://prereview.org/), we have a DOI for each review and location linked to preprint servers on which to share our feedback freely. Open reviews, credited to reviewers, may be a more incentivising practice than closed reviewing for for-profit journal entities, and could motivate the understanding that reviews are pieces of scholarly work in and of themselves. 
 
 We have now completed several reviews, and it’s been empowering to think together about how to convey positive, constructive feedback in an open way. Taking preprints seriously as a valuable dissemination practice has fostered discussions about their value as a more equitable, self-determined approach to sharing research than through traditional routes. Hopefully, we have also contributed useful insights to the preprints we have reviewed! We now review preprints on a regular basis, and look forward to continuing in our ReproducibiliTea meetings into the future. 
-
+<br/><br/>
 
 *About the author:
 Ze Freeman | [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social) |
