@@ -19,7 +19,6 @@ The process has given us an opportunity to talk about why open reviews can be a 
 
 We have now completed several reviews, and it’s been empowering to think together about how to convey positive, constructive feedback in an open way. Taking preprints seriously as a valuable dissemination practice has fostered discussions about their value as a more equitable, self-determined approach to sharing research than through traditional routes. Hopefully, we have also contributed useful insights to the preprints we have reviewed! We now review preprints on a regular basis, and look forward to continuing in our ReproducibiliTea meetings into the future. 
 
-</br>
 
 *About the author:
 Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social)
