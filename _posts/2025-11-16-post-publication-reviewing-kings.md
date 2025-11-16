@@ -22,7 +22,5 @@ We have now completed several reviews, and it’s been empowering to think toget
 </br>
 
 *About the author:
-</br>
 Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social)
-</br>
 King’s College London ReproducibiliTea*
