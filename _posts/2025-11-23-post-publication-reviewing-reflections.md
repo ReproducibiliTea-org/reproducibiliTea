@@ -14,6 +14,4 @@ However, while engaging in this practice can be quite taunting, I have found tha
 
 *About the author:*
 <br/>
-*Mircea Zloteanu | [@mzloteanu](https://x.com/mzloteanu) | [@mzloteanu.bsky.social](https://bsky.app/profile/mzloteanu.bsky.social)*
-<br/>
-*King’s College London*
+*Mircea Zloteanu | [@mzloteanu](https://x.com/mzloteanu) | [@mzloteanu.bsky.social](https://bsky.app/profile/mzloteanu.bsky.social) | King’s College London*
