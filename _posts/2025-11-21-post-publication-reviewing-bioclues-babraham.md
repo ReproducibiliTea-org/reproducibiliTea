@@ -27,6 +27,5 @@ Post-publication peer-review is the need of the hour which ensures we honor COPE
 
 Slides from this presentation are available [here](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/slides/2025-10-16_slides-reproTeaGlobal.html#/title-slide).
 
-<br/>
 
-Visit the blog of the Babraham Institute ReproducibiliTea Journal Club [website](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/).  
+Visit the blog of the Babraham Institute ReproducibiliTea Journal Club [link](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/).  
