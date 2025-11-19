@@ -8,6 +8,7 @@ tags: [Bioclues, Babraham Institute]
 ---
 
 In this blog post, we present insights from two journal clubs.
+<br/>
 
 # Bioclues ReproducibiliTea 
 
@@ -19,7 +20,8 @@ Post-publication peer-review is the need of the hour which ensures we honor COPE
 [@bioclues](https://x.com/bioclues)*  
 *Hemani Sharma (PhD), Joint Secretary, [Bioclues.org](https://bioclues.org) | 
 [@bioclues](https://x.com/bioclues)*
- 
+<br/><br/>
+
 # Babraham ReproducibiliTea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_qMAv97B390?si=Fb9U6RI0P2iCe56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
