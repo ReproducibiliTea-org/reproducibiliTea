@@ -38,4 +38,4 @@ Our journal club is open to both staff and students at UiO across all department
 
 Before each meeting, we read an article on meta scientific topics, which we then discuss during the meeting. At each meeting, a different discussion leader will begin by providing a short overview of the paper and facilitate discussion throughout the meeting. Anyone can propose a possible paper or topic to present if we have not covered it already. Grab a cup of tea (coffee?) and join us! 
 
-If you would like to receive announcements about our journal club and related events, please subscribe to our mailing list: https://sympa.uio.no/uio.no/subscribe/open-science-oslo
+If you would like to receive announcements about our journal club and related events, please subscribe to our mailing list: [https://sympa.uio.no/uio.no/subscribe/open-science-oslo](https://sympa.uio.no/uio.no/subscribe/open-science-oslo)
