@@ -35,4 +35,4 @@ Blog of the Babraham ReproducibiliTea journal club [link](https://babraham-repro
 <br/><br/>
 *About the author:*
 <br/>
-*Richard J. Acton* 
+*Richard J. Acton | [@RichardJActon@fosstodon.org](https://scicomm.xyz/@RichardJActon@fosstodon.org) | Babraham Institute* 
