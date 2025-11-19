@@ -32,7 +32,7 @@ Post-publication review of reproducibility best practices & data visualisation (
 Slides from this presentation [link](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/slides/2025-10-16_slides-reproTeaGlobal.html#/title-slide).
 
 Blog of the Babraham ReproducibiliTea journal club [link](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/).  
-
+<br/><br/>
 *About the author:*
 <br/>
 *Richard J. Acton* 
