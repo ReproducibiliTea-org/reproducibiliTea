@@ -25,11 +25,14 @@ Post-publication peer-review is the need of the hour which ensures we honor COPE
 
 # Babraham ReproducibiliTea
 
-Richard J. Acton - Post-publication review of reproducibility best practices & data visualisation
+Post-publication review of reproducibility best practices & data visualisation (video recording)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_qMAv97B390?si=Fb9U6RI0P2iCe56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br/>
 
 Slides from this presentation are available [here](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/slides/2025-10-16_slides-reproTeaGlobal.html#/title-slide).
 
-
 Visit the blog of the Babraham Institute ReproducibiliTea Journal Club [link](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/).  
+
+*About the author:*
+<br/>
+Richard J. Acton 
