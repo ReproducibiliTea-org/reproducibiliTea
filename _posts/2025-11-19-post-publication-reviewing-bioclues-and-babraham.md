@@ -13,7 +13,7 @@ In this blog post, we present insights from two journal clubs.
 # Bioclues ReproducibiliTea 
 
 Post-publication peer-review is the need of the hour which ensures we honor COPE guidelines besides ensuring reproducibility and the articles’ transparency.  Peer-review is in the eye of the beholder and it may be possible that the post peer review could allow other researchers, including those authors of the published article take measures on improvement, ‘sci’tability and check scientific quotient. 
-<br/>
+<br/><br/>
 
 *About the authors:*
 <br/>
