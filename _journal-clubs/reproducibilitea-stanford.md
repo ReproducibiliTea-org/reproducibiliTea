@@ -6,7 +6,7 @@ host-organisation: Stanford University
 host-org-url: https://www.stanford.edu/
 osf: "null"
 zotero: VIK5MN2M
-website: https://author.medweb.stanford.edu/editor.html/content/sm/sporr/education/training/ReproducibiliTea.html
+website: https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html
 twitter: ""
 signup: https://mailman.stanford.edu/mailman/listinfo/reproducibilitea
 organisers:
