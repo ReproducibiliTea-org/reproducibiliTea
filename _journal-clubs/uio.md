@@ -9,9 +9,9 @@ zotero: VPJF2XNM
 website: https://www.ub.uio.no/english/libraries/dsc/open-repro-research/reproducibilitea/
 twitter: 
 signup: 
-organisers: [Agata Bochynska]
+organisers: [Agata Bochynska, Elena Canamaque Varona]
 contact: agata.bochynska@ub.uio.no
-additional-contact: [agata.bochynska@gmail.com]
+additional-contact: [e.c.varona@iln.uio.no]
 address: [Department of Linguistics and Scandinavian Studies, Niels Henrik Abels vei 36, 0313, Oslo, Norway]
 country: Norway
 geolocation: [59.913729826873684, 10.7611083984375]
