@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Post-publication reviewing - some reflections"
-date:   2025-11-23 10:00:00 +0000
+date:   2025-11-21 08:00:00 +0000
 author: Mircea Zloteanu
 categories: [JC]
 tags: [King’s College London]
