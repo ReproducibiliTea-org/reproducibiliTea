@@ -2,6 +2,8 @@
 layout: page
 title:  "Resources"
 ---
+This section includes resources published by ReproducibiliTea journal clubs: video recordings, presentations, reading lists, blogs,
+as well as resources published by other organisations, lists of books, podcasts, and educational games.
 
 # Resources published by ReproducibiliTea journal clubs
 
