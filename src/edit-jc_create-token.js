@@ -1,11 +1,11 @@
 // node fetch support
 const fetch = require("node-fetch");
 require('dotenv').config();
-const faunadb = require('faunadb');
-const FQ = faunadb.query;
+const { MongoClient } = require('mongodb');
 
 const {
-    FAUNA_KEY,
+    MONGODB_URI,
+    MONGODB_DB,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
     MAILGUN_HOST,
@@ -32,11 +32,32 @@ exports.handler = function(event, context, callback) {
         return callback('Email and JCID must be submitted in JSON format in the request body.');
     }
 
-    const client = new faunadb.Client({ secret: FAUNA_KEY });
+    /**
+     * Establish a MongoDB connection
+     */
+    async function getDatabase() {
+        try {
+            if(!MONGODB_URI || !MONGODB_DB) {
+                const missing = !MONGODB_URI? 'MONGODB_URI' : 'MONGODB_DB';
+                const dbError = new Error(`Database connection failed: environment variable ${missing} is not configured.`);
+                dbError.isDbConnection = true;
+                throw dbError;
+            }
+            const mongo = new MongoClient(MONGODB_URI);
+            await mongo.connect();
+            return { client: mongo, collection: mongo.db(MONGODB_DB).collection('editTokens') };
+        } catch (error) {
+            const dbError = new Error(`Database connection failed: ${error.message}`);
+            dbError.isDbConnection = true;
+            throw dbError;
+        }
+    }
 
     // Create the token
     const token = encodeURI(data.email).substr(0,10) +
         Math.round(Math.random() * 100000000000000000);
+
+    let mongoConnection;
 
     // Check JC exists on GitHub
     fetch(
@@ -51,46 +72,33 @@ exports.handler = function(event, context, callback) {
             throw new Error(`Requested journal club ${data.jcid} does not exist.`);
         })
         .then(async () => {
-            return await client.query(
-                FQ.Map(
-                    FQ.Paginate(
-                        FQ.Filter(
-                            FQ.Match(FQ.Index('by_owner'), [ data.jcid, data.email ]),
-                            FQ.Lambda(
-                                "x",
-                                FQ.GT(FQ.Now(), FQ.Select(["data", "expires"], FQ.Get(FQ.Var("x"))))
-                            )
-                        )
-                    ),
-                    FQ.Lambda("D", FQ.Get(FQ.Var("D")))
-                )
-            )
+            mongoConnection = await getDatabase();
+            const { collection } = mongoConnection;
+            return await collection.countDocuments({
+                jcid: data.jcid,
+                email: data.email,
+                expires: { $lt: new Date() }
+            });
         })
-        .then(r => {
-            if(r.data.length > 5)
+        .then(count => {
+            if(count > 5)
                 throw new Error('Too many recent edit attempts for this journal club. Please check your email (including junk folders) for recent access tokens.')
         })
-        .then(() => {
+        .then(async () => {
             if(!data.message)
                 data.message = "";
             const now = new Date();
             const expires = now.setDate(now.getDate() + 2);
 
             // Save to the database
-            return client.query(
-                FQ.Create(
-                    FQ.Collection('editTokens'),
-                    {
-                        data: {
-                            token: token,
-                            jcid: data.jcid,
-                            email: data.email,
-                            message: data.message,
-                            expires: new Date(expires).toJSON()
-                        }
-                    }
-                )
-            )
+            const { collection } = mongoConnection;
+            return await collection.insertOne({
+                token: token,
+                jcid: data.jcid,
+                email: data.email,
+                message: data.message,
+                expires: new Date(expires)
+            });
         })
         .then(async () => {
             console.log(`Saved token ${token}`);
@@ -104,7 +112,17 @@ exports.handler = function(event, context, callback) {
                 body: 'Token created successfully.'
             });
         })
-        .catch(e => {console.log(`Token generator error: ${e}`); callback(e)});
+        .catch(e => {
+            console.log(`Token generator error: ${e}`);
+            if(e.isDbConnection)
+                callback(e.message);
+            else
+                callback(e);
+        })
+        .finally(() => {
+            if(mongoConnection?.client)
+                mongoConnection.client.close();
+        });
 };
 
 /**

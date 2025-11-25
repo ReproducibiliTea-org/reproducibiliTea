@@ -6,12 +6,12 @@
     "serve": "netlify dev"
   },
   "dependencies": {
+    "mongodb": "^6.8.0",
     "yaml": "^2.3.1"
   },
   "devDependencies": {
     "diacritic": "0.0.2",
     "dotenv": "^8.6.0",
-    "faunadb": "^3.0.1",
     "mailgun-js": "^0.22.0",
     "netlify-cli": "^17.36.4",
     "node-fetch": "^2.6.7"

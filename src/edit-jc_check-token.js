@@ -1,13 +1,10 @@
 // node fetch support
 require('dotenv').config();
-const faunadb = require('faunadb');
-const FQ = faunadb.query;
+const { MongoClient } = require('mongodb');
 
-const {FAUNA_KEY} = process.env;
+const { MONGODB_URI, MONGODB_DB } = process.env;
 
 let {GITHUB_REPO_API} = process.env;
-
-const URL = `${GITHUB_REPO_API}/contents/_journal-clubs`;
 
 exports.handler = function(event, context, callback) {
     // Switch to Sandbox mode if we're on the sandbox account
@@ -26,32 +23,53 @@ exports.handler = function(event, context, callback) {
     }
     console.log("Checking token", data.token)
 
-    // Fetch the available tokens
-    const client = new faunadb.Client({ secret: FAUNA_KEY });
-    client.query(
-        FQ.Map(
-            FQ.Paginate(FQ.Match(FQ.Index('by_token'), data.token), {size:1}),
-            FQ.Lambda("D", FQ.Get(FQ.Var("D")))
-        )
-    )
-        // Check the token we've been supplied against the tokens
-        // Return the token data if it matches
-        .then(r => {
-            console.log(r)
-            let tokenOK = false;
-            r.data.forEach(x => {
-                if(x.data.token === data.token) {
-                    if(!x.data.expires || x.data.expires < new Date())
-                        throw new Error('The token has expired.');
-                    tokenOK = true;
-                    return callback(null, {
-                        statusCode: 200,
-                        body: JSON.stringify(x.data)
-                    });
-                }
-            });
-            if(!tokenOK)
-                throw new Error('No matching token found.')
+    /**
+     * Establish a MongoDB connection
+     */
+    async function getDatabase() {
+        try {
+            if(!MONGODB_URI || !MONGODB_DB) {
+                const missing = !MONGODB_URI? 'MONGODB_URI' : 'MONGODB_DB';
+                const dbError = new Error(`Database connection failed: environment variable ${missing} is not configured.`);
+                dbError.isDbConnection = true;
+                throw dbError;
+            }
+            const mongo = new MongoClient(MONGODB_URI);
+            await mongo.connect();
+            return { client: mongo, collection: mongo.db(MONGODB_DB).collection('editTokens') };
+        } catch (error) {
+            const dbError = new Error(`Database connection failed: ${error.message}`);
+            dbError.isDbConnection = true;
+            throw dbError;
+        }
+    }
+
+    let mongoConnection;
+
+    getDatabase()
+        .then(connection => {
+            mongoConnection = connection;
+            const { collection } = mongoConnection;
+            return collection.findOne({ token: data.token });
         })
-        .catch(e => callback(e));
+        .then(doc => {
+            if(!doc)
+                throw new Error('No matching token found.');
+            if(!doc.expires || doc.expires < new Date())
+                throw new Error('The token has expired.');
+            return callback(null, {
+                statusCode: 200,
+                body: JSON.stringify(doc)
+            });
+        })
+        .catch(e => {
+            if(e.isDbConnection)
+                callback(e.message);
+            else
+                callback(e);
+        })
+        .finally(() => {
+            if(mongoConnection?.client)
+                mongoConnection.client.close();
+        });
 };
