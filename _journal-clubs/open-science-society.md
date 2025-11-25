@@ -14,6 +14,7 @@ organisers:
 contact: skos@swps.edu.pl
 additional-contact:
   - paulina.manduch@gmail.com
+  - matt.jaquiery@dtc.ox.ac.uk
 address:
   - N210
   - Chodakowska 19/31
