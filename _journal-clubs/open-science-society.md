@@ -2,7 +2,7 @@
     
 jcid: open-science-society
 title: Open Science Student Society
-host-organisation: SWPS University of Social Sciences and Humanities in Warsaw
+host-organisation: SWPS University in Warsaw
 host-org-url: https://english.swps.pl/
 osf: 3nk9t
 zotero: KRMVQQ4E
@@ -13,22 +13,21 @@ organisers:
   - Małgorzata Wiener
 contact: skos@swps.edu.pl
 additional-contact:
-  - paulina.manduch@gmail.com
-  - matt.jaquiery@dtc.ox.ac.uk
+  - paulina.manduch@gmail.com,matt.jaquiery@dtc.ox.ac.uk
 address:
   - N210
   - Chodakowska 19/31
   - 03-815 Warszawa
-  - Poland; SWPS University of Social Sciences and Humanities
+  - Poland; SWPS University
 country: Poland
 geolocation:
   - 52.22779941887071
   - 21.02783203124996
-last-message-timestamp: 1711276171
+last-message-timestamp: 1764172560
 last-message-level: 0
 last-update: paulina.manduch@gmail.com
-last-update-timestamp: 1711276171
-last-update-message: Adding additional email address
+last-update-timestamp: 1764172560
+last-update-message: TEST
 
 
 ---
