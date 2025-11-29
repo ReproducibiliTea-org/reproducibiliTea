@@ -33,7 +33,7 @@ https://doi.org/10.11225/cs.2023.004
 2022
 * Cobb, H. R. & Thomas, C. L. (2022). Talking About Reproducibility in ReproducibiliTea. 
 Society for Industrial and Organizational Psychology https://www.siop.org/tip-article/talking-about-reproducibility-in-reproducibilitea/ 
-* https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en
+* 2 Years ReproducibiliTea Aalto https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en
 * “Tea is the key to building a community” https://www.wissenschaftskommunikation.de/tea-is-the-key-to-building-a-community-62017/
 
 2021
@@ -42,7 +42,7 @@ Society for Industrial and Organizational Psychology https://www.siop.org/tip-ar
 2020
 * Brewing up a storm: developing Open Research culture through ReproducibiliTea [University of Reading], October 2020
 https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf  
-* https://williamngiam.github.io/blog/2020_ReproducibiliTea
+* A personal highlight from 2020 - ReproducibiliTea https://williamngiam.github.io/blog/2020_ReproducibiliTea
 * One Year of Ireland’s First ReproducibiliTea Journal Club https://ramdunyj.medium.com/one-year-of-irelands-first-reproducibilitea-journal-club-a4c217767480
 
 2019
