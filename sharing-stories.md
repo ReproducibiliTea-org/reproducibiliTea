@@ -33,6 +33,7 @@ https://doi.org/10.11225/cs.2023.004
 * Cobb, H. R. & Thomas, C. L. (2022). Talking About Reproducibility in ReproducibiliTea. 
 Society for Industrial and Organizational Psychology https://www.siop.org/tip-article/talking-about-reproducibility-in-reproducibilitea/ 
 * https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en
+* “Tea is the key to building a community” https://www.wissenschaftskommunikation.de/tea-is-the-key-to-building-a-community-62017/
 
 2021
 * Coenen, L., Kirtley, O., Claesen, A., Geert, E. V., Schroyens, N., & Plas, S. V. D. (2021). ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science. Proceedings 2021. https://doi.org/10.21428/1192f2f8.b32318c5
@@ -43,7 +44,10 @@ https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781
 * https://williamngiam.github.io/blog/2020_ReproducibiliTea
 
 2019
-* Orben, A. (2019). A journal club to fix science. Nature, 573(7775), 465-466. https://doi.org/10.1038/d41586-019-02842-8 
+* Orben, A. (2019). A journal club to fix science. Nature, 573(7775), 465-466. https://doi.org/10.1038/d41586-019-02842-8
+
+2018
+* ReproducibiliTea: A Reproducibility-themed Journal Club https://www.bitss.org/reproducibilitea/ 
 
 
 
