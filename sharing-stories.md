@@ -12,7 +12,8 @@ More info to be added.
 * Eike Mark Rinke: “The shift towards more robust research is primarily a social change.” https://open-science-future.zbw.eu/en/shift-towards-more-robust-research-is-social-change/ 
 * Weinerova, J., Tibon, R., Bast, T., & Grasmeder Allen, R. (2025). Breaking barriers towards credible research: Outcomes of a workshop at the BNA Festival of Neuroscience 2025. Brain and neuroscience advances, 9, 23982128251363046. https://doi.org/10.1177/23982128251363046
 * Open Research Case Studies https://sheffield.ac.uk/openresearch/casestudies
-* ReproducibiliTea at Leeds, The Next Generation https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/  
+* ReproducibiliTea at Leeds, The Next Generation https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/
+* https://soundcloud.com/sciencebasement/reproducibilitea-advancing-open-science-through-grassroots-research-communities-w-vootele-anastasiia-sujai 
 
 2024
 * Beames, J. R., Kunc, B., Geert, E. V., Muhammad, N., Claesen, A., & Kirtley, O. (2024). ReproducibiliTea KU Leuven: Challenges and solutions to increasing engagement in an open science journal club. KU Leuven Open Science Day. https://doi.org/10.21428/1192f2f8.b0f909fd 
