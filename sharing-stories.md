@@ -41,7 +41,6 @@ Society for Industrial and Organizational Psychology https://www.siop.org/tip-ar
 2020
 * Brewing up a storm: developing Open Research culture through ReproducibiliTea [University of Reading], October 2020
 https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf  
-* Neves, K., Carneiro, C. F., Wasilewska-Sampaio, A. P., Abreu, M., Valério-Gomes, B., Tan, P. B., & Amaral, O. B. (2020). Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science. Memórias do Instituto Oswaldo Cruz, 115, e200328. https://doi.org/10.1590/0074-02760200328 
 * https://williamngiam.github.io/blog/2020_ReproducibiliTea
 
 2019
