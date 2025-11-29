@@ -23,18 +23,29 @@ https://www.bordeaux-neurocampus.fr/reproducibilitea-in-bordeaux-celebrating-thr
 * Open Research at Edinburgh Author: Emma Wilson, University of Edinburgh https://journals.ed.ac.uk/eor/article/view/10130/12889  
 
 2023
-<br>
+* Cox, C. (2023) Open Research Case Studies: Faculty of Medicine & Health. Report. Open Research Case Studies. University of Leeds https://doi.org/10.48785/100/160
+* 平石界, & 池田功毅. (2023). オンライン時代の研究コミュニティ運営: ReproducibiliTea Tokyo 繁盛記. 認知科学, 30(2), 146-153.
+[Kai Hiraishi, & Koki Ikeda. (2023). Managing a research community in the online era: ReproducibiliTea Tokyo prosperity story. Cognitive Science, 30(2), 146-153.]
+https://doi.org/10.11225/cs.2023.004
+* Muhoozi, M., Tusabe, J., Gichuhi, H., & Ategyeka, P. M. (2023). Advancing research reproducibility and open science starting with students. - A case of MakSPH Reproducibilitea journal. The Global Health Network Collections. https://doi.org/10.21428/3d48c34a.dd22ab48
+* Tamás, D. (2023). Open Research Case Studies: Faculty of Engineering and Physical Sciences. Report. Open Research Case Studies. University of Leeds https://doi.org/10.48785/100/152
+  
 2022
+* Cobb, H. R. & Thomas, C. L. (2022). Talking About Reproducibility in ReproducibiliTea. 
+Society for Industrial and Organizational Psychology https://www.siop.org/tip-article/talking-about-reproducibility-in-reproducibilitea/ 
 * https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en
 
 2021
-<br>
+* Coenen, L., Kirtley, O., Claesen, A., Geert, E. V., Schroyens, N., & Plas, S. V. D. (2021). ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science. Proceedings 2021. https://doi.org/10.21428/1192f2f8.b32318c5
+  
 2020
+* Brewing up a storm: developing Open Research culture through ReproducibiliTea [University of Reading], October 2020
+https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf  
+* Neves, K., Carneiro, C. F., Wasilewska-Sampaio, A. P., Abreu, M., Valério-Gomes, B., Tan, P. B., & Amaral, O. B. (2020). Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science. Memórias do Instituto Oswaldo Cruz, 115, e200328. https://doi.org/10.1590/0074-02760200328 
 * https://williamngiam.github.io/blog/2020_ReproducibiliTea
 
 2019
-<br>
-2018
+* Orben, A. (2019). A journal club to fix science. Nature, 573(7775), 465-466. https://doi.org/10.1038/d41586-019-02842-8 
 
 
 
