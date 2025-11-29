@@ -4,9 +4,6 @@ title:  "Sharing Stories"
 ---
 
 
-
-
-More info to be added.
 <br><br>
 2025
 * Eike Mark Rinke: “The shift towards more robust research is primarily a social change.” https://open-science-future.zbw.eu/en/shift-towards-more-robust-research-is-social-change/ 
