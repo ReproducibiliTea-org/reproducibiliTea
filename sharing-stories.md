@@ -6,12 +6,12 @@ title:  "Sharing Stories"
 
 <br><br>
 2025
-* [Eike Mark Rinke: “The shift towards more robust research is primarily a social change.”](https://open-science-future.zbw.eu/en/shift-towards-more-robust-research-is-social-change/) 
 * [Breaking barriers towards credible research: Outcomes of a workshop at the BNA Festival of Neuroscience 2025](https://doi.org/10.1177/23982128251363046)
 * [Open Research Case Studies / Sheffield](https://sheffield.ac.uk/openresearch/casestudies)
 * [ReproducibiliTea at Leeds, The Next Generation](https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/)
 * [ReproducibiliTea: Grassroots Action for Open Science / The Science Basement Podcast](https://soundcloud.com/sciencebasement/reproducibilitea-advancing-open-science-through-grassroots-research-communities-w-vootele-anastasiia-sujai) 
-* [Fostering Open Science. Insights from two bottom-up initiatives / Graz](https://static.uni-graz.at/fileadmin/_files/_project_sites/_open-science/Tagung2025/Walter-VonGoetz-Brohmer_FosteringOpenScience.pdf) 
+* [Fostering Open Science. Insights from two bottom-up initiatives / Graz](https://static.uni-graz.at/fileadmin/_files/_project_sites/_open-science/Tagung2025/Walter-VonGoetz-Brohmer_FosteringOpenScience.pdf)
+* [Eike Mark Rinke: “The shift towards more robust research is primarily a social change.”](https://open-science-future.zbw.eu/en/shift-towards-more-robust-research-is-social-change/) 
 
 2024
 * [ReproducibiliTea KU Leuven: Challenges and solutions to increasing engagement in an open science journal club](https://doi.org/10.21428/1192f2f8.b0f909fd) 
