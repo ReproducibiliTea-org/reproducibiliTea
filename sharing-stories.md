@@ -42,6 +42,7 @@ Society for Industrial and Organizational Psychology https://www.siop.org/tip-ar
 * Brewing up a storm: developing Open Research culture through ReproducibiliTea [University of Reading], October 2020
 https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf  
 * https://williamngiam.github.io/blog/2020_ReproducibiliTea
+* One Year of Ireland’s First ReproducibiliTea Journal Club https://ramdunyj.medium.com/one-year-of-irelands-first-reproducibilitea-journal-club-a4c217767480
 
 2019
 * Orben, A. (2019). A journal club to fix science. Nature, 573(7775), 465-466. https://doi.org/10.1038/d41586-019-02842-8
