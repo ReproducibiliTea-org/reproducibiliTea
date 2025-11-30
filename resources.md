@@ -194,7 +194,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  OpenScientoMètre (French language only; University of Liège) [link](https://lib.uliege.be/fr/open-science/nos-outils/openscientometre)
 *  Open Access the Game (Juan Puppin) [link](https://www.construct.net/en/free-online-games/open-access-game-542/play)
 *  Open Science in Peril (Sundsbø, Coyne, & Coombs, 2023) [link](https://figshare.com/projects/Open_Science_in_Peril/194243)
+*  Last contact online escape room game (the Netherlands) [link](https://www.sherlocked.nl/last-contact)
 *  List of 'serious' games linked to Open Science [link](https://openplato.eu/mod/page/view.php?id=1102) 
 *  Research Support Games List [link](https://figshare.com/articles/online_resource/Research_Support_Games_List/16652701/5?file=34327916)
-*  Last contact online escape room game (the Netherlands) [link](https://www.sherlocked.nl/last-contact)
 *  FORRT Open Research Games Portal [link](https://forrtapps.shinyapps.io/open-research-games-portal/)
