@@ -4,7 +4,7 @@ title: Getting Started
 permalink: /getting-started/
 ---
 
-You want to get into Open Science? Welcome!
+You want to get into Open Research? Welcome!
 
 We all started somewhere and know it can be daunting. Here are three ways to make it as easy and painless as possible!
 
@@ -12,7 +12,7 @@ We all started somewhere and know it can be daunting. Here are three ways to mak
 
 ## Way 1: Want to start your own journal club?
 
-Do it! It's a low commitment, fun and flexible way to start spreading Open Science ideas in your department. It allows you to learn the fundamentals together with the people you work with. Making it easier to implement new ideas and practices.
+Do it! It's a low commitment, fun and flexible way to start spreading Open Research ideas in your department. It allows you to learn the fundamentals together with the people you work with. Making it easier to implement new ideas and practices.
 We also have an active Slack community where ReproducibiliTea organizers support each other.
 
 We have an [OSF page <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://osf.io/3qrj6/wiki/home/) where you can download all the necessary materials that you can freely share and adapt. There you will find:
@@ -20,7 +20,7 @@ We have an [OSF page <sup><i class="fas fa-external-link-square-alt"></i></sup>]
 - The ReproducibiliTea Logo
 - Various ReproducibiliTea poster templates
 - A sample checklist for organising your own Journal Club
-- Our [reading lists <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://rpt-rl.netlify.app/) on many Open Science topics
+- Our [reading lists <sup><i class="fas fa-external-link-square-alt"></i></sup>](https://rpt-rl.netlify.app/) on many Open Research topics
 - And much much more ...
 
 <!---
