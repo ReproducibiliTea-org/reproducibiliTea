@@ -10,7 +10,7 @@ title:  "Sharing Stories"
 * [Open Research Case Studies / Sheffield](https://sheffield.ac.uk/openresearch/casestudies)
 * [ReproducibiliTea: Grassroots Action for Open Science / The Science Basement Podcast](https://soundcloud.com/sciencebasement/reproducibilitea-advancing-open-science-through-grassroots-research-communities-w-vootele-anastasiia-sujai) 
 * [Fostering Open Science. Insights from two bottom-up initiatives / Graz](https://static.uni-graz.at/fileadmin/_files/_project_sites/_open-science/Tagung2025/Walter-VonGoetz-Brohmer_FosteringOpenScience.pdf)
-* [Breaking barriers towards credible research: Outcomes of a workshop at the BNA Festival of Neuroscience 2025](https://doi.org/10.1177/23982128251363046)
+* [Breaking barriers towards credible research](https://doi.org/10.1177/23982128251363046)
 * [The shift towards more robust research is primarily a social change](https://open-science-future.zbw.eu/en/shift-towards-more-robust-research-is-social-change/) 
 
 2024
@@ -23,8 +23,8 @@ title:  "Sharing Stories"
 
 2023
 * [Advancing research reproducibility and open science starting with students. - A case of MakSPH Reproducibilitea journal](https://doi.org/10.21428/3d48c34a.dd22ab48)
-* [Open Research Case Studies: Faculty of Medicine & Health. Report. Open Research Case Studies. University of Leeds](https://doi.org/10.48785/100/160)
-* [Open Research Case Studies: Faculty of Engineering and Physical Sciences. Report. Open Research Case Studies. University of Leeds](https://doi.org/10.48785/100/152)
+* [Open Research Case Studies: Faculty of Medicine & Health. University of Leeds](https://doi.org/10.48785/100/160)
+* [Open Research Case Studies: Faculty of Engineering and Physical Sciences. University of Leeds](https://doi.org/10.48785/100/152)
 * [平石界, & 池田功毅. (2023). オンライン時代の研究コミュニティ運営: ReproducibiliTea Tokyo 繁盛記. 認知科学, 30(2), 146-153.
 [*Kai Hiraishi, & Koki Ikeda. (2023). Managing a research community in the online era: ReproducibiliTea Tokyo prosperity story. Cognitive Science, 30(2), 146-153.*]](https://doi.org/10.11225/cs.2023.004)
   
