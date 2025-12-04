@@ -43,6 +43,7 @@ title:  "Sharing Stories"
 
 2019
 * [A journal club to fix science](https://doi.org/10.1038/d41586-019-02842-8)
+* [ReproducibiliTea at Leeds](https://leedsunilibrary.wordpress.com/2019/08/23/reproducibilitea-at-leeds/)
 
 2018
 * [ReproducibiliTea: A Reproducibility-themed Journal Club](https://www.bitss.org/reproducibilitea/) 
