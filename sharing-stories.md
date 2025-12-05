@@ -20,6 +20,7 @@ title:  "Sharing Stories"
 * [Open Research at Edinburgh](https://journals.ed.ac.uk/eor/article/view/10130/12889)
 * [中村大輝, 雲財寛, 荒谷航平, & 長沼祥太郎. (2024). オンライン研究コミュニティを基盤とした科学教育の新しい研究活動―若手研究者が取り組む対話と共創―. 科学教育研究, 48(2), 147-156. 
 [*Daiki Nakamura, Hiro Kumozai, Kohei Araya, & Shotaro Naganuma. (2024). New research activities in science education based on online research communities: Dialogue and co-creation undertaken by young researchers. Science Education Research, 48( 2), 147-156.*]](https://www.jstage.jst.go.jp/article/jssej/48/2/48_147/_pdf)
+* [A ReproducibiliTea-loving psychologist's joys and challenges](https://postdoc.uni-graz.at/de/neuigkeiten/a-reproducibilitea-loving-psychologists-joys-and-challenges/)
 
 2023
 * [Advancing research reproducibility and open science starting with students. - A case of MakSPH Reproducibilitea journal](https://doi.org/10.21428/3d48c34a.dd22ab48)
@@ -35,6 +36,7 @@ title:  "Sharing Stories"
 
 2021
 * [ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science](https://doi.org/10.21428/1192f2f8.b32318c5)
+* [ReproducibiliTea Journal Club. “Our informal meetings are a safe haven for like-minded researchers”](https://www.kuleuven.be/open-science/news/interview-reproducibilitea)
   
 2020
 * [Brewing up a storm: developing Open Research culture through ReproducibiliTea / University of Reading](https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf)  
