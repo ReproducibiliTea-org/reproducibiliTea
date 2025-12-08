@@ -8,12 +8,12 @@ osf: khv7m
 zotero: BV9D6PMV
 website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
-signup: johanna.hein@unige.ch
+signup: reproducibilitea@unige.ch
 organisers:
   - Johanna Hein
   - Abigail Licata
 contact: johanna.hein@unige.ch
-additional-contact: []
+additional-contact: [reproducibilitea@unige.ch]
 address:
   - University of Geneva
   - Faculty of Psychology and Educational Sciences
