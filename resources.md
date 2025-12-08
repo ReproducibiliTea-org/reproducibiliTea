@@ -98,6 +98,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea in the HumaniTeas / Cologne [blog](https://elenlefoll.quarto.pub/os-linguistics2025/posts.html)
 *  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
 *  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news/categories/reproducibilitea-journal-club)
+*  ReprducibiliTea Geneva [blog](https://www.unige.ch/swissrn/blog)
 *  ReproducibiliTea Blog [blog](https://reproducibilitea.org/posts/)
 
 <br/><br/>
