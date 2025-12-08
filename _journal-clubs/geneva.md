@@ -33,3 +33,7 @@ last-update-message: ""
 ---
 
 Organized by the Geneva local node of the Swiss Reproducibility Network
+
+Bluesky [https://bsky.app/profile/reprotea-geneva.bsky.social](https://bsky.app/profile/reprotea-geneva.bsky.social)
+
+Linkedin [https://www.linkedin.com/company/reproducibilitea-geneva/](https://www.linkedin.com/company/reproducibilitea-geneva/)
