@@ -52,10 +52,10 @@ title:  "Sharing Stories"
 <br><br><br>
 
 See also:
-*  ReproducibiliTea Blog [blog](https://reproducibilitea.org/posts/)
-*  ReproducibiliTea Babraham Institute [blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
-*  ReproducibiliTea in the HumaniTeas / Cologne [blog](https://elenlefoll.quarto.pub/os-linguistics2025/posts.html)
-*  ReproducibiliTea Edinburgh [blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
-*  ReproducibiliTea Lund Biomedicine [blog](https://www.advansci-research.com/blog-and-news/categories/reproducibilitea-journal-club)
-*  ReprducibiliTea Geneva [blog](https://www.unige.ch/swissrn/blog)  
+*  [ReproducibiliTea Blog](https://reproducibilitea.org/posts/)
+*  [ReproducibiliTea Babraham Institute Blog](https://babraham-reproducibilitea-journal-club.gitlab.io/babraham-reproducibilitea-journal-club/)
+*  [ReproducibiliTea in the HumaniTeas Blog](https://elenlefoll.quarto.pub/os-linguistics2025/posts.html)
+*  [ReproducibiliTea Edinburgh Blog](https://edopenresearch.wordpress.com/category/reproducibilitea-blog/)
+*  [ReproducibiliTea Lund Biomedicine Blog](https://www.advansci-research.com/blog-and-news/categories/reproducibilitea-journal-club)
+*  [ReprducibiliTea Geneva Blog](https://www.unige.ch/swissrn/blog)  
 
