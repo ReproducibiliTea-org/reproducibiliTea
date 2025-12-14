@@ -12,8 +12,8 @@ signup: reproducibilitea@unige.ch
 organisers:
   - Johanna Hein
   - Abigail Licata
-contact: johanna.hein@unige.ch
-additional-contact: [reproducibilitea@unige.ch]
+contact: reproducibilitea@unige.ch
+additional-contact: [johanna.hein@unige.ch]
 address:
   - University of Geneva
   - Faculty of Psychology and Educational Sciences
