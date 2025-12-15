@@ -33,6 +33,7 @@ title:  "Sharing Stories"
 * [Talking About Reproducibility in ReproducibiliTea](https://www.siop.org/tip-article/talking-about-reproducibility-in-reproducibilitea/) 
 * [2 Years ReproducibiliTea Aalto](https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en)
 * [Tea is the key to building a community](https://www.wissenschaftskommunikation.de/tea-is-the-key-to-building-a-community-62017/)
+* [Journal Club: "ReproducibiliTea: Getting active - How can we foster Open Science within our university?"](https://www.osc.uni-muenchen.de/news/journal_club_s7/index.html)
 
 2021
 * [ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science](https://doi.org/10.21428/1192f2f8.b32318c5)
