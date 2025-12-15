@@ -5,7 +5,7 @@ title:  "Sharing Stories"
 
 
 <br>
-This section includes case studies, interviews, blog posts etc. by ReproducibiliTea organisers.
+This section includes case studies, interviews, blog posts, etc. by ReproducibiliTea organisers.
 <br><br>
 
 2025
