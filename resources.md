@@ -14,7 +14,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 
 *  BordeauxTea [2021-2023](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
 *  ReproducibiliTea Brasil [2020-2021](https://www.youtube.com/playlist?list=PLfID5M8U8w5tfNmLgz2jM0ggn_azVVT4j)  
-*  ReproducibiliTea Chicago - Dr William Ngiam [2020-2024](https://www.youtube.com/@WilliamNgiam/videos)
+*  ReproducibiliTea Chicago / Dr William Ngiam [2020-2024](https://www.youtube.com/@WilliamNgiam/videos)
 *  ReproducibiliTea DiPSCo / Open Science Trento [2023](https://www.youtube.com/@ReproTeaUnitn/videos) , [2025](https://sites.google.com/unitn.it/reproducibilitea/reproducibilitea-seminars/iv-edition-2025?authuser=0)   
 *  ReproducibiliTea Dundee [2021](https://www.youtube.com/@dundeereproducibilitea2015/videos)   
 *  ReproducibiliTea EARLI JURE [2023](https://www.youtube.com/playlist?list=PL3XjW1TIAkRRFJTjMY-AYLECF7-qAEUIy) 
@@ -77,7 +77,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea México [2020-2025](https://sites.google.com/view/rptmx)
 *  ReproducibiliTea NC State University [2021](https://github.com/sheilasaia/reproducibili-tea)
 *  ReproducibiliTea Newcastle [2022-2025](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
-*  Reproducibilitea for Psychopathology - Northumbria University [2021-2025](https://osf.io/3vd59/files)
+*  Reproducibilitea for Psychopathology / Northumbria University [2021-2025](https://osf.io/3vd59/files)
 *  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
 *  ReproducibiliTea Queen's University Belfast [2021/2022](https://osf.io/cnu82)
 *  ReproducibiliTea RHUL [2023](https://osf.io/9zxbh) ,  [2024a](https://osf.io/x4ynd) ,  [2024b](https://osf.io/8mqat) , [2024/2025](https://osf.io/r9uts)
