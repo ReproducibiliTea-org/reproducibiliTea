@@ -28,6 +28,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea UniBasel [2020-2025](https://www.youtube.com/@bam_mri/videos) 
 *  ReproducibiliTea UniHelsinki [2025a](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) [2025b](https://www.helsinki.fi/fi/unitube/video/e455dcb7-7f11-490d-ac65-9b7764ea307c)
 *  ReproducibiliTea University of East Anglia [2022-2025](https://www.youtube.com/@reproducibiliteauea1434/videos)
+*  ReproducibiliTea Global [2025](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7) 
 
 <br/>
 
