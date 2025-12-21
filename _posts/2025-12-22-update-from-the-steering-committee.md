@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An update from the ReproducibiliTea Steering Committee"
-date:   2025-12-19 10:00:00 +0000
+date:   2025-12-22 14:00:00 +0000
 author: ReproducibiliTea Steering Committee
 categories: [JC]
 tags: [Steering Committee]
