@@ -10,7 +10,7 @@ website:
 twitter: bioclues
 signup: bet@bioclues.org
 organisers:
-  - Hemani Sharma
+  - Vandana Suseelan
   - K Sri Manjari
   - Anil Kumar S
   - Prash Suravajhala 
