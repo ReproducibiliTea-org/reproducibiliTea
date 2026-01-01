@@ -21,13 +21,11 @@ The ReproducibiliTea Journal Club has proven to be a success in Oxford, where it
 The ReproducibiliTea parent organisation is run by a Steering Committee of ECR volunteers: 
 
 
-* Helena Gellersen [@hgellersen](https://twitter.com/hgellersen) (Co-chair)
 * Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social)
-* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/) (Co-chair)
 * Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 * Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
 * Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
-* Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
+* Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social) (Chair)
 
 
 
@@ -35,7 +33,9 @@ The Steering Committee alumni act as an Advisory Board who can be consulted when
 The Advisory Board are:
 
 * Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Co-founder)
+* Helena Gellersen [@hgellersen](https://twitter.com/hgellersen) 
 * Matt Jaquiery
+* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/) 
 * William Ngiam [@williamngiam.github.io](https://bsky.app/profile/williamngiam.github.io)
 * Amy Orben [@orbenamy.bsky.social](https://bsky.app/profile/orbenamy.bsky.social) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
