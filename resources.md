@@ -149,6 +149,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 
 **Video recordings** 
 *  Reproducibility Rounds [website](https://med.stanford.edu/sporr/education/training/Reproducibility_Rounds.html)
+*  Stanford Rigor and Reproducibility Colloquiums [website](https://med.stanford.edu/sporr/education/colloquium.html)
 *  Center for Open Science (COS) events and webinars [website](https://www.cos.io/events) , [YouTube](https://www.youtube.com/@CenterforOpenScience/videos)
 *  Metascience 2025 Conference [website](https://cassyni.com/s/metascience-2025)
 *  SIPS 2025 Pre-conference Discussion with Early Reformers [YouTube](https://www.youtube.com/@ImprovingPsych/videos)
