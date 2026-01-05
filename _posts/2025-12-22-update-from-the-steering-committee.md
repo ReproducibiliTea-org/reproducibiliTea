@@ -22,9 +22,9 @@ We run the following projects and organisational functions:
 **Website and OSF folder** - *Team: Paulina Manduch, Lianne Wolsink, Abigail Licata, Matt Jaquiery, Michael Muhoozi, Helena Gellersen*
 
 We develop, add and update content on our [website](https://reproducibilitea.org/) and [OSF folder](https://osf.io/3qrj6/), for example:
-our [list of resources](https://reproducibilitea.org/resources), which includes resources published by ReproducibiliTea journal clubs: video recordings of past events, presentations, reading lists, blogs, as well as resources published by other organisations, lists of books, podcasts, games, and more;
-our [sharing stories section](https://reproducibilitea.org/sharing-stories), which includes case studies, blog posts, etc. by ReproducibiliTea organisers; 
-our [about section](https://reproducibilitea.org/about/) with a list of journal articles featuring the ReproducibiliTea initiative.
+* our [list of resources](https://reproducibilitea.org/resources), which includes resources published by ReproducibiliTea journal clubs: video recordings of past events, presentations, reading lists, blogs, as well as resources published by other organisations, lists of books, podcasts, games, and more;
+* our [sharing stories section](https://reproducibilitea.org/sharing-stories), which includes case studies, blog posts, etc. by ReproducibiliTea organisers; 
+* our [about section](https://reproducibilitea.org/about/) with a list of journal articles featuring the ReproducibiliTea initiative.
 <br><br>
 
 **Reading lists** - *Team: Lianne Wolsink (lead), Hazel Aileen van der Walle, Hemani Sharma, Helena Gellersen* 
