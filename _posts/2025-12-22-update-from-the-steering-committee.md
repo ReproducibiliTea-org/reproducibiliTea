@@ -54,13 +54,13 @@ In June 2025, we were also awarded a [SIPS Commendation](https://improvingpsych.
 **External communications and social media** - *Team: Abigail Licata, Paulina Manduch*
 
 We have been working to not only keep the community updated with new and interesting papers and projects, but we have also started a series of social media posts which highlight new journal clubs around the world:
-[Liverpool, UK](https://reproducibilitea.org/journal-clubs/#LJMU), [Wrocław, Poland](https://reproducibilitea.org/journal-clubs/#Psychologiczna%20Grupa%20Badawcza), [OpenScienceLab UC3M, Spain](https://reproducibilitea.org/journal-clubs/#OpenScienceLab%20UC3M), 
-[OldenburgPsych, Germany](https://reproducibilitea.org/journal-clubs/#OldenburgPsych), 
-[Copenhagen, Denmark](https://reproducibilitea.org/journal-clubs/#Copenhagen),
-[Kaunas, Lithuania](https://reproducibilitea.org/journal-clubs/#Kaunas),
-[Lisbon, Portugal](https://reproducibilitea.org/journal-clubs/#AffectiveScience),
-[Buenos Aires, Argentina](https://reproducibilitea.org/journal-clubs/#Buenos%20Aires),
-[QueriosiTea, Coimbatore, Tamil Nadu, India](https://reproducibilitea.org/journal-clubs/#QueriosiTea),
+[Liverpool, UK](https://reproducibilitea.org/journal-clubs/#LJMU); [Wrocław, Poland](https://reproducibilitea.org/journal-clubs/#Psychologiczna%20Grupa%20Badawcza); [OpenScienceLab UC3M, Spain](https://reproducibilitea.org/journal-clubs/#OpenScienceLab%20UC3M); 
+[OldenburgPsych, Germany](https://reproducibilitea.org/journal-clubs/#OldenburgPsych); 
+[Copenhagen, Denmark](https://reproducibilitea.org/journal-clubs/#Copenhagen);
+[Kaunas, Lithuania](https://reproducibilitea.org/journal-clubs/#Kaunas);
+[Lisbon, Portugal](https://reproducibilitea.org/journal-clubs/#AffectiveScience);
+[Buenos Aires, Argentina](https://reproducibilitea.org/journal-clubs/#Buenos%20Aires);
+[QueriosiTea, Coimbatore, Tamil Nadu, India](https://reproducibilitea.org/journal-clubs/#QueriosiTea);
 The University of Stirling, Scotland, UK.
 
 Follow us on social media for more updates:
