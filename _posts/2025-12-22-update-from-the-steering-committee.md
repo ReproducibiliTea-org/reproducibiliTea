@@ -17,8 +17,9 @@ We are supported by the ReproducibiliTea advisory board (Sophia Crüwell, Matt J
 <br><br>
 
 We run the following projects and organisational functions:
+<br><br>
 
-**Website and OSF folder** - Team: Paulina Manduch, Lianne Wolsink, Abigail Licata, Matt Jaquiery, Michael Muhoozi, Helena Gellersen
+**Website and OSF folder** - *Team: Paulina Manduch, Lianne Wolsink, Abigail Licata, Matt Jaquiery, Michael Muhoozi, Helena Gellersen*
 
 We develop, add and update content on our [website](https://reproducibilitea.org/) and [OSF folder](https://osf.io/3qrj6/), for example:
 our [list of resources](https://reproducibilitea.org/resources), which includes resources published by ReproducibiliTea journal clubs: video recordings of past events, presentations, reading lists, blogs, as well as resources published by other organisations, lists of books, podcasts, games, and more;
@@ -26,7 +27,7 @@ our [sharing stories section](https://reproducibilitea.org/sharing-stories), whi
 our [about section](https://reproducibilitea.org/about/) with a list of journal articles featuring the ReproducibiliTea initiative.
 <br><br>
 
-**Reading lists** - Team: Lianne Wolsink (lead), Hazel Aileen van der Walle, Hemani Sharma, Helena Gellersen 
+**Reading lists** - *Team: Lianne Wolsink (lead), Hazel Aileen van der Walle, Hemani Sharma, Helena Gellersen* 
 
 There are two new reading lists available via [our app](https://rpt-rl.netlify.app/) and [OSF folder](https://osf.io/3ed8x/files/): 
 * Open Research…in the Arts?
@@ -39,7 +40,7 @@ See our [guide on how to create a ReproducibiliTea reading list](https://osf.io/
 In June 2025, we were awarded a [SIPS Commendation](https://improvingpsych.org/mission/awards/) for our reading lists!
 <br><br>
 
-**Podcast** - Team: Anastasiia Marmyleva (lead), Helena Gellersen, William Ngiam, Sarah Sauvé, Queen Saikia
+**Podcast** - *Team: Anastasiia Marmyleva (lead), Helena Gellersen, William Ngiam, Sarah Sauvé, Queen Saikia*
 
 The podcast team released 5 new podcast episodes: 
 * [S4E5 Indigenous Research Methods: Valuing Knowledge, Community, and Impact](https://soundcloud.com/reproducibilitea/s4e5-indigenous-research) with Prof. Sue Crengle (University of Otago), Prof. Terryann Clarke (University of Auckland), and Dr. Andrew Sise (University of Otago) 
@@ -50,7 +51,7 @@ The podcast team released 5 new podcast episodes:
 In June 2025, we were also awarded a [SIPS Commendation](https://improvingpsych.org/mission/awards/) for our podcast!
 <br><br>
 
-**External communications and social media** - Team: Abigail Licata, Paulina Manduch
+**External communications and social media** - *Team: Abigail Licata, Paulina Manduch*
 
 We have been working to not only keep the community updated with new and interesting papers and projects, but we have also started a series of social media posts which highlight new journal clubs around the world:
 [Liverpool, UK](https://reproducibilitea.org/journal-clubs/#LJMU), [Wrocław, Poland](https://reproducibilitea.org/journal-clubs/#Psychologiczna%20Grupa%20Badawcza), [OpenScienceLab UC3M, Spain](https://reproducibilitea.org/journal-clubs/#OpenScienceLab%20UC3M), 
@@ -66,7 +67,7 @@ Follow us on social media for more updates:
 [Bluesky](https://bsky.app/profile/reproducibilitea.org) | [Linkedin](https://www.linkedin.com/company/reproducibilitea/) | [Mastodon]( https://scicomm.xyz/@ReproducibiliTeaGlobal) | [X](https://twitter.com/ReproducibiliT).
 <br><br>
 
-**Events** - Team: Abigail Licata, Paulina Manduch
+**Events** - *Team: Abigail Licata, Paulina Manduch*
 
 We organise drop-in sessions and networking events, which provide a platform for meeting other organisers, exchanging ideas, and asking questions related to ReproducibiliTea journal club organization.
 <br><br> 
@@ -81,7 +82,7 @@ Our team keeps the community updated via Slack and mailing lists, but recently w
 <br><br>
 
 
-**Post-publication review project** - Team: Paulina Manduch, Lianne Wolsink 
+**Post-publication review project** - *Team: Paulina Manduch, Lianne Wolsink* 
 
 This project is aimed at encouraging journal clubs to engage in post-publication reviewing and commenting (see [our blog post](https://reproducibilitea.org/jc/2025/11/07/post-publication-reviewing) & [a new section on our website](https://reproducibilitea.org/post-publication-reviews)).
 
@@ -93,13 +94,13 @@ In our recent blog post series, ReproducibiliTea organisers have shared their in
 <br><br>
 
 
-**Paper with tips for running a ReproducibiliTea journal club** - Team: Lianne Wolsink, Abigail Licata, Paulina Manduch, Sophia Crüwell, Anastasiia Marmyleva, Hemani Sharma, Michael Muhoozi, William Ngiam, Helena Gellersen, Matt Jaquiery, Jan Vornhagen, Hazel Aileen van der Walle
+**Paper with tips for running a ReproducibiliTea journal club** - *Team: Lianne Wolsink, Abigail Licata, Paulina Manduch, Sophia Crüwell, Anastasiia Marmyleva, Hemani Sharma, Michael Muhoozi, William Ngiam, Helena Gellersen, Matt Jaquiery, Jan Vornhagen, Hazel Aileen van der Walle*
  
 We are finalising a manuscript focused on tips for running a ReproducibiliTea journal club, which will act as a guide for both the set-up and transferral of journal clubs as members leave their institution. 
 <br><br>
 
 
-**Outreach and external relations** - Team: Helena Gellersen, Hazel Aileen van der Walle, Paulina Manduch, Lianne Wolsink
+**Outreach and external relations** - *Team: Helena Gellersen, Hazel Aileen van der Walle, Paulina Manduch, Lianne Wolsink*
 
 In collaboration with the Framework for Open and Reproducible Research Training (FORRT) we worked on a paper on citational politics in academia. We reflect on current biases and their causes and provide readers with a toolkit to empower them to assess their own citation practices. This work is integrated with FORRT’s Academic Wheel of Privilege (AWoP), a concerted effort to make academia more open to people from all backgrounds.
 [Preprint - In Pursuit of Citational Justice: A Toolkit for Equitable Scholarship](https://osf.io/preprints/metaarxiv/qjecy_v2) | 
