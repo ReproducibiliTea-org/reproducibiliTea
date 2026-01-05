@@ -17,6 +17,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
+        ruby-version: '3.4.7' # Should match the Ruby version in Gemfile
         bundler-cache: true
         cache-version: 1
 
