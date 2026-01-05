@@ -42,7 +42,7 @@ In June 2025, we were awarded a [SIPS Commendation](https://improvingpsych.org/m
 
 **Podcast** - *Team: Anastasiia Marmyleva (lead), Helena Gellersen, William Ngiam, Sarah Sauvé, Queen Saikia*
 
-The podcast team released 5 new podcast episodes: 
+The podcast team released 4 new podcast episodes: 
 * [S4E5 Indigenous Research Methods: Valuing Knowledge, Community, and Impact](https://soundcloud.com/reproducibilitea/s4e5-indigenous-research) with Prof. Sue Crengle (University of Otago), Prof. Terryann Clarke (University of Auckland), and Dr. Andrew Sise (University of Otago) 
 * [S4E6 Creating Open-Access Scientific Software](https://soundcloud.com/reproducibilitea/s4e6-building-open-source-software) with Josh de Leeuw (jsPsych) 
 * [S4E7 Critical theory vs positivism](https://soundcloud.com/reproducibilitea/s4e7-critical-theory-vs-positivism) 
