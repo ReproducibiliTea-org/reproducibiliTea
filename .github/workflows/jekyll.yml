@@ -9,16 +9,24 @@ on:
 jobs:
   jekyll:
     runs-on: ubuntu-latest
+    env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
+      BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
     steps:
     - uses: actions/checkout@v4
 
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v4
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+        bundler-cache: true
+        cache-version: 1
 
-    # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    - name: Build
+      run: bundle exec jekyll build
+
+    - name: Test
+      run: |
+        ls -la _site
+        if [ ! -f _site/index.html ]; then
+          echo "Build failed: _site/index.html not found"
+          exit 1
+        fi
