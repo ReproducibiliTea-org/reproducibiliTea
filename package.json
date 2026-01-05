@@ -13,7 +13,7 @@
     "diacritic": "0.0.2",
     "dotenv": "^8.6.0",
     "mailgun-js": "^0.22.0",
-    "netlify-cli": "^17.36.4",
+    "netlify-cli": "^23.13.0",
     "node-fetch": "^2.6.7"
   }
 }
