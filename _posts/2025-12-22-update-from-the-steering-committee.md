@@ -34,7 +34,7 @@ There are two new reading lists available via [our app](https://rpt-rl.netlify.a
 * Black in Neuro - reading list on diversity and inclusivity 
 
 We are also working on new reading lists (e.g., researcher’s degrees of freedom, post-publication reviewing, bioinformatics).
-We are also very open to contributions. If you are interested in creating a new reading list, please contact us via email reproducibilitea@gmail.com 
+We are also very open to contributions. If you are interested in creating a new reading list, please contact us [via email](mailto: reproducibilitea@gmail.com). 
 See our [guide on how to create a ReproducibiliTea reading list](https://osf.io/8w64c). 
 
 In June 2025, we were awarded a [SIPS Commendation](https://improvingpsych.org/mission/awards/) for our reading lists!
