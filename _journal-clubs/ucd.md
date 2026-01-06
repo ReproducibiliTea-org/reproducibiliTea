@@ -10,12 +10,11 @@ website: http://www.cstar.ie/
 twitter: ""
 signup: cstar@ucd.ie
 organisers:
-  - Katayoun Bahramian
-  - Dr Ricardo Segurado
-  - Dr Keith Smart
-  - Dr Massimiliano Ditroilo
+  - Katayoun Bahramian,Dr Ricardo Segurado,Dr Keith Smart,Dr Massimiliano
+    Ditroilo, Quentin Le Cornu
 contact: cstar@ucd.ie
-additional-contact: [massimiliano.ditroilo@ucd.ie]
+additional-contact:
+  - quentin.lecornu@ucd.ie
 address:
   - Woodview House
   - School of Public Health
@@ -27,15 +26,15 @@ country: Ireland
 geolocation:
   - 53.310384290574774
   - -6.223207712173462
-last-message-timestamp: 1747738204
+last-message-timestamp: 1767716808
 last-message-level: 0
 last-update: cstar@ucd.ie
-last-update-timestamp: 1747738204
-last-update-message: ""
+last-update-timestamp: 1767716808
+last-update-message: Editing members of journal club
 
 
 ---
 
-Are you interested in Open Science/Open Research? If so, consider dropping by our informal, monthly journal club that takes place in-person over lunchtime on the Belfield campus. All are welcome, especially early career researchers. 
+Are you interested in Open Science/Open Research? If so, consider dropping by our informal, monthly journal club that takes place in-person on the Belfield campus. All are welcome, especially early career researchers. 
 
 Current readings are available on the UCD CSTAR website. Please read the paper beforehand so that we can have interesting discussions!
