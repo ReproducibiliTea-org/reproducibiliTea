@@ -2,6 +2,7 @@
 const fetch = require("node-fetch");
 require('dotenv').config();
 const { MongoClient } = require('mongodb');
+const Mailgun = require("mailgun.js");
 
 const {
     MONGODB_URI,
@@ -147,11 +148,12 @@ async function getDatabase() {
  */
 async function sendEmail(email, jcid, token) {
     // Load mailgun
-    const mailgun = require('mailgun-js')({
-        apiKey: MAILGUN_API_KEY,
-        domain: MAILGUN_DOMAIN,
-        host: MAILGUN_HOST
+    const Mailgun = require('mailgun.js');
+    const mailgun = new Mailgun(FormData);
+    const mg = mailgun.client({
+        username: 'api', key: MAILGUN_API_KEY, url: 'https://api.eu.mailgun.net'
     });
+
 
     const mailgunData = {
         from: FROM_EMAIL_ADDRESS,
@@ -171,7 +173,6 @@ async function sendEmail(email, jcid, token) {
 
     console.log({mailgun, mailgunData})
 
-    await mailgun.messages()
-        .send(mailgunData);
+    await mg.messages.create(mailgunData);
 }
 

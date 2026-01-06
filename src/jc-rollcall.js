@@ -300,10 +300,10 @@ function substituteHandlebars(template, subs) {
  */
 function sendEmail(JC, email) {
     // Load mailgun
-    const mailgun = require('mailgun-js')({
-        apiKey: MAILGUN_API_KEY,
-        domain: MAILGUN_DOMAIN,
-        host: MAILGUN_HOST
+    const Mailgun = require('mailgun.js');
+    const mailgun = new Mailgun(FormData);
+    const mg = mailgun.client({
+        username: 'api', key: MAILGUN_API_KEY, url: 'https://api.eu.mailgun.net'
     });
 
     const mailgunData = {
@@ -318,10 +318,9 @@ function sendEmail(JC, email) {
 
     console.log({mailgunData})
 
-    mailgun.messages()
-        .send(mailgunData, function(error) {
-            updateJC(JC, error);
-        });
+    mg.messages.create(mailgunData)
+        .then(res => updateJC(JC))
+        .catch(e => updateJC(JC, e));
 }
 
 /**

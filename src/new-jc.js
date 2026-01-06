@@ -82,9 +82,9 @@ exports.handler = async (event, context, callback) => {
                     return r.json()
             })
             .catch(e => {return {
-                    title: 'Check edit token',
-                    status: 'error',
-                    details: [e]
+                title: 'Check edit token',
+                status: 'error',
+                details: [e]
             }});
 
         console.log({editToken})
@@ -92,10 +92,10 @@ exports.handler = async (event, context, callback) => {
             return {
                 statusCode: 500,
                 body: formatResponses({checkToken: {
-                    title: 'Check edit token',
-                    status: 'error',
-                    details: [`No JC listed for token ${JSON.parse(token).token}.`]
-                }})
+                        title: 'Check edit token',
+                        status: 'error',
+                        details: [`No JC listed for token ${JSON.parse(token).token}.`]
+                    }})
             };
         // Ensure we're editing the correct JC
         if(editToken.jcid !== data.jcid)
@@ -744,11 +744,11 @@ ${data.description}
     // Create github file
     const content = editToken?
         JSON.stringify({
-        message: `Form update of ${data.jcid}.md by ${editToken.email}.  
+            message: `Form update of ${data.jcid}.md by ${editToken.email}.  
 ${editToken.message}`,
-        content: new Buffer.from(out.githubFile, 'utf8').toString('base64'),
-        sha: results.sha
-    }) :
+            content: new Buffer.from(out.githubFile, 'utf8').toString('base64'),
+            sha: results.sha
+        }) :
         JSON.stringify({
             message: `API creation of ${data.jcid}.md`,
             content: new Buffer.from(out.githubFile, 'utf8').toString('base64')
@@ -802,10 +802,10 @@ async function callMailgun(data, results) {
     };
 
     // Load mailgun
-    const mailgun = require('mailgun-js')({
-        apiKey: MAILGUN_API_KEY,
-        domain: MAILGUN_DOMAIN,
-        host: MAILGUN_HOST
+    const Mailgun = require('mailgun.js');
+    const mailgun = new Mailgun(FormData);
+    const mg = mailgun.client({
+        username: 'api', key: MAILGUN_API_KEY, url: 'https://api.eu.mailgun.net'
     });
 
     const mailgunData = {
@@ -842,12 +842,14 @@ ${results.github.githubFile.replace(/\\n/g, '\n<br />')}
         `
     };
 
-    await mailgun.messages().send(mailgunData).then(() => {
-        out.details.push('Successfully sent email to ReproducibiliTea.');
-    }).catch(error => {
-        out.status = 'Error';
-        out.details.push(`Failed to send email to ReproducibiliTea. ${error}`);
-    });
+    mg.messages.create(mailgunData)
+        .then(() => {
+            out.details.push('Successfully sent email to ReproducibiliTea.');
+        })
+        .catch(error => {
+            out.status = 'Error';
+            out.details.push(`Failed to send email to ReproducibiliTea. ${error}`);
+        });
 
     return out;
 }
