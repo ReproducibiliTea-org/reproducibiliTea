@@ -318,7 +318,7 @@ function sendEmail(JC, email) {
 
     console.log({mailgunData})
 
-    mg.messages.create(mailgunData)
+    mg.messages.create(MAILGUN_DOMAIN, mailgunData)
         .then(res => updateJC(JC))
         .catch(e => updateJC(JC, e));
 }

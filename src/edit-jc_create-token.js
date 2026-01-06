@@ -173,6 +173,6 @@ async function sendEmail(email, jcid, token) {
 
     console.log({mailgun, mailgunData})
 
-    await mg.messages.create(mailgunData);
+    await mg.messages.create(MAILGUN_DOMAIN, mailgunData);
 }
 

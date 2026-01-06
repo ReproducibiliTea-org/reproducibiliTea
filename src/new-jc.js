@@ -842,7 +842,7 @@ ${results.github.githubFile.replace(/\\n/g, '\n<br />')}
         `
     };
 
-    mg.messages.create(mailgunData)
+    mg.messages.create(MAILGUN_DOMAIN, mailgunData)
         .then(() => {
             out.details.push('Successfully sent email to ReproducibiliTea.');
         })
