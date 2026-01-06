@@ -12,7 +12,7 @@ signup: ""
 organisers:
   - No lead organiser currently in place
 contact: bristol-reproducibility-network@bristol.ac.uk
-additional-contact: []
+additional-contact: [paulina.manduch@gmail.com]
 address:
   - n/a
 country: United Kingdom
