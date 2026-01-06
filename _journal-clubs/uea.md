@@ -6,7 +6,7 @@ host-org-url: uea.ac.uk
 osf: v32px
 zotero: TDE3ISP4
 website: https://bsky.app/profile/reproteauea.bsky.social
-twitter: https://x.com/ReproTeaUEA
+twitter: ReproTeaUEA
 signup: 
 organisers: [Samuel Forbes, Prerna Aneja, Ann-Kathrin Johnen]
 contact: s.garayeva@uea.ac.uk
