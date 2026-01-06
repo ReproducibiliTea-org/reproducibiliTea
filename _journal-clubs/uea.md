@@ -5,7 +5,7 @@ host-organisation: University of East Anglia
 host-org-url: uea.ac.uk
 osf: v32px
 zotero: TDE3ISP4
-website: https://bsky.app/profile/reproteauea.bsky.social
+website: 
 twitter: ReproTeaUEA
 signup: 
 organisers: [Samuel Forbes, Prerna Aneja, Ann-Kathrin Johnen]
@@ -19,4 +19,7 @@ last-message-level: 0
 last-message-timestamp: 1682672239
 ---
 
+Bluesky: [https://bsky.app/profile/reproteauea.bsky.social](https://bsky.app/profile/reproteauea.bsky.social)
+
+YouTube channel: [https://www.youtube.com/@reproducibiliteauea1434](https://www.youtube.com/@reproducibiliteauea1434)
 
