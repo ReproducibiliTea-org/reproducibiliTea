@@ -79,6 +79,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea NC State University [2021](https://github.com/sheilasaia/reproducibili-tea)
 *  ReproducibiliTea Newcastle [2022-2025](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
 *  Reproducibilitea for Psychopathology / Northumbria University [2021-2025](https://osf.io/3vd59/files)
+*  ReproducibiliTea Plymouth [link](https://www.robertharlowphd.com/reproducibilitea/)
 *  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
 *  ReproducibiliTea Queen's University Belfast [2021/2022](https://osf.io/cnu82)
 *  ReproducibiliTea RHUL [2023](https://osf.io/9zxbh) ,  [2024a](https://osf.io/x4ynd) ,  [2024b](https://osf.io/8mqat) , [2024/2025](https://osf.io/r9uts)
