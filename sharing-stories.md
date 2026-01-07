@@ -37,6 +37,8 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 * [2 Years ReproducibiliTea Aalto](https://writing-on-par.netlify.app/posts/2022-03-06-2-years-reproducibilitea-aalto/index.en)
 * [Tea is the key to building a community](https://www.wissenschaftskommunikation.de/tea-is-the-key-to-building-a-community-62017/)
 * [Journal Club: "ReproducibiliTea: Getting active - How can we foster Open Science within our university?"](https://www.osc.uni-muenchen.de/news/journal_club_s7/index.html)
+* [ReproducibiliTea in Bordeaux: A successful year and more to come!](https://www.bordeaux-neurocampus.fr/reproducibilitea-in-bordeaux-a-successful-year-and-more-to-come/)
+* [ReproducibiliTea in Bordeaux: another successful year!](https://www.bordeaux-neurocampus.fr/reproducibilitea-in-bordeaux-another-successful-year/)
 
 2021
 * [ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science](https://doi.org/10.21428/1192f2f8.b32318c5)
