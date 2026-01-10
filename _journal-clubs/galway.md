@@ -38,4 +38,4 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 4 February 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399739](https://universityofgalway.libcal.com/event/4399739)
 
-4 March 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399741] (https://universityofgalway.libcal.com/event/4399741)
+4 March 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399741](https://universityofgalway.libcal.com/event/4399741)
