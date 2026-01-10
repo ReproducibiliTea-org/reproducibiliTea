@@ -8,7 +8,7 @@ osf: sn6dk
 zotero: null
 website: https://osf.io/sn6dk/
 twitter: UvARepTea
-signup: https://list.uva.nl/mailman/listinfo/reproducibilitea
+signup: 
 organisers: [Frantisek Bartos]
 contact: f.bartos@uva.nl
 additional-contact: []
