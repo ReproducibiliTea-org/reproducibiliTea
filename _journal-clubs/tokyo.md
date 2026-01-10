@@ -24,4 +24,9 @@ last-update-message: >-
 
 ---
 
+A journal club on reproducible science at Keio Univ (now virtual). 
+
+Information about upcoming meetings is announced via: [https://x.com/repTeaTokyo](https://x.com/repTeaTokyo)
+
+
 
