@@ -28,4 +28,4 @@ We meet every second or third Wednesday, from 5 pm to 6 pm. A meeting begins wit
 
 Please get in touch via email Read the paper and come by for tea and discussion!
 
-Next meeting: 10th May 2023
+
