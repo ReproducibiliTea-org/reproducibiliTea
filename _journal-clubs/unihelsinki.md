@@ -6,7 +6,7 @@ host-organisation: University of Helsinki
 host-org-url: https://www.helsinki.fi/en
 osf: 4r5xt
 zotero: RA7KRRI5
-website: ""
+website: "https://www.helsinki.fi/en/networks/reproducibilitea"
 twitter: ""
 signup: ""
 organisers:
