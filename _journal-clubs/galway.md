@@ -36,9 +36,6 @@ If you're interested in open research and you're not sure where to start, or if 
 
 All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. We encourage researchers from both Atlantic Technological University and University of Galway to attend in person--anyone is welcome online. Readings are listed in our calendar events.
 
-1 October 2025 (W), 13.00-14.00 (UTC + 1); registration: [https://universityofgalway.libcal.com/event/4398798](https://universityofgalway.libcal.com/event/4398798)
+4 February 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399739](https://universityofgalway.libcal.com/event/4399739)
 
-5 November 2025 (W), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4398799](https://universityofgalway.libcal.com/event/4398799)
-
-3 December 2025 (W), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4398800](https://universityofgalway.libcal.com/event/4398800)
-
+4 March 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399741] (https://universityofgalway.libcal.com/event/4399741)
