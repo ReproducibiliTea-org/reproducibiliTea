@@ -24,4 +24,4 @@ last-update-message: >-
 
 ---
 
-For the Autumn 2022-2023 semester, we'll be meeting once monthly, on the first Tuesday of each month from 15:00 to 16:00 in the UNIL-Anthropole cafeteria. Everyone very welcome - we love to meet new people interested in reproducible science in Lausanne!
+Everyone very welcome - we love to meet new people interested in reproducible science in Lausanne!
