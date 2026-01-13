@@ -8,7 +8,7 @@ osf: null
 zotero: null
 website: 
 twitter: 
-signup: https://chester.onlinesurveys.ac.uk/cora
+signup: 
 organisers: [Suzanne Stewart]
 contact: s.stewart@chester.ac.uk
 additional-contact: []
