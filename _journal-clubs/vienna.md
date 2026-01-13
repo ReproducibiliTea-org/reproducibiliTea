@@ -6,9 +6,9 @@ host-organisation: University of Vienna
 host-org-url: https://www.univie.ac.at/
 osf: null
 zotero: null
-website: https://ecr-psychology.univie.ac.at/activities/reproducibilitea-an-open-science-journal-club/
+website: https://ecr-psychology.univie.ac.at/
 twitter: 
-signup: https://lists.univie.ac.at/mailman/listinfo/reproducibilitea
+signup: 
 organisers: [Markus Tünte]
 contact: ecr.psychology@univie.ac.at
 additional-contact: []
