@@ -7,32 +7,30 @@ host-org-url: https://www.kuleuven.be/kuleuven/
 osf: zjbkt
 zotero: IG59GZD6
 website: ""
-twitter: LeuvenTea
+twitter: ""
 signup: reproducibilitealeuven@kuleuven.be
 organisers:
-  - Joanne Beames
-  - Benjamin Kunc
-  - Eline Van Geert
-  - Jan-Peter Sandler
   - Peer-Ole Jacobsen
+  - Eline Van Geert
+  - My Luong Vuong
+  - Jan-Peter Sandler
 contact: reproducibilitealeuven@kuleuven.be
 additional-contact: []
 address:
-  - Joanne Beames
-  - Center for Contextual Psychiatry
+  - Peer-Ole Jacobsen
   - KU Leuven
-  - Onderzoeksgroep Psychiatrie
-  - ON V Herestraat 49 - bus 1029
+  - Tiensestraat 102
   - 3000 Leuven
 country: Belgium
 geolocation:
   - 50.8760129
   - 4.7051696
-last-message-timestamp: 1739220047
+last-message-timestamp: 1768314852
 last-message-level: 0
 last-update: reproducibilitealeuven@kuleuven.be
-last-update-timestamp: 1739220047
-last-update-message: I want to add 2 new members
+last-update-timestamp: 1768314852
+last-update-message: I'd like to soon update the members and communication
+  channels that are linked for our sub-page.
 
 
 ---
