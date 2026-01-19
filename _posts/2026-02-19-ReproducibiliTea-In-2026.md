@@ -19,6 +19,11 @@ The ReproducibiliTea Steering Community is expanding and changing yet again to m
 
 **And, our new committee chair:**
 
+Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
+
+Lianne is a PhD student at the Department of Cognitive Psychology at Ruhr University Bochum, Germany. She is originally from the Netherlands, where she studied Psychology and Neuroscience in Nijmegen and Maastricht. Lianne started and co-organises the ReproducibiliTea in Bochum.
+
+{% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
 <br/><br/>
 
