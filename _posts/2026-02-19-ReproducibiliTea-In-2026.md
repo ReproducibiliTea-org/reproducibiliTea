@@ -7,7 +7,7 @@ categories: [JC]
 tags: [Steering Committee]
 ---
 
-The ReproducibiliTea Steering Community is expanding and changing yet again to make sure that we keep the early career researcher (ECR) perspective to building open science communities as well as allowing for more diverse perspectives. This year, we are welcoming four new committee members who will bring fresh impulses to our work.
+The ReproducibiliTea Steering Community is expanding and changing yet again to make sure that we keep the early career researcher (ECR) perspective to building open research communities as well as allowing for more diverse perspectives. This year, we are welcoming 4 new committee members who will bring fresh impulses to our work.
 
 <br/>
 
@@ -64,5 +64,5 @@ Hemani...
 
 # Plans for 2026
 
-We have a lot of exciting projects and we are always looking for ideas. If you want to get involved, have a cool idea you think we could tackle, or have some critique for us, please [get in touch](mailto: ReproducibilITea@gmail.com).
+We have a lot of exciting projects and we are always looking for ideas. If you want to get involved, have a cool idea you think we could tackle, or have comments for us, please [get in touch](mailto: ReproducibiliTea@gmail.com).
 
