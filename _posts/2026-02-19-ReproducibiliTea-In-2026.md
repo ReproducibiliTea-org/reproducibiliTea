@@ -17,11 +17,15 @@ Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.soci
 
 Ze is finishing his PhD at the Institute of Psychiatry, Psychology & Neuroscience, King’s College London. In 2024, he started the university’s ReproducibiliTea club, which he co-organises. He has collaborated on open research projects at King’s, in the UKRN, and with other groups to improve transparency and credibility in research. 
 
+{% include image.html url="blog/Ze.png" alt="Ze Freeman" description="" %}
+
 <br/><br/>
 
 Ezgi Hatip Ünlü [(LinkedIn)](https://www.linkedin.com/in/ezgi-hatip-unlu-752584149)
 
 Ezgi is a first-year PhD candidate in Clinical Epidemiology in Cardiology at Erasmus MC. She has a strong interdisciplinary background in Medicine, Anesthesiology, and Biostatistics. She began a Master’s program in Clinical Epidemiology at Erasmus MC in 2023 and now continues directly as a PhD candidate. In her PhD project, she focuses on prognostic biomarkers in heart failure, with a particular interest in improving reproducibility in clinical research.
+
+{% include image.html url="blog/Ezgi.png" alt="Ezgi Hatip Ünlü" description="" %}
 
 <br/><br/>
 
@@ -29,11 +33,15 @@ Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsk
 
 Quentin Le Cornu is a part-time PhD student working on a research project focused on developing evidence-based data management and sharing plans for randomised controlled trials and meta-analyses in clinical research. This project is a collaboration between University College Dublin (UCD), the University of Rennes (France), and the University of Ottawa (Canada). Since 2025, Quentin has co-organised the ReproducibiliTea journal club at UCD. He is also a research statistician and trainer at UCD CSTAR (Centre for Support and Training in Analysis and Research). Previously, he held positions at Inserm U1153 and the Clinical Investigation Center (CIC 1414) in France. His main research interests include open science and clinical trial methodology.
 
+{% include image.html url="blog/Quentin.png" alt="Quentin Le Cornu" description="" %}
+
 <br/><br/>
 
 Marjan Monshi
 
 Marjan is a PhD candidate in Physics at Kaunas University of Technology (KTU), in collaboration with the European PCAM network at Southern Denmark University. She is one of the core members of the Open Science community at KTU and registered the first university's ReproducibiliTea journal club specifically for the engineering faculty. Inspired by the shift towards democratic and reproducible research, she values trust and transparency and is committed to fostering a collaborative culture of knowledge sharing among early-career researchers.
+
+{% include image.html url="blog/Marjan.png" alt="Marjan Monshi" description="" %}
 
 <br/><br/>
 
