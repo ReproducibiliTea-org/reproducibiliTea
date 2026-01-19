@@ -15,17 +15,25 @@ The ReproducibiliTea Steering Community is expanding and changing yet again to m
 
 Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social)
 
+Ze is finishing his PhD at the Institute of Psychiatry, Psychology & Neuroscience, King’s College London. In 2024, he started the university’s ReproducibiliTea club, which he co-organises. He has collaborated on open research projects at King’s, in the UKRN, and with other groups to improve transparency and credibility in research. 
+
 <br/><br/>
 
 Ezgi Hatip Ünlü [(LinkedIn)](https://www.linkedin.com/in/ezgi-hatip-unlu-752584149)
+
+Ezgi is a first-year PhD candidate in Clinical Epidemiology in Cardiology at Erasmus MC. She has a strong interdisciplinary background in Medicine, Anesthesiology, and Biostatistics. She began a Master’s program in Clinical Epidemiology at Erasmus MC in 2023 and now continues directly as a PhD candidate. In her PhD project, she focuses on prognostic biomarkers in heart failure, with a particular interest in improving reproducibility in clinical research.
 
 <br/><br/>
 
 Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social)
 
+Quentin Le Cornu is a part-time PhD student working on a research project focused on developing evidence-based data management and sharing plans for randomised controlled trials and meta-analyses in clinical research. This project is a collaboration between University College Dublin (UCD), the University of Rennes (France), and the University of Ottawa (Canada). Since 2025, Quentin has co-organised the ReproducibiliTea journal club at UCD. He is also a research statistician and trainer at UCD CSTAR (Centre for Support and Training in Analysis and Research). Previously, he held positions at Inserm U1153 and the Clinical Investigation Center (CIC 1414) in France. His main research interests include open science and clinical trial methodology.
+
 <br/><br/>
 
 Marjan Monshi
+
+Marjan is a PhD candidate in Physics at Kaunas University of Technology (KTU), in collaboration with the European PCAM network at Southern Denmark University. She is one of the core members of the Open Science community at KTU and registered the first university's ReproducibiliTea journal club specifically for the engineering faculty. Inspired by the shift towards democratic and reproducible research, she values trust and transparency and is committed to fostering a collaborative culture of knowledge sharing among early-career researchers.
 
 <br/><br/>
 
@@ -33,7 +41,7 @@ Marjan Monshi
 
 Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
-Lianne...
+Lianne is currently finishing her PhD at the Department of Cognitive Psychology at Ruhr University Bochum, Germany. She is originally from the Netherlands, where she studied Psychology and Neuroscience in Nijmegen and Maastricht. Lianne started and co-organised the ReproducibiliTea in Bochum.
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
@@ -43,7 +51,7 @@ Lianne...
 
 Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/abigail-licata-456929103/)
 
-Abigail...
+Abigail is a PhD student in Neuroscience at the University of Geneva (Switzerland) and is a part of the Swiss Reproducibility Network. She has co-organized the ReproducibiliTea journal clubs since 2023 and has been involved with reproducibility-focused events including BrainHack and workshops on reproducible analysis with R Quarto. Prior to her PhD, she worked in clinics in the US and Germany, assisting professionals of different backgrounds with neuroimaging analysis in various patient populations. Beyond her passion for reproducible neuroimaging, she also helps connect women in neuroscience across the globe as a member and event co-organizer for the Women in Neuroscience Repository. She believes in science as a collaborative effort for the benefit of humanity and hopes to spread FAIR neuroimaging methods far and wide!
 
 {% include image.html url="blog/Abigail.png" alt="Abigail Licata" description="" %}
 
@@ -67,7 +75,8 @@ Michael...
 
 Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
 
-Hemani...
+Hemani is a dedicated professional in the field of Bioinformatics. She is currently pursuing Ph.D. in Bioinformatics from Jaipur National University. She is adept at crafting scientific papers for academic journals and writes the BIOCLUES newsletter, organizes the Journal Club talks, and coordinates conferences and workshops to ensure productive outcomes, fostering collaborative scientific discussions. 
+Hemani also worked as a Junior Research Fellow at the Indian Institute of Wheat and Barley (2011-2013) under the guidance of Dr. Ravish Chatrath and Dr. Rekha Malik. Noteworthy research projects include hierarchical clustering of Indian wheat varieties, evaluation of agro-morphological characters for genetic diversity, and establishing a core set of Indian wheat.
 
 {% include image.html url="blog/Hemani.png" alt="Hemani Sharma" description="" %}
 
