@@ -27,7 +27,7 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 * Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/abigail-licata-456929103/)
 * Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 * Marjan Monshi
-* Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
+* Michael Muhoozi [(LinkedIn)](https://www.linkedin.com/in/michael-muhoozi-9319724a/)
 * Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
 * Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social) (Chair)
 
