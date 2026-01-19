@@ -13,9 +13,21 @@ The ReproducibiliTea Steering Community is expanding and changing yet again to m
 
 **Please join us in welcoming our new committee members:**
 
+Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social)
 
+<br/><br/>
 
+Ezgi Hatip Ünlü [(LinkedIn)](https://www.linkedin.com/in/ezgi-hatip-unlu-752584149)
 
+<br/><br/>
+
+Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social)
+
+<br/><br/>
+
+Marjan Monshi
+
+<br/><br/>
 
 **And, our new committee chair:**
 
