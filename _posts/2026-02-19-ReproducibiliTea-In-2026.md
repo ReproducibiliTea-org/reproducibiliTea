@@ -41,7 +41,7 @@ Lianne...
 
 **And, give a warm ‘welcome back’ to our returning members:**
 
-Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social)
+Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/abigail-licata-456929103/)
 
 Abigail...
 
