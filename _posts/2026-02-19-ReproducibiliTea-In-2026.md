@@ -49,7 +49,7 @@ Marjan is a PhD candidate in Physics at Kaunas University of Technology (KTU), i
 
 Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
 
-Lianne is currently finishing her PhD at the Department of Cognitive Psychology at Ruhr University Bochum, Germany. She is originally from the Netherlands, where she studied Psychology and Neuroscience in Nijmegen and Maastricht. Lianne started and co-organised the ReproducibiliTea in Bochum.
+Lianne...
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
