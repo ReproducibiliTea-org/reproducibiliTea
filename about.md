@@ -23,7 +23,7 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 
 * Ze Freeman [@zefreeman.bsky.social](https://bsky.app/profile/zefreeman.bsky.social)
 * Ezgi Hatip Ünlü [(LinkedIn)](https://www.linkedin.com/in/ezgi-hatip-unlu-752584149)
-* Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social)
+* Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/quentin-le-cornu-898546244/)
 * Abigail Licata [@licataae.bsky.social](https://bsky.app/profile/licataae.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/abigail-licata-456929103/)
 * Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 * Marjan Monshi
