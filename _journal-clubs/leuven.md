@@ -6,14 +6,11 @@ host-organisation: KU Leuven
 host-org-url: https://www.kuleuven.be/kuleuven/
 osf: zjbkt
 zotero: IG59GZD6
-website: ""
+website: https://reproducibilitealeuven.github.io/
 twitter: ""
-signup: reproducibilitealeuven@kuleuven.be
+signup: https://tinyurl.com/reprotealvn
 organisers:
-  - Peer-Ole Jacobsen
-  - Eline Van Geert
-  - My Luong Vuong
-  - Jan-Peter Sandler
+  - Peer-Ole Jacobsen,Eline Van Geert,My Luong Vuong,Jan-Peter Sandler
 contact: reproducibilitealeuven@kuleuven.be
 additional-contact: []
 address:
@@ -25,12 +22,11 @@ country: Belgium
 geolocation:
   - 50.8760129
   - 4.7051696
-last-message-timestamp: 1768314852
+last-message-timestamp: 1768994984
 last-message-level: 0
 last-update: reproducibilitealeuven@kuleuven.be
-last-update-timestamp: 1768314852
-last-update-message: I'd like to soon update the members and communication
-  channels that are linked for our sub-page.
+last-update-timestamp: 1768994984
+last-update-message: ""
 
 
 ---
