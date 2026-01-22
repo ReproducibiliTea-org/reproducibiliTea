@@ -8,6 +8,9 @@ title:  "Sharing Stories"
 This section includes case studies, blog posts, etc. by ReproducibiliTea organisers.
 <br><br>
 
+2026
+* [Reproducibility in Physics and Space Science through Community Action](https://www.helsinki.fi/en/networks/reproducibilitea/outreach)
+
 2025
 * [ReproducibiliTea at Leeds, The Next Generation](https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/)
 * [Open Research Case Studies / Sheffield](https://sheffield.ac.uk/openresearch/casestudies)
