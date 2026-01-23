@@ -17,7 +17,7 @@ organisers:
   - Iñaki Úcar
   - Victoria Doldán
 contact: emendez@bib.uc3m.es
-additional-contact: [vdoldan@bib.uc3m.es]
+additional-contact: [vdoldan@bib.uc3m.es, opensciencelab@uc3m.es]
 address:
   - Room 14.02.24
   - Facultad de Humanidades
