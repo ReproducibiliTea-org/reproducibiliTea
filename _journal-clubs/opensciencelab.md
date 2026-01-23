@@ -15,8 +15,9 @@ organisers:
   - Marina Sánchez-Moreno
   - Pablo Sánchez-Núñez
   - Iñaki Úcar
+  - Victoria Doldán
 contact: emendez@bib.uc3m.es
-additional-contact: []
+additional-contact: [vdoldan@bib.uc3m.es]
 address:
   - Room 14.02.24
   - Facultad de Humanidades
