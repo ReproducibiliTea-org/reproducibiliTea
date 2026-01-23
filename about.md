@@ -29,7 +29,7 @@ The ReproducibiliTea parent organisation is run by a Steering Committee of ECR v
 * Marjan Monshi
 * Michael Muhoozi [(LinkedIn)](https://www.linkedin.com/in/michael-muhoozi-9319724a/)
 * Hemani Sharma [(LinkedIn)](https://www.linkedin.com/in/hemani-sharma-b9476516/)
-* Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social) (Chair)
+* Lianne Wolsink [(LinkedIn)](https://www.linkedin.com/in/liannewolsink/) (Chair)
 
 
 
