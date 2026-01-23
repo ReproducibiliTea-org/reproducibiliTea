@@ -39,4 +39,7 @@ last-update-message: API creation of opensciencelab.md
 
 ---
 
+In today’s world, reproducibility becomes a fundamental pillar to strengthen science and make it more reliable. It’s the tool we have to increase rigor and quality. As part of the ReproducibiliTea initiative, our aim is to turn the journal club into a discussion forum open to teaching and research staff, administrative and service personnel, as well as students.
+
+
 
