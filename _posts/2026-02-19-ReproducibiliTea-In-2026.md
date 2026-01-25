@@ -73,9 +73,9 @@ Anastasiia is an avid mitochondria enthusiast, which drove her to pursue a Docto
 
 <br/><br/>
 
-Michael Muhoozi [@MUHOOZIMICHAEL](https://twitter.com/MUHOOZIMICHAEL)
+Michael Muhoozi [(LinkedIn)](https://www.linkedin.com/in/michael-muhoozi-9319724a/)
 
-Michael...
+Michael Muhoozi is a PhD student in Health Care Policy & Research at Virginia Commonwealth University and a researcher with the Center for Health and Population Research at Makerere University in Uganda. His work spans health services research, epidemiology, and economic evaluation, with a particular focus on strengthening evidence‑informed decision‑making in health policy. Motivated by the need for transparent and trustworthy research, Michael founded and co‑organizes Makerere University's first ReproducibiliTea journal club, creating a collaborative space for early‑career researchers to engage with open science principles. He is also part of the African Reproducibility Network (AREN), where he contributes to capacity‑building efforts that promote rigorous, reproducible, and accessible research practices. His research interests include reproducible workflows, open science, and equitable policy evaluation, particularly within underrepresented and resource‑constrained settings. Michael is committed to fostering a culture of methodological integrity and shared learning, ensuring that robust evidence can genuinely inform public health action.
 
 {% include image.html url="blog/Michael2.png" alt="Michael Muhoozi" description="" %}
 
