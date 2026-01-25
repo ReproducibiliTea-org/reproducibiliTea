@@ -47,9 +47,9 @@ Marjan is a PhD candidate in Physics at Kaunas University of Technology (KTU), i
 
 **And, our new committee chair:**
 
-Lianne Wolsink 
+Lianne Wolsink [(LinkedIn)](https://www.linkedin.com/in/liannewolsink/)
 
-Lianne...
+Lianne is currently finishing her PhD at the Department of Cognitive Psychology at Ruhr University Bochum (Germany). She is originally from the Netherlands, where she studied Psychology and Neuroscience in Nijmegen and Maastricht. Over the past years, she has developed a strong interest in issues surrounding reproducibility and transparency. Lianne started and co-organised the ReproducibiliTea in Bochum. She believes that ReproducibiliTea journal clubs are ideal places for early career researchers to learn, discuss, reflect, and connect, not only locally, but also with the global community and other reform initiatives.
 
 {% include image.html url="blog/Lianne.png" alt="Lianne Wolsink" description="" %}
 
@@ -67,7 +67,7 @@ Abigail is a PhD student in Neuroscience at the University of Geneva (Switzerlan
 
 Anastasiia Marmyleva [@marmyleva_ana](https://x.com/marmyleva_ana) / [@marmyleva-ana.bsky.social](https://bsky.app/profile/marmyleva-ana.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/anastasiia-marmyleva-5ba646106/)
 
-Anastasiia...
+Anastasiia is an avid mitochondria enthusiast, which drove her to pursue a Doctoral degree at the University of Helsinki, Finland. She is also a co-organiser of a ReproducibiliTea UniHelsinki club - a safe space for researchers to address the issues of reproducibility in science and educate each other on good practices. Anastasiia is also passionate about science communication and is not afraid to use these tools to fight against miscommunication in research.
 
 {% include image.html url="blog/Anastasiia.png" alt="Anastasiia Marmyleva" description="" %}
 
