@@ -29,7 +29,7 @@ Ezgi is a first-year PhD candidate in Clinical Epidemiology in Cardiology at Era
 
 <br/><br/>
 
-Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social)
+Quentin Le Cornu [@quentinlc.bsky.social](https://bsky.app/profile/quentinlc.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/quentin-le-cornu-898546244/)
 
 Quentin Le Cornu is a part-time PhD student working on a research project focused on developing evidence-based data management and sharing plans for randomised controlled trials and meta-analyses in clinical research. This project is a collaboration between University College Dublin (UCD), the University of Rennes (France), and the University of Ottawa (Canada). Since 2025, Quentin has co-organised the ReproducibiliTea journal club at UCD. He is also a research statistician and trainer at UCD CSTAR (Centre for Support and Training in Analysis and Research). Previously, he held positions at Inserm U1153 and the Clinical Investigation Center (CIC 1414) in France. His main research interests include open science and clinical trial methodology.
 
@@ -47,7 +47,7 @@ Marjan is a PhD candidate in Physics at Kaunas University of Technology (KTU), i
 
 **And, our new committee chair:**
 
-Lianne Wolsink [@liannewolsink.bsky.social](https://bsky.app/profile/liannewolsink.bsky.social)
+Lianne Wolsink 
 
 Lianne...
 
