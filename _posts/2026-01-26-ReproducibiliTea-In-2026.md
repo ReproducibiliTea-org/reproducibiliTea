@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ReproducibiliTea in 2026"
-date:   2026-02-26 14:00:00 +0000
+date:   2026-01-26 07:00:00 +0000
 author: ReproducibiliTea Steering Committee
 categories: [JC]
 tags: [Steering Committee]
