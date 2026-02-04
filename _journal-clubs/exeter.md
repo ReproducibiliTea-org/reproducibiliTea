@@ -11,10 +11,14 @@ twitter: ""
 signup: ""
 organisers:
   - Olivia Hill-Cousins
-  - Alex Carter
+  - Charlie Oldfield
+  - Hannah Stokoe
+  - Yao Jiang
 contact: o.hill-cousins@exeter.ac.uk
 additional-contact:
-  - ac1037@exeter.ac.uk
+  - cjo213@exeter.ac.uk
+  - hks213@exeter.ac.uk
+  - yj365@exeter.ac.uk
 address:
   - Washington Singer Building
   - University of Exeter
@@ -24,11 +28,11 @@ country: United Kingdom
 geolocation:
   - 50.73311426127473
   - -3.536449670791626
-last-message-timestamp: 1724939223
+last-message-timestamp: 1770210744
 last-message-level: 0
 last-update: o.hill-cousins@exeter.ac.uk
-last-update-timestamp: 1724939223
-last-update-message: Add another organiser to page
+last-update-timestamp: 1770210744
+last-update-message: Change co-organiser
 
 
 ---
