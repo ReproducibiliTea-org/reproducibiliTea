@@ -27,7 +27,7 @@ We think this is a good solution for minimising duplication (e.g. multiple peopl
 
 1. Create/log into your [Zotero account](https://www.zotero.org/)
 2. Go to [the library homepage](https://www.zotero.org/groups/2354006/reproducibilitea?) and request membership
-3. Wait until Matt approves your request! This will be done ASAP
+3. Wait until we approve your request! This will be done ASAP
 
 ## Using the library
 
