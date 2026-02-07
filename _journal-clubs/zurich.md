@@ -12,7 +12,7 @@ signup: crs@ebpi.uzh.ch
 organisers: [Rachel Heyard, Eva Furrer]
 contact: crs@ebpi.uzh.ch
 additional-contact: []
-address: [University of Zurich, Center for Reproducible Science, Hirschengraben 84, 8001 Zurich, Switzerland]
+address: [University of Zurich, Center for Reproducible Science and Research Synthesis, Hirschengraben 84, 8001 Zurich, Switzerland]
 country: Switzerland
 geolocation: [47.376031000800445, 8.545426726341248]
 last-message-timestamp: 1675072917
@@ -24,4 +24,7 @@ last-update-message: >-
 
 ---
 
-Organized by the Center for Reproducible Science, University of Zurich.
+Organized by the Center for Reproducible Science and Research Synthesis, University of Zurich.
+
+
+Upcoming events: [https://www.crs.uzh.ch/en/training/ReproducibiliTea.html](https://www.crs.uzh.ch/en/training/ReproducibiliTea.html)
