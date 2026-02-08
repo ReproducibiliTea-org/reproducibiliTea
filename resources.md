@@ -171,6 +171,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  African Reproducibility Network (AREN) [YouTube](https://www.youtube.com/@africanrepro/videos)
 *  UK Reproducibility Network (UKRN) [YouTube](https://www.youtube.com/@ukreproducibilitynetwork3307/videos)
 *  Danish Reproducibility Network (DKRN) [YouTube](https://www.youtube.com/@DanishReproducibilityNetwork)
+*  Brazilian Reproducibility Network (BrRN) [YouTube](https://www.youtube.com/@redereprodutibilidade/videos)
 
 <br/>
 
