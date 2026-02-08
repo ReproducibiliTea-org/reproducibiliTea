@@ -114,6 +114,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  UK Reproducibility Network (UKRN) Resources [website](https://www.ukrn.org/resources/)
 *  African Reproducibility Network (AREN) Community Resources [OSF](https://osf.io/zdp83/)
 *  Danish Reproducibility Network (DKRN) [website](https://danish-repro.github.io/)
+*  Brazilian Reproducibility Network (BrRN) [website](https://www.reprodutibilidade.org/en/recursos)
 *  WMA Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants (amended in 2024) [website](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 *  Guidance for best practices for clinical trials (WHO, 2024) [website](https://www.who.int/publications/i/item/9789240097711)
 
