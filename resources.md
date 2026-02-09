@@ -188,6 +188,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  Research Culture Uncovered [podcast](https://research-culture.captivate.fm/)
 *  The HPS Podcast - History, Philosophy and Social Studies of Science [podcast](https://www.hpsunimelb.org/the-hps-podcast)
 *  Science in the Grey Zone [podcast](https://open.spotify.com/show/2AuVl4wyert71z2vskG5LX)
+*  Metascience Matters [podcast](https://www.youtube.com/@MetascienceMatters)
 
 <br/>
 
