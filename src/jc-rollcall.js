@@ -157,8 +157,8 @@ class JournalClub {
                 message: "Error parsing journal club file",
                 error: e,
                 content: this.content
-            })
-            throw e;
+            });
+            return null;
         }
     }
 
@@ -460,11 +460,11 @@ function getOldestJC() {
                         if(typeof json === "undefined")
                             console.warn(`undefined JC: ${jc.url}`)
                         json.modified = modified;
-                        return json;
+                        return new JournalClub(json);
                     });
             }));
             console.log("Fetched JC details")
-            return jc_details.map(jc => new JournalClub(jc.value));
+            return jc_details.filter(jc => jc !== null);
         })
         // Has the JC been updated recently enough to skip?
         .then(jcs => jcs.filter(jc =>
