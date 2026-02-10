@@ -435,6 +435,7 @@ async function saveLog(log) {
     // Save to the database
     console.log("Saving log to database.")
     const dbConnection = await getDatabase();
+    log.timestamp = new Date().toISOString();
     const update = await dbConnection.collection.insertOne(log);
     console.log(`Saved log ${update.insertedId}`);
 }
