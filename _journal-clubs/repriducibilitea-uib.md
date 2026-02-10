@@ -25,3 +25,5 @@ last-update-message: >-
 ---
 
 Based at the Faculty of Psychology at the University of Bergen, but members from other faculties or other local institutions are more than welcome. We tend to have a nice mix of PhD students and more senior researchers.
+
+More info: [https://www4.uib.no/en/studies/courses/ghig990](https://www4.uib.no/en/studies/courses/ghig990)
