@@ -14,15 +14,17 @@
 const fetch = require("node-fetch");
 require('dotenv').config();
 const YAML = require('yaml')
+const { MongoClient } = require('mongodb');
 
 let {GITHUB_REPO_API} = process.env;
 
 const {
+    MONGODB_URI,
+    MONGODB_DB,
     GITHUB_API_USER,
     GITHUB_TOKEN,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
-    MAILGUN_HOST,
     FROM_EMAIL_ADDRESS
 } = process.env;
 
@@ -124,13 +126,6 @@ class JournalClub {
             const title = yaml['title'];
             const contact = yaml['contact'];
             const additionalContacts = yaml['additional-contact'];
-            // const lastUpdate = /^last-update-timestamp: "?(.*?)"?$/m.exec(this.content);
-            // const lastMessage = /^last-message-timestamp: "?(.*?)"?$/m.exec(this.content);
-            // const lastMessageLevel = /^last-message-level: "?(.*?)"?$/m.exec(this.content);
-            // const jcid = /^jcid: "?(.*?)"?$/m.exec(this.content);
-            // const title = /^title: "?(.*?)"?$/m.exec(this.content);
-            // const contact = /^contact: "?(.*?)"?$/m.exec(this.content);
-            // const additionalContacts = /^additional-contact: \[?"?([^\]]*?)"?]?$/m.exec(this.content);
             this.lastUpdate = lastUpdate? new Date(parseInt(lastUpdate[1]) * 1000) : new Date(0);
             this.lastMessage = lastMessage? new Date(parseInt(lastMessage[1]) * 1000) : new Date(0);
             this.lastMessageLevel = lastMessageLevel? parseInt(lastMessageLevel[1]) : MESSAGE_LEVELS.UP_TO_DATE;
@@ -426,11 +421,30 @@ function updateMessageStatus(JC) {
         .catch(e => `Could not update last message time: ${e}`);
 }
 
+async function getDatabase() {
+    try {
+        const mongo = new MongoClient(MONGODB_URI);
+        await mongo.connect();
+        return { client: mongo, collection: mongo.db(MONGODB_DB).collection('editTokens') };
+    } catch (error) {
+        console.error(`Failed: ${error.message}`);
+    }
+}
+
+async function saveLog(log) {
+    // Save to the database
+    console.log("Saving log to database.")
+    const dbConnection = await getDatabase();
+    const update = await dbConnection.collection.insertOne(log);
+    console.log(`Saved log ${update.insertedId}`);
+}
+
 /**
  * Return a list of journal club objects as fetched from the GitHub repository.
  * @return {object[]}
  */
 function getOldestJC() {
+    const log = {}
     return fetch(
         `${GITHUB_REPO_API}/contents/_journal-clubs`,
         {headers: {
@@ -464,16 +478,24 @@ function getOldestJC() {
                     });
             }));
             console.log("Fetched JC details")
-            return jc_details.filter(jc => jc !== null);
+            log.jcs_found = jcs.length;
+            const filtered_jscs = jc_details.filter(jc => jc !== null);
+            log.jcs_with_errors = jc_details.length - filtered_jscs.length;
+            return filtered_jscs;
         })
         // Has the JC been updated recently enough to skip?
         .then(jcs => jcs.filter(jc =>
             jc.lastUpdate < TOO_OLD && jc.lastMessage < TOO_RECENT
         ))
         .then(jcs => {
-                if(!jcs.length)
+                log.jcs_viable_for_update = jcs.length;
+                if(!jcs.length) {
                     return null;
+                }
                 if(JC_TARGET) {
+                    log.jc_target_type = "querystring_parameter";
+                    log.jc_id = JC_TARGET;
+                    log.target_jc_found = false;
                     // Search for specific target
                     const x = jcs.filter(jc => {
                         if(!jc.jcid) {
@@ -482,16 +504,26 @@ function getOldestJC() {
                         }
                         return jc.jcid.toLowerCase() === JC_TARGET;
                     });
-                    if(x.length)
+                    if(x.length) {
+                        log.target_jc_found = true;
                         return x[0];
+                    }
                     return null;
                 }
                 // Find oldest
-                return jcs.reduce((a, b) =>
+                const out = jcs.reduce((a, b) =>
                     b.gitHubResponse.modified.getTime() <
                     a.gitHubResponse.modified.getTime()?
                         b : a
                 );
+                log.jc_target_type = "oldest_modification_date"
+                log.jc_id = out.jcid;
+                return out;
             }
-        );
+        ).catch(e => {
+            console.error("Error fetching journal clubs", e);
+            log.error = e.message;
+            return null;
+        })
+        .finally(() => saveLog(log));
 }

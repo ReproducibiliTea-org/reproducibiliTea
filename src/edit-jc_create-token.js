@@ -9,7 +9,6 @@ const {
     MONGODB_DB,
     MAILGUN_API_KEY,
     MAILGUN_DOMAIN,
-    MAILGUN_HOST,
     GITHUB_API_USER,
     FROM_EMAIL_ADDRESS
 } = process.env;
