@@ -31,3 +31,5 @@ We are slowly evolving from a journal club of psychology papers to a multidiscip
 Moreover, our increasing number of attendees demonstrates an interest in Open Science-related topics throughout academic disciplines: In the spring / summer semester 2019 we counted usually 5 to 7 members per session. In fall / winter semester 2019/20 we are in the double digits (so far). After the (main part of the) pandemic, we count approximately 10 attendees. 
  
 If you are interested to join our ReproducibiliTea please [get in touch](mailto:graz_open_science@zoho.com) and come along!
+
+Upcoming events: [https://graz-openscience.uni-graz.at/en/gosi-events/](https://graz-openscience.uni-graz.at/en/gosi-events/)
