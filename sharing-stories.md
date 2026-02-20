@@ -43,6 +43,7 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 * [ReproducibiliTea in Bordeaux: A successful year and more to come!](https://www.bordeaux-neurocampus.fr/reproducibilitea-in-bordeaux-a-successful-year-and-more-to-come/)
 * [ReproducibiliTea in Bordeaux: another successful year!](https://www.bordeaux-neurocampus.fr/reproducibilitea-in-bordeaux-another-successful-year/)
 * [The Dilemmas of Practicing Open Science for Junior Researchers](https://www.fpol.no/the-dilemmas-of-practicing-open-science-for-junior-researchers/)
+* [Fram for troverdig forskning [*Towards credible research*]](https://www.forskerforum.no/innsendt/fram-for-troverdig-forskning/)
 
 2021
 * [ReproducibiliTea Leuven journal club: A place for interdisciplinary discussion on improving science](https://doi.org/10.21428/1192f2f8.b32318c5)
