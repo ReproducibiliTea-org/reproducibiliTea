@@ -15,7 +15,7 @@ In October 2025, we organised two webinars on the topic of peer review and its d
 <br><br><br>
 **Resources - peer review guidelines and recommendations**
 
-* Malički, M, Mehmani, B. (2024). Structured peer review: pilot results from 23 Elsevier journals. [https://doi.org/10.7717/peerj.17514](https://doi.org/10.7717/peerj.17514) [The list of questions available in the Box 1 in the results]
+* Malički, M, Mehmani, B. (2024). Structured peer review: pilot results from 23 Elsevier journals. [https://doi.org/10.7717/peerj.17514](https://doi.org/10.7717/peerj.17514) [The list of questions available [in the Box 1 in the results](https://doi.org/10.7717/peerj.17514/table-2)]
 * ECR Reviewers Platform [https://ecr-reviewers.gitlab.io/guide/](https://ecr-reviewers.gitlab.io/guide/) 
 * Toolkit on peer review by the European Association of Science Editors (EASE) [https://ease.org.uk/communities/peer-review-committee/peer-review-toolkit/](https://ease.org.uk/communities/peer-review-committee/peer-review-toolkit/)
 * Equator Network - reporting guidelines for many study types [https://www.equator-network.org/reporting-guidelines/](https://www.equator-network.org/reporting-guidelines/)
