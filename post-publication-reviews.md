@@ -20,7 +20,7 @@ In October 2025, we organised two webinars on the topic of peer review and its d
 * Toolkit on peer review by the European Association of Science Editors (EASE) [https://ease.org.uk/communities/peer-review-committee/peer-review-toolkit/](https://ease.org.uk/communities/peer-review-committee/peer-review-toolkit/)
 * Equator Network - reporting guidelines for many study types [https://www.equator-network.org/reporting-guidelines/](https://www.equator-network.org/reporting-guidelines/)
 * Study Quality Assessment Tools [https://www.nhlbi.nih.gov/health-topics/study-quality-assessment-tools](https://www.nhlbi.nih.gov/health-topics/study-quality-assessment-tools) 
-* The Catalogue of Bias - “A collaborative project mapping all the biases that affect health evidence” - [https://catalogofbias.org/biases/](https://catalogofbias.org/biases/) 
+* The Catalogue of Bias [https://catalogofbias.org/biases/](https://catalogofbias.org/biases/) 
 * The ‘REAPPRAISED’ checklist for evaluation of publication integrity [http://resource-cms.springernature.com/springer-cms/rest/v1/content/17589730/data/v1](http://resource-cms.springernature.com/springer-cms/rest/v1/content/17589730/data/v1)
 * Corneille et al. (2023). Beware 'persuasive communication devices' when writing and reading scientific articles. [https://doi.org/10.7554/eLife.88654](https://doi.org/10.7554/eLife.88654) [Table 1. Persuasive communication devices]
 * Vazire et al. (2022). Credibility Beyond Replicability: Improving the Four Validities in Psychological Science. [https://doi.org/10.1177/09637214211067779](https://doi.org/10.1177/09637214211067779)   & online tool: [https://www.seaboat.io/](https://www.seaboat.io/)
