@@ -12,7 +12,7 @@ signup:
 organisers: [Shaanveer Sarana]
 contact: sks79@leicester.ac.uk
 additional-contact: []
-address: [Department of Neuroscience, Psychology and Behaviour, University of Leicester, University Road, LE1 7RH, Leicester]
+address: [Department of Psychology and Vision Sciences, University of Leicester, University Road, LE1 7RH, Leicester]
 country: United Kingdom
 geolocation: [52.6211393, -1.1246325]
 last-update: slt47@le.ac.uk
@@ -24,6 +24,6 @@ last-message-timestamp: 1659430800
 
 ---
 
-ReproducibiliTea Leicester is for anyone who wants to learn more about reproducible research and open science practices in the Department of Neuroscience, Psychology and Behaviour at the University of Leicester, but other departments are also welcome!  We get together (with tea, coffee and cake!) once a month to discuss interesting journal articles about topics relating to open science, replicability in research, pre-registration and data sharing, among others. It doesn’t matter if you’re an undergrad, professor, beginner or expert – everyone is welcome!
+ReproducibiliTea Leicester is for anyone who wants to learn more about reproducible research and open science practices in the Department of Psychology and Vision Sciences at the University of Leicester, but other departments are also welcome!  We get together (with tea, coffee and cake!) once a month to discuss interesting journal articles about topics relating to open science, replicability in research, pre-registration and data sharing, among others. It doesn’t matter if you’re an undergrad, professor, beginner or expert – everyone is welcome!
 
-Meeting details are circulated via email so if you are interested, email Shaan (sks79@leicester.ac.uk) and you will be added to the mailing list.
+Meeting details are circulated via email so if you are interested, email Shaan Sarana (sks79@leicester.ac.uk) and you will be added to the mailing list.
