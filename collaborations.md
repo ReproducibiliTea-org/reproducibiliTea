@@ -14,7 +14,7 @@ We are working to strengthen the collaborations between ReproducibiliTea clubs v
 <br><br>
 
 
-* ReproducibiliTea Bordeaux
-* Existing Collaborations
+Examples of collaborations
+* [ReproducibiliTea Bordeaux & FORRT](https://docs.google.com/document/d/1JvTo4kGFNtgCJrqgBcGV17bdEHGKWkwONrNQUMVH478/) 
 
 
