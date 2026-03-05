@@ -166,6 +166,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  Peer Community In [YouTube](https://www.youtube.com/@peercommunityin9351/videos)
 *  ASAPbio [YouTube](https://www.youtube.com/@asapbio/videos)
 *  RIOT Science Club [YouTube](https://www.youtube.com/@RIOTScienceClub/videos)
+*  FORRT [YouTube](https://www.youtube.com/@forrtproject9995/videos)
 *  COPE (Committee on Publication Ethics) [YouTube](https://www.youtube.com/@publicationethics/videos)
 *  European Association of Science Editors (EASE) [YouTube](https://www.youtube.com/@EASEeditors/videos)
 *  Asian Council of Science Editors (ACSE) [YouTube](https://www.youtube.com/@TheACSEofficial/videos)
