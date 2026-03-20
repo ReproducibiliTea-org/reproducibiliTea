@@ -14,7 +14,7 @@ We are working to strengthen the collaborations between ReproducibiliTea clubs v
 <br><br>
 
 
-Examples of collaborations
+Examples of collaborations started by ReproducibiliTea journal clubs:
 * [ReproducibiliTea KU Leuven and ReproducibiliTea York University](https://doi.org/10.21428/1192f2f8.b0f909fd)
 * [UCL/UNIL ReproducibiliTea](https://sites.google.com/view/reproducibilitea-ucl/home?authuser=0) - a  joint journal club by organisers from the University of Lausanne and University College London
 * [ReproducibiliTea DiPSCo](https://sites.google.com/unitn.it/reproducibilitea/home?authuser=0) - a joint journal club in 2024 by organisers from the University of Trento and Adolfo Ibáñez University
