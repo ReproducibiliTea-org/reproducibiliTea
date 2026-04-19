@@ -27,7 +27,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea UCL/UNIL [2022-2024](https://sites.google.com/view/reproducibilitea-ucl/recordings?authuser=0)  
 *  ReproducibiliTea UniBasel [2020-2025](https://www.youtube.com/@bam_mri/videos) 
 *  ReproducibiliTea UniHelsinki [2025a](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) [2025b](https://www.helsinki.fi/fi/unitube/video/e455dcb7-7f11-490d-ac65-9b7764ea307c)
-*  ReproducibiliTea University of East Anglia [2022-2025](https://www.youtube.com/@reproducibiliteauea1434/videos)
+*  ReproducibiliTea University of East Anglia [2022-2026](https://www.youtube.com/@reproducibiliteauea1434/videos)
 *  ReproducibiliTea Global [2025](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7) 
 
 
@@ -48,10 +48,10 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea KU Leuven [2020-2025](https://osf.io/4fyaq/files) 
 *  ReproducibiliTea OpenCSD [2023](https://osf.io/bsq5u/files) 
 *  ReproducibiliTea Queen's University Belfast [2022-2023](https://osf.io/2rgth/files) 
-*  ReproducibiliTea UniBasel [2022-2024](https://osf.io/kp98v/files) 
-*  ReproducibiliTea UniHelsinki [2024-2025](https://osf.io/4r5xt/files) 
+*  ReproducibiliTea UniBasel [2022-2025](https://osf.io/kp98v/files) 
+*  ReproducibiliTea UniHelsinki [2024-2026](https://osf.io/4r5xt/files) 
 *  ReproducibiliTea University of Bristol [2019](https://osf.io/9zbcw/files) 
-*  ReproducibiliTea Zurich [2020-2025](https://osf.io/f2dt8/files) 
+*  ReproducibiliTea Zurich [2020-2026](https://osf.io/f2dt8/files) 
 *  Wolsink, L. (2024). First steps into Open Science as an Early Career Researcher. Retrieved from [https://osf.io/cbeq4](https://osf.io/cbeq4)
 
 <br/>
@@ -59,11 +59,11 @@ as well as resources published by other organisations, lists of books, podcasts,
  **Reading lists**
 
 *  ReproducibiliTea BI Oslo [2020](https://osf.io/cf8ja) , [2021a](https://osf.io/8tpjc) , [2021b](https://osf.io/3k7zp) , [2022](https://osf.io/6ubwk)
-*  ReproducibiliTea Bielefeld [2021-2025](https://burst.pages.ub.uni-bielefeld.de/burst/resources/2021-11-05-paper/)
+*  ReproducibiliTea Bielefeld [2021-2026](https://burst.pages.ub.uni-bielefeld.de/burst/resources/2021-11-05-paper/)
 *  ReproducibiliTea Birmingham [2020a](https://osf.io/uns3b) , [2020b](https://osf.io/c5njh) , [2021a](https://osf.io/e5sbp) , [2021b](https://osf.io/trb4p) , [2022a](https://osf.io/dgjnx) , [2022b](https://osf.io/rkn67)
 *  ReproducibiliTea Bochum [2023](https://osf.io/ev4zw) , [2023/2024](https://osf.io/957d3) , [2024](https://osf.io/azr2q) , [2024/2025](https://osf.io/fcbw7) , [2025](https://osf.io/zmrpj)
 *  ReproducibiliTea Bordeaux [2021](https://osf.io/jqxw6/wiki/Schedule-21/) , [2022](https://osf.io/jqxw6/wiki/Schedule/)
-*  ReproducibiliTea in the HumaniTeas / Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/kurse-beratung/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ws-2024-25)
+*  ReproducibiliTea in the HumaniTeas / Cologne [2024](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024) , [2024/2025](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2024-1) , [2025](https://ub.uni-koeln.de/en/courses-consultations/specials/reproducibilitea-in-the-humaniteas/reproducibilitea-ss-2025)  
 *  ReproducibiliTea DiPSCo / Open Science Trento [2022](https://sites.google.com/unitn.it/reproducibilitea/reading-list/our-reading-list?authuser=0)
 *  ReproducibiliTea Exeter [2021-2023](https://osf.io/rmehf/files)
 *  ReproducibiliTea Frankfurt [2019/2020](https://osf.io/jk74w) , [2020/2021](https://osf.io/jfbv5) , [2021](https://osf.io/8v764) , [2021/2022](https://osf.io/ebd6x) , [2022](https://osf.io/vqhkw) , [2022/2023](https://osf.io/zng2d) , [2023/2024](https://osf.io/9hrtw)
@@ -77,7 +77,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea Munich [2024](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf)
 *  ReproducibiliTea México [2020-2025](https://sites.google.com/view/rptmx)
 *  ReproducibiliTea NC State University [2021](https://github.com/sheilasaia/reproducibili-tea)
-*  ReproducibiliTea Newcastle [2022-2025](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
+*  ReproducibiliTea Newcastle [2022-2026](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/reproducibilitea/)
 *  Reproducibilitea for Psychopathology / Northumbria University [2021-2025](https://osf.io/3vd59/files)
 *  ReproducibiliTea Plymouth [link](https://www.robertharlowphd.com/reproducibilitea/)
 *  ReproducibiliTea Potsdam [2020](https://osf.io/ucm58) ,  [2021a](https://osf.io/8ta73) , [2021b](https://osf.io/k9etb) , [2022](https://osf.io/vwqgb)
@@ -86,13 +86,13 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea Saint Louis Area [2021](https://osf.io/edpx6)
 *  ReproducibiliTea Sheffield [2023-2025](https://reproducibilitea-sheffield.github.io/)
 *  ReproducibiliTea Southampton [2019-2025](https://library.soton.ac.uk/lovedata/reproducibiliTea#previous)
-*  ReproducibiliTea Stanford [2022-2025](https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html)
-*  ReproducibiliTea Toronto [2020-2025](https://osf.io/h3adt/wiki/home/) , [2023](https://osf.io/r6t57) , [2024a](https://osf.io/j9c5m) , [2024b](https://osf.io/zjh3p) , [2024c](https://osf.io/wzagr) , [2025](https://osf.io/7dh3j)
-*  ReproducibiliTea UCL/UNIL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-2025](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
+*  ReproducibiliTea Stanford [2022-2026](https://med.stanford.edu/sporr/education/training/ReproducibiliTea.html)
+*  ReproducibiliTea Toronto [2020-2026](https://osf.io/h3adt/wiki/home/) , [2023](https://osf.io/r6t57) , [2024a](https://osf.io/j9c5m) , [2024b](https://osf.io/zjh3p) , [2024c](https://osf.io/wzagr) , [2025](https://osf.io/7dh3j)
+*  ReproducibiliTea UCL/UNIL [2019a](https://osf.io/nkhyu) , [2019b](https://osf.io/pnx7j) , [2020a](https://osf.io/ypqz5) , [2020b](https://osf.io/k5486) ,  [2019-2026](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)
 *  ReproducibiliTea UniBasel [2023](https://osf.io/rqp56)
 *  ReproducibiliTea Vienna [2021-2023](https://drive.google.com/file/d/11y1iwtVbv_dPasHGWJUdfqLPh5i8T1IO/view)
 *  ReproducibiliTea York [2019a](https://osf.io/msr43) , [2019b](https://osf.io/3e2jb) , [2021a](https://osf.io/2hj3n) ,  [2021b](https://osf.io/yhzqw) ,  [2021c](https://osf.io/qg9ec) , [2022](https://osf.io/bq9na)
-*  ReproducibiliTea Zurich [2019-2025](https://www.crs.uzh.ch/en/training/ReproducibiliTea.html)
+*  ReproducibiliTea Zurich [2019-2026](https://www.crs.uzh.ch/en/training/ReproducibiliTea.html)
 
 <br/>
 
