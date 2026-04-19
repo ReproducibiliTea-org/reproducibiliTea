@@ -18,7 +18,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea DiPSCo / Open Science Trento [2023](https://www.youtube.com/@ReproTeaUnitn/videos) , [2025](https://sites.google.com/unitn.it/reproducibilitea/reproducibilitea-seminars/iv-edition-2025?authuser=0)   
 *  ReproducibiliTea Dundee [2021](https://www.youtube.com/@dundeereproducibilitea2015/videos)   
 *  ReproducibiliTea EARLI JURE [2023](https://www.youtube.com/playlist?list=PL3XjW1TIAkRRFJTjMY-AYLECF7-qAEUIy) 
-*  ReproducibiliTea Edinburgh [2020-2025](https://www.youtube.com/@edinburghreproducibilitea1277/videos)   
+*  ReproducibiliTea Edinburgh [2020-2025](https://www.youtube.com/@edinburghreproducibilitea1277/videos) , [2026](https://open.ed.ac.uk/how-to-work-openly-reproducibilitea/)   
 *  ReproducibiliTea Exeter [2023](https://osf.io/rmehf/files) 
 *  ReproducibiliTea Glasgow [2020-2021](https://www.youtube.com/@glasgowreproducibilitea1816/videos)    
 *  ReproducibiliTea Leeds [2020-2023](https://www.youtube.com/@leedsreproducibilitea8534/videos)   
@@ -146,6 +146,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  Röseler, L. (in preparation). Open Science: Wie sich die Wissenschaft öffnet (0.2th ed.). [website](https://lukasroeseler.github.io/opensciencebuch/) , [doi](https://doi.org/10.17605/OSF.IO/2QXWV)
 *  Frank, M. C. et al. (2025). Experimentology: An Open Science Approach to Experimental Psychology Methods. [website](https://experimentology.io/) , [doi](https://doi.org/10.25936/3JP6-5M50)
 *  Röseler, L., Wallrich, L. at al. (2025). Handbook for Reproduction and Replication Studies. [website](https://forrt.org/replication_handbook) , [doi]( https://doi.org/10.5281/zenodo.16990114)
+*  Vaesen, K. (2026). Neomania. How Our Obsession With Innovation is Failing Science, and How to Restore Trust. [website](https://www.openbookpublishers.com/books/10.11647/obp.0507) , [doi](https://doi.org/10.11647/OBP.0507)
 
 <br/>
 
