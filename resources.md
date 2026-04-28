@@ -191,6 +191,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  The HPS Podcast - History, Philosophy and Social Studies of Science [podcast](https://www.hpsunimelb.org/the-hps-podcast)
 *  Science in the Grey Zone [podcast](https://open.spotify.com/show/2AuVl4wyert71z2vskG5LX)
 *  Metascience Matters [podcast](https://www.youtube.com/@MetascienceMatters)
+*  Research as it Happens [podcast](https://shows.acast.com/research-as-it-happens)
 
 <br/>
 
