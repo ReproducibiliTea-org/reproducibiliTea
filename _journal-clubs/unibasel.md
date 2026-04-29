@@ -18,7 +18,7 @@ organisers:
   - Noëmi Capdevila
   - Paul Ritsche
 contact: tugba.akincidantonoli@unibas.ch
-additional-contact: []
+additional-contact: [claudia.weidensteiner@unibas.ch, xeni.deligianni@unibas.ch, Francesco.Santini@unibas.ch, noemi.capdevila@unibas.ch, paul.ritsche@unibas.ch]
 address:
   - Radiological Physics
   - University Hospital Basel
