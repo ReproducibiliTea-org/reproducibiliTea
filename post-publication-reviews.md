@@ -12,6 +12,9 @@ Because this project is still in its pilot phase (start January 2025), these doc
 See the blog posts by ReproducibiliTea organisers [[blog post 1](https://reproducibilitea.org/jc/2025/11/17/post-publication-reviewing-kings)] [[blog post 2](https://reproducibilitea.org/jc/2025/11/19/post-publication-reviewing-bioclues-and-babraham)] [[blog post 3](https://reproducibilitea.org/jc/2025/11/21/post-publication-reviewing-reflections)].
 <br><br>
 In October 2025, we organised two webinars on the topic of peer review and its diversification [(see full programme)]( https://docs.google.com/document/d/1xuFoCPYjMzKZ2kpBVBgXHVTPXl8stghAA9e6sVWdaEA/). The video recordings are available on our [YouTube channel](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7). 
+<br><br>
+Explore our reading lists: [Post-Publication Reviewing and Culture](https://osf.io/3ed8x/files/ynbf4) &
+[Error and Error Correction](https://osf.io/3ed8x/files/gfrch).  
 <br><br><br>
 **Resources - peer review guidelines and recommendations**
 
