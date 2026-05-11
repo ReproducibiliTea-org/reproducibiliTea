@@ -13,7 +13,7 @@ See the blog posts by ReproducibiliTea organisers [[blog post 1](https://reprodu
 <br><br>
 In October 2025, we organised two webinars on the topic of peer review and its diversification [(see full programme)]( https://docs.google.com/document/d/1xuFoCPYjMzKZ2kpBVBgXHVTPXl8stghAA9e6sVWdaEA/). The video recordings are available on our [YouTube channel](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7). 
 <br><br>
-Visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage) to explore related reading lists: [Peer Review](https://osf.io/3ed8x/files/45hmt), [Post-Publication Reviewing and Culture](https://osf.io/3ed8x/files/ynbf4), [Error and Error Correction](https://osf.io/3ed8x/files/gfrch).  
+Visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage) to explore related reading lists: [peer review](https://osf.io/3ed8x/files/45hmt), [post-publication reviewing and culture](https://osf.io/3ed8x/files/ynbf4), [error and error correction](https://osf.io/3ed8x/files/gfrch).  
 <br><br><br>
 **Resources - peer review guidelines and recommendations**
 
