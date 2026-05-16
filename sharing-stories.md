@@ -10,7 +10,6 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 
 2026
 * [Reproducibility in Physics and Space Science through Community Action](https://www.helsinki.fi/en/networks/reproducibilitea/outreach)
-* [ReproducibiliTea Journal Club. “Our informal meetings are a safe haven for like-minded researchers”](https://www.kuleuven.be/open-science/news/interview-reproducibilitea)
 
 2025
 * [ReproducibiliTea at Leeds, The Next Generation](https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/)
