@@ -25,13 +25,13 @@ Visit [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8
 * The Catalogue of Bias [https://catalogofbias.org/biases/](https://catalogofbias.org/biases/) 
 * The ‘REAPPRAISED’ checklist for evaluation of publication integrity [http://resource-cms.springernature.com/springer-cms/rest/v1/content/17589730/data/v1](http://resource-cms.springernature.com/springer-cms/rest/v1/content/17589730/data/v1)
 * Corneille et al. (2023). Beware 'persuasive communication devices' when writing and reading scientific articles. [https://doi.org/10.7554/eLife.88654](https://doi.org/10.7554/eLife.88654) [Table 1. Persuasive communication devices]
-* Vazire et al. (2022). Credibility Beyond Replicability: Improving the Four Validities in Psychological Science. [https://doi.org/10.1177/09637214211067779](https://doi.org/10.1177/09637214211067779)   & online tool: [https://www.seaboat.io/](https://www.seaboat.io/)
+* Vazire et al. (2022). Credibility beyond replicability: Improving the four validities in psychological science. [https://doi.org/10.1177/09637214211067779](https://doi.org/10.1177/09637214211067779)  & online tool: [https://www.seaboat.io/](https://www.seaboat.io/)
 * Holford et al. (2024). Engaging undergraduate students in preprint peer review. [https://doi.org/10.1177/14697874241264495](https://doi.org/10.1177/14697874241264495) - see Supplemental Appendix 1 for the list of questions, or OSF folder: [https://osf.io/7yqv3](https://osf.io/7yqv3)
 * Bekkers, R. (2020, May 2). How to review a paper - Including a checklist for hypothesis testing research reports. [https://doi.org/10.31219/osf.io/7ug4w](https://doi.org/10.31219/osf.io/7ug4w)
 * Davis et al. (2018). Peer-review guidelines promoting replicability and transparency in psychological science. [https://doi.org/10.1177/2515245918806489](https://doi.org/10.1177/2515245918806489)
 * Flake, J. K., & Fried, E. I. (2020). Measurement schmeasurement: Questionable measurement practices and how to avoid them. [https://doi.org/10.1177/2515245920952393](https://doi.org/10.1177/2515245920952393) [Table 1. Six Questions to Promote Transparent Reporting of Measurement Practices]
-* Hahn et al. (2024, September 24). More Than Box-ticking? Assessing Preregistration Quality in Psychological Research. [https://doi.org/10.31219/osf.io/wc7qr](https://doi.org/10.31219/osf.io/wc7qr)
-* Lakens, D. (2024). When and How to Deviate From a Preregistration. [https://doi.org/10.1525/collabra.117094](https://doi.org/10.1525/collabra.117094)
+* Hahn et al. (2024, September 24). More than box-ticking? Assessing preregistration quality in psychological research. [https://doi.org/10.31219/osf.io/wc7qr](https://doi.org/10.31219/osf.io/wc7qr)
+* Lakens, D. (2024). When and how to deviate from a preregistration. [https://doi.org/10.1525/collabra.117094](https://doi.org/10.1525/collabra.117094)
 * Bakker et al. (2020). Ensuring the quality and specificity of preregistrations. [https://doi.org/10.1371/journal.pbio.3000937](https://doi.org/10.1371/journal.pbio.3000937)
 * Brandt et al. (2014). The Replication Recipe: What makes for a convincing replication? [https://doi.org/10.1016/j.jesp.2013.10.005](https://doi.org/10.1016/j.jesp.2013.10.005)
 * Quantitative manuscript peer review template [http://mgto.org/peerreviewtemplate](http://mgto.org/peerreviewtemplate) 
