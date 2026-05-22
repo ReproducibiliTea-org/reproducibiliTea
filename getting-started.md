@@ -50,6 +50,6 @@ Here some great reading lists to get you in the know quick and easy with complem
 <iframe src="https://rpt-rl.netlify.app/" title="Reading List" width="900" height="400"></iframe>
 
 
-You can find all the Reading lists [here](https://rpt-rl.netlify.app/).
+You can find all the Reading lists via [our app](https://rpt-rl.netlify.app/) or [OSF folder](https://osf.io/3ed8x/files/osfstorage).
 
 Need even more resources? Check out our [Resources](https://reproducibilitea.org/resources).
