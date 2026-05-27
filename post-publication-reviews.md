@@ -6,6 +6,8 @@ title:  "Post-publication reviews by ReproducibiliTea journal clubs"
 The steering committee provides resources to make it as easy as possible to start: a list with suggested review targets, peer review guidelines and recommendations, as well as a list of venues where commentaries could be published and a list of funding opportunities.
 
 Interested in participating in the project? Send us an email: reproducibilitea@gmail.com and we will send you more information including resources.
+
+*ReproducibiliTeam developing this project: Ze Freeman (since 2026), Paulina Manduch (since 2024), Lianne Wolsink (since 2024)*
 <br><br><br>
 [See our blog post](https://reproducibilitea.org/jc/2025/11/07/post-publication-reviewing) for more info about the project.
 <br><br>
