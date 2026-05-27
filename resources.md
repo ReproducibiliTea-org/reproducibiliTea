@@ -5,7 +5,8 @@ title:  "Resources"
 This section includes resources published by ReproducibiliTea journal clubs: video recordings, presentations, reading lists, blogs,
 as well as resources published by other organisations, lists of books, podcasts, and educational games.
 <br/><br/>
-
+*Contributors: Paulina Manduch, Lianne Wolsink, Abigail Licata, Michael Muhoozi, Helena Gellersen, and the ReproducibiliTea Community*
+<br/><br/>
 # Resources published by ReproducibiliTea journal clubs
 
 
