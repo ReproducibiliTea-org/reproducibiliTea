@@ -12,7 +12,8 @@ signup: https://universityofgalway.libcal.com/calendar/workshopsevents?cid=8158&
 organisers:
   - Dr. Jen Smith
 contact: jen.smith@universityofgalway.ie
-additional-contact: [Libgal@gmail.com]
+additional-contact:
+  - Libgal@gmail.com
 address:
   - Open and Digital Research Team
   - James Hardiman Library
@@ -23,11 +24,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1746023716
+last-message-timestamp: 1780413217
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1746023716
-last-update-message: Change the May meeting date
+last-update-timestamp: 1780413217
+last-update-message: I'm adding our final date for the summer.
 
 
 ---
@@ -41,3 +42,5 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 1 April 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4399742](https://universityofgalway.libcal.com/event/4399742)
 
 6 May 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4399743](https://universityofgalway.libcal.com/event/4399743)
+
+10 June 2026 (w), 13:00 - 14:00; registration: https://universityofgalway.libcal.com/event/4541563
