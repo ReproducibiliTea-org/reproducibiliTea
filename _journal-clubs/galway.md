@@ -24,10 +24,10 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1780413327
+last-message-timestamp: 1780413477
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1780413327
+last-update-timestamp: 1780413477
 last-update-message: I'm adding our final date for the summer.
 
 
@@ -43,5 +43,4 @@ All of our sessions are hybrid; our physical meeting room is the Archives and Sp
 
 6 May 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4399743](https://universityofgalway.libcal.com/event/4399743)
 
-10 June 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4541563]
-(https://universityofgalway.libcal.com/event/4541563)
+10 June 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4541563](https://universityofgalway.libcal.com/event/4541563)
