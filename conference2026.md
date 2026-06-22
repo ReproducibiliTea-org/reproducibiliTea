@@ -17,8 +17,8 @@ Free of charge
 Full programme: [conference website]
 <br>
 Registration: [registration form]
-
-
+<br><br><br>
+Organising team: 
 
 
 
