@@ -13,8 +13,9 @@ Date
 Online on Zoom
 <br>
 Free of charge 
-<br><br><br>
+<br><br>
 Full programme: [conference website]
+<br>
 Registration: [registration form]
 
 
