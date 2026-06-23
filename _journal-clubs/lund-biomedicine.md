@@ -3,10 +3,10 @@
 jcid: lund-biomedicine
 title: Lund Biomedicine
 host-organisation: AdvanSci Research Solutions
-host-org-url: ""
+host-org-url: "https://www.advansci-research.com/"
 osf: mpc2g
 zotero: UCBH93H4
-website: ""
+website: "https://www.linkedin.com/company/advansci-research-solutions/"
 twitter: ""
 signup: ""
 organisers:
@@ -33,4 +33,4 @@ last-update-message: API creation of lund-biomedicine.md
 
 ---
 
-
+For updates and to sign up, visit the Lund Biomedicine registration page: [https://lnkd.in/dDnM6i9B](https://lnkd.in/dDnM6i9B)
