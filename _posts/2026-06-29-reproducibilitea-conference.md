@@ -15,7 +15,7 @@ tags: [Steering Committee]
 <br>
 💻 Online via Zoom | Free & open to all
 <br>
-🔗 Learn more: [https://reproducibilitea.org/conference2026](https://reproducibilitea.org/conference2026)
+**🔗 Learn more: [https://reproducibilitea.org/conference2026](https://reproducibilitea.org/conference2026)**
 <br><br>
 Grab your favourite cup as we're pouring out what the reproducibility community has been brewing for ten years: 
 - The problems in research reproducibility
@@ -27,4 +27,4 @@ Grab your favourite cup as we're pouring out what the reproducibility community 
 <br><br>
 Spots are first-come, first-served. 
 <br>
-👉 REGISTER HERE: [https://forms.gle/KgemQ3gM2fEezYLv7](https://forms.gle/KgemQ3gM2fEezYLv7) 
+**👉 Register here: [https://forms.gle/KgemQ3gM2fEezYLv7](https://forms.gle/KgemQ3gM2fEezYLv7)** 
