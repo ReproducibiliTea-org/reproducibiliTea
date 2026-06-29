@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ReproducibiliTea Conference — Free, Online, Sept 25"
-date:   2026-06-30 14:00:00 +0000
+date:   2026-06-29 14:00:00 +0000
 author: ReproducibiliTea Steering Committee
 categories: [JC]
 tags: [Steering Committee]
