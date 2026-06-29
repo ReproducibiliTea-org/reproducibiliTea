@@ -24,7 +24,7 @@ Grab your favourite cup as we're pouring out what the reproducibility community 
 - Live journal club sessions to make sure every voice is heard
 
 🎤 Speakers include Monya Baker (author of the landmark Nature piece "1,500 scientists lift the lid on reproducibility"), representatives from Retraction Watch, the African Reproducibility Network, and more.
-
+<br><br>
 Spots are first-come, first-served. 
 <br>
-**REGISTER HERE: [https://forms.gle/KgemQ3gM2fEezYLv7](https://forms.gle/KgemQ3gM2fEezYLv7)** 
+👉 REGISTER HERE: [https://forms.gle/KgemQ3gM2fEezYLv7](https://forms.gle/KgemQ3gM2fEezYLv7) 
