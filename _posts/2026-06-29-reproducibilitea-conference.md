@@ -28,3 +28,5 @@ Grab your favourite cup as we're pouring out what the reproducibility community 
 Spots are first-come, first-served. 
 <br>
 **👉 Register here: [https://forms.gle/KgemQ3gM2fEezYLv7](https://forms.gle/KgemQ3gM2fEezYLv7)** 
+
+{% include image.html url="blog/Conference_2026.png" alt="ReproducibiliTea Conference 2026"%}
