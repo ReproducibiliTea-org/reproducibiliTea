@@ -12,8 +12,10 @@ signup: skn.ziebydarwina@gmail.com
 organisers:
   - Grzegorz Jankiewicz
   - Ksawery Łakomy
-contact: grzegorz.jankiewicz8@gmail.com
-additional-contact: [331081@uwr.edu.pl]
+contact:
+- grzegorz.jankiewicz8@gmail.com
+- 331081@uwr.edu.pl
+additional-contact: []
 address:
   - Instytut Psycholgii
   - Uniwersytet Wrocławski
