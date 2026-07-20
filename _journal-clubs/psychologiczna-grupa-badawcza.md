@@ -11,8 +11,9 @@ twitter: ""
 signup: skn.ziebydarwina@gmail.com
 organisers:
   - Grzegorz Jankiewicz
+  - Ksawery Łakomy
 contact: grzegorz.jankiewicz8@gmail.com
-additional-contact: []
+additional-contact: [331081@uwr.edu.pl]
 address:
   - Instytut Psycholgii
   - Uniwersytet Wrocławski
@@ -29,7 +30,7 @@ last-update-message: API creation of psychologiczna-grupa-badawcza.md
 
 ---
 
-We organise open, online ReproducibiliTea meetings in the Polish language.
+We organise ReproducibiliTea meetings in the Polish language.
 
 We publish info about our upcoming meetings on our Facebook fanpage:
 https://www.facebook.com/psychologicznagrupabadawcza
