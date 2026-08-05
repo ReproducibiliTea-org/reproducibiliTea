@@ -9,15 +9,9 @@ zotero: 2N5RS7Q7
 website: ""
 twitter: ""
 signup: ""
-organisers:
-  - Lianne Wolsink
-  - George Jacob
-  - Gen Hartanto
-  - Raphael Merz
-  - Robert Reichert
+organisers: Maryam Alashloo
 contact: reproducibilitea@ruhr-uni-bochum.de
-additional-contact:
-  - lianne.wolsink@ruhr-uni-bochum.de
+additional-contact: m.moussavialashloo@rub.de
 address:
   - Room IB/6-127
   - Ruhr University Bochum
