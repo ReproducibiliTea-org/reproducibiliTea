@@ -10,15 +10,9 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Sharon Raj
-  - Emma Carta
-  - Binjie Zou
-  - Tom Graves
-contact: s.e.raj@lse.ac.uk
+  - Lucy Lambe
+contact: L.Lambe@lse.ac.uk
 additional-contact:
-  - E.Carta@lse.ac.uk
-  - B.Zou4@lse.ac.uk
-  - T.Graves@lse.ac.uk
 address:
   - LSE PhD Academy
   - 4th Floor
