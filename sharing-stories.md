@@ -10,6 +10,7 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 
 2026
 * [Reproducibility in Physics and Space Science through Community Action](https://www.helsinki.fi/en/networks/reproducibilitea/outreach)
+* [Bringing Open Science to Researchers and Students: Perspectives from Three Initiatives at the University of Graz. Open Science-Chance oder Herausforderung?](https://unipub.uni-graz.at/obvugruniver/download/pdf/13996829#page=105)
 
 2025
 * [ReproducibiliTea at Leeds, The Next Generation](https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/)
