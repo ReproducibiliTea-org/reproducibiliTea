@@ -2,6 +2,7 @@
   "name": "reproducibiliTea",
   "version": "1.0.2",
   "scripts": {
+    "test": "node --test",
     "debug": "netlify dev --inspect",
     "serve": "netlify dev"
   },
