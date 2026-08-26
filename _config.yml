@@ -57,3 +57,8 @@ APIkeys:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Netlify reads _redirects from the build output. Jekyll excludes
+# underscore-prefixed files by default, so it must be explicitly included.
+include:
+  - _redirects
