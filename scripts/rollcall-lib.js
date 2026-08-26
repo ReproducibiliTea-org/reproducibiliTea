@@ -55,10 +55,41 @@ function parseJournalClub(content) {
   };
 }
 
+function daysAgo(now, days) {
+  const d = new Date(now);
+  d.setDate(d.getDate() - days);
+  return d;
+}
+
+function isViableForRollcall(jc, now = new Date()) {
+  const tooOld = daysAgo(now, MAX_DAYS_SINCE_UPDATE);
+  const tooRecent = daysAgo(now, MIN_DAYS_BETWEEN_EMAILS);
+  return jc.lastUpdate < tooOld && jc.lastMessage < tooRecent;
+}
+
+function pickJournalClub(jcs, now = new Date(), targetJcid = null) {
+  const viable = jcs.filter(jc => isViableForRollcall(jc, now));
+  if (!viable.length) return null;
+  if (targetJcid) {
+    const lower = targetJcid.toLowerCase();
+    return viable.find(jc => jc.jcid && jc.jcid.toLowerCase() === lower) || null;
+  }
+  return viable.reduce((oldest, jc) =>
+    jc.modified.getTime() < oldest.modified.getTime() ? jc : oldest
+  );
+}
+
+function newMessageLevel(jc) {
+  return jc.lastMessageLevel + 1;
+}
+
 module.exports = {
   MESSAGE_LEVELS,
   ACTIONS,
   MAX_DAYS_SINCE_UPDATE,
   MIN_DAYS_BETWEEN_EMAILS,
-  parseJournalClub
+  parseJournalClub,
+  isViableForRollcall,
+  pickJournalClub,
+  newMessageLevel
 };

@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { parseJournalClub } = require('./rollcall-lib');
+const { parseJournalClub, isViableForRollcall, pickJournalClub, newMessageLevel, MESSAGE_LEVELS } = require('./rollcall-lib');
 
 const SAMPLE_JC = `---
 jcid: oxford
@@ -42,4 +42,48 @@ test('parseJournalClub defaults missing timestamps to epoch, not Invalid Date', 
 
 test('parseJournalClub throws on a file with no YAML header', () => {
   assert.throws(() => parseJournalClub('no header here'), /no YAML header found/);
+});
+
+function daysAgo(now, days) {
+  const d = new Date(now);
+  d.setDate(d.getDate() - days);
+  return d;
+}
+
+test('isViableForRollcall is true only when both thresholds are exceeded', () => {
+  const now = new Date('2026-06-01T00:00:00Z');
+  const stale = { lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 400) };
+  const recentlyMessaged = { lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 5) };
+  const recentlyUpdated = { lastUpdate: daysAgo(now, 10), lastMessage: daysAgo(now, 400) };
+  assert.equal(isViableForRollcall(stale, now), true);
+  assert.equal(isViableForRollcall(recentlyMessaged, now), false);
+  assert.equal(isViableForRollcall(recentlyUpdated, now), false);
+});
+
+test('pickJournalClub returns null when nothing is viable', () => {
+  const now = new Date('2026-06-01T00:00:00Z');
+  const jcs = [{ jcid: 'a', lastUpdate: now, lastMessage: now, modified: now }];
+  assert.equal(pickJournalClub(jcs, now), null);
+});
+
+test('pickJournalClub picks the least-recently-modified viable JC', () => {
+  const now = new Date('2026-06-01T00:00:00Z');
+  const jcs = [
+    { jcid: 'a', lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 400), modified: daysAgo(now, 40) },
+    { jcid: 'b', lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 400), modified: daysAgo(now, 90) }
+  ];
+  assert.equal(pickJournalClub(jcs, now).jcid, 'b');
+});
+
+test('pickJournalClub honors an explicit target jcid, case-insensitively', () => {
+  const now = new Date('2026-06-01T00:00:00Z');
+  const jcs = [
+    { jcid: 'a', lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 400), modified: daysAgo(now, 40) },
+    { jcid: 'b', lastUpdate: daysAgo(now, 400), lastMessage: daysAgo(now, 400), modified: daysAgo(now, 90) }
+  ];
+  assert.equal(pickJournalClub(jcs, now, 'A').jcid, 'a');
+});
+
+test('newMessageLevel increments the last level', () => {
+  assert.equal(newMessageLevel({ lastMessageLevel: MESSAGE_LEVELS.NOTIFICATION }), MESSAGE_LEVELS.FIRST_REMINDER);
 });
