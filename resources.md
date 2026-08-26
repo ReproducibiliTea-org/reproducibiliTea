@@ -59,6 +59,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 
  **Reading lists**
 
+*  Multiple ReproducibiliTea journal clubs [2019-ongoing](https://www.zotero.org/groups/2354006/reproducibilitea/library)
 *  ReproducibiliTea BI Oslo [2020](https://osf.io/cf8ja) , [2021a](https://osf.io/8tpjc) , [2021b](https://osf.io/3k7zp) , [2022](https://osf.io/6ubwk)
 *  ReproducibiliTea Bielefeld [2021-2026](https://burst.pages.ub.uni-bielefeld.de/burst/resources/2021-11-05-paper/)
 *  ReproducibiliTea Birmingham [2020a](https://osf.io/uns3b) , [2020b](https://osf.io/c5njh) , [2021a](https://osf.io/e5sbp) , [2021b](https://osf.io/trb4p) , [2022a](https://osf.io/dgjnx) , [2022b](https://osf.io/rkn67)
