@@ -33,7 +33,7 @@ Keep the existing spine — it already satisfies the anti-goals:
 Two things are removed from the architecture:
 
 - **MongoDB** — dropped entirely. Its only job (edit-token storage, rollcall logging) moves to stateless signed tokens and to plain log output.
-- **`minima` theme + ad-hoc per-page CSS/JS** — replaced by one small, consistent custom stylesheet/include set.
+- **Ad-hoc per-page CSS/JS** — replaced by one small, consistent custom stylesheet/include set. `minima` itself stays as the underlying Jekyll theme/layout engine (see §4) — forking its layouts to remove the gem entirely would trade a small CSS-override file for permanently maintaining our own copies of `_layouts/default.html`/`page.html`/`home.html`, which is more ongoing maintenance, not less.
 
 Rollcall moves off Netlify Functions onto a **GitHub Actions scheduled workflow**. Rationale: there is no existing scheduled infrastructure to preserve either way; running natively in GitHub Actions gives free, no-PAT repo write access via the built-in `GITHUB_TOKEN`, removing the need to manage a GitHub PAT as a secret at all. Only the Mailgun API key is duplicated as a GitHub Actions secret (it already exists as a Netlify env var for other functions) — an acceptable, minimal duplication.
 
@@ -73,7 +73,7 @@ Same behavior as designed today: notify → first reminder → second reminder �
 
 ### 4. Presentation
 
-Remove the `minima` theme dependency. Replace with a small, consistent design system (shared `_sass` partials + `_includes` for nav/footer/card/button) implementing the agreed **Modern Rounded** direction: rounded cards, soft shadows, brand colors `#0086cf` (blue), `#004c6c` (dark blue), white, `#404040` (near-black). Every page uses the same nav/footer/card/button components instead of bespoke per-page CSS (`jc-overview.css`, `join-form.css`, etc. — folded into the shared stylesheet or deleted where no longer needed).
+Keep `minima` as the Jekyll layout engine (its gem-provided `_layouts/default.html`/`page.html`/`home.html` stay in use, updated automatically via Bundler — not forked). Deliver the full **Modern Rounded** brand direction (rounded cards, soft shadows, brand colors `#0086cf` blue / `#004c6c` dark blue / white / `#404040` near-black) as one cohesive override stylesheet loaded after minima's own CSS, replacing the current ad-hoc `custom.css`/`tweaks.css`/`jc-overview.css`/`join-form.css` with a single consistent set of component styles (nav, footer, card, button) applied site-wide.
 
 ### 5. Maps
 
