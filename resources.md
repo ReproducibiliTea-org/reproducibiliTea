@@ -7,7 +7,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 <br/><br/>
 *Contributors: Paulina Manduch, Lianne Wolsink, Abigail Licata, Michael Muhoozi, Helena Gellersen, and the ReproducibiliTea Community*
 <br/><br/>
-# Resources published by ReproducibiliTea journal clubs
+## Resources published by ReproducibiliTea journal clubs
 
 
 **Video recordings of past events**
@@ -108,7 +108,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 
 <br/><br/>
 
-# Other resources
+## Other resources
 
 **Resources published by other organisations**
 *  FORRT’s Clusters - an Open and Reproducible Science taxonomy with reading lists [website](https://forrt.org/clusters/)
