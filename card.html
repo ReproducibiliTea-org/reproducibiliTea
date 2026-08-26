@@ -57,9 +57,9 @@ title:  "ReproducibiliTea Card"
     </g>
 </svg>
 
-<div class="save" onclick="saveCardPNG()">
+<button type="button" class="save" onclick="saveCardPNG()">
     <span id="save-link">Download .png</span>
-</div>
+</button>
 
 <style type="text/css">
     .save {
@@ -69,6 +69,10 @@ title:  "ReproducibiliTea Card"
         font-size: 1.5em;
         line-height: 2em;
         cursor: pointer;
+        border: none;
+        padding: 0;
+        font-family: inherit;
+        display: block;
     }
     .save:hover {
         background-color: #70dfff;
