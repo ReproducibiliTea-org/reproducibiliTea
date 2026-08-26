@@ -150,82 +150,51 @@ header.site-header,
 footer.site-footer {
     background-color: white
 }
-.site-nav label[for="nav-trigger"] {
+.site-nav {
     display: flex;
-    width: unset;
-    height: unset;
-    padding: 0 0.5em;
+    align-items: center;
 }
-.site-nav .menu-label {
-    padding-right: 0.5em;
-    display: none;
-}
-.site-nav .menu-icon {
-    float: unset;
-    width: unset;
-    height: unset;
-}
-@media screen and (max-width: 600px) {
-    .site-nav .menu-label {
-        display: block;
-    }
-}
-.site-nav.site-nav {
-    margin: auto 0;
-}
-.site-nav .page-link.page-link:not(:last-child) {
-    margin-right: unset;
-}
-
-.header-links {
-    display: grid;
+.site-nav-links {
+    display: flex;
+    gap: 1.5em;
     list-style: none;
     margin: 0;
-    grid-auto-flow: column;
-    grid-column-gap: 1em;
+    padding: 0;
 }
-
-.header-links li {
-    display: flex;
-    position: relative;
-    background-color: white;
-}
-
-label.page-link {
+.nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    background: none;
     cursor: pointer;
 }
-
-.header-links .page-link:checked + .header-links,
-.header-links > .header-links:hover {
-    display: grid;
-    z-index: 1;
+.nav-toggle svg {
+    fill: var(--color-rpt-secondary);
 }
-
-.header-links input.page-link {
-    height: 0;
-    width: 0;
+#site-nav-menu {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+#site-nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
     margin: 0;
+    padding: 0.5em 0;
 }
 
-.header-links .header-links {
-    display: none;
-    grid-auto-flow: row;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: max-content;
-    padding: 0.5em;
-    background-color: white;
-}
-
-.header-links .header-links a.page-link {
-    width: 100%;
-}
-
-div.page-link {
-    font-weight: bold;
-    cursor: default;
-    letter-spacing: .25em;
+@media screen and (max-width: 600px) {
+    .site-nav-links {
+        display: none;
+    }
+    .nav-toggle {
+        display: flex;
+    }
 }
 
 #map {
@@ -278,11 +247,5 @@ p.elipsis {
         justify-content: space-evenly;
         width: 100%;
         flex-direction: row;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .header-links {
-        display: unset;
     }
 }
