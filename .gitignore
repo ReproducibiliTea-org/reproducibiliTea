@@ -10,6 +10,9 @@ _local
 
 # Local Netlify folder
 .netlify
+
+# Superpowers brainstorming companion mockups
+.superpowers
 npm-debug.log
 # Python development virtual environment
 _local/.idea*
