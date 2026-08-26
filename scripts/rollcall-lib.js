@@ -83,6 +83,22 @@ function newMessageLevel(jc) {
   return jc.lastMessageLevel + 1;
 }
 
+function substituteHandlebars(template, subs) {
+  const out = {};
+  for (const key of Object.keys(template)) {
+    if (typeof template[key] !== 'string') {
+      out[key] = template[key];
+      continue;
+    }
+    let value = template[key];
+    for (const subKey of Object.keys(subs)) {
+      value = value.replace(new RegExp(`{{ *${subKey} *}}`, 'g'), subs[subKey]);
+    }
+    out[key] = value;
+  }
+  return out;
+}
+
 module.exports = {
   MESSAGE_LEVELS,
   ACTIONS,
@@ -91,5 +107,6 @@ module.exports = {
   parseJournalClub,
   isViableForRollcall,
   pickJournalClub,
-  newMessageLevel
+  newMessageLevel,
+  substituteHandlebars
 };

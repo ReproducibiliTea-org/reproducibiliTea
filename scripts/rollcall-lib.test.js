@@ -87,3 +87,19 @@ test('pickJournalClub honors an explicit target jcid, case-insensitively', () =>
 test('newMessageLevel increments the last level', () => {
   assert.equal(newMessageLevel({ lastMessageLevel: MESSAGE_LEVELS.NOTIFICATION }), MESSAGE_LEVELS.FIRST_REMINDER);
 });
+
+const { substituteHandlebars } = require('./rollcall-lib');
+
+test('substituteHandlebars replaces matching placeholders and leaves others untouched', () => {
+  const result = substituteHandlebars(
+    { subject: 'Update from {{ jcTitle }}', body: 'Dear {{ jcTitle }} team, {{ unknown }} stays.' },
+    { jcTitle: 'Oxford' }
+  );
+  assert.equal(result.subject, 'Update from Oxford');
+  assert.equal(result.body, 'Dear Oxford team, {{ unknown }} stays.');
+});
+
+test('substituteHandlebars passes non-string fields through unchanged', () => {
+  const result = substituteHandlebars({ count: 3 }, { count: 'x' });
+  assert.equal(result.count, 3);
+});
