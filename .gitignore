@@ -3,6 +3,8 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .idea
+vendor/bundle
+.bundle
 src/secret.php
 .env
 node_modules

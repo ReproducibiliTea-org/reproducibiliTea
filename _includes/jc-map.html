@@ -20,8 +20,27 @@
     }).addTo(map);
 
     const cluster = L.markerClusterGroup();
+    const jcSearch = document.getElementById('jcSearch');
+    const markersByTitle = {};
     jcLocations.forEach(([title, lat, lng]) => {
-        cluster.addLayer(L.marker([lat, lng]).bindPopup(title));
+        const marker = L.marker([lat, lng]).bindPopup(title);
+        markersByTitle[title] = marker;
+        if (jcSearch) {
+            marker.on('click', () => {
+                jcSearch.value = title;
+                jcSearch.dispatchEvent(new Event('change'));
+            });
+        }
+        cluster.addLayer(marker);
     });
     map.addLayer(cluster);
+
+    if (jcSearch) {
+        const focusMarker = (title) => {
+            const marker = markersByTitle[title];
+            if (marker) cluster.zoomToShowLayer(marker, () => marker.openPopup());
+        };
+        jcSearch.addEventListener('change', () => focusMarker(jcSearch.value));
+        focusMarker(jcSearch.value);
+    }
 </script>
