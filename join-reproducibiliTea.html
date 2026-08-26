@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include keys.html %}
 <link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
 <script type="text/javascript" src="/assets/js/join-form.js"></script>
 
@@ -760,50 +759,42 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
 <article id="geolocation-map">
     <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
-    <div id="geolocation-map-display"></div>
+    <div id="geolocation-map-display" style="height: 400px"></div>
     <div class="geolocation-map-controls"><button onclick="setGeolocation(event)"><i class="fas fa-map-marker-alt"></i> Use location</button></div>
-    <script id="mapAPIsource"></script>
-    <script>
-        {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
-        let key = "{{ key[0][1] }}";
-        document.getElementById('mapAPIsource').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initialize`;
 
-        let map;
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let pickerMap;
         let endMarker;
         const input = document.getElementById("geolocation");
 
         function initialize() {
-            map = new google.maps.Map(
-                document.getElementById("geolocation-map-display"),
-                {
-                    zoom: 1,
-                    center: {lat: 0, lng: 0}
-                }
-                );
-
+            if (pickerMap) return;
             const existing = input.value;
-            let position = map.getCenter();
-            if(existing) {
+            let position = [0, 0];
+            let zoom = 1;
+            if (existing) {
                 const parse = existing.split(',');
-                position = {lat: parseFloat(parse[0]), lng: parseFloat(parse[1])};
+                position = [parseFloat(parse[0]), parseFloat(parse[1])];
+                zoom = 10;
             }
 
-            // create the marker
-            endMarker = new google.maps.Marker({
-                position,
-                map: map,
-                draggable: true,
-            });
+            pickerMap = L.map('geolocation-map-display', { center: position, zoom });
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            }).addTo(pickerMap);
 
-            // add an event "onDrag"
-            google.maps.event.addListener(endMarker, 'dragend', function() {
-                copyMarkerpositionToInput();
-            });
+            endMarker = L.marker(position, { draggable: true }).addTo(pickerMap);
+            endMarker.on('dragend', copyMarkerpositionToInput);
         }
 
         function copyMarkerpositionToInput() {
-            // get the position of the marker, and set it as the value of input
-            input.value = endMarker.getPosition().lat() +','+  endMarker.getPosition().lng();
+            const pos = endMarker.getLatLng();
+            input.value = pos.lat + ',' + pos.lng;
         }
+
+        initialize();
     </script>
 </article>

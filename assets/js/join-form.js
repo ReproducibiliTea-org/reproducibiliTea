@@ -27,20 +27,14 @@ function setGeolocation(e) {
  */
 function geolocateAddress() {
     const address = document.getElementById('post');
-    const addr = address.value.replace(/\s/g, '+');
+    const addr = encodeURIComponent(address.value);
     const input = document.getElementById('geolocation');
-    const key = document.getElementById('APIkeys').dataset.maps;
 
-    // Try to fetch the address
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+    fetch(`https://nominatim.openstreetmap.org/search?q=${addr}&format=json&limit=1`)
         .then(r => r.json())
         .then(j => {
-            if(!j.results ||
-                !j.results[0] ||
-                !j.results[0].geometry ||
-                !j.results[0].geometry.location)
-                throw "No geometry or geometry.location in response.";
-            input.value = `${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}`;
+            if (!j[0] || !j[0].lat || !j[0].lon) throw "No result from Nominatim.";
+            input.value = `${j[0].lat}, ${j[0].lon}`;
         })
         .catch(
             (err) => {
