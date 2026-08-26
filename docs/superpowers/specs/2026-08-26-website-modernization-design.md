@@ -16,6 +16,7 @@ Trigger: OSF is retiring its "Projects" product in November 2026. `new-jc.js` cu
 - Creation is gated by a single shared secret (`AUTH_CODE`) that a human distributes after vetting the requester off-platform.
 - `add-jcid.js` is a dead one-off migration script.
 - `conference2026.html` is 6.4MB and ships in every build — unrelated to this spec, flagged for separate cleanup.
+- Six GitHub API calls set `Content-Length` from a JS string's `.length` (UTF-16 code-unit count) instead of its UTF-8 byte length: `new-jc.js:508,580,765` and `jc-rollcall.js:338,365,411`. For any non-ASCII character the true byte length exceeds `.length`, undercounting the header. `new-jc.js:765` is live today — it wraps the free-text edit "commit message" (`editToken.message`) as raw (non-base64) JSON text, so a non-Latin/accented character there can truncate or corrupt the request GitHub receives. The other five carry ASCII-safe values currently (jcid, fixed strings) but share the same latent bug. Note this is separate from file *content* (titles, addresses, descriptions), which already round-trips UTF-8 correctly today via explicit `Buffer.from(x, 'utf8').toString('base64')` on write and `Buffer.from(x, 'base64').toString()` (utf8 default) on read.
 
 ## Anti-goals (constraints on every decision below)
 
@@ -80,7 +81,13 @@ Replace Google Maps (`map.html`, `_includes/jc-map.html`, and the leaked API key
 
 **Immediate, independent of the rest of this spec**: rotate the currently-committed Google Maps key now, regardless of timeline for the Leaflet migration.
 
-### 6. Testing & logging
+### 6. UTF-8 correctness
+
+The site's non-English content (organiser names, university addresses, descriptions) must keep round-tripping correctly through git-committed plaintext files. UTF-8 is the standard to hold to throughout — it's what GitHub's Contents API, git diffs, and Jekyll's markdown rendering all assume for "plaintext"; UTF-16 would break all three and isn't used anywhere else in this stack.
+
+File content already does this correctly (`Buffer.from(x, 'utf8').toString('base64')` on write, `Buffer.from(x, 'base64').toString()` on read) and stays as-is. Fix, as part of the rewrites already touching these files (§1 creation, §3 rollcall): replace every hand-computed `'Content-Length': someJsonString.length` with `Buffer.byteLength(someJsonString, 'utf8')`, or drop the header and let `fetch` compute it from the body. Applies to all six call sites listed above.
+
+### 7. Testing & logging
 
 - Unit tests via Node's built-in `node:test` + `assert` (no new dependency) covering pure logic only: `cleanData`/`checkData` validation, token sign/verify (valid, expired, tampered), rollcall staleness calculations, YAML frontmatter generation. External calls (GitHub/Mailgun/Slack/Zotero) are mocked/injected, never exercised in tests.
 - Each function logs one structured (JSON) line per request/run with outcome (success/fail + reason) — enough to diagnose from Netlify/Actions logs, not a logging framework or new dependency.
