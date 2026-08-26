@@ -152,6 +152,7 @@ async function run({ repoApi, token, targetJcid, dryRun, mailgunConfig }) {
     await sendRollcallEmail(jc, level, repoApi, token, mailgunConfig, dryRun);
   } catch (e) {
     log('rollcall_email_failed', { jcid: jc.jcid, error: e.message });
+    process.exitCode = 1;
     return;
   }
 

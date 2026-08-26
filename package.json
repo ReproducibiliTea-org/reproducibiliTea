@@ -7,13 +7,13 @@
     "serve": "netlify dev"
   },
   "dependencies": {
+    "mailgun.js": "^12.5.0",
     "mongodb": "^6.8.0",
     "yaml": "^2.3.1"
   },
   "devDependencies": {
     "diacritic": "0.0.2",
     "dotenv": "^8.6.0",
-    "mailgun.js": "^12.5.0",
     "netlify-cli": "^23.13.0",
     "node-fetch": "^2.6.7"
   }
