@@ -1,0 +1,36 @@
+name: Journal club rollcall
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      jc:
+        description: 'jcid to target (optional; defaults to the oldest-updated viable JC)'
+        required: false
+      dry_run:
+        description: 'Dry run: log the action but send no email and commit nothing'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  rollcall:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - run: npm ci
+      - run: node scripts/rollcall.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ROLLCALL_JC: ${{ github.event.inputs.jc }}
+          ROLLCALL_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run || 'false' }}
+          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
+          MAILGUN_DOMAIN: ${{ secrets.MAILGUN_DOMAIN }}
+          FROM_EMAIL_ADDRESS: ${{ secrets.FROM_EMAIL_ADDRESS }}

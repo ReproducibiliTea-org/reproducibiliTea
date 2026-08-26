@@ -7,9 +7,19 @@ Website for the ReproducibiliTea Journal Club and Podcast
 
 ## Runtime configuration
 
-The Netlify functions under `src/` now use MongoDB for storing and validating edit tokens. Configure the following environment variables for deployments:
+### Netlify functions (`src/`)
+
+The Netlify functions under `src/` still use MongoDB for storing and validating edit tokens (this is being removed in a follow-up change). Configure:
 
 - `MONGODB_URI`: connection string for the MongoDB instance.
 - `MONGODB_DB`: database name that contains the `editTokens` collection.
 
 The previous FaunaDB secret (`FAUNA_KEY`) is no longer used and can be removed.
+
+### Rollcall (GitHub Actions)
+
+`.github/workflows/rollcall.yml` runs daily and can also be triggered manually (with a `dry_run` option) from the Actions tab. It needs these repository secrets:
+
+- `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`, `FROM_EMAIL_ADDRESS` — same Mailgun account used by the Netlify functions.
+
+It uses the built-in `GITHUB_TOKEN` (no personal access token needed) with `permissions: contents: write` to read and update journal club files.
