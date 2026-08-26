@@ -176,8 +176,17 @@ footer.site-footer {
     fill: var(--color-rpt-secondary);
 }
 #site-nav-menu {
+    position: fixed;
+    inset: auto;
+    top: 50px;
+    right: 15px;
+    margin: 0;
+    text-align: left;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
+}
+#site-nav-menu .page-link {
+    margin-left: 0;
 }
 #site-nav-menu ul {
     list-style: none;

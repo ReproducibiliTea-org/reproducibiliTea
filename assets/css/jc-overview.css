@@ -29,7 +29,11 @@ thead tr:first-of-type {
     background-color: red;
 }
 
-table a {
+th button {
+    border: none;
+    background: none;
+    padding: 0 2px;
+    font: inherit;
     cursor: pointer;
 }
 
