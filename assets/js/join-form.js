@@ -128,18 +128,6 @@ function checkForm(e, allowEmpty = false) {
             }
         });
 
-    // Mark OSFuser obsolete if OSF is complete
-    if(!window.jcEditToken) {
-        let elm = document.querySelector('#osfUser').closest('.row');
-        if(document.querySelector('#osf').value != "") {
-            elm.classList.add('obsolete');
-            elm.title = "This field is unavailable when a custom OSF repository has been supplied."
-        } else {
-            elm.classList.remove('obsolete');
-            elm.title = "";
-        }
-    }
-
     // Warn if they have 'reproducibilitea' in the name field
     let elm = form.querySelector('#name');
     if(/ReproducibiliTea/i.test(elm.value)) {
@@ -149,14 +137,6 @@ function checkForm(e, allowEmpty = false) {
     // Server-side check matching
     elm = form.querySelector('#name');
     if(!/^\s*[a-z0-9\- ]+\s*$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
-        okay = false;
-        markBad(elm, "Field contains invalid characters.");
-    }
-
-    elm = form.querySelector('#osfUser');
-    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
-        elm.value &&
-        !elm.classList.contains('obsolete')) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }

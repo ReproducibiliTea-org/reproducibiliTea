@@ -9,7 +9,7 @@ layout: default
     <section id="joinWelcome">
         <h2>1<span class="fade">/3</span> Welcome</h2>
 
-        <p>Use this form to create a new <strong>ReproducibiliTea</strong> journal club. We assume you are here after consulting our steering committee, and are ready to take on the exciting challenge of running your own journal club. Once you complete the form on this page, we'll automatically add you to our list of journal clubs, create you a page on the website, initialise an OSF repository for you, and invite you to the Slack workspace.</p>
+        <p>Use this form to create a new <strong>ReproducibiliTea</strong> journal club. Once you complete the form on this page, we'll email you a confirmation link; after you confirm, our steering committee reviews the request and your journal club goes live on the website, in the Zotero library, and the Slack workspace.</p>
         <p class="jump"><a href="#joinSetup"><i class="fas fa-chevron-down"></i> Get ready <i class="fas fa-chevron-down"></i></a></p>
 
     </section>
@@ -33,9 +33,7 @@ layout: default
                         OSF <sup><i class="fas fa-external-link-square-alt"></i></sup></a>
                 </td>
                 <td>
-                    <p>The Open Science Framework (OSF) provides storage for various kinds of files. We have a main <a href="https://osf.io/3qrj6/" target="_blank">ReproducibiliTea project <sup><i class="fas fa-external-link-square-alt"></i></sup></a> and each of the journal clubs have their own repository within it.</p>
-                    <p> We will create a repository for your journal club automatically and make you the repository admin. You can then manage it as you see fit. But to do this we will need your OSF profile ID (a few letters and numbers looking like '3qrj6') so you will need to have <a href="https://osf.io/register" target="_blank">created an OSF account <sup><i class="fas fa-external-link-square-alt"></i></sup></a></strong> and know your profile ID . Don't worry if you can't find your ID now, we'll explain how to find it in Step 3.</p>
-
+                    <p>The Open Science Framework (OSF) provides storage for various kinds of files. We have a main <a href="https://osf.io/3qrj6/" target="_blank">ReproducibiliTea project <sup><i class="fas fa-external-link-square-alt"></i></sup></a>. If your journal club already has (or wants) its own OSF repository, you can link it in Step 3 — we no longer create one automatically.</p>
                 </td>
             </tr>
             <tr>
@@ -524,21 +522,6 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     </div>
                 </div>
 
-                <div class="row" id="osfUserRow">
-                    <div class="labels">
-                        <label for="osfUser">Lead organiser <a href="https://osf.io/">OSF</a> id</label>
-                        <div class="label-details">
-                            <p>This is the OSF id for the organiser we'll add as a contributor on the OSF page we'll create for your JC.</p>
-                            <p>You can find your OSF id by logging in and going to your profile (click the menu in the top-right, and select '<strong>profile</strong>'), then choosing '<strong>public profile</strong>'. The second part of that URL, after the osf.io/, is your OSF id.</p>
-                            <ul>
-                                <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
-                                <li class="is-mandatory">This field is optional.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
-                </div>
-
                 <div class="row" id="zoteroUserRow">
                     <div class="labels">
                         <label for="zoteroUser">Lead organiser <a href="https://zotero.org/">Zotero</a> API id</label>
@@ -558,20 +541,6 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
             <fieldset class="submission">
                 <legend>Final checks</legend>
-                <div id="AuthCodeRow" class="row mandatory">
-                    <div class="labels">
-                        <label for="authCode">Authorization code</label>
-                        <div class="label-details">
-                            <p>To prevent just anyone spamming this form with new JC requests, we need you to submit the password given to you by one of the core ReproducibiliTea team.</p>
-                            <ul>
-                                <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
-                                <li class="is-mandatory">This field is required.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input type="text" id="authCode" name="authCode" placeholder="????????" />
-                </div>
-
                 <div class="row mandatory">
                     <button onclick="submitForm(event)">Activate JC!</button>
                 </div>
@@ -739,9 +708,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 }
             }
         }
-        // Remove the unneeded fields
-        document.getElementById('AuthCodeRow').remove();
-        document.getElementById('osfUserRow').remove();
+        // Remove the unneeded field
         document.getElementById('zoteroUserRow').remove();
         document.querySelector('.submission button').innerHTML = "Commit changes";
         // Remove unnecessary sections
