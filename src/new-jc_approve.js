@@ -9,6 +9,11 @@ const IGNORED_DIR = `${PENDING_DIR}/ignored`;
 const ACTIVE_DIR = '_journal-clubs';
 
 exports.handler = async (event) => {
+    if (!process.env.EDIT_TOKEN_SECRET) {
+        console.log(JSON.stringify({ event: 'new_jc_approve_misconfigured' }));
+        return { statusCode: 500, body: 'Server misconfiguration.' };
+    }
+
     const token = event.queryStringParameters?.token;
     if (!token) return { statusCode: 400, body: '<p>Missing approval token.</p>' };
 
@@ -56,9 +61,13 @@ async function fetchPending(jcid) {
     return null;
 }
 
+function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
 function renderActionPage(title, token) {
     return `<!DOCTYPE html><html><body>
-<h1>Review ${title}</h1>
+<h1>Review ${escapeHtml(title)}</h1>
 <form method="POST" action="?token=${encodeURIComponent(token)}">
     <label><input type="radio" name="action" value="approve" checked> Approve</label><br>
     <label><input type="radio" name="action" value="reject"> Reject</label><br>
@@ -96,21 +105,28 @@ async function deleteFile(path, sha, message) {
 
 async function doApprove(jcid, file, message) {
     const to = [file.frontmatter.contact, ...(file.frontmatter['additional-contact'] || [])].filter(Boolean);
+    const activeBody = file.body.replace(/^ignored: true\n/m, '');
     try {
-        await putFile(`${ACTIVE_DIR}/${jcid}.md`, file.body, null, `Approve ${jcid}.md`);
+        await putFile(`${ACTIVE_DIR}/${jcid}.md`, activeBody, null, `Approve ${jcid}.md`);
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`);
     } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_approve_failed', jcid, error: e.message }));
         return { statusCode: 500, body: `<p>Could not approve ${jcid}: ${e.message}</p>` };
     }
-
-    await sendEmail({
-        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
-        to: to.join(', '), bcc: process.env.EMAIL_REPORT_TO,
-        subject: `Your ReproducibiliTea journal club has been approved: ${file.frontmatter.title}`,
-        html: `<p>Good news — <strong>${file.frontmatter.title}</strong> has been approved and is now live.</p>${message ? `<p>${message}</p>` : ''}`
-    });
-
     console.log(JSON.stringify({ event: 'new_jc_approved', jcid }));
+
+    try {
+        await sendEmail({
+            apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+            to: to.join(', '), bcc: process.env.EMAIL_REPORT_TO,
+            subject: `Your ReproducibiliTea journal club has been approved: ${file.frontmatter.title}`,
+            html: `<p>Good news — <strong>${escapeHtml(file.frontmatter.title)}</strong> has been approved and is now live.</p>${message ? `<p>${escapeHtml(message)}</p>` : ''}`
+        });
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_approve_notify_failed', jcid, error: e.message }));
+        return { statusCode: 200, body: `<p>${jcid} approved and now live, but the notification email failed to send: ${e.message}</p>` };
+    }
+
     return { statusCode: 200, body: `<p>${jcid} approved and now live.</p>` };
 }
 
@@ -118,22 +134,29 @@ async function doReject(jcid, file, message) {
     try {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`);
     } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_reject_failed', jcid, error: e.message }));
         return { statusCode: 500, body: `<p>Could not reject ${jcid}: ${e.message}</p>` };
     }
-
-    await sendEmail({
-        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
-        to: file.frontmatter.contact, bcc: process.env.EMAIL_REPORT_TO,
-        subject: `Your ReproducibiliTea journal club request: ${file.frontmatter.title}`,
-        html: `<p>Thanks for your interest in setting up <strong>${file.frontmatter.title}</strong>. Unfortunately we won't be taking this request forward.</p>${message ? `<p>${message}</p>` : ''}`
-    });
-
     console.log(JSON.stringify({ event: 'new_jc_rejected', jcid }));
+
+    try {
+        await sendEmail({
+            apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+            to: file.frontmatter.contact, bcc: process.env.EMAIL_REPORT_TO,
+            subject: `Your ReproducibiliTea journal club request: ${file.frontmatter.title}`,
+            html: `<p>Thanks for your interest in setting up <strong>${escapeHtml(file.frontmatter.title)}</strong>. Unfortunately we won't be taking this request forward.</p>${message ? `<p>${escapeHtml(message)}</p>` : ''}`
+        });
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_reject_notify_failed', jcid, error: e.message }));
+        return { statusCode: 200, body: `<p>${jcid} rejected, but the notification email failed to send: ${e.message}</p>` };
+    }
+
     return { statusCode: 200, body: `<p>${jcid} rejected.</p>` };
 }
 
 async function doIgnore(jcid, file) {
     if (file.dir === IGNORED_DIR) {
+        console.log(JSON.stringify({ event: 'new_jc_ignore_noop', jcid }));
         return { statusCode: 200, body: `<p>${jcid} was already ignored.</p>` };
     }
 
@@ -142,16 +165,22 @@ async function doIgnore(jcid, file) {
         await putFile(`${IGNORED_DIR}/${jcid}.md`, ignoredBody, null, `Ignore ${jcid}.md`);
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`);
     } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_ignore_failed', jcid, error: e.message }));
         return { statusCode: 500, body: `<p>Could not ignore ${jcid}: ${e.message}</p>` };
     }
-
-    await sendEmail({
-        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
-        to: process.env.EMAIL_REPORT_TO,
-        subject: `ReproducibiliTea JC request ignored: ${file.frontmatter.title}`,
-        html: `<p><strong>${file.frontmatter.title}</strong> (${jcid}) was marked ignored by an admin. No email was sent to the requester.</p>`
-    });
-
     console.log(JSON.stringify({ event: 'new_jc_ignored', jcid }));
+
+    try {
+        await sendEmail({
+            apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+            to: process.env.EMAIL_REPORT_TO,
+            subject: `ReproducibiliTea JC request ignored: ${file.frontmatter.title}`,
+            html: `<p><strong>${escapeHtml(file.frontmatter.title)}</strong> (${jcid}) was marked ignored by an admin. No email was sent to the requester.</p>`
+        });
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_ignore_notify_failed', jcid, error: e.message }));
+        return { statusCode: 200, body: `<p>${jcid} ignored, but the notification email failed to send: ${e.message}</p>` };
+    }
+
     return { statusCode: 200, body: `<p>${jcid} ignored.</p>` };
 }

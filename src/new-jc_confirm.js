@@ -6,6 +6,11 @@ const { verifyToken, signToken } = require('./lib/tokens');
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 
 exports.handler = async (event) => {
+    if (!process.env.EDIT_TOKEN_SECRET) {
+        console.log(JSON.stringify({ event: 'new_jc_confirm_misconfigured' }));
+        return { statusCode: 500, body: 'Server misconfiguration.' };
+    }
+
     const token = event.queryStringParameters?.token;
     if (!token) {
         return { statusCode: 400, body: '<p>Missing confirmation token.</p>' };
