@@ -4,7 +4,9 @@
 
 **Goal:** Replace the shared `AUTH_CODE` creation gate with an email-confirm + admin-approval flow, remove the OSF-project-creation call ahead of OSF's November 2026 Projects deprecation, and fix the UTF-8 `Content-Length` bug in the functions this touches.
 
-**Architecture:** Pure validation logic (`src/lib/jc-validation.js`) and the external-API calls (`src/lib/jc-integrations.js`) are extracted from the existing monolithic `src/new-jc.js` into shared, unit-testable modules — minus `callOSF`, which is deleted outright. `src/new-jc.js` keeps handling JC edits (its existing job) plus a new "request creation" step; two new Netlify functions, `src/new-jc_confirm.js` and `src/new-jc_approve.js`, handle the two email-link clicks. All three reuse `src/lib/tokens.js` (from the signed-edit-tokens plan) with different `purpose` values. New JCs are created with `status: pending` in their frontmatter and hidden from public pages by a Liquid filter until an admin approves.
+**Architecture:** Pure validation logic (`src/lib/jc-validation.js`) and the external-API calls (`src/lib/jc-integrations.js`) are extracted from the existing monolithic `src/new-jc.js` into shared, unit-testable modules — minus `callOSF`, which is deleted outright. `src/new-jc.js` keeps handling JC edits (its existing job) plus a new "request creation" step; two new Netlify functions, `src/new-jc_confirm.js` and `src/new-jc_approve.js`, handle the two email-link clicks. All three reuse `src/lib/tokens.js` (from the signed-edit-tokens plan) with different `purpose` values.
+
+New JCs are committed to `_pending-journal-clubs/<jcid>.md` — a plain directory outside Jekyll's `journal-clubs` collection, following the same convention as the existing `_inactive-journal-clubs/` archive — so they're invisible to the public site without any Liquid filtering. Clicking the admin's emailed link opens a review page (`new-jc_approve.js`, GET) where the admin picks approve/reject/ignore and optionally writes a message (POST). Approve moves the file into `_journal-clubs/` (it goes live) and emails the requester's contact + additional-contact addresses; reject deletes the pending file and emails just the requester; ignore moves the file to `_pending-journal-clubs/ignored/<jcid>.md` (tagging it `ignored: true`) and emails only the central `EMAIL_REPORT_TO` account, with no requester-facing email. Approve/reject also bcc `EMAIL_REPORT_TO`. No `status:` frontmatter field is used anywhere — directory location is the state.
 
 **Tech Stack:** Node.js, `node-fetch` (already a dependency), `mailgun.js` (already a dependency), `node:test`.
 
@@ -16,7 +18,7 @@
 
 - No manually-computed `Content-Length` headers on any HTTP request this plan writes — let the HTTP client compute it. This resolves the remaining 3 of the 6 sites flagged in the spec's UTF-8 correctness section (§6): `new-jc.js:508,580,765` (now inside `src/lib/jc-integrations.js`).
 - No automation touches the `osf:` frontmatter field — it stays available for organisers to fill in manually.
-- `status: pending` is the only new frontmatter field. Its absence means "active" — no migration of the ~180 existing JC files.
+- No new frontmatter field, and no migration of the ~180 existing JC files: pending/ignored state is directory location (`_pending-journal-clubs/`, `_pending-journal-clubs/ignored/`), not a field. `ignored: true` is added only to files moved into the ignored subdirectory.
 - Every function logs one JSON line per significant event.
 - Tokens signed here reuse `src/lib/tokens.js` from the signed-edit-tokens plan; do not duplicate signing logic.
 
@@ -26,16 +28,14 @@
 
 - Create: `src/lib/jc-validation.js` — `cleanData(data)`, `checkData(data)` (no `authCode` field/check).
 - Create: `src/lib/jc-validation.test.js`
-- Create: `src/lib/jc-integrations.js` — `callSlack`, `callZotero`, `callGitHub` (accepts a `status` option), `callMailgun` (now takes `adminEmails` + an approve link), `formatResponses`. No `callOSF`.
-- Create: `src/lib/mailer.js` — tiny shared Mailgun-send helper.
+- Create: `src/lib/jc-integrations.js` — `callSlack`, `callZotero`, `callGitHub` (accepts a `dir` option, target directory for the commit), `notifyAdmins` (takes `adminEmails` + a review link), `formatResponses`. No `callOSF`.
+- Create: `src/lib/mailer.js` — tiny shared Mailgun-send helper (`to`/`cc`/`bcc`).
 - Modify: `src/new-jc.js` — edit branch verifies tokens in-process (no more self-HTTP-call to `edit-jc_check-token`); create branch now signs+emails a `creation-confirm` token instead of creating anything immediately.
-- Create: `src/new-jc_confirm.js` — verifies `creation-confirm` token, runs the integrations with `status: pending`, emails admins a `admin-approve` token.
-- Create: `src/new-jc_approve.js` — verifies `admin-approve` token, strips `status: pending` from the JC's frontmatter via one GitHub commit.
+- Create: `src/new-jc_confirm.js` — verifies `creation-confirm` token, runs the integrations, commits the JC to `_pending-journal-clubs/` (not `_journal-clubs/`), emails admins an `admin-approve` token.
+- Create: `src/new-jc_approve.js` — GET verifies `admin-approve` token and renders an approve/reject/ignore review page; POST performs the chosen action (move/delete the file on GitHub, email the relevant parties). No public pages need filtering — pending/ignored JCs are simply never in the `journal-clubs` collection.
 - Modify: `join-reproducibiliTea.html` — remove the `AuthCodeRow` and `osfUserRow` fields (nothing consumes `osfUser` once `callOSF` is gone); update the step-1 welcome copy.
 - Modify: `assets/js/join-form.js` — remove the dead `osfUser`-obsolete-marking block that would otherwise throw once `#osfUser` no longer exists.
-- Modify: `_includes/jc-templates.html`, `_includes/jc-showcase.html`, `_includes/jc-map.html`, `map.html`, `about.md`, `index.md` — exclude `status: pending` JCs from public listings/search/map/counts.
-- Modify: `jc-overview.html` — visibly flag pending JCs (it intentionally keeps showing everything, including pending).
-- Modify: `README.md` — document `ADMIN_EMAILS`; remove `AUTH_CODE` from the env var list.
+- Modify: `README.md` — document `ADMIN_EMAILS`, `EMAIL_REPORT_TO`, and the `_pending-journal-clubs/` convention; remove `AUTH_CODE` from the env var list.
 
 ---
 
@@ -250,7 +250,7 @@ git commit -m "Extract JC data validation into a testable module, drop authCode/
 - Create: `src/lib/mailer.js`
 
 **Interfaces:**
-- Produces: `async sendEmail({ apiKey, domain, from, to, cc, replyTo, subject, html }) -> Promise<void>`.
+- Produces: `async sendEmail({ apiKey, domain, from, to, cc, bcc, replyTo, subject, html }) -> Promise<void>`.
 
 No unit test for this task — it's a thin wrapper around the `mailgun.js` client with no branching logic to assert on; it's exercised indirectly by manual testing in Task 6.
 
@@ -277,6 +277,7 @@ async function sendEmail(opts) {
         html: opts.html
     };
     if (opts.cc) data.cc = opts.cc;
+    if (opts.bcc) data.bcc = opts.bcc;
 
     await mg.messages.create(opts.domain, data);
 }
@@ -300,7 +301,7 @@ git commit -m "Add shared Mailgun send helper"
 
 **Interfaces:**
 - Consumes: `sendEmail` from `./mailer` (Task 2).
-- Produces: `callSlack(data) -> report`, `callZotero(data) -> report`, `callGitHub(data, results, opts?: {editToken?, status?}) -> report`, `notifyAdmins({data, results, approveToken, adminEmails, mailgunConfig}) -> report`, `formatResponses(results) -> string`. `report` shape: `{ title: string, status: 'Okay'|'Warning'|'Error', details: string[] }` (matching the original).
+- Produces: `callSlack(data) -> report`, `callZotero(data) -> report`, `callGitHub(data, results, opts?: {editToken?, dir?}) -> report`, `notifyAdmins({data, results, approveToken, adminEmails, mailgunConfig}) -> report`, `formatResponses(results) -> string`. `report` shape: `{ title: string, status: 'Okay'|'Warning'|'Error', details: string[] }` (matching the original). `opts.dir` defaults to `'_journal-clubs'`; Task 5 passes `'_pending-journal-clubs'` for new creation requests. No `status` option — pending state is the directory, not a frontmatter field.
 
 No unit test for this task — every exported function makes a real network call (GitHub/Zotero/Mailgun) with no pure branching logic worth asserting on in isolation; verify via Task 6's manual test against the sandbox GitHub repo.
 
@@ -444,14 +445,14 @@ async function callZotero(data) {
 /**
  * @param data {object} cleaned JC data
  * @param results {object} prior API call results (used to preserve osf/zotero on an edit commit)
- * @param opts {{editToken?: object|null, status?: 'pending'|null}}
+ * @param opts {{editToken?: object|null, dir?: string}}
  */
 async function callGitHub(data, results, opts = {}) {
-    const { editToken = null, status = null } = opts;
+    const { editToken = null, dir = '_journal-clubs' } = opts;
     const { GITHUB_TOKEN, GITHUB_API_USER } = process.env;
     let { GITHUB_REPO_API } = process.env;
     const out = { title: 'GitHub', status: 'Okay', details: [] };
-    const url = `${GITHUB_REPO_API}/contents/_journal-clubs`;
+    const url = `${GITHUB_REPO_API}/contents/${dir}`;
 
     let sha;
     try {
@@ -511,7 +512,6 @@ async function callGitHub(data, results, opts = {}) {
         'last-update-timestamp': Math.floor(Date.now() / 1000),
         'last-update-message': (editToken ? editToken.message : 'API creation').replace(/\n */g, '\n ')
     };
-    if (status) frontmatter.status = status;
 
     const yaml = YAML.stringify(frontmatter);
     out.githubFile = `---\n\n${yaml}\n\n---\n\n${data.description}\n`;
@@ -546,7 +546,7 @@ async function callGitHub(data, results, opts = {}) {
  */
 async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunConfig }) {
     const out = { title: 'Admin notification', status: 'Okay', details: [] };
-    const approveUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_approve?token=${approveToken}`;
+    const reviewUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_approve?token=${approveToken}`;
 
     try {
         await sendEmail({
@@ -554,17 +554,17 @@ async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunC
             domain: mailgunConfig.domain,
             from: mailgunConfig.fromEmail,
             to: adminEmails.join(', '),
-            subject: `New ReproducibiliTea pending approval: ${data.name}`,
+            subject: `New ReproducibiliTea pending review: ${data.name}`,
             html: `
-<p>A new ReproducibiliTea journal club is awaiting approval: <strong>${data.name}</strong>.</p>
-<p><a href="${approveUrl}">Approve ${data.name}</a> (link expires in 24h)</p>
+<p>A new ReproducibiliTea journal club is awaiting review: <strong>${data.name}</strong>.</p>
+<p><a href="${reviewUrl}">Review ${data.name}</a> (link expires in 14 days)</p>
 <h1>Creation report</h1>
 ${formatResponses(results)}
 <h2>Generated JC.md file</h2>
 ${(results.github?.githubFile || '').replace(/\n/g, '<br />')}
             `
         });
-        out.details.push(`Sent approval request to ${adminEmails.join(', ')}.`);
+        out.details.push(`Sent review request to ${adminEmails.join(', ')}.`);
     } catch (e) {
         out.status = 'Error';
         out.details.push('Failed to notify admins: ' + e.toString());
@@ -719,7 +719,7 @@ const { checkData } = require('./lib/jc-validation');
 const { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses } = require('./lib/jc-integrations');
 const { verifyToken, signToken } = require('./lib/tokens');
 
-const APPROVE_TOKEN_TTL_MS = 24 * 60 * 60 * 1000; // 24h
+const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 
 exports.handler = async (event) => {
     const token = event.queryStringParameters?.token;
@@ -740,7 +740,7 @@ exports.handler = async (event) => {
 
     const [slack, zotero] = await Promise.all([callSlack(data), callZotero(data)]);
     const results = { slack, zotero };
-    results.github = await callGitHub(data, results, { status: 'pending' });
+    results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs' });
 
     const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(s => s.trim()).filter(Boolean);
     const approveToken = signToken({ purpose: 'admin-approve', jcid: data.jcid }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: APPROVE_TOKEN_TTL_MS });
@@ -766,14 +766,16 @@ git commit -m "Add new-jc_confirm: create the pending JC and request admin appro
 
 ---
 
-### Task 6: `src/new-jc_approve.js`
+### Task 6: `src/new-jc_approve.js` — review page (GET) + approve/reject/ignore action (POST)
 
 **Files:**
 - Create: `src/new-jc_approve.js`
 
 **Interfaces:**
-- Consumes: `verifyToken` from `./lib/tokens`.
-- Produces: Netlify function `exports.handler(event) -> Promise<{statusCode, body}>`, triggered by `GET ?token=...` (the admin approve link from Task 5's `notifyAdmins`).
+- Consumes: `verifyToken` from `./lib/tokens`; `sendEmail` from `./lib/mailer` (Task 2).
+- Produces: Netlify function `exports.handler(event) -> Promise<{statusCode, body}>`, triggered by `GET ?token=...` (renders the review page) and `POST ?token=...` with a form body `action=approve|reject|ignore&message=...` (performs the action). Both are the same URL emailed by Task 5's `notifyAdmins`.
+
+Directory semantics: a pending JC lives at `_pending-journal-clubs/<jcid>.md`. Approve moves it to `_journal-clubs/<jcid>.md` (goes live). Reject deletes it outright. Ignore moves it to `_pending-journal-clubs/ignored/<jcid>.md` and adds `ignored: true` to its frontmatter — still reachable by re-visiting the same link, so an admin can revisit and approve/reject something they'd ignored. Re-ignoring an already-ignored item is a no-op (skip the GitHub commit; nothing to move). GitHub's Contents API has no atomic rename, so every move is create-at-destination-then-delete-source — a failure after the create leaves a harmless duplicate rather than losing the file.
 
 No unit test — network-call-only logic. Verify manually per Step 3 below.
 
@@ -781,76 +783,182 @@ No unit test — network-call-only logic. Verify manually per Step 3 below.
 
 Create `src/new-jc_approve.js`:
 ```js
-const fetch = require('node-fetch');
 require('dotenv').config();
+const fetch = require('node-fetch');
+const YAML = require('yaml');
 const { verifyToken } = require('./lib/tokens');
+const { sendEmail } = require('./lib/mailer');
+
+const PENDING_DIR = '_pending-journal-clubs';
+const IGNORED_DIR = `${PENDING_DIR}/ignored`;
+const ACTIVE_DIR = '_journal-clubs';
 
 exports.handler = async (event) => {
     const token = event.queryStringParameters?.token;
-    if (!token) {
-        return { statusCode: 400, body: '<p>Missing approval token.</p>' };
-    }
+    if (!token) return { statusCode: 400, body: '<p>Missing approval token.</p>' };
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
     if (!result.valid || result.payload.purpose !== 'admin-approve') {
-        return { statusCode: 401, body: `<p>Approval link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
+        return { statusCode: 401, body: `<p>Review link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
     }
-
     const { jcid } = result.payload;
+
+    const file = await fetchPending(jcid);
+    if (!file) {
+        return { statusCode: 404, body: `<p>${jcid} is no longer pending (already approved/rejected, or the link is stale).</p>` };
+    }
+
+    if (event.httpMethod === 'GET') {
+        return { statusCode: 200, headers: { 'Content-Type': 'text/html' }, body: renderActionPage(file.frontmatter.title || jcid, token) };
+    }
+    if (event.httpMethod !== 'POST') {
+        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
+    }
+
+    const form = new URLSearchParams(event.body);
+    const message = (form.get('message') || '').trim();
+    switch (form.get('action')) {
+        case 'approve': return doApprove(jcid, file, message);
+        case 'reject': return doReject(jcid, file, message);
+        case 'ignore': return doIgnore(jcid, file);
+        default: return { statusCode: 400, body: '<p>Unknown action.</p>' };
+    }
+};
+
+async function fetchPending(jcid) {
     const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
-    const fileUrl = `${GITHUB_REPO_API}/contents/_journal-clubs/${jcid}.md`;
-
-    let file;
-    try {
-        const res = await fetch(fileUrl, { headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` } });
-        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-        file = await res.json();
-    } catch (e) {
-        return { statusCode: 500, body: `<p>Could not fetch ${jcid}.md: ${e.message}</p>` };
-    }
-
-    const body = Buffer.from(file.content, 'base64').toString('utf8');
-    if (!/^status: pending\s*$/m.test(body)) {
-        return { statusCode: 200, body: `<p>${jcid} is already approved (or was never pending).</p>` };
-    }
-
-    const newBody = body.replace(/^status: pending\s*\n/m, '');
-
-    try {
-        const res = await fetch(fileUrl, {
-            method: 'PUT',
-            headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                message: `Approve ${jcid}.md`,
-                content: Buffer.from(newBody, 'utf8').toString('base64'),
-                sha: file.sha
-            })
+    for (const dir of [PENDING_DIR, IGNORED_DIR]) {
+        const res = await fetch(`${GITHUB_REPO_API}/contents/${dir}/${jcid}.md`, {
+            headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
         });
-        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-        await res.json();
-    } catch (e) {
-        return { statusCode: 500, body: `<p>Could not approve ${jcid}.md: ${e.message}</p>` };
+        if (res.ok) {
+            const json = await res.json();
+            const body = Buffer.from(json.content, 'base64').toString('utf8');
+            const fm = /^---\s*\n([\s\S]*?)\n---/.exec(body);
+            return { dir, sha: json.sha, body, frontmatter: fm ? YAML.parse(fm[1]) : {} };
+        }
     }
+    return null;
+}
+
+function renderActionPage(title, token) {
+    return `<!DOCTYPE html><html><body>
+<h1>Review ${title}</h1>
+<form method="POST" action="?token=${encodeURIComponent(token)}">
+    <label><input type="radio" name="action" value="approve" checked> Approve</label><br>
+    <label><input type="radio" name="action" value="reject"> Reject</label><br>
+    <label><input type="radio" name="action" value="ignore"> Ignore</label><br>
+    <label>Message to organiser(s) (approve/reject only, emailed verbatim):<br>
+        <textarea name="message" rows="6" cols="60"></textarea></label><br>
+    <button type="submit">Submit</button>
+</form>
+</body></html>`;
+}
+
+async function putFile(path, content, sha, message) {
+    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const body = { message, content: Buffer.from(content, 'utf8').toString('base64') };
+    if (sha) body.sha = sha;
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${path}`, {
+        method: 'PUT',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+    });
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    return res.json();
+}
+
+async function deleteFile(path, sha, message) {
+    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${path}`, {
+        method: 'DELETE',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, sha })
+    });
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    return res.json();
+}
+
+async function doApprove(jcid, file, message) {
+    const to = [file.frontmatter.contact, ...(file.frontmatter['additional-contact'] || [])].filter(Boolean);
+    try {
+        await putFile(`${ACTIVE_DIR}/${jcid}.md`, file.body, null, `Approve ${jcid}.md`);
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`);
+    } catch (e) {
+        return { statusCode: 500, body: `<p>Could not approve ${jcid}: ${e.message}</p>` };
+    }
+
+    await sendEmail({
+        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+        to: to.join(', '), bcc: process.env.EMAIL_REPORT_TO,
+        subject: `Your ReproducibiliTea journal club has been approved: ${file.frontmatter.title}`,
+        html: `<p>Good news — <strong>${file.frontmatter.title}</strong> has been approved and is now live.</p>${message ? `<p>${message}</p>` : ''}`
+    });
 
     console.log(JSON.stringify({ event: 'new_jc_approved', jcid }));
     return { statusCode: 200, body: `<p>${jcid} approved and now live.</p>` };
-};
+}
+
+async function doReject(jcid, file, message) {
+    try {
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`);
+    } catch (e) {
+        return { statusCode: 500, body: `<p>Could not reject ${jcid}: ${e.message}</p>` };
+    }
+
+    await sendEmail({
+        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+        to: file.frontmatter.contact, bcc: process.env.EMAIL_REPORT_TO,
+        subject: `Your ReproducibiliTea journal club request: ${file.frontmatter.title}`,
+        html: `<p>Thanks for your interest in setting up <strong>${file.frontmatter.title}</strong>. Unfortunately we won't be taking this request forward.</p>${message ? `<p>${message}</p>` : ''}`
+    });
+
+    console.log(JSON.stringify({ event: 'new_jc_rejected', jcid }));
+    return { statusCode: 200, body: `<p>${jcid} rejected.</p>` };
+}
+
+async function doIgnore(jcid, file) {
+    if (file.dir === IGNORED_DIR) {
+        return { statusCode: 200, body: `<p>${jcid} was already ignored.</p>` };
+    }
+
+    const ignoredBody = file.body.replace(/^---\s*\n/, '---\n\nignored: true\n');
+    try {
+        await putFile(`${IGNORED_DIR}/${jcid}.md`, ignoredBody, null, `Ignore ${jcid}.md`);
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`);
+    } catch (e) {
+        return { statusCode: 500, body: `<p>Could not ignore ${jcid}: ${e.message}</p>` };
+    }
+
+    await sendEmail({
+        apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
+        to: process.env.EMAIL_REPORT_TO,
+        subject: `ReproducibiliTea JC request ignored: ${file.frontmatter.title}`,
+        html: `<p><strong>${file.frontmatter.title}</strong> (${jcid}) was marked ignored by an admin. No email was sent to the requester.</p>`
+    });
+
+    console.log(JSON.stringify({ event: 'new_jc_ignored', jcid }));
+    return { statusCode: 200, body: `<p>${jcid} ignored.</p>` };
+}
 ```
 
 - [ ] **Step 2: Commit**
 
 ```bash
 git add src/new-jc_approve.js
-git commit -m "Add new-jc_approve: flip a pending JC to active"
+git commit -m "Add new-jc_approve: review page plus approve/reject/ignore actions"
 ```
 
 - [ ] **Step 3: Manual end-to-end verification (not a code step)**
 
 Against the sandbox GitHub repo/account:
 1. POST a valid creation payload (no `editToken`) to `/.netlify/functions/new-jc` — confirm you receive a "check your email" response and an email with a confirm link arrives.
-2. Visit the confirm link — confirm `_journal-clubs/<jcid>.md` is created on the sandbox repo with `status: pending`, and an approval email arrives at the `ADMIN_EMAILS` addresses.
-3. Visit the approve link — confirm the `status: pending` line is removed from the file via a new commit.
-4. Repeat an edit (existing flow, via `edit-jc.html` → `join-reproducibiliTea.html?jcEditToken=...`) and confirm it still works unchanged.
+2. Visit the confirm link — confirm `_pending-journal-clubs/<jcid>.md` is created on the sandbox repo, and a review email arrives at the `ADMIN_EMAILS` addresses.
+3. Visit the review link — confirm the GET page renders with all three action options and a message box.
+4. Submit **approve** with a message — confirm the file moves to `_journal-clubs/<jcid>.md` (two commits), and the requester's `contact` + `additional-contact` addresses receive the message, bcc'd to `EMAIL_REPORT_TO`.
+5. Repeat steps 1-3 for a second JC, submit **reject** with a message — confirm the pending file is deleted and only `contact` receives the message, bcc'd to `EMAIL_REPORT_TO`.
+6. Repeat again, submit **ignore** — confirm the file moves to `_pending-journal-clubs/ignored/<jcid>.md` with `ignored: true`, no email reaches the requester, and `EMAIL_REPORT_TO` gets the ignore notice. Re-visit the same link and ignore again — confirm it's a no-op, not an error.
+7. Repeat an edit (existing flow, via `edit-jc.html` → `join-reproducibiliTea.html?jcEditToken=...`) and confirm it still works unchanged.
 
 ---
 
@@ -978,145 +1086,9 @@ git commit -m "Remove AUTH_CODE and osfUser fields from the creation form"
 
 ---
 
-### Task 8: Hide pending JCs from public pages
+### Task 8: (dropped) Hiding pending JCs from public pages is no longer needed
 
-**Files:**
-- Modify: `_includes/jc-templates.html`
-- Modify: `_includes/jc-showcase.html`
-- Modify: `_includes/jc-map.html`
-- Modify: `map.html`
-- Modify: `about.md`
-- Modify: `index.md`
-- Modify: `jc-overview.html`
-
-**Interfaces:** none (Liquid template changes). Organiser-facing tools (`join-reproducibiliTea.html`'s name-collision check, `edit-jc.html`'s JC picker) intentionally keep iterating the unfiltered `site.journal-clubs` — an organiser may need to edit their own pending JC before it's approved.
-
-**Order note:** if the restyle plan (`2026-08-26-website-restyle.md`) has already shipped, `_includes/jc-map.html` and `map.html` will already be Leaflet-based (different content than Steps 3-4 below assume) — in that case add the same `| where_exp: "item", "item.status != 'pending'"` clause to that Leaflet version's `geos`/`locations` assignment instead, and skip re-matching the old-string shown here.
-
-- [ ] **Step 1: Filter `_includes/jc-templates.html`**
-
-Find (line 1):
-```liquid
-{% for jc in site.journal-clubs %}
-```
-Replace with:
-```liquid
-{% assign active_jcs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" %}
-{% for jc in active_jcs %}
-```
-
-- [ ] **Step 2: Filter `_includes/jc-showcase.html`**
-
-Find (line 16):
-```liquid
-        {% for jc in site.journal-clubs %}
-```
-Replace with:
-```liquid
-        {% assign active_jcs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" %}
-        {% for jc in active_jcs %}
-```
-
-- [ ] **Step 3: Filter `_includes/jc-map.html`**
-
-Find (line 33 area):
-```liquid
-    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" %}
-```
-Replace with:
-```liquid
-    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" | where_exp: "item", "item.status != 'pending'" %}
-```
-
-- [ ] **Step 4: Filter `map.html`**
-
-Find:
-```liquid
-    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" %}
-```
-Replace with:
-```liquid
-    {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" | where_exp: "item", "item.status != 'pending'" %}
-```
-
-- [ ] **Step 5: Filter the count in `about.md`**
-
-Find:
-```liquid
-There are now {{ site.journal-clubs.size | minus: 1}} other ReproducibiliTea Journal Clubs.
-```
-Replace with:
-```liquid
-{% assign active_jcs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" %}
-There are now {{ active_jcs.size | minus: 1}} other ReproducibiliTea Journal Clubs.
-```
-
-- [ ] **Step 6: Filter `index.md`**
-
-Find (lines 8-14):
-```liquid
-{% assign countries = "" %}
-{% for jc in site.journal-clubs %}
-{% if jc.country %}
-{% assign countries = countries | append: "|" | append: jc.country %}
-{% endif %}
-{% endfor %}
-{% assign country_count = countries | split: "|" | uniq | size | minus: 1 %}
-```
-Replace with:
-```liquid
-{% assign active_jcs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" %}
-{% assign countries = "" %}
-{% for jc in active_jcs %}
-{% if jc.country %}
-{% assign countries = countries | append: "|" | append: jc.country %}
-{% endif %}
-{% endfor %}
-{% assign country_count = countries | split: "|" | uniq | size | minus: 1 %}
-```
-
-Find:
-```liquid
-Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in {{ country_count }} different countries.
-```
-Replace with:
-```liquid
-Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ active_jcs.size }} institutions in {{ country_count }} different countries.
-```
-
-Find:
-```liquid
-{% assign jcs = site.journal-clubs | where: "country", c %}
-```
-Replace with:
-```liquid
-{% assign jcs = active_jcs | where: "country", c %}
-```
-
-- [ ] **Step 7: Flag pending JCs in the admin overview**
-
-In `jc-overview.html`, find (line 8, inside the `<head>` field-list assignment area):
-```liquid
-    {% assign fields = 'title, host-organisation, contact, address, country, geolocation, host-org-url, osf, zotero, website, twitter, signup, organisers' %}
-```
-Replace with:
-```liquid
-    {% assign fields = 'status, title, host-organisation, contact, address, country, geolocation, host-org-url, osf, zotero, website, twitter, signup, organisers' %}
-```
-This adds a `status` column to the existing generic table so pending JCs are visibly flagged (the table already renders `null`/empty cells distinctly via its existing `.empty`/`.empty.required` CSS classes — an active JC's `status` cell is simply blank).
-
-- [ ] **Step 8: Build and spot-check**
-
-Run: `bundle exec jekyll build`
-Expected: build succeeds. Then grep the built site to confirm no `status: pending` JC's title leaks into the public pages:
-Run: `grep -rl "status: pending" _journal-clubs/ 2>/dev/null || echo "none pending yet, filter logic still verified by re-running with a temp pending fixture if needed"`
-
-- [ ] **Step 9: Commit**
-
-```bash
-git add _includes/jc-templates.html _includes/jc-showcase.html _includes/jc-map.html map.html about.md index.md jc-overview.html
-git commit -m "Hide pending journal clubs from public listings, flag them in the admin overview"
-```
+Superseded by the `_pending-journal-clubs/` directory design (see Architecture, above, and Task 6). Pending and ignored JCs are never written into `_journal-clubs/`, so `site.journal-clubs` never contains them — no Liquid filtering required in `jc-templates.html`, `jc-showcase.html`, `jc-map.html`, `map.html`, `about.md`, or `index.md`. `jc-overview.html` is likewise left untouched: per the design decision, browsing pending/ignored requests there is out of scope — the emailed review link (Task 6) is the only way to see and act on one.
 
 ---
 
@@ -1129,10 +1101,13 @@ git commit -m "Hide pending journal clubs from public listings, flag them in the
 
 Add to the "Netlify functions" section of `README.md`:
 ```markdown
-- `ADMIN_EMAILS`: comma-separated list of addresses that receive new-JC approval requests.
-- `GITHUB_API_USER`, `GITHUB_TOKEN`, `GITHUB_REPO_API` (and `GITHUB_REPO_API_SANDBOX` for local/sandbox testing): unchanged, used to read/write `_journal-clubs/*.md`.
+- `ADMIN_EMAILS`: comma-separated list of addresses that receive new-JC review requests.
+- `EMAIL_REPORT_TO`: the central ReproducibiliTea account, bcc'd on every approve/reject email and the sole recipient of ignore notifications.
+- `GITHUB_API_USER`, `GITHUB_TOKEN`, `GITHUB_REPO_API` (and `GITHUB_REPO_API_SANDBOX` for local/sandbox testing): unchanged, used to read/write `_journal-clubs/*.md` and `_pending-journal-clubs/*.md`.
 
-`AUTH_CODE` is no longer used and can be removed — JC creation now uses email confirmation + admin approval instead of a shared password.
+`AUTH_CODE` is no longer used and can be removed — JC creation now uses email confirmation + admin review instead of a shared password.
+
+New JCs are held in `_pending-journal-clubs/` (and `_pending-journal-clubs/ignored/` once ignored) until an admin approves them via the reviewed link, at which point they're moved into `_journal-clubs/` and go live. Neither pending directory is a Jekyll collection — same convention as the existing `_inactive-journal-clubs/` archive — so nothing in either is ever built onto the public site.
 ```
 
 - [ ] **Step 2: Commit**
