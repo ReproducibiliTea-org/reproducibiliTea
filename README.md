@@ -9,12 +9,9 @@ Website for the ReproducibiliTea Journal Club and Podcast
 
 ### Netlify functions (`src/`)
 
-The Netlify functions under `src/` still use MongoDB for storing and validating edit tokens (this is being removed in a follow-up change). Configure:
+Edit tokens are stateless, HMAC-signed strings — no database. Configure:
 
-- `MONGODB_URI`: connection string for the MongoDB instance.
-- `MONGODB_DB`: database name that contains the `editTokens` collection.
-
-The previous FaunaDB secret (`FAUNA_KEY`) is no longer used and can be removed.
+- `EDIT_TOKEN_SECRET`: secret key used to sign and verify edit tokens. Rotating it invalidates all outstanding tokens.
 
 ### Rollcall (GitHub Actions)
 

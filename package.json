@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "mailgun.js": "^12.5.0",
-    "mongodb": "^6.8.0",
     "yaml": "^2.3.1"
   },
   "devDependencies": {
