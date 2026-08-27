@@ -49,3 +49,25 @@ test('verifyToken rejects malformed input', () => {
   assert.equal(verifyToken('', SECRET).reason, 'malformed');
   assert.equal(verifyToken(null, SECRET).reason, 'malformed');
 });
+
+test('signToken throws on an empty secret', () => {
+  assert.throws(
+    () => signToken({ purpose: 'edit', jcid: 'oxford' }, ''),
+    /token secret is not configured/
+  );
+});
+
+test('signToken throws on a missing (undefined) secret', () => {
+  assert.throws(
+    () => signToken({ purpose: 'edit', jcid: 'oxford' }),
+    /token secret is not configured/
+  );
+});
+
+test('verifyToken throws on an empty secret', () => {
+  const token = signToken({ purpose: 'edit', jcid: 'oxford' }, SECRET);
+  assert.throws(
+    () => verifyToken(token, ''),
+    /token secret is not configured/
+  );
+});

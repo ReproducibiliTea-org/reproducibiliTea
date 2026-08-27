@@ -18,6 +18,11 @@ const TOKEN_TTL_MS = 2 * 24 * 60 * 60 * 1000; // 2 days
 exports.handler = async function(event) {
     console.log(JSON.stringify({ event: 'create_token_request_received' }));
 
+    if (!EDIT_TOKEN_SECRET) {
+        console.log(JSON.stringify({ event: 'create_token_misconfigured' }));
+        return { statusCode: 500, body: 'Server misconfiguration.' };
+    }
+
     let sandbox = false;
     try {
         sandbox = /(sandbox|localhost)/.test(event.headers.referer);
@@ -44,7 +49,7 @@ exports.handler = async function(event) {
         }
 
         const token = signToken(
-            { purpose: 'edit', email: data.email, jcid: data.jcid, message: data.message || '' },
+            { purpose: 'edit', email: data.email, jcid: data.jcid, message: (data.message || '').slice(0, 300) },
             EDIT_TOKEN_SECRET,
             { expiresInMs: TOKEN_TTL_MS }
         );

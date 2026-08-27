@@ -3,6 +3,9 @@
 const crypto = require('crypto');
 
 function sign(payloadPart, secret) {
+  if (!secret || typeof secret !== 'string') {
+    throw new Error('token secret is not configured');
+  }
   return crypto.createHmac('sha256', secret).update(payloadPart).digest('base64url');
 }
 
