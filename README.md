@@ -12,6 +12,13 @@ Website for the ReproducibiliTea Journal Club and Podcast
 Edit tokens are stateless, HMAC-signed strings — no database. Configure:
 
 - `EDIT_TOKEN_SECRET`: secret key used to sign and verify edit tokens. Rotating it invalidates all outstanding tokens.
+- `ADMIN_EMAILS`: comma-separated list of addresses that receive new-JC review requests.
+- `EMAIL_REPORT_TO`: the central ReproducibiliTea account, bcc'd on every approve/reject email and the sole recipient of ignore notifications.
+- `GITHUB_API_USER`, `GITHUB_TOKEN`, `GITHUB_REPO_API` (and `GITHUB_REPO_API_SANDBOX` for local/sandbox testing): unchanged, used to read/write `_journal-clubs/*.md` and `_pending-journal-clubs/*.md`.
+
+`AUTH_CODE` is no longer used and can be removed — JC creation now uses email confirmation + admin review instead of a shared password.
+
+New JCs are held in `_pending-journal-clubs/` (and `_pending-journal-clubs/ignored/` once ignored) until an admin approves them via the reviewed link, at which point they're moved into `_journal-clubs/` and go live. Neither pending directory is a Jekyll collection — same convention as the existing `_inactive-journal-clubs/` archive — so nothing in either is ever built onto the public site.
 
 ### Rollcall (GitHub Actions)
 
