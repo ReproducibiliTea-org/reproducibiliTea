@@ -3,6 +3,7 @@
 const fetch = require('node-fetch');
 const YAML = require('yaml');
 const { sendEmail } = require('./mailer');
+const { escapeHtml } = require('./html-escape');
 
 /**
  * Format a set of responses from API calls
@@ -245,12 +246,12 @@ async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunC
             to: adminEmails.join(', '),
             subject: `New ReproducibiliTea pending review: ${data.name}`,
             html: `
-<p>A new ReproducibiliTea journal club is awaiting review: <strong>${data.name}</strong>.</p>
-<p><a href="${reviewUrl}">Review ${data.name}</a> (link expires in 14 days)</p>
+<p>A new ReproducibiliTea journal club is awaiting review: <strong>${escapeHtml(data.name)}</strong>.</p>
+<p><a href="${reviewUrl}">Review ${escapeHtml(data.name)}</a> (link expires in 14 days)</p>
 <h1>Creation report</h1>
 ${formatResponses(results)}
 <h2>Generated JC.md file</h2>
-${(results.github?.githubFile || '').replace(/\n/g, '<br />')}
+<pre>${escapeHtml(results.github?.githubFile || '')}</pre>
             `
         });
         out.details.push(`Sent review request to ${adminEmails.join(', ')}.`);

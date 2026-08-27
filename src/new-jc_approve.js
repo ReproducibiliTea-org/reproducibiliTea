@@ -3,10 +3,12 @@ const fetch = require('node-fetch');
 const YAML = require('yaml');
 const { verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
+const { escapeHtml } = require('./lib/html-escape');
 
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
 const ACTIVE_DIR = '_journal-clubs';
+const HTML_HEADERS = { 'Content-Type': 'text/html' };
 
 exports.handler = async (event) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
@@ -15,21 +17,27 @@ exports.handler = async (event) => {
     }
 
     const token = event.queryStringParameters?.token;
-    if (!token) return { statusCode: 400, body: '<p>Missing approval token.</p>' };
+    if (!token) return { statusCode: 400, headers: HTML_HEADERS, body: '<p>Missing approval token.</p>' };
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
     if (!result.valid || result.payload.purpose !== 'admin-approve') {
-        return { statusCode: 401, body: `<p>Review link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
+        return { statusCode: 401, headers: HTML_HEADERS, body: `<p>Review link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
     }
     const { jcid } = result.payload;
 
+    // Clicked from an email, so no usable referer — the sandbox flag rides along
+    // in the signed token, threaded through from the original creation request.
+    if (result.payload.sandbox) {
+        process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+    }
+
     const file = await fetchPending(jcid);
     if (!file) {
-        return { statusCode: 404, body: `<p>${jcid} is no longer pending (already approved/rejected, or the link is stale).</p>` };
+        return { statusCode: 404, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} is no longer pending (already approved/rejected, or the link is stale).</p>` };
     }
 
     if (event.httpMethod === 'GET') {
-        return { statusCode: 200, headers: { 'Content-Type': 'text/html' }, body: renderActionPage(file.frontmatter.title || jcid, token) };
+        return { statusCode: 200, headers: HTML_HEADERS, body: renderActionPage(file.frontmatter.title || jcid, token) };
     }
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
@@ -41,7 +49,7 @@ exports.handler = async (event) => {
         case 'approve': return doApprove(jcid, file, message);
         case 'reject': return doReject(jcid, file, message);
         case 'ignore': return doIgnore(jcid, file);
-        default: return { statusCode: 400, body: '<p>Unknown action.</p>' };
+        default: return { statusCode: 400, headers: HTML_HEADERS, body: '<p>Unknown action.</p>' };
     }
 };
 
@@ -59,10 +67,6 @@ async function fetchPending(jcid) {
         }
     }
     return null;
-}
-
-function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 function renderActionPage(title, token) {
@@ -111,7 +115,7 @@ async function doApprove(jcid, file, message) {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`);
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_failed', jcid, error: e.message }));
-        return { statusCode: 500, body: `<p>Could not approve ${jcid}: ${e.message}</p>` };
+        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not approve ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_approved', jcid }));
 
@@ -124,10 +128,10 @@ async function doApprove(jcid, file, message) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, body: `<p>${jcid} approved and now live, but the notification email failed to send: ${e.message}</p>` };
+        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
     }
 
-    return { statusCode: 200, body: `<p>${jcid} approved and now live.</p>` };
+    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live.</p>` };
 }
 
 async function doReject(jcid, file, message) {
@@ -135,7 +139,7 @@ async function doReject(jcid, file, message) {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`);
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_reject_failed', jcid, error: e.message }));
-        return { statusCode: 500, body: `<p>Could not reject ${jcid}: ${e.message}</p>` };
+        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not reject ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_rejected', jcid }));
 
@@ -148,16 +152,16 @@ async function doReject(jcid, file, message) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_reject_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, body: `<p>${jcid} rejected, but the notification email failed to send: ${e.message}</p>` };
+        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} rejected, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
     }
 
-    return { statusCode: 200, body: `<p>${jcid} rejected.</p>` };
+    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} rejected.</p>` };
 }
 
 async function doIgnore(jcid, file) {
     if (file.dir === IGNORED_DIR) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_noop', jcid }));
-        return { statusCode: 200, body: `<p>${jcid} was already ignored.</p>` };
+        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} was already ignored.</p>` };
     }
 
     const ignoredBody = file.body.replace(/^---\s*\n/, '---\n\nignored: true\n');
@@ -166,7 +170,7 @@ async function doIgnore(jcid, file) {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`);
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_failed', jcid, error: e.message }));
-        return { statusCode: 500, body: `<p>Could not ignore ${jcid}: ${e.message}</p>` };
+        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not ignore ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_ignored', jcid }));
 
@@ -179,8 +183,8 @@ async function doIgnore(jcid, file) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, body: `<p>${jcid} ignored, but the notification email failed to send: ${e.message}</p>` };
+        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} ignored, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
     }
 
-    return { statusCode: 200, body: `<p>${jcid} ignored.</p>` };
+    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} ignored.</p>` };
 }

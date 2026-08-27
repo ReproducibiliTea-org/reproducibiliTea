@@ -1,10 +1,11 @@
 require('dotenv').config();
-const { cleanData, checkData } = require('./lib/jc-validation');
+const { cleanData, checkData, checkCreationLimits } = require('./lib/jc-validation');
 const { callGitHub, formatResponses } = require('./lib/jc-integrations');
 const { signToken, verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
 
 const CONFIRM_TOKEN_TTL_MS = 24 * 60 * 60 * 1000; // 24h
+const MAX_TOKEN_LENGTH = 1800; // keep the confirm URL below common mail-client link truncation limits
 
 exports.handler = async (event) => {
     console.log(JSON.stringify({ event: 'new_jc_request_received' }));
@@ -24,11 +25,18 @@ exports.handler = async (event) => {
         return { statusCode: 400, body: '<p>Could not clean submission for processing</p>' };
     }
 
+    // Sandbox detection: this handler is hit by a same-origin AJAX POST, so the
+    // referer reliably reflects the site the form was loaded from.
+    const sandbox = /(sandbox|localhost)/.test(event.headers?.referer || '');
+    if (sandbox) {
+        process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+    }
+
     const rawEditToken = data.editToken;
     if (rawEditToken) {
         return handleEdit(data, rawEditToken);
     }
-    return handleCreationRequest(data);
+    return handleCreationRequest(data, sandbox);
 };
 
 async function handleEdit(data, rawEditToken) {
@@ -58,13 +66,20 @@ async function handleEdit(data, rawEditToken) {
     return { statusCode: 200, body: formatResponses({ github }) };
 }
 
-async function handleCreationRequest(data) {
-    const check = checkData(data);
+async function handleCreationRequest(data, sandbox) {
+    const check = checkData(data) ?? checkCreationLimits(data);
     if (check !== null) {
         return { statusCode: 400, body: formatResponses({ check: { title: 'Data check', status: 'Error', details: [check] } }) };
     }
 
-    const token = signToken({ purpose: 'creation-confirm', data }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: CONFIRM_TOKEN_TTL_MS });
+    const token = signToken({ purpose: 'creation-confirm', data, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: CONFIRM_TOKEN_TTL_MS });
+    if (token.length > MAX_TOKEN_LENGTH) {
+        console.log(JSON.stringify({ event: 'new_jc_request_too_large', jcid: data.jcid, tokenLength: token.length }));
+        return {
+            statusCode: 400,
+            body: formatResponses({ check: { title: 'Data check', status: 'Error', details: ['Your submission is too long to fit in a confirmation link. Please shorten your description and try again.'] } })
+        };
+    }
     const confirmUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_confirm?token=${token}`;
 
     try {

@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { cleanData, checkData } = require('./jc-validation');
+const { cleanData, checkData, checkCreationLimits } = require('./jc-validation');
 
 function validData(overrides = {}) {
   return {
@@ -58,14 +58,28 @@ test('checkData rejects malformed geolocation', () => {
   assert.match(checkData(data), /geolocation/);
 });
 
-test('checkData rejects an overlong description', () => {
+test('checkCreationLimits rejects an overlong description', () => {
   const data = cleanData(validData({ description: 'a'.repeat(1001) }));
-  assert.match(checkData(data), /description is too long/);
+  assert.match(checkCreationLimits(data), /description is too long/);
 });
 
-test('checkData rejects an overlong address', () => {
+test('checkCreationLimits rejects an overlong address', () => {
   const data = cleanData(validData({ post: 'a'.repeat(501) }));
-  assert.match(checkData(data), /address is too long/);
+  assert.match(checkCreationLimits(data), /address is too long/);
+});
+
+test('checkCreationLimits accepts data within the limits', () => {
+  assert.equal(checkCreationLimits(cleanData(validData())), null);
+});
+
+test('checkData does not reject a long description (the edit path stays open)', () => {
+  const data = cleanData(validData({ description: 'a'.repeat(2100) }));
+  assert.equal(checkData(data), null);
+});
+
+test('checkData does not reject a long address (the edit path stays open)', () => {
+  const data = cleanData(validData({ post: 'a'.repeat(600) }));
+  assert.equal(checkData(data), null);
 });
 
 test('checkData does not require or check an authCode field', () => {

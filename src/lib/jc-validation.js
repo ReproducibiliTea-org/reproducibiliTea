@@ -92,6 +92,17 @@ function checkData(data) {
     if (!data.geolocation || data.geolocation.length !== 2 || !data.geolocation.every(isFinite)) {
         return "The geolocation data is not in the correct format.";
     }
+    return null;
+}
+
+/**
+ * Creation-only limits. These bound the length of the signed confirm-token URL,
+ * so they apply to new submissions but NOT to edits of existing journal clubs
+ * (13 live entries have descriptions over 1000 characters).
+ * @param data {object} cleaned POST data
+ * @return {string|null} the first validation error, or null if the data is valid
+ */
+function checkCreationLimits(data) {
     if ((data.description || '').length > 1000) {
         return "The description is too long (max 1000 characters).";
     }
@@ -102,4 +113,4 @@ function checkData(data) {
     return null;
 }
 
-module.exports = { cleanData, checkData };
+module.exports = { cleanData, checkData, checkCreationLimits };
