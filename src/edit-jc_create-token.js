@@ -29,6 +29,7 @@ exports.handler = async function(event) {
         const data = JSON.parse(event.body);
         if (data.email) data.email = data.email.replace(/\s/sg, '');
         if (!data.email || !data.jcid) {
+            console.log(JSON.stringify({ event: 'create_token_invalid_input' }));
             return { statusCode: 400, body: 'Email and JCID must be submitted in JSON format in the request body.' };
         }
 
