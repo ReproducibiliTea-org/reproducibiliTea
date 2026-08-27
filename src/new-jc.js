@@ -12,6 +12,11 @@ exports.handler = async (event) => {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'POST' } };
     }
 
+    if (!process.env.EDIT_TOKEN_SECRET) {
+        console.log(JSON.stringify({ event: 'new_jc_misconfigured' }));
+        return { statusCode: 500, body: 'Server misconfiguration.' };
+    }
+
     let data;
     try {
         data = cleanData(JSON.parse(event.body));

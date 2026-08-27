@@ -92,6 +92,12 @@ function checkData(data) {
     if (!data.geolocation || data.geolocation.length !== 2 || !data.geolocation.every(isFinite)) {
         return "The geolocation data is not in the correct format.";
     }
+    if ((data.description || '').length > 1000) {
+        return "The description is too long (max 1000 characters).";
+    }
+    if ((data.post || '').length > 500) {
+        return "The address is too long (max 500 characters).";
+    }
 
     return null;
 }

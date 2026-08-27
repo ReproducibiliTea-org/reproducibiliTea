@@ -58,6 +58,16 @@ test('checkData rejects malformed geolocation', () => {
   assert.match(checkData(data), /geolocation/);
 });
 
+test('checkData rejects an overlong description', () => {
+  const data = cleanData(validData({ description: 'a'.repeat(1001) }));
+  assert.match(checkData(data), /description is too long/);
+});
+
+test('checkData rejects an overlong address', () => {
+  const data = cleanData(validData({ post: 'a'.repeat(501) }));
+  assert.match(checkData(data), /address is too long/);
+});
+
 test('checkData does not require or check an authCode field', () => {
   const data = cleanData(validData());
   assert.ok(!('authCode' in data) || checkData(data) === null);
