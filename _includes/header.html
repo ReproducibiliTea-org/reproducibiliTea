@@ -52,4 +52,11 @@
             </ul>
         </nav>
     </div>
+    <script>
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.nav-dropdown[open]').forEach(function (d) {
+                if (!d.contains(e.target)) d.removeAttribute('open');
+            });
+        });
+    </script>
 </header>
