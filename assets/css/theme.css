@@ -1,6 +1,6 @@
 /* Brand tokens */
 :root {
-    --color-rpt-primary: rgb(0, 134, 207);   /* #0086cf */
+    --color-rpt-primary: rgb(0, 120, 182);   /* #0078b6, darkened from #0086cf for WCAG AA contrast (4.81:1 vs 3.95:1) */
     --color-rpt-secondary: rgb(0, 77, 108);  /* #004c6c */
     --color-rpt-dark: rgb(64, 64, 64);       /* #404040 */
     --color-rpt-white: #ffffff;
@@ -14,6 +14,13 @@ a {
 }
 a:visited {
     color: var(--color-rpt-secondary);
+}
+/* Content links must not rely on color alone (WCAG 1.4.1) */
+main.page-content a:not(.mock-button) {
+    text-decoration: underline;
+}
+main.page-content .tag-list a {
+    text-decoration: none;
 }
 body {
     color: var(--color-rpt-dark);
@@ -39,9 +46,35 @@ button:hover {
 }
 
 /* Header / footer */
-header.site-header,
-footer.site-footer {
+header.site-header {
+    background-color: var(--color-rpt-primary);
+    border-bottom: none;
+}
+header.site-header .site-title,
+header.site-header .site-title:visited,
+header.site-header .site-nav .page-link {
+    color: var(--color-rpt-white);
+}
+.site-logo {
     background-color: var(--color-rpt-white);
+    padding: 4px 12px;
+}
+header.site-header .nav-dropdown[open] > summary {
+    color: var(--color-rpt-white);
+    text-decoration: underline;
+}
+header.site-header .nav-dropdown-menu a {
+    color: var(--color-rpt-dark);
+}
+footer.site-footer {
+    background-color: var(--color-rpt-secondary);
+    color: var(--color-rpt-white);
+    border-top: none;
+}
+footer.site-footer a,
+footer.site-footer .footer-heading,
+footer.site-footer .footer-col-wrapper {
+    color: var(--color-rpt-white);
 }
 .site-header .wrapper {
     display: flex;
@@ -95,6 +128,12 @@ footer.site-footer {
 }
 
 @media screen and (max-width: 600px) {
+    header.site-header .site-nav {
+        position: static;
+        background-color: transparent;
+        border: 0;
+        text-align: left;
+    }
     .site-nav-links {
         flex-direction: column;
         align-items: stretch;
@@ -203,21 +242,22 @@ footer.site-footer {
 }
 .jc-showcase:not(.placeholder) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
     background-color: var(--color-rpt-white);
     border-radius: var(--radius-card);
     box-shadow: var(--shadow-card);
     padding: 1.5em;
 }
 .jc-body {
-    width: 60%;
+    width: 100%;
 }
 .jc-info {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    min-height: 100%;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .jc-details {
     display: flex;
@@ -226,6 +266,22 @@ footer.site-footer {
 .jc-organisers {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    .jc-showcase:not(.placeholder) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .jc-body {
+        width: 60%;
+    }
+    .jc-info {
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        min-height: 100%;
+    }
 }
 
 /* Map container */
@@ -267,18 +323,41 @@ p.elipsis {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-    .jc-showcase {
-        flex-wrap: wrap;
-    }
-    .jc-body, .jc-info {
-        min-width: 100%;
-        padding: unset;
-    }
-    .jc-info {
-        min-height: unset;
-        justify-content: space-evenly;
-        width: 100%;
+/* Homepage CTA buttons */
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+/* Homepage JC teaser cards */
+.jc-teaser-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.jc-teaser-card {
+    background-color: var(--color-rpt-white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: 1em 1.25em;
+}
+.jc-teaser-card h4 {
+    margin: 0.25em 0;
+}
+.jc-teaser-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-rpt-primary);
+    font-weight: 700;
+}
+@media screen and (min-width: 600px) {
+    .jc-teaser-grid {
         flex-direction: row;
+    }
+    .jc-teaser-card {
+        flex: 1;
     }
 }

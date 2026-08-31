@@ -27,7 +27,8 @@
         markersByTitle[title] = marker;
         if (jcSearch) {
             marker.on('click', () => {
-                jcSearch.value = title;
+                jcSearch.value = '';
+                jcSearch.dispatchEvent(new Event('input'));
                 jcSearch.dispatchEvent(new Event('change'));
             });
         }
