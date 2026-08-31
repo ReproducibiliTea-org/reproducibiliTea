@@ -482,6 +482,20 @@ University of Academia" onchange="geolocateAddress()"></textarea>
 
 You might want to describe what you hope to achieve, how often you plan to meet, which disciplines you are planning to cater for, etc."></textarea>
                 </div>
+
+                <div class="row" id="adminNoteRow">
+                    <div class="labels">
+                        <label for="adminNote">Anything you'd like to tell us?</label>
+                        <div class="label-details">
+                            <p>This is your chance to introduce yourselves to the ReproducibiliTea team, or mention anything relevant to your application — we read every one!</p>
+                            <ul>
+                                <li class="private">This is only seen by our review team. It will not be published anywhere.</li>
+                                <li class="is-mandatory">This field is optional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <textarea id="adminNote" name="adminNote" placeholder="e.g. a bit about your group, why you're starting a journal club, or anything else you'd like us to know."></textarea>
+                </div>
             </fieldset>
 
             <fieldset class="JC-organisers">
@@ -708,8 +722,10 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 }
             }
         }
-        // Remove the unneeded field
+        // Remove the unneeded fields (edits don't go through admin review, so
+        // there's no one for this note to reach)
         document.getElementById('zoteroUserRow').remove();
+        document.getElementById('adminNoteRow').remove();
         document.querySelector('.submission button').innerHTML = "Commit changes";
         // Remove unnecessary sections
         document.getElementById('signupForm').classList.add('edit');
@@ -734,34 +750,44 @@ You might want to describe what you hope to achieve, how often you plan to meet,
     <script>
         let pickerMap;
         let endMarker;
-        const input = document.getElementById("geolocation");
 
-        function initialize() {
-            if (pickerMap) return;
+        // Called every time the map is opened (from join-form.js's geolocate()),
+        // not just once at page load: the map article is display:none until then,
+        // so a Leaflet map created earlier would measure a 0x0 container and
+        // never reflect address changes made after that first render.
+        function refreshGeolocationMap() {
+            const input = document.getElementById("geolocation");
             const existing = input.value;
-            let position = [0, 0];
-            let zoom = 1;
+            let position = [20, 0];
+            let zoom = 2;
             if (existing) {
                 const parse = existing.split(',');
                 position = [parseFloat(parse[0]), parseFloat(parse[1])];
                 zoom = 10;
             }
 
-            pickerMap = L.map('geolocation-map-display', { center: position, zoom });
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                maxZoom: 18
-            }).addTo(pickerMap);
+            if (!pickerMap) {
+                pickerMap = L.map('geolocation-map-display', { center: position, zoom });
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 18
+                }).addTo(pickerMap);
 
-            endMarker = L.marker(position, { draggable: true }).addTo(pickerMap);
-            endMarker.on('dragend', copyMarkerpositionToInput);
+                endMarker = L.marker(position, { draggable: true }).addTo(pickerMap);
+                endMarker.on('dragend', copyMarkerpositionToInput);
+            } else {
+                endMarker.setLatLng(position);
+            }
+
+            // Recalculate the container size now that it's actually visible,
+            // then recentre now that we know it.
+            pickerMap.invalidateSize();
+            pickerMap.setView(position, zoom);
         }
 
         function copyMarkerpositionToInput() {
             const pos = endMarker.getLatLng();
-            input.value = pos.lat + ',' + pos.lng;
+            document.getElementById("geolocation").value = pos.lat + ',' + pos.lng;
         }
-
-        initialize();
     </script>
 </article>

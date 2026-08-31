@@ -27,6 +27,7 @@ test('cleanData fills missing optional fields with empty strings', () => {
   const cleaned = cleanData({});
   assert.equal(cleaned.www, '');
   assert.equal(cleaned.description, '');
+  assert.equal(cleaned.adminNote, '');
 });
 
 test('cleanData collects helperN fields into a helpers array', () => {
@@ -59,7 +60,7 @@ test('checkData rejects malformed geolocation', () => {
 });
 
 test('checkCreationLimits rejects an overlong description', () => {
-  const data = cleanData(validData({ description: 'a'.repeat(1001) }));
+  const data = cleanData(validData({ description: 'a'.repeat(10001) }));
   assert.match(checkCreationLimits(data), /description is too long/);
 });
 
@@ -68,12 +69,17 @@ test('checkCreationLimits rejects an overlong address', () => {
   assert.match(checkCreationLimits(data), /address is too long/);
 });
 
+test('checkCreationLimits rejects an overlong admin note', () => {
+  const data = cleanData(validData({ adminNote: 'a'.repeat(10001) }));
+  assert.match(checkCreationLimits(data), /note is too long/);
+});
+
 test('checkCreationLimits accepts data within the limits', () => {
-  assert.equal(checkCreationLimits(cleanData(validData())), null);
+  assert.equal(checkCreationLimits(cleanData(validData({ description: 'a'.repeat(10000), adminNote: 'a'.repeat(10000) }))), null);
 });
 
 test('checkData does not reject a long description (the edit path stays open)', () => {
-  const data = cleanData(validData({ description: 'a'.repeat(2100) }));
+  const data = cleanData(validData({ description: 'a'.repeat(10100) }));
   assert.equal(checkData(data), null);
 });
 

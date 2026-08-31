@@ -237,6 +237,9 @@ async function callGitHub(data, results, opts = {}) {
 async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunConfig }) {
     const out = { title: 'Admin notification', status: 'Okay', details: [] };
     const reviewUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_approve?token=${approveToken}`;
+    const noteSection = data.adminNote
+        ? `<h2>Note from the organisers</h2><p>${escapeHtml(data.adminNote)}</p>`
+        : '';
 
     try {
         await sendEmail({
@@ -248,6 +251,7 @@ async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunC
             html: `
 <p>A new ReproducibiliTea journal club is awaiting review: <strong>${escapeHtml(data.name)}</strong>.</p>
 <p><a href="${reviewUrl}">Review ${escapeHtml(data.name)}</a> (link expires in 14 days)</p>
+${noteSection}
 <h1>Creation report</h1>
 ${formatResponses(results)}
 <h2>Generated JC.md file</h2>
@@ -263,4 +267,54 @@ ${formatResponses(results)}
     return out;
 }
 
-module.exports = { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses };
+const UNCONFIRMED_DRAFT_DIR = '_pending-journal-clubs/unconfirmed';
+
+/**
+ * Commit an unconfirmed creation request so its content doesn't have to travel
+ * through the confirmation-email URL. Deleted once confirmed (see deleteDraft),
+ * or pruned by the rollcall cron if never confirmed.
+ * @param data {object} cleaned JC data
+ * @param draftId {string} random id naming this draft
+ */
+async function saveDraft(data, draftId) {
+    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
+        method: 'PUT',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            message: `Draft creation request ${draftId}`,
+            content: Buffer.from(JSON.stringify(data), 'utf8').toString('base64')
+        })
+    });
+    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
+}
+
+/**
+ * @param draftId {string}
+ * @return {Promise<{data: object, sha: string}|null>} null if the draft doesn't exist (already confirmed, pruned, or a forged id)
+ */
+async function fetchDraft(draftId) {
+    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
+    });
+    if (!res.ok) return null;
+    const file = await res.json();
+    return { data: JSON.parse(Buffer.from(file.content, 'base64').toString('utf8')), sha: file.sha };
+}
+
+/**
+ * @param draftId {string}
+ * @param sha {string} the draft file's current sha, from fetchDraft
+ */
+async function deleteDraft(draftId, sha) {
+    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
+        method: 'DELETE',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Remove confirmed draft ${draftId}`, sha })
+    });
+    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
+}
+
+module.exports = { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses, saveDraft, fetchDraft, deleteDraft };

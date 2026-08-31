@@ -1,11 +1,11 @@
 require('dotenv').config();
+const crypto = require('crypto');
 const { cleanData, checkData, checkCreationLimits } = require('./lib/jc-validation');
-const { callGitHub, formatResponses } = require('./lib/jc-integrations');
+const { callGitHub, formatResponses, saveDraft } = require('./lib/jc-integrations');
 const { signToken, verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
 
 const CONFIRM_TOKEN_TTL_MS = 24 * 60 * 60 * 1000; // 24h
-const MAX_TOKEN_LENGTH = 1800; // keep the confirm URL below common mail-client link truncation limits
 
 exports.handler = async (event) => {
     console.log(JSON.stringify({ event: 'new_jc_request_received' }));
@@ -72,14 +72,19 @@ async function handleCreationRequest(data, sandbox) {
         return { statusCode: 400, body: formatResponses({ check: { title: 'Data check', status: 'Error', details: [check] } }) };
     }
 
-    const token = signToken({ purpose: 'creation-confirm', data, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: CONFIRM_TOKEN_TTL_MS });
-    if (token.length > MAX_TOKEN_LENGTH) {
-        console.log(JSON.stringify({ event: 'new_jc_request_too_large', jcid: data.jcid, tokenLength: token.length }));
-        return {
-            statusCode: 400,
-            body: formatResponses({ check: { title: 'Data check', status: 'Error', details: ['Your submission is too long to fit in a confirmation link. Please shorten your description and try again.'] } })
-        };
+    // The full submission is committed as a draft rather than embedded in the
+    // confirm-link URL — descriptions/notes can run to 10000 characters, far
+    // past what's safe to put in a mail-client link. The token just carries a
+    // pointer to it.
+    const draftId = crypto.randomBytes(16).toString('hex');
+    try {
+        await saveDraft(data, draftId);
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_request_draft_failed', jcid: data.jcid, error: e.message }));
+        return { statusCode: 500, body: formatResponses({ draft: { title: 'Draft creation', status: 'Error', details: [e.message] } }) };
     }
+
+    const token = signToken({ purpose: 'creation-confirm', jcid: data.jcid, draftId, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: CONFIRM_TOKEN_TTL_MS });
     const confirmUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_confirm?token=${token}`;
 
     try {

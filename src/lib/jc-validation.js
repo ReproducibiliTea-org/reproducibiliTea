@@ -4,7 +4,7 @@ const Diacritics = require('diacritic');
 
 const OPTIONAL_FIELDS = [
     'www', 'twitter', 'description', 'zoteroUser',
-    'signup', 'uniWWW', 'osf'
+    'signup', 'uniWWW', 'osf', 'adminNote'
 ];
 
 const REQUIRED_FIELDS = [
@@ -96,18 +96,23 @@ function checkData(data) {
 }
 
 /**
- * Creation-only limits. These bound the length of the signed confirm-token URL,
- * so they apply to new submissions but NOT to edits of existing journal clubs
- * (13 live entries have descriptions over 1000 characters).
+ * Creation-only sanity limits. Unlike an earlier design, these no longer bound
+ * a signed token's URL length (new submissions are now stored as a draft file,
+ * not embedded in the confirm link) — they're just a sane ceiling against abuse.
+ * They apply to new submissions but NOT to edits of existing journal clubs
+ * (13 live entries already have descriptions over 1000 characters).
  * @param data {object} cleaned POST data
  * @return {string|null} the first validation error, or null if the data is valid
  */
 function checkCreationLimits(data) {
-    if ((data.description || '').length > 1000) {
-        return "The description is too long (max 1000 characters).";
+    if ((data.description || '').length > 10000) {
+        return "The description is too long (max 10000 characters).";
     }
     if ((data.post || '').length > 500) {
         return "The address is too long (max 500 characters).";
+    }
+    if ((data.adminNote || '').length > 10000) {
+        return "The note is too long (max 10000 characters).";
     }
 
     return null;

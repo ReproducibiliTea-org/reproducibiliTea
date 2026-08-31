@@ -20,6 +20,8 @@ Edit tokens are stateless, HMAC-signed strings — no database. Configure:
 
 New JCs are held in `_pending-journal-clubs/` (and `_pending-journal-clubs/ignored/` once ignored) until an admin approves them via the reviewed link, at which point they're moved into `_journal-clubs/` and go live. Neither pending directory is a Jekyll collection — same convention as the existing `_inactive-journal-clubs/` archive — so nothing in either is ever built onto the public site.
 
+A submission is first committed as an unconfirmed draft (`_pending-journal-clubs/unconfirmed/<id>.json`) rather than embedded in the confirmation email's URL, so `description`/`adminNote` can run up to 10000 characters without producing an unusably long link. It's moved into `_pending-journal-clubs/` once the requester confirms; drafts that never get confirmed are pruned by the rollcall cron (see below) after an hour.
+
 ### Rollcall (GitHub Actions)
 
 `.github/workflows/rollcall.yml` runs daily and can also be triggered manually (with a `dry_run` option) from the Actions tab. It needs these repository secrets:

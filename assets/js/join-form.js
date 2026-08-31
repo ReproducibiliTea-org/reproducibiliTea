@@ -9,6 +9,9 @@
 function geolocate(e) {
     e.preventDefault();
     document.querySelector('#geolocation-map').classList.add('active');
+    // The map is created (or recentred) only once visible — Leaflet measures
+    // a 0x0 container if initialized while display:none.
+    refreshGeolocationMap();
     return false;
 }
 

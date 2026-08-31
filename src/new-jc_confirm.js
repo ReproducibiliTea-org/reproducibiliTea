@@ -1,7 +1,7 @@
 require('dotenv').config();
 const fetch = require('node-fetch');
 const { checkData } = require('./lib/jc-validation');
-const { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses } = require('./lib/jc-integrations');
+const { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses, fetchDraft, deleteDraft } = require('./lib/jc-integrations');
 const { verifyToken, signToken } = require('./lib/tokens');
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
@@ -30,7 +30,14 @@ exports.handler = async (event) => {
         process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
     }
 
-    const data = result.payload.data;
+    const { jcid, draftId } = result.payload;
+    const draft = await fetchDraft(draftId);
+    if (!draft) {
+        console.log(JSON.stringify({ event: 'new_jc_confirm_draft_missing', jcid, draftId }));
+        return { statusCode: 404, headers: HTML_HEADERS, body: '<p>This confirmation link has already been used, or the request has expired.</p>' };
+    }
+    const data = draft.data;
+
     const check = checkData(data);
     if (check !== null) {
         return { statusCode: 400, headers: HTML_HEADERS, body: `<p>${check}</p>` };
@@ -52,7 +59,8 @@ exports.handler = async (event) => {
     results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs' });
 
     // No pending file means no review link to send: bail out rather than emailing
-    // admins a link that 404s. Also covers a confirm link being clicked twice.
+    // admins a link that 404s. Leaves the draft in place so a retry click (or the
+    // requester re-following the same link) can pick up where this left off.
     if (results.github.status !== 'Okay') {
         console.log(JSON.stringify({ event: 'new_jc_confirm_github_failed', jcid: data.jcid, githubStatus: results.github.status }));
         return {
@@ -60,6 +68,14 @@ exports.handler = async (event) => {
             headers: HTML_HEADERS,
             body: `<p>Something went wrong creating your journal club, and it has not been submitted for approval. If you have already used this confirmation link, your request is already awaiting review.</p>${formatResponses(results)}`
         };
+    }
+
+    // The draft is redundant now the pending file exists; not fatal if this fails
+    // (the rollcall cron prunes stale drafts after an hour regardless).
+    try {
+        await deleteDraft(draftId, draft.sha);
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_confirm_draft_cleanup_failed', draftId, error: e.message }));
     }
 
     const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(s => s.trim()).filter(Boolean);

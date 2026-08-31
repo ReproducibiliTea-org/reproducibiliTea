@@ -6,8 +6,11 @@ const {
   parseJournalClub,
   pickJournalClub,
   newMessageLevel,
+  isDraftStale,
   substituteHandlebars
 } = require('./rollcall-lib');
+
+const UNCONFIRMED_DRAFT_DIR = '_pending-journal-clubs/unconfirmed';
 
 const USER_AGENT = 'reproducibiliTea-rollcall';
 
@@ -51,6 +54,49 @@ async function fetchJournalClubs(repoApi, token) {
     }
   }
   return jcs;
+}
+
+async function pruneUnconfirmedDrafts(repoApi, token, dryRun) {
+  let list;
+  try {
+    const res = await githubRequest(`${repoApi}/contents/${UNCONFIRMED_DRAFT_DIR}`, token);
+    list = await res.json();
+  } catch (e) {
+    log('prune_drafts_list_failed', { error: e.message });
+    return;
+  }
+
+  for (const entry of list) {
+    if (!entry.name.endsWith('.json')) continue;
+
+    let fileRes;
+    try {
+      fileRes = await githubRequest(entry.url, token);
+    } catch (e) {
+      log('prune_drafts_fetch_failed', { path: entry.path, error: e.message });
+      continue;
+    }
+
+    const modified = new Date(fileRes.headers.get('last-modified'));
+    if (!isDraftStale(modified)) continue;
+
+    if (dryRun) {
+      log('dry_run_prune_draft', { path: entry.path });
+      continue;
+    }
+
+    try {
+      const file = await fileRes.json();
+      await githubRequest(entry.url, token, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Rollcall: pruning stale draft ${entry.name}`, sha: file.sha })
+      });
+      log('pruned_draft', { path: entry.path });
+    } catch (e) {
+      log('prune_drafts_delete_failed', { path: entry.path, error: e.message });
+    }
+  }
 }
 
 async function sendRollcallEmail(jc, level, repoApi, token, mailgunConfig, dryRun) {
@@ -136,6 +182,8 @@ async function deactivateJC(jc, repoApi, token, dryRun) {
 
 async function run({ repoApi, token, targetJcid, dryRun, mailgunConfig }) {
   log('rollcall_start', { targetJcid, dryRun });
+
+  await pruneUnconfirmedDrafts(repoApi, token, dryRun);
 
   const jcs = await fetchJournalClubs(repoApi, token);
   const jc = pickJournalClub(jcs, new Date(), targetJcid);
