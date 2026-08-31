@@ -80,7 +80,7 @@ As group sizes get towards double figures, meeting using video may become prohib
 
 We are hoping to increase communication between journal clubs and allow those without a local journal club to join the discussion! To help with this, we have set up a [shared Google Calendar](/calendar/) which shows online journal clubs around the world that are happy to have further guests join. This is a place to publicly **advertise your online journal club** and **allow others to join**.  Organisers from journal clubs can also arrange to **host online journal clubs together** to increase attendance and build relationships between neighbouring universities or institutions with different cultures and perspectives. 
 
-If you want to access the shared calendar to be able to add your events, please email us ({{ site.email }}).
+If you want to access the shared calendar to be able to add your events, please email us [{{ site.email }}](mailto:{{ site.email }}).
 
 You can also use [this page](/card/) to make simple images to share with people which will remind them of when you're meeting.
 

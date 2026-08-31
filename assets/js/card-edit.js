@@ -22,6 +22,31 @@ function saveCardPNG() {
     new Pablo(card).download('png', 'reproducibiliTea-card.png', (r) => console.log(r));
 }
 
+function shareCard() {
+    const card = document.getElementById('card-img');
+    new Pablo(card).toCanvas((canvas) => {
+        canvas.toBlob((blob) => {
+            const file = new File([blob], 'reproducibiliTea-card.png', { type: 'image/png' });
+            navigator.share({ files: [file], title: 'ReproducibiliTea' }).catch(() => {});
+        }, 'image/png');
+    });
+}
+
+function configureShareButton() {
+    const btn = document.getElementById('share-btn');
+    const label = document.getElementById('save-link');
+    const testFile = new File([''], 'card.png', { type: 'image/png' });
+    if (navigator.canShare && navigator.canShare({ files: [testFile] })) {
+        label.textContent = 'Share';
+        btn.onclick = shareCard;
+    } else {
+        label.textContent = 'Download .png';
+        btn.onclick = saveCardPNG;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', configureShareButton);
+
 function setFieldDefaults() {
     const d = new Date();
     const s = d.toString().match(/GMT[+\-][0-9]{4}/);

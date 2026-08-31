@@ -34,15 +34,30 @@ body {
 
 /* Buttons, site-wide */
 button, .mock-button {
+    border-radius: 8px;
+    cursor: pointer;
+}
+button {
     background-color: var(--color-rpt-primary);
     color: var(--color-rpt-white);
     border: none;
-    border-radius: 8px;
     padding: 0.5em 1em;
-    cursor: pointer;
 }
 button:hover {
     background-color: var(--color-rpt-secondary);
+}
+
+/* Link buttons: outlined, not filled (filled blue-on-white was hard to read) */
+.mock-button {
+    background-color: transparent;
+    color: var(--color-rpt-primary);
+    border: 2px solid var(--color-rpt-primary);
+    padding: calc(0.5em - 2px) calc(1em - 2px);
+}
+.mock-button:hover,
+.mock-button:focus {
+    background-color: var(--color-rpt-primary);
+    color: var(--color-rpt-white);
 }
 
 /* Header / footer */
@@ -75,6 +90,46 @@ footer.site-footer a,
 footer.site-footer .footer-heading,
 footer.site-footer .footer-col-wrapper {
     color: var(--color-rpt-white);
+}
+footer.site-footer .svg-icon {
+    fill: var(--color-rpt-white);
+}
+footer.site-footer .social-media-list .fa-soundcloud,
+footer.site-footer .social-media-list .fa-envelope {
+    margin-right: 5px;
+}
+footer.site-footer a:hover {
+    text-decoration: underline;
+}
+footer.site-footer .footer-author {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+/* Footer layout: mobile-first stack, grid from 600px up */
+footer.site-footer .footer-col-wrapper {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+footer.site-footer .footer-col {
+    float: none;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+footer.site-footer .footer-col-2 img {
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    footer.site-footer .footer-col-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 25px;
+        align-items: start;
+    }
 }
 .site-header .wrapper {
     display: flex;
@@ -147,15 +202,6 @@ footer.site-footer .footer-col-wrapper {
     }
 }
 
-/* Sponsors footer block */
-.sponsors {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.sponsors .thanks {
-    align-self: center;
-}
 .sponsor {
     display: grid;
     grid-template-columns: 1fr 4fr;

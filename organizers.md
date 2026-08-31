@@ -17,7 +17,7 @@ We have an [OSF page <sup><i class="fas fa-external-link-square-alt" aria-hidden
 - Our [reading lists <sup><i class="fas fa-external-link-square-alt" aria-hidden="true"></i></sup>](https://rpt-rl.netlify.app/) on many Open Research topics
 - And much much more ...
 
-Ready to get started? [Sign up your journal club](/join-reproducibiliTea.html) — the form automatically adds you to our list of journal clubs, creates you a page on the website, initialises an OSF repository for you, and invites you to the Slack workspace. Got questions first? Email us at {{ site.email }}.
+Ready to get started? [Sign up your journal club](/join-reproducibiliTea.html) — the form automatically adds you to our list of journal clubs, creates you a page on the website, initialises an OSF repository for you, and invites you to the Slack workspace. Got questions first? Email us at [{{ site.email }}](mailto:{{ site.email }}).
 
 ## Tools for organizers
 

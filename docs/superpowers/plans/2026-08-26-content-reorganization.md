@@ -411,7 +411,7 @@ We have an [OSF page <sup><i class="fas fa-external-link-square-alt" aria-hidden
 - Our [reading lists <sup><i class="fas fa-external-link-square-alt" aria-hidden="true"></i></sup>](https://rpt-rl.netlify.app/) on many Open Research topics
 - And much much more ...
 
-Ready to get started? [Sign up your journal club](/join-reproducibiliTea.html) — the form automatically adds you to our list of journal clubs, creates you a page on the website, initialises an OSF repository for you, and invites you to the Slack workspace. Got questions first? Email us at {{ site.email }}.
+Ready to get started? [Sign up your journal club](/join-reproducibiliTea.html) — the form automatically adds you to our list of journal clubs, creates you a page on the website, initialises an OSF repository for you, and invites you to the Slack workspace. Got questions first? Email us at [{{ site.email }}](mailto:{{ site.email }}).
 
 ## Tools for organizers
 
@@ -623,7 +623,7 @@ Not ready to start your own journal club, but interested in Open Research and wa
 
 ## Articles
 
-ReproducibiliTea was featured in the following articles:
+ReproducibiliTea features in the following articles:
 
 * Bochynska, A., Kalandadze, T., Korbmacher, M., Mayiwar, L., Mayor, J., & Quintana, D. (2025). **Grassroots networks can help implement and harmonize open research efforts**. Nordic Perspectives on Open Science, 10. [https://doi.org/10.7557/11.8343](https://doi.org/10.7557/11.8343)
 * Skubera, M., Korbmacher, M., Evans, T. R., Azevedo, F., & Pennington, C. R. (2025). **International initiatives to enhance awareness and uptake of open research in psychology: a systematic mapping review**. Royal Society Open Science, 12(3), 241726. [http://doi.org/10.1098/rsos.241726](http://doi.org/10.1098/rsos.241726)
