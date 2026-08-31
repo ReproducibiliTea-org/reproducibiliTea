@@ -20,7 +20,7 @@ logo: /assets/images/reproducibiliTea_logo.svg
 description: >- # this means to ignore newlines until "baseurl:"
   ReproducibiliTea - Journal Clubs for Open Research
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://reproducibilitea.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ReproducibiliT
 mastodon:
   - username: ReproducibiliTeaGlobal
@@ -34,6 +34,13 @@ youtube_username: '@reproducibilitea'
 collections:
   - journal-clubs
   - sponsors
+
+# Default social preview image for pages/posts without their own `image:` front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/reproducibiliTea_logo_social.png
 
 # Build settings
 markdown: kramdown
