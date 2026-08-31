@@ -55,13 +55,14 @@ tr td img {
     position: absolute;
     width: calc(100% - 2em);
     padding: .25em;
-    border-left: 2px solid #1756a9;
-    background-color: azure;
+    border-left: 2px solid var(--color-rpt-primary);
+    background-color: #eaf6fc;
     left: 0;
     top: 100%;
     z-index: 5;
     font-size: .9em;
     line-height: 1em;
+    border-radius: 0 var(--radius-card) var(--radius-card) 0;
 }
 
 .label-details > * {
@@ -84,7 +85,7 @@ tr td img {
 }
 
 .label-details li.hidden {
-    color: #1756a9;
+    color: var(--color-rpt-secondary);
     font-weight: bold;
 }
 
@@ -117,7 +118,7 @@ tr td img {
     height: 6em;
 }
 
-#description {
+#description, #adminNote {
     height: 10em;
 }
 
@@ -145,7 +146,7 @@ form {
 .icon {
     font-size: xx-large;
     text-align: center;
-    color: #0085d4;
+    color: var(--color-rpt-primary);
 }
 
 .demo {
@@ -274,8 +275,8 @@ ul {
     max-width: min(600px, 95%);
     margin: auto;
     padding: 1em;
-    border-radius: 1em;
-    border: .25em solid #2a7ae2;
+    border-radius: var(--radius-card);
+    border: .25em solid var(--color-rpt-primary);
     text-align: center;
 }
 
