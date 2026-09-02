@@ -24,11 +24,11 @@ country: Ireland
 geolocation:
   - 53.27922545838483
   - -9.061574935913086
-last-message-timestamp: 1780413477
+last-message-timestamp: 1788355604
 last-message-level: 0
 last-update: jen.smith@universityofgalway.ie
-last-update-timestamp: 1780413477
-last-update-message: I'm adding our final date for the summer.
+last-update-timestamp: 1788355604
+last-update-message: I need to update this year's dates.
 
 
 ---
@@ -37,10 +37,8 @@ If you're interested in open research and you're not sure where to start, or if 
 
 All of our sessions are hybrid; our physical meeting room is the Archives and Special Collections Training Room at the University of Galway. We encourage researchers from both Atlantic Technological University and University of Galway to attend in person--anyone is welcome online. Readings are listed in our calendar events.
 
-4 March 2026 (w), 13.00-14.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4399741](https://universityofgalway.libcal.com/event/4399741)
+7 October 2026 (Wed), 14.00-15.00 (UTC); registration: [https://universityofgalway.libcal.com/event/4562619](https://universityofgalway.libcal.com/event/4562619)
 
-1 April 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4399742](https://universityofgalway.libcal.com/event/4399742)
+4 November 2026 (Wed), 14:00 - 15:00; registration: [https://universityofgalway.libcal.com/event/4562622](https://universityofgalway.libcal.com/event/4562622)
 
-6 May 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4399743](https://universityofgalway.libcal.com/event/4399743)
-
-10 June 2026 (w), 13:00 - 14:00; registration: [https://universityofgalway.libcal.com/event/4541563](https://universityofgalway.libcal.com/event/4541563)
+2 December 2026 (Wed), 14:00 - 15:00; registration: [https://universityofgalway.libcal.com/event/4562623](https://universityofgalway.libcal.com/event/4562623)
