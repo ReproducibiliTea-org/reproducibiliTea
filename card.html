@@ -8,7 +8,8 @@ title:  "ReproducibiliTea Card"
 <script src="/assets/js/pablojs/pablo.min.js" type="text/javascript"></script>
 <script src="/assets/js/card-edit.js" type="text/javascript"></script>
 
-<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" id="card-img" width="600">
+<div class="card-wrap">
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" id="card-img">
     <style type="text/css">
         @font-face {
             font-family: 'FontAwesome';
@@ -56,32 +57,85 @@ title:  "ReproducibiliTea Card"
         <text id="date" x="450" y="220" class="scrawl" text-anchor="middle">Some date here</text>
     </g>
 </svg>
-
-<div class="save" onclick="saveCardPNG()">
-    <span id="save-link">Download .png</span>
+<button type="button" class="save" id="share-btn">
+    <span id="save-link">Share</span>
+</button>
 </div>
 
 <style type="text/css">
+    .card-wrap {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #card-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
     .save {
-        width: 600px;
+        display: block;
+        width: 100%;
+        margin-top: 0.75em;
         text-align: center;
-        background-color: aliceblue;
-        font-size: 1.5em;
+        background-color: var(--color-rpt-primary);
+        color: var(--color-rpt-white);
+        font-size: 1.25em;
         line-height: 2em;
         cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 0;
+        font-family: inherit;
     }
     .save:hover {
-        background-color: #70dfff;
-        color: grey;
+        background-color: var(--color-rpt-secondary);
+        color: var(--color-rpt-white);
         font-weight: bold;
     }
     .controls {
         display: flex;
-        flex-wrap: wrap;
-        width: 600px;
-        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 0.75em;
+        max-width: 600px;
+        margin: 1.5em auto 0;
+        padding: 0 0.5em;
+    }
+    .controls .row {
+        display: flex;
+        align-items: center;
+        gap: 0.75em;
+    }
+    .controls .row label {
+        flex: 0 0 auto;
+        min-width: 1.5em;
+        text-align: center;
+    }
+    .controls .row input,
+    .controls .row select {
+        flex: 1;
+        min-height: 44px;
+        min-width: 0;
+        padding: 0.4em 0.6em;
+        font-size: 1em;
+        font-family: inherit;
+        border: 1px solid var(--color-rpt-dark);
+        border-radius: 8px;
+    }
+    @media screen and (min-width: 600px) {
+        .controls {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+        .controls .row {
+            flex: 1 1 45%;
+        }
     }
 </style>
+
 <form id="card-form" class="controls" onchange="updateCard()">
     <div class="row" title="Name of the journal club hosting the session.">
         <label for="place-in">JC</label>
@@ -138,7 +192,7 @@ title:  "ReproducibiliTea Card"
     </div>
     <div class="row" title="Date the session will take place. YYYY-MM-DD">
         <label for="date-in"><i class="fas fa-calendar-alt"></i></label>
-        <input type="date" id="date-in" name="date" value="31/11/2020"/>
+        <input type="date" id="date-in" name="date" value="2020-11-30"/>
     </div>
     <div class="row" title="Twitter handle for the session organisers.">
         <label for="twitter-in"><i class="fab fa-twitter"></i></label>

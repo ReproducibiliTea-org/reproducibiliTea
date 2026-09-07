@@ -2,18 +2,18 @@
   "name": "reproducibiliTea",
   "version": "1.0.2",
   "scripts": {
+    "test": "node --test",
     "debug": "netlify dev --inspect",
     "serve": "netlify dev"
   },
   "dependencies": {
-    "mongodb": "^6.8.0",
-    "yaml": "^2.3.1"
+    "mailgun.js": "^12.5.0",
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
     "diacritic": "0.0.2",
     "dotenv": "^8.6.0",
-    "mailgun.js": "^12.5.0",
-    "netlify-cli": "^23.13.0",
+    "netlify-cli": "^23.15.1",
     "node-fetch": "^2.6.7"
   }
 }

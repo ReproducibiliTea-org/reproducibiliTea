@@ -3,6 +3,8 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .idea
+vendor/bundle
+.bundle
 src/secret.php
 .env
 node_modules
@@ -10,6 +12,9 @@ _local
 
 # Local Netlify folder
 .netlify
+
+# Superpowers brainstorming companion mockups
+.superpowers
 npm-debug.log
 # Python development virtual environment
 _local/.idea*

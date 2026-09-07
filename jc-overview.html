@@ -16,7 +16,7 @@
         <thead>
         <tr>
             {% for f in fieldList %}
-            <th>{{f}} <a onclick="sortTable('{{f}}')">&#x25B2;</a><a onclick="sortTable('{{f}}', false)">&#x25BC;</a></th>
+            <th>{{f}} <button type="button" onclick="sortTable('{{f}}')">&#x25B2;</button><button type="button" onclick="sortTable('{{f}}', false)">&#x25BC;</button></th>
             {% endfor %}
         </tr>
         </thead>

@@ -9,16 +9,16 @@ th, td {
 }
 
 tr {
-    background-color: lightskyblue;
+    background-color: #cfe9f5;
 }
 
 tr:nth-of-type(2n+1) {
-    background-color: #d7eefd;
+    background-color: #e6f4fb;
 }
 
 thead tr:first-of-type {
     background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-rpt-secondary);
 }
 
 .empty {
@@ -29,7 +29,11 @@ thead tr:first-of-type {
     background-color: red;
 }
 
-table a {
+th button {
+    border: none;
+    background: none;
+    padding: 0 2px;
+    font: inherit;
     cursor: pointer;
 }
 

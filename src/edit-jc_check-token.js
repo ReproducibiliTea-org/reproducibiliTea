@@ -1,75 +1,36 @@
-// node fetch support
 require('dotenv').config();
-const { MongoClient } = require('mongodb');
+const { verifyToken } = require('./lib/tokens');
 
-const { MONGODB_URI, MONGODB_DB } = process.env;
+const { EDIT_TOKEN_SECRET } = process.env;
 
-let {GITHUB_REPO_API} = process.env;
-
-exports.handler = function(event, context, callback) {
-    // Switch to Sandbox mode if we're on the sandbox account
-    if(/(sandbox|localhost)/.test(event.headers.referer) ||
-        event.headers.sandbox === 'true') {
-        const {GITHUB_REPO_API_SANDBOX} = process.env;
-
-        GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
+exports.handler = async function(event) {
+    if (!EDIT_TOKEN_SECRET) {
+        console.log(JSON.stringify({ event: 'check_token_misconfigured' }));
+        return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 
-    // Check input
-    console.log("event.body", event.body)
-    const data = JSON.parse(event.body);
-    if(!data.token) {
-        return callback('Authorisation token must be specified in JSON format in the request body.');
-    }
-    console.log("Checking token", data.token)
-
-    /**
-     * Establish a MongoDB connection
-     */
-    async function getDatabase() {
-        try {
-            if(!MONGODB_URI || !MONGODB_DB) {
-                const missing = !MONGODB_URI? 'MONGODB_URI' : 'MONGODB_DB';
-                const dbError = new Error(`Database connection failed: environment variable ${missing} is not configured.`);
-                dbError.isDbConnection = true;
-                throw dbError;
-            }
-            const mongo = new MongoClient(MONGODB_URI);
-            await mongo.connect();
-            return { client: mongo, collection: mongo.db(MONGODB_DB).collection('editTokens') };
-        } catch (error) {
-            const dbError = new Error(`Database connection failed: ${error.message}`);
-            dbError.isDbConnection = true;
-            throw dbError;
-        }
+    let data;
+    try {
+        data = JSON.parse(event.body);
+    } catch (e) {
+        return { statusCode: 400, body: 'Request body must be valid JSON.' };
     }
 
-    let mongoConnection;
+    if (!data || !data.token) {
+        return { statusCode: 400, body: 'Authorisation token must be specified in JSON format in the request body.' };
+    }
 
-    getDatabase()
-        .then(connection => {
-            mongoConnection = connection;
-            const { collection } = mongoConnection;
-            return collection.findOne({ token: data.token });
-        })
-        .then(doc => {
-            if(!doc)
-                throw new Error('No matching token found.');
-            if(!doc.expires || doc.expires < new Date())
-                throw new Error('The token has expired.');
-            return callback(null, {
-                statusCode: 200,
-                body: JSON.stringify(doc)
-            });
-        })
-        .catch(e => {
-            if(e.isDbConnection)
-                callback(e.message);
-            else
-                callback(e);
-        })
-        .finally(() => {
-            if(mongoConnection?.client)
-                mongoConnection.client.close();
-        });
+    const result = verifyToken(data.token, EDIT_TOKEN_SECRET);
+    if (!result.valid) {
+        console.log(JSON.stringify({ event: 'check_token_rejected', reason: result.reason }));
+        return { statusCode: 401, body: `Token invalid: ${result.reason}` };
+    }
+
+    if (result.payload.purpose !== 'edit') {
+        console.log(JSON.stringify({ event: 'check_token_rejected', reason: 'wrong_purpose' }));
+        return { statusCode: 401, body: 'Token invalid: wrong_purpose' };
+    }
+
+    console.log(JSON.stringify({ event: 'check_token_accepted', jcid: result.payload.jcid }));
+    return { statusCode: 200, body: JSON.stringify(result.payload) };
 };

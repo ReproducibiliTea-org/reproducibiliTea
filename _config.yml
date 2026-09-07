@@ -16,11 +16,11 @@
 title: ReproducibiliTea
 email: reproducibilitea@gmail.com
 github_user: mjaquiery
-logo: /assets/images/reproducibiliTea_logo.svg
+logo: /assets/images/RTea_logo_shadow.png
 description: >- # this means to ignore newlines until "baseurl:"
   ReproducibiliTea - Journal Clubs for Open Research
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://reproducibilitea.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ReproducibiliT
 mastodon:
   - username: ReproducibiliTeaGlobal
@@ -35,6 +35,13 @@ collections:
   - journal-clubs
   - sponsors
 
+# Default social preview image for pages/posts without their own `image:` front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/reproducibiliTea_logo_social.png
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -42,9 +49,6 @@ plugins:
   - jekyll-feed # rss
   - jekyll-gist # twitter
   - jekyll-email-protect # email protection vs bots
-
-APIkeys:
-  - [maps, AIzaSyDsXPnhrJW3Q__6xb9DaW5C0RalHmQsz3g] # google Maps API key
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -57,3 +61,8 @@ APIkeys:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Netlify reads _redirects from the build output. Jekyll excludes
+# underscore-prefixed files by default, so it must be explicitly included.
+include:
+  - _redirects

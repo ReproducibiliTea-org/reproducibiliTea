@@ -9,6 +9,9 @@
 function geolocate(e) {
     e.preventDefault();
     document.querySelector('#geolocation-map').classList.add('active');
+    // The map is created (or recentred) only once visible — Leaflet measures
+    // a 0x0 container if initialized while display:none.
+    refreshGeolocationMap();
     return false;
 }
 
@@ -27,20 +30,14 @@ function setGeolocation(e) {
  */
 function geolocateAddress() {
     const address = document.getElementById('post');
-    const addr = address.value.replace(/\s/g, '+');
+    const addr = encodeURIComponent(address.value);
     const input = document.getElementById('geolocation');
-    const key = document.getElementById('APIkeys').dataset.maps;
 
-    // Try to fetch the address
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${addr}&key=${key}`)
+    fetch(`https://nominatim.openstreetmap.org/search?q=${addr}&format=json&limit=1`)
         .then(r => r.json())
         .then(j => {
-            if(!j.results ||
-                !j.results[0] ||
-                !j.results[0].geometry ||
-                !j.results[0].geometry.location)
-                throw "No geometry or geometry.location in response.";
-            input.value = `${j.results[0].geometry.location.lat}, ${j.results[0].geometry.location.lng}`;
+            if (!j[0] || !j[0].lat || !j[0].lon) throw "No result from Nominatim.";
+            input.value = `${j[0].lat}, ${j[0].lon}`;
         })
         .catch(
             (err) => {
@@ -134,18 +131,6 @@ function checkForm(e, allowEmpty = false) {
             }
         });
 
-    // Mark OSFuser obsolete if OSF is complete
-    if(!window.jcEditToken) {
-        let elm = document.querySelector('#osfUser').closest('.row');
-        if(document.querySelector('#osf').value != "") {
-            elm.classList.add('obsolete');
-            elm.title = "This field is unavailable when a custom OSF repository has been supplied."
-        } else {
-            elm.classList.remove('obsolete');
-            elm.title = "";
-        }
-    }
-
     // Warn if they have 'reproducibilitea' in the name field
     let elm = form.querySelector('#name');
     if(/ReproducibiliTea/i.test(elm.value)) {
@@ -155,14 +140,6 @@ function checkForm(e, allowEmpty = false) {
     // Server-side check matching
     elm = form.querySelector('#name');
     if(!/^\s*[a-z0-9\- ]+\s*$/i.test(elm.value) && !(!elm.value && allowEmpty)) {
-        okay = false;
-        markBad(elm, "Field contains invalid characters.");
-    }
-
-    elm = form.querySelector('#osfUser');
-    if(elm && !/^\s*(?:https?:\/\/osf.io\/)?([0-9a-z]+)\/?\s*$/i.test(elm.value) &&
-        elm.value &&
-        !elm.classList.contains('obsolete')) {
         okay = false;
         markBad(elm, "Field contains invalid characters.");
     }

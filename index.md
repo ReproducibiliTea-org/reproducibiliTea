@@ -16,37 +16,59 @@ layout: default
 
 # **Welcome to ReproducibiliTea**
 
-We are a grassroots [journal club initiative](/about/) that helps researchers create local Open Research journal clubs at their universities to discuss diverse issues, papers and ideas about improving research, reproducibility and the Open Research movement. Started in early 2018 at the University of Oxford, ReproducibiliTea has now spread to {{ site.journal-clubs.size }} institutions in {{ country_count }} different countries. We are completely volunteer run, and provide a unique and supportive community for our members, who are predominantly Early Career Researchers.
+- Discuss open research practices
+- Drink tea
+- Build <a href="/about/">a community</a>
 
-Want to join the movement? Just curious for now? Grab your cup of (Reproducibili)tea and use our freely accessible and adaptable materials to [get started](/getting-started/) today.
-<a rel="me" href="https://scicomm.xyz/@ReproducibiliTeaGlobal"></a>
+<a rel="me" href="https://scicomm.xyz/@ReproducibiliTeaGlobal" aria-hidden="true" tabindex="-1"></a>
+
+## What's on?
+
+<div class="cta-buttons">
+  <a class="mock-button" href="/journal-clubs/">Find a journal club</a>
+  <a class="mock-button" href="/calendar/">Join an online session</a>
+</div>
+
+<br/>
+
+## Current Journal Clubs
 
 {% include jc-map.html %}
 
 <br/>
 
-
-# Current Journal Clubs
-
-{% include jc-showcase.html initial-value="" %}
-
-{% assign countries = countries | split: "|" | uniq | sort_natural %}
-{% for c in countries %}
-{% assign jcs = site.journal-clubs | where: "country", c %}
-{% assign jcs = jcs | sort_natural: "title" %}
-{% assign jc_count = jcs | size %}
-{% if jc_count > 0 %}
-{:.jc-list #{{c}}}
-## {{ c }} 
-{% for jc in jcs %}
-- [{{ jc.title }}](/journal-clubs/#{{ jc.title }}) ({{ jc.organisers | join: ", " }})
-{:.jc-list}
-{% endfor %}
-{% endif %}
-{% endfor %}
+{% assign updated_jc = site.journal-clubs | where_exp: "item", "item.status != 'pending'" | sort: "last-update-timestamp" | last %}
+{% assign spotlight_jc = site.journal-clubs | where_exp: "item", "item.status != 'pending'" | sample %}
+<div class="jc-teaser-grid">
+  <div class="jc-teaser-card">
+    <span class="jc-teaser-label">Recently updated</span>
+    <h4><a href="/journal-clubs/#{{ updated_jc.title }}">{{ updated_jc.title }}</a></h4>
+    <p>{{ updated_jc.host-organisation }} · {{ updated_jc.country }}</p>
+  </div>
+  <div class="jc-teaser-card">
+    <span class="jc-teaser-label">Spotlight</span>
+    <h4><a href="/journal-clubs/#{{ spotlight_jc.title }}">{{ spotlight_jc.title }}</a></h4>
+    <p>{{ spotlight_jc.host-organisation }} · {{ spotlight_jc.country }}</p>
+  </div>
+</div>
+<a class="mock-button" href="/journal-clubs/">Browse all journal clubs</a>
 
 <br/>
 
-# Podcast
+## Podcast
+
+Not ready to start your own journal club, but interested in Open Research and want to learn more? We also release ReproducibiliTea podcast episodes that highlight the great work of early career researchers in Open Research.
 
 {% include podcast.html %}
+
+<br/>
+
+## Articles
+
+ReproducibiliTea features in the following articles:
+
+* Bochynska, A., Kalandadze, T., Korbmacher, M., Mayiwar, L., Mayor, J., & Quintana, D. (2025). **Grassroots networks can help implement and harmonize open research efforts**. Nordic Perspectives on Open Science, 10. [https://doi.org/10.7557/11.8343](https://doi.org/10.7557/11.8343)
+* Skubera, M., Korbmacher, M., Evans, T. R., Azevedo, F., & Pennington, C. R. (2025). **International initiatives to enhance awareness and uptake of open research in psychology: a systematic mapping review**. Royal Society Open Science, 12(3), 241726. [http://doi.org/10.1098/rsos.241726](http://doi.org/10.1098/rsos.241726)
+* Vinatier, C., Kozula, M., Van den Eynden, V., Caquelin, L., Roubik, H., Stegeman, I., & Naudet, F. (2024). **Public engagement with research reproducibility**. PLoS biology, 22(12), e3002953. [https://doi.org/10.1371/journal.pbio.3002953](https://doi.org/10.1371/journal.pbio.3002953)
+
+[See all associated publications](/publications/)

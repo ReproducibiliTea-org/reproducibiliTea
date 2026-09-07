@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
-{% include keys.html %}
 <link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
 <script type="text/javascript" src="/assets/js/join-form.js"></script>
 
 <article id="signupForm">
+    <h1>Start a New Journal Club</h1>
     <section id="joinWelcome">
-        <h1>1<span class="fade">/3</span> Welcome</h1>
+        <h2>1<span class="fade">/3</span> Welcome</h2>
 
-        <p>Use this form to create a new <strong>ReproducibiliTea</strong> journal club. We assume you are here after consulting our steering committee, and are ready to take on the exciting challenge of running your own journal club. Once you complete the form on this page, we'll automatically add you to our list of journal clubs, create you a page on the website, initialise an OSF repository for you, and invite you to the Slack workspace.</p>
+        <p>Use this form to create a new <strong>ReproducibiliTea</strong> journal club. Once you complete the form on this page, we'll email you a confirmation link; after you confirm, our steering committee reviews the request and your journal club goes live on the website, in the Zotero library, and the Slack workspace.</p>
         <p class="jump"><a href="#joinSetup"><i class="fas fa-chevron-down"></i> Get ready <i class="fas fa-chevron-down"></i></a></p>
 
     </section>
     <div class="margin"></div>
     <section id="joinSetup">
-        <h1><a href="#joinWelcome"><i class="fas fa-level-up-alt fa-flip-horizontal"></i></a> 2<span class="fade">/3</span> Get ready</h1>
+        <h2><a href="#joinWelcome"><i class="fas fa-level-up-alt fa-flip-horizontal"></i></a> 2<span class="fade">/3</span> Get ready</h2>
 
         <p>To get the most out of your ReproducibiliTea club you will probably want to have accounts with the key platforms we use. The form you will fill out in Step 3 will automatically link your accounts on these platforms to our resources.</p>
         <table class="platforms">
@@ -33,9 +33,7 @@ layout: default
                         OSF <sup><i class="fas fa-external-link-square-alt"></i></sup></a>
                 </td>
                 <td>
-                    <p>The Open Science Framework (OSF) provides storage for various kinds of files. We have a main <a href="https://osf.io/3qrj6/" target="_blank">ReproducibiliTea project <sup><i class="fas fa-external-link-square-alt"></i></sup></a> and each of the journal clubs have their own repository within it.</p>
-                    <p> We will create a repository for your journal club automatically and make you the repository admin. You can then manage it as you see fit. But to do this we will need your OSF profile ID (a few letters and numbers looking like '3qrj6') so you will need to have <a href="https://osf.io/register" target="_blank">created an OSF account <sup><i class="fas fa-external-link-square-alt"></i></sup></a></strong> and know your profile ID . Don't worry if you can't find your ID now, we'll explain how to find it in Step 3.</p>
-
+                    <p>The Open Science Framework (OSF) provides storage for various kinds of files. We have a main <a href="https://osf.io/3qrj6/" target="_blank">ReproducibiliTea project <sup><i class="fas fa-external-link-square-alt"></i></sup></a>. If your journal club already has (or wants) its own OSF repository, you can link it in Step 3 — we no longer create one automatically.</p>
                 </td>
             </tr>
             <tr>
@@ -68,7 +66,7 @@ layout: default
     </section>
     <div class="margin"></div>
     <section id="joinForm">
-        <h1><a href="#joinSetup"><i class="fas fa-level-up-alt fa-flip-horizontal"></i></a> 3<span class="fade">/3</span> Sign up</h1>
+        <h2><a href="#joinSetup"><i class="fas fa-level-up-alt fa-flip-horizontal"></i></a> 3<span class="fade">/3</span> Sign up</h2>
 
         <form id="newJC" onchange="checkForm(event, true)">
             <fieldset class="JC-details">
@@ -484,6 +482,20 @@ University of Academia" onchange="geolocateAddress()"></textarea>
 
 You might want to describe what you hope to achieve, how often you plan to meet, which disciplines you are planning to cater for, etc."></textarea>
                 </div>
+
+                <div class="row" id="adminNoteRow">
+                    <div class="labels">
+                        <label for="adminNote">Anything you'd like to tell us?</label>
+                        <div class="label-details">
+                            <p>This is your chance to introduce yourselves to the ReproducibiliTea team, or mention anything relevant to your application — we read every one!</p>
+                            <ul>
+                                <li class="private">This is only seen by our review team. It will not be published anywhere.</li>
+                                <li class="is-mandatory">This field is optional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <textarea id="adminNote" name="adminNote" placeholder="e.g. a bit about your group, why you're starting a journal club, or anything else you'd like us to know."></textarea>
+                </div>
             </fieldset>
 
             <fieldset class="JC-organisers">
@@ -524,21 +536,6 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                     </div>
                 </div>
 
-                <div class="row" id="osfUserRow">
-                    <div class="labels">
-                        <label for="osfUser">Lead organiser <a href="https://osf.io/">OSF</a> id</label>
-                        <div class="label-details">
-                            <p>This is the OSF id for the organiser we'll add as a contributor on the OSF page we'll create for your JC.</p>
-                            <p>You can find your OSF id by logging in and going to your profile (click the menu in the top-right, and select '<strong>profile</strong>'), then choosing '<strong>public profile</strong>'. The second part of that URL, after the osf.io/, is your OSF id.</p>
-                            <ul>
-                                <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
-                                <li class="is-mandatory">This field is optional.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input type="text" id="osfUser" name="osfUser" placeholder="a9b2z" />
-                </div>
-
                 <div class="row" id="zoteroUserRow">
                     <div class="labels">
                         <label for="zoteroUser">Lead organiser <a href="https://zotero.org/">Zotero</a> API id</label>
@@ -558,20 +555,6 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
             <fieldset class="submission">
                 <legend>Final checks</legend>
-                <div id="AuthCodeRow" class="row mandatory">
-                    <div class="labels">
-                        <label for="authCode">Authorization code</label>
-                        <div class="label-details">
-                            <p>To prevent just anyone spamming this form with new JC requests, we need you to submit the password given to you by one of the core ReproducibiliTea team.</p>
-                            <ul>
-                                <li class="private">This will only be used for adding you as a contributor. It will not be saved.</li>
-                                <li class="is-mandatory">This field is required.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input type="text" id="authCode" name="authCode" placeholder="????????" />
-                </div>
-
                 <div class="row mandatory">
                     <button onclick="submitForm(event)">Activate JC!</button>
                 </div>
@@ -739,10 +722,10 @@ You might want to describe what you hope to achieve, how often you plan to meet,
                 }
             }
         }
-        // Remove the unneeded fields
-        document.getElementById('AuthCodeRow').remove();
-        document.getElementById('osfUserRow').remove();
+        // Remove the unneeded fields (edits don't go through admin review, so
+        // there's no one for this note to reach)
         document.getElementById('zoteroUserRow').remove();
+        document.getElementById('adminNoteRow').remove();
         document.querySelector('.submission button').innerHTML = "Commit changes";
         // Remove unnecessary sections
         document.getElementById('signupForm').classList.add('edit');
@@ -759,50 +742,52 @@ You might want to describe what you hope to achieve, how often you plan to meet,
 
 <article id="geolocation-map">
     <h2>Drag the marker to position your Journal Club (you can zoom in!)</h2>
-    <div id="geolocation-map-display"></div>
+    <div id="geolocation-map-display" style="height: 400px"></div>
     <div class="geolocation-map-controls"><button onclick="setGeolocation(event)"><i class="fas fa-map-marker-alt"></i> Use location</button></div>
-    <script id="mapAPIsource"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        {% assign key = site.APIkeys | where_exp: "k", "k[0] == 'maps'" %}
-        let key = "{{ key[0][1] }}";
-        document.getElementById('mapAPIsource').src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initialize`;
-
-        let map;
+        let pickerMap;
         let endMarker;
-        const input = document.getElementById("geolocation");
 
-        function initialize() {
-            map = new google.maps.Map(
-                document.getElementById("geolocation-map-display"),
-                {
-                    zoom: 1,
-                    center: {lat: 0, lng: 0}
-                }
-                );
-
+        // Called every time the map is opened (from join-form.js's geolocate()),
+        // not just once at page load: the map article is display:none until then,
+        // so a Leaflet map created earlier would measure a 0x0 container and
+        // never reflect address changes made after that first render.
+        function refreshGeolocationMap() {
+            const input = document.getElementById("geolocation");
             const existing = input.value;
-            let position = map.getCenter();
-            if(existing) {
+            let position = [20, 0];
+            let zoom = 2;
+            if (existing) {
                 const parse = existing.split(',');
-                position = {lat: parseFloat(parse[0]), lng: parseFloat(parse[1])};
+                position = [parseFloat(parse[0]), parseFloat(parse[1])];
+                zoom = 10;
             }
 
-            // create the marker
-            endMarker = new google.maps.Marker({
-                position,
-                map: map,
-                draggable: true,
-            });
+            if (!pickerMap) {
+                pickerMap = L.map('geolocation-map-display', { center: position, zoom });
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 18
+                }).addTo(pickerMap);
 
-            // add an event "onDrag"
-            google.maps.event.addListener(endMarker, 'dragend', function() {
-                copyMarkerpositionToInput();
-            });
+                endMarker = L.marker(position, { draggable: true }).addTo(pickerMap);
+                endMarker.on('dragend', copyMarkerpositionToInput);
+            } else {
+                endMarker.setLatLng(position);
+            }
+
+            // Recalculate the container size now that it's actually visible,
+            // then recentre now that we know it.
+            pickerMap.invalidateSize();
+            pickerMap.setView(position, zoom);
         }
 
         function copyMarkerpositionToInput() {
-            // get the position of the marker, and set it as the value of input
-            input.value = endMarker.getPosition().lat() +','+  endMarker.getPosition().lng();
+            const pos = endMarker.getLatLng();
+            document.getElementById("geolocation").value = pos.lat + ',' + pos.lng;
         }
     </script>
 </article>

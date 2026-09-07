@@ -1,0 +1,65 @@
+<div class="jc-table-wrap">
+    <table id="jcTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Host organisation</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign clubs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" | sort_natural: "title" %}
+            {% for jc in clubs %}
+            <tr tabindex="0"
+                data-jc-title="{{ jc.title | escape }}"
+                data-search="{{ jc.title | append: ' ' | append: jc.host-organisation | append: ' ' | append: jc.country | downcase | escape }}">
+                <td>{{ jc.title }}</td>
+                <td>{{ jc.host-organisation }}</td>
+                <td>{{ jc.country }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    (function () {
+        const jcSearch = document.getElementById('jcSearch');
+        const table = document.getElementById('jcTable');
+        if (!table) return;
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+
+        if (jcSearch) {
+            jcSearch.addEventListener('input', () => {
+                const query = jcSearch.value.trim().toLowerCase();
+                rows.forEach((row) => {
+                    const matches = !query || (row.dataset.search || '').includes(query);
+                    row.hidden = !matches;
+                });
+            });
+
+            jcSearch.addEventListener('change', () => {
+                const title = jcSearch.value;
+                rows.forEach((row) => {
+                    row.classList.toggle('jc-table-row--selected', row.dataset.jcTitle === title);
+                });
+            });
+        }
+
+        const selectRow = (row) => {
+            if (!jcSearch) return;
+            jcSearch.value = row.dataset.jcTitle;
+            jcSearch.dispatchEvent(new Event('change'));
+        };
+
+        rows.forEach((row) => {
+            row.addEventListener('click', () => selectRow(row));
+            row.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    selectRow(row);
+                }
+            });
+        });
+    })();
+</script>

@@ -16,26 +16,22 @@
             </div>
 
             <div class="footer-col footer-col-3">
+                {%- if site.author -%}
+                <p class="p-name footer-author">{{ site.author | escape }}</p>
+                {%- endif -%}
                 {%- include social.html -%}
-                <ul class="contact-list">
-                    <li class="p-name">
-                        {%- if site.author -%}
-                        {{ site.author | escape }}
-                        {%- endif -%}
-                    </li>
-                    {%- if site.email -%}
-                    <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                    {%- endif -%}
-                </ul>
             </div>
 
-            <div class="footer-col sponsors">
-                <div class="logo">
-                    <a href="https://ukrn.org/" title="United Kingdom Reproducibility Network"><img alt="UKRN logo" src="/assets/images/UKRN-logo.jpeg"/></a>
-                </div>
-                <div class="thanks">
-                    <p>We are grateful for the support of the <a href="https://ukrn.org/" title="United Kingdom Reproducibility Network">UKRN <sup><i class="fas fa-external-link-square-alt"></i></sup></a>.</p>
-                </div>
+            <div class="footer-col footer-col-links">
+                <ul class="contact-list">
+                    <li><a href="/code-of-conduct/">Code of Conduct</a></li>
+                    <li><a href="https://www.redbubble.com/people/rptea/works/62022837?asc=u" target="_blank">Merchandise <sup><i class="fas fa-external-link-square-alt" aria-hidden="true"></i></sup></a></li>
+                    <li><a href="https://osf.io/3qrj6/" target="_blank">OSF Repository <sup><i class="fas fa-external-link-square-alt" aria-hidden="true"></i></sup></a></li>
+                    <li style="padding-top: 1em"><a href="https://www.rse.ox.ac.uk/" target="_blank">
+                        <img src="assets/images/sponsors/oxrse_logo.svg" alt="Oxford Research Software Engineering" style="width: 10em;"/><br/>
+                        Sponsored by Oxford RSE <sup><i class="fas fa-external-link-square-alt" aria-hidden="true"></i></sup>
+                    </a></li>
+                </ul>
             </div>
         </div>
 
