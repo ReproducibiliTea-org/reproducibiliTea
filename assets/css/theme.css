@@ -71,7 +71,6 @@ header.site-header .site-nav .page-link {
     color: var(--color-rpt-white);
 }
 .site-logo {
-    background-color: var(--color-rpt-white);
     padding: 4px 12px;
 }
 header.site-header .nav-dropdown[open] > summary {
