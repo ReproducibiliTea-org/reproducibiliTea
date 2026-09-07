@@ -8,9 +8,9 @@ title:  "Collaborations"
 
 We are working to strengthen the collaborations between ReproducibiliTea clubs via four avenues:
 * *Slack channel* - a space to connect all of us globally (local organizers participate by posting in Slack, engaging with or proposing new materials, or joining global online meetups)
-* *Speaker Swap* - a program to connect journal clubs that look for speakers for their events with speakers
+* [*Speaker Swap*](/speaker-swap/) - a program to connect journal clubs that look for speakers for their events with speakers
 * *ReproducibiliTea Collaborations* - a framework to connect journal clubs and individual people from ReproducibiliTea community that are open to collaboration 
-* [*Special Interest Groups (SIGs)*](https://reproducibilitea.org/special-interest-groups) (in preparation)
+* [*Special Interest Groups (SIGs)*](/special-interest-groups/) (in preparation)
 <br><br>
 
 
