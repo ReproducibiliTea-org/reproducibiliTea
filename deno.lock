@@ -14,10 +14,9 @@
         "npm:diacritic@0.0.2",
         "npm:dotenv@^8.6.0",
         "npm:mailgun.js@^12.5.0",
-        "npm:mongodb@^6.8.0",
-        "npm:netlify-cli@^23.13.0",
+        "npm:netlify-cli@^23.15.1",
         "npm:node-fetch@^2.6.7",
-        "npm:yaml@^2.3.1"
+        "npm:yaml@^2.8.3"
       ]
     }
   }
