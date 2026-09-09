@@ -26,8 +26,8 @@ country: Australia
 geolocation:
   - -34.91934071478952
   - 138.60435247421265
-last-message-timestamp: 1745979473
-last-message-level: 0
+last-message-timestamp: 1788934593
+last-message-level: 1
 last-update: william.ngiam@adelaide.edu.au
 last-update-timestamp: 1745979473
 last-update-message: Edit organisers.
