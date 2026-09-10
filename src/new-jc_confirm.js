@@ -89,9 +89,9 @@ exports.handler = async (event) => {
         console.log(JSON.stringify({ event: 'new_jc_confirm_draft_cleanup_failed', draftId, error: e.message }));
     }
 
-    await notifyContacts(data);
-
     const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(s => s.trim()).filter(Boolean);
+    await notifyContacts(data, adminEmails);
+
     const approveToken = signToken({ purpose: 'admin-approve', jcid: data.jcid, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: APPROVE_TOKEN_TTL_MS });
     results.adminNotification = await notifyAdmins({
         data,
@@ -134,9 +134,11 @@ exports.handler = async (event) => {
  * before that happens. Best-effort — failure here doesn't block confirmation,
  * the pending file already exists.
  * @param data {object} cleaned JC data
+ * @param adminEmails {string[]} admin addresses, offered as opt-out mailto links
  */
-async function notifyContacts(data) {
+async function notifyContacts(data, adminEmails) {
     if (!data.emails || !data.emails.length) return;
+    const objectLinks = adminEmails.map(e => `<a href="mailto:${escapeHtml(e)}">${escapeHtml(e)}</a>`).join(', ');
     try {
         await sendEmail({
             apiKey: process.env.MAILGUN_API_KEY,
@@ -146,7 +148,7 @@ async function notifyContacts(data) {
             subject: `You've been listed as a contact for a ReproducibiliTea journal club: ${data.name}`,
             html: `
 <p>${escapeHtml(data.lead)} has listed you as an organiser/contact for the ReproducibiliTea journal club "<strong>${escapeHtml(data.name)}</strong>".</p>
-<p>Your email address will become publicly visible on our website once this journal club is approved by our steering committee. If you'd rather it wasn't, please email <a href="mailto:${escapeHtml(process.env.EMAIL_REPORT_TO || '')}">${escapeHtml(process.env.EMAIL_REPORT_TO || '')}</a> before then.</p>
+<p>Your email address will become publicly visible on our website once this journal club is approved by our steering committee. If you'd rather it wasn't, please email ${objectLinks} before then.</p>
             `
         });
     } catch (e) {

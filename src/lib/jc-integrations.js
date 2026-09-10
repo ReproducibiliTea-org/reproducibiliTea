@@ -257,9 +257,7 @@ async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunC
 <p>A new ReproducibiliTea journal club is awaiting review: <strong>${escapeHtml(data.name)}</strong>.</p>
 <p><a href="${reviewUrl}">Review ${escapeHtml(data.name)}</a> (link expires in 14 days)</p>
 ${noteSection}
-<h1>Creation report</h1>
-${formatResponses(results)}
-<h2>Generated JC.md file</h2>
+<h2>${escapeHtml(data.jcid)}.md</h2>
 <pre>${escapeHtml(results.github?.githubFile || '')}</pre>
             `
         });
