@@ -187,6 +187,11 @@ async function callGitHub(data, results, opts = {}) {
         'host-org-url': data.uniWWW,
         osf: results?.osf?.osfRepoId ?? data.osf ?? '',
         zotero: results?.zotero?.zoteroCollectionId ?? '',
+        // Slack/Zotero collection creation now happen at admin-approval time, not
+        // here — the pending file carries zoteroUser through so doApprove can
+        // still add the organiser to the Zotero group. Stripped before the file
+        // goes public (see doApprove in new-jc_approve.js).
+        ...(dir === '_pending-journal-clubs' ? { 'zotero-user': data.zoteroUser || '' } : {}),
         website: data.www,
         twitter: data.twitter,
         signup: data.signup,

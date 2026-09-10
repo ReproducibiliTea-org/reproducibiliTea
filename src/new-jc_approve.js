@@ -6,6 +6,7 @@ const { sendEmail } = require('./lib/mailer');
 const { escapeHtml } = require('./lib/html-escape');
 const { logMisconfigured } = require('./lib/env-diagnostics');
 const { repoConfig } = require('./lib/github-repos');
+const { callSlack, callZotero, formatResponses } = require('./lib/jc-integrations');
 
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
@@ -112,7 +113,17 @@ async function deleteFile(path, sha, message, target = 'public') {
 
 async function doApprove(jcid, file, message) {
     const to = [file.frontmatter.contact, ...(file.frontmatter['additional-contact'] || [])].filter(Boolean);
-    const activeBody = file.body.replace(/^ignored: true\n/m, '');
+
+    // Slack invite + Zotero collection creation happen now, at approval, not at
+    // confirm time — a pending request that's rejected or ignored never touches
+    // either. `zotero-user` only ever lived on the pending file to carry this
+    // through; it's stripped before the file goes public.
+    const jcData = { name: file.frontmatter.title, zoteroUser: file.frontmatter['zotero-user'] || '' };
+    const [slack, zotero] = await Promise.all([callSlack(jcData), callZotero(jcData)]);
+
+    const activeBody = file.body
+        .replace(/^ignored: true\n/m, '')
+        .replace(/^zotero-user:.*\n/m, '');
     try {
         await putFile(`${ACTIVE_DIR}/${jcid}.md`, activeBody, null, `Approve ${jcid}.md`, 'public');
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`, 'pending');
@@ -127,14 +138,14 @@ async function doApprove(jcid, file, message) {
             apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
             to: to.join(', '), bcc: process.env.EMAIL_REPORT_TO,
             subject: `Your ReproducibiliTea journal club has been approved: ${file.frontmatter.title}`,
-            html: `<p>Good news — <strong>${escapeHtml(file.frontmatter.title)}</strong> has been approved and is now live.</p>${message ? `<p>${escapeHtml(message)}</p>` : ''}`
+            html: `<p>Good news — <strong>${escapeHtml(file.frontmatter.title)}</strong> has been approved and is now live.</p>${message ? `<p>${escapeHtml(message)}</p>` : ''}${formatResponses({ slack, zotero })}`
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_notify_failed', jcid, error: e.message }));
         return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
     }
 
-    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live.</p>` };
+    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live.</p>${formatResponses({ slack, zotero })}` };
 }
 
 async function doReject(jcid, file, message) {

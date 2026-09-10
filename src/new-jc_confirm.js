@@ -1,27 +1,35 @@
 require('dotenv').config();
 const fetch = require('node-fetch');
 const { checkData } = require('./lib/jc-validation');
-const { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses, fetchDraft, deleteDraft } = require('./lib/jc-integrations');
+const { callGitHub, notifyAdmins, fetchDraft, deleteDraft } = require('./lib/jc-integrations');
 const { verifyToken, signToken } = require('./lib/tokens');
 const { logMisconfigured } = require('./lib/env-diagnostics');
+const { sendEmail } = require('./lib/mailer');
+const { escapeHtml } = require('./lib/html-escape');
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
-const HTML_HEADERS = { 'Content-Type': 'text/html' };
+const STATUS_PAGE = 'https://reproducibiliTea.org/jc-request-status.html';
+
+// This whole handler only ever runs from a browser following an emailed link,
+// so every outcome sends the visitor to a real site page instead of rendering
+// a bare HTML fragment directly.
+function redirect(status, params = {}) {
+    const query = new URLSearchParams({ status, ...params });
+    return { statusCode: 302, headers: { Location: `${STATUS_PAGE}?${query.toString()}` } };
+}
 
 exports.handler = async (event) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
         logMisconfigured('new_jc_confirm_misconfigured');
-        return { statusCode: 500, body: 'Server misconfiguration.' };
+        return redirect('server-error');
     }
 
     const token = event.queryStringParameters?.token;
-    if (!token) {
-        return { statusCode: 400, headers: HTML_HEADERS, body: '<p>Missing confirmation token.</p>' };
-    }
+    if (!token) return redirect('missing-token');
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
     if (!result.valid || result.payload.purpose !== 'creation-confirm') {
-        return { statusCode: 401, headers: HTML_HEADERS, body: `<p>Confirmation link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
+        return redirect('invalid-token', { reason: result.reason || 'wrong purpose' });
     }
 
     // This link is clicked from an email, so there is no usable referer — the
@@ -36,28 +44,26 @@ exports.handler = async (event) => {
     const draft = await fetchDraft(draftId);
     if (!draft) {
         console.log(JSON.stringify({ event: 'new_jc_confirm_draft_missing', jcid, draftId }));
-        return { statusCode: 404, headers: HTML_HEADERS, body: '<p>This confirmation link has already been used, or the request has expired.</p>' };
+        return redirect('already-used', { jcid });
     }
     const data = draft.data;
 
     const check = checkData(data);
     if (check !== null) {
-        return { statusCode: 400, headers: HTML_HEADERS, body: `<p>${check}</p>` };
+        return redirect('invalid', { jcid: data.jcid, reason: check });
     }
 
-    // Reject a jcid that is already live before anything with side effects runs
-    // (callZotero creates a collection), and before a pending file is written.
+    // Reject a jcid that is already live before anything with side effects runs,
+    // and before a pending file is written.
     if (await liveJcExists(data.jcid)) {
         console.log(JSON.stringify({ event: 'new_jc_confirm_jcid_collision', jcid: data.jcid }));
-        return {
-            statusCode: 400,
-            headers: HTML_HEADERS,
-            body: `<p>The journal club id "${data.jcid}" is already in use by a live ReproducibiliTea journal club. Please resubmit the form with a different id.</p>`
-        };
+        return redirect('jcid-taken', { jcid: data.jcid });
     }
 
-    const [slack, zotero] = await Promise.all([callSlack(data), callZotero(data)]);
-    const results = { slack, zotero };
+    // Only the pending-repo commit happens here. Slack/Zotero/the public
+    // journal-clubs entry are all admin-approval side effects now (see
+    // doApprove in new-jc_approve.js) — nothing here is public or reversible.
+    const results = {};
     results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs', target: 'pending' });
 
     // No pending file means no review link to send: bail out rather than emailing
@@ -65,11 +71,7 @@ exports.handler = async (event) => {
     // requester re-following the same link) can pick up where this left off.
     if (results.github.status !== 'Okay') {
         console.log(JSON.stringify({ event: 'new_jc_confirm_github_failed', jcid: data.jcid, githubStatus: results.github.status }));
-        return {
-            statusCode: 500,
-            headers: HTML_HEADERS,
-            body: `<p>Something went wrong creating your journal club, and it has not been submitted for approval. If you have already used this confirmation link, your request is already awaiting review.</p>${formatResponses(results)}`
-        };
+        return redirect('github-failed', { jcid: data.jcid });
     }
 
     // The draft is redundant now the pending file exists; not fatal if this fails
@@ -79,6 +81,8 @@ exports.handler = async (event) => {
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_confirm_draft_cleanup_failed', draftId, error: e.message }));
     }
+
+    await notifyContacts(data);
 
     const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(s => s.trim()).filter(Boolean);
     const approveToken = signToken({ purpose: 'admin-approve', jcid: data.jcid, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: APPROVE_TOKEN_TTL_MS });
@@ -90,9 +94,39 @@ exports.handler = async (event) => {
         mailgunConfig: { apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, fromEmail: process.env.FROM_EMAIL_ADDRESS }
     });
 
-    console.log(JSON.stringify({ event: 'new_jc_confirmed', jcid: data.jcid, githubStatus: results.github.status }));
-    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>Thanks! Your journal club has been submitted for approval.</p>${formatResponses(results)}` };
+    console.log(JSON.stringify({ event: 'new_jc_confirmed', jcid: data.jcid, githubStatus: results.github.status, adminNotified: results.adminNotification.status === 'Okay' }));
+
+    if (results.adminNotification.status !== 'Okay') {
+        return redirect('ok', { jcid: data.jcid, adminNotifyFailed: '1', reportEmail: process.env.EMAIL_REPORT_TO || '' });
+    }
+    return redirect('ok', { jcid: data.jcid });
 };
+
+/**
+ * Let-them-know email to any additional contacts listed on the submission:
+ * their address becomes public once an admin approves, with a way to opt out
+ * before that happens. Best-effort — failure here doesn't block confirmation,
+ * the pending file already exists.
+ * @param data {object} cleaned JC data
+ */
+async function notifyContacts(data) {
+    if (!data.emails || !data.emails.length) return;
+    try {
+        await sendEmail({
+            apiKey: process.env.MAILGUN_API_KEY,
+            domain: process.env.MAILGUN_DOMAIN,
+            from: process.env.FROM_EMAIL_ADDRESS,
+            to: data.emails.join(', '),
+            subject: `You've been listed as a contact for a ReproducibiliTea journal club: ${data.name}`,
+            html: `
+<p>${escapeHtml(data.lead)} has listed you as an organiser/contact for the ReproducibiliTea journal club "<strong>${escapeHtml(data.name)}</strong>".</p>
+<p>Your email address will become publicly visible on our website once this journal club is approved by our steering committee. If you'd rather it wasn't, please email <a href="mailto:${escapeHtml(process.env.EMAIL_REPORT_TO || '')}">${escapeHtml(process.env.EMAIL_REPORT_TO || '')}</a> before then.</p>
+            `
+        });
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_confirm_contact_notify_failed', jcid: data.jcid, error: e.message }));
+    }
+}
 
 /** @return {Promise<boolean>} whether `_journal-clubs/<jcid>.md` already exists */
 async function liveJcExists(jcid) {

@@ -1,0 +1,90 @@
+---
+layout: default
+title: Journal club request
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+
+<article>
+    <section id="RequestStatus">
+        <h1>Journal club request</h1>
+        <div id="StatusMessage"></div>
+        <p><a href="/journal-clubs/">&larr; Back to journal clubs</a></p>
+    </section>
+</article>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const jcid = params.get('jcid') || '';
+    const reportEmail = params.get('reportEmail') || '';
+    const reason = params.get('reason') || '';
+
+    const MESSAGES = {
+        'ok': {
+            level: 'okay',
+            title: 'Submitted for review',
+            text: `Thanks! Your journal club request has been submitted for approval. Our steering committee will be in touch once it's been reviewed.`
+        },
+        'missing-token': {
+            level: 'error',
+            title: 'Missing confirmation link',
+            text: `This link is missing its confirmation token. Please use the full link from your confirmation email.`
+        },
+        'invalid-token': {
+            level: 'error',
+            title: 'Link invalid or expired',
+            text: `This confirmation link is invalid or has expired. Please submit the journal club form again to get a new one.`
+        },
+        'already-used': {
+            level: 'warning',
+            title: 'Already confirmed',
+            text: `This confirmation link has already been used, or your request has expired. If you've already confirmed, your request is awaiting review.`
+        },
+        'invalid': {
+            level: 'error',
+            title: 'Problem with your submission',
+            text: `There was a problem with your submitted details${reason ? `: ${reason}` : '.'} Please submit the journal club form again.`
+        },
+        'jcid-taken': {
+            level: 'error',
+            title: 'Journal club id already in use',
+            text: `The journal club id "${jcid}" is already in use by a live ReproducibiliTea journal club. Please resubmit the form with a different id.`
+        },
+        'github-failed': {
+            level: 'error',
+            title: 'Something went wrong',
+            text: `Something went wrong creating your journal club, and it has not been submitted for approval. If you've already used this confirmation link, your request is already awaiting review.`
+        },
+        'server-error': {
+            level: 'error',
+            title: 'Something went wrong',
+            text: `Something went wrong on our end. Please try again shortly, or email us if the problem persists.`
+        }
+    };
+
+    const status = params.get('status') || '';
+    const info = MESSAGES[status] || {
+        level: 'error',
+        title: 'Unknown status',
+        text: `We couldn't recognise this confirmation link.`
+    };
+
+    const container = document.getElementById('StatusMessage');
+    const wrapper = document.createElement('div');
+    wrapper.className = info.level;
+
+    const heading = document.createElement('h2');
+    heading.textContent = info.title;
+    wrapper.appendChild(heading);
+
+    const body = document.createElement('p');
+    body.textContent = info.text;
+    wrapper.appendChild(body);
+
+    if (status === 'ok' && params.get('adminNotifyFailed') === '1' && reportEmail) {
+        const notice = document.createElement('p');
+        notice.textContent = `We couldn't notify our review team automatically — please email ${reportEmail} so a human knows to take a look.`;
+        wrapper.appendChild(notice);
+    }
+
+    container.appendChild(wrapper);
+</script>
