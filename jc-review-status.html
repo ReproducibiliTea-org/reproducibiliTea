@@ -1,0 +1,99 @@
+---
+layout: default
+title: Journal club review
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+
+<article>
+    <section id="ReviewStatus">
+        <h1>Journal club review</h1>
+        <div id="StatusMessage"></div>
+    </section>
+</article>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const jcid = params.get('jcid') || '';
+    const title = params.get('title') || jcid;
+    const reason = params.get('reason') || '';
+
+    const MESSAGES = {
+        'approved': {
+            level: 'okay',
+            title: 'Approved',
+            text: `"${title}" has been approved and is now live.`
+        },
+        'rejected': {
+            level: 'okay',
+            title: 'Rejected',
+            text: `"${title}" has been rejected.`
+        },
+        'ignored': {
+            level: 'okay',
+            title: 'Ignored',
+            text: `"${title}" has been marked ignored. No email was sent to the requester.`
+        },
+        'missing-token': {
+            level: 'error',
+            title: 'Missing review link',
+            text: `This link is missing its review token. Please use the full link from your notification email.`
+        },
+        'invalid-token': {
+            level: 'error',
+            title: 'Link invalid or expired',
+            text: `This review link is invalid or has expired${reason ? `: ${reason}` : '.'}`
+        },
+        'unknown-action': {
+            level: 'error',
+            title: 'Unknown action',
+            text: `That wasn't a recognised review action.`
+        },
+        'approve-failed': {
+            level: 'error',
+            title: 'Could not approve',
+            text: `Something went wrong approving "${title}"${reason ? `: ${reason}` : '.'} It has not been published.`
+        },
+        'reject-failed': {
+            level: 'error',
+            title: 'Could not reject',
+            text: `Something went wrong rejecting "${title}"${reason ? `: ${reason}` : '.'}`
+        },
+        'ignore-failed': {
+            level: 'error',
+            title: 'Could not ignore',
+            text: `Something went wrong ignoring "${title}"${reason ? `: ${reason}` : '.'}`
+        },
+        'server-error': {
+            level: 'error',
+            title: 'Something went wrong',
+            text: `Something went wrong on our end checking this request. Please try again shortly, or email us if the problem persists.`
+        }
+    };
+
+    const status = params.get('status') || '';
+    const info = MESSAGES[status] || {
+        level: 'error',
+        title: 'Unknown status',
+        text: `We couldn't recognise this review link.`
+    };
+
+    const container = document.getElementById('StatusMessage');
+    const wrapper = document.createElement('div');
+    wrapper.className = info.level;
+
+    const heading = document.createElement('h2');
+    heading.textContent = info.title;
+    wrapper.appendChild(heading);
+
+    const body = document.createElement('p');
+    body.textContent = info.text;
+    wrapper.appendChild(body);
+
+    if (params.get('notifyFailed') === '1') {
+        const notice = document.createElement('p');
+        notice.textContent = `The action above went through, but the notification email to the organiser(s) failed to send — you may want to follow up directly.`;
+        wrapper.appendChild(notice);
+    }
+
+    container.appendChild(wrapper);
+</script>

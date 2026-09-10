@@ -11,20 +11,28 @@ const { callSlack, callZotero, formatResponses, deleteConfirmResult } = require(
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
 const ACTIVE_DIR = '_journal-clubs';
-const HTML_HEADERS = { 'Content-Type': 'text/html' };
+const REVIEW_PAGE = 'https://reproducibiliTea.org/jc-review.html';
+const STATUS_PAGE = 'https://reproducibiliTea.org/jc-review-status.html';
+
+// Every outcome sends the admin to a styled static page instead of a bare
+// HTML fragment rendered by the function itself.
+function redirectTo(page, params = {}) {
+    const query = new URLSearchParams(params);
+    return { statusCode: 302, headers: { Location: `${page}?${query.toString()}` } };
+}
 
 exports.handler = async (event) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
         logMisconfigured('new_jc_approve_misconfigured');
-        return { statusCode: 500, body: 'Server misconfiguration.' };
+        return redirectTo(STATUS_PAGE, { status: 'server-error' });
     }
 
     const token = event.queryStringParameters?.token;
-    if (!token) return { statusCode: 400, headers: HTML_HEADERS, body: '<p>Missing approval token.</p>' };
+    if (!token) return redirectTo(STATUS_PAGE, { status: 'missing-token' });
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
     if (!result.valid || result.payload.purpose !== 'admin-approve') {
-        return { statusCode: 401, headers: HTML_HEADERS, body: `<p>Review link invalid or expired (${result.reason || 'wrong purpose'}).</p>` };
+        return redirectTo(STATUS_PAGE, { status: 'invalid-token', reason: result.reason || 'wrong purpose' });
     }
     const { jcid } = result.payload;
 
@@ -35,27 +43,58 @@ exports.handler = async (event) => {
         process.env.GITHUB_REPO_API_PENDING = process.env.GITHUB_REPO_API_PENDING_SANDBOX;
     }
 
-    const file = await fetchPending(jcid);
-    if (!file) {
-        return { statusCode: 404, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} is no longer pending (already approved/rejected, or the link is stale).</p>` };
+    let state;
+    try {
+        state = await resolveState(jcid);
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_approve_state_check_failed', jcid, error: e.message }));
+        return redirectTo(STATUS_PAGE, { status: 'server-error' });
     }
 
     if (event.httpMethod === 'GET') {
-        return { statusCode: 200, headers: HTML_HEADERS, body: renderActionPage(file.frontmatter.title || jcid, token) };
+        if (state.state === 'pending') {
+            return redirectTo(REVIEW_PAGE, { token, jcid, title: state.file.frontmatter.title || jcid });
+        }
+        return redirectTo(STATUS_PAGE, { status: state.state, jcid, title: state.title || jcid });
     }
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
     }
 
+    // A revisited/double-submitted link: the token is still valid but the
+    // request has already been actioned. Report the real outcome rather than
+    // re-running (or erroring on) an action that's already happened.
+    if (state.state !== 'pending') {
+        return redirectTo(STATUS_PAGE, { status: state.state, jcid, title: state.title || jcid });
+    }
+
     const form = new URLSearchParams(event.body);
     const message = (form.get('message') || '').trim();
     switch (form.get('action')) {
-        case 'approve': return doApprove(jcid, file, message);
-        case 'reject': return doReject(jcid, file, message);
-        case 'ignore': return doIgnore(jcid, file);
-        default: return { statusCode: 400, headers: HTML_HEADERS, body: '<p>Unknown action.</p>' };
+        case 'approve': return doApprove(jcid, state.file, message);
+        case 'reject': return doReject(jcid, state.file, message);
+        case 'ignore': return doIgnore(jcid, state.file);
+        default: return redirectTo(STATUS_PAGE, { status: 'unknown-action', jcid });
     }
 };
+
+/**
+ * Where a jcid's review request currently stands: still awaiting review, or
+ * one of the three outcomes an admin action (or a previous visit to this
+ * same link) has already produced.
+ * @return {Promise<{state: 'pending', file: object}|{state: 'ignored', title: string, file: object}|{state: 'approved', title: string}|{state: 'rejected'}>}
+ */
+async function resolveState(jcid) {
+    const file = await fetchPending(jcid);
+    if (file && file.dir === PENDING_DIR) return { state: 'pending', file };
+    if (file && file.dir === IGNORED_DIR) return { state: 'ignored', title: file.frontmatter.title, file };
+
+    // Not pending or ignored: it was either approved (now live) or rejected
+    // (deleted outright, no trace left behind) — the only two remaining
+    // outcomes doApprove/doReject/doIgnore can produce.
+    const live = await fetchLive(jcid);
+    return live.exists ? { state: 'approved', title: live.title } : { state: 'rejected' };
+}
 
 async function fetchPending(jcid) {
     const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
@@ -73,26 +112,18 @@ async function fetchPending(jcid) {
     return null;
 }
 
-function renderActionPage(title, token) {
-    return `<!DOCTYPE html><html><body>
-<h1>Review ${escapeHtml(title)}</h1>
-<form method="POST" action="?token=${encodeURIComponent(token)}">
-    <label><input type="radio" name="action" value="approve" checked> Approve</label><br>
-    <label><input type="radio" name="action" value="reject"> Reject</label><br>
-    <label><input type="radio" name="action" value="ignore"> Ignore</label><br>
-    <label>Message to organiser(s) (approve/reject only, emailed verbatim):<br>
-        <textarea name="message" rows="6" cols="60"></textarea></label><br>
-    <button type="submit">Submit</button>
-</form>
-<script>
-    document.querySelector('form').addEventListener('submit', (e) => {
-        const button = e.target.querySelector('button');
-        button.disabled = true;
-        button.style.cursor = 'not-allowed';
-        button.textContent = 'Submitting…';
+/** @return {Promise<{exists: boolean, title?: string}>} whether `_journal-clubs/<jcid>.md` is live, and its title if so */
+async function fetchLive(jcid) {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('public');
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${ACTIVE_DIR}/${jcid}.md`, {
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
     });
-</script>
-</body></html>`;
+    if (res.status === 404) return { exists: false };
+    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
+    const json = await res.json();
+    const body = Buffer.from(json.content, 'base64').toString('utf8');
+    const fm = /^---\s*\n([\s\S]*?)\n---/.exec(body);
+    return { exists: true, title: fm ? YAML.parse(fm[1]).title : jcid };
 }
 
 async function putFile(path, content, sha, message, target = 'public') {
@@ -149,11 +180,12 @@ async function doApprove(jcid, file, message) {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_failed', jcid, error: e.message }));
-        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not approve ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
+        return redirectTo(STATUS_PAGE, { status: 'approve-failed', jcid, title: file.frontmatter.title, reason: e.message });
     }
     console.log(JSON.stringify({ event: 'new_jc_approved', jcid }));
     await cleanupConfirmResult(jcid, 'new_jc_approve_confirm_result_cleanup_failed');
 
+    const params = { status: 'approved', jcid, title: file.frontmatter.title };
     try {
         await sendEmail({
             apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
@@ -163,10 +195,9 @@ async function doApprove(jcid, file, message) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
+        params.notifyFailed = '1';
     }
-
-    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} approved and now live.</p>${formatResponses({ slack, zotero })}` };
+    return redirectTo(STATUS_PAGE, params);
 }
 
 async function doReject(jcid, file, message) {
@@ -174,11 +205,12 @@ async function doReject(jcid, file, message) {
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_reject_failed', jcid, error: e.message }));
-        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not reject ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
+        return redirectTo(STATUS_PAGE, { status: 'reject-failed', jcid, title: file.frontmatter.title, reason: e.message });
     }
     console.log(JSON.stringify({ event: 'new_jc_rejected', jcid }));
     await cleanupConfirmResult(jcid, 'new_jc_reject_confirm_result_cleanup_failed');
 
+    const params = { status: 'rejected', jcid, title: file.frontmatter.title };
     try {
         await sendEmail({
             apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
@@ -188,29 +220,24 @@ async function doReject(jcid, file, message) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_reject_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} rejected, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
+        params.notifyFailed = '1';
     }
-
-    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} rejected.</p>` };
+    return redirectTo(STATUS_PAGE, params);
 }
 
 async function doIgnore(jcid, file) {
-    if (file.dir === IGNORED_DIR) {
-        console.log(JSON.stringify({ event: 'new_jc_ignore_noop', jcid }));
-        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} was already ignored.</p>` };
-    }
-
     const ignoredBody = file.body.replace(/^---\s*\n/, '---\n\nignored: true\n');
     try {
         await putFile(`${IGNORED_DIR}/${jcid}.md`, ignoredBody, null, `Ignore ${jcid}.md`, 'pending');
         await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_failed', jcid, error: e.message }));
-        return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not ignore ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
+        return redirectTo(STATUS_PAGE, { status: 'ignore-failed', jcid, title: file.frontmatter.title, reason: e.message });
     }
     console.log(JSON.stringify({ event: 'new_jc_ignored', jcid }));
     await cleanupConfirmResult(jcid, 'new_jc_ignore_confirm_result_cleanup_failed');
 
+    const params = { status: 'ignored', jcid, title: file.frontmatter.title };
     try {
         await sendEmail({
             apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, from: process.env.FROM_EMAIL_ADDRESS,
@@ -220,8 +247,9 @@ async function doIgnore(jcid, file) {
         });
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_notify_failed', jcid, error: e.message }));
-        return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} ignored, but the notification email failed to send: ${escapeHtml(e.message)}</p>` };
+        params.notifyFailed = '1';
     }
-
-    return { statusCode: 200, headers: HTML_HEADERS, body: `<p>${escapeHtml(jcid)} ignored.</p>` };
+    return redirectTo(STATUS_PAGE, params);
 }
+
+module.exports.resolveState = resolveState;

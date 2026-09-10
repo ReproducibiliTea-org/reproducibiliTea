@@ -1,0 +1,42 @@
+---
+layout: default
+title: Review journal club request
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+
+<article>
+    <section id="ReviewRequest">
+        <h1 id="ReviewHeading">Review journal club request</h1>
+        <div id="ReviewMessage">
+            <form id="ReviewForm" method="POST">
+                <label><input type="radio" name="action" value="approve" checked> Approve</label><br>
+                <label><input type="radio" name="action" value="reject"> Reject</label><br>
+                <label><input type="radio" name="action" value="ignore"> Ignore</label><br>
+                <label>Message to organiser(s) (approve/reject only, emailed verbatim):<br>
+                    <textarea name="message" id="message" rows="6" cols="60"></textarea>
+                </label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</article>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token') || '';
+    const title = params.get('title') || params.get('jcid') || '';
+
+    if (!token) {
+        document.getElementById('ReviewMessage').innerHTML =
+            '<p>This link is missing its review token. Please use the full link from your notification email.</p>';
+    } else {
+        document.getElementById('ReviewHeading').textContent = `Review ${title}`;
+        document.getElementById('ReviewForm').action = `/.netlify/functions/new-jc_approve?token=${encodeURIComponent(token)}`;
+        document.getElementById('ReviewForm').addEventListener('submit', (e) => {
+            const button = e.target.querySelector('button');
+            button.disabled = true;
+            button.style.cursor = 'not-allowed';
+            button.textContent = 'Submitting…';
+        });
+    }
+</script>
