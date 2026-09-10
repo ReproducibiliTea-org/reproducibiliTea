@@ -6,9 +6,11 @@ const { verifyToken, signToken } = require('./lib/tokens');
 const { logMisconfigured } = require('./lib/env-diagnostics');
 const { sendEmail } = require('./lib/mailer');
 const { escapeHtml } = require('./lib/html-escape');
+const { repoConfig } = require('./lib/github-repos');
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 const STATUS_PAGE = 'https://reproducibiliTea.org/jc-request-status.html';
+const HTML_HEADERS = { 'Content-Type': 'text/html' };
 
 // This whole handler only ever runs from a browser following an emailed link,
 // so every outcome sends the visitor to a real site page instead of rendering
@@ -44,13 +46,23 @@ exports.handler = async (event) => {
     const draft = await fetchDraft(draftId);
     if (!draft) {
         console.log(JSON.stringify({ event: 'new_jc_confirm_draft_missing', jcid, draftId }));
-        return redirect('already-used', { jcid });
+        return redirectAlreadyConfirmed(jcid);
     }
     const data = draft.data;
 
     const check = checkData(data);
     if (check !== null) {
         return redirect('invalid', { jcid: data.jcid, reason: check });
+    }
+
+    // GET only renders a page with a confirm button — email security scanners
+    // (Safe Links etc.) prefetch plain GET links but don't submit forms, so the
+    // side effects below only ever run from a real click.
+    if (event.httpMethod === 'GET') {
+        return { statusCode: 200, headers: HTML_HEADERS, body: renderConfirmPage(data, token) };
+    }
+    if (event.httpMethod !== 'POST') {
+        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
     }
 
     // Reject a jcid that is already live before anything with side effects runs,
@@ -128,6 +140,31 @@ async function notifyContacts(data) {
     }
 }
 
+function renderConfirmPage(data, token) {
+    return `<!DOCTYPE html><html><body>
+<h1>Confirm your journal club request</h1>
+<p>Click confirm to submit "${escapeHtml(data.name)}" for review.</p>
+<form method="POST" action="?token=${encodeURIComponent(token)}">
+    <button type="submit">Confirm</button>
+</form>
+</body></html>`;
+}
+
+// Reached when the draft is already gone — a previous confirm click (or a
+// scanner prefetch that has since been superseded by a real click) already
+// consumed it. Report the real outcome instead of a generic "already used"
+// so a repeat visit (or a delayed click after a scanner ran first) still
+// tells the requester where their submission stands.
+async function redirectAlreadyConfirmed(jcid) {
+    if (await liveJcExists(jcid)) {
+        return redirect('already-live', { jcid });
+    }
+    if (await pendingJcExists(jcid)) {
+        return redirect('ok', { jcid });
+    }
+    return redirect('already-used', { jcid });
+}
+
 /** @return {Promise<boolean>} whether `_journal-clubs/<jcid>.md` already exists */
 async function liveJcExists(jcid) {
     const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
@@ -137,4 +174,13 @@ async function liveJcExists(jcid) {
     if (!res.ok) return false; // let callGitHub report the repository problem
     const listing = await res.json();
     return Array.isArray(listing) && listing.some(jc => jc.name === `${jcid}.md`);
+}
+
+/** @return {Promise<boolean>} whether `_pending-journal-clubs/<jcid>.md` is still awaiting review */
+async function pendingJcExists(jcid) {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
+    const res = await fetch(`${GITHUB_REPO_API}/contents/_pending-journal-clubs/${jcid}.md`, {
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
+    });
+    return res.ok;
 }
