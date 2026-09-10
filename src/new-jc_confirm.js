@@ -1,7 +1,7 @@
 require('dotenv').config();
 const fetch = require('node-fetch');
 const { checkData } = require('./lib/jc-validation');
-const { callGitHub, notifyAdmins, fetchDraft, deleteDraft } = require('./lib/jc-integrations');
+const { callGitHub, notifyAdmins, fetchDraft, deleteDraft, saveConfirmResult, fetchConfirmResult } = require('./lib/jc-integrations');
 const { verifyToken, signToken } = require('./lib/tokens');
 const { logMisconfigured } = require('./lib/env-diagnostics');
 const { sendEmail } = require('./lib/mailer');
@@ -109,10 +109,23 @@ exports.handler = async (event) => {
         ...(results.adminNotification.status !== 'Okay' ? { adminNotifyError: results.adminNotification.details.join('; ') } : {})
     }));
 
+    // Record the outcome now so a repeat visit to this link (draft already
+    // deleted below the fold) replays the same response — see
+    // redirectAlreadyConfirmed — instead of a bare "ok" that hides a failed
+    // admin notification. Best-effort: failure here doesn't change the
+    // response, only whether a retry gets to see it too.
+    const okParams = { jcid: data.jcid };
     if (results.adminNotification.status !== 'Okay') {
-        return redirect('ok', { jcid: data.jcid, adminNotifyFailed: '1', reportEmail: process.env.EMAIL_REPORT_TO || '' });
+        okParams.adminNotifyFailed = '1';
+        okParams.reportEmail = adminEmails.join(', ');
     }
-    return redirect('ok', { jcid: data.jcid });
+    try {
+        await saveConfirmResult(data.jcid, okParams);
+    } catch (e) {
+        console.log(JSON.stringify({ event: 'new_jc_confirm_result_save_failed', jcid: data.jcid, error: e.message }));
+    }
+
+    return redirect('ok', okParams);
 };
 
 /**
@@ -147,6 +160,8 @@ async function notifyContacts(data) {
 // so a repeat visit (or a delayed click after a scanner ran first) still
 // tells the requester where their submission stands.
 async function redirectAlreadyConfirmed(jcid) {
+    const saved = await fetchConfirmResult(jcid).catch(() => null);
+    if (saved) return redirect('ok', saved);
     if (await liveJcExists(jcid)) {
         return redirect('already-live', { jcid });
     }

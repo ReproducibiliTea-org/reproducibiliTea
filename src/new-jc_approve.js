@@ -6,7 +6,7 @@ const { sendEmail } = require('./lib/mailer');
 const { escapeHtml } = require('./lib/html-escape');
 const { logMisconfigured } = require('./lib/env-diagnostics');
 const { repoConfig } = require('./lib/github-repos');
-const { callSlack, callZotero, formatResponses } = require('./lib/jc-integrations');
+const { callSlack, callZotero, formatResponses, deleteConfirmResult } = require('./lib/jc-integrations');
 
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
@@ -111,6 +111,18 @@ async function deleteFile(path, sha, message, target = 'public') {
     return res.json();
 }
 
+// Best-effort: the recorded confirm-result is only there so a repeat visit to
+// the confirm link can replay it (see new-jc_confirm.js) — once an admin has
+// acted, that replay path is moot, but a failure to clean it up shouldn't
+// block or fail the admin action itself.
+async function cleanupConfirmResult(jcid, event) {
+    try {
+        await deleteConfirmResult(jcid);
+    } catch (e) {
+        console.log(JSON.stringify({ event, jcid, error: e.message }));
+    }
+}
+
 async function doApprove(jcid, file, message) {
     const to = [file.frontmatter.contact, ...(file.frontmatter['additional-contact'] || [])].filter(Boolean);
 
@@ -132,6 +144,7 @@ async function doApprove(jcid, file, message) {
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not approve ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_approved', jcid }));
+    await cleanupConfirmResult(jcid, 'new_jc_approve_confirm_result_cleanup_failed');
 
     try {
         await sendEmail({
@@ -156,6 +169,7 @@ async function doReject(jcid, file, message) {
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not reject ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_rejected', jcid }));
+    await cleanupConfirmResult(jcid, 'new_jc_reject_confirm_result_cleanup_failed');
 
     try {
         await sendEmail({
@@ -187,6 +201,7 @@ async function doIgnore(jcid, file) {
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not ignore ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
     }
     console.log(JSON.stringify({ event: 'new_jc_ignored', jcid }));
+    await cleanupConfirmResult(jcid, 'new_jc_ignore_confirm_result_cleanup_failed');
 
     try {
         await sendEmail({

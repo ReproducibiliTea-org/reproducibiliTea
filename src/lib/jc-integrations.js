@@ -266,7 +266,9 @@ ${formatResponses(results)}
         out.details.push(`Sent review request to ${adminEmails.join(', ')}.`);
     } catch (e) {
         out.status = 'Error';
-        out.details.push('Failed to notify admins: ' + e.toString());
+        // mailgun.js's APIError.toString() only carries status/statusText ("Bad
+        // Request"); the actual reason from the response body lives in .details.
+        out.details.push(`Failed to notify admins: ${e.status || ''} ${e.message || e.toString()}${e.details ? ` — ${e.details}` : ''}`);
     }
 
     return out;
@@ -322,4 +324,67 @@ async function deleteDraft(draftId, sha) {
     if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
 }
 
-module.exports = { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses, saveDraft, fetchDraft, deleteDraft };
+const CONFIRM_RESULT_DIR = '_pending-journal-clubs/confirm-results';
+
+/**
+ * Record the redirect params a successful confirm produced, so a repeat visit
+ * to the same confirm link (draft already deleted) replays the exact same
+ * response instead of a bare "ok" that hides an admin-notify failure.
+ * Deleted once an admin approves/rejects/ignores the request (see
+ * deleteConfirmResult, called from new-jc_approve.js) — irrelevant once the
+ * request is no longer awaiting review.
+ * @param jcid {string}
+ * @param data {object} redirect params to replay verbatim
+ */
+async function saveConfirmResult(jcid, data) {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${CONFIRM_RESULT_DIR}/${jcid}.json`, {
+        method: 'PUT',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            message: `Record confirm result for ${jcid}`,
+            content: Buffer.from(JSON.stringify(data), 'utf8').toString('base64')
+        })
+    });
+    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
+}
+
+/**
+ * @param jcid {string}
+ * @return {Promise<object|null>} the recorded redirect params, or null if none exist
+ */
+async function fetchConfirmResult(jcid) {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${CONFIRM_RESULT_DIR}/${jcid}.json`, {
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
+    });
+    if (!res.ok) return null;
+    const file = await res.json();
+    return JSON.parse(Buffer.from(file.content, 'base64').toString('utf8'));
+}
+
+/**
+ * Best-effort cleanup, called on approve/reject/ignore. No-ops if nothing was
+ * ever recorded (e.g. request was actioned before this JC ever hit confirm).
+ * @param jcid {string}
+ */
+async function deleteConfirmResult(jcid) {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
+    const getRes = await fetch(`${GITHUB_REPO_API}/contents/${CONFIRM_RESULT_DIR}/${jcid}.json`, {
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
+    });
+    if (!getRes.ok) return;
+    const { sha } = await getRes.json();
+    const res = await fetch(`${GITHUB_REPO_API}/contents/${CONFIRM_RESULT_DIR}/${jcid}.json`, {
+        method: 'DELETE',
+        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Remove confirm result for ${jcid}`, sha })
+    });
+    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
+}
+
+module.exports = {
+    callSlack, callZotero, callGitHub, notifyAdmins, formatResponses,
+    saveDraft, fetchDraft, deleteDraft,
+    saveConfirmResult, fetchConfirmResult, deleteConfirmResult
+};
