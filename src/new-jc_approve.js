@@ -86,7 +86,10 @@ function renderActionPage(title, token) {
 </form>
 <script>
     document.querySelector('form').addEventListener('submit', (e) => {
-        e.target.querySelector('button').disabled = true;
+        const button = e.target.querySelector('button');
+        button.disabled = true;
+        button.style.cursor = 'not-allowed';
+        button.textContent = 'Submitting…';
     });
 </script>
 </body></html>`;

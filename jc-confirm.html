@@ -25,6 +25,9 @@ title: Confirm journal club request
         document.getElementById('ConfirmForm').action = `/.netlify/functions/new-jc_confirm?token=${encodeURIComponent(token)}`;
     }
     document.getElementById('ConfirmForm').addEventListener('submit', (e) => {
-        e.target.querySelector('button').disabled = true;
+        const button = e.target.querySelector('button');
+        button.disabled = true;
+        button.style.cursor = 'not-allowed';
+        button.textContent = 'Confirming…';
     });
 </script>
