@@ -146,7 +146,7 @@ async function callGitHub(data, results, opts = {}) {
 
     let sha;
     try {
-        const call = await fetch(url, { headers: { 'User-Agent': GITHUB_API_USER } });
+        const call = await fetch(url, { headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` } });
         if (!call.ok) throw new Error(`Server response: ${call.status}: ${call.statusText}`);
         const response = await call.json();
 
