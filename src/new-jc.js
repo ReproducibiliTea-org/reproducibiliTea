@@ -87,7 +87,7 @@ async function handleCreationRequest(data, sandbox) {
     }
 
     const token = signToken({ purpose: 'creation-confirm', jcid: data.jcid, draftId, sandbox }, process.env.EDIT_TOKEN_SECRET, { expiresInMs: CONFIRM_TOKEN_TTL_MS });
-    const confirmUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_confirm?token=${token}`;
+    const confirmUrl = `https://reproducibiliTea.org/jc-confirm.html?token=${token}`;
 
     try {
         await sendEmail({

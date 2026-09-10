@@ -1,0 +1,27 @@
+---
+layout: default
+title: Confirm journal club request
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/join-form.css"/>
+
+<article>
+    <section id="ConfirmRequest">
+        <h1>Confirm your journal club request</h1>
+        <div id="ConfirmMessage">
+            <p>Click confirm to submit your request for review.</p>
+            <form id="ConfirmForm" method="POST">
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </section>
+</article>
+
+<script>
+    const token = new URLSearchParams(window.location.search).get('token') || '';
+    if (!token) {
+        document.getElementById('ConfirmMessage').innerHTML =
+            '<p>This link is missing its confirmation token. Please use the full link from your confirmation email.</p>';
+    } else {
+        document.getElementById('ConfirmForm').action = `/.netlify/functions/new-jc_confirm?token=${encodeURIComponent(token)}`;
+    }
+</script>

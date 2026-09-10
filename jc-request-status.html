@@ -87,7 +87,11 @@ title: Journal club request
 
     if (status === 'ok' && params.get('adminNotifyFailed') === '1' && reportEmail) {
         const notice = document.createElement('p');
-        notice.textContent = `We couldn't notify our review team automatically — please email ${reportEmail} so a human knows to take a look.`;
+        notice.append(`We couldn't notify our review team automatically — please email `);
+        const link = document.createElement('a');
+        link.href = `mailto:${reportEmail}`;
+        link.textContent = reportEmail;
+        notice.append(link, ` so a human knows to take a look.`);
         wrapper.appendChild(notice);
     }
 

@@ -10,7 +10,6 @@ const { repoConfig } = require('./lib/github-repos');
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 const STATUS_PAGE = 'https://reproducibiliTea.org/jc-request-status.html';
-const HTML_HEADERS = { 'Content-Type': 'text/html' };
 
 // This whole handler only ever runs from a browser following an emailed link,
 // so every outcome sends the visitor to a real site page instead of rendering
@@ -34,6 +33,12 @@ exports.handler = async (event) => {
         return redirect('invalid-token', { reason: result.reason || 'wrong purpose' });
     }
 
+    // Only jc-confirm.html's button POSTs here — a scanner following the emailed
+    // link only ever reaches that static page, which has no side effects of its own.
+    if (event.httpMethod !== 'POST') {
+        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'POST' } };
+    }
+
     // This link is clicked from an email, so there is no usable referer — the
     // sandbox flag rides along in the signed token instead.
     const sandbox = Boolean(result.payload.sandbox);
@@ -53,16 +58,6 @@ exports.handler = async (event) => {
     const check = checkData(data);
     if (check !== null) {
         return redirect('invalid', { jcid: data.jcid, reason: check });
-    }
-
-    // GET only renders a page with a confirm button — email security scanners
-    // (Safe Links etc.) prefetch plain GET links but don't submit forms, so the
-    // side effects below only ever run from a real click.
-    if (event.httpMethod === 'GET') {
-        return { statusCode: 200, headers: HTML_HEADERS, body: renderConfirmPage(data, token) };
-    }
-    if (event.httpMethod !== 'POST') {
-        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
     }
 
     // Reject a jcid that is already live before anything with side effects runs,
@@ -106,7 +101,13 @@ exports.handler = async (event) => {
         mailgunConfig: { apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN, fromEmail: process.env.FROM_EMAIL_ADDRESS }
     });
 
-    console.log(JSON.stringify({ event: 'new_jc_confirmed', jcid: data.jcid, githubStatus: results.github.status, adminNotified: results.adminNotification.status === 'Okay' }));
+    console.log(JSON.stringify({
+        event: 'new_jc_confirmed',
+        jcid: data.jcid,
+        githubStatus: results.github.status,
+        adminNotified: results.adminNotification.status === 'Okay',
+        ...(results.adminNotification.status !== 'Okay' ? { adminNotifyError: results.adminNotification.details.join('; ') } : {})
+    }));
 
     if (results.adminNotification.status !== 'Okay') {
         return redirect('ok', { jcid: data.jcid, adminNotifyFailed: '1', reportEmail: process.env.EMAIL_REPORT_TO || '' });
@@ -138,16 +139,6 @@ async function notifyContacts(data) {
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_confirm_contact_notify_failed', jcid: data.jcid, error: e.message }));
     }
-}
-
-function renderConfirmPage(data, token) {
-    return `<!DOCTYPE html><html><body>
-<h1>Confirm your journal club request</h1>
-<p>Click confirm to submit "${escapeHtml(data.name)}" for review.</p>
-<form method="POST" action="?token=${encodeURIComponent(token)}">
-    <button type="submit">Confirm</button>
-</form>
-</body></html>`;
 }
 
 // Reached when the draft is already gone — a previous confirm click (or a
