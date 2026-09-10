@@ -10,3 +10,58 @@
 [dev]
 
 #  command = "yarn dev"
+
+# Rate limiting: Netlify Functions have no shared middleware chain, so limits
+# are applied via self-redirects (redirect a path to itself, force=true).
+# ponytail: per-IP fixed window only, no per-jcid/per-email keying. Upgrade
+# to a Redis-backed per-key limiter if IP limiting proves too coarse.
+
+[[redirects]]
+  from = "/.netlify/functions/new-jc"
+  to = "/.netlify/functions/new-jc"
+  status = 200
+  force = true
+  [redirects.rate_limit]
+    window_limit = 20
+    window_size = 60
+    aggregate_by = ["ip"]
+
+[[redirects]]
+  from = "/.netlify/functions/new-jc_confirm"
+  to = "/.netlify/functions/new-jc_confirm"
+  status = 200
+  force = true
+  [redirects.rate_limit]
+    window_limit = 20
+    window_size = 60
+    aggregate_by = ["ip"]
+
+[[redirects]]
+  from = "/.netlify/functions/new-jc_approve"
+  to = "/.netlify/functions/new-jc_approve"
+  status = 200
+  force = true
+  [redirects.rate_limit]
+    window_limit = 10
+    window_size = 60
+    aggregate_by = ["ip"]
+
+[[redirects]]
+  from = "/.netlify/functions/edit-jc_create-token"
+  to = "/.netlify/functions/edit-jc_create-token"
+  status = 200
+  force = true
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 60
+    aggregate_by = ["ip"]
+
+[[redirects]]
+  from = "/.netlify/functions/edit-jc_check-token"
+  to = "/.netlify/functions/edit-jc_check-token"
+  status = 200
+  force = true
+  [redirects.rate_limit]
+    window_limit = 10
+    window_size = 60
+    aggregate_by = ["ip"]
