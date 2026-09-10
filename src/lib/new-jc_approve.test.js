@@ -16,7 +16,7 @@ Module._load = function (request, ...rest) {
     if (request === 'node-fetch') return (url) => Promise.resolve(nextResponses.shift() ?? { ok: false, status: 404 });
     return originalLoad.call(this, request, ...rest);
 };
-const { resolveState } = require('./new-jc_approve.js');
+const { resolveState } = require('../new-jc_approve.js');
 Module._load = originalLoad;
 
 function contentsResponse(frontmatter) {
