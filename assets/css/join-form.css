@@ -242,8 +242,6 @@ ul {
 }
 .geolocation-map-controls button {
     font-size: 2em;
-    color: var(--color-rpt-primary);
-    stroke: var(--color-rpt-primary);
 }
 .geolocation-map-controls button:hover i,
 .geolocation-map-controls button:hover svg {

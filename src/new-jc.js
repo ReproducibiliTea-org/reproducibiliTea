@@ -4,6 +4,7 @@ const { cleanData, checkData, checkCreationLimits } = require('./lib/jc-validati
 const { callGitHub, formatResponses, saveDraft } = require('./lib/jc-integrations');
 const { signToken, verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
+const { logMisconfigured } = require('./lib/env-diagnostics');
 
 const CONFIRM_TOKEN_TTL_MS = 24 * 60 * 60 * 1000; // 24h
 
@@ -14,7 +15,7 @@ exports.handler = async (event) => {
     }
 
     if (!process.env.EDIT_TOKEN_SECRET) {
-        console.log(JSON.stringify({ event: 'new_jc_misconfigured' }));
+        logMisconfigured('new_jc_misconfigured');
         return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 

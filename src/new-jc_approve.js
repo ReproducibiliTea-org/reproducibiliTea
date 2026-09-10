@@ -4,6 +4,7 @@ const YAML = require('yaml');
 const { verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
 const { escapeHtml } = require('./lib/html-escape');
+const { logMisconfigured } = require('./lib/env-diagnostics');
 
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
@@ -12,7 +13,7 @@ const HTML_HEADERS = { 'Content-Type': 'text/html' };
 
 exports.handler = async (event) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
-        console.log(JSON.stringify({ event: 'new_jc_approve_misconfigured' }));
+        logMisconfigured('new_jc_approve_misconfigured');
         return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 

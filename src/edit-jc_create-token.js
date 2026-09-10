@@ -2,6 +2,7 @@
 const fetch = require("node-fetch");
 require('dotenv').config();
 const { signToken } = require('./lib/tokens');
+const { logMisconfigured } = require('./lib/env-diagnostics');
 
 const {
     EDIT_TOKEN_SECRET,
@@ -19,7 +20,7 @@ exports.handler = async function(event) {
     console.log(JSON.stringify({ event: 'create_token_request_received' }));
 
     if (!EDIT_TOKEN_SECRET) {
-        console.log(JSON.stringify({ event: 'create_token_misconfigured' }));
+        logMisconfigured('create_token_misconfigured');
         return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 

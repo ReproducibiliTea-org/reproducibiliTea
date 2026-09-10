@@ -3,13 +3,14 @@ const fetch = require('node-fetch');
 const { checkData } = require('./lib/jc-validation');
 const { callSlack, callZotero, callGitHub, notifyAdmins, formatResponses, fetchDraft, deleteDraft } = require('./lib/jc-integrations');
 const { verifyToken, signToken } = require('./lib/tokens');
+const { logMisconfigured } = require('./lib/env-diagnostics');
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 const HTML_HEADERS = { 'Content-Type': 'text/html' };
 
 exports.handler = async (event) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
-        console.log(JSON.stringify({ event: 'new_jc_confirm_misconfigured' }));
+        logMisconfigured('new_jc_confirm_misconfigured');
         return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 

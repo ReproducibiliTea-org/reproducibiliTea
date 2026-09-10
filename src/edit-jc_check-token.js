@@ -1,11 +1,12 @@
 require('dotenv').config();
 const { verifyToken } = require('./lib/tokens');
+const { logMisconfigured } = require('./lib/env-diagnostics');
 
 const { EDIT_TOKEN_SECRET } = process.env;
 
 exports.handler = async function(event) {
     if (!EDIT_TOKEN_SECRET) {
-        console.log(JSON.stringify({ event: 'check_token_misconfigured' }));
+        logMisconfigured('check_token_misconfigured');
         return { statusCode: 500, body: 'Server misconfiguration.' };
     }
 
