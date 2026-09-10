@@ -25,8 +25,8 @@ country: Portugal
 geolocation:
   - 38.748109149061875
   - -9.153413772583008
-last-message-timestamp: 1754305085
-last-message-level: 0
+last-message-timestamp: 1789021014
+last-message-level: 1
 last-update: patricia.arriaga@iscte-iul.pt
 last-update-timestamp: 1754305085
 last-update-message: API creation of affectivescience.md
