@@ -4,6 +4,7 @@ const fetch = require('node-fetch');
 const YAML = require('yaml');
 const { sendEmail } = require('./mailer');
 const { escapeHtml } = require('./html-escape');
+const { repoConfig } = require('./github-repos');
 
 /**
  * Format a set of responses from API calls
@@ -138,9 +139,8 @@ async function callZotero(data) {
  * @param opts {{editToken?: object|null, dir?: string}}
  */
 async function callGitHub(data, results, opts = {}) {
-    const { editToken = null, dir = '_journal-clubs' } = opts;
-    const { GITHUB_TOKEN, GITHUB_API_USER } = process.env;
-    let { GITHUB_REPO_API } = process.env;
+    const { editToken = null, dir = '_journal-clubs', target = 'public' } = opts;
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig(target);
     const out = { title: 'GitHub', status: 'Okay', details: [] };
     const url = `${GITHUB_REPO_API}/contents/${dir}`;
 
@@ -277,7 +277,7 @@ const UNCONFIRMED_DRAFT_DIR = '_pending-journal-clubs/unconfirmed';
  * @param draftId {string} random id naming this draft
  */
 async function saveDraft(data, draftId) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
     const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
         method: 'PUT',
         headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
@@ -294,7 +294,7 @@ async function saveDraft(data, draftId) {
  * @return {Promise<{data: object, sha: string}|null>} null if the draft doesn't exist (already confirmed, pruned, or a forged id)
  */
 async function fetchDraft(draftId) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
     const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
         headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
     });
@@ -308,7 +308,7 @@ async function fetchDraft(draftId) {
  * @param sha {string} the draft file's current sha, from fetchDraft
  */
 async function deleteDraft(draftId, sha) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
     const res = await fetch(`${GITHUB_REPO_API}/contents/${UNCONFIRMED_DRAFT_DIR}/${draftId}.json`, {
         method: 'DELETE',
         headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },

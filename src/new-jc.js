@@ -31,6 +31,7 @@ exports.handler = async (event) => {
     const sandbox = /(sandbox|localhost)/.test(event.headers?.referer || '');
     if (sandbox) {
         process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+        process.env.GITHUB_REPO_API_PENDING = process.env.GITHUB_REPO_API_PENDING_SANDBOX;
     }
 
     const rawEditToken = data.editToken;

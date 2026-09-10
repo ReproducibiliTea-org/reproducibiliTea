@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { parseJournalClub, isViableForRollcall, pickJournalClub, newMessageLevel, isDraftStale, MESSAGE_LEVELS } = require('./rollcall-lib');
+const { parseJournalClub, isViableForRollcall, pickJournalClub, newMessageLevel, MESSAGE_LEVELS } = require('./rollcall-lib');
 
 const SAMPLE_JC = `---
 jcid: oxford
@@ -102,16 +102,4 @@ test('substituteHandlebars replaces matching placeholders and leaves others unto
 test('substituteHandlebars passes non-string fields through unchanged', () => {
   const result = substituteHandlebars({ count: 3 }, { count: 'x' });
   assert.equal(result.count, 3);
-});
-
-test('isDraftStale is true once a draft is over an hour old', () => {
-  const now = new Date('2026-06-01T12:00:00Z');
-  const lastModified = new Date('2026-06-01T10:59:00Z');
-  assert.equal(isDraftStale(lastModified, now), true);
-});
-
-test('isDraftStale is false for a draft under an hour old', () => {
-  const now = new Date('2026-06-01T12:00:00Z');
-  const lastModified = new Date('2026-06-01T11:01:00Z');
-  assert.equal(isDraftStale(lastModified, now), false);
 });

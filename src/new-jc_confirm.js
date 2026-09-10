@@ -29,6 +29,7 @@ exports.handler = async (event) => {
     const sandbox = Boolean(result.payload.sandbox);
     if (sandbox) {
         process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+        process.env.GITHUB_REPO_API_PENDING = process.env.GITHUB_REPO_API_PENDING_SANDBOX;
     }
 
     const { jcid, draftId } = result.payload;
@@ -57,7 +58,7 @@ exports.handler = async (event) => {
 
     const [slack, zotero] = await Promise.all([callSlack(data), callZotero(data)]);
     const results = { slack, zotero };
-    results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs' });
+    results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs', target: 'pending' });
 
     // No pending file means no review link to send: bail out rather than emailing
     // admins a link that 404s. Leaves the draft in place so a retry click (or the

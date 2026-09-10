@@ -5,6 +5,7 @@ const { verifyToken } = require('./lib/tokens');
 const { sendEmail } = require('./lib/mailer');
 const { escapeHtml } = require('./lib/html-escape');
 const { logMisconfigured } = require('./lib/env-diagnostics');
+const { repoConfig } = require('./lib/github-repos');
 
 const PENDING_DIR = '_pending-journal-clubs';
 const IGNORED_DIR = `${PENDING_DIR}/ignored`;
@@ -30,6 +31,7 @@ exports.handler = async (event) => {
     // in the signed token, threaded through from the original creation request.
     if (result.payload.sandbox) {
         process.env.GITHUB_REPO_API = process.env.GITHUB_REPO_API_SANDBOX;
+        process.env.GITHUB_REPO_API_PENDING = process.env.GITHUB_REPO_API_PENDING_SANDBOX;
     }
 
     const file = await fetchPending(jcid);
@@ -55,7 +57,7 @@ exports.handler = async (event) => {
 };
 
 async function fetchPending(jcid) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
     for (const dir of [PENDING_DIR, IGNORED_DIR]) {
         const res = await fetch(`${GITHUB_REPO_API}/contents/${dir}/${jcid}.md`, {
             headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
@@ -84,8 +86,8 @@ function renderActionPage(title, token) {
 </body></html>`;
 }
 
-async function putFile(path, content, sha, message) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+async function putFile(path, content, sha, message, target = 'public') {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig(target);
     const body = { message, content: Buffer.from(content, 'utf8').toString('base64') };
     if (sha) body.sha = sha;
     const res = await fetch(`${GITHUB_REPO_API}/contents/${path}`, {
@@ -97,8 +99,8 @@ async function putFile(path, content, sha, message) {
     return res.json();
 }
 
-async function deleteFile(path, sha, message) {
-    const { GITHUB_TOKEN, GITHUB_API_USER, GITHUB_REPO_API } = process.env;
+async function deleteFile(path, sha, message, target = 'public') {
+    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig(target);
     const res = await fetch(`${GITHUB_REPO_API}/contents/${path}`, {
         method: 'DELETE',
         headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
@@ -112,8 +114,8 @@ async function doApprove(jcid, file, message) {
     const to = [file.frontmatter.contact, ...(file.frontmatter['additional-contact'] || [])].filter(Boolean);
     const activeBody = file.body.replace(/^ignored: true\n/m, '');
     try {
-        await putFile(`${ACTIVE_DIR}/${jcid}.md`, activeBody, null, `Approve ${jcid}.md`);
-        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`);
+        await putFile(`${ACTIVE_DIR}/${jcid}.md`, activeBody, null, `Approve ${jcid}.md`, 'public');
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Approve ${jcid}.md (remove from pending)`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_approve_failed', jcid, error: e.message }));
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not approve ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
@@ -137,7 +139,7 @@ async function doApprove(jcid, file, message) {
 
 async function doReject(jcid, file, message) {
     try {
-        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`);
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Reject ${jcid}.md`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_reject_failed', jcid, error: e.message }));
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not reject ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };
@@ -167,8 +169,8 @@ async function doIgnore(jcid, file) {
 
     const ignoredBody = file.body.replace(/^---\s*\n/, '---\n\nignored: true\n');
     try {
-        await putFile(`${IGNORED_DIR}/${jcid}.md`, ignoredBody, null, `Ignore ${jcid}.md`);
-        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`);
+        await putFile(`${IGNORED_DIR}/${jcid}.md`, ignoredBody, null, `Ignore ${jcid}.md`, 'pending');
+        await deleteFile(`${file.dir}/${jcid}.md`, file.sha, `Ignore ${jcid}.md (remove from pending)`, 'pending');
     } catch (e) {
         console.log(JSON.stringify({ event: 'new_jc_ignore_failed', jcid, error: e.message }));
         return { statusCode: 500, headers: HTML_HEADERS, body: `<p>Could not ignore ${escapeHtml(jcid)}: ${escapeHtml(e.message)}</p>` };

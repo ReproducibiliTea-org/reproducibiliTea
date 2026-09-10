@@ -19,7 +19,6 @@ const ACTIONS = {
 
 const MAX_DAYS_SINCE_UPDATE = 365;
 const MIN_DAYS_BETWEEN_EMAILS = 28;
-const UNCONFIRMED_DRAFT_MAX_AGE_MS = 60 * 60 * 1000; // 1 hour
 
 /**
  * Parse a journal club markdown file's YAML frontmatter into a plain object.
@@ -84,15 +83,6 @@ function newMessageLevel(jc) {
   return jc.lastMessageLevel + 1;
 }
 
-/**
- * Whether an unconfirmed creation draft is old enough to prune.
- * @param {Date} lastModified
- * @param {Date} [now]
- */
-function isDraftStale(lastModified, now = new Date()) {
-  return now.getTime() - lastModified.getTime() > UNCONFIRMED_DRAFT_MAX_AGE_MS;
-}
-
 function substituteHandlebars(template, subs) {
   const out = {};
   for (const key of Object.keys(template)) {
@@ -114,11 +104,9 @@ module.exports = {
   ACTIONS,
   MAX_DAYS_SINCE_UPDATE,
   MIN_DAYS_BETWEEN_EMAILS,
-  UNCONFIRMED_DRAFT_MAX_AGE_MS,
   parseJournalClub,
   isViableForRollcall,
   pickJournalClub,
   newMessageLevel,
-  isDraftStale,
   substituteHandlebars
 };
