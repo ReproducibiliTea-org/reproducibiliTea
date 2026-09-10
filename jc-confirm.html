@@ -24,4 +24,7 @@ title: Confirm journal club request
     } else {
         document.getElementById('ConfirmForm').action = `/.netlify/functions/new-jc_confirm?token=${encodeURIComponent(token)}`;
     }
+    document.getElementById('ConfirmForm').addEventListener('submit', (e) => {
+        e.target.querySelector('button').disabled = true;
+    });
 </script>

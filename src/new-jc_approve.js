@@ -84,6 +84,11 @@ function renderActionPage(title, token) {
         <textarea name="message" rows="6" cols="60"></textarea></label><br>
     <button type="submit">Submit</button>
 </form>
+<script>
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.target.querySelector('button').disabled = true;
+    });
+</script>
 </body></html>`;
 }
 
