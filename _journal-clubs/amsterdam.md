@@ -15,8 +15,8 @@ additional-contact: []
 address: [Department of Psychological Methods, Nieuwe Achtergracht 129 B, Postbus 15906, 1001 NK AMSTERDAM]
 country: Netherlands
 geolocation: [52.3636688, 4.9128393]
-last-message-timestamp: 1676290903
-last-message-level: 0
+last-message-timestamp: 1789107373
+last-message-level: 1
 last-update: f.bartos@uva.nl
 last-update-timestamp: 1676290903
 last-update-message: >-
