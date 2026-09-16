@@ -1,19 +1,20 @@
 ---
-    
+
 jcid: bioclues
 title: Bioclues
 host-organisation: Bioclues.org
 host-org-url: http://bioclues.org
-osf: 
-zotero:
-website: 
+osf: ""
+zotero: ""
+website: ""
 twitter: bioclues
 signup: bet@bioclues.org
 organisers:
   - Vandana Suseelan
-  - K Sri Manjari
-  - Anil Kumar S
-  - Prash Suravajhala 
+  - Soham Biswas
+  - Barkha Khilwani
+  - Poonam Sen
+  - Prashanth N Suravajhala
 contact: bet@bioclues.org
 additional-contact:
   - prash@Bioclues.org
@@ -24,10 +25,10 @@ country: India
 geolocation:
   - 17.494804
   - 78.411324
-last-message-timestamp: 1789539411
-last-message-level: 1
-last-update: core@bioclues.org
-last-update-timestamp: 1690373711
+last-message-timestamp: 1789541477
+last-message-level: 0
+last-update: bet@bioclues.org
+last-update-timestamp: 1789541477
 last-update-message: ""
 
 
