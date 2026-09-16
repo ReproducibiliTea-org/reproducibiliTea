@@ -24,8 +24,8 @@ country: India
 geolocation:
   - 17.494804
   - 78.411324
-last-message-timestamp: 1690373711
-last-message-level: 0
+last-message-timestamp: 1789539411
+last-message-level: 1
 last-update: core@bioclues.org
 last-update-timestamp: 1690373711
 last-update-message: ""
