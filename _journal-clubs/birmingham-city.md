@@ -15,8 +15,8 @@ additional-contact: []
 address: [Curzon Street Building, 4 Cardigan Street, Birmingham, B4 7BD]
 country: United Kingdom
 geolocation: [52.483002372737424, -1.8831467628478604]
-last-message-timestamp: 1664442323
-last-message-level: 0
+last-message-timestamp: 1789625824
+last-message-level: 1
 last-update: Ann-Kathrin.Johnen@bcu.ac.uk
 last-update-timestamp: 1664442323
 last-update-message: >-
