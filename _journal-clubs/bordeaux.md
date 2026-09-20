@@ -24,8 +24,8 @@ country: France
 geolocation:
   - 44.828117285549105
   - -0.6075096130370694
-last-message-timestamp: 1719660659
-last-message-level: 0
+last-message-timestamp: 1789884904
+last-message-level: 1
 last-update: rtea.ubordeaux@gmail.com
 last-update-timestamp: 1719660659
 last-update-message: Change lead organizers.
