@@ -24,8 +24,8 @@ country: Argentina
 geolocation:
   - -34.44641465264179
   - -58.52983474731445
-last-message-timestamp: 1757461086
-last-message-level: 0
+last-message-timestamp: 1790057800
+last-message-level: 1
 last-update: faltschuler@udesa.edu.ar
 last-update-timestamp: 1757461086
 last-update-message: API creation of buenos-aires.md
