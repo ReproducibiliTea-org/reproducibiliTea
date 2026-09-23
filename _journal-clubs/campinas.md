@@ -20,8 +20,8 @@ country: Brazil
 geolocation:
   - -22.90780345105838
   - -47.0654296875
-last-message-timestamp: 1719366684
-last-message-level: 0
+last-message-timestamp: 1790144231
+last-message-level: 1
 last-update: rafavsbastos@gmail.com
 last-update-timestamp: 1719366684
 last-update-message: Change the contact info for email subscription from
