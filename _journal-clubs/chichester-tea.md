@@ -24,8 +24,8 @@ country: United Kingdom
 geolocation:
   - 50.84499875006564
   - -0.7729482650756836
-last-message-timestamp: 1693658627
-last-message-level: 0
+last-message-timestamp: 1790317025
+last-message-level: 1
 last-update: b.sharpe@chi.ac.uk
 last-update-timestamp: 1693658627
 last-update-message: API creation of chichester-tea.md
