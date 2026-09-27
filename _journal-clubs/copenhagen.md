@@ -24,8 +24,8 @@ country: Denmark
 geolocation:
   - 55.723140431005866
   - 12.358825206756592
-last-message-timestamp: 1746712676
-last-message-level: 0
+last-message-timestamp: 1790489815
+last-message-level: 1
 last-update: stefana.aicoboaie.01@regionh.dk
 last-update-timestamp: 1746712676
 last-update-message: API creation of copenhagen.md
