@@ -26,8 +26,8 @@ country: United Kingdom
 geolocation:
   - 54.774248982560366
   - -1.5769390761852264
-last-message-timestamp: 1737914577
-last-message-level: 0
+last-message-timestamp: 1790749056
+last-message-level: 1
 last-update: hazel.a.van-der-walle@durham.ac.uk
 last-update-timestamp: 1737914577
 last-update-message: Edit Durham journal club webpage info
