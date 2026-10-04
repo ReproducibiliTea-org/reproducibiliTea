@@ -15,8 +15,8 @@ additional-contact: []
 address: [Eitelstr. 70 , 40472 DÃ¼sseldorf, Germany]
 country: Germany
 geolocation: [47.99727386804469, 7.84423828125]
-last-message-timestamp: 1677686870
-last-message-level: 0
+last-message-timestamp: 1791101008
+last-message-level: 1
 last-update: dwayne.lieck@gmail.com
 last-update-timestamp: 1677686870
 last-update-message: >-
