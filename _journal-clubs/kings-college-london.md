@@ -1,5 +1,5 @@
 ---
-    
+
 jcid: kings-college-london
 title: Kings College London
 host-organisation: King's College London
@@ -10,11 +10,10 @@ website: ""
 twitter: ""
 signup: ""
 organisers:
-  - Ze Freeman
-  - Morwenna Rickard
-  - Lauren Makin
-contact: ze.freeman@kcl.ac.uk
-additional-contact: morwenna.e.rickard@kcl.ac.uk, lauren.makin@kcl.ac.uk
+  - Morwenna Rickard,Lauren Makin
+contact: lauren.makin@kcl.ac.uk
+additional-contact:
+  - morwenna.e.rickard@kcl.ac.uk
 address:
   - Institute of Psychiatry
   - Psychology & Neuroscience
@@ -25,11 +24,11 @@ country: United Kingdom
 geolocation:
   - 51.47015645116515
   - -0.09033679962158203
-last-message-timestamp: 1733321566
+last-message-timestamp: 1791187178
 last-message-level: 0
 last-update: ze.freeman@kcl.ac.uk
-last-update-timestamp: 1733321566
-last-update-message: Adding two collaborators
+last-update-timestamp: 1791187178
+last-update-message: Update organisers
 
 
 ---
