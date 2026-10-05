@@ -15,8 +15,8 @@ additional-contact: [reptea.fukuoka@gmail.com]
 address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka]
 country: Japan
 geolocation: [33.59626100000001, 130.2166993]
-last-message-timestamp: 1669089668
-last-message-level: 0
+last-message-timestamp: 1791181610
+last-message-level: 1
 last-update: yamadayuk@gmail.com
 last-update-timestamp: 1669089668
 last-update-message: >-
