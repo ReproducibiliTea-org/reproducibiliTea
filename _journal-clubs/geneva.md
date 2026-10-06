@@ -14,6 +14,7 @@ organisers:
 contact: reproducibilitea@unige.ch
 additional-contact:
   - johanna.hein@unige.ch
+  - alicata3098@gmail.com
 address:
   - University of Geneva
   - Faculty of Psychology and Educational Sciences
