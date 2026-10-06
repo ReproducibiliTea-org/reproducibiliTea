@@ -1,5 +1,5 @@
 ---
-    
+
 jcid: geneva
 title: Geneva
 host-organisation: University of Geneva
@@ -8,12 +8,12 @@ osf: khv7m
 zotero: BV9D6PMV
 website: https://www.unige.ch/swissrn/reproducibilitea
 twitter: ReprTea_Geneva
-signup: reproducibilitea@unige.ch
+signup: alicata3098@gmail.com
 organisers:
-  - Johanna Hein
-  - Abigail Licata
+  - Johanna Hein,Abigail Licata
 contact: reproducibilitea@unige.ch
-additional-contact: [johanna.hein@unige.ch]
+additional-contact:
+  - johanna.hein@unige.ch
 address:
   - University of Geneva
   - Faculty of Psychology and Educational Sciences
@@ -23,10 +23,10 @@ country: Switzerland
 geolocation:
   - 46.19459651321258
   - 6.139898300170898
-last-message-timestamp: 1702375583
+last-message-timestamp: 1791284642
 last-message-level: 0
-last-update: caro.hautekiet@unige.ch
-last-update-timestamp: 1702375583
+last-update: reproducibilitea@unige.ch
+last-update-timestamp: 1791284642
 last-update-message: ""
 
 
