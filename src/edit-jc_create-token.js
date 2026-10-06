@@ -3,6 +3,7 @@ const fetch = require("node-fetch");
 require('dotenv').config();
 const { signToken } = require('./lib/tokens');
 const { logMisconfigured } = require('./lib/env-diagnostics');
+const { sendEmail } = require('./lib/mailer');
 
 const {
     EDIT_TOKEN_SECRET,
@@ -56,7 +57,7 @@ exports.handler = async function(event) {
         );
 
         if (data.email !== 'rollcall' && !sandbox) {
-            await sendEmail(data.email, data.jcid, token);
+            await sendEditLink(data.email, data.jcid, token);
         }
 
         console.log(JSON.stringify({ event: 'create_token_success', jcid: data.jcid }));
@@ -68,22 +69,17 @@ exports.handler = async function(event) {
 };
 
 /**
- * Handle the Mailgun API call
+ * Email the edit link
  * @param email {string} email to send to
  * @param jcid {string} journal club to edit
  * @param token {string} token to inject into the link
  */
-async function sendEmail(email, jcid, token) {
-    const Mailgun = require('mailgun.js');
-    const mailgun = new Mailgun(FormData);
-    const mg = mailgun.client({
-        username: 'api', key: MAILGUN_API_KEY, url: 'https://api.eu.mailgun.net'
-    });
-
-    const mailgunData = {
+async function sendEditLink(email, jcid, token) {
+    await sendEmail({
+        apiKey: MAILGUN_API_KEY,
+        domain: MAILGUN_DOMAIN,
         from: FROM_EMAIL_ADDRESS,
         to: email,
-        'h:Reply-To': FROM_EMAIL_ADDRESS,
         subject: `Edit ReproducibiliTea ${jcid}.md link`,
         html: `
 <p>Dear ReproducibiliTea Journal Club organiser,</p>
@@ -94,7 +90,5 @@ async function sendEmail(email, jcid, token) {
 <p>Thanks,</p>
 <p>The ReproducibiliTea Web Team</p>
         `
-    };
-
-    await mg.messages.create(MAILGUN_DOMAIN, mailgunData);
+    });
 }

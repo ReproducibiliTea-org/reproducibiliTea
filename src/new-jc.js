@@ -110,6 +110,6 @@ async function handleCreationRequest(data, sandbox) {
     console.log(JSON.stringify({ event: 'new_jc_request_sent', jcid: data.jcid, email: data.email }));
     return {
         statusCode: 200,
-        body: formatResponses({ request: { title: 'Confirmation sent', status: 'Okay', details: [`Check ${data.email} for a confirmation link.`] } })
+        body: formatResponses({ request: { title: 'Confirmation sent', status: 'Okay', details: [`Check ${data.email} for a confirmation link.`, `If you don't see it soon, please check your spam folder.`] } })
     };
 }
