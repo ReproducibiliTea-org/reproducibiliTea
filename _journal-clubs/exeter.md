@@ -1,5 +1,5 @@
 ---
-    
+
 jcid: exeter
 title: Exeter
 host-organisation: University of Exeter
@@ -12,13 +12,9 @@ signup: ""
 organisers:
   - Olivia Hill-Cousins
   - Charlie Oldfield
-  - Hannah Stokoe
-  - Yao Jiang
 contact: o.hill-cousins@exeter.ac.uk
 additional-contact:
   - cjo213@exeter.ac.uk
-  - hks213@exeter.ac.uk
-  - yj365@exeter.ac.uk
 address:
   - Washington Singer Building
   - University of Exeter
@@ -28,11 +24,11 @@ country: United Kingdom
 geolocation:
   - 50.73311426127473
   - -3.536449670791626
-last-message-timestamp: 1770210744
+last-message-timestamp: 1791386322
 last-message-level: 0
 last-update: o.hill-cousins@exeter.ac.uk
-last-update-timestamp: 1770210744
-last-update-message: Change co-organiser
+last-update-timestamp: 1791386322
+last-update-message: Remove organizers
 
 
 ---
