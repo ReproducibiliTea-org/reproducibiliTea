@@ -16,7 +16,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  BordeauxTea [2021-2023](https://www.youtube.com/playlist?list=PLg2e4R8SdhpeuGmNC_YpqA75rRFg81Pg-)   
 *  ReproducibiliTea Brasil [2020-2021](https://www.youtube.com/playlist?list=PLfID5M8U8w5tfNmLgz2jM0ggn_azVVT4j)  
 *  ReproducibiliTea Chicago / Dr William Ngiam [2020-2024](https://www.youtube.com/@WilliamNgiam/videos)
-*  ReproducibiliTea DiPSCo / Open Science Trento [2023](https://www.youtube.com/@ReproTeaUnitn/videos) , [2025](https://sites.google.com/unitn.it/reproducibilitea/reproducibilitea-seminars/iv-edition-2025?authuser=0)   
+*  ReproducibiliTea DiPSCo / Open Science Trento [2023](https://www.youtube.com/@ReproTeaUnitn/videos) , [2025](https://sites.google.com/unitn.it/reproducibilitea/reproducibilitea-seminars/archive/iv-edition-2025) , [2026](https://sites.google.com/unitn.it/reproducibilitea/reproducibilitea-seminars/v-edition-2026)   
 *  ReproducibiliTea Dundee [2021](https://www.youtube.com/@dundeereproducibilitea2015/videos)   
 *  ReproducibiliTea EARLI JURE [2023](https://www.youtube.com/playlist?list=PL3XjW1TIAkRRFJTjMY-AYLECF7-qAEUIy) 
 *  ReproducibiliTea Edinburgh [2020-2025](https://www.youtube.com/@edinburghreproducibilitea1277/videos) , [2026](https://open.ed.ac.uk/how-to-work-openly-reproducibilitea/)   
