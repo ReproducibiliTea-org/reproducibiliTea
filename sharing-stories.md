@@ -55,6 +55,7 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 * [Brewing up a storm: developing Open Research culture through ReproducibiliTea / University of Reading](https://web.archive.org/web/20201003011413id_/http://centaur.reading.ac.uk/92781/1/OpenResearchCaseStudy-2020-FitzGibbon.pdf)  
 * [One Year of Ireland’s First ReproducibiliTea Journal Club](https://ramdunyj.medium.com/one-year-of-irelands-first-reproducibilitea-journal-club-a4c217767480)
 * [A personal highlight from 2020 - ReproducibiliTea](https://williamngiam.github.io/blog/2020_ReproducibiliTea)
+* [Momentum via ReproducibiliTea Journal Clubs](https://youtu.be/sP1pJxlQ9jQ?si=e0cD7KjNNYYc-YL0)
 
 2019
 * [A journal club to fix science](https://doi.org/10.1038/d41586-019-02842-8)
