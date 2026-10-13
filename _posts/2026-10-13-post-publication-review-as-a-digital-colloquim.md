@@ -37,8 +37,7 @@ But this lack of institutional structure may not be without consequences. Scienc
 
 The question, then, is how we can build a genuine digital colloquium: a space where criticism can be public, adversarial, and collective, while also ensuring that those who devote their time to advancing science can be protected and recognized for this work. Finding an answer is one of the keys to effectively improving our scientific theories. 
 
-<br/><br/>
-
+<br/>
 *About the author:*
 <br/>
 *Adrien Fillon | [@adrienfillon.bsky.social](https://bsky.app/profile/adrienfillon.bsky.social) | [Linktree](https://linktr.ee/adrienfillon)*
