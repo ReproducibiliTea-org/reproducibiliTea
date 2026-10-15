@@ -15,8 +15,8 @@ additional-contact: []
 address: [Institute of Psychology, University of Graz, Universitaetsplatz 2/DG, 8010 Graz]
 country: Austria
 geolocation: [47.07763334280813, 15.44952392578125]
-last-message-timestamp: 1669579826
-last-message-level: 0
+last-message-timestamp: 1792044987
+last-message-level: 1
 last-update: graz_open_science@zoho.com
 last-update-timestamp: 1669579826
 last-update-message: >-
