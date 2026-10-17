@@ -1,7 +1,7 @@
 ---
-    
+
 jcid: birmingham
-title: Birmingham
+title: University of Birmingham
 host-organisation: University of Birmingham
 host-org-url: https://www.birmingham.ac.uk/
 osf: jbqw6
@@ -10,13 +10,10 @@ website: ""
 twitter: BrumReproTea
 signup: ""
 organisers:
-  - Danai Bagkou Dimakou
-  - Katherine Eales
-  - Aamir Sohail
+  - Danai Bagkou Dimakou,Katherine Eales,Aamir Sohail
 contact: d.bagkou@bham.ac.uk
 additional-contact:
-  - k.l.eales@bham.ac.uk
-  - axs2210@student.bham.ac.uk
+  - k.l.eales@bham.ac.uk,axs2210@student.bham.ac.uk
 address:
   - College of Medicine and Health
   - University of Birmingham
@@ -26,11 +23,13 @@ country: United Kingdom
 geolocation:
   - 52.45291034989549
   - -1.9277572631835938
-last-message-timestamp: 1792217673
-last-message-level: 2
-last-update: v.lyon@bham.ac.uk
-last-update-timestamp: 1727774597
-last-update-message: add new co-runner and adjust descriptions
+last-message-timestamp: 1792245358
+last-message-level: 0
+last-update: d.bagkou@bham.ac.uk
+last-update-timestamp: 1792245358
+last-update-message: |-
+  We are currently restructuring our committee and update our aims and schedule.
+   ReproducibiliTea - University of Birmingham, Birmingham, UK
 
 
 ---
