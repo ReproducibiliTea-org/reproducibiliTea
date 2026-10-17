@@ -26,8 +26,8 @@ country: United Kingdom
 geolocation:
   - 52.45291034989549
   - -1.9277572631835938
-last-message-timestamp: 1789712191
-last-message-level: 1
+last-message-timestamp: 1792217673
+last-message-level: 2
 last-update: v.lyon@bham.ac.uk
 last-update-timestamp: 1727774597
 last-update-message: add new co-runner and adjust descriptions
