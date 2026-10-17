@@ -23,13 +23,11 @@ country: United Kingdom
 geolocation:
   - 52.45291034989549
   - -1.9277572631835938
-last-message-timestamp: 1792245358
+last-message-timestamp: 1792260763
 last-message-level: 0
-last-update: d.bagkou@bham.ac.uk
-last-update-timestamp: 1792245358
-last-update-message: |-
-  We are currently restructuring our committee and update our aims and schedule.
-   ReproducibiliTea - University of Birmingham, Birmingham, UK
+last-update: axs2210@student.bham.ac.uk
+last-update-timestamp: 1792260763
+last-update-message: ""
 
 
 ---
