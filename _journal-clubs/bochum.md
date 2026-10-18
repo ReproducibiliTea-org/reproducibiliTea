@@ -23,8 +23,8 @@ country: Germany
 geolocation:
   - 51.44589656245322
   - 7.263894081115723
-last-message-timestamp: 1789798491
-last-message-level: 1
+last-message-timestamp: 1792304077
+last-message-level: 2
 last-update: lianne.wolsink@ruhr-uni-bochum.de
 last-update-timestamp: 1717599137
 last-update-message: ""
