@@ -12,6 +12,7 @@ This section includes case studies, blog posts, etc. by ReproducibiliTea organis
 * [Reproducibility in Physics and Space Science through Community Action](https://www.helsinki.fi/en/networks/reproducibilitea/outreach)
 * [Bringing Open Science to Researchers and Students: Perspectives from Three Initiatives at the University of Graz. Open Science-Chance oder Herausforderung?](https://unipub.uni-graz.at/obvugruniver/download/pdf/13996829#page=105)
 * [ReproducibiliTea: la experiencia de ReproducibiliTeaUM. Rubén López Nicolás, Universidad de Murcia](https://sprn.es/eventos/workshop-reproducibilidad-mayo-2026/memoria/) / [slides](https://osf.io/5hxcr/files/nm2b4)
+* [ReproducibiliTea: A Grassroots Initiative for Better Research](https://www.sci-integrity.com/reach/a-grassroots-initiative-for-better-research)
 
 2025
 * [ReproducibiliTea at Leeds, The Next Generation](https://leedsunilibrary.wordpress.com/2025/08/22/reproducibilitea-at-leeds-the-next-generation/)
