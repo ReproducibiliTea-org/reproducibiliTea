@@ -15,8 +15,8 @@ additional-contact: []
 address: [Heijmans Institute, Grote Kruisstraat 2/1, 9712 TS Groningen, The Netherlands]
 country: Netherlands
 geolocation: [53.220974, 6.577026099999999]
-last-message-timestamp: 1678961576
-last-message-level: 0
+last-message-timestamp: 1792649763
+last-message-level: 1
 last-update: groningentea@rug.nl
 last-update-timestamp: 1678961576
 last-update-message: >-
