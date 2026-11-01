@@ -20,8 +20,8 @@ country: Germany
 geolocation:
   - 50.121301
   - 8.5665245
-last-message-timestamp: 1791008297
-last-message-level: 1
+last-message-timestamp: 1793513440
+last-message-level: 2
 last-update: beitner@psych.uni-frankfurt.de
 last-update-timestamp: 1706788754
 last-update-message: Change main organizer
