@@ -28,6 +28,7 @@ jobs:
       - run: npm install -g npm@latest
       - run: npm ci
       - run: node scripts/rollcall.js
+        if: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ROLLCALL_JC: ${{ github.event.inputs.jc }}
