@@ -20,7 +20,8 @@ Thankfully, the scientific community refuses to be silenced. Maybe it’s just m
 *About the author:*
 <br/>
 *Annie Whamond | [@anniewham.bsky.social](https://bsky.app/profile/anniewham.bsky.social)*
-<br/>
+<br/><br/>
+
 
 See also the video recording of the presentation by Annie Whamond - Post-publication critiques in psychology journals
 <iframe width="700" height="394" src="https://www.youtube.com/embed/eIdr5anxNPY?si=Oeg7pdwhDRXtPG0f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
