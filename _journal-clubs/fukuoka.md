@@ -5,22 +5,31 @@ title: Fukuoka
 host-organisation: Kyushu University
 host-org-url: http://www.kyushu-u.ac.jp/en/
 osf: pdc9m
-zotero: null
+zotero: "null"
 website: https://sites.google.com/view/reproducibilitea-fukuoka/home
-twitter: 
-signup: 
-organisers: [Yuki Yamada, Kohei Ueda]
+twitter: ""
+signup: ""
+organisers:
+  - Yuki Yamada,Kohei Ueda
 contact: yamadayuk@gmail.com
-additional-contact: [reptea.fukuoka@gmail.com]
-address: [Faculty of Arts and Science, Kyushu University, 744 Motooka Nishi-ku, 819-0395, Fukuoka]
+additional-contact:
+  - reptea.fukuoka@gmail.com
+address:
+  - Faculty of Arts and Science
+  - Kyushu University
+  - 744 Motooka Nishi-ku
+  - 819-0395
+  - Fukuoka
 country: Japan
-geolocation: [33.59626100000001, 130.2166993]
-last-message-timestamp: 1793686286
-last-message-level: 2
-last-update: yamadayuk@gmail.com
-last-update-timestamp: 1669089668
-last-update-message: >-
-  Add website address
+geolocation:
+  - 33.59626100000001
+  - 130.2166993
+last-message-timestamp: 1794149973
+last-message-level: 0
+last-update: reptea.fukuoka@gmail.com
+last-update-timestamp: 1794149973
+last-update-message: ""
+
 
 ---
 
