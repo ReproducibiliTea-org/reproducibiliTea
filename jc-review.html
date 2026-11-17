@@ -31,7 +31,7 @@ title: Review journal club request
             '<p>This link is missing its review token. Please use the full link from your notification email.</p>';
     } else {
         document.getElementById('ReviewHeading').textContent = `Review ${title}`;
-        document.getElementById('ReviewForm').action = `/.netlify/functions/new-jc_approve?token=${encodeURIComponent(token)}`;
+        document.getElementById('ReviewForm').action = `/api/v1/new-jc_approve?token=${encodeURIComponent(token)}`;
         document.getElementById('ReviewForm').addEventListener('submit', (e) => {
             const button = e.target.querySelector('button');
             button.disabled = true;

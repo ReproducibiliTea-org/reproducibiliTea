@@ -232,7 +232,7 @@ async function submitForm(e) {
 
     // Send off to netlify functions handler and fill in response
     try {
-        const response = await fetch('/.netlify/functions/new-jc', {
+        const response = await fetch('/api/v1/new-jc', {
             method: 'POST',
             body: JSON.stringify(formData)
         });

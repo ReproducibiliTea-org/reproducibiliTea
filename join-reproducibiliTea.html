@@ -611,7 +611,7 @@ You might want to describe what you hope to achieve, how often you plan to meet,
         if(!window.jcEditToken.token)
             return;
         document.getElementById('LoadingModal').classList.add('token-check');
-        await fetch('/.netlify/functions/edit-jc_check-token', {
+        await fetch('/api/v1/edit-jc_check-token', {
             method: 'POST',
                 body: JSON.stringify(window.jcEditToken)
         })

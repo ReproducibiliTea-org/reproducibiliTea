@@ -190,7 +190,7 @@ async function callGitHub(data, results, opts = {}) {
         // Slack/Zotero collection creation now happen at admin-approval time, not
         // here — the pending file carries zoteroUser through so doApprove can
         // still add the organiser to the Zotero group. Stripped before the file
-        // goes public (see doApprove in new-jc_approve.js).
+        // goes public (see doApprove in new-jc_approve.mjs).
         ...(dir === '_pending-journal-clubs' ? { 'zotero-user': data.zoteroUser || '' } : {}),
         website: data.www,
         twitter: data.twitter,
@@ -241,7 +241,7 @@ async function callGitHub(data, results, opts = {}) {
  */
 async function notifyAdmins({ data, results, approveToken, adminEmails, mailgunConfig }) {
     const out = { title: 'Admin notification', status: 'Okay', details: [] };
-    const reviewUrl = `https://reproducibiliTea.org/.netlify/functions/new-jc_approve?token=${approveToken}`;
+    const reviewUrl = `https://reproducibiliTea.org/api/v1/new-jc_approve?token=${approveToken}`;
     const noteSection = data.adminNote
         ? `<h2>Note from the organisers</h2><p>${escapeHtml(data.adminNote)}</p>`
         : '';
@@ -329,7 +329,7 @@ const CONFIRM_RESULT_DIR = '_pending-journal-clubs/confirm-results';
  * to the same confirm link (draft already deleted) replays the exact same
  * response instead of a bare "ok" that hides an admin-notify failure.
  * Deleted once an admin approves/rejects/ignores the request (see
- * deleteConfirmResult, called from new-jc_approve.js) — irrelevant once the
+ * deleteConfirmResult, called from new-jc_approve.mjs) — irrelevant once the
  * request is no longer awaiting review.
  * @param jcid {string}
  * @param data {object} redirect params to replay verbatim
