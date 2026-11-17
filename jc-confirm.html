@@ -22,7 +22,7 @@ title: Confirm journal club request
         document.getElementById('ConfirmMessage').innerHTML =
             '<p>This link is missing its confirmation token. Please use the full link from your confirmation email.</p>';
     } else {
-        document.getElementById('ConfirmForm').action = `/.netlify/functions/new-jc_confirm?token=${encodeURIComponent(token)}`;
+        document.getElementById('ConfirmForm').action = `/api/v1/new-jc_confirm?token=${encodeURIComponent(token)}`;
     }
     document.getElementById('ConfirmForm').addEventListener('submit', (e) => {
         const button = e.target.querySelector('button');

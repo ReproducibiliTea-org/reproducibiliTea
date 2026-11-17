@@ -1,16 +1,20 @@
-require('dotenv').config();
-const fetch = require('node-fetch');
-const YAML = require('yaml');
-const { verifyToken } = require('./lib/tokens');
-const { sendEmail } = require('./lib/mailer');
-const { escapeHtml } = require('./lib/html-escape');
-const { logMisconfigured } = require('./lib/env-diagnostics');
-const { repoConfig } = require('./lib/github-repos');
-const { callSlack, callZotero, formatResponses, deleteConfirmResult } = require('./lib/jc-integrations');
+import 'dotenv/config';
+import tokens from './lib/tokens.js';
+import mailer from './lib/mailer.js';
+import htmlEscape from './lib/html-escape.js';
+import envDiagnostics from './lib/env-diagnostics.js';
+import githubRepos from './lib/github-repos.js';
+import jcIntegrations from './lib/jc-integrations.js';
+import reviewState from './lib/jc-review-state.js';
 
-const PENDING_DIR = '_pending-journal-clubs';
-const IGNORED_DIR = `${PENDING_DIR}/ignored`;
-const ACTIVE_DIR = '_journal-clubs';
+const { verifyToken } = tokens;
+const { sendEmail } = mailer;
+const { escapeHtml } = htmlEscape;
+const { logMisconfigured } = envDiagnostics;
+const { repoConfig } = githubRepos;
+const { callSlack, callZotero, formatResponses, deleteConfirmResult } = jcIntegrations;
+const { resolveState, IGNORED_DIR, ACTIVE_DIR } = reviewState;
+
 const REVIEW_PAGE = 'https://reproducibiliTea.org/jc-review.html';
 const STATUS_PAGE = 'https://reproducibiliTea.org/jc-review-status.html';
 
@@ -18,16 +22,17 @@ const STATUS_PAGE = 'https://reproducibiliTea.org/jc-review-status.html';
 // HTML fragment rendered by the function itself.
 function redirectTo(page, params = {}) {
     const query = new URLSearchParams(params);
-    return { statusCode: 302, headers: { Location: `${page}?${query.toString()}` } };
+    return new Response(null, { status: 302, headers: { Location: `${page}?${query.toString()}` } });
 }
 
-exports.handler = async (event) => {
+export default async (req) => {
+    const url = new URL(req.url);
     if (!process.env.EDIT_TOKEN_SECRET) {
         logMisconfigured('new_jc_approve_misconfigured');
         return redirectTo(STATUS_PAGE, { status: 'server-error' });
     }
 
-    const token = event.queryStringParameters?.token;
+    const token = url.searchParams.get('token');
     if (!token) return redirectTo(STATUS_PAGE, { status: 'missing-token' });
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
@@ -51,14 +56,14 @@ exports.handler = async (event) => {
         return redirectTo(STATUS_PAGE, { status: 'server-error' });
     }
 
-    if (event.httpMethod === 'GET') {
+    if (req.method === 'GET') {
         if (state.state === 'pending') {
             return redirectTo(REVIEW_PAGE, { token, jcid, title: state.file.frontmatter.title || jcid });
         }
         return redirectTo(STATUS_PAGE, { status: state.state, jcid, title: state.title || jcid });
     }
-    if (event.httpMethod !== 'POST') {
-        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'GET, POST' } };
+    if (req.method !== 'POST') {
+        return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET, POST' } });
     }
 
     // A revisited/double-submitted link: the token is still valid but the
@@ -68,7 +73,7 @@ exports.handler = async (event) => {
         return redirectTo(STATUS_PAGE, { status: state.state, jcid, title: state.title || jcid });
     }
 
-    const form = new URLSearchParams(event.body);
+    const form = new URLSearchParams(await req.text());
     const message = (form.get('message') || '').trim();
     switch (form.get('action')) {
         case 'approve': return doApprove(jcid, state.file, message);
@@ -77,54 +82,6 @@ exports.handler = async (event) => {
         default: return redirectTo(STATUS_PAGE, { status: 'unknown-action', jcid });
     }
 };
-
-/**
- * Where a jcid's review request currently stands: still awaiting review, or
- * one of the three outcomes an admin action (or a previous visit to this
- * same link) has already produced.
- * @return {Promise<{state: 'pending', file: object}|{state: 'ignored', title: string, file: object}|{state: 'approved', title: string}|{state: 'rejected'}>}
- */
-async function resolveState(jcid) {
-    const file = await fetchPending(jcid);
-    if (file && file.dir === PENDING_DIR) return { state: 'pending', file };
-    if (file && file.dir === IGNORED_DIR) return { state: 'ignored', title: file.frontmatter.title, file };
-
-    // Not pending or ignored: it was either approved (now live) or rejected
-    // (deleted outright, no trace left behind) — the only two remaining
-    // outcomes doApprove/doReject/doIgnore can produce.
-    const live = await fetchLive(jcid);
-    return live.exists ? { state: 'approved', title: live.title } : { state: 'rejected' };
-}
-
-async function fetchPending(jcid) {
-    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('pending');
-    for (const dir of [PENDING_DIR, IGNORED_DIR]) {
-        const res = await fetch(`${GITHUB_REPO_API}/contents/${dir}/${jcid}.md`, {
-            headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
-        });
-        if (res.ok) {
-            const json = await res.json();
-            const body = Buffer.from(json.content, 'base64').toString('utf8');
-            const fm = /^---\s*\n([\s\S]*?)\n---/.exec(body);
-            return { dir, sha: json.sha, body, frontmatter: fm ? YAML.parse(fm[1]) : {} };
-        }
-    }
-    return null;
-}
-
-/** @return {Promise<{exists: boolean, title?: string}>} whether `_journal-clubs/<jcid>.md` is live, and its title if so */
-async function fetchLive(jcid) {
-    const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig('public');
-    const res = await fetch(`${GITHUB_REPO_API}/contents/${ACTIVE_DIR}/${jcid}.md`, {
-        headers: { 'User-Agent': GITHUB_API_USER, Authorization: `token ${GITHUB_TOKEN}` }
-    });
-    if (res.status === 404) return { exists: false };
-    if (!res.ok) throw new Error(`Server response: ${res.status}: ${res.statusText}`);
-    const json = await res.json();
-    const body = Buffer.from(json.content, 'base64').toString('utf8');
-    const fm = /^---\s*\n([\s\S]*?)\n---/.exec(body);
-    return { exists: true, title: fm ? YAML.parse(fm[1]).title : jcid };
-}
 
 async function putFile(path, content, sha, message, target = 'public') {
     const { token: GITHUB_TOKEN, repoApi: GITHUB_REPO_API, userAgent: GITHUB_API_USER } = repoConfig(target);
@@ -252,4 +209,7 @@ async function doIgnore(jcid, file) {
     return redirectTo(STATUS_PAGE, params);
 }
 
-module.exports.resolveState = resolveState;
+export const config = {
+    path: '/api/v1/new-jc_approve',
+    rateLimit: { windowLimit: 10, windowSize: 60, aggregateBy: ['ip'] }
+};

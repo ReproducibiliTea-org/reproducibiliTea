@@ -1,12 +1,19 @@
-require('dotenv').config();
-const fetch = require('node-fetch');
-const { checkData } = require('./lib/jc-validation');
-const { callGitHub, notifyAdmins, fetchDraft, deleteDraft, saveConfirmResult, fetchConfirmResult } = require('./lib/jc-integrations');
-const { verifyToken, signToken } = require('./lib/tokens');
-const { logMisconfigured } = require('./lib/env-diagnostics');
-const { sendEmail } = require('./lib/mailer');
-const { escapeHtml } = require('./lib/html-escape');
-const { repoConfig } = require('./lib/github-repos');
+import 'dotenv/config';
+import jcValidation from './lib/jc-validation.js';
+import jcIntegrations from './lib/jc-integrations.js';
+import tokens from './lib/tokens.js';
+import envDiagnostics from './lib/env-diagnostics.js';
+import mailer from './lib/mailer.js';
+import htmlEscape from './lib/html-escape.js';
+import githubRepos from './lib/github-repos.js';
+
+const { checkData } = jcValidation;
+const { callGitHub, notifyAdmins, fetchDraft, deleteDraft, saveConfirmResult, fetchConfirmResult } = jcIntegrations;
+const { verifyToken, signToken } = tokens;
+const { logMisconfigured } = envDiagnostics;
+const { sendEmail } = mailer;
+const { escapeHtml } = htmlEscape;
+const { repoConfig } = githubRepos;
 
 const APPROVE_TOKEN_TTL_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — a review with a written message takes longer than a click
 const STATUS_PAGE = 'https://reproducibiliTea.org/jc-request-status.html';
@@ -16,16 +23,16 @@ const STATUS_PAGE = 'https://reproducibiliTea.org/jc-request-status.html';
 // a bare HTML fragment directly.
 function redirect(status, params = {}) {
     const query = new URLSearchParams({ status, ...params });
-    return { statusCode: 302, headers: { Location: `${STATUS_PAGE}?${query.toString()}` } };
+    return new Response(null, { status: 302, headers: { Location: `${STATUS_PAGE}?${query.toString()}` } });
 }
 
-exports.handler = async (event) => {
+export default async (req) => {
     if (!process.env.EDIT_TOKEN_SECRET) {
         logMisconfigured('new_jc_confirm_misconfigured');
         return redirect('server-error');
     }
 
-    const token = event.queryStringParameters?.token;
+    const token = new URL(req.url).searchParams.get('token');
     if (!token) return redirect('missing-token');
 
     const result = verifyToken(token, process.env.EDIT_TOKEN_SECRET);
@@ -35,8 +42,8 @@ exports.handler = async (event) => {
 
     // Only jc-confirm.html's button POSTs here — a scanner following the emailed
     // link only ever reaches that static page, which has no side effects of its own.
-    if (event.httpMethod !== 'POST') {
-        return { statusCode: 405, body: 'Method Not Allowed', headers: { Allow: 'POST' } };
+    if (req.method !== 'POST') {
+        return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST' } });
     }
 
     // This link is clicked from an email, so there is no usable referer — the
@@ -69,7 +76,7 @@ exports.handler = async (event) => {
 
     // Only the pending-repo commit happens here. Slack/Zotero/the public
     // journal-clubs entry are all admin-approval side effects now (see
-    // doApprove in new-jc_approve.js) — nothing here is public or reversible.
+    // doApprove in new-jc_approve.mjs) — nothing here is public or reversible.
     const results = {};
     results.github = await callGitHub(data, results, { dir: '_pending-journal-clubs', target: 'pending' });
 
@@ -192,3 +199,8 @@ async function pendingJcExists(jcid) {
     });
     return res.ok;
 }
+
+export const config = {
+    path: '/api/v1/new-jc_confirm',
+    rateLimit: { windowLimit: 20, windowSize: 60, aggregateBy: ['ip'] }
+};

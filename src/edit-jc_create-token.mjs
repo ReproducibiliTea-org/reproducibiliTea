@@ -1,9 +1,11 @@
-// node fetch support
-const fetch = require("node-fetch");
-require('dotenv').config();
-const { signToken } = require('./lib/tokens');
-const { logMisconfigured } = require('./lib/env-diagnostics');
-const { sendEmail } = require('./lib/mailer');
+import 'dotenv/config';
+import tokens from './lib/tokens.js';
+import envDiagnostics from './lib/env-diagnostics.js';
+import mailer from './lib/mailer.js';
+
+const { signToken } = tokens;
+const { logMisconfigured } = envDiagnostics;
+const { sendEmail } = mailer;
 
 const {
     EDIT_TOKEN_SECRET,
@@ -17,27 +19,27 @@ let { GITHUB_REPO_API } = process.env;
 
 const TOKEN_TTL_MS = 2 * 24 * 60 * 60 * 1000; // 2 days
 
-exports.handler = async function(event) {
+export default async (req) => {
     console.log(JSON.stringify({ event: 'create_token_request_received' }));
 
     if (!EDIT_TOKEN_SECRET) {
         logMisconfigured('create_token_misconfigured');
-        return { statusCode: 500, body: 'Server misconfiguration.' };
+        return new Response('Server misconfiguration.', { status: 500 });
     }
 
     let sandbox = false;
     try {
-        sandbox = /(sandbox|localhost)/.test(event.headers.referer);
+        sandbox = /(sandbox|localhost)/.test(req.headers.get('referer'));
         if (sandbox) {
             const { GITHUB_REPO_API_SANDBOX } = process.env;
             GITHUB_REPO_API = GITHUB_REPO_API_SANDBOX;
         }
 
-        const data = JSON.parse(event.body);
+        const data = JSON.parse(await req.text());
         if (data.email) data.email = data.email.replace(/\s/sg, '');
         if (!data.email || !data.jcid) {
             console.log(JSON.stringify({ event: 'create_token_invalid_input' }));
-            return { statusCode: 400, body: 'Email and JCID must be submitted in JSON format in the request body.' };
+            return new Response('Email and JCID must be submitted in JSON format in the request body.', { status: 400 });
         }
 
         const ghResponse = await fetch(`${GITHUB_REPO_API}/contents/_journal-clubs`, {
@@ -47,7 +49,7 @@ exports.handler = async function(event) {
         const jcNames = jcList.map(jc => jc.name);
         if (!jcNames.includes(`${data.jcid}.md`)) {
             console.log(JSON.stringify({ event: 'create_token_unknown_jc', jcid: data.jcid }));
-            return { statusCode: 404, body: `Requested journal club ${data.jcid} does not exist.` };
+            return new Response(`Requested journal club ${data.jcid} does not exist.`, { status: 404 });
         }
 
         const token = signToken(
@@ -61,10 +63,10 @@ exports.handler = async function(event) {
         }
 
         console.log(JSON.stringify({ event: 'create_token_success', jcid: data.jcid }));
-        return { statusCode: 200, body: 'Token created successfully.' };
+        return new Response('Token created successfully.', { status: 200 });
     } catch (e) {
         console.log(JSON.stringify({ event: 'create_token_failed', error: e.message }));
-        return { statusCode: 500, body: e.message };
+        return new Response(e.message, { status: 500 });
     }
 };
 
@@ -92,3 +94,8 @@ async function sendEditLink(email, jcid, token) {
         `
     });
 }
+
+export const config = {
+    path: '/api/v1/edit-jc_create-token',
+    rateLimit: { windowLimit: 5, windowSize: 60, aggregateBy: ['ip'] }
+};
