@@ -27,7 +27,7 @@ as well as resources published by other organisations, lists of books, podcasts,
 *  ReproducibiliTea Rotterdam / Open Science Community Rotterdam [2022](https://www.youtube.com/@opensciencecommunityrotter4952/videos)   
 *  ReproducibiliTea UCL/UNIL [2022-2026](https://sites.google.com/view/reproducibilitea-ucl/past-events?authuser=0)  
 *  ReproducibiliTea UniBasel [2020-2025](https://www.youtube.com/@bam_mri/videos) 
-*  ReproducibiliTea UniHelsinki [2025a](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) [2025b](https://www.helsinki.fi/fi/unitube/video/e455dcb7-7f11-490d-ac65-9b7764ea307c)
+*  ReproducibiliTea UniHelsinki [2025a](https://www.helsinki.fi/fi/unitube/video/ecd3c68d-b4f6-4948-8f0a-6e53a5c7c2ea) , [2025b](https://www.helsinki.fi/fi/unitube/video/e455dcb7-7f11-490d-ac65-9b7764ea307c) , [2026](https://www.helsinki.fi/fi/unitube/video/4d84b791-7c77-4d13-bb86-16b27c1410eb)
 *  ReproducibiliTea University of East Anglia [2022-2026](https://www.youtube.com/@reproducibiliteauea1434/videos)
 *  ReproducibiliTea Global [2025](https://www.youtube.com/playlist?list=PL71JDbaBfy83TrUALV3sNQmlMblllftF7)
 *  ReproducibiliTea Warwick [2026](https://osf.io/tq7s8/files/osfstorage)
