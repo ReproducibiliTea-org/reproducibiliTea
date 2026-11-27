@@ -10,14 +10,22 @@
         <tbody>
             {% assign clubs = site.journal-clubs | where_exp: "item", "item.status != 'pending'" | sort_natural: "title" %}
             {% for jc in clubs %}
-            <tr tabindex="0"
+            <tr class="jc-table-club"
                 data-jc-title="{{ jc.title | escape }}"
                 data-search="{{ jc.title | append: ' ' | append: jc.host-organisation | append: ' ' | append: jc.country | downcase | escape }}">
-                <td>{{ jc.title }}</td>
+                <td><button type="button" class="jc-table-toggle" aria-expanded="false" aria-controls="jc-table-details"{% if jc.geolocation %} data-has-location{% endif %}>{{ jc.title | escape }}</button></td>
                 <td>{{ jc.host-organisation }}</td>
                 <td>{{ jc.country }}</td>
             </tr>
             {% endfor %}
+            <tr class="jc-table-details-row" hidden>
+                <td colspan="3">
+                    <div id="jc-table-details">
+                        <div class="jc-table-details-content"></div>
+                        <button type="button" class="mock-button jc-table-map-button" hidden>Show on map</button>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -26,40 +34,73 @@
     (function () {
         const jcSearch = document.getElementById('jcSearch');
         const table = document.getElementById('jcTable');
-        if (!table) return;
-        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const mapElement = document.getElementById('map');
+        const rows = Array.from(table.querySelectorAll('.jc-table-club'));
+        const details = table.querySelector('.jc-table-details-row');
+        const content = details.querySelector('.jc-table-details-content');
+        const showOnMap = details.querySelector('.jc-table-map-button');
+        let expandedRow = null;
 
-        if (jcSearch) {
-            jcSearch.addEventListener('input', () => {
-                const query = jcSearch.value.trim().toLowerCase();
-                rows.forEach((row) => {
-                    const matches = !query || (row.dataset.search || '').includes(query);
-                    row.hidden = !matches;
-                });
-            });
-
-            jcSearch.addEventListener('change', () => {
-                const title = jcSearch.value;
-                rows.forEach((row) => {
-                    row.classList.toggle('jc-table-row--selected', row.dataset.jcTitle === title);
-                });
-            });
+        function selectMapMarker(title, openPopup = false) {
+            mapElement.dispatchEvent(new CustomEvent('jc:select-marker', { detail: { title, openPopup } }));
         }
 
-        const selectRow = (row) => {
-            if (!jcSearch) return;
-            jcSearch.value = row.dataset.jcTitle;
-            jcSearch.dispatchEvent(new Event('change'));
-        };
+        function collapseDetails() {
+            if (!expandedRow) return;
+            expandedRow.querySelector('.jc-table-toggle').setAttribute('aria-expanded', 'false');
+            expandedRow.classList.remove('jc-table-row--selected');
+            details.hidden = true;
+            content.replaceChildren();
+            expandedRow = null;
+        }
 
-        rows.forEach((row) => {
-            row.addEventListener('click', () => selectRow(row));
-            row.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    selectRow(row);
-                }
+        function toggleDetails(row) {
+            const wasExpanded = row === expandedRow;
+            collapseDetails();
+            if (wasExpanded) {
+                selectMapMarker('');
+                return;
+            }
+
+            const title = row.dataset.jcTitle;
+            const template = document.getElementById(title);
+            if (!(template instanceof HTMLTemplateElement)) return;
+
+            const toggle = row.querySelector('.jc-table-toggle');
+            const clubDetails = template.content.cloneNode(true);
+            clubDetails.querySelector('.post-header').remove();
+            const description = clubDetails.querySelector('.jc-content');
+            if (!description.innerHTML.trim()) description.closest('.jc-body').remove();
+            content.replaceChildren(clubDetails);
+            showOnMap.hidden = !toggle.hasAttribute('data-has-location');
+            row.after(details);
+            details.hidden = false;
+            toggle.setAttribute('aria-expanded', 'true');
+            row.classList.add('jc-table-row--selected');
+            expandedRow = row;
+            selectMapMarker(title);
+        }
+
+        jcSearch.addEventListener('input', () => {
+            const query = jcSearch.value.trim().toLowerCase();
+            rows.forEach(row => {
+                row.hidden = !!query && !row.dataset.search.includes(query);
             });
+            if (expandedRow?.hidden) {
+                collapseDetails();
+                selectMapMarker('');
+            }
+        });
+
+        rows.forEach(row => {
+            row.addEventListener('click', () => toggleDetails(row));
+        });
+
+        showOnMap.addEventListener('click', () => {
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            mapElement.focus({ preventScroll: true });
+            mapElement.scrollIntoView({ behavior: reducedMotion ? 'instant' : 'smooth', block: 'start' });
+            selectMapMarker(expandedRow.dataset.jcTitle, true);
         });
     })();
 </script>

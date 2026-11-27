@@ -7,15 +7,17 @@
 
 #jcTable {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     background: white;
 }
 
-#jcTable th,
-#jcTable td {
+#jcTable > thead > tr > th,
+#jcTable > tbody > tr > td {
     padding: 0.65em 1em;
     text-align: left;
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
 
 #jcTable thead th {
@@ -24,21 +26,94 @@
     font-weight: 600;
 }
 
-#jcTable tbody tr {
+#jcTable > thead > tr > th:last-child {
+    width: 20%;
+}
+
+#jcTable .jc-table-club {
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-#jcTable tbody tr:hover {
+#jcTable .jc-table-club:hover {
     background: color-mix(in srgb, var(--color-rpt-primary) 8%, white);
 }
 
-#jcTable tbody tr:focus {
+#jcTable .jc-table-toggle:focus-visible {
     outline: 2px solid var(--color-rpt-primary);
-    outline-offset: -2px;
+    outline-offset: 3px;
 }
 
 #jcTable tbody tr.jc-table-row--selected {
     background: color-mix(in srgb, var(--color-rpt-primary) 12%, white);
     border-left: 3px solid var(--color-rpt-primary);
+}
+
+#jcTable .jc-table-toggle {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--color-rpt-secondary);
+    font: inherit;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#jcTable .jc-table-details-row > td {
+    background: color-mix(in srgb, var(--color-rpt-primary) 5%, white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#jcTable .jc-table-details-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75em;
+    overflow-wrap: anywhere;
+}
+
+#jcTable .jc-table-details-content .jc-body,
+#jcTable .jc-table-details-content .jc-info {
+    width: auto;
+    min-width: 0;
+}
+
+#jcTable .jc-table-details-content .jc-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35em;
+}
+
+#jcTable .jc-table-details-content .jc-info > hr {
+    display: none;
+}
+
+#jcTable .jc-table-details-content .jc-content {
+    overflow-x: auto;
+}
+
+#jcTable .jc-table-map-button {
+    margin-top: 0.75em;
+    font: inherit;
+    cursor: pointer;
+}
+
+#jcTable [hidden] {
+    display: none;
+}
+
+#map {
+    scroll-margin-top: 4rem;
+}
+
+#map .jc-map-marker--selected {
+    filter: drop-shadow(0 0 5px var(--color-rpt-secondary));
+}
+
+@media (max-width: 640px) {
+    #jcTable > thead > tr > th,
+    #jcTable > tbody > tr > td {
+        padding: 0.55em;
+    }
 }
