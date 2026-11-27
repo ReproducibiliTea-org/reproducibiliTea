@@ -24,5 +24,5 @@ Ready to get started? [Sign up your journal club](/join-reproducibiliTea.html) �
 - [Online meetings](/online/) — etiquette and hosting advice for running a journal club online.
 - [Zotero Group Info](/Zotero-group/) — how the shared Zotero library works and how to get access.
 - [Edit your journal club](/edit-jc.html) — request a link to update your journal club's details.
-- [Make a meeting card](/card/) — generate a shareable schedule card image.
+- [Advertise your club](/card/) — find ways to promote your club and make a shareable meeting card.
 - [Code of Conduct template](/code-of-conduct/) — an optional template your journal club can adopt as its own.

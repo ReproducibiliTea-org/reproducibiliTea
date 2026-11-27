@@ -1,153 +1,28 @@
 ---
 layout: default
-title:  "ReproducibiliTea Card"
+title: Advertise your club
 ---
 
-<h1>ReproducibiliTea Schedule Card</h1>
+<link rel="stylesheet" href="{{ '/assets/css/meeting-card.css' | relative_url }}">
+<script src="{{ '/assets/js/card-edit.js' | relative_url }}" defer></script>
 
-<script src="/assets/js/pablojs/pablo.min.js" type="text/javascript"></script>
-<script src="/assets/js/card-edit.js" type="text/javascript"></script>
-
-<div class="card-wrap">
-<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" id="card-img">
-    <style type="text/css">
-        @font-face {
-            font-family: 'FontAwesome';
-            src: url({% include fontAwesome %}) format('opentype');
-        }
-        #Logo {height: 250px; width: 250px;}
-        text {font-size: 24px; font-family: Arial, sans-serif; font-weight: bold;}
-        .icon {font-size: 32px; font-family: FontAwesome;}
-        .scrawl {font-family: "Lucida Console", Monaco, monospace};
-        #place text {font-size: 36px; font-weight: bold;}
-        #title text {font-size: 28px; text-decoration: underline;}
-        #twitter text {stroke: dodgerblue; font-weight: normal; font-size: 24px;}
-        #time text.scrawl {font-size: 32px;}
-        path {stroke: black;}
-        .border {stroke-width: 2; fill: transparent;}
-        .front {stroke: gainsboro;}
-        .back {stroke: grey;}
-    </style>
-    <path class="border back" d="M0 0 L600 0 L600 340 L0 340 Z"></path>
-    <path class="border front" d="M0 0 L598 0 L598 338 L0 338 Z"></path>
-    <image id="Logo" x="25" xlink:href="{% include reproducibiliTea-logo %}"/>
-    <g>
-        <!-- fontAwesome icon -->
-        <text id="title" x="425" y="50" text-anchor="middle">Online Journal Club</text>
-    </g>
-    <g>
-        <!-- fontAwesome icon -->
-        <text id="place" x="150" y="275" text-anchor="middle">Some place here</text>
-    </g>
-    <g>
-        <!-- fontAwesome icon -->
-        <text id="twitter" x="150" y="305" text-anchor="middle">@reproducibiliT</text>
-    </g>
-    <g>
-        <!-- fontAwesome icon -->
-        <text class="icon" x="300" y="150">&#xf017;</text>
-        <path d="M350 160 L550 160 Z"></path>
-        <text id="time" x="390" y="145" class="scrawl" text-anchor="middle">00:00</text>
-        <text id="timezone" x="500" y="145" class="scrawl" text-anchor="middle">00:00</text>
-    </g>
-    <g>
-        <!-- fontAwesome icon -->
-        <text class="icon" x="300" y="225">&#xf073;</text>
-        <path d="M350 235 L550 235 Z"></path>
-        <text id="date" x="450" y="220" class="scrawl" text-anchor="middle">Some date here</text>
-    </g>
-</svg>
-<button type="button" class="save" id="share-btn">
-    <span id="save-link">Share</span>
-</button>
-</div>
-
-<style type="text/css">
-    .card-wrap {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    #card-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    }
-    .save {
-        display: block;
-        width: 100%;
-        margin-top: 0.75em;
-        text-align: center;
-        background-color: var(--color-rpt-primary);
-        color: var(--color-rpt-white);
-        font-size: 1.25em;
-        line-height: 2em;
-        cursor: pointer;
-        border: none;
-        border-radius: 8px;
-        padding: 0;
-        font-family: inherit;
-    }
-    .save:hover {
-        background-color: var(--color-rpt-secondary);
-        color: var(--color-rpt-white);
-        font-weight: bold;
-    }
-    .controls {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75em;
-        max-width: 600px;
-        margin: 1.5em auto 0;
-        padding: 0 0.5em;
-    }
-    .controls .row {
-        display: flex;
-        align-items: center;
-        gap: 0.75em;
-    }
-    .controls .row label {
-        flex: 0 0 auto;
-        min-width: 1.5em;
-        text-align: center;
-    }
-    .controls .row input,
-    .controls .row select {
-        flex: 1;
-        min-height: 44px;
-        min-width: 0;
-        padding: 0.4em 0.6em;
-        font-size: 1em;
-        font-family: inherit;
-        border: 1px solid var(--color-rpt-dark);
-        border-radius: 8px;
-    }
-    @media screen and (min-width: 600px) {
-        .controls {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            padding: 0;
-        }
-        .controls .row {
-            flex: 1 1 45%;
-        }
-    }
-</style>
-
-<form id="card-form" class="controls" onchange="updateCard()">
-    <div class="row" title="Name of the journal club hosting the session.">
-        <label for="place-in">JC</label>
-        <input type="text" id="place-in" name="place" value="Oxford" />
-    </div>
-    <div class="row" title="Time the session will take place. HH:MM">
-        <label for="time-in"><i class="far fa-clock"></i></label>
-        <input type="time" id="time-in" name="time" value="13:00"/>
-    </div>
-    <div class="row" title="Timezone to show on the card. Your timezone should be selected automatically. GMT+/-HHMM">
-        <label for="timezone-in"><i class="fas fa-globe-europe"></i></label>
-        <select id="timezone-in" name="timezone">
+<div id="advertising-your-club">
+<h1>Advertise your club</h1>
+<ul>
+  <li><strong>Add an event to the shared calendar.</strong> If your online meeting is open to guests, <a href="mailto:{{ site.email }}">email us</a> to request access to the <a href="{{ '/calendar/' | relative_url }}" target="_blank" rel="noopener">shared calendar</a>.</li>
+  <li><strong>Post your club flyer.</strong> Adapt a <a href="https://osf.io/3qrj6/wiki/home/" target="_blank" rel="noopener">poster template from the organizer toolkit</a> and tag ReproducibiliTea on <a href="https://twitter.com/ReproducibiliT" target="_blank" rel="noopener">X (@ReproducibiliT)</a>, <a href="https://bsky.app/profile/reproducibilitea.org" target="_blank" rel="noopener">Bluesky (@reproducibilitea.org)</a>, <a href="https://scicomm.xyz/@ReproducibiliTeaGlobal" target="_blank" rel="noopener">Mastodon (@ReproducibiliTeaGlobal@scicomm.xyz)</a>, or <a href="https://www.linkedin.com/company/reproducibilitea/" target="_blank" rel="noopener">LinkedIn (ReproducibiliTea)</a>.</li>
+</ul>
+<section aria-labelledby="rpt-card-heading">
+  <h2 id="rpt-card-heading">Make a meeting card</h2>
+  <p>Download the card to attach it to a post, or choose Share image to open your device’s sharing options when available.</p>
+  <div class="editor">
+    <div class="fields">
+      <label class="full">Meeting title <small>(optional)</small><input data-field="title" maxlength="64" placeholder="Open data and privacy"></label>
+      <label>Club name<input data-field="club" maxlength="44" placeholder="Geneva Journal Club"></label>
+      <label>Social handle<input data-field="handle" maxlength="60" placeholder="@yourclub"></label>
+      <label>Date<input data-field="date" type="date"></label>
+      <label>Time<input data-field="time" type="time" value="13:00"></label>
+      <label>Time zone<select data-field="zone">
             <option value="GMT-1200">GMT -12:00</option>
             <option value="GMT-1100">GMT -11:00</option>
             <option value="GMT-1000">GMT -10:00</option>
@@ -188,17 +63,17 @@ title:  "ReproducibiliTea Card"
             <option value="GMT+1245">GMT +12:45</option>
             <option value="GMT+1300">GMT +13:00</option>
             <option value="GMT+1400">GMT +14:00</option>
-        </select>
+        </select></label>
     </div>
-    <div class="row" title="Date the session will take place. YYYY-MM-DD">
-        <label for="date-in"><i class="fas fa-calendar-alt"></i></label>
-        <input type="date" id="date-in" name="date" value="2020-11-30"/>
+    <div class="preview">
+      <canvas id="meeting-card" width="800" height="450" role="img" aria-label="Meeting card preview"></canvas>
+      <img id="meeting-card-logo" src="{% capture meeting_logo %}{% include reproducibiliTea-logo %}{% endcapture %}{{ meeting_logo | strip | replace: 'data:img/png', 'data:image/png' }}" alt="" hidden>
+      <div class="actions">
+        <button type="button" data-action="download">Download PNG</button>
+        <button type="button" data-action="share" hidden>Share image</button>
+      </div>
+      <div role="status" class="feedback"></div>
     </div>
-    <div class="row" title="Twitter handle for the session organisers.">
-        <label for="twitter-in"><i class="fab fa-twitter"></i></label>
-        <input type="text" id="twitter-in" name="twitter" value="@reproducibiliT"/>
-    </div>
-    <!--div class="row">
-        <button onclick="updateCard(event)">Update</button>
-    </div-->
-</form>
+  </div>
+</section>
+</div>

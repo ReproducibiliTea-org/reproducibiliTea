@@ -1,0 +1,28 @@
+#advertising-your-club {
+  --paper: var(--color-rpt-white);
+  --ink: var(--color-rpt-dark);
+  --sub: var(--color-rpt-secondary);
+  --brand: var(--color-rpt-primary);
+  --line: #c1d9e7;
+}
+#advertising-your-club h1,#advertising-your-club h2 {line-height:1.18;margin:0;font-weight:700}
+#advertising-your-club h1 {font-size:clamp(26px,5vw,39px)}
+#advertising-your-club h2 {font-size:24px}
+#advertising-your-club a {color:var(--brand);text-decoration:underline}
+#advertising-your-club ul {padding-left:20px;margin:14px 0 22px}
+#advertising-your-club li+li {margin-top:7px}
+#advertising-your-club section {border-top:1px solid var(--line);padding-top:18px}
+#advertising-your-club section>p {margin:6px 0 14px;color:var(--sub)}
+#advertising-your-club .editor {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+#advertising-your-club .fields {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 12px;align-content:start}
+#advertising-your-club .full {grid-column:1/-1}
+#advertising-your-club label {display:block;font-weight:600}
+#advertising-your-club small {color:var(--sub);font-weight:400}
+#advertising-your-club input, #advertising-your-club select {width:100%;min-width:0;box-sizing:border-box;min-height:40px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink);padding:6px 8px;font:400 16px system-ui,sans-serif}
+#meeting-card {display:block;width:100%;height:auto}
+#advertising-your-club .actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}
+#advertising-your-club button {font:inherit;font-weight:600;padding:7px 12px;border-radius:5px;border:1px solid var(--brand);background:var(--paper);color:var(--brand);min-height:44px;cursor:pointer}
+#advertising-your-club button:first-child {background:var(--brand);color:var(--paper)}
+#advertising-your-club button:disabled {opacity:.6;cursor:default}
+#advertising-your-club .feedback:not(:empty) {margin-top:8px;color:var(--sub)}
+@media(max-width:650px) {#advertising-your-club .editor {grid-template-columns:minmax(0,1fr)}}
