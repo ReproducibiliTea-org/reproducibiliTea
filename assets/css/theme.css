@@ -329,6 +329,12 @@ footer.site-footer .footer-col-2 img {
     }
 }
 
+/* Resource guide headings sit below the standard page title. */
+.post-content h2#reproducibilitea-zotero-library,
+.post-content h2#sharing-your-club-outputs-on-knowledge-commons {
+    font-size: 1.75rem;
+}
+
 /* Map container */
 #map {
     width: 100%;

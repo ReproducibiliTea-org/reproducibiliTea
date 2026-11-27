@@ -9,7 +9,7 @@ We now have journal clubs set up in many universities. Please use the search too
 
 {% include jc-showcase.html initial-value="" %}
 
-Click a pin on the map to load that journal club above, or browse the table below to find one by name, location, or topic.
+Select a pin to see the club’s name on the map, or select a club in the table below to read its details in place. Use **Show on map** to jump to its location.
 {% include jc-map.html %}
 
 {% include jc-table.html %}

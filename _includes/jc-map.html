@@ -1,4 +1,4 @@
-<div id="map" style="height: 500px"></div>
+<div id="map" tabindex="-1" role="region" aria-label="Journal club map" style="height: 500px"></div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
@@ -9,11 +9,12 @@
 <script>
     {% assign geos = site.journal-clubs | where_exp: "item", "item.geolocation" | where_exp: "item", "item.status != 'pending'" %}
     const jcLocations = [
-        {% for jc in geos %}["{{ jc.title | escape }}", {{ jc.geolocation | join: ", " }}]{% unless forloop.last %},{% endunless %}
+        {% for jc in geos %}[{{ jc.title | jsonify | replace: "<", "\u003c" }}, {{ jc.geolocation | join: ", " }}]{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
 
-    const map = L.map('map', { center: [20, 0], zoom: 2 });
+    const mapElement = document.getElementById('map');
+    const map = L.map(mapElement, { center: [20, 0], zoom: 2 });
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 18
@@ -21,14 +22,15 @@
 
     const cluster = L.markerClusterGroup();
     const jcSearch = document.getElementById('jcSearch');
-    const markersByTitle = {};
+    const markersByTitle = new Map();
     jcLocations.forEach(([title, lat, lng]) => {
-        const marker = L.marker([lat, lng]).bindPopup(title);
-        markersByTitle[title] = marker;
+        const popup = document.createElement('span');
+        popup.textContent = title;
+        const marker = L.marker([lat, lng], { title, alt: title }).bindPopup(popup);
+        markersByTitle.set(title, marker);
         if (jcSearch) {
             marker.on('click', () => {
-                jcSearch.value = '';
-                jcSearch.dispatchEvent(new Event('input'));
+                jcSearch.value = title;
                 jcSearch.dispatchEvent(new Event('change'));
             });
         }
@@ -37,11 +39,39 @@
     map.addLayer(cluster);
 
     if (jcSearch) {
-        const focusMarker = (title) => {
-            const marker = markersByTitle[title];
-            if (marker) cluster.zoomToShowLayer(marker, () => marker.openPopup());
-        };
-        jcSearch.addEventListener('change', () => focusMarker(jcSearch.value));
-        focusMarker(jcSearch.value);
+        let selectedMarker;
+        let markerRequest = 0;
+
+        function markSelected(marker) {
+            marker.getElement()?.classList.toggle('jc-map-marker--selected', selectedMarker === marker);
+        }
+
+        function focusMarker(title, openPopup) {
+            const request = ++markerRequest;
+            const previousMarker = selectedMarker;
+            selectedMarker = markersByTitle.get(title);
+            if (previousMarker && previousMarker !== selectedMarker) {
+                previousMarker.closePopup();
+                previousMarker.setZIndexOffset(0);
+                markSelected(previousMarker);
+            }
+
+            const marker = selectedMarker;
+            if (!marker) return;
+            marker.setZIndexOffset(1000);
+            if (!openPopup) marker.closePopup();
+            cluster.zoomToShowLayer(marker, () => {
+                if (request !== markerRequest) return;
+                markSelected(marker);
+                if (openPopup) marker.openPopup();
+            });
+        }
+
+        markersByTitle.forEach(marker => marker.on('add', () => markSelected(marker)));
+        mapElement.addEventListener('jc:select-marker', event => {
+            focusMarker(event.detail.title, event.detail.openPopup);
+        });
+        jcSearch.addEventListener('change', () => focusMarker(jcSearch.value, true));
+        focusMarker(jcSearch.value, true);
     }
 </script>
