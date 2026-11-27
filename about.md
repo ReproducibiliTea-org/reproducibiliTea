@@ -32,7 +32,7 @@ The Advisory Board are:
 * Sophia Crüwell [@cruwelli.bsky.social](https://bsky.app/profile/cruwelli.bsky.social) (Co-founder)
 * Helena Gellersen [@hgellersen](https://twitter.com/hgellersen) 
 * Matt Jaquiery
-* Paulina Manduch [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/) 
+* Paulina Manduch [@paulinamanduch.bsky.social](https://bsky.app/profile/paulinamanduch.bsky.social) / [(LinkedIn)](https://www.linkedin.com/in/paulinamanduch/) 
 * William Ngiam [@williamngiam.github.io](https://bsky.app/profile/williamngiam.github.io)
 * Amy Orben [@orbenamy.bsky.social](https://bsky.app/profile/orbenamy.bsky.social) (Co-founder)
 * Sam Parsons [@Sam_D_Parsons](https://twitter.com/Sam_D_Parsons) (Co-founder)
