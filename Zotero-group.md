@@ -1,12 +1,19 @@
 ---
 layout: post
-title:  "ReproducibiliTea Zotero Library"
+title:  "Share your journal club resources"
 date:   2019-10-21 13:00:00 +0100
 author: Matt Jaquiery
 image: /assets/images/blog/zotero-group.jpg
 categories: [JC, Administration]
 tags: [Zotero]
 ---
+
+**On this page**
+
+- [ReproducibiliTea Zotero Library](#reproducibilitea-zotero-library)
+- [Sharing your club outputs on Knowledge Commons](#sharing-your-club-outputs-on-knowledge-commons)
+
+## ReproducibiliTea Zotero Library
 
 {% include image.html url="blog/zotero-oxford.jpg" alt="Oxford's MT2019 Zotero Subcollection" description="The Oxford MT2019 JC Schedule on Zotero." %}
 
@@ -42,3 +49,10 @@ Zotero is free for basic use, open source (unlike Mendeley) and has good integra
 If you want to use Zotero as your own reference manager, in addition to using it to organise your club's papers, you can use the same account you just created and put items in your personal library. If you download the desktop client you'll see the ReproducibiliTea Library listed as a 'group library' below your personal one. It syncs automatically so you'll always be up to date. 
 
 {% include image.html url="blog/zotero-group.jpg" alt="ReproducibiliTea Zotero group" description="The homepage for the group library." %}
+
+## Sharing your club outputs on Knowledge Commons
+
+Following the changes to OSF announced in 2026, ReproducibiliTea moved to Knowledge Commons for new and updated community documents and materials produced by journal clubs. Older materials will remain available in the [ReproducibiliTea OSF archive](https://osf.io/3qrj6/wiki/home/). You can learn more about Knowledge Commons [here](https://about.hcommons.org/). If you have any questions, just write us at reproducibilitea@gmail.com.
+
+- **Share informal files or collaborate.** Use the [ReproducibiliTea Group](https://hcommons.org/groups/reproducibilitea/) for files that don’t need a DOI and for collaborative documents. Set the file category to your club name (e.g., ReproducibiliTea-Geneva).
+- **Archive materials.** Use the [KCWorks ReproducibiliTea Collection](https://works.hcommons.org/collections/reproducibilitea/) for materials you want to assign a DOI or for files over 2 MB. Deposit them in the [subcollection named for your club](https://works.hcommons.org/collections/reproducibilitea/browse). See the [ReproducibiliTea Global subcollection](https://works.hcommons.org/collections/reproducibilitea-global/?q=&l=list&p=1&s=10&sort=newest) for an example.
