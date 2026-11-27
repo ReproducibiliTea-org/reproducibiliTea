@@ -1,5 +1,6 @@
 ---
 layout: post
+plain_title: true
 title:  "Share your journal club resources"
 date:   2019-10-21 13:00:00 +0100
 author: Matt Jaquiery

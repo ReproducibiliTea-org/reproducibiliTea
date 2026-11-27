@@ -5,14 +5,11 @@
   --brand: var(--color-rpt-primary);
   --line: #c1d9e7;
 }
-#advertising-your-club h1,#advertising-your-club h2 {line-height:1.18;margin:0;font-weight:700}
-#advertising-your-club h1 {font-size:clamp(26px,5vw,39px)}
-#advertising-your-club h2 {font-size:24px}
 #advertising-your-club a {color:var(--brand);text-decoration:underline}
 #advertising-your-club ul {padding-left:20px;margin:14px 0 22px}
 #advertising-your-club li+li {margin-top:7px}
 #advertising-your-club section {border-top:1px solid var(--line);padding-top:18px}
-#advertising-your-club section>p {margin:6px 0 14px;color:var(--sub)}
+#advertising-your-club section>p {margin:6px 0 14px}
 #advertising-your-club .editor {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 #advertising-your-club .fields {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 12px;align-content:start}
 #advertising-your-club .full {grid-column:1/-1}
