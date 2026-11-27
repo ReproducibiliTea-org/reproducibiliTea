@@ -9,7 +9,7 @@ categories: [JC, Administration]
 tags: [Zotero]
 ---
 
-**On this page**
+You can use the shared Zotero library to find and share papers for discussion. You can use Knowledge Commons (our new platform given OSF changes announced in 2026) to share or archive materials your club creates, such as slides, schedules, and other resources. See below for information on these two platforms.
 
 - [ReproducibiliTea Zotero Library](#reproducibilitea-zotero-library)
 - [Sharing your club outputs on Knowledge Commons](#sharing-your-club-outputs-on-knowledge-commons)
@@ -31,19 +31,19 @@ We think this is a good solution for minimising duplication (e.g. multiple peopl
 
 **Anyone can browse the group library** and subscribe to updates, but only authorised members can **edit** collections, including adding items or creating new subcollections. Only club organisers are invited to join as authorised members.
 
-## Getting authorised
+### Getting authorised
 
 1. Create/log into your [Zotero account](https://www.zotero.org/)
 2. Go to [the library homepage](https://www.zotero.org/groups/2354006/reproducibilitea?) and request membership
 3. Wait until we approve your request
 
-## Using the library
+### Using the library
 
 Once you're approved, the first thing you should do is create a new subcollection for your club. You can then create further subcollections within that to keep things neatly organised if you wish. 
 
 You can browse all the items in the whole library by viewing the Library collection, and select any items you want to add to your subcollections. You can also add new items directly to one of your subcollections and it'll automatically be listed in the main Library. 
 
-## Using Zotero
+### Using Zotero
 
 Zotero is free for basic use, open source (unlike Mendeley) and has good integration with reproducibile science tools such as RStudio (through the `citr` package).
 
